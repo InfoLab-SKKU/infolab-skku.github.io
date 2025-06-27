@@ -1,7 +1,7 @@
 # site properties and page defaults
-title: The Su Lab
-subtitle: at Scripps Research
-description: The lab website for Andrew Su's lab at Scripps Research
+title: InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.
+subtitle: 
+description: 
 logo-text: false
 header: images/background-radial-blur.jpg
 footer: images/background.jpg
@@ -9,10 +9,10 @@ proofer: false
 
 # site social media and other links
 links:
-  email: asu@scripps.edu
+  email: contact@InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab..com
   orcid: 0000-0002-9859-4104
   google-scholar: xPGhKkoAAAAJ
-  github: sulab
+  github: InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.
 
 ### jekyll settings
 
