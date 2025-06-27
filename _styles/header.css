@@ -6,13 +6,14 @@ header {
   gap: 20px;
   padding: 20px;
   box-shadow: var(--shadow);
+  transition: padding 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   position: sticky !important;
   top: 0;
   z-index: 10 !important;
 }
 
 header a {
-  color: var(--text);
+  color: #dfe3e7;
   text-decoration: none;
 }
 
@@ -60,7 +61,7 @@ header a {
   width: 30px;
   height: 30px;
   margin: 0;
-  color: var(--text);
+  color: #dfe3e7;
   appearance: none;
   transition: background var(--transition);
 }
@@ -70,7 +71,7 @@ header a {
   position: absolute;
   left: 50%;
   top: 50%;
-  color: var(--text);
+  color: #dfe3e7;
   font-size: 15px;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
@@ -121,7 +122,9 @@ header[data-big] {
   align-items: center;
   flex-direction: column;
   padding: 100px 20px;
+  transition: padding 0.3s ease, height 0.3s ease, font-size 0.3s ease;
   top: unset;
+  transition: all 0.2s ease-in-out;
 }
 header[data-big] .home {
   flex-direction: column;
@@ -129,6 +132,7 @@ header[data-big] .home {
 }
 header[data-big] .logo {
   height: 80px;
+  transition: height 0.3s ease;
 }
 header[data-big] .title-text {
   flex-direction: column;
@@ -137,6 +141,7 @@ header[data-big] .title-text {
 }
 header[data-big] .title {
   font-size: var(--xxl);
+  transition: font-size 0.3s ease;
 }
 header[data-big] .subtitle {
   font-size: var(--large);

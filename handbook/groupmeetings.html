@@ -44,7 +44,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Group meetings | InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.</title>
+<title>Group meetings | InfoLab.</title>
 
 <link rel="icon" href="/images/icon.png">
 
@@ -52,17 +52,17 @@
 <meta name="description" content="">
 
 <meta property="og:title" content="Group meetings">
-<meta property="og:site_title" content="InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.">
+<meta property="og:site_title" content="InfoLab.">
 <meta property="og:description" content="">
 <meta property="og:url" content="https://infolab-skku.github.io">
-<meta property="og:image" content="/images/share.png">
+<meta property="og:image" content="">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Group meetings">
 <meta property="twitter:description" content="">
 <meta property="twitter:url" content="https://infolab-skku.github.io">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="/images/share.png">
+<meta property="twitter:image" content="">
 
 
   <meta property="og:type" content="website">
@@ -144,6 +144,10 @@
   
 
   
+    <link href="/_styles/carousel.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/checkbox.css" rel="stylesheet">
   
 
@@ -221,6 +225,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/news.css" rel="stylesheet">
   
 
   
@@ -325,6 +333,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -340,9 +350,13 @@
 
   <script src="/_scripts/anchors.js"></script>
 
+  <script src="/_scripts/carousel.js"></script>
+
   <script src="/_scripts/dark-mode.js"></script>
 
   <script src="/_scripts/fetch-tags.js"></script>
+
+  <script src="/_scripts/project-filtering.js"></script>
 
   <script src="/_scripts/search.js"></script>
 
@@ -364,7 +378,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background-radial-blur.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background-radial-blur.jpg'); background-color: #062f79;">
   <a href="/" class="home">
     
       <span class="logo">
@@ -380,6 +394,12 @@
 
   <nav>
     
+    
+      
+        <a href="/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
     
       
         <a href="/projects/" data-tooltip="Projects in the lab">
@@ -400,8 +420,14 @@
       
     
       
-        <a href="/conduct/" data-tooltip="Code of Conduct">
-          Code of Conduct
+        <a href="/collaborators/" data-tooltip="Our collaborators">
+          collaborators
+        </a>
+      
+    
+      
+        <a href="/photos/" data-tooltip="Lab news and updates">
+          Gallery
         </a>
       
     
@@ -456,10 +482,6 @@
 
 <p><strong>On Friday 11AM PT, we have our all-group meeting.</strong> In general, we start with any group announcements or general discussion, followed by a single presenter.  The presentation usually focuses on recent progress / update / challenges on whatever project the presenter is working on. On occasion, it can also be a journal club presentation of a scientific paper, a code review, or a tutorial on a topic of general interest.  In all cases, remember that the backgrounds of group members are very diverse, so focus on giving a very general background of the topic for the first 10 minutes. (On subsequent presentations, you may feel like it is redundant to repeat the same introduction, but it is totally fine since there will be new attendees and people will need a refresher.)</p>
 
-<ul>
-  <li>A special note about <strong>software engineering topics</strong>. It is absolutely within scope to present on new software tools, techniques, and libraries. (For example, we’ve had past presentations on debugging and logging tools, frameworks for static site generation, and data visualization libraries.)  Those presentations will certainly include a general introduction based on the tool documentation.  But you should <em>also</em> spend significant time putting the tool in context of how we are currently use it, or how we could leverage it in our projects. So, for example, suppose you are presenting a new library for doing software testing.  In addition to the general introduction, you might include a case study showing how these testing tools identified a problem in our systems, or a discussion of areas in which you think we should be doing more testing, or how/why we should standardize/centralize testing across our various applications.</li>
-</ul>
-
 <p><strong>On alternating Mondays, we have a science-focused meeting.</strong> This meeting series is open to all but primarily focused on making sure our trainees (graduate students and postdocs) get ample opportunity to discuss and present the latest scientific advances and methods.  Again, it is one presenter per week, and the format can either be a research presentation, a journal club, or a practice talk for a conference or committee meeting. Lunch is provided to local attendees.</p>
 
 <p>The schedule for both meeting series are in the <a href="https://docs.google.com/spreadsheets/d/1oLJCLo96_LNCmBe0UcdFJMuym_bSV7hGhyVTloLJu4w">Group meeting schedule spreadsheet</a>, also embedded below:</p>
@@ -480,95 +502,169 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
+<footer class="background" style="--image: url('/images/background.jpg'); background-color: #004483; padding: 2rem 0;" data-dark="true" data-size="wide">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1200px; margin: 0 auto;">
+    <!-- Right Column: About -->
+    <div style="flex: 1 1 150px; min-width: 220px; color: #fff; padding: 25px;">
+      <h5 style="margin-top: 0;">About Us</h5>
+      <p>
+        Infolab is a research group at SKKU focusing on data science, AI, and computer science.<br>
+        <span style="font-size: 1.2em; margin-right: 0.3em;">📍</span>SKKU, Suwon, South Korea
+      </p>
     </div>
-  -->
 
-  <div>
+
     
-      
-      
-      
+
+    <!-- Center Column: Useful Links -->
+    <div style="flex: 1 1 80px; min-width: 220px; padding: 10px;">
+      <h5 class="white-text" style="margin-top: 0;">Useful Links</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li><a class="white-text" href="https://gradschool.skku.edu/grad/">SKKU Graduate School</a></li>
+        <li><a class="white-text" href="https://cs.skku.edu/">Computer Science and Engineering Dept</a></li>
+        <li><a class="white-text" href="https://ai.skku.edu/ai/index.do">Department of Artificial Intelligence</a></li>
+        <li><a class="white-text" href="https://skb.skku.edu/skkuaai/index.do">Department of Applied Artificial Intelligence</a></li>
+      </ul>
+    </div>
+
+    <!-- Left Column: Map -->
+    <div style="flex: 1 1 120px; min-width: 120px; padding: 10px;">
+      <h5 class="white-text" style="margin-top: 0;">Lab Visitors</h5>
+      <!-- <div id="map" style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;"></div> -->
+      <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw"></script> -->
+      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=mQz5owgHoo51mOnAZzlTHAqmiNF4eaJD34BWqA920RE&co=143e9d"></script>
+    </div>
+  </div>
+  <div style="margin-top: -35px;">
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@InfoLab-SKKUDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab..com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:tamer@skku.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0002-9859-4104" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0000-0001-9232-4843" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=xPGhKkoAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+    <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/InfoLab-SKKUDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/InfoLab-SKKU" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
   </div>
 
 
-    
-  </div>
+        
+          
+          
+          
 
-  <div>
-    © 2025
-    InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.
-      |   <a href="/handbook">Lab handbook</a>   <br> Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" data-style="bare" aria-label="button">
+      
+      
     </a>
   </div>
 
-  <!--
-  <input
-    type="checkbox"
-    class="dark-toggle"
-    data-tooltip="Dark mode"
-    aria-label="toggle dark mode"
-    oninput="onDarkToggleChange(event)"
-  >
--->
+
+        
+  </div>
+  <div style="text-align: center; margin: -25px;">
+        © 2025 InfoLab.
+  </div>
+
+  <!-- <script src="https://unpkg.com/jsvectormap"></script>
+  <script src="https://unpkg.com/jsvectormap/dist/maps/world-merc.js"></script>
+  <script>
+    var markers = [
+      { name: "Suwon", coords: [37.2636, 127.0286] },
+      { name: "USA", coords: [37.0902, -95.7129] },
+      { name: "India", coords: [20.5937, 78.9629] },
+      { name: "Uzbekistan", coords: [41.3775, 64.5853] },
+      { name: "Pakistan", coords: [30.3753, 69.3451] },
+      { name: "France", coords: [46.6034, 1.8883] },
+      { name: "Palestine", coords: [31.9522, 35.2332] }
+    ];
+
+    var jvm = new jsVectorMap({
+      map: "world_merc",
+      selector: "#map",
+      zoomButtons: true,
+      zoomOnScroll: true,
+      regionStyle: {
+        initial: { fill: "#d1d5db" }
+      },
+      labels: {
+        markers: { render: (marker) => "" }
+      },
+      markersSelectable: true,
+      selectedMarkers: markers.map((marker, index) => {
+        var name = marker.name;
+        if (name === "Suwon" || name === "Brazil") {
+          return index;
+        }
+      }),
+      markers: markers,
+      markerStyle: {
+        initial: { fill: "#12ad07" },
+        selected: { fill: "#ff5050" }
+      },
+      markerLabelStyle: {
+        initial: {
+          fontFamily: "Roboto",
+          fontWeight: 400,
+          fontSize: 13,
+        }
+      }
+    });
+  </script> -->
+
+
+  <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw&co=08447d'></script> -->
 </footer>
 
   </body>

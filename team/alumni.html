@@ -44,7 +44,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Lab alumni | InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.</title>
+<title>Lab alumni | InfoLab.</title>
 
 <link rel="icon" href="/images/icon.png">
 
@@ -52,17 +52,17 @@
 <meta name="description" content="">
 
 <meta property="og:title" content="Lab alumni">
-<meta property="og:site_title" content="InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.">
+<meta property="og:site_title" content="InfoLab.">
 <meta property="og:description" content="">
 <meta property="og:url" content="https://infolab-skku.github.io">
-<meta property="og:image" content="/images/share.png">
+<meta property="og:image" content="">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Lab alumni">
 <meta property="twitter:description" content="">
 <meta property="twitter:url" content="https://infolab-skku.github.io">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="/images/share.png">
+<meta property="twitter:image" content="">
 
 
   <meta property="og:type" content="website">
@@ -141,6 +141,10 @@
 
   
     <link href="/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/carousel.css" rel="stylesheet">
   
 
   
@@ -224,6 +228,10 @@
   
 
   
+    <link href="/_styles/news.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/paragraph.css" rel="stylesheet">
   
 
@@ -304,9 +312,13 @@
 
   <script src="/_scripts/anchors.js"></script>
 
+  <script src="/_scripts/carousel.js"></script>
+
   <script src="/_scripts/dark-mode.js"></script>
 
   <script src="/_scripts/fetch-tags.js"></script>
+
+  <script src="/_scripts/project-filtering.js"></script>
 
   <script src="/_scripts/search.js"></script>
 
@@ -328,7 +340,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background-radial-blur.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background-radial-blur.jpg'); background-color: #062f79;">
   <a href="/" class="home">
     
       <span class="logo">
@@ -344,6 +356,12 @@
 
   <nav>
     
+    
+      
+        <a href="/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
     
       
         <a href="/projects/" data-tooltip="Projects in the lab">
@@ -364,8 +382,14 @@
       
     
       
-        <a href="/conduct/" data-tooltip="Code of Conduct">
-          Code of Conduct
+        <a href="/collaborators/" data-tooltip="Our collaborators">
+          collaborators
+        </a>
+      
+    
+      
+        <a href="/photos/" data-tooltip="Lab news and updates">
+          Gallery
         </a>
       
     
@@ -418,8 +442,6 @@
 
 <p>We have been lucky to have a fantastic group of individuals come through the lab, and many have gone on to even bigger and better things. Here are some of our past lab members.</p>
 
-<p>(Alumni, please feel free to <a href="https://github.com/SuLab/sulab.org/tree/main/_members">update your profile information</a>!)</p>
-
 <!--
 
 
@@ -439,18 +461,18 @@
 <div class="portrait-wrapper">
   <a
     
-      href="/members/aaron-leung.html"
+      href="/members/amirhossein-danesh.html"
     
     class="portrait"
     data-style="small"
-    aria-label="Aaron Leung"
+    aria-label="Amirhossein Danesh"
   >
     <img
-      src="/images/aaron-leung.jfif"
+      src="/images/amirhossein-danesh.jpeg"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
+      onerror="this.src = '/images/photo.png'; this.onerror = null;"
 
     >
 
@@ -458,7 +480,7 @@
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Aaron Leung
+            Amirhossein Danesh
           </span>
         
 
@@ -473,7 +495,7 @@
           
             
               <span class="portrait-years_worked">
-                2016
+                2022-2024
               </span>
             
           
@@ -491,18 +513,18 @@
 <div class="portrait-wrapper">
   <a
     
-      href="/members/adam-mark.html"
+      href="/members/bojun-wang.html"
     
     class="portrait"
     data-style="small"
-    aria-label="Adam Mark"
+    aria-label="Bojun Wang"
   >
     <img
-      src="/images/adam.png"
+      src="/images/bojun-wang.jpeg"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
+      onerror="this.src = '/images/photo.png'; this.onerror = null;"
 
     >
 
@@ -510,1619 +532,7 @@
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Adam Mark
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2015
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/amitesh-sharma.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Amitesh Sharma"
-  >
-    <img
-      src="/images/amitesh-sharma.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Amitesh Sharma
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/andrew-gao.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Andrew Gao"
-  >
-    <img
-      src="/images/Andrew-Gao-300x200.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Andrew Gao
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/ben-good.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Ben Good"
-  >
-    <img
-      src="/images/ben.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ben Good
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2011-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/byung-jeon.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Byung Jeon"
-  >
-    <img
-      src="/images/person.png"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Byung Jeon
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2017-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/cyrus-afrasiabi.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Cyrus Afrasiabi"
-  >
-    <img
-      src="/images/cyrus2.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Cyrus Afrasiabi
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/derek-jow.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Derek Jow"
-  >
-    <img
-      src="/images/person.png"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Derek Jow
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/eric-hu.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Eric Hu"
-  >
-    <img
-      src="/images/Eric-Hu-205x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Eric Hu
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/eric-zhou.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Eric Zhou"
-  >
-    <img
-      src="/images/Eric-Zhou-300x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Eric Zhou
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021-2023
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/erick-scott.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Erick Scott"
-  >
-    <img
-      src="/images/Erick-shrunk-278x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Erick Scott
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2015
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/erik-clarke.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Erik Clarke"
-  >
-    <img
-      src="/images/erik-clarke.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Erik Clarke
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2011-2012
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/esha-verma.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Esha Verma"
-  >
-    <img
-      src="/images/person.png"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Esha Verma
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2024
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/fatima-perez.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Fatima Perez"
-  >
-    <img
-      src="/images/fatima-223x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Fatima Perez
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/greg-stupp.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Greg Stupp"
-  >
-    <img
-      src="/images/greg_stupp.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Greg Stupp
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/guoxuan-xu.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Guoxuan Xu"
-  >
-    <img
-      src="/images/person.png"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Guoxuan Xu
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2024
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/ian-macleod.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Ian MacLeod"
-  >
-    <img
-      src="/images/ian.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ian MacLeod
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2011-2012
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/jake-bruggemann.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Jake Bruggemann"
-  >
-    <img
-      src="/images/jake.png"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jake Bruggemann
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/jennifer-fouquier.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Jennifer Fouquier"
-  >
-    <img
-      src="/images/jennifer.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jennifer Fouquier
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/jerry-zhou.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Jerry Zhou"
-  >
-    <img
-      src="/images/jerry_zhou.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jerry Zhou
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018-2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/jordan-beach.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Jordan Beach"
-  >
-    <img
-      src="/images/jordanbeach-300x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jordan Beach
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/julee-adesara.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Julee Adesara"
-  >
-    <img
-      src="/images/julee-adesara.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Julee Adesara
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/julia-mullen.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Julia Mullen"
-  >
-    <img
-      src="/images/Julia-Mullen-225x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Julia Mullen
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020-2023
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/kaleigh-jaeger.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Kaleigh Jaeger"
-  >
-    <img
-      src="/images/kaleigh-jaeger.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Kaleigh Jaeger
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/karina-zaiets.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Karina Zaiets"
-  >
-    <img
-      src="/images/karina_zaiets-300x185.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Karina Zaiets
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/karthik-gangavarapu.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Karthik Gangavarapu"
-  >
-    <img
-      src="/images/karthik.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Karthik Gangavarapu
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2013-2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/katie-fisch.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Katie Fisch"
-  >
-    <img
-      src="/images/Fisch_Picture-Copy-Copy.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Katie Fisch
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2013-2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/kavin-kamaraj.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Kavin Kamaraj"
-  >
-    <img
-      src="/images/kavin-kamaraj.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Kavin Kamaraj
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/kevin-xin.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Kevin Xin"
-  >
-    <img
-      src="/images/kevin_xin.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Kevin Xin
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2013-2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/laura-hughes.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Laura Hughes"
-  >
-    <img
-      src="/images/hughes.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Laura Hughes
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2017-2023
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/louis-gioia.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Louis Gioia"
-  >
-    <img
-      src="/images/louis_profile.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Louis Gioia
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/lulu-ricketts.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Lulu Ricketts"
-  >
-    <img
-      src="/images/Lulu-Ricketts-300x300.jpeg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Lulu Ricketts
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/madhumita-narayan.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Madhumita Narayan"
-  >
-    <img
-      src="/images/madhumita-narayan.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Madhumita Narayan
+            Bojun Wang
           </span>
         
 
@@ -2155,18 +565,18 @@
 <div class="portrait-wrapper">
   <a
     
-      href="/members/max-nanis.html"
+      href="/members/dillan-imans.html"
     
     class="portrait"
     data-style="small"
-    aria-label="Max Nanis"
+    aria-label="Dillan Imans"
   >
     <img
-      src="/images/nanis_headshot.jpg"
+      src="/images/dillan-imans.jpeg"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
+      onerror="this.src = '/images/photo.png'; this.onerror = null;"
 
     >
 
@@ -2174,7 +584,7 @@
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Max Nanis
+            Dillan Imans
           </span>
         
 
@@ -2187,10 +597,6 @@
           
           
           
-            
-              <span class="portrait-years_worked">
-                2012-2018
-              </span>
             
           
         
@@ -2207,18 +613,18 @@
 <div class="portrait-wrapper">
   <a
     
-      href="/members/melody-yin.html"
+      href="/members/eldor-abdukhamidov.html"
     
     class="portrait"
     data-style="small"
-    aria-label="Melody Yin"
+    aria-label="Eldor Abdukhamidov"
   >
     <img
-      src="/images/Melody.jpg"
+      src="/images/Eldor-Abdukhamidov.png"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
+      onerror="this.src = '/images/photo.png'; this.onerror = null;"
 
     >
 
@@ -2226,1359 +632,7 @@
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Melody Yin
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2024
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/meriam-esif.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Meriam Esif"
-  >
-    <img
-      src="/images/Meriam-Esif-197x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Meriam Esif
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/michelle-fox.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Michelle Fox"
-  >
-    <img
-      src="/images/mfox-185x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Michelle Fox
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/mike-mayers.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Mike Mayers"
-  >
-    <img
-      src="/images/mayers-768x768.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Mike Mayers
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/nipun-das.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Nipun Das"
-  >
-    <img
-      src="/images/Nipun-Das-Headshot-Nipun-Das-219x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Nipun Das
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/nuria-rosinach.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Núria Queralt-Rosinach"
-  >
-    <img
-      src="/images/nuria.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Núria Queralt-Rosinach
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/paul-gaudin.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Paul Gaudin"
-  >
-    <img
-      src="/images/paul_gaudin-261x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Paul Gaudin
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/ramya-gamini.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Ramya Gamini"
-  >
-    <img
-      src="/images/ramya.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ramya Gamini
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/ricardo-avila.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Ricardo Avila"
-  >
-    <img
-      src="/images/Ricardo-Avila-300x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ricardo Avila
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/runjie-guan.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Runjie Guan"
-  >
-    <img
-      src="/images/runjie-guan.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Runjie Guan
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/ryan-thompson.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Ryan Thompson"
-  >
-    <img
-      src="/images/ryan.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ryan Thompson
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/sabah-ul-hasan.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Sabah Ul-Hasan"
-  >
-    <img
-      src="/images/UlHasan-Sabah-Sabah-Ul-Hasan.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sabah Ul-Hasan
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2019-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/sachiko-matsumoto.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Sachiko Matsumoto"
-  >
-    <img
-      src="/images/sachiko-matsumoto.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sachiko Matsumoto
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/saiido-noor.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Saiido Noor"
-  >
-    <img
-      src="/images/saiidonoor-300x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Saiido Noor
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/salvatore-loguercio.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Salvatore Loguercio"
-  >
-    <img
-      src="/images/sal.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Salvatore Loguercio
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2012-2015
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/sander-su.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Sander Su"
-  >
-    <img
-      src="/images/sander-su.jpeg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sander Su
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/sandip-chatterjee.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Sandip Chatterjee"
-  >
-    <img
-      src="/images/sandip.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sandip Chatterjee
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/sebastian-burgstaller.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Sebastian Burgstaller"
-  >
-    <img
-      src="/images/sebastian_cropped-246x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sebastian Burgstaller
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2018
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/sebastien-lelong.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Sebastien Lelong"
-  >
-    <img
-      src="/images/sebastien.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sebastien Lelong
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/shannon-saad.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Shannon Saad"
-  >
-    <img
-      src="/images/person.png"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Shannon Saad
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2024
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/tim-putman.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Tim Putman"
-  >
-    <img
-      src="/images/tim_putman_self-e1438965128933-225x300.jpeg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Tim Putman
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/tobias-meissner.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Tobias Meissner"
-  >
-    <img
-      src="/images/tobias.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Tobias Meissner
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2013-2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/toby-li.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Toby Li"
-  >
-    <img
-      src="/images/Toby.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Toby Li
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/vyshakh-babji.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Vyshakh Babji"
-  >
-    <img
-      src="/images/vyshakh-babji.jfif"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Vyshakh Babji
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/william-kang.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="William Kang"
-  >
-    <img
-      src="/images/William-Kang.png"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            William Kang
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/xuqian-tan.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Xuqian Tan"
-  >
-    <img
-      src="/images/person.png"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Xuqian Tan
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2019-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-  
-    
-
-    
-
-<div class="portrait-wrapper">
-  <a
-    
-      href="/members/yao-yao.html"
-    
-    class="portrait"
-    data-style="small"
-    aria-label="Yao Yao"
-  >
-    <img
-      src="/images/yaoyao_cropped-300x300.jpg"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
-
-    >
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Yao Yao
+            Eldor Abdukhamidov
           </span>
         
 
@@ -3611,18 +665,18 @@
 <div class="portrait-wrapper">
   <a
     
-      href="/members/zhongchao-qian.html"
+      href="/members/kim-yongyou.html"
     
     class="portrait"
     data-style="small"
-    aria-label="Zhongchao Qian"
+    aria-label="Kim Yong YOU"
   >
     <img
-      src="/images/Zhongchao-Qian.jpg"
+      src="/images/kim-yongyou.jpeg"
       class="portrait-image"
       alt="member portrait"
       loading="lazy"
-      onerror="this.src = '/images/fallback.svg'; this.onerror = null;"
+      onerror="this.src = '/images/photo.png'; this.onerror = null;"
 
     >
 
@@ -3630,7 +684,55 @@
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Zhongchao Qian
+            Kim Yong YOU
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+          
+          
+            
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+  
+    
+
+    
+
+<div class="portrait-wrapper">
+  <a
+    
+      href="/members/nasir-rahim.html"
+    
+    class="portrait"
+    data-style="small"
+    aria-label="Nasir Rahim"
+  >
+    <img
+      src="/images/nasir-rahim.jpeg"
+      class="portrait-image"
+      alt="member portrait"
+      loading="lazy"
+      onerror="this.src = '/images/photo.png'; this.onerror = null;"
+
+    >
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            Nasir Rahim
           </span>
         
 
@@ -3645,7 +747,7 @@
           
             
               <span class="portrait-years_worked">
-                2020-2022
+                2020-2023
               </span>
             
           
@@ -3656,6 +758,87 @@
 </div>
 
   
+    
+
+    
+
+<div class="portrait-wrapper">
+  <a
+    
+      href="/members/qirui-sun.html"
+    
+    class="portrait"
+    data-style="small"
+    aria-label="QIRUI SUN"
+  >
+    <img
+      src="/images/qirui-sun.jpeg"
+      class="portrait-image"
+      alt="member portrait"
+      loading="lazy"
+      onerror="this.src = '/images/photo.png'; this.onerror = null;"
+
+    >
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            QIRUI SUN
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+          
+          
+            
+              <span class="portrait-years_worked">
+                2021-2022
+              </span>
+            
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+  
+
+
+### Principal Investigators and Staff Scientists
+
+
+
+
+
+
+
+
+
+### Postdoctoral Associates
+
+
+
+
+
+
+
+
+### Software Engineers
+
+
+
+
+
+
+
 
 -->
   </section>
@@ -3671,516 +854,17 @@
   size: ;
 -->
 
-<h3 id="principal-investigators-and-staff-scientists">Principal Investigators and Staff Scientists</h3>
-
-<div class="portrait-wrapper">
-  <a href="/members/ben-good.html" class="portrait" data-style="small" aria-label="Ben Good">
-    <img src="/images/ben.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ben Good
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2011-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/greg-stupp.html" class="portrait" data-style="small" aria-label="Greg Stupp">
-    <img src="/images/greg_stupp.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Greg Stupp
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/kevin-xin.html" class="portrait" data-style="small" aria-label="Kevin Xin">
-    <img src="/images/kevin_xin.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Kevin Xin
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2013-2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/laura-hughes.html" class="portrait" data-style="small" aria-label="Laura Hughes">
-    <img src="/images/hughes.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Laura Hughes
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2017-2023
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/yao-yao.html" class="portrait" data-style="small" aria-label="Yao Yao">
-    <img src="/images/yaoyao_cropped-300x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Yao Yao
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020-2023
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<h3 id="postdoctoral-associates">Postdoctoral Associates</h3>
-
-<div class="portrait-wrapper">
-  <a href="/members/eric-hu.html" class="portrait" data-style="small" aria-label="Eric Hu">
-    <img src="/images/Eric-Hu-205x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Eric Hu
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/katie-fisch.html" class="portrait" data-style="small" aria-label="Katie Fisch">
-    <img src="/images/Fisch_Picture-Copy-Copy.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Katie Fisch
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2013-2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/nuria-rosinach.html" class="portrait" data-style="small" aria-label="Núria Queralt-Rosinach">
-    <img src="/images/nuria.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Núria Queralt-Rosinach
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/ramya-gamini.html" class="portrait" data-style="small" aria-label="Ramya Gamini">
-    <img src="/images/ramya.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ramya Gamini
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/sabah-ul-hasan.html" class="portrait" data-style="small" aria-label="Sabah Ul-Hasan">
-    <img src="/images/UlHasan-Sabah-Sabah-Ul-Hasan.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sabah Ul-Hasan
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2019-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/salvatore-loguercio.html" class="portrait" data-style="small" aria-label="Salvatore Loguercio">
-    <img src="/images/sal.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Salvatore Loguercio
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2012-2015
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/sandip-chatterjee.html" class="portrait" data-style="small" aria-label="Sandip Chatterjee">
-    <img src="/images/sandip.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sandip Chatterjee
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/sebastian-burgstaller.html" class="portrait" data-style="small" aria-label="Sebastian Burgstaller">
-    <img src="/images/sebastian_cropped-246x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sebastian Burgstaller
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2018
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/tim-putman.html" class="portrait" data-style="small" aria-label="Tim Putman">
-    <img src="/images/tim_putman_self-e1438965128933-225x300.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Tim Putman
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/tobias-meissner.html" class="portrait" data-style="small" aria-label="Tobias Meissner">
-    <img src="/images/tobias.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Tobias Meissner
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2013-2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
 <h3 id="graduate-students">Graduate Students</h3>
 
 <div class="portrait-wrapper">
-  <a href="/members/erick-scott.html" class="portrait" data-style="small" aria-label="Erick Scott">
-    <img src="/images/Erick-shrunk-278x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/amirhossein-danesh.html" class="portrait" data-style="small" aria-label="Amirhossein Danesh">
+    <img src="/images/amirhossein-danesh.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Erick Scott
+            Amirhossein Danesh
           </span>
         
 
@@ -4195,7 +879,7 @@
           
             
               <span class="portrait-years_worked">
-                2014-2015
+                2022-2024
               </span>
             
           
@@ -4206,1074 +890,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/jake-bruggemann.html" class="portrait" data-style="small" aria-label="Jake Bruggemann">
-    <img src="/images/jake.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/bojun-wang.html" class="portrait" data-style="small" aria-label="Bojun Wang">
+    <img src="/images/bojun-wang.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Jake Bruggemann
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/karthik-gangavarapu.html" class="portrait" data-style="small" aria-label="Karthik Gangavarapu">
-    <img src="/images/karthik.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Karthik Gangavarapu
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2013-2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/louis-gioia.html" class="portrait" data-style="small" aria-label="Louis Gioia">
-    <img src="/images/louis_profile.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Louis Gioia
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/mike-mayers.html" class="portrait" data-style="small" aria-label="Mike Mayers">
-    <img src="/images/mayers-768x768.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Mike Mayers
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/ryan-thompson.html" class="portrait" data-style="small" aria-label="Ryan Thompson">
-    <img src="/images/ryan.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ryan Thompson
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/toby-li.html" class="portrait" data-style="small" aria-label="Toby Li">
-    <img src="/images/Toby.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Toby Li
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<h3 id="software-engineers">Software Engineers</h3>
-
-<div class="portrait-wrapper">
-  <a href="/members/adam-mark.html" class="portrait" data-style="small" aria-label="Adam Mark">
-    <img src="/images/adam.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Adam Mark
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014-2015
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/cyrus-afrasiabi.html" class="portrait" data-style="small" aria-label="Cyrus Afrasiabi">
-    <img src="/images/cyrus2.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Cyrus Afrasiabi
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2019
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/eric-zhou.html" class="portrait" data-style="small" aria-label="Eric Zhou">
-    <img src="/images/Eric-Zhou-300x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Eric Zhou
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021-2023
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/erik-clarke.html" class="portrait" data-style="small" aria-label="Erik Clarke">
-    <img src="/images/erik-clarke.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Erik Clarke
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2011-2012
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/ian-macleod.html" class="portrait" data-style="small" aria-label="Ian MacLeod">
-    <img src="/images/ian.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ian MacLeod
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2011-2012
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/jennifer-fouquier.html" class="portrait" data-style="small" aria-label="Jennifer Fouquier">
-    <img src="/images/jennifer.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jennifer Fouquier
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015-2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/jerry-zhou.html" class="portrait" data-style="small" aria-label="Jerry Zhou">
-    <img src="/images/jerry_zhou.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jerry Zhou
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018-2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/julia-mullen.html" class="portrait" data-style="small" aria-label="Julia Mullen">
-    <img src="/images/Julia-Mullen-225x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Julia Mullen
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020-2023
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/karina-zaiets.html" class="portrait" data-style="small" aria-label="Karina Zaiets">
-    <img src="/images/karina_zaiets-300x185.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Karina Zaiets
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/max-nanis.html" class="portrait" data-style="small" aria-label="Max Nanis">
-    <img src="/images/nanis_headshot.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Max Nanis
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2012-2018
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/paul-gaudin.html" class="portrait" data-style="small" aria-label="Paul Gaudin">
-    <img src="/images/paul_gaudin-261x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Paul Gaudin
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/ricardo-avila.html" class="portrait" data-style="small" aria-label="Ricardo Avila">
-    <img src="/images/Ricardo-Avila-300x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ricardo Avila
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/sander-su.html" class="portrait" data-style="small" aria-label="Sander Su">
-    <img src="/images/sander-su.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sander Su
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/sebastien-lelong.html" class="portrait" data-style="small" aria-label="Sebastien Lelong">
-    <img src="/images/sebastien.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sebastien Lelong
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/zhongchao-qian.html" class="portrait" data-style="small" aria-label="Zhongchao Qian">
-    <img src="/images/Zhongchao-Qian.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Zhongchao Qian
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020-2022
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<h3 id="interns">Interns</h3>
-
-<div class="portrait-wrapper">
-  <a href="/members/aaron-leung.html" class="portrait" data-style="small" aria-label="Aaron Leung">
-    <img src="/images/aaron-leung.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Aaron Leung
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/amitesh-sharma.html" class="portrait" data-style="small" aria-label="Amitesh Sharma">
-    <img src="/images/amitesh-sharma.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Amitesh Sharma
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/andrew-gao.html" class="portrait" data-style="small" aria-label="Andrew Gao">
-    <img src="/images/Andrew-Gao-300x200.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Andrew Gao
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/derek-jow.html" class="portrait" data-style="small" aria-label="Derek Jow">
-    <img src="/images/person.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Derek Jow
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/esha-verma.html" class="portrait" data-style="small" aria-label="Esha Verma">
-    <img src="/images/person.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Esha Verma
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2024
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/fatima-perez.html" class="portrait" data-style="small" aria-label="Fatima Perez">
-    <img src="/images/fatima-223x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Fatima Perez
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2018
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/guoxuan-xu.html" class="portrait" data-style="small" aria-label="Guoxuan Xu">
-    <img src="/images/person.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Guoxuan Xu
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2024
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/jordan-beach.html" class="portrait" data-style="small" aria-label="Jordan Beach">
-    <img src="/images/jordanbeach-300x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jordan Beach
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/kaleigh-jaeger.html" class="portrait" data-style="small" aria-label="Kaleigh Jaeger">
-    <img src="/images/kaleigh-jaeger.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Kaleigh Jaeger
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/kavin-kamaraj.html" class="portrait" data-style="small" aria-label="Kavin Kamaraj">
-    <img src="/images/kavin-kamaraj.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Kavin Kamaraj
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2016-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/lulu-ricketts.html" class="portrait" data-style="small" aria-label="Lulu Ricketts">
-    <img src="/images/Lulu-Ricketts-300x300.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Lulu Ricketts
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/madhumita-narayan.html" class="portrait" data-style="small" aria-label="Madhumita Narayan">
-    <img src="/images/madhumita-narayan.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Madhumita Narayan
+            Bojun Wang
           </span>
         
 
@@ -5299,14 +923,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/melody-yin.html" class="portrait" data-style="small" aria-label="Melody Yin">
-    <img src="/images/Melody.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/eldor-abdukhamidov.html" class="portrait" data-style="small" aria-label="Eldor Abdukhamidov">
+    <img src="/images/Eldor-Abdukhamidov.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Melody Yin
+            Eldor Abdukhamidov
           </span>
         
 
@@ -5321,7 +945,7 @@
           
             
               <span class="portrait-years_worked">
-                2024
+                2020-2023
               </span>
             
           
@@ -5332,14 +956,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/meriam-esif.html" class="portrait" data-style="small" aria-label="Meriam Esif">
-    <img src="/images/Meriam-Esif-197x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/nasir-rahim.html" class="portrait" data-style="small" aria-label="Nasir Rahim">
+    <img src="/images/nasir-rahim.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Meriam Esif
+            Nasir Rahim
           </span>
         
 
@@ -5354,7 +978,7 @@
           
             
               <span class="portrait-years_worked">
-                2020
+                2020-2023
               </span>
             
           
@@ -5365,14 +989,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/michelle-fox.html" class="portrait" data-style="small" aria-label="Michelle Fox">
-    <img src="/images/mfox-185x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/qirui-sun.html" class="portrait" data-style="small" aria-label="QIRUI SUN">
+    <img src="/images/qirui-sun.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Michelle Fox
+            QIRUI SUN
           </span>
         
 
@@ -5387,7 +1011,7 @@
           
             
               <span class="portrait-years_worked">
-                2018
+                2021-2022
               </span>
             
           
@@ -5397,15 +1021,17 @@
   </a>
 </div>
 
+<h3 id="interns">Interns</h3>
+
 <div class="portrait-wrapper">
-  <a href="/members/nipun-das.html" class="portrait" data-style="small" aria-label="Nipun Das">
-    <img src="/images/Nipun-Das-Headshot-Nipun-Das-219x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/dillan-imans.html" class="portrait" data-style="small" aria-label="Dillan Imans">
+    <img src="/images/dillan-imans.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Nipun Das
+            Dillan Imans
           </span>
         
 
@@ -5418,10 +1044,6 @@
           
           
           
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
             
           
         
@@ -5431,14 +1053,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/runjie-guan.html" class="portrait" data-style="small" aria-label="Runjie Guan">
-    <img src="/images/runjie-guan.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/kim-yongyou.html" class="portrait" data-style="small" aria-label="Kim Yong YOU">
+    <img src="/images/kim-yongyou.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Runjie Guan
+            Kim Yong YOU
           </span>
         
 
@@ -5451,208 +1073,6 @@
           
           
           
-            
-              <span class="portrait-years_worked">
-                2016-2017
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/sachiko-matsumoto.html" class="portrait" data-style="small" aria-label="Sachiko Matsumoto">
-    <img src="/images/sachiko-matsumoto.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Sachiko Matsumoto
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2015
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/saiido-noor.html" class="portrait" data-style="small" aria-label="Saiido Noor">
-    <img src="/images/saiidonoor-300x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Saiido Noor
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2021
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/shannon-saad.html" class="portrait" data-style="small" aria-label="Shannon Saad">
-    <img src="/images/person.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Shannon Saad
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2024
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/vyshakh-babji.html" class="portrait" data-style="small" aria-label="Vyshakh Babji">
-    <img src="/images/vyshakh-babji.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Vyshakh Babji
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2014
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/william-kang.html" class="portrait" data-style="small" aria-label="William Kang">
-    <img src="/images/William-Kang.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            William Kang
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2020
-              </span>
-            
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/xuqian-tan.html" class="portrait" data-style="small" aria-label="Xuqian Tan">
-    <img src="/images/person.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Xuqian Tan
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-          
-          
-            
-              <span class="portrait-years_worked">
-                2019-2020
-              </span>
             
           
         
@@ -5667,95 +1087,169 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
+<footer class="background" style="--image: url('/images/background.jpg'); background-color: #004483; padding: 2rem 0;" data-dark="true" data-size="wide">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1200px; margin: 0 auto;">
+    <!-- Right Column: About -->
+    <div style="flex: 1 1 150px; min-width: 220px; color: #fff; padding: 25px;">
+      <h5 style="margin-top: 0;">About Us</h5>
+      <p>
+        Infolab is a research group at SKKU focusing on data science, AI, and computer science.<br>
+        <span style="font-size: 1.2em; margin-right: 0.3em;">📍</span>SKKU, Suwon, South Korea
+      </p>
     </div>
-  -->
 
-  <div>
+
     
-      
-      
-      
+
+    <!-- Center Column: Useful Links -->
+    <div style="flex: 1 1 80px; min-width: 220px; padding: 10px;">
+      <h5 class="white-text" style="margin-top: 0;">Useful Links</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li><a class="white-text" href="https://gradschool.skku.edu/grad/">SKKU Graduate School</a></li>
+        <li><a class="white-text" href="https://cs.skku.edu/">Computer Science and Engineering Dept</a></li>
+        <li><a class="white-text" href="https://ai.skku.edu/ai/index.do">Department of Artificial Intelligence</a></li>
+        <li><a class="white-text" href="https://skb.skku.edu/skkuaai/index.do">Department of Applied Artificial Intelligence</a></li>
+      </ul>
+    </div>
+
+    <!-- Left Column: Map -->
+    <div style="flex: 1 1 120px; min-width: 120px; padding: 10px;">
+      <h5 class="white-text" style="margin-top: 0;">Lab Visitors</h5>
+      <!-- <div id="map" style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;"></div> -->
+      <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw"></script> -->
+      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=mQz5owgHoo51mOnAZzlTHAqmiNF4eaJD34BWqA920RE&co=143e9d"></script>
+    </div>
+  </div>
+  <div style="margin-top: -35px;">
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@InfoLab-SKKUDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab..com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:tamer@skku.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0002-9859-4104" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0000-0001-9232-4843" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=xPGhKkoAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+    <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/InfoLab-SKKUDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/InfoLab-SKKU" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
   </div>
 
 
-    
-  </div>
+        
+          
+          
+          
 
-  <div>
-    © 2025
-    InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.
-      |   <a href="/handbook">Lab handbook</a>   <br> Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" data-style="bare" aria-label="button">
+      
+      
     </a>
   </div>
 
-  <!--
-  <input
-    type="checkbox"
-    class="dark-toggle"
-    data-tooltip="Dark mode"
-    aria-label="toggle dark mode"
-    oninput="onDarkToggleChange(event)"
-  >
--->
+
+        
+  </div>
+  <div style="text-align: center; margin: -25px;">
+        © 2025 InfoLab.
+  </div>
+
+  <!-- <script src="https://unpkg.com/jsvectormap"></script>
+  <script src="https://unpkg.com/jsvectormap/dist/maps/world-merc.js"></script>
+  <script>
+    var markers = [
+      { name: "Suwon", coords: [37.2636, 127.0286] },
+      { name: "USA", coords: [37.0902, -95.7129] },
+      { name: "India", coords: [20.5937, 78.9629] },
+      { name: "Uzbekistan", coords: [41.3775, 64.5853] },
+      { name: "Pakistan", coords: [30.3753, 69.3451] },
+      { name: "France", coords: [46.6034, 1.8883] },
+      { name: "Palestine", coords: [31.9522, 35.2332] }
+    ];
+
+    var jvm = new jsVectorMap({
+      map: "world_merc",
+      selector: "#map",
+      zoomButtons: true,
+      zoomOnScroll: true,
+      regionStyle: {
+        initial: { fill: "#d1d5db" }
+      },
+      labels: {
+        markers: { render: (marker) => "" }
+      },
+      markersSelectable: true,
+      selectedMarkers: markers.map((marker, index) => {
+        var name = marker.name;
+        if (name === "Suwon" || name === "Brazil") {
+          return index;
+        }
+      }),
+      markers: markers,
+      markerStyle: {
+        initial: { fill: "#12ad07" },
+        selected: { fill: "#ff5050" }
+      },
+      markerLabelStyle: {
+        initial: {
+          fontFamily: "Roboto",
+          fontWeight: 400,
+          fontSize: 13,
+        }
+      }
+    });
+  </script> -->
+
+
+  <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw&co=08447d'></script> -->
 </footer>
 
   </body>

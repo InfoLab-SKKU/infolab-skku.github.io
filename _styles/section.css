@@ -1,35 +1,37 @@
-section {
-  padding: 40px max(40px, (100% - 1000px) / 2);
-  transition: background var(--transition), color var(--transition);
-}
-
-section[data-size=wide] {
-  padding: 40px;
-}
-
-section[data-size=full] {
-  padding: 0;
-}
-
-section[data-size=full] > * {
+html,
+body {
   margin: 0;
-  border-radius: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
-section[data-size=full] img {
-  border-radius: 0;
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, serif;
 }
-
-main > section:last-of-type {
+body main {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
-
-main > section:nth-of-type(odd) {
-  background: var(--background);
+body section {
+  box-sizing: content-box;
+  padding: 60px 40px;
+  padding: 60px max(40px, (100% - 900px) / 2);
+  text-align: center;
 }
-
-main > section:nth-of-type(even) {
-  background: var(--background-alt);
+body section[data-full=true] {
+  padding: 0;
+}
+body section:nth-of-type(even) {
+  background: #ffffff;
+}
+body section:nth-of-type(even) {
+  background: #fafafa;
+}
+body section:last-of-type {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=section.css.map */

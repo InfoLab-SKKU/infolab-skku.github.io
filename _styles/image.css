@@ -3,4 +3,10 @@ img {
   max-height: 100%;
 }
 
+.feature img {
+  border-radius: var(--rounded);
+  max-height: 250px;
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=image.css.map */

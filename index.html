@@ -44,25 +44,25 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.</title>
+<title>Home | InfoLab.</title>
 
 <link rel="icon" href="/images/icon.png">
 
-<meta name="title" content="">
+<meta name="title" content="Home">
 <meta name="description" content="">
 
-<meta property="og:title" content="">
-<meta property="og:site_title" content="InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.">
+<meta property="og:title" content="Home">
+<meta property="og:site_title" content="InfoLab.">
 <meta property="og:description" content="">
 <meta property="og:url" content="https://infolab-skku.github.io">
-<meta property="og:image" content="/images/share.png">
+<meta property="og:image" content="">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="">
+<meta property="twitter:title" content="Home">
 <meta property="twitter:description" content="">
 <meta property="twitter:url" content="https://infolab-skku.github.io">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="/images/share.png">
+<meta property="twitter:image" content="">
 
 
   <meta property="og:type" content="website">
@@ -74,9 +74,9 @@
     
       "@type": "WebSite",
     
-    "name": "",
+    "name": "Home",
     "description": "",
-    "headline": "",
+    "headline": "Home",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -141,6 +141,10 @@
 
   
     <link href="/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/carousel.css" rel="stylesheet">
   
 
   
@@ -221,6 +225,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/news.css" rel="stylesheet">
   
 
   
@@ -335,6 +343,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -350,9 +360,13 @@
 
   <script src="/_scripts/anchors.js"></script>
 
+  <script src="/_scripts/carousel.js"></script>
+
   <script src="/_scripts/dark-mode.js"></script>
 
   <script src="/_scripts/fetch-tags.js"></script>
+
+  <script src="/_scripts/project-filtering.js"></script>
 
   <script src="/_scripts/search.js"></script>
 
@@ -374,7 +388,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background-radial-blur.jpg')" data-dark="true" data-big>
+<header class="background" style="--image: url('/images/background-radial-blur.jpg'); background-color: #062f79;">
   <a href="/" class="home">
     
       <span class="logo">
@@ -390,6 +404,12 @@
 
   <nav>
     
+    
+      
+        <a href="/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
     
       
         <a href="/projects/" data-tooltip="Projects in the lab">
@@ -410,8 +430,14 @@
       
     
       
-        <a href="/conduct/" data-tooltip="Code of Conduct">
-          Code of Conduct
+        <a href="/collaborators/" data-tooltip="Our collaborators">
+          collaborators
+        </a>
+      
+    
+      
+        <a href="/photos/" data-tooltip="Lab news and updates">
+          Gallery
         </a>
       
     
@@ -441,8 +467,48 @@
   
   
 
-  <section class="background" data-size="page">
-    <p>Welcome to the home page for the lab of Andrew Su. Our group works in the field of bioinformatics, both developing and applying computational tools for biomedical discovery. We have a particular emphasis on open source, open data, and open science. We are located at <a href="https://scripps.edu">Scripps Research</a> in sunny La Jolla, California.</p>
+  <section class="background" data-size="cover">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgb(0 57 125 / 99%); background-size: cover;"></div>
+
+<div class="container" style="position: relative; z-index: 1; width: 100%; max-width: none; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; padding: 0 20px;">
+     <h1 style="font-size: 3.5rem; margin-bottom: 20px; font-weight: 700;">Welcome to InfoLab!</h1>
+      <p class="lead" style="font-size: 1.3rem; max-width: 800px; margin-bottom: 20px;">
+        InfoLab is a research group pushing the boundaries of <strong>security</strong> and <strong>machine learning</strong>, 
+        especially in <strong>bioinformatics</strong> and <strong>biomedical discovery</strong>.
+      </p>
+      <p style="font-size: 1rem; margin-bottom: 30px;">
+        Part of the 
+        <a href="https://sw.skku.edu/eng_sw/index.do" style="color: #fff; text-decoration: underline;">College of Computing and Informatics</a> at 
+        <a href="https://www.skku.edu/eng/" style="color: #fff; text-decoration: underline;">Sungkyunkwan University (SKKU)</a>.
+      </p>
+      <a href="#our-projects" class="button primary" style="background-color: transparent; color: white; border: 2px solid white; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: background-color 0.3s, color 0.3s; scroll-behavior: smooth;" onclick="event.preventDefault(); document.querySelector('#our-projects').scrollIntoView({ behavior: 'smooth' });">
+        Explore Our Work
+      </a>
+  </div>
+
+<style>
+  .hero {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero .container {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+  }
+</style>
   </section>
 
   
@@ -456,40 +522,261 @@
   size: ;
 -->
 
-<div class="feature">
-  <a href="/projects" class="feature-image" aria-label="Our Projects">
-    <img src="/images/startup-849804_1280_resized.jpg" loading="lazy" alt="Our Projects" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-  </a>
-  <div class="feature-text">
+<h2 id="our-projects">Our Projects</h2>
+<div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        
+          
+            <div class="carousel-item">
+              <a href="/projects/#project-1" class="carousel-link">
+                <div class="carousel-image-container">
+                  <img src="/files/images/image1.gif" alt="Securing Interpretable Deep Learning Systems" class="carousel-image">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Securing Interpretable Deep Learning Systems</h3>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+            <div class="carousel-item">
+              <a href="/projects/#project-2" class="carousel-link">
+                <div class="carousel-image-container">
+                  <img src="/images/thumbnails/projects/image3.png" alt="Comprehensive Evaluation of Adversarial Robustness in Deep Learning" class="carousel-image">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Comprehensive Evaluation of Adversarial Robustness in Deep Learning</h3>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+            <div class="carousel-item">
+              <a href="/projects/#project-3" class="carousel-link">
+                <div class="carousel-image-container">
+                  <img src="/images/thumbnails/projects/Explainable%20Artificial%20Intelligence%20for%20Trustworthy%20and%20Transparent%20Decision-Making%20in%20Medical%20Applications.png" alt="Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications" class="carousel-image">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications</h3>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+            <div class="carousel-item">
+              <a href="/projects/#project-4" class="carousel-link">
+                <div class="carousel-image-container">
+                  <img src="/images/thumbnails/projects/Behavioral%20Biometrics%20for%20Continuous%20and%20Adversarially%20Robust%20User%20Authentication%20on%20Smartphones%202.jpg" alt="Behavioral Biometrics for Continuous and Adversarially Robust User Authentication on Smartphones" class="carousel-image">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Behavioral Biometrics for Continuous and Adversarially Robust User Authentication on Smartphones</h3>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+            <div class="carousel-item">
+              <a href="/projects/#project-5" class="carousel-link">
+                <div class="carousel-image-container">
+                  <img src="https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-022-31037-5/MediaObjects/41467_2022_31037_Fig4_HTML.png" alt="Multimodal, Explainable, and Adversarially-Robust Deep Learning for Alzheimer’s Disease Progression Detection" class="carousel-image">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Multimodal, Explainable, and Adversarially-Robust Deep Learning for Alzheimer’s Disease Progression Detection</h3>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+            <div class="carousel-item">
+              <a href="/projects/#project-6" class="carousel-link">
+                <div class="carousel-image-container">
+                  <img src="https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs41591-022-01981-2/MediaObjects/41591_2022_1981_Fig1_HTML.png" alt="Explainable Dynamic Ensemble Learning with Late Fusion of Multimodal Data for Intelligent Decision Support" class="carousel-image">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Explainable Dynamic Ensemble Learning with Late Fusion of Multimodal Data for Intelligent Decision Support</h3>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+            <div class="carousel-item">
+              <a href="/projects/#project-7" class="carousel-link">
+                <div class="carousel-image-container">
+                  <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1532046423002472-ga1.jpg" alt="Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction" class="carousel-image">
+                </div>
+                <div class="carousel-caption">
+                  <h3>Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction</h3>
+                </div>
+              </a>
+            </div>
+          
+        
+      </div>
+    </div>
     
-      <p class="feature-title">Our Projects</p>
+    <div class="carousel-controls">
+      <button class="carousel-control prev" aria-label="Previous slide">
+        <i class="icon fa-solid fa-angle-left"></i>
+      </button>
+      <div class="carousel-indicators">
+        
+          
+            <span class="carousel-indicator" data-index="0"></span>
+          
+        
+          
+            <span class="carousel-indicator" data-index="1"></span>
+          
+        
+          
+            <span class="carousel-indicator" data-index="2"></span>
+          
+        
+          
+            <span class="carousel-indicator" data-index="3"></span>
+          
+        
+          
+            <span class="carousel-indicator" data-index="4"></span>
+          
+        
+          
+            <span class="carousel-indicator" data-index="5"></span>
+          
+        
+          
+            <span class="carousel-indicator" data-index="6"></span>
+          
+        
+      </div>
+  
+      <button class="carousel-control next" aria-label="Next slide">
+        <i class="icon fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+  </div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<div class="cols" style="--cols: 1">
+  
     
-    
-<p>We are interested in how to efficiently manage and mine biomedical knowledge, and we are also interested in applying bioinformatics tools to identify testable new hypotheses.</p>
+    <div>
+<h2 id="our-news">Our news</h2>
+
+<div class="news-card">
+    <div class="news-header">
+        <span class="news-title">Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning</span>
+        <span class="news-date"><i class="icon fa-regular fa-calendar"></i> April 02, 2025 </span>
+    </div>
+    <div class="news-description">
+        Our paper was published in IEEE Transactions on Reliability. 
+            
+    </div>
+  </div>
+
+<div class="news-card">
+    <div class="news-header">
+        <span class="news-title">Towards Robust Federated Learning Investigating Poisoning Attacks Under Clients Data Heterogeneity</span>
+        <span class="news-date"><i class="icon fa-regular fa-calendar"></i> January 03, 2025 </span>
+    </div>
+    <div class="news-description">
+        Our paper was published in the 2025 19th International Conference on Ubiquitous Information Management and Communication (IMCOM). 
+            
+            <a href="https://doi.org/g9ck37" target="_blank">More...</a>
+            
+    </div>
+  </div>
+
+<div class="news-card">
+    <div class="news-header">
+        <span class="news-title">Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression Detection and Severity Assessment</span>
+        <span class="news-date"><i class="icon fa-regular fa-calendar"></i> October 25, 2024 </span>
+    </div>
+    <div class="news-description">
+        Our paper was published in Diagnostics journal. 
+            
+            <a href="https://doi.org/g9b3cd" target="_blank">More...</a>
+            
+    </div>
+  </div>
+
+<div class="news-card">
+    <div class="news-header">
+        <span class="news-title">Smart Collaborative Intrusion Detection System for Securing Vehicular Networks Using Ensemble Machine Learning Model</span>
+        <span class="news-date"><i class="icon fa-regular fa-calendar"></i> September 24, 2024 </span>
+    </div>
+    <div class="news-description">
+        Our paper was published in Information journal. 
+            
+            <a href="https://doi.org/g9cmcf" target="_blank">More...</a>
+            
+    </div>
+  </div>
+
+<div class="news-card">
+    <div class="news-header">
+        <span class="news-title">New team members joining</span>
+        <span class="news-date"><i class="icon fa-regular fa-calendar"></i> September 01, 2024 </span>
+    </div>
+    <div class="news-description">
+        New researcher joined our team at InfoLab, Welcome Shatha! 
+            
+    </div>
+  </div>
 
 <div class="button-wrapper">
-    <a class="button" href="/projects" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
+    <a class="button" href="/news" data-style="" data-flip="" aria-label="fa-solid fa-arrow-right">
       <i class="icon fa-solid fa-arrow-right"></i>
       
-        <span>Browse our projects</span>
+        <span>Read all news</span>
       
     </a>
   </div>
 
-
-  </div>
 </div>
+  
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
 
 <div class="feature" data-flip="">
   <a href="/pubs" class="feature-image" aria-label="Our Publications">
-    <img src="/images/typewriter-1170657_1280_resize.jpg" loading="lazy" alt="Our Publications" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/gallery/AR402001.jpg" loading="lazy" alt="Our Publications" onerror="this.src = '/images/photo.png'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
       <p class="feature-title">Our Publications</p>
     
     
-<p>A great way to learn about our work is to see what we’ve published.  Browse or search our full list of publications here.</p>
+<p>A great way to explore our work is through our publications. Browse or search our full list of research outputs to learn more about what we do.</p>
 
 <div class="button-wrapper">
     <a class="button" href="/pubs" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
@@ -506,14 +793,14 @@
 
 <div class="feature">
   <a href="/team" class="feature-image" aria-label="Our Team">
-    <img src="/images/reunion_2023.JPG" loading="lazy" alt="Our Team" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    <img src="/images/gallery/2025/WhatsApp%20Image%202025-04-24%20at%207.24.29%20PM.jpeg" loading="lazy" alt="Our Team" onerror="this.src = '/images/photo.png'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
       <p class="feature-title">Our Team</p>
     
     
-<p>Our team is made up of graduate students, postdoctoral researchers, programmers and staff, and we come from backgrounds ranging from experimental biology to computer science to bioinformatics. Meet the team!</p>
+<p>Our team includes graduate students, postdoctoral researchers, programmers, and staff, with diverse backgrounds in experimental biology, computer science, and bioinformatics. Come meet the people behind the research!</p>
 
 <div class="button-wrapper">
     <a class="button" href="/team" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
@@ -529,100 +816,233 @@
 </div>
   </section>
 
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<center>
+<!-- Generated from https://shiny.rcg.sfu.ca/u/rdmorin/pubmedcloud3/ -->
+<img src="../images/gallery/team-itrc.jpeg" alt="A word cloud of publication titles" style="width:100%">
+</center>
+
+<div class="button-wrapper">
+    <a class="button" href="/team/join" data-style="" aria-label="fa-solid fa-door-open">
+      <i class="icon fa-solid fa-door-open"></i>
+      
+        <span>Join us</span>
+      
+    </a>
+  </div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h4 id="our-funders">Our funders</h4>
+
+<div class="cols" style="--cols: 3">
+  
+    
+    <div>
+<p><img src="images/skku-logo.png"></p>
+</div>
+  
+    
+    <div>
+<p><img src="images/msit-logo.png"></p>
+</div>
+  
+    
+    <div>
+<p><img src="images/nrf-logo2.png"></p>
+</div>
+  
+</div>
+  </section>
+
 
     </main>
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
+<footer class="background" style="--image: url('/images/background.jpg'); background-color: #004483; padding: 2rem 0;" data-dark="true" data-size="wide">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1200px; margin: 0 auto;">
+    <!-- Right Column: About -->
+    <div style="flex: 1 1 150px; min-width: 220px; color: #fff; padding: 25px;">
+      <h5 style="margin-top: 0;">About Us</h5>
+      <p>
+        Infolab is a research group at SKKU focusing on data science, AI, and computer science.<br>
+        <span style="font-size: 1.2em; margin-right: 0.3em;">📍</span>SKKU, Suwon, South Korea
+      </p>
     </div>
-  -->
 
-  <div>
+
     
-      
-      
-      
+
+    <!-- Center Column: Useful Links -->
+    <div style="flex: 1 1 80px; min-width: 220px; padding: 10px;">
+      <h5 class="white-text" style="margin-top: 0;">Useful Links</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li><a class="white-text" href="https://gradschool.skku.edu/grad/">SKKU Graduate School</a></li>
+        <li><a class="white-text" href="https://cs.skku.edu/">Computer Science and Engineering Dept</a></li>
+        <li><a class="white-text" href="https://ai.skku.edu/ai/index.do">Department of Artificial Intelligence</a></li>
+        <li><a class="white-text" href="https://skb.skku.edu/skkuaai/index.do">Department of Applied Artificial Intelligence</a></li>
+      </ul>
+    </div>
+
+    <!-- Left Column: Map -->
+    <div style="flex: 1 1 120px; min-width: 120px; padding: 10px;">
+      <h5 class="white-text" style="margin-top: 0;">Lab Visitors</h5>
+      <!-- <div id="map" style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;"></div> -->
+      <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw"></script> -->
+      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=mQz5owgHoo51mOnAZzlTHAqmiNF4eaJD34BWqA920RE&co=143e9d"></script>
+    </div>
+  </div>
+  <div style="margin-top: -35px;">
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@InfoLab-SKKUDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab..com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:tamer@skku.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0002-9859-4104" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0000-0001-9232-4843" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=xPGhKkoAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+    <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/InfoLab-SKKUDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/InfoLab-SKKU" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
   </div>
 
 
-    
-  </div>
+        
+          
+          
+          
 
-  <div>
-    © 2025
-    InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.
-      |   <a href="/handbook">Lab handbook</a>   <br> Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" data-style="bare" aria-label="button">
+      
+      
     </a>
   </div>
 
-  <!--
-  <input
-    type="checkbox"
-    class="dark-toggle"
-    data-tooltip="Dark mode"
-    aria-label="toggle dark mode"
-    oninput="onDarkToggleChange(event)"
-  >
--->
+
+        
+  </div>
+  <div style="text-align: center; margin: -25px;">
+        © 2025 InfoLab.
+  </div>
+
+  <!-- <script src="https://unpkg.com/jsvectormap"></script>
+  <script src="https://unpkg.com/jsvectormap/dist/maps/world-merc.js"></script>
+  <script>
+    var markers = [
+      { name: "Suwon", coords: [37.2636, 127.0286] },
+      { name: "USA", coords: [37.0902, -95.7129] },
+      { name: "India", coords: [20.5937, 78.9629] },
+      { name: "Uzbekistan", coords: [41.3775, 64.5853] },
+      { name: "Pakistan", coords: [30.3753, 69.3451] },
+      { name: "France", coords: [46.6034, 1.8883] },
+      { name: "Palestine", coords: [31.9522, 35.2332] }
+    ];
+
+    var jvm = new jsVectorMap({
+      map: "world_merc",
+      selector: "#map",
+      zoomButtons: true,
+      zoomOnScroll: true,
+      regionStyle: {
+        initial: { fill: "#d1d5db" }
+      },
+      labels: {
+        markers: { render: (marker) => "" }
+      },
+      markersSelectable: true,
+      selectedMarkers: markers.map((marker, index) => {
+        var name = marker.name;
+        if (name === "Suwon" || name === "Brazil") {
+          return index;
+        }
+      }),
+      markers: markers,
+      markerStyle: {
+        initial: { fill: "#12ad07" },
+        selected: { fill: "#ff5050" }
+      },
+      markerLabelStyle: {
+        initial: {
+          fontFamily: "Roboto",
+          fontWeight: 400,
+          fontSize: 13,
+        }
+      }
+    });
+  </script> -->
+
+
+  <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw&co=08447d'></script> -->
 </footer>
 
   </body>

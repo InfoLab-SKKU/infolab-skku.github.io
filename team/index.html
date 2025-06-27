@@ -44,7 +44,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Team | InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.</title>
+<title>Team | InfoLab.</title>
 
 <link rel="icon" href="/images/icon.png">
 
@@ -52,17 +52,17 @@
 <meta name="description" content="">
 
 <meta property="og:title" content="Team">
-<meta property="og:site_title" content="InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.">
+<meta property="og:site_title" content="InfoLab.">
 <meta property="og:description" content="">
 <meta property="og:url" content="https://infolab-skku.github.io">
-<meta property="og:image" content="/images/share.png">
+<meta property="og:image" content="">
 <meta property="og:locale" content="en_US">
 
 <meta property="twitter:title" content="Team">
 <meta property="twitter:description" content="">
 <meta property="twitter:url" content="https://infolab-skku.github.io">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="/images/share.png">
+<meta property="twitter:image" content="">
 
 
   <meta property="og:type" content="website">
@@ -144,6 +144,10 @@
   
 
   
+    <link href="/_styles/carousel.css" rel="stylesheet">
+  
+
+  
     <link href="/_styles/checkbox.css" rel="stylesheet">
   
 
@@ -221,6 +225,10 @@
 
   
     <link href="/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/_styles/news.css" rel="stylesheet">
   
 
   
@@ -335,6 +343,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -350,9 +360,13 @@
 
   <script src="/_scripts/anchors.js"></script>
 
+  <script src="/_scripts/carousel.js"></script>
+
   <script src="/_scripts/dark-mode.js"></script>
 
   <script src="/_scripts/fetch-tags.js"></script>
+
+  <script src="/_scripts/project-filtering.js"></script>
 
   <script src="/_scripts/search.js"></script>
 
@@ -374,7 +388,7 @@
 
 
 
-<header class="background" style="--image: url('/images/background-radial-blur.jpg')" data-dark="true">
+<header class="background" style="--image: url('/images/background-radial-blur.jpg'); background-color: #062f79;">
   <a href="/" class="home">
     
       <span class="logo">
@@ -390,6 +404,12 @@
 
   <nav>
     
+    
+      
+        <a href="/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
     
       
         <a href="/projects/" data-tooltip="Projects in the lab">
@@ -410,8 +430,14 @@
       
     
       
-        <a href="/conduct/" data-tooltip="Code of Conduct">
-          Code of Conduct
+        <a href="/collaborators/" data-tooltip="Our collaborators">
+          collaborators
+        </a>
+      
+    
+      
+        <a href="/photos/" data-tooltip="Lab news and updates">
+          Gallery
         </a>
       
     
@@ -442,25 +468,28 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="team">
-<i class="icon fa-solid fa-users"></i>Team</h1>
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
 
-<p>Our lab is made up of a talented mix of graduate students, postdoctoral researchers, programmers, and staff, and their backgrounds range from pure computer science to experimental biology.  If you’re interested in joining this diverse and dynamic team, please reach out!</p>
-
-<div class="button-wrapper">
-    <a class="button" href="/team/photos" data-style="" aria-label="fa-solid fa-image">
-      <i class="icon fa-solid fa-image"></i>
-      
-        <span>Photos</span>
-      
-    </a>
-  </div>
+<h1 id="quick-links">Quick Links</h1>
 
 <div class="button-wrapper">
     <a class="button" href="/team/alumni" data-style="" aria-label="fa-solid fa-people-group">
       <i class="icon fa-solid fa-people-group"></i>
       
         <span>Alumni</span>
+      
+    </a>
+  </div>
+
+<div class="button-wrapper">
+    <a class="button" href="/collaborators" data-style="" aria-label="fa-solid fa-people-group">
+      <i class="icon fa-solid fa-people-group"></i>
+      
+        <span>Collaborators</span>
       
     </a>
   </div>
@@ -473,6 +502,8 @@
       
     </a>
   </div>
+
+<p>Our lab is made up of a talented mix of graduate students, postdoctoral researchers, programmers, and staff, and their backgrounds range from pure computer science to experimental biology. If you’re interested in joining this diverse and dynamic team, please reach out!</p>
   </section>
 
   
@@ -487,14 +518,14 @@
 -->
 
 <div class="portrait-wrapper">
-  <a href="/members/andrew-su.html" class="portrait" data-style="" aria-label="Andrew Su">
-    <img src="/images/Andrew_Su_smll.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/tamer-abuhmed.html" class="portrait" data-style="" aria-label="Tamer ABUHMED">
+    <img src="/images/tamer-min.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Andrew Su
+            Tamer ABUHMED
           </span>
         
 
@@ -508,7 +539,7 @@
             <span class="portrait-role">
               
               <i class="icon fa-solid fa-user-secret"></i>
-              <span>Principal Investigator</span>
+              <span>Professor &amp; Lab Director</span>
             </span>
           
           
@@ -518,16 +549,31 @@
     
   </a>
 </div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h1 id="researchers">
+<i class="icon fa-solid fa-users"></i>Researchers</h1>
 
 <div class="portrait-wrapper">
-  <a href="/members/alan-huebschen.html" class="portrait" data-style="" aria-label="Alan Huebschen">
-    <img src="/images/alanh.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/shaker-el-seppagh.html" class="portrait" data-style="" aria-label="Shaker El-Sappagh">
+    <img src="/images/shaker.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Alan Huebschen
+            Shaker El-Sappagh
           </span>
         
 
@@ -540,8 +586,8 @@
           
             <span class="portrait-role">
               
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
+              <i class="icon fa-solid fa-user-tie"></i>
+              <span>Senior Researcher</span>
             </span>
           
           
@@ -552,48 +598,17 @@
   </a>
 </div>
 
+<p><br></p>
+
 <div class="portrait-wrapper">
-  <a href="/members/carolina-gonzalez-cavazos.html" class="portrait" data-style="" aria-label="Carolina González-Cavazos">
-    <img src="/images/Carolina-Gonzalez-Cavazos-480x501.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/fatma-eid.html" class="portrait" data-style="" aria-label="Fatma Eid">
+    <img src="/images/fatma.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Carolina González-Cavazos
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-graduation-cap"></i>
-              <span>PhD Student</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/chrissy-aceves.html" class="portrait" data-style="" aria-label="Chrissy Aceves">
-    <img src="/images/aceves.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Chrissy Aceves
+            Fatma Eid
           </span>
         
 
@@ -619,80 +634,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/colleen-xu.html" class="portrait" data-style="" aria-label="Colleen Xu">
-    <img src="/images/colleen-xu-resized-480x462.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/maria-bashir.html" class="portrait" data-style="" aria-label="Maria Bashir">
+    <img src="/images/maria.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Colleen Xu
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/ginger-tsueng.html" class="portrait" data-style="" aria-label="Ginger Tsueng">
-    <img src="/images/gtpic.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ginger Tsueng
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-image-portrait"></i>
-              <span>Staff</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/ian-newman.html" class="portrait" data-style="" aria-label="Ian Newman">
-    <img src="/images/newman.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Ian Newman
+            Maria Bashir
           </span>
         
 
@@ -718,47 +667,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/jackson-callaghan.html" class="portrait" data-style="" aria-label="Jackson Callaghan">
-    <img src="/images/jackson_callaghan-480x480.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/shweta-rani.html" class="portrait" data-style="" aria-label="Shwetarani">
+    <img src="/images/shweta.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Jackson Callaghan
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/janet-joy.html" class="portrait" data-style="" aria-label="Janet Joy">
-    <img src="/images/JJ-Janet-Joy-480x480.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Janet Joy
+            Shwetarani
           </span>
         
 
@@ -783,15 +699,17 @@
   </a>
 </div>
 
+<p><br></p>
+
 <div class="portrait-wrapper">
-  <a href="/members/kai-yu-chen.html" class="portrait" data-style="" aria-label="Kai-yu Chen">
-    <img src="/images/KaiyuChen_cropped.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/bobonazar-vokhobov.html" class="portrait" data-style="" aria-label="Bobonazar Vokhobov">
+    <img src="/images/bobonazar-vokhobov.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Kai-yu Chen
+            Bobonazar Vokhobov
           </span>
         
 
@@ -804,8 +722,8 @@
           
             <span class="portrait-role">
               
-              <i class="icon fa-solid fa-graduation-cap"></i>
-              <span>PhD Student</span>
+              <i class="icon fa-solid fa-user-graduate"></i>
+              <span>Combined Master/PhD Student</span>
             </span>
           
           
@@ -817,14 +735,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/mahir-morshed.html" class="portrait" data-style="" aria-label="Mahir Morshed">
-    <img src="/images/mahir.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/firuz-juraev.html" class="portrait" data-style="" aria-label="Firuz Juraev">
+    <img src="/images/Firuz-Juraev.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Mahir Morshed
+            Firuz Juraev
           </span>
         
 
@@ -837,8 +755,8 @@
           
             <span class="portrait-role">
               
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
+              <i class="icon fa-solid fa-user-graduate"></i>
+              <span>Combined Master/PhD Student</span>
             </span>
           
           
@@ -849,15 +767,17 @@
   </a>
 </div>
 
+<p><br></p>
+
 <div class="portrait-wrapper">
-  <a href="/members/meghamala-sinha.html" class="portrait" data-style="" aria-label="Meghamala Sinha">
-    <img src="/images/meghamala_sinha-480x480.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/abdenour-soubih.html" class="portrait" data-style="" aria-label="Abdenour Soubih">
+    <img src="/images/abdenour-soubih.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Meghamala Sinha
+            Abdenour Soubih
           </span>
         
 
@@ -870,8 +790,8 @@
           
             <span class="portrait-role">
               
-              <i class="icon fa-solid fa-image-portrait"></i>
-              <span>Staff</span>
+              <i class="icon fa-solid fa-user-graduate"></i>
+              <span>Master's Student</span>
             </span>
           
           
@@ -883,14 +803,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/pam-graham.html" class="portrait" data-style="" aria-label="Pam Graham">
-    <img src="/images/person.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/chris.html" class="portrait" data-style="" aria-label="ZHENG CHENSHENG (Chris)">
+    <img src="/images/chris.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Pam Graham
+            ZHENG CHENSHENG (Chris)
           </span>
         
 
@@ -903,8 +823,8 @@
           
             <span class="portrait-role">
               
-              <i class="icon fa-solid fa-image-portrait"></i>
-              <span>Staff</span>
+              <i class="icon fa-solid fa-user-graduate"></i>
+              <span>Master's Student</span>
             </span>
           
           
@@ -916,14 +836,14 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/roger-tu.html" class="portrait" data-style="" aria-label="Roger Tu">
-    <img src="/images/Roger-Tu.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/mohammed-awwad.html" class="portrait" data-style="" aria-label="Mohammed Awwad">
+    <img src="/images/awwad.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Roger Tu
+            Mohammed Awwad
           </span>
         
 
@@ -936,8 +856,8 @@
           
             <span class="portrait-role">
               
-              <i class="icon fa-solid fa-graduation-cap"></i>
-              <span>PhD Student</span>
+              <i class="icon fa-solid fa-user-graduate"></i>
+              <span>Master's Student</span>
             </span>
           
           
@@ -949,14 +869,248 @@
 </div>
 
 <div class="portrait-wrapper">
-  <a href="/members/rohan-juneja.html" class="portrait" data-style="" aria-label="Rohan Juneja">
-    <img src="/images/rohan.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/members/shatha-alduhayan.html" class="portrait" data-style="" aria-label="Shatha Al-duhayan">
+    <img src="/images/shatha.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
 
     
       <span class="portrait-text">
         
           <span class="portrait-name">
-            Rohan Juneja
+            Shatha Al-duhayan
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+            <span class="portrait-role">
+              
+              <i class="icon fa-solid fa-user-graduate"></i>
+              <span>Master's Student</span>
+            </span>
+          
+          
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+<h1 id="interns">
+<i class="icon fa-solid fa-users"></i>Interns</h1>
+
+<div class="portrait-wrapper">
+  <a href="/members/Jimin-Lee.md.html" class="portrait" data-style="" aria-label="Jimin Lee">
+    <img src="/images/jimin-lee.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            Jimin Lee
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+            <span class="portrait-role">
+              
+              <i class="icon fa-solid fa-school"></i>
+              <span>Intern</span>
+            </span>
+          
+          
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/clement.html" class="portrait" data-style="" aria-label="POMPEI CLÉMENT">
+    <img src="/images/clement.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            POMPEI CLÉMENT
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+            <span class="portrait-role">
+              
+              <i class="icon fa-solid fa-school"></i>
+              <span>Intern</span>
+            </span>
+          
+          
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/daler-kim.html" class="portrait" data-style="" aria-label="Daler Kim">
+    <img src="/images/daler-kim.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            Daler Kim
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+            <span class="portrait-role">
+              
+              <i class="icon fa-solid fa-school"></i>
+              <span>Intern</span>
+            </span>
+          
+          
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/hyojin.html" class="portrait" data-style="" aria-label="jang hyojin">
+    <img src="/images/hyojin.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            jang hyojin
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+            <span class="portrait-role">
+              
+              <i class="icon fa-solid fa-school"></i>
+              <span>Intern</span>
+            </span>
+          
+          
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/minho-sung.md.html" class="portrait" data-style="" aria-label="Min Ho Sung">
+    <img src="/images/minho-sung.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            Min Ho Sung
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+            <span class="portrait-role">
+              
+              <i class="icon fa-solid fa-school"></i>
+              <span>Intern</span>
+            </span>
+          
+          
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/ryu-sihyeon.html" class="portrait" data-style="" aria-label="Ryu Sihyeon">
+    <img src="/images/ryu-sihyeon.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            Ryu Sihyeon
+          </span>
+        
+
+        
+          
+          
+          
+          
+          
+          
+            <span class="portrait-role">
+              
+              <i class="icon fa-solid fa-school"></i>
+              <span>Intern</span>
+            </span>
+          
+          
+          
+        
+      </span>
+    
+  </a>
+</div>
+
+<div class="portrait-wrapper">
+  <a href="/members/taewon-kim.html" class="portrait" data-style="" aria-label="Taewon Kim">
+    <img src="/images/taewon-kim.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/photo.png'; this.onerror = null;">
+
+    
+      <span class="portrait-text">
+        
+          <span class="portrait-name">
+            Taewon Kim
           </span>
         
 
@@ -986,493 +1140,12 @@
   
   
 
-  <section class="background" data-size="2" data-dark="true" style="--image: url('/images/background.jpg')">
-    <!--
-  background: images/background.jpg;
-  dark: true;
-  size: 2;
--->
-  </section>
-
-  
-  
-  
-
   <section class="background" data-size="page">
     <!--
   background: ;
   dark: ;
   size: ;
 -->
-
-<h1 id="the-wu-lab">
-<i class="icon fa-solid fa-users"></i>The Wu Lab</h1>
-
-<p>Our lab works very closely with the lab of Professor Chunlei Wu, another faculty member here at Scripps. We collaborate on many projects and many of our individual lab members seamlessly transition between project teams. Learn more about the Wu Lab at <a href="https://wulab.io">wulab.io</a>.</p>
-
-<div class="portrait-wrapper">
-  <a href="/members/chunlei-wu.html" class="portrait" data-style="" aria-label="Chunlei Wu">
-    <img src="https://www.gravatar.com/avatar/108605daee6b3c24d02db9753637a66b?s=200" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Chunlei Wu
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-user-secret"></i>
-              <span>Principal Investigator</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<p><br></p>
-
-<div class="portrait-wrapper">
-  <a href="/members/anudeep-tubati.html" class="portrait" data-style="" aria-label="Anudeep Tubati">
-    <img src="/images/anudeep-tubati.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Anudeep Tubati
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/candice-czech.html" class="portrait" data-style="" aria-label="Candice Czech">
-    <img src="/images/candice_czech-169x300.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Candice Czech
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/dylan-welzel.html" class="portrait" data-style="" aria-label="Dylan Welzel">
-    <img src="/images/dylan.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Dylan Welzel
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/emily-haag.html" class="portrait" data-style="" aria-label="Emily Haag">
-    <img src="/images/download-Emily-Haag-480x640.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Emily Haag
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-image-portrait"></i>
-              <span>Staff</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/everaldo-rodolpho.html" class="portrait" data-style="" aria-label="Everaldo Rodolpho">
-    <img src="/images/everaldo.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Everaldo Rodolpho
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/jason-lin.html" class="portrait" data-style="" aria-label="Jason Lin">
-    <img src="/images/jasonlin.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jason Lin
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/jonathan-schaff.html" class="portrait" data-style="" aria-label="Jonathan Schaff">
-    <img src="/images/person.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Jonathan Schaff
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/kaushik-ganapathy.html" class="portrait" data-style="" aria-label="Kaushik Ganapathy">
-    <img src="/images/kaushik.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Kaushik Ganapathy
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-graduation-cap"></i>
-              <span>PhD Student</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/leandro-collares.html" class="portrait" data-style="" aria-label="Leandro Collares">
-    <img src="/images/leandro.jfif" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Leandro Collares
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/lucy-zhang.html" class="portrait" data-style="" aria-label="Lucy Zhang">
-    <img src="/images/bailinzhang.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Lucy Zhang
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-graduation-cap"></i>
-              <span>PhD Student</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/marco-cano.html" class="portrait" data-style="" aria-label="Marco Cano">
-    <img src="/images/marcomain.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Marco Cano
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/nichollette-acosta.html" class="portrait" data-style="" aria-label="Nichollette Acosta">
-    <img src="/images/nicholletteaco-480x640.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Nichollette Acosta
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/members/zubair-qazi.html" class="portrait" data-style="" aria-label="Zubair Qazi">
-    <img src="/images/zubair.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-text">
-        
-          <span class="portrait-name">
-            Zubair Qazi
-          </span>
-        
-
-        
-          
-          
-          
-          
-          
-          
-            <span class="portrait-role">
-              
-              <i class="icon fa-solid fa-code"></i>
-              <span>Software Engineer</span>
-            </span>
-          
-          
-          
-        
-      </span>
-    
-  </a>
-</div>
   </section>
 
 
@@ -1480,95 +1153,169 @@
     
 
 
-<footer class="background" style="--image: url('/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
+<footer class="background" style="--image: url('/images/background.jpg'); background-color: #004483; padding: 2rem 0;" data-dark="true" data-size="wide">
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1200px; margin: 0 auto;">
+    <!-- Right Column: About -->
+    <div style="flex: 1 1 150px; min-width: 220px; color: #fff; padding: 25px;">
+      <h5 style="margin-top: 0;">About Us</h5>
+      <p>
+        Infolab is a research group at SKKU focusing on data science, AI, and computer science.<br>
+        <span style="font-size: 1.2em; margin-right: 0.3em;">📍</span>SKKU, Suwon, South Korea
+      </p>
     </div>
-  -->
 
-  <div>
+
     
-      
-      
-      
+
+    <!-- Center Column: Useful Links -->
+    <div style="flex: 1 1 80px; min-width: 220px; padding: 10px;">
+      <h5 class="white-text" style="margin-top: 0;">Useful Links</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li><a class="white-text" href="https://gradschool.skku.edu/grad/">SKKU Graduate School</a></li>
+        <li><a class="white-text" href="https://cs.skku.edu/">Computer Science and Engineering Dept</a></li>
+        <li><a class="white-text" href="https://ai.skku.edu/ai/index.do">Department of Artificial Intelligence</a></li>
+        <li><a class="white-text" href="https://skb.skku.edu/skkuaai/index.do">Department of Applied Artificial Intelligence</a></li>
+      </ul>
+    </div>
+
+    <!-- Left Column: Map -->
+    <div style="flex: 1 1 120px; min-width: 120px; padding: 10px;">
+      <h5 class="white-text" style="margin-top: 0;">Lab Visitors</h5>
+      <!-- <div id="map" style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;"></div> -->
+      <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw"></script> -->
+      <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=mQz5owgHoo51mOnAZzlTHAqmiNF4eaJD34BWqA920RE&co=143e9d"></script>
+    </div>
+  </div>
+  <div style="margin-top: -35px;">
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:contact@InfoLab-SKKUDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab..com" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:tamer@skku.edu" data-tooltip="Email" data-style="bare" aria-label="Email">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://orcid.org/0000-0002-9859-4104" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+    <a class="button" href="https://orcid.org/0000-0001-9232-4843" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
       <i class="icon fa-brands fa-orcid"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://scholar.google.com/citations?user=xPGhKkoAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+    <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
       <i class="icon fa-brands fa-google"></i>
       
     </a>
   </div>
 
 
-    
-      
-      
-      
+        
+          
+          
+          
 
 
 
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/InfoLab-SKKUDESCRIPTION=An%20engaging%201-3%20sentence%20description%20of%20your%20lab." data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+    <a class="button" href="https://github.com/InfoLab-SKKU" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
       <i class="icon fa-brands fa-github"></i>
       
     </a>
   </div>
 
 
-    
-  </div>
+        
+          
+          
+          
 
-  <div>
-    © 2025
-    InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.
-      |   <a href="/handbook">Lab handbook</a>   <br> Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" data-style="bare" aria-label="button">
+      
+      
     </a>
   </div>
 
-  <!--
-  <input
-    type="checkbox"
-    class="dark-toggle"
-    data-tooltip="Dark mode"
-    aria-label="toggle dark mode"
-    oninput="onDarkToggleChange(event)"
-  >
--->
+
+        
+  </div>
+  <div style="text-align: center; margin: -25px;">
+        © 2025 InfoLab.
+  </div>
+
+  <!-- <script src="https://unpkg.com/jsvectormap"></script>
+  <script src="https://unpkg.com/jsvectormap/dist/maps/world-merc.js"></script>
+  <script>
+    var markers = [
+      { name: "Suwon", coords: [37.2636, 127.0286] },
+      { name: "USA", coords: [37.0902, -95.7129] },
+      { name: "India", coords: [20.5937, 78.9629] },
+      { name: "Uzbekistan", coords: [41.3775, 64.5853] },
+      { name: "Pakistan", coords: [30.3753, 69.3451] },
+      { name: "France", coords: [46.6034, 1.8883] },
+      { name: "Palestine", coords: [31.9522, 35.2332] }
+    ];
+
+    var jvm = new jsVectorMap({
+      map: "world_merc",
+      selector: "#map",
+      zoomButtons: true,
+      zoomOnScroll: true,
+      regionStyle: {
+        initial: { fill: "#d1d5db" }
+      },
+      labels: {
+        markers: { render: (marker) => "" }
+      },
+      markersSelectable: true,
+      selectedMarkers: markers.map((marker, index) => {
+        var name = marker.name;
+        if (name === "Suwon" || name === "Brazil") {
+          return index;
+        }
+      }),
+      markers: markers,
+      markerStyle: {
+        initial: { fill: "#12ad07" },
+        selected: { fill: "#ff5050" }
+      },
+      markerLabelStyle: {
+        initial: {
+          fontFamily: "Roboto",
+          fontWeight: 400,
+          fontSize: 13,
+        }
+      }
+    });
+  </script> -->
+
+
+  <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw&co=08447d'></script> -->
 </footer>
 
   </body>
