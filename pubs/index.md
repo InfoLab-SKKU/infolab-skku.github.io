@@ -1,19 +1,30 @@
 ---
 title: Publications
 nav:
-  order: 2
+  order: 3
   tooltip: Published works
 ---
 
-# {% include icon.html icon="fa-regular fa-newspaper" %}Publications
+# Quick Links
 
-<center>
-<!-- Generated from https://shiny.rcg.sfu.ca/u/rdmorin/pubmedcloud3/ -->
-<img src="../images/wordcloud.png" alt="A word cloud of publication titles" style="width:600px"/>
-</center>
+{%
+include button.html
+icon="fa-solid fa-calendar-alt"
+text="View Upcoming Conferences & Journals"
+link="pubs/upcoming"
+%}
+
+# {% include icon.html icon="fa-regular fa-newspaper" %}Featured Publications
+
+
+Discover our most recent peer-reviewed articles, conference proceedings, and journal papers. Dive into cutting-edge research spanning federated learning, security, and robust AI systems.
+
+
+
+
 
 {% include search-box.html %}
 
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" filters="orcid: 0000-0002-9859-4104"%}
+{% include list.html data="citations" component="citation" style="rich" filters="orcid: 0000-0001-9232-4843|0000-0002-0086-8155|0009-0002-4648-9289"%}

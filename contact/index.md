@@ -1,87 +1,59 @@
 ---
 title: Contact
 nav:
-  order: 6
+  order: 8
   tooltip: Contact information
 ---
 
-# {% include icon.html icon="fa-regular fa-envelope" %}Contact
+# 📬 Contact Us
 
-Our lab is part of the Department of Integrative Structural and Computational Biology at Scripps Research. We are based in La Jolla, CA, though we have many lab members and contributors distributed throughout the US and Canada.
+**InfoLab** is part of the College of Computing and Informatics at **Sungkyunkwan University (SKKU)**. Our lab leads research in cutting-edge fields like **biomedical** and **information security**.
 
-{%
-  include figure.html
-  image="images/scripps-research-email-logo.png"
-  width="300px"
+---
 
-%}
+## 📩 Contact Information
 
 {%
   include button.html
-  type="email"
-  text="asu@scripps.edu"
-  link="asu@scripps.edu"
+  icon="fa-solid fa-mail"
+  text="tamer@skku dot edu"
+  link="mailto:tamer@skku.edu"
 %}
-<!--
 {%
   include button.html
-  type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
+  icon="fa-solid fa-phone"
+  text="(031) 290-7968"
+  link="tel:+82-031-290-7968"
 %}
--->
+
+---
+
+## 📍 Location
+
+Our lab is located on the **5th Floor** of the **Engineering Building 2**, **Room 27501**.  
+For meetings or consultations, visit the professor’s office on the **4th Floor** of the **Research & Business Center**, **Room 85489**.
+
+<div style="margin: 2em 0; text-align: center;">
+  <iframe 
+    width="100%" 
+    height="500" 
+    frameborder="0" 
+    style="border:0; border-radius: 10px;" 
+    src="https://maps.google.com/maps?q=Hwasan-ro,%20Yulcheon-dong,%20Jangan-gu,%20Suwon-si,%20Gyeonggi-do+(Infolab)&t=&z=16&ie=UTF8&iwloc=B&output=embed" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+> Come visit us and explore world-class research in **biomedical** and **information security**!
+
+---
+
+## 🗺️ Campus Map
+
+Explore the **Sungkyunkwan University (SKKU)** campus with the official interactive map. Click the button below for a detailed view of campus buildings and facilities:
 {%
   include button.html
-  type="address"
-  tooltip="Our location on Google Maps for easy navigation"
-  link="https://maps.app.goo.gl/ezXbwnAmZ3QSPHW3A"
+  icon="fa-solid fa-map"
+  text="View Campus Map"
+  link="https://www.skku.edu/eng/About/campusinfo/CampusMap.do?campusCd=2&srSearchValue="
 %}
-
-{%
-  include button.html
-  type="directions"
-  tooltip="Directions for visitors"
-  link="/contact/directions"
-%}
-{% include section.html %}
-
-{% capture col1 %}
-
-{%
-  include figure.html
-  image="images/scripps_skaggs.jpg"
-%}
-
-{% endcapture %}
-
-{% capture col2 %}
-
-{%
-  include figure.html
-  image="images/1600w_la_jolla_campus_09.jpg"
-%}
-
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
-
-{% capture col3 %}
-
-{%
-  include figure.html
-  image="images/1000014768.jpg"
-%}
-
-{% endcapture %}
-
-{% capture col4 %}
-
-{%
-  include figure.html
-  image="images/scripps_aerial.jpg"
-%}
-
-{% endcapture %}
-
-
-{% include cols.html col1=col3 col2=col4 %}

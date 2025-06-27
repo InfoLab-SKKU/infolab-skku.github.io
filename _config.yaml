@@ -1,5 +1,5 @@
 # site properties and page defaults
-title: InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.
+title: InfoLab.
 subtitle: 
 description: 
 logo-text: false
@@ -9,11 +9,11 @@ proofer: false
 
 # site social media and other links
 links:
-  email: contact@InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab..com
-  orcid: 0000-0002-9859-4104
-  google-scholar: xPGhKkoAAAAJ
-  github: InfoLab-SKKUDESCRIPTION=An engaging 1-3 sentence description of your lab.
-
+  email: tamer@skku.edu
+  orcid: 0000-0001-9232-4843
+  google-scholar: pLC4l6YAAAAJ
+  github: InfoLab-SKKU
+  researchgate: SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed
 ### jekyll settings
 
 # front matter defaults

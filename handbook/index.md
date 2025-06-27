@@ -10,7 +10,6 @@ This section is openly readable, but it is geared toward current and future lab 
 
 ## Lab policies
 * [Group meetings](/handbook/groupmeetings)
-* [Progress meetings](/handbook/progress-meetings)
 * [Slack](/handbook/slack)
 * [Holiday and vacation policy](/handbook/holiday-and-vacation)
 * [Travel and reimbursements policy](/handbook/travel-and-reimbursements)

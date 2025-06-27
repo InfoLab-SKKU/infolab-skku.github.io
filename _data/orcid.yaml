@@ -1,30 +1,15 @@
-- orcid: 0000-0002-7792-0150
-  mike-mayers-list: true
-- orcid: 0000-0002-7899-1604
-  roger-tu-list: true
-- orcid: 0000-0001-6992-8390
-  marco-cano-list: true
-- orcid: 0000-0001-7627-2086
-  jackson-callaghan-list: true
-- orcid: 0000-0003-2975-882X
-  colleen-xu-list: true
-- orcid: 0000-0001-9536-9115
-  ginger-tsueng-list: true
-- orcid: 0000-0001-9615-7157
-  carolina-gonzalez-cavazos-list: true
-- orcid: 0000-0003-1718-6676
-  laura-hughes-list: true
-- orcid: 0000-0001-6334-452X
-  sabah-ul-hasan-list: true
-- orcid: 0000-0002-5027-3440
-  karthik-gangavarapu-list: true
-- orcid: 0000-0002-2543-8936
-  chrissy-aceves-list: true
-- orcid: 0000-0002-7606-4014
-  lucy-zhang-list: true
-- orcid: 0000-0002-2629-6124
-  chunlei-wu-list: true
+# This file contains the ORCID IDs of the authors and contributors to the project.
+# The ORCID IDs are used to generate citations and acknowledgments in the project.
+- orcid: 0009-0002-4648-9289
+  abdenour-soubih-list: true
 
-## Keep Andrew last in this list so 'orcid' gets correctly added to citations.yaml
-- orcid: 0000-0002-9859-4104
-  andrew-su-list: true
+- orcid: 0000-0002-0086-8155
+  firuz-jaraev-list: true
+
+- orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+
+
+## Keep Tamer last in this list so 'orcid' gets correctly added to citations.yaml
+- orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true

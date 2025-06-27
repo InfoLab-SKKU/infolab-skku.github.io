@@ -1,0 +1,210 @@
+
+# Add the latest news updates here, such as:
+# - New team members joining
+# - Preprints or publications
+# - Grants and funding announcements
+# - Awards, invited talks and achievements
+# - Major lab accomplishments
+#
+# If there is an external link (e.g., to a journal or news article), add it in the `link` field.
+# Otherwise, leave `link` blank.
+# Please add the new entries on the top although these are sorted by date. 
+- title: Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning
+  date: 2025-04-02
+  description: Our paper was published in IEEE Transactions on Reliability.
+  url:
+
+- title: Towards Robust Federated Learning Investigating Poisoning Attacks Under Clients Data Heterogeneity
+  date: 2025-01-03
+  description: Our paper was published in the 2025 19th International Conference on Ubiquitous Information Management and Communication (IMCOM).
+  url: https://doi.org/g9ck37
+
+- title: Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression Detection and Severity Assessment
+  date: 2024-10-25
+  description: Our paper was published in Diagnostics journal.
+  url: https://doi.org/g9b3cd
+
+- title: Smart Collaborative Intrusion Detection System for Securing Vehicular Networks Using Ensemble Machine Learning Model
+  date: 2024-09-24
+  description: Our paper was published in Information journal.
+  url: https://doi.org/g9cmcf
+
+- title: New team members joining
+  date: 2024-09-01
+  description: New researcher joined our team at InfoLab, Welcome Bobonazar!
+  url:
+
+- title: New team members joining
+  date: 2024-09-01
+  description: New researcher joined our team at InfoLab, Welcome Shatha!
+  url:
+
+- title: Toward Comprehensive Chronic Kidney Disease Prediction Based on Ensemble Deep Learning Models
+  date: 2023-03-20
+  description: Our paper was published in Applied Sciences journal.
+  url: https://doi.org/g9cmcg
+
+- title: A Holistic Approach to Identify and Classify COVID-19 from Chest Radiographs, ECG, and CT-Scan Images Using ShuffleNet Convolutional Neural Network
+  date: 2023-01-03
+  description: Our paper was published in Diagnostics journal.
+  url: https://doi.org/gsv89x
+
+- title: Predicting CTS Diagnosis and Prognosis Based on Machine Learning Techniques
+  date: 2023-01-29
+  description: Our paper was published in Diagnostics journal.
+  url: https://doi.org/g9cmcj
+
+- title: Colon Cancer Diagnosis Based on Machine Learning and Deep Learning Modalities and Analysis Techniques
+  date: 2022-11-28
+  description: Our paper was published in Sensors journal.
+  url: https://doi.org/g9cmcn
+
+- title: AHA-AO Artificial Hummingbird Algorithm with Aquila Optimization for Efficient Feature Selection in Medical Image Classification
+  date: 2022-09-27
+  description: Our paper was published in Applied Sciences journal.
+  url: https://doi.org/g9cmcp
+
+- title: Sentiment Analysis of Users Reactions on Social Media during the Pandemic
+  date: 2022-05-22
+  description: Our paper was published in Electronics journal.
+  url: https://doi.org/g9b3c6
+
+- title: An Extended Semantic Interoperability Model for Distributed Electronic Health Record Based on Fuzzy Ontology Semantics
+  date: 2021-07-19
+  description: Our paper was published in Electronics journal.
+  url: https://doi.org/g9cmcq
+
+- title: New team members joining
+  date: 2024-03-01
+  description: New researcher joined our team at InfoLab, Welcome Abdenour!
+  url:
+
+- title: Hardening Interpretable Deep Learning Systems Investigating Adversarial Threats and Defenses
+  date: 2023-12-02
+  description: Our paper was accepted at IEEE Transactions on Dependable and Secure Computing (TDSC)
+  url:
+
+- title: New team members joining
+  date: 2023-09-01
+  description: New researchers joined our team at InfoLab, Welcome Chensheng 'Chris' and Shweta!
+  url:
+
+- title: Explainable AI for Trustworthy AI
+  date: 2023-04-18
+  description: Our paper on Explainable Artificial Intelligence is available online at Information Fusion Journal (IF:17.56)
+  url:
+
+- title: Early Prediction of Parkinson's Disease
+  date: 2023-03-23
+  description: Our paper on early prediction of Parkinson's disease using multimodal deep learning is available at Computer Methods and Programs in Biomedicine (IF:7.02)
+  url:
+
+- title: New team member joining
+  date: 2023-02-20
+  description: New researcher joined our team at InfoLab, Welcome Amir!
+  url:
+
+- title: Anatomical Structure Segmentation in X-ray
+  date: 2023-01-16
+  description: Our paper on anatomical structure segmentation in chest X-ray images is available at Scientific Reports (Nature)
+  url:
+
+- title: Prediction of Alzheimer's Progression
+  date: 2022-12-05
+  description: Our paper using multimodal deep learning is available at Information Fusion Journal (IF:17.56)
+  url:
+
+- title: New team member joining
+  date: 2022-09-13
+  description: New researcher joined our team at InfoLab, Welcome Haseeb!
+  url:
+
+- title: Bug Bounty Competition at SKKU
+  date: 2022-09-01
+  description: Our lab member Omar got 2nd place in the SKKU Bug Bounty competition
+  url:
+
+- title: MLxPack; Investigating Packers' Effect on Malware Detection
+  date: 2022-03-01
+  description: Our paper was accepted at CySSS workshop, ACM ASIACCS 2022
+  url:
+
+- title: Flow Behavior of Mg Alloy using ML
+  date: 2022-02-27
+  description: Our fourth collaborative paper with Hamad's Lab is published in Mathematics journal
+  url:
+
+- title: Uzbek Researchers Competition
+  date: 2021-12-18
+  description: Firuz Juraev won 1st place in IT section at World Association of Youth of Uzbekistan in Korea
+  url:
+
+- title: Optimizing Adversarial Perturbations
+  date: 2021-12-04
+  description: Our paper at CSoNET 2021 is available online
+  url:
+
+- title: Design of Hard Materials Using ML
+  date: 2021-11-17
+  description: Our third collaborative paper with Hamad's Lab is now online
+  url:
+
+- title: AdvEdge; Adversarial Perturbations for Interpretable DL
+  date: 2021-11-15
+  description: Eldor presented our work at CSoNET 2021, Canada
+  url:
+
+- title: Sepsis Prediction in ICU
+  date: 2021-11-03
+  description: Our paper is published in Neural Computing and Applications Journal
+  url:
+
+- title: Discovering Hard Materials
+  date: 2021-09-28
+  description: Our second paper with Hamad's Lab is now online
+  url:
+
+- title: New team member joining
+  date: 2021-09-01
+  description: New researcher joined our team at InfoLab, Welcome Omar!
+  url:
+
+- title: Alzheimer's Diagnosis Using Semantic Rule-Based Modeling
+  date: 2021-08-24
+  description: Paper available in CMC-Computers, Materials & Continua journal
+  url:
+
+- title: Robust Code Authorship Identification
+  date: 2021-07-19
+  description: Paper published in ACM Transactions on Privacy and Security
+  url:
+
+- title: Android Malware Analysis
+  date: 2021-06-21
+  description: Paper on classification and analysis of Android malware is available online
+  url:
+
+- title: Hybrid Deep Learning for Alzheimer's
+  date: 2020-12-25
+  description: Paper available in Knowledge-Based Systems journal
+  url:
+
+- title: ML-aided Design of Aluminum Alloys
+  date: 2020-11-20
+  description: First collaborative paper with Hamad's Lab is now online
+  url:
+
+- title: New team member joining
+  date: 2021-02-25
+  description: New researcher joined our team at InfoLab, Welcome Sajid!
+  url:
+
+- title: New team members joining
+  date: 2020-09-01
+  description: New researchers joined our team at InfoLab, Welcome Firuz, Junaid, and Nasir!
+  url:
+
+- title: New team members joining
+  date: 2020-02-25
+  description: New researchers joined our team at InfoLab, Welcome Eldor and Sun!
+  url:

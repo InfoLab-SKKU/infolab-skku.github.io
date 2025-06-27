@@ -1,39 +1,48 @@
 ---
 ---
 
-$page: 1000px;
-$padding: 40px;
+@import "palettes";
+@import "theme";
+@import "mixins";
 
-section {
-  padding: $padding max($padding, calc((100% - $page) / 2));
-  transition: background var(--transition), color var(--transition);
-}
-
-section[data-size="wide"] {
-  padding: $padding;
-}
-
-section[data-size="full"] {
-  padding: 0;
-}
-
-section[data-size="full"] > * {
+html,
+body {
   margin: 0;
-  border-radius: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
-section[data-size="full"] img {
-  border-radius: 0;
-}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: $serif;
 
-main > section:last-of-type {
-  flex-grow: 1;
-}
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
 
-main > section:nth-of-type(odd) {
-  background: var(--background);
-}
+  section {
+    box-sizing: content-box;
+    padding: 60px 40px; // fallback
+    padding: 60px Max(40px, calc((100% - #{$page}) / 2));
+    text-align: center;
 
-main > section:nth-of-type(even) {
-  background: var(--background-alt);
+    &[data-full="true"] {
+      padding: 0;
+    }
+  }
+
+  section:nth-of-type(even) {
+    background: $white;
+  }
+
+  section:nth-of-type(even) {
+    background: $gray-50;
+  }
+
+  section:last-of-type {
+    flex-grow: 1;
+  }
 }

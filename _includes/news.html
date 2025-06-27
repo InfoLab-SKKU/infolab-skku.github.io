@@ -1,0 +1,14 @@
+
+<div class="news-card">
+    <div class="news-header">
+        <span class="news-title">{{ include.title }}</span>
+        <span class="news-date">{% include icon.html icon="fa-regular fa-calendar" %} {{ include.date | date: "%B %d, %Y" }} </span>
+    </div>
+    <div class="news-description">
+        {{ include.description }} 
+            {% if include.url %}
+            <a href="{{ include.url }}" target="_blank">More...</a>
+            {% endif %}
+    </div>
+</div>
+

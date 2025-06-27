@@ -5,12 +5,13 @@ title: Join us
 
 # {% include icon.html icon="fa-solid fa-users" %}Join us
 
-Are you passionate about biomedical discovery through the lens of computer science, mathematics, and statistics? Are you a bioinformatics hacker that just manages to get stuff to work? Are you interested in doing highly collaborative science with both experimental and computational colleagues?
+Are you passionate about security, privacy, or machine learning from the perspective of computer science, systems, or applied mathematics? Are you a curious developer or researcher who loves solving real-world problems with data and code? Are you excited to work in a collaborative environment with both academic and industry partners?
 
-If any of those answers is "yes", then we’d love to consider you for a position.  Between new grants and graduating/departing lab members, we are almost always recruiting for **staff scientists**, **postdoctoral researchers**, **developers**, and/or **interns**. Feel free to check out the [Scripps job board](https://www.scripps.edu/careers/) for officially-posted positions, or [contact Andrew](/contact) to discuss current or upcoming opportunities. 
+If any of those answers is "yes", then we’d love to consider you for a position. Between new research projects and graduating lab members, InfoLab at Sungkyunkwan University (SKKU), led by Professor Tamer AbuHmed, is frequently recruiting for **research interns**, **graduate students (MS/PhD)**, **postdoctoral researchers**, and **research developers**. You're welcome to [contact us](/contact) directly to inquire about current or upcoming opportunities.
 
-NOTE: Undergraduates interested in joining as a **graduate student** should apply to Scripps Research’s [Skaggs Graduate School of Chemical and Biological Sciences](https://education.scripps.edu/graduate/doctoral-program/).
+**Note:** Prospective graduate students should apply through SKKU’s official [Graduate School admissions](https://admission-global.skku.edu/eng/index.html). Be sure to mention your interest in InfoLab and Prof. AbuHmed's research in your application.
 
-IMPORTANT NOTE: I am open to inquiries and applications from people having unusual educational or employment backgrounds. But if you don’t explicitly tell me why you are interested in my lab, then your application will be indistinguishable from the many spam applications I receive and therefore will probably not be read or responded to.
+**Important:** We are open to applications from candidates with unconventional academic or professional backgrounds. However, if your message does not clearly explain *why* you're interested in InfoLab, it may be overlooked. Personalized, thoughtful inquiries are strongly encouraged.
+
 
 

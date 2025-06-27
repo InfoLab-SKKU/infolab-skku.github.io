@@ -1,1219 +1,690 @@
-# Date overrides
-
-  - id: pmid:11606367
-    date: 2001-10-15
-
-  - id: pmid:11507037
-    date: 2001-08-15
-
-# Thumbnail/pdf additions
-
-  - id: doi:10.1101/2023.05.01.538993
-    image: 
-      https://www.biorxiv.org/content/biorxiv/early/2023/05/03/2023.05.01.538993/F1.large.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Gonzalez-Cavazos_2023.pdf
-
-  - id: doi:10.1093/bioinformatics/btac205
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9113361/bin/btac205f3.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Mayers_2022.pdf
-
-  - id: doi:10.1186/s12859-019-3297-0
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6907279/bin/12859_2019_3297_Fig3_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Mayers_2019.pdf
-
-  - id: doi:10.1101/729475
-    image: https://www.biorxiv.org/content/biorxiv/early/2019/08/12/729475/F4.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Queralt-Rosinach_2019.pdf
-
-  - id: doi:10.1101/564187
-    image: https://www.biorxiv.org/content/biorxiv/early/2019/02/28/564187/F2.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2019.pdf
-
-  - id: doi:10.1021/acs.jproteome.6b00938
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5441882/bin/nihms857524f2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Mayers_2017.pdf
-
-  - id: doi:10.7554/elife.52614
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7077981/bin/elife-52614-fig1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Waagmeester_2020.pdf
-
-  - id: doi:10.1371/journal.pone.0173375
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5338812/bin/pone.0173375.g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Chen_2017.pdf
-
-  - id: doi:10.3390/ma9030196
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5456652/bin/materials-09-00196-g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Nokes_2016.pdf
-
-  - id: doi:10.1016/j.biomaterials.2013.10.007
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9300448/bin/nihms-1790024-f0003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Chen_2014.pdf
-
-  - id: doi:10.1007/978-1-4939-1047-2_9
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/chp%3A10.1007%2F978-1-4939-1047-2_9/MediaObjects/305869_1_En_9_Fig1_HTML.gif?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Mendoza_2014.pdf
-
-  - id: doi:10.1093/nar/gkad289
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10481249/bin/gkad289figgra1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Avila_2023.pdf
-
-  - id: doi:10.1101/2022.10.10.511492
-    image: 
-      https://www.biorxiv.org/content/biorxiv/early/2022/10/13/2022.10.10.511492/F1.large.jpg?width=800&height=600&carousel=1
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2022.pdf
-
-  - id: doi:10.1101/2022.01.20.477133
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8820656/bin/nihpp-2022.01.20.477133v5-f0001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2022b.pdf
-
-  - id: doi:10.1111/mec.16873
-    image: 
-      https://onlinelibrary.wiley.com/cms/asset/6316eaee-52d0-4b75-9050-e73c4eb66fde/mec16873-fig-0001-m.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Graham_2023.pdf
-
-  - id: doi:10.1093/bioinformatics/btad570
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11015316/bin/btad570f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Callaghan_2023.pdf
-
-  - id: doi:10.1017/cts.2023.619
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10603356/bin/S2059866123006192_fig2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Fecho_2023.pdf
-
-  - id: doi:10.1186/s12859-023-05258-4
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10116472/bin/12859_2023_5258_Fig1_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Cano_2023.pdf
-
-  - id: doi:10.37044/osf.io/3b9gp
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2023.pdf
-
-  - id: doi:10.1038/s41597-023-01969-8
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Hughes_2023.pdf
-
-  - id: doi:10.1101/2022.01.27.22269965
-    image: 
-      https://www.medrxiv.org/content/medrxiv/early/2022/06/02/2022.01.27.22269965/F2.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Gangavarapu_2022.pdf
-
-  - id: doi:10.1016/j.gene.2022.146534
-    image: https://ars.els-cdn.com/content/image/1-s2.0-S0378111922003535-gr1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Wijnen_2022.pdf
-
-  - id: doi:10.1101/2021.10.18.464256
-    image: 
-      https://www.biorxiv.org/content/biorxiv/early/2021/10/19/2021.10.18.464256/F1.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Lelong_2021.pdf
-
-  - id: doi:10.1101/799684
-    image: https://www.biorxiv.org/content/biorxiv/early/2020/02/11/799684/F1.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Waagmeester_2019.pdf
-
-  - id: doi:10.1093/bioinformatics/btz678
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8104067/bin/bioinformatics_36_4_1226_f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2019b.pdf
-
-  - id: doi:10.15346/hc.v6i1.4
-    image: images/csslr.png
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2019c.pdf
-
-  - id: doi:10.1186/s12859-018-2041-5
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5796402/bin/12859_2018_2041_Fig3_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Xin_2018.pdf
-
-  - id: doi:10.1101/156141
-    image: https://www.biorxiv.org/content/biorxiv/early/2017/07/10/156141/F1.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Good_2017.pdf
-
-  - id: doi:10.1093/nar/gkv1104
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4702805/bin/gkv1104fig1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Wu_2015.pdf
-
-  - id: doi:10.1101/038083
-    image: https://www.biorxiv.org/content/biorxiv/early/2016/06/13/038083/F1.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2016.pdf
-
-  - id: doi:10.1016/j.gene.2016.04.053
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5944608/bin/nihms965367f2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2016b.pdf
-
-  - id: doi:10.1186/s13059-016-0953-9
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4858870/bin/13059_2016_953_Fig1_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Xin_2016.pdf
-
-  - id: doi:10.1101/035667
-    image: https://www.biorxiv.org/content/biorxiv/early/2015/12/30/035667/F1.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Xin_2015.pdf
-
-  - id: doi:10.1371/journal.ppat.1004045
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3983045/bin/ppat.1004045.g014.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Robinson_2014.pdf
-
-  - id: doi:10.4161/auto.19781
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3427259/bin/auto-8-938-g2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tabor-Godwin_2012.pdf
-
-  - id: doi:10.1128/JVI.02261-10
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3126326/bin/zjv9990946270008.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2011.pdf
-
-  - id: doi:10.1016/j.virol.2010.12.014
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3060663/bin/gr5_lrg.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Rhoades_2011.pdf
-
-  - id: doi:10.1007/s00253-009-2424-7
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00253-009-2424-7/MediaObjects/253_2009_2424_Fig1_HTML.gif?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2010.pdf
-
-  - id: doi:10.1021/np800578e
-    image: 
-      https://pubs.acs.org/cms/10.1021/np800578e/asset/images/medium/np-2008-00578e_0001.gif
-    buttons:
-      - type: pdf
-        link: pdf/Manam_2009.pdf
-
-  - id: doi:10.1038/ja.2009.7
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fja.2009.7/MediaObjects/41429_2009_Article_BFja20097_Fig1_HTML.gif?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2009.pdf
-
-  - id: doi:10.1007/s00253-008-1357-x
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00253-008-1357-x/MediaObjects/253_2008_1357_Fig1_HTML.jpg?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2008.pdf
-
-  - id: doi:10.1007/s00253-008-1358-9
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00253-008-1358-9/MediaObjects/253_2008_1358_Fig1_HTML.gif?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2008b.pdf
-
-  - id: doi:10.1007/s00253-008-1614-z
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00253-008-1614-z/MediaObjects/253_2008_1614_Fig4_HTML.gif?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2008c.pdf
-
-  - id: doi:10.1021/np800286d
-    image: 
-      https://pubs.acs.org/cms/10.1021/np800286d/asset/images/medium/np-2008-00286d_0002.gif
-    buttons:
-      - type: pdf
-        link: pdf/McArthur_2008.pdf
-
-  - id: doi:10.1007/s10295-008-0344-7
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Sunga_2008.pdf
-
-  - id: doi:10.1038/ja.2007.2
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Lam_2007.pdf
-
-  - id: doi:10.1038/ja.2007.61
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2007.pdf
-
-  - id: doi:10.1007/s00253-007-0899-7
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs00253-007-0899-7/MediaObjects/253_2007_899_Fig3_HTML.gif?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2007b.pdf
-
-  - id: doi:10.1038/s41597-023-02534-z
-    image: 
-      https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41597-023-02534-z/MediaObjects/41597_2023_2534_Fig1_HTML.png
-    buttons:
-      - type: pdf
-        link: pdf/Gonzalez-Cavazos_2023b.pdf
-
-  - id: doi:10.1101/2023.05.12.540594
-    image: 
-      https://www.biorxiv.org/content/biorxiv/early/2023/12/20/2023.05.12.540594/F1.large.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tu_2023.pdf
-
-  - id: doi:10.21203/rs.3.rs-1723808/v1
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Hughes_2022.pdf
-
-  - id: doi:10.21203/rs.3.rs-1723829/v1
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9258294/bin/nihpp-rs1723829v1-f0003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Hughes_2022b.pdf
-
-  - id: doi:10.1101/2021.09.02.458726
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9176648/bin/nihpp-2021.09.02.458726v2-f0002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Cano_2021.pdf
-
-  - id: doi:10.1093/nargab/lqac017
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8900154/bin/lqac017fig1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Summers_2022.pdf
-
-  - id: doi:10.37044/osf.io/8qdse
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Castro_2020.pdf
-
-  - id: doi:10.1093/database/baz041
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6463448/bin/baz041f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Putman_2019.pdf
-
-  - id: doi:10.1093/database/baz091
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Putman_2019b.pdf
-
-  - id: doi:10.1371/journal.pgen.1006997
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5626511/bin/pgen.1006997.g003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Clark_2017.pdf
-
-  - id: doi:10.1101/121178
-    image: https://www.biorxiv.org/content/biorxiv/early/2017/03/29/121178/F1.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Gopal_2017.pdf
-
-  - id: doi:10.4049/jimmunol.2300769
-    image: images/m_ji2300769f2.png
-    buttons:
-      - type: pdf
-        link: pdf/Costanzo_2024.pdf
-
-  - id: doi:10.1186/s13195-023-01255-0
-    image: 
-      https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs13195-023-01255-0/MediaObjects/13195_2023_1255_Fig3_HTML.png?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Hu_2023.pdf
-
-  - id: doi:10.1038/s41597-023-01968-9
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9950378/bin/41597_2023_1968_Fig1_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2023b.pdf
-
-  - id: doi:10.1038/s41592-023-01770-w
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8820656/bin/nihpp-2022.01.20.477133v5-f0004.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2023c.pdf
-
-  - id: doi:10.1038/s41592-023-01769-3
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10399614/bin/nihms-1918406-f0001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Gangavarapu_2023.pdf
-
-  - id: doi:10.1111/cts.13302
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9372416/bin/CTS-15-1848-g002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Unni_2022.pdf
-
-  - id: doi:10.1111/cts.13301
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9372428/bin/CTS-15-1838-g002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Fecho_2022.pdf
-
-  - id: doi:10.1093/bioinformatics/btac017
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8963279/bin/btac017f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Lelong_2022.pdf
-
-  - id: doi:10.1016/j.mcpro.2022.100197
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8941213/bin/gr1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Thuy-Boun_2022.pdf
-
-  - id: doi:10.1186/s12915-020-00940-y
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7820539/bin/12915_2020_940_Fig1_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Waagmeester_2021.pdf
-
-  - id: doi:10.3390/genes11111384
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7700366/bin/genes-11-01384-g002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Wang_2020.pdf
-
-  - id: doi:10.1126/scitranslmed.aan7967
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7955769/bin/nihms-1659893-f0003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Lee_2020.pdf
-
-  - id: doi:10.1038/s41586-020-2577-1
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7603405/bin/nihms-1613359-f0001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Riva_2020.pdf
-
-  - id: doi:10.3389/fgene.2019.01355
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7034361/bin/fgene-10-01355-g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Summers_2020.pdf
-
-  - id: doi:10.1093/database/baaa015
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7153956/bin/baaa015f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Queralt-Rosinach_2020.pdf
-
-  - id: doi:10.1371/journal.pone.0222165
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6764653/bin/pone.0222165.g002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Blasco_2019.pdf
-
-  - id: doi:10.1126/sciimmunol.aaw6329
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6816460/bin/nihms-1055478-f0001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Gioia_2019.pdf
-
-  - id: doi:10.1016/j.cell.2019.02.018
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6616370/bin/nihms-1521746-f0002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Murillo_2019.pdf
-
-  - id: doi:10.1016/j.molimm.2019.01.011
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Sharma_2019.pdf
-
-  - id: doi:10.1101/444497
-    image: https://www.biorxiv.org/content/biorxiv/early/2018/10/16/444497/F1.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Gioia_2018.pdf
-
-  - id: doi:10.1038/s41746-018-0052-2
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6550256/bin/41746_2018_52_Fig2_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Radin_2018.pdf
-
-  - id: doi:10.1101/367599
-    image: https://www.biorxiv.org/content/biorxiv/early/2018/07/11/367599/F5.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Wang_2018.pdf
-
-  - id: doi:10.1126/scitranslmed.aan0746
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6204214/bin/nihms-992825-f0008.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Matsuzaki_2018.pdf
-
-  - id: doi:10.1186/s12864-018-4718-6
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5941560/bin/12864_2018_4718_Fig1_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Gioia_2018b.pdf
-
-  - id: doi:10.1371/journal.pbio.2002846
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/biocuration_2018.pdf
-
-  - id: doi:10.1016/j.cell.2018.02.047
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5889333/bin/nihms946013f6.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Ma_2018.pdf
-
-  - id: doi:10.1074/jbc.RA118.003192
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6120211/bin/zbc0361892560007.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Hutt_2018.pdf
-
-  - id: doi:10.1016/j.jsb.2018.02.006
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6086358/bin/nihms-976652-f0004.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Bruggemann_2018.pdf
-
-  - id: doi:10.1007/978-1-4939-7514-3_14
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Holt_2017.pdf
-
-  - id: doi:10.1016/j.joca.2018.07.012
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6245598/bin/nihms-992829-f0003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Fisch_2018.pdf
-
-  - id: doi:10.1002/pmic.201700391
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5921860/bin/nihms959173f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Moon_2018.pdf
-
-  - id: doi:10.1073/pnas.1810137115
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6196526/bin/pnas.1810137115fig02.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Janes_2018.pdf
-
-  - id: doi:10.1016/j.molimm.2018.09.020
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6258053/bin/nihms-996555-f0003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Sharma_2018.pdf
-
-  - id: doi:10.1038/ng.3774
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5367263/bin/nihms851295f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Griffith_2017.pdf
-
-  - id: doi:10.1093/database/bax025
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5467579/bin/bax025f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Putman_2017.pdf
-
-  - id: doi:10.1126/science.aao0462
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Shafee_2017.pdf
-
-  - id: doi:10.5334/cstp.56
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6226017/bin/nihms-992547-f0001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Tsueng_2016c.pdf
-
-  - id: doi:10.1021/acs.jproteome.6b00095
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5120959/bin/nihms-827833-f0002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Lam_2016.pdf
-
-  - id: doi:10.1016/j.joca.2016.11.007
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5438901/bin/nihms853698f4.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Akagi_2017.pdf
-
-  - id: doi:10.1016/j.joca.2016.04.015
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4992644/bin/nihms791169f6.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Alvarez-Garcia_2016.pdf
-
-  - id: doi:10.1186/s12864-016-2855-3
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4986259/bin/12864_2016_2855_Fig1_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Chatterjee_2016.pdf
-
-  - id: doi:10.1002/art.39643
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4963260/bin/nihms761062f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Alvarez‐Garcia_2016.pdf
-
-  - id: doi:10.1093/bioinformatics/btw117
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4920125/bin/btw117f1p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Gangavarapu_2016.pdf
-
-  - id: doi:10.1111/ajt.13728
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5501990/bin/nihms870079f3.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Modena_2016.pdf
-
-  - id: doi:10.1073/pnas.1606297113
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4941496/bin/pnas.1606297113fig01.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Kleiman_2016.pdf
-
-  - id: doi:10.1093/database/baw051
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4834205/bin/baw051f7p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Li_2016.pdf
-
-  - id: doi:10.1093/database/baw028
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4822648/bin/baw028f1p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Putman_2016.pdf
-
-  - id: doi:10.1093/database/baw094
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4908671/bin/baw094f1p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Bravo_2016.pdf
-
-  - id: doi:10.1186/s13326-016-0061-5
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4830068/bin/13326_2016_61_Fig1_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Cheung_2016.pdf
-
-  - id: doi:10.1371/journal.pone.0149621
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4769089/bin/pone.0149621.g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Hettne_2016.pdf
-
-  - id: doi:10.1093/database/baw015
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4795929/bin/baw015f1p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Burgstaller-Muehlbacher_2016.pdf
-
-  - id: doi:10.1016/j.jacc.2015.04.072
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Lam_2015.pdf
-
-  - id: doi:10.1093/bioinformatics/btv061
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4443682/bin/btv061f1p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Fisch_2015.pdf
-
-  - id: doi:10.1126/scitranslmed.3009986
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5018401/bin/nihms814673f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Wieskopf_2015.pdf
-
-  - id: doi:10.1093/bib/bbv021
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4719068/bin/bbv021f1p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Khare_2015.pdf
-
-  - id: doi:10.1161/CIRCRESAHA.115.306013
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4721634/bin/nihms664252f2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Scruggs_2015.pdf
-
-  - id: doi:10.3402/jev.v4.27497
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4553261/bin/JEV-4-27497-g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Subramanian_2015.pdf
-
-  - id: doi:10.1186/s12920-015-0095-z
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4494802/bin/12920_2015_95_Fig1_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Meißner_2015.pdf
-
-  - id: doi:10.1142/9789814644730_0026
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/LEAMAN_2014.pdf
-
-  - id: doi:10.1142/9789814644730_0028
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Good_2014.pdf
-
-  - id: doi:10.1016/j.molcel.2014.09.006
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4224670/bin/nihms626748f4.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Wei_2014.pdf
-
-  - id: doi:10.1101/009332
-    image: https://www.biorxiv.org/content/biorxiv/early/2014/09/17/009332/F1.medium.gif
-    buttons:
-      - type: pdf
-        link: pdf/Wu_2014.pdf
-
-  - id: doi:10.3389/fcimb.2014.00108
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4132376/bin/fcimb-04-00108-g0005.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Peterson_2014.pdf
-
-  - id: doi:10.1186/s13059-014-0438-7
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4281950/bin/13059_2014_438_Fig2_HTML.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Good_2014a.pdf
-
-  - id: doi:10.2196/games.3350
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4307816/bin/games_v2i2e7_fig1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Good_2014b.pdf
-
-  - id: doi:10.1016/j.gene.2013.08.093
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Su_2013.pdf
-
-  - id: doi:10.4049/jimmunol.1301279
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3778908/bin/nihms509554f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Choi_2013.pdf
-
-  - id: doi:10.1073/pnas.1304048110
-    image: 
-      https://www.pnas.org/cms/10.1073/pnas.1304048110/asset/acdfc533-3d1b-4ac1-b950-5785d2556400/assets/graphic/pnas.1304048110fig01.jpeg
-    buttons:
-      - type: pdf
-        link: pdf/Gopalakrishnan_2013.pdf
-
-  - id: doi:10.1186/2041-1480-4-S1-S4
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3633003/bin/2041-1480-4-S1-S4-2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Clarke_2013.pdf
-
-  - id: doi:10.1093/nar/gks1114
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3531157/bin/gks1114f1p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Wu_2012.pdf
-
-  - id: doi:10.1093/bioinformatics/btt333
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3722523/bin/btt333f1p.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Good_2013.pdf
-
-  - id: doi:10.1371/journal.pone.0071171
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3737187/bin/pone.0071171.g003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Loguercio_2013.pdf
-
-  - id: doi:10.1371/journal.pone.0072511
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3757023/bin/pone.0072511.g002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Chou_2013.pdf
-
-  - id: doi:10.1016/j.celrep.2013.03.024
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3754422/bin/nihms459775f3.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Shoulders_2013.pdf
-
-  - id: doi:10.1371/journal.pcbi.1003244
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Masum_2013.pdf
-
-  - id: doi:10.1002/art.37760
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3558601/bin/nihms417098f2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Grogan_2013.pdf
-
-  - id: doi:10.1186/1741-7007-10-90
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3814290/bin/1741-7007-10-90-1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Freeman_2012.pdf
-
-  - id: doi:10.1007/s00335-012-9408-0
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3469763/bin/nihms397506f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Ringwald_2012.pdf
-
-  - id: doi:10.1093/database/bar060
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3308151/bin/bar060f1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Good_2012.pdf
-
-  - id: doi:10.1016/j.chembiol.2012.07.005
-    image: https://ars.els-cdn.com/content/image/1-s2.0-S1074552112002281-gr2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Miller_2012.pdf
-
-  - id: doi:10.1186/2041-1480-3-S1-S6
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3337266/bin/2041-1480-3-S1-S6-1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Good_2012b.pdf
-
-  - id: doi:10.1093/nar/gkr925
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245148/bin/gkr925f2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Good_2011.pdf
-
-  - id: doi:10.1002/bies.201200033
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5715466/bin/nihms909913f2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Liu_2012.pdf
-
-  - id: doi:10.1109/HISB.2012.70
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Good_2012c.pdf
-
-  - id: doi:10.1371/journal.pone.0025807
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3189939/bin/pone.0025807.g005.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Hu_2011.pdf
-
-  - id: doi:10.1186/gb-2011-12-12-135
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Good_2011b.pdf
-
-  - id: doi:10.1186/1471-2164-12-603
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3271090/bin/1471-2164-12-603-7.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Good_2011c.pdf
-
-  - id: doi:10.1109/TCBB.2010.34
-    image: images/tclust.png
-    buttons:
-      - type: pdf
-        link: pdf/Dost_2011.pdf
-
-  - id: doi:10.1186/1752-0509-4-29
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2856555/bin/1752-0509-4-29-1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Lee_2010.pdf
-
-  - id: doi:10.1371/journal.pone.0013920
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2978079/bin/pone.0013920.g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Loguercio_2010.pdf
-
-  - id: doi:10.1371/journal.pone.0014458
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3012073/bin/pone.0014458.g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Miller_2010.pdf
-
-  - id: doi:10.1073/pnas.0914019107
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2840467/bin/pnas.0914019107fig01.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Gonzalez_2010.pdf
-
-  - id: doi:10.1016/j.cell.2009.08.031
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2777987/bin/nihms144235f6.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Zhang_2009.pdf
-
-  - id: doi:10.1371/journal.pone.0004649
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2650792/bin/pone.0004649.g004.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Williams_2009.pdf
-
-  - id: doi:10.1186/gb-2009-10-11-r130
-    image: 
-      https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3091323/bin/gb-2009-10-11-r130-1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Wu_2009.pdf
-
-  - id: doi:10.1359/jbmr.081258
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Tang_2009.pdf
-
-  - id: doi:10.1093/nar/gkp760
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2808918/bin/gkp760f4.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Huss_2009.pdf
-
-  - id: doi:10.1186/1472-6769-9-2
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2651120/bin/1472-6769-9-2-1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Pezacki_2009.pdf
-
-  - id: doi:10.1371/journal.pbio.0060175
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2443188/bin/pbio.0060175.g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Huss_2008.pdf
-
-# The paper below has a weird doi (see doi.org/10.1186/1745-7580-4-5) so overriding link
-  - id: doi:10.1186/1745-7580-4-5
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2394514/bin/1745-7580-4-5-3.jpg
-    link: https://immunome-research.biomedcentral.com/articles/10.1186/1745-7580-4-5
-    buttons:
-      - type: pdf
-        link: pdf/Lattin_2008.pdf
-
-  - id: doi:10.1371/journal.pgen.1000070
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2394514/bin/1745-7580-4-5-3.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Wu_2008.pdf
-
-  - id: doi:10.1371/journal.pgen.1000232
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2563687/bin/pgen.1000232.g001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Breitling_2008.pdf
-
-  - id: doi:10.1534/genetics.106.066241
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1893038/bin/GEN1761675f2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/McClurg_2007.pdf
-
-  - id: doi:10.1186/gb-2007-8-4-404
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1895997/bin/gb-2007-8-4-404-1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Su_2007.pdf
-
-  - id: doi:10.1073/pnas.0511292103
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1413928/bin/zpq0070612810004.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Melnick_2006.pdf
-
-  - id: doi:10.1186/1471-2105-7-61
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1409800/bin/1471-2105-7-61-1.jpg
-    buttons:
-      - type: pdf
-        link: pdf/McClurg_2006.pdf
-
-  - id: doi:10.1038/ng0806-856
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fng0806-856/MediaObjects/41588_2006_Article_BFng0806856_Fig1_HTML.gif?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Chesler_2006.pdf
-
-  - id: doi:10.1139/o05-149
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Sagan_2006.pdf
-
-  - id: doi:10.1002/chem.200600307
-    image: 
-      https://chemistry-europe.onlinelibrary.wiley.com/cms/asset/be8aef24-8085-492b-94ab-6252dc78282f/mfig001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Lee_2006.pdf
-
-  - id: doi:10.1093/molbev/msi206
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Yang_2005.pdf
-
-  - id: doi:10.1073/pnas.0409459102
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC548308/bin/zpq0060572350001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Zhong_2005.pdf
-
-  - id: doi:10.1021/jm049032d
-    image: 
-      https://pubs.acs.org/cms/10.1021/jm049032d/asset/images/medium/jm049032df00003.gif
-    buttons:
-      - type: pdf
-        link: pdf/Wilkens_2005.pdf
-
-  - id: doi:10.1091/mbc.E05-01-0062
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1182321/bin/zmk0080572610001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Gurkan_2005.pdf
-
-  - id: doi:10.1038/ng1497
-    image: 
-      https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fng1497/MediaObjects/41588_2005_Article_BFng1497_Fig4_HTML.jpg?as=webp
-    buttons:
-      - type: pdf
-        link: pdf/Bystrykh_2005.pdf
-
-  - id: doi:10.1073/pnas.0400782101
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC395923/bin/zpq0170445980001.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Su_2004.pdf
-
-  - id: doi:10.1101/gr.2161804
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Walker_2004.pdf
-
-  - id: doi:10.1371/journal.pbio.0020393
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Pletcher_2004.pdf
-
-  - id: doi:10.1016/S1097-2765(03)00199-0
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Conkright_2003.pdf
-
-  - id: doi:10.1016/S1097-2765(03)00134-5
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC383321/bin/74731-34f2_4t.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Conkright_2003b.pdf
-
-  - id: doi:10.1016/S0002-9440(10)64408-2
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1867312/bin/jh1023353004.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Frierson_2002.pdf
-
-  - id: doi:10.1016/S0092-8674(02)00722-5
-    image: https://ars.els-cdn.com/content/image/1-s2.0-S0092867402007225-gr4.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Panda_2002.pdf
-
-  - id: doi:10.1073/pnas.122359899
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC123230/bin/pq1623598002.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Su_2002.pdf
-
-  - id: doi:10.1073/pnas.202608199
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC137774/bin/pq2426081003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Su_2002b.pdf
-
-  - id: doi:10.1016/S1074-5521(02)00174-6
-    image: https://ars.els-cdn.com/content/image/1-s2.0-S1074552102001746-gr4.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Supekova_2002.pdf
-
-  - id: doi:10.1073/pnas.012025199
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC123671/bin/pq0520251005.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Su_2002c.pdf
-
-  - id: pmid:11606367
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Su_2001.pdf
-
-  - id: pmid:11507037
-    image: 
-    buttons:
-      - type: pdf
-        link: pdf/Welsh_2001.pdf
-
-  - id: doi:10.1016/S0092-8674(01)00467-6
-    image: https://ars.els-cdn.com/content/image/1-s2.0-S0092867401004676-gr2.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Hogenesch_2001.pdf
-
-  - id: doi:10.1073/pnas.041452598
-    image: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC30139/bin/pq0414525006.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Ratnaswamy_2001.pdf
-
-  - id: doi:10.1002/1097-0134(20010201)42:2<279::AID-PROT150>3.0.CO;2-U
-    image: 
-      https://onlinelibrary.wiley.com/cms/asset/fe6a32f8-72c2-41e4-9df8-99107acf8996/mfig003.jpg
-    buttons:
-      - type: pdf
-        link: pdf/Su_2000.pdf
-
-  - id: doi:10.1021/jm010451+
-    image: 
-      https://pubs.acs.org/cms/10.1021/jm010451+/asset/images/medium/jm0104511f00004.gif
-    buttons:
-      - type: pdf
-        link: pdf/Chang_2001.pdf
-
-
-# Article removals
-#
-# remove correction for A protocol for adding knowledge to Wikidata: aligning resources on human coronaviruses
-  - id: doi:10.1186/s12915-023-01764-2
-    remove: true
-
-# remove dizeez correction
-  - id: doi:10.1371/annotation/efa93b55-c8f0-4943-b922-a585d68f0bd0
-    remove: true
-
-# remove Corrigendum to “Using single cell analysis for translational studies in immune mediated diseases: Opportunities and challenges” [Mol. Immunol. 103 (2018) 191–199]
-  - id: doi:10.1016/j.molimm.2019.01.011
-    remove: true
-      
-# remove correction to chlambase ms
-  - id: doi:10.1093/database/baz091
-    remove: true
+- id: doi:10.1109/imcom64595.2025.10857574
+  image: 'images/thumbnails/Screenshot from 2025-04-10 04-21-10.png'
+  buttons:
+  - type: pdf
+    link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity (1).pdf
+- id: doi:10.1109/TR.2025.3551717
+  image: 'images/thumbnails/Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning.png'
+  buttons:
+  - type: pdf
+    link: pdf/Stealthy_Query-Efficient_Opaque_Attack_Against_Interpretable_Deep_Learning.pdf
+- id: doi:10.57197/JDR-2024-0101
+  image: 'images/thumbnails/Responsible Artificial Intelligence for Mental Health Disorders: Current Applications and Future Challenges.png'
+  buttons:
+  - type: pdf
+    link: pdf/resposible_artificial_intiligence.pdf
+- id: doi:10.1109/ACCESS.2025.3547573
+  image: 'images/thumbnails/FiSC: A Novel Approach for Fitzpatrick Scale-Based Skin Analyzer’s Image Classification.png'
+  buttons:
+  - type: pdf
+    link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification (1).pdf
+- id: doi:10.3390/diagnostics14212385
+  image: 'images/thumbnails/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression Detection and Severity Assessment.png'
+  buttons:
+  - type: pdf
+    link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression Detection and Severity Assessment.pdf
+- id: doi:10.1109/TDSC.2023.3341090
+  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating Adversarial Threats and Defenses.png'
+  buttons:
+  - type: pdf
+    link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
+- id: doi:10.3390/app13063937
+  image: 'https://www.mdpi.com/applsci/applsci-13-03937/article_deploy/html/images/applsci-13-03937-g002.png'
+  buttons:
+  - type: pdf
+    link: pdf/app13063937.pdf
+- id: doi:10.1016/j.cmpb.2024.108348
+  image: 'images/thumbnails/Alzheimers disease diagnosis in the metaverse.jpg'
+  buttons:
+  - type: pdf
+    link: pdf/Alzheimers disease diagnosis in the metaverse.pdf
+- id: doi:10.3390/info15100583
+  image: 'images/thumbnails/Smart Collaborative Intrusion Detection System for Securing Vehicular Networks Using Ensemble Machine Learning Model.webp'
+  buttons:
+  - type: pdf
+    link: pdf/Smart Collaborative Intrusion Detection System for Securing Vehicular Networks Using Ensemble Machine Learning Model.pdf
+- id: doi:10.1109/TDSC.2023.3341090
+  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating Adversarial Threats and Defenses.png'
+  buttons:
+  - type: pdf
+    link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
+- id: doi:10.1109/TIFS.2024.3407652
+  image: 'images/thumbnails/SingleADV: Single-Class Target-Specific Attack Against Interpretable Deep Learning Systems.png'
+  buttons:
+  - type: pdf
+    link: pdf/SingleADV_Single-Class_Target-Specific_Attack_Against_Interpretable_Deep_Learning_Systems.pdf
+- id: doi:10.3390/diagnostics13010162
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/diagnostics13010162.pdf
+- id: doi:10.3390/diagnostics13030492
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/diagnostics13030492.pdf
+- id: doi:10.3390/s22239250
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s22239250.pdf
+- id: doi:10.3390/app12199710
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/app12199710.pdf
+- id: doi:10.3390/electronics11101648
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics11101648.pdf
+- id: doi:10.3390/electronics10141733
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics10141733.pdf
+- id: doi:10.1016/j.knosys.2020.106688
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_knosys_2020_106688.pdf
+- id: doi:10.32604/cmc.2021.014446
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/cmc_2021_014446.pdf
+- id: doi:10.3390/app10217673
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/app10217673.pdf
+- id: doi:10.3390/math8111863
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/math8111863.pdf
+- id: doi:10.3390/electronics9091443
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics9091443.pdf
+- id: doi:10.3390/electronics9091439
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics9091439.pdf
+- id: doi:10.22266/ijies2020.0630.26
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ijies2020_0630_26.pdf
+- id: doi:10.1109/tnse.2018.2877646
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/tnse_2018_2877646.pdf
+- id: doi:10.1186/s12911-019-0806-z
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12911-019-0806-z.pdf
+- id: doi:10.3390/electronics8060635
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics8060635.pdf
+- id: doi:10.3390/s19020234
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s19020234.pdf
+- id: doi:10.1186/s13326-018-0176-y
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s13326-018-0176-y.pdf
+- id: doi:10.1186/s12911-018-0651-5
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12911-018-0651-5.pdf
+- id: doi:10.1038/s41598-023-42796-6
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41598-023-42796-6.pdf
+- id: doi:10.3390/app13169425
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/app13169425.pdf
+- id: doi:10.20944/preprints202307.0585.v1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/preprints202307_0585_v1.pdf
+- id: doi:10.3390/f14071325
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/f14071325.pdf
+- id: doi:10.1371/journal.pone.0285455
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0285455.pdf
+- id: doi:10.1038/s41598-023-27815-w
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41598-023-27815-w.pdf
+- id: doi:10.3390/su142315681
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/su142315681.pdf
+- id: doi:10.3390/math10050766
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/math10050766.pdf
+- id: doi:10.3390/math10030351
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/math10030351.pdf
+- id: doi:10.3390/electronics10161956
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics10161956.pdf
+- id: doi:10.3390/e22080841
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/e22080841.pdf
+- id: doi:10.1101/2023.05.01.538993
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2023_05_01_538993.pdf
+- id: doi:10.1186/s12859-019-3297-0
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12859-019-3297-0.pdf
+- id: doi:10.1101/564187
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/564187.pdf
+- id: doi:10.1021/acs.jproteome.6b00938
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/acs_jproteome_6b00938.pdf
+- id: doi:10.1371/journal.pone.0173375
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0173375.pdf
+- id: doi:10.3390/ma9030196
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ma9030196.pdf
+- id: doi:10.1016/j.biomaterials.2013.10.007
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_biomaterials_2013_10_007.pdf
+- id: doi:10.1101/2022.10.10.511492
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2022_10_10_511492.pdf
+- id: doi:10.1017/cts.2023.619
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/cts_2023_619.pdf
+- id: doi:10.1186/s12859-023-05258-4
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12859-023-05258-4.pdf
+- id: doi:10.37044/osf.io/3b9gp
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/3b9gp.pdf
+- id: doi:10.1038/s41597-023-01969-8
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41597-023-01969-8.pdf
+- id: doi:10.1101/2022.01.27.22269965
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2022_01_27_22269965.pdf
+- id: doi:10.15346/hc.v6i1.4
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/hc_v6i1_4.pdf
+- id: doi:10.1186/s12859-018-2041-5
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12859-018-2041-5.pdf
+- id: doi:10.1101/156141
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/156141.pdf
+- id: doi:10.1101/038083
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/038083.pdf
+- id: doi:10.1016/j.gene.2016.04.053
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_gene_2016_04_053.pdf
+- id: doi:10.1186/s13059-016-0953-9
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s13059-016-0953-9.pdf
+- id: doi:10.1101/035667
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/035667.pdf
+- id: doi:10.1371/journal.ppat.1004045
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_ppat_1004045.pdf
+- id: doi:10.1038/ja.2009.7
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ja_2009_7.pdf
+- id: doi:10.1038/ja.2007.2
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ja_2007_2.pdf
+- id: doi:10.1038/s41597-023-02534-z
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41597-023-02534-z.pdf
+- id: doi:10.21203/rs.3.rs-1723808/v1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/v1.pdf
+- id: doi:10.21203/rs.3.rs-1723829/v1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/v1.pdf
+- id: doi:10.37044/osf.io/8qdse
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/8qdse.pdf
+- id: doi:10.1371/journal.pgen.1006997
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pgen_1006997.pdf
+- id: doi:10.1101/121178
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/121178.pdf
+- id: doi:10.1186/s13195-023-01255-0
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s13195-023-01255-0.pdf
+- id: doi:10.1038/s41597-023-01968-9
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41597-023-01968-9.pdf
+- id: doi:10.1038/s41592-023-01769-3
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41592-023-01769-3.pdf
+- id: doi:10.1111/cts.13302
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/cts_13302.pdf
+- id: doi:10.1186/s12915-020-00940-y
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12915-020-00940-y.pdf
+- id: doi:10.3390/genes11111384
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/genes11111384.pdf
+- id: doi:10.1038/s41586-020-2577-1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41586-020-2577-1.pdf
+- id: doi:10.3389/fgene.2019.01355
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/fgene_2019_01355.pdf
+- id: doi:10.1371/journal.pone.0222165
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0222165.pdf
+- id: doi:10.1126/sciimmunol.aaw6329
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/sciimmunol_aaw6329.pdf
+- id: doi:10.1101/444497
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/444497.pdf
+- id: doi:10.1038/s41746-018-0052-2
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41746-018-0052-2.pdf
+- id: doi:10.1101/367599
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/367599.pdf
+- id: doi:10.1186/s12864-018-4718-6
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12864-018-4718-6.pdf
+- id: doi:10.1371/journal.pbio.2002846
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pbio_2002846.pdf
+- id: doi:10.1002/pmic.201700391
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pmic_201700391.pdf
+- id: doi:10.1016/j.molimm.2018.09.020
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_molimm_2018_09_020.pdf
+- id: doi:10.1126/science.aao0462
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/science_aao0462.pdf
+- id: doi:10.5334/cstp.56
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/cstp_56.pdf
+- id: doi:10.1021/acs.jproteome.6b00095
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/acs_jproteome_6b00095.pdf
+- id: doi:10.1016/j.joca.2016.11.007
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_joca_2016_11_007.pdf
+- id: doi:10.1016/j.joca.2016.04.015
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_joca_2016_04_015.pdf
+- id: doi:10.1186/s12864-016-2855-3
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12864-016-2855-3.pdf
+- id: doi:10.1186/s13326-016-0061-5
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s13326-016-0061-5.pdf
+- id: doi:10.1371/journal.pone.0149621
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0149621.pdf
+- id: doi:10.1126/scitranslmed.3009986
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/scitranslmed_3009986.pdf
+- id: doi:10.1186/s12920-015-0095-z
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s12920-015-0095-z.pdf
+- id: doi:10.1142/9789814644730_0028
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/9789814644730_0028.pdf
+- id: doi:10.1101/009332
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/009332.pdf
+- id: doi:10.3389/fcimb.2014.00108
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/fcimb_2014_00108.pdf
+- id: doi:10.1186/s13059-014-0438-7
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s13059-014-0438-7.pdf
+- id: doi:10.2196/games.3350
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/games_3350.pdf
+- id: doi:10.4049/jimmunol.1301279
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/jimmunol_1301279.pdf
+- id: doi:10.1186/2041-1480-4-S1-S4
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2041-1480-4-S1-S4.pdf
+- id: doi:10.1371/journal.pone.0071171
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0071171.pdf
+- id: doi:10.1371/journal.pone.0072511
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0072511.pdf
+- id: doi:10.1016/j.celrep.2013.03.024
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_celrep_2013_03_024.pdf
+- id: doi:10.1371/journal.pcbi.1003244
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pcbi_1003244.pdf
+- id: doi:10.1002/art.37760
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/art_37760.pdf
+- id: doi:10.1186/1741-7007-10-90
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/1741-7007-10-90.pdf
+- id: doi:10.1007/s00335-012-9408-0
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s00335-012-9408-0.pdf
+- id: doi:10.1186/2041-1480-3-S1-S6
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2041-1480-3-S1-S6.pdf
+- id: doi:10.1371/journal.pone.0025807
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0025807.pdf
+- id: doi:10.1186/gb-2011-12-12-135
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/gb-2011-12-12-135.pdf
+- id: doi:10.1186/1471-2164-12-603
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/1471-2164-12-603.pdf
+- id: doi:10.1186/1752-0509-4-29
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/1752-0509-4-29.pdf
+- id: doi:10.1371/journal.pone.0013920
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0013920.pdf
+- id: doi:10.1371/journal.pone.0014458
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0014458.pdf
+- id: doi:10.1073/pnas.0914019107
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pnas_0914019107.pdf
+- id: doi:10.1371/journal.pone.0004649
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0004649.pdf
+- id: doi:10.1186/gb-2009-10-11-r130
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/gb-2009-10-11-r130.pdf
+- id: doi:10.1186/1472-6769-9-2
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/1472-6769-9-2.pdf
+- id: doi:10.1371/journal.pbio.0060175
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pbio_0060175.pdf
+- id: doi:10.1371/journal.pgen.1000070
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pgen_1000070.pdf
+- id: doi:10.1371/journal.pgen.1000232
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pgen_1000232.pdf
+- id: doi:10.1186/gb-2007-8-4-404
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/gb-2007-8-4-404.pdf
+- id: doi:10.1073/pnas.0511292103
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pnas_0511292103.pdf
+- id: doi:10.1186/1471-2105-7-61
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/1471-2105-7-61.pdf
+- id: doi:10.1073/pnas.0409459102
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pnas_0409459102.pdf
+- id: doi:10.1091/mbc.E05-01-0062
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/mbc_E05-01-0062.pdf
+- id: doi:10.1073/pnas.0400782101
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pnas_0400782101.pdf
+- id: doi:10.1101/gr.2161804
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/gr_2161804.pdf
+- id: doi:10.1371/journal.pbio.0020393
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pbio_0020393.pdf
+- id: doi:10.1016/S0002-9440(10)64408-2
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/S0002-9440(10)64408-2.pdf
+- id: doi:10.1073/pnas.122359899
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pnas_122359899.pdf
+- id: doi:10.1073/pnas.202608199
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pnas_202608199.pdf
+- id: doi:10.1073/pnas.012025199
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pnas_012025199.pdf
+- id: doi:10.1073/pnas.041452598
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/pnas_041452598.pdf

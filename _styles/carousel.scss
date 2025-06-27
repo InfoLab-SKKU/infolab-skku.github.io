@@ -1,0 +1,174 @@
+---
+---
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  border-radius: var(--rounded);
+  overflow: visible;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  border-radius: var(--rounded);
+  margin-bottom: 20px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.carousel-link:hover {
+  text-decoration: none;
+}
+
+
+.carousel-item {
+  flex: 0 0 300px;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--rounded);
+  overflow: hidden;
+}
+
+.carousel-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border-top-left-radius: var(--rounded);
+  border-top-right-radius: var(--rounded);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  height:  50px;
+  background: white;
+  color: black;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  border-bottom-left-radius: var(--rounded);
+  border-bottom-right-radius: var(--rounded);
+}
+
+.carousel-caption h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  width: 100%;
+  font-weight: var(--semi-bold);
+  font-family: var(--heading);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.carousel-controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  z-index: 10;
+  gap: 10px;
+}
+
+/* Buttons positioned close to the indicators */
+.carousel-control {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--transition);
+  flex-shrink: 0;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control .icon {
+  font-size: 1.2em;
+  color: white;
+}
+
+/* Indicators positioned between buttons */
+.carousel-indicators {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.carousel-indicator.active {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 300px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    flex: 0 0 250px;
+  }
+  
+  .carousel-caption {
+    padding: 6px 8px;
+  }
+  
+  .carousel-caption h3 {
+    font-size: 0.85rem;
+  }
+  
+  .carousel-control {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,72 @@
+# This file contains the list of tools and their details for the website.
+- title: Securing Interpretable Deep Learning Systems
+  subtitle: Adversarial Threats, Stealthy Attacks, and Defense Mechanisms
+  group: security
+  icon: fa-solid fa-shield
+  image: files/images/image1.gif
+  link: "projects/securing-interpretable-dl"
+  description: The growing integration of deep learning (DL) models into high-stakes domains, such as healthcare, finance, and autonomous systems, has made interpretability a cornerstone of trustworthy AI. Interpretable Deep Learning Systems (IDLSes), which combine powerful neural networks with interpretation models, aim to provide transparency into the decision-making process. However, the assumption that interpretation inherently adds security has recently been challenged.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
+- title:  Comprehensive Evaluation of Adversarial Robustness in Deep Learning
+  subtitle: Architecture, Diversity, and Defense Analysis
+  group: security
+  icon: fa-solid fa-shield
+  image: images/thumbnails/projects/image3.png
+  link: "projects/adversarial-robustness"
+  description: Adversarial attacks pose a serious challenge to the reliability and security of deep learning (DL) models. These attacks, often crafted by introducing imperceptible perturbations to input data, can cause models to make incorrect predictions with high confidence. As a result, understanding and mitigating such threats has become a critical area of research in the field of trustworthy AI. Defenses against adversarial attacks range from input preprocessing and adversarial training to robust model design, yet no single approach has proven universally effective.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
+- title: Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications
+  subtitle: images/thumbnails/projects/Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications.png
+  group: security
+  icon: fa-solid fa-shield
+  image: images/thumbnails/projects/Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications.png
+  link: "projects/explinable-ai"
+  description: TThe project seeks to address the growing need for transparency, accountability, and interpretability in artificial intelligence (AI) systems used in healthcare. As deep learning and other machine learning techniques become integral to medical diagnostics, prognosis, and treatment planning, the "black-box" nature of many AI models poses significant challenges for clinical adoption, regulatory approval, and patient trust.
+
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
+- title: Behavioral Biometrics for Continuous and Adversarially Robust User Authentication on Smartphones
+  subtitle: 
+  group: security
+  icon: fa-solid fa-shield
+  image: images/thumbnails/projects/Behavioral Biometrics for Continuous and Adversarially Robust User Authentication on Smartphones 2.jpg
+  link: "projects/user-authentication"
+  description: Traditional authentication methods—such as passwords, PINs, and even biometric systems (fingerprint, facial recognition)—typically secure mobile devices only at the point of entry. However, they fail to offer protection throughout a session, leaving devices vulnerable to unauthorized access when unattended. To bridge this security gap, the research group InfoLab at Sungkyunkwan University (SKKU) has led a series of studies on continuous, sensor-based, and adversarially-aware user authentication mechanisms.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+  
+
+- title: Multimodal, Explainable, and Adversarially-Robust Deep Learning for Alzheimer’s Disease Progression Detection
+  subtitle: 
+  group: medical
+  icon: fa-solid fa-shield
+  image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-022-31037-5/MediaObjects/41467_2022_31037_Fig4_HTML.png
+  link: "projects/alzeimer-detection"
+  description: Traditional authentication methods—such as passwords, PINs, and even biometric systems (fingerprint, facial recognition)—typically secure mobile devices only at the point of entry. However, they fail to offer protection throughout a session, leaving devices vulnerable to unauthorized access when unattended. To bridge this security gap, the research group InfoLab at Sungkyunkwan University (SKKU) has led a series of studies on continuous, sensor-based, and adversarially-aware user authentication mechanisms.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
+- title: Explainable Dynamic Ensemble Learning with Late Fusion of Multimodal Data for Intelligent Decision Support
+  subtitle: 
+  group: medical
+  icon: fa-solid fa-shield
+  image: https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs41591-022-01981-2/MediaObjects/41591_2022_1981_Fig1_HTML.png
+  link: "projects/intelligent-decision-support"
+  description: Traditional authentication methods—such as passwords, PINs, and even biometric systems (fingerprint, facial recognition)—typically secure mobile devices only at the point of entry. However, they fail to offer protection throughout a session, leaving devices vulnerable to unauthorized access when unattended. To bridge this security gap, the research group InfoLab at Sungkyunkwan University (SKKU) has led a series of studies on continuous, sensor-based, and adversarially-aware user authentication mechanisms.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
+- title: Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction
+  subtitle: 
+  group: medical
+  icon: fa-solid fa-shield
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S1532046423002472-ga1.jpg
+  link: "projects/mortality"
+  description: Traditional authentication methods—such as passwords, PINs, and even biometric systems (fingerprint, facial recognition)—typically secure mobile devices only at the point of entry. However, they fail to offer protection throughout a session, leaving devices vulnerable to unauthorized access when unattended. To bridge this security gap, the research group InfoLab at Sungkyunkwan University (SKKU) has led a series of studies on continuous, sensor-based, and adversarially-aware user authentication mechanisms.
+  repo: https://github.com/InfoLab-SKKU
+  tags:

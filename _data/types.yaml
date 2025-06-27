@@ -4,11 +4,19 @@
 
 pi:
   icon: fa-solid fa-user-secret
-  description: Principal Investigator
+  description: Professor & Lab Director
 
 postdoc:
   icon: fa-solid fa-user-ninja
   description: Postdoctoral Researcher
+
+master:
+  icon: fa-solid fa-user-graduate
+  description: Master's Student
+
+combined:
+  icon: fa-solid fa-user-graduate
+  description: Combined Master/PhD Student
 
 phd:
   icon: fa-solid fa-graduation-cap
@@ -37,6 +45,10 @@ intern:
 staff:
   icon: fa-solid fa-image-portrait
   description: Staff
+
+senior:
+  icon: fa-solid fa-user-tie
+  description: Senior Researcher
 
 visitor:
   icon: fa-solid fa-globe

@@ -1,0 +1,37 @@
+<div class="carousel-container">
+    <div class="carousel-wrapper">
+      <div class="carousel">
+        {% for project in site.data.projects %}
+          {% if project.image %}
+            <div class="carousel-item">
+              <a href="/projects/#project-{{ forloop.index }}" class="carousel-link">
+                <div class="carousel-image-container">
+                  <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="carousel-image">
+                </div>
+                <div class="carousel-caption">
+                  <h3>{{ project.title }}</h3>
+                </div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    
+    <div class="carousel-controls">
+      <button class="carousel-control prev" aria-label="Previous slide">
+        <i class="icon fa-solid fa-angle-left"></i>
+      </button>
+      <div class="carousel-indicators">
+        {% for project in site.data.projects %}
+          {% if project.image %}
+            <span class="carousel-indicator" data-index="{{ forloop.index0 }}"></span>
+          {% endif %}
+        {% endfor %}
+      </div>
+  
+      <button class="carousel-control next" aria-label="Next slide">
+        <i class="icon fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+  </div>
