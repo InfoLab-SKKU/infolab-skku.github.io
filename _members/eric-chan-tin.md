@@ -2,7 +2,7 @@
 name: Eric Chan-Tin
 image: images/eric-chan-tin.jpeg
 role: associate professor
-group: collaborators
+group: 9
 aliases:
 links:
    orcid: 

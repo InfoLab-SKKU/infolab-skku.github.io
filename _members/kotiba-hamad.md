@@ -2,7 +2,7 @@
 name: Kotiba Hamad
 image: images/kotiba-hamad.jpg
 role: associate professor
-group: 6
+group: 7
 aliases:
 links:
    orcid: 

@@ -2,7 +2,7 @@
 name: Farman Ali
 image: images/farman-ali.png
 role: assistant professor
-group: 2
+group: 5
 aliases:
 links:
    orcid: 
