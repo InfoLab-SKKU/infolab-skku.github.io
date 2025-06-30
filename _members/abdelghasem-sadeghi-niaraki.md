@@ -8,7 +8,7 @@ aliases:
       orcid: 
       linkedin: 
       github: 
-      google-scholar: https://scholar.google.com/citations?user=-V8_A5YAAAAJ&hl=en
+      google-scholar: V8_A5YAAAAJ
       twitter: 
       facebook: 
       instagram: 
