@@ -13,7 +13,6 @@ links:
   google-scholar: if8kXykAAAAJ
   twitter:
   facebook:
-  instagram: 
   youtube:
 ---
 
