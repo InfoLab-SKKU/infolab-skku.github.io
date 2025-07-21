@@ -21,9 +21,9 @@ multilingual communication, and research expertise to her work in advancing inte
 technologies.
 
 ### Education
-Ph.D. (Computer Engineering) - SKKU, South Korea - present
-M.E. (Information Technology) - MUET, Pakistan
-B.E. (Software Engineering) - MUET, Pakistan
+Ph.D. (Computer Engineering) - SKKU, South Korea - present<br>
+M.E. (Information Technology) - MUET, Pakistan<br>
+B.E. (Software Engineering) - MUET, Pakistan<br>
 
 {% include section.html %}
 ## Publications
