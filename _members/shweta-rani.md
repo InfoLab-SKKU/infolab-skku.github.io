@@ -13,8 +13,6 @@ Shwetarani is a Ph.D student in Computer Science and Engineering at Sungkyunkwan
 
 Research interests includes Security in AI, Machine Learning and Data.
 
-Fluent in English, Hindi and Kannada.
-
 
 ### Education
 Sungkyunkwan University (SKKU) – Ph.D Student in Computer Science and Engineering <br>
