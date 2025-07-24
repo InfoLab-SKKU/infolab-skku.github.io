@@ -9,6 +9,27 @@
 # If there is an external link (e.g., to a journal or news article), add it in the `link` field.
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
+
+- title: Sustainable energy management in the AI era: a comprehensive analysis of ML and DL approaches
+  date: 2025-02-01
+  description: Our paper was published in *Computing* (Vol. 107, Issue 6, p.132).
+  url:
+
+- title: Semantic information retrieval method for augmented reality domain and device thereof
+  date: 2025-01-15
+  description: Our patent application was submitted to the US Patent Office (App. No. 18/818,158).
+  url:
+
+- title: IoT-based approach method for learning geometric shapes in early childhood and device thereof
+  date: 2025-01-22
+  description: Our patent application was submitted to the US Patent Office (App. No. 18/821,509).
+  url:
+
+- title: Chronic Kidney Disease Detection Augmented with Hybrid Explainable AI
+  date: 2025-05-20
+  description: Our paper was presented at the 15th International Conference on Electrical Engineering (ICEENG 2025).
+  url:
+  
 - title: Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning
   date: 2025-04-02
   description: Our paper was published in IEEE Transactions on Reliability.
