@@ -10,7 +10,7 @@
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
 
-- title: Sustainable energy management in the AI era: a comprehensive analysis of ML and DL approaches
+- title: Sustainable energy management in the AI era; a comprehensive analysis of ML and DL approaches
   date: 2025-02-01
   description: Our paper was published in *Computing* (Vol. 107, Issue 6, p.132).
   url:
@@ -29,7 +29,7 @@
   date: 2025-05-20
   description: Our paper was presented at the 15th International Conference on Electrical Engineering (ICEENG 2025).
   url:
-  
+
 - title: Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning
   date: 2025-04-02
   description: Our paper was published in IEEE Transactions on Reliability.
