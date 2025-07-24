@@ -16,7 +16,7 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 
 {%
   include figure.html
-  image="iimages/ahnlab.jpg"
+  image="images/ahnlab.jpg"
   link="images/ahnlab.jpg"
   caption="Vesiting AhnLab"
   width="300px"
