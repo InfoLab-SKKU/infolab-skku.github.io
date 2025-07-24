@@ -16,6 +16,14 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 
 {%
   include figure.html
+  image="iimages/ahnlab.jpg"
+  link="images/ahnlab.jpg"
+  caption="Vesiting AhnLab"
+  width="300px"
+%}
+
+{%
+  include figure.html
   image="images/gallery/team-full.jpeg"
   link="images/gallery/team-full.jpeg"
   caption="celebrating teachers day!"
