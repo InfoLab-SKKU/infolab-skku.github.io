@@ -1,6 +1,6 @@
 ---
 name: Yuchan Ko
-image: images/yuchan.jpeg
+image: images/yuchan-ko.jpeg
 role: intern
 group: active
 links:
