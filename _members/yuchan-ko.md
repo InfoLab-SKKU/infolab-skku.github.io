@@ -5,7 +5,7 @@ role: intern
 group: active
 links:
    github: ycko725
-   linkedin: https://www.linkedin.com/in/ycko725/
+   linkedin: ycko725
    home-page: https://github.com/ycko725
    email: yuchanko725@gmail.com
 ---
