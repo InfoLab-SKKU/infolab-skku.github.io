@@ -1,7 +1,7 @@
 ---
 name: Yuchan Ko
 image: images/yuchan.jpeg
-role: Intern
+role: intern
 group: active
 links:
    github: ycko725
