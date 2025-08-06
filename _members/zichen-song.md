@@ -4,8 +4,10 @@ image: images/zichen-song.jpg
 role: combined
 group: active
 links:
-  personal page: https://scholar.google.com.hk/citations?user=RN06XsYAAAAJ&hl=en&authuser=1
   email: songzch21@lzu.edu.cn
+  google-scholar: RN06XsYAAAAJ
+  orcid: 0000-0003-4155-2410
+
 ---
 
 Zichen Song is an incoming **Combined Master–PhD** student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea (Fall 2025). His research focuses on security and privacy for large language models—particularly membership inference and data extraction attacks—as well as optimization of (multi)modal LLMs, deep spiking neural networks, and medical AI.
