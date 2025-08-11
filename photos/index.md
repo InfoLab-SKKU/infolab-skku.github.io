@@ -72,16 +72,16 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 
 {%
   include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.23.56 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.23.56 PM.jpeg"
+  image="images/gallery/2025/itrc2025_abdenour_presentation2.jpg"
+  link="images/gallery/2025/itrc2025_abdenour_presentation2.jpg"
   caption="ITRC 2025"
   width="300px"
 %}
 
 {%
   include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.52 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.52 PM.jpeg"
+  image="images/gallery/2025/itrc2025_abdenour_presentation.jpg"
+  link="images/gallery/2025/itrc2025_abdenour_presentation.jpg"
   caption="ITRC 2025"
   width="300px"
 %}
@@ -114,14 +114,6 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
   include figure.html
   image="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.23.54 PM.jpeg"
   link="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.23.54 PM.jpeg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.34 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.34 PM.jpeg"
   caption="ITRC 2025"
   width="300px"
 %}
