@@ -12,11 +12,9 @@ links:
    email: abdenour@skku.edu
 ---
 
-Abdenour Soubih is a Master's student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, focusing on security in machine learning, especially federated learning. Holds a Master’s and Bachelor’s degree in Computer Science from Algerian universities, with prior work in IoT and web-based systems.
+Abdenour Soubih is a Master’s student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea. His research focuses on the security and robustness of machine learning, especially federated learning. He holds Master’s and Bachelor’s degrees in Computer Science from Algerian universities, with experience in IoT, wireless sensor networks, and web-based systems.
 
-Research interests include IoT, wireless sensor networks, and privacy-preserving AI. Experience spans both academia and industry, with contributions to international projects like WaterMed4.0, and work involving IoT platforms, mobile app development, and network analysis.
-
-Fluent in Arabic, French, and English, with strong technical skills and active involvement in research on secure and distributed systems.
+He has worked on international projects such as WaterMed4.0 and has hands-on experience in IoT platform design, mobile app development, and network analysis. Fluent in Arabic, French, and English, Abdenour aims to develop secure and privacy-preserving technologies for distributed systems.
 
 
 ### Education
