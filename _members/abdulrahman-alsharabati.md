@@ -1,7 +1,7 @@
 ---
 name: Abdulrahman Al-Sharabati
 image: images/abdulrahman-alsharabati.jpg
-role: master
+role: phd
 group: active
 links:
    <!-- orcid: 0009-0002-4648-9289 -->
@@ -23,7 +23,7 @@ Fluent in Arabic and English.
 Sungkyunkwan University (SKKU) – Doctoral Student in Computer Science and Engineering <br>
 2025 – Present
 
-University of Minnesota– Master’s Degree in Computer Science<br>
+University of Minnesota – Master’s Degree in Computer Science<br>
 2020 – 2024
 
 St Cloud State – Bachelor’s Degree in Computer Science<br>
