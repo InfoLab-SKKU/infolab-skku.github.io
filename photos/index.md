@@ -16,6 +16,14 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 
 {%
   include figure.html
+  image="images/Maria_birthday.jpeg"
+  link="images/Maria_birthday.jpeg"
+  caption="Maria's birthday"
+  width="300px"
+%}
+
+{%
+  include figure.html
   image="images/ahnlab.jpg"
   link="images/ahnlab.jpg"
   caption="Vesiting AhnLab"
