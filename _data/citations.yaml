@@ -1119,6 +1119,26 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1109/TR.2025.3551717
+  title: Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: IEEE Transactions on Reliability
+  date: '2025-01-01'
+  link: https://doi.org/g9b3cc
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: images/thumbnails/Stealthy Query-Efficient Opaque Attack Against Interpretable
+    Deep Learning.png
+  buttons:
+  - type: pdf
+    link: pdf/Stealthy_Query-Efficient_Opaque_Attack_Against_Interpretable_Deep_Learning.pdf
 - id: doi:10.1109/ACCESS.2025.3547573
   title: "FiSC: A Novel Approach for Fitzpatrick Scale-Based Skin Analyzer\u2019s\
     \ Image Classification"
@@ -1162,26 +1182,6 @@
   buttons:
   - type: pdf
     link: pdf/resposible_artificial_intiligence.pdf
-- id: doi:10.1109/TR.2025.3551717
-  title: Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Simon S. Woo
-  - Eric Chan-Tin
-  - Tamer Abuhmed
-  publisher: IEEE Transactions on Reliability
-  date: '2025-01-01'
-  link: https://doi.org/g9b3cc
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: images/thumbnails/Stealthy Query-Efficient Opaque Attack Against Interpretable
-    Deep Learning.png
-  buttons:
-  - type: pdf
-    link: pdf/Stealthy_Query-Efficient_Opaque_Attack_Against_Interpretable_Deep_Learning.pdf
 - id: doi:10.1016/j.cmpb.2024.108348
   title: Alzheimer's disease diagnosis in the metaverse
   authors:
