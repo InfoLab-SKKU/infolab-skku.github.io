@@ -21,6 +21,7 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
   caption="Lab lunch"
   width="300px"
 %}
+
 {%
   include figure.html
   image="images/Maria_birthday.jpeg"
