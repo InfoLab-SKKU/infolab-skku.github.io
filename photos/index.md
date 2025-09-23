@@ -201,7 +201,7 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 {%
   include figure.html
   image="images/abdenour-cycling.jpeg"
-  link="images/abdenour-cycling.jpeg"
+  link="images/Cycling.jpeg"
   caption="Abdenour cycling"
   width="300px"
 %}
