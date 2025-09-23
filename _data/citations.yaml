@@ -1119,6 +1119,23 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1371/journal.pone.0332134
+  title: Mortality prediction for ICU patients with mental disorders using large language
+    models ensemble and unstructured medical notes
+  authors:
+  - Waleed Nazih
+  - Tamer Abuhmed
+  - Meshal Alharbi
+  - Shaker El-Sappagh
+  publisher: PLOS One
+  pmid: '40971951'
+  pmcid: PMC12448993
+  date: '2025-09-19'
+  link: https://doi.org/g939nc
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/TR.2025.3551717
   title: Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning
   authors:
