@@ -34,7 +34,7 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
   include figure.html
   image="images/ahnlab.jpg"
   link="images/ahnlab.jpg"
-  caption="Vesiting AhnLab"
+  caption="Vesiting AhnLab 2025"
   width="300px"
 %}
 
@@ -147,6 +147,14 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
   image="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.47 PM.jpeg"
   link="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.47 PM.jpeg"
   caption="ITRC 2025"
+  width="300px"
+%}
+
+{%
+  include figure.html
+  image="images/ahnlab_2024.jpeg"
+  link="images/ahnlab_2024.jpeg"
+  caption="Visiting AhnLab 2024"
   width="300px"
 %}
 
