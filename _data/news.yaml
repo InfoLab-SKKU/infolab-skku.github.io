@@ -20,9 +20,9 @@
   description: Vision Transformers (ViTs), often paired with interpretation models, are widely viewed as robust and reliable for security-critical domains such as healthcare, autonomous driving, drones, and robotics. However, our latest paper challenges this assumption by introducing AdViT, a novel attack that successfully deceives both ViT classifiers and their interpreters. AdViT achieves a 100% attack success rate across diverse models, with up to 98% misclassification confidence in white-box and 76% in black-box settings while still producing convincing interpretations. These results reveal that even state-of-the-art transformer systems remain highly vulnerable to stealthy adversarial threats. Read more on arXiv.
   url: https://arxiv.org/abs/2507.14248
 
-- title: Welcome new lab members; Leila Shakuova, Abdulrahman Al-Sharabati, Mazen ElFayoumi, and Zichen Song
+- title: Welcome new lab members; Leila Shakuova, Abdulrahman Al-Sharabati, and Zichen Song
   date: 2025-08-22
-  description: We are excited to welcome Leila, Abdulrahman, Mazen, and Zichen as new graduate students joining our lab. Looking forward to their contributions and collaborations!
+  description: We are excited to welcome Leila, Abdulrahman, and Zichen as new graduate students joining our lab. Looking forward to their contributions and collaborations!
   url:
 
 - title: Sustainable energy management in the AI era; a comprehensive analysis of ML and DL approaches

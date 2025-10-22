@@ -2,7 +2,7 @@
 name: jang hyojin
 image: images/hyojin.jpeg
 role: intern
-group: active
+group: alum
 links:
    email: jhaana@g.skku.edu
 ---

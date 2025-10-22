@@ -2,7 +2,7 @@
 name: Taewon Kim
 image: images/taewon-kim.jpg
 role: intern
-group: active
+group: alum
 links:
    linkedin:
    github: chris40461

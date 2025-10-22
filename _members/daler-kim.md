@@ -2,7 +2,7 @@
 name: Daler Kim
 image: images/daler-kim.jpeg
 role: intern
-group: active
+group: alum
 links:
    orcid: 0009-0007-5993-1263
    linkedin: daler-kim-3632bb294

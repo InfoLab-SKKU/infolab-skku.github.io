@@ -2,7 +2,7 @@
 name: POMPEI CLÉMENT
 image: images/clement.jpg
 role: intern
-group: active
+group: alum
 links:
    orcid: 0009-0009-0597-2486
    github: zincc92

@@ -2,7 +2,7 @@
 name: Jimin Lee
 image: images/jimin-lee.jpeg
 role: intern
-group: active
+group: alum
 links:
    github: Raymond-jm
    home-page: https://github.com/Raymond-jm

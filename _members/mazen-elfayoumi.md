@@ -2,7 +2,7 @@
 name: Mazen ElFayoumi
 image: images/mazen-elfayoumi.jpeg
 role: combined
-group: active
+group: inactive
 links:
    linkedin: mazen-elfayoumi-115a18269
    github: MazenElfayoumi

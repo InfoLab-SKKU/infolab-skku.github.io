@@ -2,7 +2,7 @@
 name: Yuchan Ko
 image: images/yuchan-ko.jpeg
 role: intern
-group: active
+group: alum
 links:
    github: ycko725
    linkedin: ycko725
