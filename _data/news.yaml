@@ -10,9 +10,14 @@
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
 
-- title: AdvChar; Exposing Deep Vulnerabilities in Interpretable NLP Systems
+- title: AdvChar: Attacking Interpretable NLP Systems
+  date: 2025-10-15
+  description: Our paper is published in IEEE Transactions on Information Forensics and Security.
+  url: https://ieeexplore.ieee.org/document/11204686
+
+- title: Exposing Deep Vulnerabilities in Interpretable NLP Systems
   date: 2025-07-22
-  description: Natural Language Processing (NLP) models even those built for transparency and interpretability remain highly vulnerable to adversarial manipulation. Our newly submitted paper, AdvChar, presents a stealthy black-box attack that preserves semantic meaning and interpretability while misleading classifiers. By applying minimal character-level modifications (only two characters on average), AdvChar can dramatically deteriorate model accuracy across seven NLP models and three interpretation paradigms revealing that interpretability tools can be exploited to disguise malicious inputs. Read more on arXiv.
+  description: Natural Language Processing (NLP) models, even those built for transparency and interpretability, remain highly vulnerable to adversarial manipulation. Our newly submitted paper, AdvChar, presents a stealthy black-box attack that preserves semantic meaning and interpretability while misleading classifiers. By applying minimal character-level modifications (only two characters on average), AdvChar can dramatically deteriorate model accuracy across seven NLP models and three interpretation paradigms revealing that interpretability tools can be exploited to disguise malicious inputs. Read more on arXiv.
   url: https://arxiv.org/abs/2507.16164
 
 - title: AdViT; Breaking Vision Transformers and Their Interpreters
