@@ -10,7 +10,7 @@
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
 
-- title: AdvChar: Attacking Interpretable NLP Systems
+- title: (AdvChar) Attacking Interpretable NLP Systems
   date: 2025-10-15
   description: Our paper is published in IEEE Transactions on Information Forensics and Security.
   url: https://ieeexplore.ieee.org/document/11204686
