@@ -152,6 +152,14 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 
 {%
   include figure.html
+  image="images/lablunch_3.jpg"
+  link="images/lablunch_3.jpg"
+  caption="Lunch"
+  width="300px"
+%}
+
+{%
+  include figure.html
   image="images/ahnlab_2024.jpeg"
   link="images/ahnlab_2024.jpeg"
   caption="Visiting AhnLab 2024"
