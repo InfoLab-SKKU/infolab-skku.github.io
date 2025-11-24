@@ -1,7 +1,7 @@
 ---
 name: Mazen ElFayoumi
 image: images/mazen-elfayoumi.jpeg
-role: combined
+role: inactif
 group: inactive
 links:
    linkedin: mazen-elfayoumi-115a18269
