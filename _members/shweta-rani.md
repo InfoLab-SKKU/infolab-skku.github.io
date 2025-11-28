@@ -5,7 +5,7 @@ role: phd
 group: active
 links:
    orcid: 0009-0009-4880-2030
-    researchgate:https://www.researchgate.net/profile/Shwetarani-Mora?ev=hdr_xprf
+   researchgate: https://www.researchgate.net/profile/Shwetarani-Mora?ev=hdr_xprf
    email: shwetamora@skku.edu
 ---
 
