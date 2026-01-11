@@ -32,24 +32,24 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 
 {%
   include figure.html
-  image="images/abdenour-graduation1.jpeg"
-  link="images/abdenour-graduation1.jpeg"
+  image="images/abdenour-grad1.jpeg"
+  link="images/abdenour-grad1.jpeg"
   caption=""
   width="300px"
 %}
 
 {%
   include figure.html
-  image="images/abdenour-graduation2.jpeg"
-  link="images/abdenour-graduation2.jpeg"
+  image="images/abdenour-grad2.jpeg"
+  link="images/abdenour-grad2.jpeg"
   caption=""
   width="300px"
 %}
 
 {%
   include figure.html
-  image="images/abdenour-graduation3.jpeg"
-  link="images/abdenour-graduation3.jpeg"
+  image="images/abdenour-grad3.jpeg"
+  link="images/abdenour-grad3.jpeg"
   caption=""
   width="300px"
 %}
@@ -249,8 +249,8 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 {%
   include figure.html
   image="images/abdenour-cycling.jpeg"
-  link="images/Cycling.jpeg"
-  caption="Abdenour cycling"
+  link="images/abdenour-cycling.jpeg"
+  caption=""
   width="300px"
 %}
 
@@ -270,13 +270,13 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
   width="300px"
 %}
 
-{%
+<!-- {%
   include figure.html
   image="images/historical meusieum.jpeg"
   link="images/historical meusieum.jpeg"
   caption="Musieum visit"
   width="300px"
-%}
+%} -->
 
 {%
   include figure.html
