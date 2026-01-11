@@ -16,6 +16,46 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 
 {%
   include figure.html
+  image="images/abdenour-chris-abderrahman.jpeg"
+  link="images/abdenour-chris-abderrahman.jpeg"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
+  image="images/abdenour-firuz.jpeg"
+  link="images/abdenour-firuz.jpeg"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
+  image="images/abdenour-graduation1.jpeg"
+  link="images/abdenour-graduation1.jpeg"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
+  image="images/abdenour-graduation2.jpeg"
+  link="images/abdenour-graduation2.jpeg"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
+  image="images/abdenour-graduation3.jpeg"
+  link="images/abdenour-graduation3.jpeg"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
   image="images/lab_lunch_2025-09-18.jpeg"
   link="images/lab_lunch_2025-09-18.jpeg"
   caption="Lab lunch"
