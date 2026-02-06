@@ -10,6 +10,11 @@
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
 
+- title: A Deep Dive into Function Inlining and its Security Implications for ML-based Binary Analysis
+  date: 2025-12-19
+  description: Our paper has been accepted at the Network and Distributed System Security Symposium (NDSS 2026).
+  url: https://arxiv.org/abs/2512.14045
+
 - title: (AdvChar) Attacking Interpretable NLP Systems
   date: 2025-10-15
   description: Our paper is published in IEEE Transactions on Information Forensics and Security.
