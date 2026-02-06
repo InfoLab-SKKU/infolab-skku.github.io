@@ -1,6 +1,6 @@
 ---
 name: Firuz Juraev
-image: images/Firuz-Juraev.png
+image: images/firuz_new.png
 role: combined
 group: active
 links:
