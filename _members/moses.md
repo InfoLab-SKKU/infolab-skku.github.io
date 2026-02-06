@@ -1,7 +1,7 @@
 ---
 name: YoungHyun Moses Choi
 image: 
-role: Intern
+role: intern
 group: active
 links:
    github: MosesChoi
