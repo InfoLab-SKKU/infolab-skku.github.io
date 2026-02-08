@@ -8,7 +8,7 @@ links:
    orcid: 
    linkedin: 
    github: 
-   google-scholar: V8_A5YAAAAJ
+   google-scholar: -V8_A5YAAAAJ
    twitter: 
    facebook: 
    instagram: 
