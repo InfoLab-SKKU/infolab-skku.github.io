@@ -1,6 +1,6 @@
 ---
 name: YoungHyun Moses Choi
-image: 
+image: images/moses.jpeg
 role: intern
 group: active
 links:
