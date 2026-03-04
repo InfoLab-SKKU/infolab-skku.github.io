@@ -6,9 +6,9 @@ group: 8
 aliases:
 links:
    orcid: 
-   linkedin: 
+   linkedin: abolghasemsadeghi-n
    github: 
-   google-scholar: V8_A5YAAAAJ
+   google-scholar: -V8_A5YAAAAJ
    twitter: 
    facebook: 
    instagram: 

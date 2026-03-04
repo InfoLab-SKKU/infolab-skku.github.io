@@ -6,15 +6,15 @@ group: 3
 aliases:
 links:
    orcid: 
-   linkedin: 
+   linkedin: simon-s-woo-2453282
    github: 
-   google-scholar: 
+   google-scholar: mHnj60cAAAAJ
    twitter: 
    facebook: 
    instagram: 
    youtube: 
    email: 
-   home-page: https://dash-lab.github.io/Professor/
+   home-page: https://dash-lab.github.io
 ---
 
 Simon S. Woo is an Assistant Professor in the Department of Applied Data Science at Sungkyunkwan University, South Korea. His research focuses on data science applications and methodologies.
