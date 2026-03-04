@@ -16,6 +16,22 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
 
 {%
   include figure.html
+  image="images/IMG_3914.JPG"
+  link="images/IMG_3914.JPG"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
+  image="images/IMG_3985.JPG"
+  link="images/IMG_3985.JPG"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
   image="images/lab_lunch_2025-09-18.jpeg"
   link="images/lab_lunch_2025-09-18.jpeg"
   caption="Lab lunch"
