@@ -1119,6 +1119,22 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1016/j.engappai.2026.114291
+  title: "Trustworthy Alzheimer\u2019s diagnosis: Integrating robustness, fairness,\
+    \ and explainability in neuroimaging based deep ensemble framework"
+  authors:
+  - Maria Bashir
+  - Nasir Rahim
+  - Shaker El-Sappagh
+  - Omar Amin El-Serafy
+  - Tamer Abuhmed
+  publisher: Engineering Applications of Artificial Intelligence
+  date: '2026-05-01'
+  link: https://doi.org/hbq4s7
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.eswa.2025.129812
   title: 'GraphShield: Advanced dynamic graph-based malware detection using graph
     neural networks'
