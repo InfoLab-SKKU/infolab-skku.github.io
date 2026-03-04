@@ -18,8 +18,6 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
   include figure.html
   image="images/IMG_3914.JPG"
   link="images/IMG_3914.JPG"
-  image="images/abdenour-chris-abderrahman.jpeg"
-  link="images/abdenour-chris-abderrahman.jpeg"
   caption=""
   width="300px"
 %}
@@ -28,6 +26,20 @@ Welcome to our gallery! Here, you can explore memorable moments and events captu
   include figure.html
   image="images/IMG_3985.JPG"
   link="images/IMG_3985.JPG"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
+  image="images/abdenour-chris-abderrahman.jpeg"
+  link="images/abdenour-chris-abderrahman.jpeg"
+  caption=""
+  width="300px"
+%}
+
+{%
+  include figure.html
   image="images/abdenour-firuz.jpeg"
   link="images/abdenour-firuz.jpeg"
   caption=""
