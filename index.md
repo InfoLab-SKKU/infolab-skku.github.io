@@ -2,53 +2,75 @@
 title: Home
 ---
 
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #07377b; background-size: cover;"></div>
-
-  <div class="container" style="position: relative; z-index: 1; width: 100%; max-width: none; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; padding: 0 20px;">
-     <h1 style="font-size: 3.5rem; margin-bottom: 20px; font-weight: 700;">Welcome to InfoLab!</h1>
-      <p class="lead" style="font-size: 1.3rem; max-width: 800px; margin-bottom: 20px;">
-        InfoLab is a research group pushing the boundaries of <strong>security</strong> and <strong>machine learning</strong>, 
-        especially in <strong>bioinformatics</strong> and <strong>biomedical discovery</strong>.
+<!-- dark: true; -->
+<!-- size: full; -->
+<div class="home-hero">
+  <div class="home-hero__inner">
+    <div class="home-hero__content">
+      <div class="home-hero__badge home-hero__animate delay-1">
+        <span class="home-hero__badge-dot"></span>
+        InfoLab at SKKU
+      </div>
+      <h1 class="home-hero__title home-hero__animate delay-2">
+        Secure, Intelligent Systems for Biomedical Discovery
+      </h1>
+      <p class="home-hero__lead home-hero__animate delay-3">
+        We build trustworthy machine learning and security methods that accelerate bioinformatics and biomedical research.
       </p>
-      <p style="font-size: 1rem; margin-bottom: 30px;">
-        Part of the 
-        <a href="https://sw.skku.edu/eng_sw/index.do" style="color: #fff; text-decoration: underline;">College of Computing and Informatics</a> at 
-        <a href="https://www.skku.edu/eng/" style="color: #fff; text-decoration: underline;">Sungkyunkwan University (SKKU)</a>.
+      <p class="home-hero__sub home-hero__animate delay-4">
+        Part of the <a href="https://sw.skku.edu/eng_sw/index.do">College of Computing and Informatics</a> at
+        <a href="https://www.skku.edu/eng/">Sungkyunkwan University (SKKU)</a>.
       </p>
-      <a href="#our-projects" class="button primary" style="background-color: transparent; color: white; border: 2px solid white; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: background-color 0.3s, color 0.3s; scroll-behavior: smooth;" onclick="event.preventDefault(); document.querySelector('#our-projects').scrollIntoView({ behavior: 'smooth' });">
-        Explore Our Work
-      </a>
+      <div class="home-hero__actions home-hero__animate delay-5">
+        <a class="button home-hero__button" href="#our-projects">Explore Our Work</a>
+        <a class="button home-hero__button home-hero__button--ghost" href="/team">Meet the Team</a>
+      </div>
+      <div class="home-hero__meta home-hero__animate delay-6">
+        <span class="home-hero__meta-item">Bioinformatics</span>
+        <span class="home-hero__meta-item">Secure ML</span>
+        <span class="home-hero__meta-item">Medical AI</span>
+      </div>
+    </div>
+    <div class="home-hero__panel home-hero__animate delay-4">
+      <div class="home-hero__panel-title">Research Focus</div>
+      <div class="home-hero__panel-grid">
+        <div class="home-hero__panel-item">
+          <span class="home-hero__panel-icon">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+          </span>
+          <div>
+            <strong>Secure Learning</strong>
+            <p>Privacy-aware models for sensitive biomedical data.</p>
+          </div>
+        </div>
+        <div class="home-hero__panel-item">
+          <span class="home-hero__panel-icon">
+            <i class="fa-solid fa-dna" aria-hidden="true"></i>
+          </span>
+          <div>
+            <strong>Bioinformatics Pipelines</strong>
+            <p>Computational tools that translate data into discovery.</p>
+          </div>
+        </div>
+        <div class="home-hero__panel-item">
+          <span class="home-hero__panel-icon">
+            <i class="fa-solid fa-brain" aria-hidden="true"></i>
+          </span>
+          <div>
+            <strong>Robust AI Systems</strong>
+            <p>Resilient models that generalize in clinical settings.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-
-<style>
-  .hero {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .hero .container {
-    width: 100%;
-    max-width: none;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 0 20px;
-  }
-</style>
+</div>
 
 
 
 {% include section.html %}
 
+<div id="our-projects" class="home-anchor"></div>
 ## Our Projects
 {% include project-carousel.html %}
 
@@ -57,6 +79,7 @@ title: Home
 {% capture col1 %}
 ## Our news
 
+  <div class="home-news">
   {% assign sorted_news = site.data.news | sort: "date" | reverse %}
     {% for post in sorted_news limit:5 %}
     
@@ -74,6 +97,7 @@ title: Home
   </div>
 
     {% endfor %}  
+  </div>
   
 {%
   include button.html
@@ -139,10 +163,10 @@ Our team includes graduate students, postdoctoral researchers, programmers, and 
 
 {% include section.html %}
 
-<center>
-<!-- Generated from https://shiny.rcg.sfu.ca/u/rdmorin/pubmedcloud3/ -->
-<img src="../images/gallery/team-itrc.jpeg" alt="A word cloud of publication titles" style="width:100%"/>
-</center>
+<div class="home-cloud">
+  <!-- Generated from https://shiny.rcg.sfu.ca/u/rdmorin/pubmedcloud3/ -->
+  <img src="../images/gallery/team-itrc.jpeg" alt="A word cloud of publication titles"/>
+</div>
 {%
   include button.html
   icon="fa-solid fa-door-open"
@@ -165,5 +189,6 @@ Our team includes graduate students, postdoctoral researchers, programmers, and 
 <img src="images/nrf-logo2.png">
 {% endcapture %}
 
-
-{% include cols.html col1=col1 col2=col2 col3=col3%}
+<div class="home-funders">
+  {% include cols.html col1=col1 col2=col2 col3=col3%}
+</div>
