@@ -32,10 +32,6 @@ body {
     &[data-full="true"] {
       padding: 0;
     }
-
-    &[data-size="full"] {
-      padding: 0;
-    }
   }
 
   section:nth-of-type(even) {
@@ -44,10 +40,6 @@ body {
 
   section:nth-of-type(even) {
     background: $gray-50;
-  }
-
-  section[data-size="full"] {
-    background: transparent;
   }
 
   section:last-of-type {
