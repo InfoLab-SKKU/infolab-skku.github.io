@@ -2,7 +2,7 @@
 name: ZHENG CHENSHENG (Chris)
 image: images/chris.jpeg
 role: master
-group: active
+group: alum
 links:
    orcid: 0009-0004-6577-4805
    github: chrissama07

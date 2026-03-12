@@ -2,7 +2,7 @@
 name: Abdenour Soubih
 image: images/abdenour-soubih.jpg
 role: master
-group: active
+group: alum
 links:
    orcid: 0009-0002-4648-9289
    linkedin: abdenour-soubih-5ba56a15a
