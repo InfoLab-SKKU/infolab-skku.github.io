@@ -16,3 +16,5 @@ links:
    youtube:
 
 ---
+
+QIRUI SUN is an alumnus of the Master’s program and is currently working at a **security company in China**.
