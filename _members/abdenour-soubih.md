@@ -15,7 +15,7 @@ links:
 
 Abdenour Soubih is an alumnus of the Master’s program in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, where his research focused on the security and robustness of machine learning, particularly federated learning. He holds Master’s and Bachelor’s degrees in Computer Science from Algerian universities, with experience in IoT, wireless sensor networks, and web-based systems.
 
-He has contributed to international projects such as WaterMed4.0 and has hands-on experience in IoT platform design, mobile application development, and network analysis. Fluent in Arabic, French, and English, Abdenour aims to develop secure and privacy-preserving technologies for distributed and collaborative AI systems.
+He has contributed to international projects such as WaterMed4.0 and has hands-on experience in IoT platform design, mobile application development, and network analysis. Fluent in Arabic, French, and English, Abdenour is currently working as an **AI Engineer at CertiLife Corporation in Korea**, where he continues to build secure and practical AI-driven systems.
 
 ### Education
 Sungkyunkwan University (SKKU) – M.S. in Computer Science and Engineering (Alumnus)

@@ -17,4 +17,4 @@ links:
 
 ---
 
-Eldor was a gradudate student in the lab between August 2020 and August 2023
+Eldor Abdukhamidov was a graduate student in the lab from August 2020 to August 2023. He is currently working as an R&D Engineer in the USA.
