@@ -14,5 +14,8 @@ links:
    facebook:
    instagram: 
    youtube:
+   home-page: https://www.obscuralabs.io/
 
 ---
+
+Bojun Wang is an alumnus of the Master’s program who worked in the lab from 2022 to 2023. He is currently the **CEO and Founder of Obscura Labs**.
