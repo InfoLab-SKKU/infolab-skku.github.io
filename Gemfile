@@ -11,9 +11,9 @@ gem "html-proofer", "~> 5.0"
 
 # plugins
 group :jekyll_plugins do
-  gem "jekyll-spaceship"
-  gem "jekyll-sitemap"
-  gem "jekyll-redirect-from"
-  gem "jekyll-feed"
-  gem "jekyll-last-modified-at"
+  gem "jekyll-spaceship", ">= 0.9.0"
+  gem "jekyll-sitemap", ">= 1.4"
+  gem "jekyll-redirect-from", ">= 0.16"
+  gem "jekyll-feed", ">= 0.17"
+  gem "jekyll-last-modified-at", ">= 1.3"
 end
