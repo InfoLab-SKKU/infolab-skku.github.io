@@ -5,7 +5,7 @@ gem "jekyll", "~> 4.3"
 gem "webrick", "~> 1.7"
 
 # Pin gems for Ruby 3.2 compatibility
-gem "nokogiri", ": "1.14"
+gem "nokogiri", ">= 1.14"
 gem "sass-embedded", "~> 1.63"
 
 gem "html-proofer", "~> 5.0"
