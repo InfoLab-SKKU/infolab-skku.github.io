@@ -14,7 +14,6 @@ links:
    facebook:
    instagram: 
    youtube:
-   home-page: https://www.obscuralabs.io/
 
 ---
 
