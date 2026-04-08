@@ -24,9 +24,7 @@ jobs:
           bundler-cache: false
 
       - name: Install dependencies
-        run: |
-          rm -f Gemfile.lock
-          bundle install
+        run: bundle install
 
       - name: Set root url
         run: |
