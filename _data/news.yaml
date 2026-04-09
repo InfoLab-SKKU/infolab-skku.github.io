@@ -10,12 +10,12 @@
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
 
-- title: MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive Embeddings and Dynamic Ensembles
+- title: "MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive Embeddings and Dynamic Ensembles"
   date: 2026-04-08
-  description: Our paper, "MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive Embeddings and Dynamic Ensembles," has been accepted at the 28th International Conference on Pattern Recognition (ICPR 2026). Congratulations to the team!
+  description: 'Our paper, "MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive Embeddings and Dynamic Ensembles," has been accepted at the 28th International Conference on Pattern Recognition (ICPR 2026). Congratulations to the team!'
   url:
 
-- title: Trustworthy Alzheimer's diagnosis: Integrating robustness, fairness, and explainability in neuroimaging based deep ensemble framework
+- title: "Trustworthy Alzheimer's diagnosis: Integrating robustness, fairness, and explainability in neuroimaging based deep ensemble framework"
   date: 2026-04-1
   description: Our new paper on Trustworthy Alzheimer's diagnosis has been published in Engineering Applications of Artificial Intelligence (JCR top 2%). Congratulations to the team!
   url: https://www.sciencedirect.com/science/article/pii/S0952197626005725
