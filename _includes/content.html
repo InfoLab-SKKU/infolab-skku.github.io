@@ -11,11 +11,14 @@
 
 {% for section in sections %}
   {% assign dark = section | regex_scan: "dark: (.*);" | default: "" %}
+  {% if dark contains "<" %}{% assign dark = "" %}{% endif %}
   {% assign background = section
     | regex_scan: "background: (.*);"
     | default: nil
   %}
+  {% if background contains "<" %}{% assign background = nil %}{% endif %}
   {% assign size = section | regex_scan: "size: (.*);" | default: "page" %}
+  {% if size contains "<" %}{% assign size = "page" %}{% endif %}
 
   <section
     class="background"
