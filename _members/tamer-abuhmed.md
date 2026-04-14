@@ -56,14 +56,15 @@ Dr. Tamer ABUHMED is an Associate Professor in the College of Computing and Info
 ## Academic Services
 
 ### Ongoing Department and College Service
-
-- Member, Convergence Security Department Curriculum Committee
-- Founding Member, Forensic Science Department / Digital Forensics Curriculum Committee
-- Member, Data Science Curriculum Committee
-- Member, College Artificial Intelligence Task Force
+- Member, Department of Computer Science and Engineering
+- Member, Department of Media and Communication
+- Member, Convergence Security Department
+- Member, Department of DMC Engineering
+- Member, Forensic Science Department / Digital Forensics
+- Member, Department of Artificial Intelligence Systems
 - Host and Organizer, Computer Science Seminar
-- Member, Super Sapiens Research Institute Steering Committee
-- Member, Department of Digital Media Communication Engineering Curriculum Committee
+- Member, Super Sapiens Research Institute
+
 
 ### Reviewer and Guest Editor Activities
 
