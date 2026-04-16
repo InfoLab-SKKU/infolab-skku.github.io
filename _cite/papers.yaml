@@ -317,8 +317,7 @@
   image: ''
   buttons:
   - type: pdf
-    link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity
-      (1).pdf
+    link: pdf/Towards_Robust_FL.pdf
 - id: doi:10.1371/journal.ppat.1004045
   image: ''
   buttons:
