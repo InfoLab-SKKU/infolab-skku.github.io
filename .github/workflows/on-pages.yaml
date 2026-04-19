@@ -2,12 +2,14 @@ name: on-pages
 run-name: on pages deploy
 
 on:
-  workflow_run:
-    workflows: [pages-build-deployment]
-    types:
-      - completed
-    branches:
-      - gh-pages
+  # Disabled: site is now deployed via GitHub Actions (build-site.yaml),
+  # not via the legacy pages-build-deployment runner.
+  # workflow_run:
+  #   workflows: [pages-build-deployment]
+  #   types:
+  #     - completed
+  #   branches:
+  #     - gh-pages
 
   # run if user manually requests it
   workflow_dispatch:
