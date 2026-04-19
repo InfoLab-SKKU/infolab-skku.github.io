@@ -79,7 +79,7 @@ title: Home
   }
 
   .hero-news {
-    background: transparent;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
