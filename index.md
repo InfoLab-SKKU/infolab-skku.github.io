@@ -6,7 +6,7 @@ title: Home
   <div class="hero-content-wrapper">
     <!-- LEFT COLUMN: Welcome -->
     <div class="hero-welcome">
-      <div class="container" style="position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; text-align: left; color: #fff; height: 100%; padding: 40px 40px 0 20px; margin: 0;">
+      <div class="container" style="position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; text-align: left; color: #fff; height: 100%; padding: 40px 40px 10px 20px; margin: 0;">
         <h1 style="font-size: 2.8rem; margin: 0 0 15px 0; font-weight: 700; line-height: 1.2;">Welcome to InfoLab</h1>
         <p class="lead" style="font-size: 1.05rem; margin: 0 0 15px 0; max-width: 100%;">
           Pushing the boundaries of <strong>security</strong> and <strong>machine learning</strong>, 
