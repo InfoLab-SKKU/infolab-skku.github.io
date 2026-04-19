@@ -2,96 +2,171 @@
 title: Home
 ---
 
+<div class="hero-with-news">
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #07377b; background-size: cover;"></div>
 
-  <div class="container" style="position: relative; z-index: 1; width: 100%; max-width: none; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; padding: 0 20px;">
-     <h1 style="font-size: 3.5rem; margin-bottom: 20px; font-weight: 700;">Welcome to InfoLab!</h1>
-      <p class="lead" style="font-size: 1.3rem; max-width: 800px; margin-bottom: 20px;">
-        InfoLab is a research group pushing the boundaries of <strong>security</strong> and <strong>machine learning</strong>, 
-        especially in <strong>bioinformatics</strong> and <strong>biomedical discovery</strong>.
-      </p>
-      <p style="font-size: 1rem; margin-bottom: 30px;">
-        Part of the 
-        <a href="https://sw.skku.edu/eng_sw/index.do" style="color: #fff; text-decoration: underline;">College of Computing and Informatics</a> at 
-        <a href="https://www.skku.edu/eng/" style="color: #fff; text-decoration: underline;">Sungkyunkwan University (SKKU)</a>.
-      </p>
-      <a href="#our-projects" class="button primary" style="background-color: transparent; color: white; border: 2px solid white; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: background-color 0.3s, color 0.3s; scroll-behavior: smooth;" onclick="event.preventDefault(); document.querySelector('#our-projects').scrollIntoView({ behavior: 'smooth' });">
-        Explore Our Work
-      </a>
-  </div>
+  <div class="hero-content-wrapper">
+    <!-- LEFT COLUMN: Welcome -->
+    <div class="hero-welcome">
+      <div class="container" style="position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; text-align: left; color: #fff; height: 100%; padding: 40px 40px 0 20px; margin: 0;">
+        <h1 style="font-size: 2.8rem; margin: 0 0 15px 0; font-weight: 700; line-height: 1.2;">Welcome to InfoLab</h1>
+        <p class="lead" style="font-size: 1.05rem; margin: 0 0 15px 0; max-width: 100%;">
+          Pushing the boundaries of <strong>security</strong> and <strong>machine learning</strong>, 
+          especially in <strong>bioinformatics</strong> and <strong>biomedical discovery</strong>.
+        </p>
+        <p style="font-size: 0.9rem; margin: 0; opacity: 0.95;">
+          Part of the 
+          <a href="https://sw.skku.edu/eng_sw/index.do" style="color: #fff; text-decoration: underline;">College of Computing and Informatics</a> at 
+          <a href="https://www.skku.edu/eng/" style="color: #fff; text-decoration: underline;">Sungkyunkwan University</a>.
+        </p>
+        <a href="#explore" class="button primary" style="background-color: transparent; color: white; border: 2px solid white; padding: 10px 28px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: all 0.3s; width: fit-content; margin: 20px 0 0 0;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)'" onmouseout="this.style.backgroundColor='transparent'">
+          Explore Our Work
+        </a>
+      </div>
+    </div>
 
+    <!-- RIGHT COLUMN: Recent News -->
+    <div class="hero-news">
+      <div style="position: relative; z-index: 1; padding: 40px 40px 0 40px; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; width: 100%;">
+        <h3 style="color: white; font-size: 1.1rem; margin-bottom: 0px; font-weight: 600; display: flex; align-items: center; gap: 8px;">
+          {% include icon.html icon="fa-solid fa-newspaper" %} Recent News
+        </h3>
+        
+        {% assign sorted_news = site.data.news | sort: "date" | reverse %}
+        {% for post in sorted_news limit:3 %}
+          <div class="hero-news-item">
+            <div class="hero-news-date">{{ post.date | date: "%b %d" }}</div>
+            <div class="hero-news-title">{{ post.title }}</div>
+            {% if post.url %}
+              <a href="{{ post.url }}" target="_blank" class="hero-news-link">Read →</a>
+            {% endif %}
+          </div>
+        {% endfor %}
+        
+        <a href="/news" class="hero-news-btn" style="background-color: transparent; color: white; border: 2px solid white; padding: 10px 28px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: all 0.3s; width: fit-content; display: inline-block; margin-top: 20px; font-size: 0.9rem;" onmouseover="this.style.backgroundColor='rgba(255,255,255,0.1)'" onmouseout="this.style.backgroundColor='transparent'">
+          {% include icon.html icon="fa-solid fa-arrow-right" %} More News
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <style>
-  .hero {
+  .hero-with-news {
+    position: relative;
     width: 100%;
-    height: 100vh;
-    margin: 0;
+    height: 58vh;
+    margin: -60px 0 0 0;
     padding: 0;
     background-size: cover;
     background-position: center;
+    display: flex;
   }
 
-  .hero .container {
+  .hero-content-wrapper {
+    position: relative;
     width: 100%;
-    max-width: none;
     height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+  }
+
+  .hero-welcome {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #fff;
-    padding: 0 20px;
+  }
+
+  .hero-news {
+    background: transparent;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-news-item {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .hero-news-item:last-of-type {
+    border-bottom: none;
+  }
+
+  .hero-news-item:hover {
+    padding-left: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+  }
+
+  .hero-news-date {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  .hero-news-title {
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 600;
+    margin: 6px 0;
+    line-height: 1.3;
+  }
+
+  .hero-news-link {
+    font-size: 0.8rem;
+    color: #7fc3ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+
+  .hero-news-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .hero-news-all:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 1024px) {
+    .hero-content-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-news {
+      border-left: none;
+      border-top: 2px solid rgba(255, 255, 255, 0.2);
+      padding: 20px;
+    }
+
+    .hero-with-news {
+      height: auto;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content-wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .hero-welcome .container {
+      padding: 30px 20px;
+    }
+
+    .hero-welcome h1 {
+      font-size: 2rem;
+    }
   }
 </style>
-
-
-
-{% include section.html %}
-
-## Our Projects
+## {% include icon.html icon="fa-solid fa-flask" %} Our Projects
 {% include project-carousel.html %}
-
-{% include section.html %}
-
-{% capture col1 %}
-## Our news
-
-  {% assign sorted_news = site.data.news | sort: "date" | reverse %}
-    {% for post in sorted_news limit:5 %}
-    
-  <div class="news-card">
-    <div class="news-header">
-        <span class="news-title">{{ post.title }}</span>
-        <span class="news-date">{% include icon.html icon="fa-regular fa-calendar" %} {{ post.date | date: "%B %d, %Y" }} </span>
-    </div>
-    <div class="news-description">
-        {{ post.description }} 
-            {% if post.url %}
-            <a href="{{ post.url }}" target="_blank">More...</a>
-            {% endif %}
-    </div>
-  </div>
-
-    {% endfor %}  
-  
-{%
-  include button.html
-  link="news"
-  text="Read all news"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  align=left
-%}
-
-{% endcapture %}
-
-{% include cols.html col1=col1 %}
-
-{% include section.html %}
-
 {% capture text %}
-
 A great way to explore our work is through our publications. Browse or search our full list of research outputs to learn more about what we do.
 
 {%
@@ -102,9 +177,7 @@ A great way to explore our work is through our publications. Browse or search ou
   flip=true
   style="bare"
 %}
-
 {% endcapture %}
-
 {%
   include feature.html
   image="images/gallery/AR402001.jpg"
@@ -113,9 +186,7 @@ A great way to explore our work is through our publications. Browse or search ou
   flip=true
   text=text
 %}
-
 {% capture text %}
-
 Our team includes graduate students, postdoctoral researchers, programmers, and staff, with diverse backgrounds in experimental biology, computer science, and bioinformatics. Come meet the people behind the research!
 
 {%
@@ -126,9 +197,7 @@ Our team includes graduate students, postdoctoral researchers, programmers, and 
   flip=true
   style="bare"
 %}
-
 {% endcapture %}
-
 {%
   include feature.html
   image="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.29 PM.jpeg"
@@ -136,9 +205,6 @@ Our team includes graduate students, postdoctoral researchers, programmers, and 
   title="Our Team"
   text=text
 %}
-
-{% include section.html %}
-
 <center>
 <!-- Generated from https://shiny.rcg.sfu.ca/u/rdmorin/pubmedcloud3/ -->
 <img src="../images/gallery/team-itrc.jpeg" alt="A word cloud of publication titles" style="width:100%"/>
@@ -149,8 +215,6 @@ Our team includes graduate students, postdoctoral researchers, programmers, and 
   text="Join us"
   link="/team/join"
 %}
-{% include section.html %}
-
 #### Our funders
 
 {% capture col1 %}
