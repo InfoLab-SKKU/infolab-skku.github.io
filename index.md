@@ -3,8 +3,6 @@ title: Home
 ---
 
 <div class="hero-with-news">
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #07377b; background-size: cover;"></div>
-
   <div class="hero-content-wrapper">
     <!-- LEFT COLUMN: Welcome -->
     <div class="hero-welcome">
@@ -54,22 +52,25 @@ title: Home
 <style>
   .hero-with-news {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 58vh;
-    margin: -60px 0 0 0;
+    margin: -60px calc(-50vw + 50%) 0 calc(-50vw + 50%);
     padding: 0;
-    background-size: cover;
-    background-position: center;
     display: flex;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #07377b;
   }
 
   .hero-content-wrapper {
     position: relative;
     width: 100%;
+    max-width: 900px;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     z-index: 1;
+    background-color: #07377b;
   }
 
   .hero-welcome {
@@ -80,7 +81,9 @@ title: Home
   .hero-news {
     background: transparent;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
 
   .hero-news-item {
@@ -88,6 +91,8 @@ title: Home
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: left;
+    width: 100%;
   }
 
   .hero-news-item:last-of-type {
@@ -106,6 +111,7 @@ title: Home
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 600;
+    text-align: left;
   }
 
   .hero-news-title {
@@ -114,6 +120,7 @@ title: Home
     font-weight: 600;
     margin: 6px 0;
     line-height: 1.3;
+    text-align: left;
   }
 
   .hero-news-link {
@@ -122,6 +129,7 @@ title: Home
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    text-align: left;
   }
 
   .hero-news-link:hover {
