@@ -2,450 +2,110 @@
 title: Gallery
 nav:
   order: 7
-  tooltip: Lab news and updates
+  tooltip: Lab photos and activities
 ---
-{% include breadcrumbs.html %}
 
-# {% include icon.html icon="fa-solid fa-users" %}Team photos
+{% assign all_photos    = site.data.gallery %}
+{% assign sorted_photos = all_photos | sort: "year" | reverse %}
+{% assign event_photos  = all_photos | where: "category", "events" %}
+{% assign conf_photos   = all_photos | where: "category", "conferences" %}
+{% assign out_photos    = all_photos | where: "category", "outings" %}
+{% assign mile_photos   = all_photos | where: "category", "milestones" %}
+{% assign lab_photos    = all_photos | where: "category", "lab" %}
+{% assign unique_cats   = all_photos | map: "category" | uniq %}
+{% assign sorted_years  = all_photos | map: "year" | sort | uniq %}
+{% assign newest_yr     = sorted_years | last %}
 
-Welcome to our gallery! Here, you can explore memorable moments and events captured in photos, showcasing the vibrant life and activities of our team.
+<!-- GALLERY HERO -->
+<div class="team-hero">
+  <div class="team-hero-content">
+    <div class="team-hero-badge">Lab Life</div>
+    <h1 class="team-hero-title">Lab Gallery</h1>
+    <p class="team-hero-sub">Memorable moments, events, and activities from our lab community.</p>
+    <div class="team-hero-stats">
+      <div class="team-hstat">
+        <span class="team-hstat-num">{{ all_photos.size }}</span>
+        <span class="team-hstat-lbl">Photos</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <span class="team-hstat-num">{{ unique_cats.size }}</span>
+        <span class="team-hstat-lbl">Categories</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <span class="team-hstat-num">2020&ndash;{{ newest_yr }}</span>
+        <span class="team-hstat-lbl">Years</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% include section.html %}
 
-{% capture content %}
+<!-- FILTER BAR -->
+<div class="gallery-filter-bar">
+  <button class="gallery-filter-btn active" data-filter="all">
+    <i class="fa-solid fa-images"></i> All
+    <span class="gallery-filter-count">{{ all_photos.size }}</span>
+  </button>
+  <button class="gallery-filter-btn" data-filter="events">
+    <i class="fa-solid fa-calendar-days"></i> Events
+    <span class="gallery-filter-count">{{ event_photos.size }}</span>
+  </button>
+  <button class="gallery-filter-btn" data-filter="conferences">
+    <i class="fa-solid fa-chalkboard-user"></i> Conferences
+    <span class="gallery-filter-count">{{ conf_photos.size }}</span>
+  </button>
+  <button class="gallery-filter-btn" data-filter="outings">
+    <i class="fa-solid fa-person-hiking"></i> Outings
+    <span class="gallery-filter-count">{{ out_photos.size }}</span>
+  </button>
+  <button class="gallery-filter-btn" data-filter="milestones">
+    <i class="fa-solid fa-trophy"></i> Milestones
+    <span class="gallery-filter-count">{{ mile_photos.size }}</span>
+  </button>
+  <button class="gallery-filter-btn" data-filter="lab">
+    <i class="fa-solid fa-flask"></i> Lab Life
+    <span class="gallery-filter-count">{{ lab_photos.size }}</span>
+  </button>
+</div>
 
-{%
-  include figure.html
-  image="images/IMG_3914.JPG"
-  link="images/IMG_3914.JPG"
-  caption=""
-  width="300px"
-%}
+<!-- MASONRY GRID -->
+<div class="gallery-masonry" id="gallery-grid">
+  {% for photo in sorted_photos %}
+    {% assign encoded_src = photo.image | relative_url %}
+    <div class="gallery-item"
+      data-category="{{ photo.category }}"
+      data-year="{{ photo.year }}"
+      data-src="{{ encoded_src }}"
+      data-caption="{{ photo.caption | escape }}">
+      <div class="gallery-img-wrap">
+        <img
+          src="{{ encoded_src }}"
+          alt="{{ photo.caption | escape }}"
+          class="gallery-img"
+          loading="lazy"
+          {% include fallback.html %}
+        >
+        {% if photo.caption and photo.caption != "" %}
+          <div class="gallery-caption-overlay">{{ photo.caption }}</div>
+        {% endif %}
+        <div class="gallery-item-year">{{ photo.year }}</div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
 
-{%
-  include figure.html
-  image="images/IMG_3985.JPG"
-  link="images/IMG_3985.JPG"
-  caption=""
-  width="300px"
-%}
+<p class="gallery-empty" id="gallery-empty">No photos in this category yet.</p>
 
-{%
-  include figure.html
-  image="images/abdenour-chris-abderrahman.jpeg"
-  link="images/abdenour-chris-abderrahman.jpeg"
-  caption=""
-  width="300px"
-%}
+<!-- LIGHTBOX -->
+<div id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button id="lb-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <button id="lb-prev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left"></i></button>
+  <img id="lb-img" src="" alt="Gallery photo">
+  <button id="lb-next" aria-label="Next photo"><i class="fa-solid fa-chevron-right"></i></button>
+  <p id="lb-caption"></p>
+  <p id="lb-counter"></p>
+</div>
 
-{%
-  include figure.html
-  image="images/abdenour-firuz.jpeg"
-  link="images/abdenour-firuz.jpeg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/abdenour-grad1.jpeg"
-  link="images/abdenour-grad1.jpeg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/abdenour-grad2.jpeg"
-  link="images/abdenour-grad2.jpeg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/abdenour-grad3.jpeg"
-  link="images/abdenour-grad3.jpeg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/lab_lunch_2025-09-18.jpeg"
-  link="images/lab_lunch_2025-09-18.jpeg"
-  caption="Lab lunch"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/Maria_birthday.jpeg"
-  link="images/Maria_birthday.jpeg"
-  caption="Maria's birthday"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/ahnlab.jpg"
-  link="images/ahnlab.jpg"
-  caption="Vesiting AhnLab 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/team-full.jpeg"
-  link="images/gallery/team-full.jpeg"
-  caption="celebrating teachers day!"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/team-workig.jpeg"
-  link="images/gallery/team-workig.jpeg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/teachers_day.jpeg"
-  link="images/gallery/2025/teachers_day.jpeg"
-  caption="Students council visit on teacher's day."
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/chris.jpeg"
-  link="images/gallery/chris.jpeg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/lunch.jpeg"
-  link="images/lunch.jpeg"
-  caption="Lunch"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/team-itrc.jpeg"
-  link="images/gallery/team-itrc.jpeg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/itrc2025_abdenour_presentation2.jpg"
-  link="images/gallery/2025/itrc2025_abdenour_presentation2.jpg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/itrc2025_abdenour_presentation.jpg"
-  link="images/gallery/2025/itrc2025_abdenour_presentation.jpg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.54 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.54 PM.jpeg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.26 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.26 PM.jpeg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.51 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.51 PM.jpeg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.23.54 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.23.54 PM.jpeg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.29 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.29 PM.jpeg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.47 PM.jpeg"
-  link="images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.47 PM.jpeg"
-  caption="ITRC 2025"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/lablunch_3.jpg"
-  link="images/lablunch_3.jpg"
-  caption="Lunch"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/ahnlab_2024.jpeg"
-  link="images/ahnlab_2024.jpeg"
-  caption="Visiting AhnLab 2024"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/amir-graduation-2.jpeg"
-  link="images/gallery/amir-graduation-2.jpeg"
-  caption="Amir-Graduation"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/amir-graduation.jpeg"
-  link="images/gallery/amir-graduation.jpeg"
-  caption="Amir-Graduation"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/2025 Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship).jpeg"
-  link="images/2025 Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship).jpeg"
-  caption="Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship)"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/2025 Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship)1.jpeg"
-  link="images/2025 Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship)1.jpeg"
-  caption="Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship)"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/2025 Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship)2.jpeg"
-  link="images/2025 Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship)2.jpeg"
-  caption="Sungkyunkwan Professors’ Night Gathering (celebrate academic fellowship)"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/abdenour-cycling.jpeg"
-  link="images/abdenour-cycling.jpeg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/fall2.jpeg"
-  link="images/fall2.jpeg"
-  caption="Fall in skku"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/hiking.jpeg"
-  link="images/hiking.jpeg"
-  caption="Hiking"
-  width="300px"
-%}
-
-<!-- {%
-  include figure.html
-  image="images/historical meusieum.jpeg"
-  link="images/historical meusieum.jpeg"
-  caption="Musieum visit"
-  width="300px"
-%} -->
-
-{%
-  include figure.html
-  image="images/lunch2.jpeg"
-  link="images/lunch2.jpeg"
-  caption="Lunch"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/marathon.jpeg"
-  link="images/marathon.jpeg"
-  caption="Kyunggi Marathon"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/presentation.jpeg"
-  link="images/presentation.jpeg"
-  caption="Team"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/skku-old-vilage.jpeg"
-  link="images/skku-old-vilage.jpeg"
-  caption="Visiting Seoul campus"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/university festival.jpeg"
-  link="images/university festival.jpeg"
-  caption="University festival"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/with-korean-teacher.jpeg"
-  link="images/with-korean-teacher.jpeg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/AR401894.jpg"
-  link="images/gallery/AR401894.jpg"
-  caption="Ar401894"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/wayu_competition.jpg"
-  link="images/gallery/wayu_competition.jpg"
-  caption="Wayu Competition"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/wang.jpg"
-  link="images/gallery/wang.jpg"
-  caption="Wang"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/AR408852.jpg"
-  link="images/gallery/AR408852.jpg"
-  caption="Ar408852"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/firuz.jpg"
-  link="images/gallery/firuz.jpg"
-  caption="Firuz"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/AR407087.jpg"
-  link="images/gallery/AR407087.jpg"
-  caption="Ar407087"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/dinner.jpeg"
-  link="images/gallery/dinner.jpeg"
-  caption="Dinner"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/AR402001.jpg"
-  link="images/gallery/AR402001.jpg"
-  caption="Ar402001"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/sun2.jpg"
-  link="images/gallery/sun2.jpg"
-  caption="Sun2"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/nasir-1.jpg"
-  link="images/gallery/nasir-1.jpg"
-  caption="Nasir-1"
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/sun1.jpg"
-  link="images/gallery/sun1.jpg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/1.jpg"
-  link="images/gallery/1.jpg"
-  caption=""
-  width="300px"
-%}
-
-{%
-  include figure.html
-  image="images/gallery/4-1.jpg"
-  link="images/gallery/4-1.jpg"
-  caption=""
-  width="300px"
-%}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}

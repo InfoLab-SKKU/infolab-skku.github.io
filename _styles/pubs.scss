@@ -1,0 +1,367 @@
+---
+---
+
+/* ===========================================
+   PUBLICATIONS PAGE STYLES
+   =========================================== */
+
+/* --- Stats Bar --- */
+.pubs-stats-bar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: linear-gradient(135deg, #07377b 0%, #0a4fa8 100%);
+  border-radius: var(--rounded);
+  padding: 18px 32px;
+  margin: 24px 0 0;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.pubs-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 28px;
+  color: #fff;
+  flex: 1;
+  min-width: 120px;
+}
+
+.pubs-stat-num {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.pubs-stat-lbl {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  opacity: 0.78;
+  font-weight: 500;
+  margin-top: 2px;
+}
+
+.pubs-stat-sep {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.25);
+  flex-shrink: 0;
+}
+
+/* --- Filter + Controls Bar --- */
+.pubs-header-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0 16px;
+}
+
+.pubs-filter-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pubs-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1.5px solid var(--light-gray);
+  background: var(--background);
+  color: var(--gray);
+  font-size: 0.84rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--body);
+  transition: background var(--transition), color var(--transition),
+    border-color var(--transition);
+}
+
+.pubs-filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.pubs-filter-btn.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.pubs-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.25);
+  color: inherit;
+}
+
+.pubs-filter-btn:not(.active) .pubs-filter-count {
+  background: var(--light-gray);
+  color: var(--gray);
+}
+
+/* --- Sort + View Controls --- */
+.pubs-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pubs-sort-select {
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--light-gray);
+  background: var(--background);
+  color: var(--text);
+  font-size: 0.84rem;
+  font-family: var(--body);
+  cursor: pointer;
+  transition: border-color var(--transition);
+
+  &:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-color: var(--primary);
+  }
+}
+
+.pubs-view-toggle {
+  display: flex;
+  border: 1.5px solid var(--light-gray);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pubs-view-btn {
+  padding: 7px 11px;
+  background: var(--background);
+  border: none;
+  color: var(--gray);
+  cursor: pointer;
+  font-size: 0.88rem;
+  transition: background var(--transition), color var(--transition);
+  line-height: 1;
+
+  &:hover {
+    background: var(--light-gray);
+    color: var(--primary);
+  }
+
+  &.active {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  & + & {
+    border-left: 1.5px solid var(--light-gray);
+  }
+}
+
+/* --- Year separators --- */
+.pubs-year-sep {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 32px 0 16px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+
+  &::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, var(--light-gray) 0%, transparent 100%);
+  }
+}
+
+/* --- Citation cards --- */
+.citation-container {
+  position: relative;
+}
+
+/* Type accent left border */
+.citation-container[data-type] .citation {
+  border-left: 4px solid var(--light-gray);
+  padding-left: 16px;
+}
+
+.citation-container[data-type="journal"] .citation,
+.citation-container[data-type="article"] .citation {
+  border-left-color: #0d9488; /* teal = journal */
+}
+
+.citation-container[data-type="paper"] .citation,
+.citation-container[data-type="proceedings"] .citation,
+.citation-container[data-type="conference"] .citation {
+  border-left-color: #07377b; /* navy = conference */
+}
+
+.citation-container[data-type="preprint"] .citation {
+  border-left-color: #d97706; /* amber = preprint */
+}
+
+/* Base card styles */
+.citation {
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.citation:hover {
+  box-shadow: 0 6px 28px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+/* Publisher pill */
+.citation-publisher-pill {
+  display: inline-block;
+  background: rgba(7, 55, 123, 0.09);
+  color: var(--primary);
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Author highlighting */
+.citation-author-highlight {
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* BibTeX copy button */
+.cite-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1.5px solid var(--light-gray);
+  background: var(--background);
+  color: var(--gray);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--body);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition),
+    border-color var(--transition);
+
+  &:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(7, 55, 123, 0.05);
+  }
+
+  &.copied {
+    border-color: #0d9488;
+    color: #0d9488;
+    background: rgba(13, 148, 136, 0.07);
+  }
+}
+
+/* Hide filtered citations */
+.citation-container[data-hidden="true"] {
+  display: none;
+}
+
+/* Hide static year <h3> headings generated by list.html inside the wrapper —
+   JS inserts its own .pubs-year-sep divs after sorting/filtering */
+#pubs-list-wrapper > h3 {
+  display: none;
+}
+
+/* --- Compact view --- */
+#pubs-list-wrapper.compact-view {
+  .citation-container .citation {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .citation-image {
+    display: none;
+  }
+
+  .citation-description {
+    display: none;
+  }
+
+  .citation-buttons {
+    display: none;
+  }
+
+  .citation-text {
+    padding: 8px 0;
+  }
+
+  .citation-title {
+    font-size: 0.9rem;
+  }
+
+  .cite-copy-btn {
+    padding: 3px 8px;
+    font-size: 0.72rem;
+  }
+
+  .pubs-year-sep {
+    margin: 18px 0 8px;
+  }
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .pubs-stats-bar {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .pubs-stat {
+    padding: 0 16px;
+  }
+
+  .pubs-stat-num {
+    font-size: 1.4rem;
+  }
+
+  .pubs-header-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pubs-filter-btns {
+    width: 100%;
+  }
+
+  .pubs-filter-btn {
+    font-size: 0.8rem;
+    padding: 7px 12px;
+  }
+
+  .pubs-controls {
+    flex-wrap: wrap;
+  }
+}
+

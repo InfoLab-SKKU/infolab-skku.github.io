@@ -1,7 +1,7 @@
 # site properties and page defaults
 title: InfoLab.
-subtitle: 
-description: 
+subtitle: Information Research Laboratory · SKKU
+description: InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.
 logo-text: false
 header: images/background-radial-blur.jpg
 footer: images/background.jpg
@@ -9,7 +9,6 @@ proofer: false
 
 # site social media and other links
 links:
-  email: tamer@skku.edu
   orcid: 0000-0001-9232-4843
   google-scholar: pLC4l6YAAAAJ
   github: InfoLab-SKKU

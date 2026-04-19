@@ -1,6 +1,316 @@
 ---
 ---
 
+/* ===========================================
+   NEWS PAGE
+   =========================================== */
+
+/* ── Two-column layout ───────────────────────── */
+
+.news-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 32px;
+  align-items: start;
+}
+
+.news-col-main {
+  min-width: 0;
+}
+
+.news-col-side {
+  min-width: 0;
+}
+
+.news-social-sticky {
+  position: sticky;
+  top: 80px;
+}
+
+/* Inline filter bar (inside column, left-aligned) */
+.news-filter-bar--inline {
+  justify-content: flex-start;
+  margin-bottom: 28px;
+}
+
+@media (max-width: 900px) {
+  .news-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .news-social-sticky {
+    position: static;
+  }
+}
+
+/* ── Filter bar ─────────────────────────────── */
+
+.news-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto 36px;
+  max-width: 860px;
+}
+
+.news-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--light-gray);
+  background: var(--background);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+
+  &:hover {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+    transform: translateY(-2px);
+  }
+
+  &.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+  }
+}
+
+.news-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.news-filter-btn:not(.active) .news-filter-count {
+  background: var(--light-gray);
+  color: var(--gray);
+}
+
+/* ── Year group headers ──────────────────────── */
+
+.news-year-group {
+  margin-bottom: 44px;
+}
+
+.news-year-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.news-year-label {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.news-year-count {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--gray);
+  background: var(--background-alt);
+  padding: 2px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--light-gray);
+}
+
+/* ── News card grid ──────────────────────────── */
+
+.news-cards-grid {
+  display: grid;
+  gap: 14px;
+}
+
+/* ── Individual news card ────────────────────── */
+
+.news-card-item {
+  display: flex;
+  background: var(--background-alt);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.nci-accent {
+  width: 5px;
+  flex-shrink: 0;
+}
+
+.nci-publication { background: var(--primary); }
+.nci-member      { background: #16a34a; }
+.nci-patent      { background: #7c3aed; }
+.nci-award       { background: #d97706; }
+.nci-other       { background: #64748b; }
+
+.nci-body {
+  padding: 16px 20px;
+  flex: 1;
+  min-width: 0;
+}
+
+.nci-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.nci-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.nci-badge-publication { background: rgba(7, 55, 123, 0.1);  color: #07377b; }
+.nci-badge-member      { background: rgba(22, 163, 74, 0.1); color: #16a34a; }
+.nci-badge-patent      { background: rgba(124, 58, 237, 0.1); color: #7c3aed; }
+.nci-badge-award       { background: rgba(217, 119, 6, 0.1); color: #d97706; }
+.nci-badge-other       { background: rgba(100, 116, 139, 0.1); color: #64748b; }
+
+.nci-date {
+  font-size: 0.78rem;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.nci-title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin: 0 0 8px;
+  line-height: 1.45;
+
+  a {
+    color: var(--text);
+    text-decoration: none;
+
+    &:hover { color: var(--primary); }
+  }
+}
+
+.nci-desc {
+  font-size: 0.865rem;
+  color: var(--gray);
+  line-height: 1.65;
+  margin: 0 0 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.nci-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  transition: opacity 0.2s;
+
+  &:hover { opacity: 0.75; }
+}
+
+/* ── Empty state ─────────────────────────────── */
+
+.news-empty {
+  text-align: center;
+  color: var(--gray);
+  padding: 50px 20px;
+  display: none;
+}
+
+/* ── BlueSky section ─────────────────────────── */
+
+.news-social-section {
+  background: var(--background-alt);
+  border-radius: var(--rounded);
+  padding: 20px;
+  border: 1px solid var(--light-gray);
+  box-shadow: var(--shadow);
+}
+
+.news-social-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+  color: var(--text);
+
+  i { color: #0085ff; font-size: 1.2rem; }
+}
+
+.news-social-handle {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #0085ff;
+  text-decoration: none;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(0, 133, 255, 0.08);
+  border: 1px solid rgba(0, 133, 255, 0.2);
+
+  &:hover { background: rgba(0, 133, 255, 0.14); }
+}
+
+.bluesky-embed-wrap {
+  width: 100%;
+}
+
+/* ── Responsive ──────────────────────────────── */
+
+@media (max-width: 600px) {
+  .nci-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nci-body {
+    padding: 14px 16px;
+  }
+}
+
+/* ===========================================
+   LEGACY — kept for homepage hp-news-* classes
+   =========================================== */
+
 .news-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

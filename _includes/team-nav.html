@@ -1,0 +1,10 @@
+<div class="team-jumpnav" role="navigation" aria-label="Team sections">
+  <a href="/team#pi" class="team-jumpnav-item {% if page.url contains '/team' and page.url == '/team/' %}team-jumpnav-active{% endif %}">Principal Investigator</a>
+  <a href="/team#researchers" class="team-jumpnav-item {% if page.url contains '/team' and page.url == '/team/' %}team-jumpnav-active{% endif %}">Researchers</a>
+  <a href="/team#interns" class="team-jumpnav-item {% if page.url contains '/team' and page.url == '/team/' %}team-jumpnav-active{% endif %}">Interns</a>
+  <a href="/team/alumni" class="team-jumpnav-item {% if page.url contains '/team/alumni' %}team-jumpnav-active{% endif %}">Alumni</a>
+  <a href="/collaborators" class="team-jumpnav-item {% if page.url contains '/collaborators' %}team-jumpnav-active{% endif %}">Collaborators</a>
+  <a href="/team/join" class="team-jumpnav-item team-jumpnav-join {% if page.url contains '/team/join' %}team-jumpnav-join-active{% endif %}">
+    {% include icon.html icon="fa-solid fa-door-open" %} Join Us
+  </a>
+</div>

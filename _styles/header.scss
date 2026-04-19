@@ -5,7 +5,21 @@ $logo-big: 80px;
 $logo: 40px;
 $big-padding: 100px;
 $collapse: 700px;
+$tablet: 1024px;
 $sticky: true;
+
+/* Reading progress bar */
+#read-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #7dd3fc, #0d9488);
+  z-index: 1001;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
 
 header {
   display: flex;
@@ -60,6 +74,8 @@ header a {
 
 .title {
   font-size: var(--large);
+  font-weight: var(--bold);
+  letter-spacing: -0.01em;
 }
 
 .subtitle {
@@ -102,17 +118,32 @@ nav {
   gap: 10px;
   font-family: var(--heading);
   text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.92rem;
+  font-weight: var(--semi-bold);
 }
 
 nav > a {
-  padding: 5px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  transition: background var(--transition), color var(--transition);
 }
 
 nav > a:hover {
-  color: var(--primary);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
 }
 
 header:not([data-big]) {
+  @media (max-width: $tablet) {
+    gap: 14px;
+    padding: 16px 20px;
+
+    nav {
+      gap: 6px;
+    }
+  }
+
   @media (max-width: $collapse) {
     justify-content: flex-end;
 

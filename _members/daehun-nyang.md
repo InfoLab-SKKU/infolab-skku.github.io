@@ -2,7 +2,7 @@
 name: DaeHun Nyang
 image: images/daehun-nyang.png
 role: professor
-group: 1
+group: collab
 aliases:
 links:
    orcid: 

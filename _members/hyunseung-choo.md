@@ -2,7 +2,7 @@
 name: Hyunseung Choo
 image: images/hyunseung-cho.jpeg
 role: pro
-group: 2
+group: collab
 aliases:
 links:
    orcid: 0000-0002-6485-3155

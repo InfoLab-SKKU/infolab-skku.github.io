@@ -2,7 +2,7 @@
 name: Simon S. Woo
 image: https://dash-lab.github.io/img/member_images/SimonWoo_new.jpg
 role: assistant professor
-group: 3
+group: collab
 aliases:
 links:
    orcid: 

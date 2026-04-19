@@ -3,6 +3,8 @@ title: Join us
 ---
 {% include breadcrumbs.html %}
 
+{% include team-nav.html %}
+
 # {% include icon.html icon="fa-solid fa-users" %}Join us
 
 Are you passionate about security, privacy, or machine learning from the perspective of computer science, systems, or applied mathematics? Are you a curious developer or researcher who loves solving real-world problems with data and code? Are you excited to work in a collaborative environment with both academic and industry partners?

@@ -1,0 +1,46 @@
+{% assign member = include.member %}
+{% assign mtype = site.data.types[member.role] %}
+
+<div class="mem-card">
+  <a href="{{ member.url | relative_url }}" class="mem-card-photo-link" aria-label="{{ member.name }}">
+    <img
+      src="{{ member.image | relative_url }}"
+      alt="{{ member.name }}"
+      class="mem-card-photo"
+      loading="lazy"
+      {% include fallback.html %}
+    >
+  </a>
+  <div class="mem-card-body">
+    <span class="mem-role-pill">{{ mtype.description | default: member.role }}</span>
+    <h3 class="mem-card-name">
+      <a href="{{ member.url | relative_url }}">{{ member.name }}</a>
+    </h3>
+    <p class="mem-card-bio">{{ member.content | strip_html | strip | truncatewords: 22 }}</p>
+    <div class="mem-card-links">
+      {% for link in member.links %}
+        {% assign lkey = link[0] %}
+        {% assign lval = link[1] | strip %}
+        {% if lval != "" %}
+          {% assign ltype = site.data.types[lkey] %}
+          {% if ltype %}
+            {% if lkey == "email" %}
+              {% assign lhref = "mailto:" | append: lval %}
+            {% elsif ltype.link %}
+              {% assign lhref = ltype.link | replace: "$VALUE", lval %}
+            {% else %}
+              {% assign lhref = lval %}
+            {% endif %}
+            <a href="{{ lhref }}" class="mem-link mem-link-{{ lkey }}" title="{{ ltype.tooltip | default: lkey }}"{% unless lkey == "email" %} target="_blank" rel="noopener noreferrer"{% endunless %}>
+              {% include icon.html icon=ltype.icon %}
+            </a>
+          {% elsif lkey == "home-page" %}
+            <a href="{{ lval }}" class="mem-link mem-link-home" title="Website" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-globe"></i>
+            </a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

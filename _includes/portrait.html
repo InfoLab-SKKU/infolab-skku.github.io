@@ -19,7 +19,7 @@
     <img
       src="{{ member.image | relative_url }}"
       class="portrait-image"
-      alt="member portrait"
+      alt="{{ member.name | default: "Lab member" }} portrait"
       loading="lazy"
       {% include fallback.html %}
     >

@@ -1,0 +1,330 @@
+---
+---
+
+/* ===========================================
+   PROJECTS PAGE
+   =========================================== */
+
+/* --- Category Hero Cards --- */
+.proj-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 40px 0 48px;
+}
+
+.proj-cat-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 28px 24px;
+  border-radius: var(--rounded);
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.06);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.22);
+    color: #fff;
+    text-decoration: none;
+
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.proj-cat-security {
+  background: linear-gradient(135deg, #07377b 0%, #0a4fa8 100%);
+}
+
+.proj-cat-medical {
+  background: linear-gradient(135deg, #065f46 0%, #059669 100%);
+}
+
+.proj-cat-icon {
+  font-size: 2.4rem;
+  opacity: 0.9;
+  flex-shrink: 0;
+  width: 52px;
+  text-align: center;
+}
+
+.proj-cat-body {
+  flex: 1;
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: #fff;
+  }
+
+  p {
+    font-size: 0.88rem;
+    margin: 0 0 10px;
+    opacity: 0.88;
+    line-height: 1.5;
+  }
+}
+
+.proj-cat-count {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.proj-cat-arrow {
+  font-size: 1.4rem;
+  opacity: 0.7;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.proj-cat-card:hover .proj-cat-arrow {
+  transform: translateX(4px);
+  opacity: 1;
+}
+
+/* --- Filter Bar --- */
+.proj-section {
+  margin-bottom: 60px;
+}
+
+.proj-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.proj-filter-btn {
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease;
+
+  &:hover {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  &.active {
+    background: var(--primary);
+    color: #fff;
+  }
+}
+
+/* --- Project Cards Grid --- */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--rounded);
+  overflow: hidden;
+  background: var(--background-alt);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+    text-decoration: none;
+    color: var(--text);
+
+    h3 {
+      color: var(--primary);
+    }
+  }
+}
+
+.proj-card[data-hidden="true"] {
+  display: none;
+}
+
+.proj-card-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: var(--primary);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.proj-card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+  }
+
+  p {
+    font-size: 0.86rem;
+    color: var(--gray);
+    margin: 0;
+    line-height: 1.6;
+    flex: 1;
+  }
+}
+
+.proj-tag {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.proj-tag-security {
+  background: rgba(7, 55, 123, 0.1);
+  color: var(--primary);
+}
+
+.proj-tag-medical {
+  background: rgba(5, 150, 105, 0.12);
+  color: #065f46;
+}
+
+/* --- Funding Section --- */
+.proj-funding-section {
+  border-top: 2px solid var(--light-gray);
+  padding-top: 48px;
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 28px;
+    color: var(--text);
+  }
+}
+
+.proj-funding-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.proj-funding-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 24px;
+  border-radius: var(--rounded);
+  background: var(--background-alt);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: var(--text);
+  border-left: 4px solid var(--primary);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+    color: var(--text);
+  }
+}
+
+.proj-funding-logo {
+  width: 80px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.08));
+}
+
+.proj-funding-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  strong {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  span {
+    font-size: 0.83rem;
+    color: var(--gray);
+  }
+}
+
+.proj-funding-date {
+  font-size: 0.78rem !important;
+  font-weight: 600;
+  color: var(--primary) !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .proj-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-cat-card {
+    padding: 22px 18px;
+  }
+
+  .proj-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .proj-funding-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .proj-funding-logo {
+    height: 36px;
+  }
+}

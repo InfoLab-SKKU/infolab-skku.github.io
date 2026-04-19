@@ -5,31 +5,35 @@
 [data-dark="false"] {
   --primary: #07377b;
   --secondary: #7dd3fc;
-  --text: #000000;
+  --accent: #0d9488;
+  --accent-dark: #0f766e;
+  --text: #1a2332;
   --background: #ffffff;
-  --background-alt: #fafafa;
-  --light-gray: #e0e0e0;
-  --gray: #808080;
-  --dark-gray: #404040;
-  --overlay: #00000020;
+  --background-alt: #f8fafc;
+  --light-gray: #e2e8f0;
+  --gray: #64748b;
+  --dark-gray: #334155;
+  --overlay: #00000018;
 }
 [data-dark="true"] {
-  --primary: #0795d9;
-  --secondary: #075985;
-  --text: #ffffff;
-  --background: #181818;
-  --background-alt: #1c1c1c;
-  --light-gray: #404040;
-  --gray: #808080;
-  --dark-gray: #b0b0b0;
-  --overlay: #ffffff10;
+  --primary: #38bdf8;
+  --secondary: #0369a1;
+  --accent: #2dd4bf;
+  --accent-dark: #14b8a6;
+  --text: #e2e8f0;
+  --background: #0f172a;
+  --background-alt: #1e293b;
+  --light-gray: #334155;
+  --gray: #64748b;
+  --dark-gray: #94a3b8;
+  --overlay: #ffffff12;
 }
 
 :root {
   // font families
-  --title: "Barlow", sans-serif;
-  --heading: "Barlow", sans-serif;
-  --body: "Barlow", sans-serif;
+  --title: "IBM Plex Sans", sans-serif;
+  --heading: "IBM Plex Sans", sans-serif;
+  --body: "IBM Plex Sans", sans-serif;
   --code: "Roboto Mono", monospace;
 
   // font sizes
@@ -38,17 +42,17 @@
   --xxl: 1.6rem;
 
   // font weights
-  --thin: 200;
+  --thin: 300;
   --regular: 400;
   --semi-bold: 500;
-  --bold: 600;
+  --bold: 700;
 
   // text line spacing
   --spacing: 2;
-  --compact: 1.5;
+  --compact: 1.6;
 
   // effects
-  --rounded: 3px;
-  --shadow: 0 0 10px 0 var(--overlay);
+  --rounded: 8px;
+  --shadow: 0 2px 16px 0 var(--overlay);
   --transition: 0.2s ease;
 }

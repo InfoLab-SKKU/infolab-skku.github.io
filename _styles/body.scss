@@ -13,3 +13,15 @@ body {
   text-align: center;
   line-height: var(--compact);
 }
+
+/* Global focus style for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
+}

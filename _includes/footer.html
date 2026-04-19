@@ -3,54 +3,58 @@
 
 <footer
   class="background"
-  style="background-color: #07377b; padding: 2rem 0;"
+  style="background-color: #0f2044; padding: 3rem 0 1.5rem;"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
   data-size="wide"
 >
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 2rem; max-width: 1200px; margin: 0 auto;">
-    <!-- Right Column: About -->
-    <div style="flex: 1 1 150px; min-width: 220px; color: #fff; padding: 25px;">
-      <h5 style="margin-top: 0;">About Us</h5>
-      <p>
-        Infolab at SKKU conducts leading research in data science, AI, security, and medical computer vision to advance robust, intelligent systems.<br>
-        <span style="font-size: 1.2em; margin-right: 0.3em;">&#x1F4CD;</span>SKKU, Suwon, South Korea
+  <div class="footer-main">
+    <!-- About column -->
+    <div class="footer-col">
+      <h5 class="footer-heading">About InfoLab</h5>
+      <p class="footer-text">
+        InfoLab at SKKU conducts leading research in data science, AI, security, and medical computer vision to advance robust, intelligent systems.
+      </p>
+      <p class="footer-location">
+        <span aria-hidden="true">&#x1F4CD;</span>
+        Engineering Building 2, SKKU, Suwon, South Korea
       </p>
     </div>
 
-
-    
-
-    <!-- Center Column: Useful Links -->
-    <div style="flex: 1 1 120px; min-width: 345px; padding: 10px;">
-      <h5 class="white-text" style="margin-top: 0;">Useful Links</h5>
-      <ul style="list-style: none; padding: 0;">
-        <li><a class="white-text" href="https://gradschool.skku.edu/grad/">SKKU Graduate School</a></li>
-        <li><a class="white-text" href="https://cse.skku.edu/">Computer Science and Engineering Dept</a></li>
-        <li><a class="white-text" href="https://ai.skku.edu/ai/index.do">Department of Artificial Intelligence</a></li>
-        <li><a class="white-text" href="https://skb.skku.edu/skkuaai/index.do">Department of Applied Artificial Intelligence</a></li>
+    <!-- Useful Links column -->
+    <div class="footer-col">
+      <h5 class="footer-heading">Useful Links</h5>
+      <ul class="footer-links">
+        <li><a href="https://gradschool.skku.edu/grad/" rel="noopener noreferrer">SKKU Graduate School</a></li>
+        <li><a href="https://cse.skku.edu/" rel="noopener noreferrer">Computer Science &amp; Engineering Dept.</a></li>
+        <li><a href="https://ai.skku.edu/ai/index.do" rel="noopener noreferrer">Dept. of Artificial Intelligence</a></li>
+        <li><a href="https://skb.skku.edu/skkuaai/index.do" rel="noopener noreferrer">Dept. of Applied Artificial Intelligence</a></li>
       </ul>
     </div>
 
-    <!-- Left Column: Map -->
-    <div style="flex: 1 1 140px; min-width: 120px; padding: 10px;">
-      <h5 class="white-text" style="margin-top: 0;">Lab Visitors</h5>
-      <!-- <div id="map" style="width: 100%; height: 200px; border-radius: 8px; overflow: hidden;"></div> -->
-      <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw"></script> -->
-      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=263&t=n&d=mQz5owgHoo51mOnAZzlTHAqmiNF4eaJD34BWqA920RE&co=07377b&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+    <!-- Lab Visitors column -->
+    <div class="footer-col">
+      <h5 class="footer-heading">Lab Visitors</h5>
+      <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=240&t=n&d=mQz5owgHoo51mOnAZzlTHAqmiNF4eaJD34BWqA920RE&co=0f2044&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
     </div>
   </div>
-  <div style="margin-top: -35px;">
-        {% for link in site.links %}
-          {% assign key = link[0] %}
-          {% assign value = link[1] %}
-          {% include button.html type=key text="" link=value style="bare" %}
-        {% endfor %}
+
+  <!-- Social links row -->
+  <div class="footer-social">
+    {% for link in site.links %}
+      {% assign key = link[0] %}
+      {% assign value = link[1] %}
+      {% include button.html type=key text="" link=value style="bare" %}
+    {% endfor %}
   </div>
-  <div style="text-align: center; margin: -25px;">
-        &copy; {{ site.time | date: "%Y" }} {{ site.title }}
+
+  <!-- Copyright -->
+  <div class="footer-copy">
+    &copy; {{ site.time | date: "%Y" }} {{ site.title }} &middot; Sungkyunkwan University
   </div>
+</footer>
+
 
   <!-- <script src="https://unpkg.com/jsvectormap"></script>
   <script src="https://unpkg.com/jsvectormap/dist/maps/world-merc.js"></script>

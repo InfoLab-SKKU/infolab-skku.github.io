@@ -2,7 +2,7 @@
 name: Afsah Anwar
 image: images/afsah-anwar.jpg
 role: assistant professor
-group: _c
+group: collab
 aliases:
 links:
    orcid: 

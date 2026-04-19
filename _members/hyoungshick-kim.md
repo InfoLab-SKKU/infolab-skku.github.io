@@ -2,7 +2,7 @@
 name: Hyoungshick Kim
 image: images/hyoungshick-kim.webp
 role: associate professor
-group: 4
+group: collab
 aliases:
 links:
    orcid: 

@@ -13,7 +13,16 @@
   {% assign citation = include %}
 {% endif %}
 
-<div class="citation-container">
+{% assign cit_year = citation.date | default: "0000" | date: "%Y" %}
+{% assign cit_doi  = citation.id | remove: "doi:" | strip %}
+<div class="citation-container"
+  data-year="{{ cit_year }}"
+  data-publisher="{{ citation.publisher | downcase }}"
+  data-type="{{ citation.type | default: "paper" }}"
+  data-title="{{ citation.title | strip_html | strip }}"
+  data-authors="{{ citation.authors | join: "; " }}"
+  data-doi="{{ cit_doi }}"
+>
   <div class="citation">
     {% if include.style == "rich" %}
       <a
@@ -65,8 +74,8 @@
       </div>
 
       <div class="citation-details">
-        <span class="citation-publisher">
-          {{- citation.publisher | default: "[no publisher info]" -}}
+        <span class="citation-publisher-pill">
+          {{- citation.publisher | default: "" | truncate: 40 -}}
         </span>
         &nbsp;·&nbsp;
         <span class="citation-date">
@@ -124,6 +133,10 @@
         {% if citation.tags.size > 0 or citation.repo %}
           {% include tags.html tags=citation.tags repo=citation.repo %}
         {% endif %}
+
+        <button class="cite-copy-btn" aria-label="Copy BibTeX citation" title="Copy BibTeX">
+          <i class="fa-solid fa-quote-left"></i> Cite
+        </button>
       {% endif %}
     </div>
   </div>

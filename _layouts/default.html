@@ -3,9 +3,37 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    <main>
+    <main id="main-content">
       {% include content.html content=content %}
     </main>
     {% include footer.html %}
+
+    <!-- Organization structured data for search engines -->
+    {% if page.url == "/" or page.url == "/index.html" %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ResearchOrganization",
+      "name": "InfoLab - Information Research Laboratory",
+      "alternateName": "InfoLab SKKU",
+      "url": "{{ site.url }}{{ site.baseurl }}",
+      "description": "Research laboratory at Sungkyunkwan University focused on security, machine learning, biomedical AI, and trustworthy AI systems.",
+      "parentOrganization": {
+        "@type": "EducationalOrganization",
+        "name": "Sungkyunkwan University",
+        "url": "https://www.skku.edu/eng/"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Suwon",
+        "addressCountry": "KR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "research"
+      }
+    }
+    </script>
+    {% endif %}
   </body>
 </html>

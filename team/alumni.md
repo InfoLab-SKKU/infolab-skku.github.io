@@ -1,38 +1,148 @@
 ---
-title: Lab alumni
+title: Lab Alumni
 ---
 
-{% include breadcrumbs.html %}
+{% assign alum_members = site.members | where: "group", "alum" %}
+{% assign alum_grads = alum_members | where_exp: "m", "m.role == 'phd' or m.role == 'master' or m.role == 'combined'" %}
+{% assign alum_interns = alum_members | where: "role", "intern" %}
 
-# {% include icon.html icon="fa-solid fa-users" %}Lab alumni
+<!-- ALUMNI HERO -->
+<div class="team-hero">
+  <div class="team-hero-content">
+    <div class="team-hero-badge">Alumni</div>
+    <h1 class="team-hero-title">Lab Alumni</h1>
+    <p class="team-hero-sub">We have been lucky to have a fantastic group of individuals come through the lab — many have gone on to even bigger and better things.</p>
+    <div class="team-hero-stats">
+      <div class="team-hstat">
+        <span class="team-hstat-num">{{ alum_members.size }}</span>
+        <span class="team-hstat-lbl">Total Alumni</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <span class="team-hstat-num">{{ alum_grads.size }}</span>
+        <span class="team-hstat-lbl">Graduates</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <span class="team-hstat-num">{{ alum_interns.size }}</span>
+        <span class="team-hstat-lbl">Interns</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-We have been lucky to have a fantastic group of individuals come through the lab, and many have gone on to even bigger and better things. Here are some of our past lab members.
+{% include team-nav.html %}
 
-
-<!--
-{% include list.html data="members" component="portrait" filters="group: alum" style="small" %}
-
-### Principal Investigators and Staff Scientists
-
-
-{% include list.html data="members" component="portrait" filters="group: alum, role: (pi|staff)" style="small" %}
-
-### Postdoctoral Associates
-
-{% include list.html data="members" component="portrait" filters="group: alum, role: postdoc" style="small" %}
-
-### Software Engineers
-
-{% include list.html data="members" component="portrait" filters="group: alum, role: programmer" style="small" %}
-
--->
 {% include section.html %}
 
-### Graduate Students
+<!-- GRADUATE ALUMNI -->
+{% if alum_grads.size > 0 %}
+<div class="team-section">
+  <div class="team-section-header">
+    <span class="team-section-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+    <h2 class="team-section-title">Graduate Students</h2>
+  </div>
+  <div class="team-member-grid">
+    {% for member in alum_grads %}
+      {% assign mtype = site.data.types[member.role] %}
+      <div class="mem-card">
+        <a href="{{ member.url | relative_url }}" class="mem-card-photo-link" aria-label="{{ member.name }}">
+          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="mem-card-photo" loading="lazy" {% include fallback.html %}>
+        </a>
+        <div class="mem-card-body">
+          <span class="mem-role-pill">{{ mtype.description | default: member.role }}</span>
+          <h3 class="mem-card-name">
+            <a href="{{ member.url | relative_url }}">{{ member.name }}</a>
+          </h3>
+          {% if member.years_worked %}
+            <p class="mem-card-years"><i class="fa-solid fa-calendar-alt"></i> {{ member.years_worked }}</p>
+          {% endif %}
+          <p class="mem-card-bio">{{ member.content | strip_html | strip | truncatewords: 18 }}</p>
+          <div class="mem-card-links">
+            {% for link in member.links %}
+              {% assign lkey = link[0] %}
+              {% assign lval = link[1] | strip %}
+              {% if lval != "" %}
+                {% assign ltype = site.data.types[lkey] %}
+                {% if ltype %}
+                  {% if lkey == "email" %}
+                    {% assign lhref = "mailto:" | append: lval %}
+                  {% elsif ltype.link %}
+                    {% assign lhref = ltype.link | replace: "$VALUE", lval %}
+                  {% else %}
+                    {% assign lhref = lval %}
+                  {% endif %}
+                  <a href="{{ lhref }}" class="mem-link mem-link-{{ lkey }}" title="{{ ltype.tooltip | default: lkey }}"{% unless lkey == "email" %} target="_blank" rel="noopener noreferrer"{% endunless %}>
+                    {% include icon.html icon=ltype.icon %}
+                  </a>
+                {% elsif lkey == "home-page" %}
+                  <a href="{{ lval }}" class="mem-link mem-link-home" title="Website" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
 
-{% include list.html data="members" component="portrait" filters="group: alum, role: phd|master|combined" style="small" %}
+{% include section.html %}
 
-
-### Interns
-
-{% include list.html data="members" component="portrait" filters="group: alum, role: intern" style="small" %}
+<!-- INTERN ALUMNI -->
+{% if alum_interns.size > 0 %}
+<div class="team-section">
+  <div class="team-section-header">
+    <span class="team-section-icon"><i class="fa-solid fa-school"></i></span>
+    <h2 class="team-section-title">Interns</h2>
+  </div>
+  <div class="team-member-grid">
+    {% for member in alum_interns %}
+      {% assign mtype = site.data.types[member.role] %}
+      <div class="mem-card">
+        <a href="{{ member.url | relative_url }}" class="mem-card-photo-link" aria-label="{{ member.name }}">
+          <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="mem-card-photo" loading="lazy" {% include fallback.html %}>
+        </a>
+        <div class="mem-card-body">
+          <span class="mem-role-pill">{{ mtype.description | default: member.role }}</span>
+          <h3 class="mem-card-name">
+            <a href="{{ member.url | relative_url }}">{{ member.name }}</a>
+          </h3>
+          {% if member.years_worked %}
+            <p class="mem-card-years"><i class="fa-solid fa-calendar-alt"></i> {{ member.years_worked }}</p>
+          {% endif %}
+          <p class="mem-card-bio">{{ member.content | strip_html | strip | truncatewords: 18 }}</p>
+          <div class="mem-card-links">
+            {% for link in member.links %}
+              {% assign lkey = link[0] %}
+              {% assign lval = link[1] | strip %}
+              {% if lval != "" %}
+                {% assign ltype = site.data.types[lkey] %}
+                {% if ltype %}
+                  {% if lkey == "email" %}
+                    {% assign lhref = "mailto:" | append: lval %}
+                  {% elsif ltype.link %}
+                    {% assign lhref = ltype.link | replace: "$VALUE", lval %}
+                  {% else %}
+                    {% assign lhref = lval %}
+                  {% endif %}
+                  <a href="{{ lhref }}" class="mem-link mem-link-{{ lkey }}" title="{{ ltype.tooltip | default: lkey }}"{% unless lkey == "email" %} target="_blank" rel="noopener noreferrer"{% endunless %}>
+                    {% include icon.html icon=ltype.icon %}
+                  </a>
+                {% elsif lkey == "home-page" %}
+                  <a href="{{ lval }}" class="mem-link mem-link-home" title="Website" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}

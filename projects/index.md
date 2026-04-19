@@ -5,114 +5,125 @@ nav:
   tooltip: Projects in the lab
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research Projects Overview
+<!-- ============================================================
+     CATEGORY HERO CARDS
+     ============================================================ -->
+{% assign security_count = site.data.projects | where: "group", "security" | size %}
+{% assign medical_count  = site.data.projects | where: "group", "medical"  | size %}
 
-Welcome to the project portfolio of **InfoLab** at **Sungkyunkwan University (SKKU)**. Our research lies at the intersection of **artificial intelligence**, **cybersecurity**, and **biomedical informatics**, with a focus on developing **robust**, **interpretable**, and **impactful** AI-driven solutions.
+<div class="proj-categories">
+  <a href="/projects/security" class="proj-cat-card proj-cat-security">
+    <div class="proj-cat-icon" aria-hidden="true">
+      {% include icon.html icon="fa-solid fa-shield-halved" %}
+    </div>
+    <div class="proj-cat-body">
+      <h2>Security &amp; Adversarial ML</h2>
+      <p>Defending AI systems against adversarial attacks, malware, binary analysis, and behavioral authentication.</p>
+      <span class="proj-cat-count">{{ security_count }} Projects</span>
+    </div>
+    <span class="proj-cat-arrow" aria-hidden="true">→</span>
+  </a>
 
-We focus on:
-
-- **Biomedical AI**: Explainable models for **disease detection**, **patient monitoring**, and **clinical predictions**.
-- **Security & Behavioral AI**: Robust systems for **malware detection**, **user authentication**, and **trustworthy decisions**.
-
-Explore the sections below to learn more about our ongoing and completed projects, key contributions, and their impact on science and society.
-
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-
-  <div style="flex: 0 0 48%; padding: 10px;">
-    {% include figure.html
-      image="images/security.png"
-      caption="<a href='security' style='font-weight: bold; font-size: 1.2em; text-decoration: none;'>Security and Behavioral AI Projects</a>"
-      link="projects/security"
-      width="100%"
-      height="95%"
-    %}
-  </div>
-    
-  <div style="flex: 0 0 48%; padding: 10px;">
-  {% include figure.html
-    image="images/biomedical_discovery_03.png"
-    caption="<a href='medical' style='font-weight: bold; font-size: 1.2em; text-decoration: none;'>Biomedical AI Projects</a>"
-    link="projects/medical"
-    width="100%"
-  %}
-  </div>
-
+  <a href="/projects/medical" class="proj-cat-card proj-cat-medical">
+    <div class="proj-cat-icon" aria-hidden="true">
+      {% include icon.html icon="fa-solid fa-dna" %}
+    </div>
+    <div class="proj-cat-body">
+      <h2>Biomedical AI</h2>
+      <p>Applying deep learning to medical imaging, disease detection, and multimodal clinical decision support.</p>
+      <span class="proj-cat-count">{{ medical_count }} Projects</span>
+    </div>
+    <span class="proj-cat-arrow" aria-hidden="true">→</span>
+  </a>
 </div>
 
-
-# {% include icon.html icon="fa-solid fa-microscope" %}Funding Projects
-
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-
-  <div style="flex: 0 0 48%; padding: 10px; text-align: center;">
-    {% include figure.html
-      image="images/nrf-logo.png"
-      caption="<div style='font-size: 1em; line-height: 1.5;'>
-                  <strong>Intelligent and Robust Clinical Decision Support System for Alzheimer Disease</strong><br>
-                  Mid-Career Researcher Program by the National Research Foundation (NRF) grant funded by the Korea government (MSIP)<br>
-                  <em>March 2021 – Feb. 2024</em>
-               </div>"
-      link="https://www.nrf.re.kr/eng/main"
-      width="60%"
-      height="130px"
-    %}
+<!-- ============================================================
+     FILTER TABS + ALL PROJECTS GRID
+     ============================================================ -->
+<div class="proj-section">
+  <div class="proj-filter-bar" role="group" aria-label="Filter projects by research area">
+    <button class="proj-filter-btn active" data-filter="all">All Projects</button>
+    <button class="proj-filter-btn" data-filter="security">Security &amp; Adversarial ML</button>
+    <button class="proj-filter-btn" data-filter="medical">Biomedical AI</button>
   </div>
 
-  <div style="flex: 0 0 48%; padding: 10px; text-align: center;">
-    {% include figure.html
-      image="images/iitp-logo.jpg"
-      caption="<div style='font-size: 1em; line-height: 1.5;'>
-                  <strong>SW-oriented College, Sungkyunkwan University</strong><br>
-                  SW-oriented University Supporting Program (SW중심대학지원), IITP<br>
-                  <em>April 2021 – Dec. 2026</em>
-               </div>"
-      link="https://www.iitp.kr/en/main.it"
-      width="60%"
-      height="130px"
-    %}
+  <div class="proj-grid">
+    {% for project in site.data.projects %}
+    <a href="/{{ project.link }}" class="proj-card" data-group="{{ project.group }}">
+      <div class="proj-card-img">
+        {% if project.image contains "://" %}
+          <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy" onerror="this.closest('.proj-card-img').style.display='none'">
+        {% else %}
+          <img src="/{{ project.image }}" alt="{{ project.title }}" loading="lazy" onerror="this.closest('.proj-card-img').style.display='none'">
+        {% endif %}
+      </div>
+      <div class="proj-card-body">
+        {% if project.group == "security" %}
+          <span class="proj-tag proj-tag-security">Security</span>
+        {% elsif project.group == "medical" %}
+          <span class="proj-tag proj-tag-medical">Biomedical AI</span>
+        {% endif %}
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description | truncate: 130 }}</p>
+      </div>
+    </a>
+    {% endfor %}
   </div>
-
-  <div style="flex: 0 0 48%; padding: 10px; text-align: center;">
-    {% include figure.html
-      image="images/iitp-logo.jpg"
-      caption="<div style='font-size: 1em; line-height: 1.5;'>
-                  <strong>Towards Super Sapiens: Superintelligence for Future Human Innovations</strong><br>
-                  ICT Creative Consilience program (ICT명품인재), IITP<br>
-                  <em>Sep. 2021 - Dec. 2022</em>
-               </div>"
-      link="https://iitp.kr/kr/1/business/menuZDADXpage.it"
-      width="60%"
-      height="130px"
-    %}
-  </div>
-
-  <div style="flex: 0 0 48%; padding: 10px; text-align: center;">
-    {% include figure.html
-      image="https://static.wixstatic.com/media/a716c2_9c42e1548c9b43078135f37ff87b2190~mv2.png/v1/fill/w_127,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/chowislogo.png"
-      caption="<div style='font-size: 1em; line-height: 1.5;'>
-                  <strong>Artificial Intelligent-based Skin Analysis Algorithms</strong><br>
-                  by Chowis Co., Ltd<br>
-                  <em>Oct. 2020 - April 2021</em>
-               </div>"
-      link="https://www.chowis.com/"
-      width="60%"
-      height="130px"
-    %}
-  </div>
-
-  <div style="flex: 0 0 48%; padding: 10px; text-align: center;">
-    {% include figure.html
-      image="images/nrf-logo.png"
-      caption="<div style='font-size: 1em; line-height: 1.5;'>
-                  <strong>Software Authorship Identification Based on Deep Learning</strong><br>
-                  Young Researcher Program supported by the National Research Foundation (NRF) grant funded by the Korea government (MSIP)<br>
-                  <em>Nov. 2016 - Nov. 2019</em>
-               </div>"
-      link="https://www.nrf.re.kr/eng/main"
-      width="60%"
-      height="130px"
-    %}
-  </div>
-
 </div>
+
+<!-- ============================================================
+     FUNDING SECTION
+     ============================================================ -->
+<div class="proj-funding-section">
+  <h2>{% include icon.html icon="fa-solid fa-hand-holding-dollar" %} Funding &amp; Support</h2>
+
+  <div class="proj-funding-list">
+
+    <a href="https://www.nrf.re.kr/eng/main" class="proj-funding-card" target="_blank" rel="noopener noreferrer">
+      <img src="/images/nrf-logo.png" alt="NRF Logo" class="proj-funding-logo">
+      <div class="proj-funding-info">
+        <strong>Intelligent and Robust Clinical Decision Support System for Alzheimer Disease</strong>
+        <span>Mid-Career Researcher Program · National Research Foundation (NRF) · MSIP</span>
+        <span class="proj-funding-date">March 2021 – Feb. 2024</span>
+      </div>
+    </a>
+
+    <a href="https://www.iitp.kr/en/main.it" class="proj-funding-card" target="_blank" rel="noopener noreferrer">
+      <img src="/images/iitp-logo.jpg" alt="IITP Logo" class="proj-funding-logo">
+      <div class="proj-funding-info">
+        <strong>SW-oriented College, Sungkyunkwan University</strong>
+        <span>SW-oriented University Supporting Program (SW중심대학지원) · IITP</span>
+        <span class="proj-funding-date">April 2021 – Dec. 2026</span>
+      </div>
+    </a>
+
+    <a href="https://iitp.kr/kr/1/business/menuZDADXpage.it" class="proj-funding-card" target="_blank" rel="noopener noreferrer">
+      <img src="/images/iitp-logo.jpg" alt="IITP Logo" class="proj-funding-logo">
+      <div class="proj-funding-info">
+        <strong>Towards Super Sapiens: Superintelligence for Future Human Innovations</strong>
+        <span>ICT Creative Consilience program (ICT명품인재) · IITP</span>
+        <span class="proj-funding-date">Sep. 2021 – Dec. 2022</span>
+      </div>
+    </a>
+
+    <a href="https://www.chowis.com/" class="proj-funding-card" target="_blank" rel="noopener noreferrer">
+      <img src="https://static.wixstatic.com/media/a716c2_9c42e1548c9b43078135f37ff87b2190~mv2.png/v1/fill/w_127,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/chowislogo.png" alt="Chowis Logo" class="proj-funding-logo">
+      <div class="proj-funding-info">
+        <strong>Artificial Intelligent-based Skin Analysis Algorithms</strong>
+        <span>Industry collaboration · Chowis Co., Ltd</span>
+        <span class="proj-funding-date">Oct. 2020 – April 2021</span>
+      </div>
+    </a>
+
+    <a href="https://www.nrf.re.kr/eng/main" class="proj-funding-card" target="_blank" rel="noopener noreferrer">
+      <img src="/images/nrf-logo.png" alt="NRF Logo" class="proj-funding-logo">
+      <div class="proj-funding-info">
+        <strong>Software Authorship Identification Based on Deep Learning</strong>
+        <span>Young Researcher Program · National Research Foundation (NRF) · MSIP</span>
+        <span class="proj-funding-date">Nov. 2016 – Nov. 2019</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+

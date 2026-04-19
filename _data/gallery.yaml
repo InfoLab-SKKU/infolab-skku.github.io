@@ -1,0 +1,292 @@
+# ============================================================
+# Lab Gallery — add new photos here, they appear automatically.
+#
+# Fields:
+#   image:    path relative to site root (e.g. images/photo.jpg)
+#   caption:  short description (shown on hover and in lightbox)
+#   category: events | conferences | outings | milestones | lab
+#   year:     4-digit year (used for sorting)
+# ============================================================
+
+# ── 2026 ─────────────────────────────────────────────────────
+
+- image: "images/abdenour-grad1.jpeg"
+  caption: "Graduation Ceremony"
+  category: milestones
+  year: 2026
+
+- image: "images/abdenour-grad2.jpeg"
+  caption: "Graduation Ceremony"
+  category: milestones
+  year: 2026
+
+- image: "images/abdenour-grad3.jpeg"
+  caption: "Graduation Ceremony"
+  category: milestones
+  year: 2026
+
+# ── 2025 · Events ────────────────────────────────────────────
+
+- image: "images/lab_lunch_2025-09-18.jpeg"
+  caption: "Lab Lunch, September 2025"
+  category: events
+  year: 2025
+
+- image: "images/Maria_birthday.jpeg"
+  caption: "Maria's Birthday Celebration"
+  category: events
+  year: 2025
+
+- image: "images/ahnlab.jpg"
+  caption: "Visiting AhnLab 2025"
+  category: events
+  year: 2025
+
+- image: "images/gallery/team-full.jpeg"
+  caption: "Celebrating Teacher's Day"
+  category: events
+  year: 2025
+
+- image: "images/gallery/2025/teachers_day.jpeg"
+  caption: "Students Council Visit on Teacher's Day"
+  category: events
+  year: 2025
+
+- image: "images/professors-night-2025.jpeg"
+  caption: "Sungkyunkwan Professors' Night Gathering"
+  category: events
+  year: 2025
+
+- image: "images/professors-night-2025-1.jpeg"
+  caption: "Sungkyunkwan Professors' Night Gathering"
+  category: events
+  year: 2025
+
+- image: "images/professors-night-2025-2.jpeg"
+  caption: "Sungkyunkwan Professors' Night Gathering"
+  category: events
+  year: 2025
+
+# ── 2025 · Conferences ───────────────────────────────────────
+
+- image: "images/gallery/team-itrc.jpeg"
+  caption: "ITRC 2025 – Team"
+  category: conferences
+  year: 2025
+
+- image: "images/gallery/2025/itrc2025_abdenour_presentation.jpg"
+  caption: "ITRC 2025 – Presentation"
+  category: conferences
+  year: 2025
+
+- image: "images/gallery/2025/itrc2025_abdenour_presentation2.jpg"
+  caption: "ITRC 2025 – Presentation"
+  category: conferences
+  year: 2025
+
+- image: "images/gallery/2025/WhatsApp Image 2025-04-24 at 7.23.54 PM.jpeg"
+  caption: "ITRC 2025"
+  category: conferences
+  year: 2025
+
+- image: "images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.26 PM.jpeg"
+  caption: "ITRC 2025"
+  category: conferences
+  year: 2025
+
+- image: "images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.29 PM.jpeg"
+  caption: "ITRC 2025"
+  category: conferences
+  year: 2025
+
+- image: "images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.47 PM.jpeg"
+  caption: "ITRC 2025"
+  category: conferences
+  year: 2025
+
+- image: "images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.51 PM.jpeg"
+  caption: "ITRC 2025"
+  category: conferences
+  year: 2025
+
+- image: "images/gallery/2025/WhatsApp Image 2025-04-25 at 6.48.54 PM.jpeg"
+  caption: "ITRC 2025"
+  category: conferences
+  year: 2025
+
+# ── 2025 · Lab Life ──────────────────────────────────────────
+
+- image: "images/IMG_3914.JPG"
+  caption: "Lab Life"
+  category: lab
+  year: 2025
+
+- image: "images/IMG_3985.JPG"
+  caption: "Lab Life"
+  category: lab
+  year: 2025
+
+- image: "images/abdenour-chris-abderrahman.jpeg"
+  caption: "Lab Members"
+  category: lab
+  year: 2025
+
+- image: "images/abdenour-firuz.jpeg"
+  caption: "Lab Members"
+  category: lab
+  year: 2025
+
+- image: "images/gallery/team-workig.jpeg"
+  caption: "Team Working"
+  category: lab
+  year: 2025
+
+# ── 2025 · Outings ───────────────────────────────────────────
+
+- image: "images/abdenour-cycling.jpeg"
+  caption: "Cycling"
+  category: outings
+  year: 2025
+
+# ── 2024 · Events ────────────────────────────────────────────
+
+- image: "images/ahnlab_2024.jpeg"
+  caption: "Visiting AhnLab 2024"
+  category: events
+  year: 2024
+
+- image: "images/lablunch_3.jpg"
+  caption: "Lab Lunch"
+  category: events
+  year: 2024
+
+- image: "images/lunch.jpeg"
+  caption: "Team Lunch"
+  category: events
+  year: 2024
+
+- image: "images/lunch2.jpeg"
+  caption: "Team Lunch"
+  category: events
+  year: 2024
+
+- image: "images/gallery/dinner.jpeg"
+  caption: "Team Dinner"
+  category: events
+  year: 2024
+
+- image: "images/presentation.jpeg"
+  caption: "Team Presentation"
+  category: events
+  year: 2024
+
+# ── 2024 · Milestones ────────────────────────────────────────
+
+- image: "images/gallery/amir-graduation.jpeg"
+  caption: "Amir's Graduation"
+  category: milestones
+  year: 2024
+
+- image: "images/gallery/amir-graduation-2.jpeg"
+  caption: "Amir's Graduation"
+  category: milestones
+  year: 2024
+
+# ── 2024 · Outings ───────────────────────────────────────────
+
+- image: "images/hiking.jpeg"
+  caption: "Team Hiking"
+  category: outings
+  year: 2024
+
+- image: "images/marathon.jpeg"
+  caption: "Kyunggi Marathon"
+  category: outings
+  year: 2024
+
+- image: "images/fall2.jpeg"
+  caption: "Fall at SKKU"
+  category: outings
+  year: 2024
+
+- image: "images/skku-old-vilage.jpeg"
+  caption: "Visiting Seoul Campus"
+  category: outings
+  year: 2024
+
+- image: "images/university festival.jpeg"
+  caption: "University Festival"
+  category: outings
+  year: 2024
+
+- image: "images/with-korean-teacher.jpeg"
+  caption: "With Korean Language Teacher"
+  category: outings
+  year: 2024
+
+- image: "images/gallery/wayu_competition.jpg"
+  caption: "Competition"
+  category: outings
+  year: 2024
+
+# ── 2024 · Lab Life ──────────────────────────────────────────
+
+- image: "images/gallery/chris.jpeg"
+  caption: "Lab Life"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/firuz.jpg"
+  caption: "Lab Life"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/wang.jpg"
+  caption: "Lab Life"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/nasir-1.jpg"
+  caption: "Lab Life"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/AR401894.jpg"
+  caption: "Lab Activities"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/AR408852.jpg"
+  caption: "Lab Activities"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/AR407087.jpg"
+  caption: "Lab Activities"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/AR402001.jpg"
+  caption: "Lab Activities"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/sun1.jpg"
+  caption: "Lab Life"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/sun2.jpg"
+  caption: "Lab Life"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/1.jpg"
+  caption: "Lab Life"
+  category: lab
+  year: 2024
+
+- image: "images/gallery/4-1.jpg"
+  caption: "Lab Life"
+  category: lab
+  year: 2024
