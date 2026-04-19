@@ -101,7 +101,7 @@ title: Home
 
   .hero-news-item:hover {
     padding-left: 8px;
-    background: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 4px;
   }
 
