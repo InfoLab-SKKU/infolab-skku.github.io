@@ -4,7 +4,6 @@ image: images/yahya.jpg
 role: phd
 group: active
 links:
-   linkedin: abdenour-soubih-5ba56a15a
    github: yakhyo
    home-page: https://yakhyo.github.io/
    google-scholar: I66QbJIAAAAJ
