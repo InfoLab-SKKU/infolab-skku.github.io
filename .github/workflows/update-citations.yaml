@@ -34,8 +34,17 @@ jobs:
       - name: Checkout branch contents
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.head_ref }}
+          # head_ref is set for PRs; ref_name (e.g. "main") is set for push events.
+          # Without an explicit ref, checkout uses the triggering SHA in detached
+          # HEAD mode, which prevents git-auto-commit-action from pushing.
+          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Pull latest remote changes
+        # Rebase onto the current remote tip so our commit is always fast-forward.
+        # This guards against another commit landing between our checkout and push.
+        run: git pull --rebase origin ${{ github.head_ref || github.ref_name }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -70,6 +79,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Update citations [skip ci]"
+          push_options: "--force-with-lease"
 
       - name: Open pull request with updated citations
         if: |
