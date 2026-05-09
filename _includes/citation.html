@@ -32,12 +32,21 @@
         class="citation-image"
         aria-label="{{ citation.title | default: "citation link" }}"
       >
-        <img
-          src="{{ citation.image | relative_url }}"
-          alt="{{ citation.title | default: "citation image" }}"
-          loading="lazy"
-          {% include fallback.html %}
-        >
+        {% if citation.image and citation.image != "" %}
+          <img
+            src="{{ citation.image | relative_url }}"
+            alt="{{ citation.title | default: "citation image" }}"
+            loading="lazy"
+            {% include fallback.html %}
+          >
+        {% else %}
+          <div class="citation-thumb-gen"
+            data-title="{{ citation.title | strip_html | strip | xml_escape }}"
+            data-pub="{{ citation.publisher | default: '' | xml_escape }}"
+            data-year="{{ cit_year }}"
+            data-tags="{{ citation.tags | join: ' ' | xml_escape }}">
+          </div>
+        {% endif %}
       </a>
     {% endif %}
 
