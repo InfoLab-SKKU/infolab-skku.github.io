@@ -65,6 +65,26 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  align-items: center;
+
+  // Visual divider before type-filter buttons (journal/conference)
+  .pubs-filter-btn--type:first-of-type {
+    margin-left: 4px;
+    padding-left: 12px;
+    border-left: 1.5px solid var(--light-gray);
+    border-radius: 0 999px 999px 0;
+  }
+  .pubs-filter-btn--type {
+    border-radius: 999px;
+  }
+  .pubs-filter-btn--type.active {
+    background: #0a4a2e;
+    border-color: #0a4a2e;
+  }
+  .pubs-filter-btn--type:hover:not(.active) {
+    border-color: #0a4a2e;
+    color: #0a4a2e;
+  }
 }
 
 .pubs-filter-btn {

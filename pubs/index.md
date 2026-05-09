@@ -39,6 +39,8 @@ nav:
     <button class="pubs-filter-btn" data-filter="security">Security &amp; Adversarial ML <span class="pubs-filter-count" id="count-security"></span></button>
     <button class="pubs-filter-btn" data-filter="biomedical">Biomedical AI <span class="pubs-filter-count" id="count-biomedical"></span></button>
     <button class="pubs-filter-btn" data-filter="explainable">Explainable AI <span class="pubs-filter-count" id="count-explainable"></span></button>
+    <button class="pubs-filter-btn pubs-filter-btn--type" data-filter="journal"><i class="fa-regular fa-newspaper"></i> Journals <span class="pubs-filter-count" id="count-journal"></span></button>
+    <button class="pubs-filter-btn pubs-filter-btn--type" data-filter="conference"><i class="fa-solid fa-person-chalkboard"></i> Conferences <span class="pubs-filter-count" id="count-conference"></span></button>
   </div>
   <div class="pubs-controls">
     <select class="pubs-sort-select" id="pubs-sort" aria-label="Sort publications">

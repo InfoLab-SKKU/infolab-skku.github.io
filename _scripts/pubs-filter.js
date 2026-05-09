@@ -17,6 +17,13 @@
                   "trustworthy","ensemble","decision support"]
   };
 
+  /* Conference/journal detection (mirrors Liquid logic in citation.html) */
+  var CONF_PATTERN = /conference|symposium|workshop|proceedings|congress/i;
+
+  function getPubType(card) {
+    return card.dataset.pubtype || (CONF_PATTERN.test(card.dataset.publisher || '') ? 'conference' : 'journal');
+  }
+
   /* ── State ──────────────────────────────────────────── */
   var currentFilter = "all";
   var currentSort   = "newest";
@@ -32,6 +39,9 @@
 
   function matchesFilter(card, filter) {
     if (filter === "all") return true;
+    if (filter === "journal" || filter === "conference") {
+      return getPubType(card) === filter;
+    }
     var title     = (card.dataset.title     || "").toLowerCase();
     var publisher = (card.dataset.publisher || "").toLowerCase();
     var authors   = (card.dataset.authors   || "").toLowerCase();
@@ -59,12 +69,15 @@
   /* ── 9. Count badges ────────────────────────────────── */
   function updateCountBadges() {
     var cards = getCards();
-    var counts = { all: 0, security: 0, biomedical: 0, explainable: 0 };
+    var counts = { all: 0, security: 0, biomedical: 0, explainable: 0, journal: 0, conference: 0 };
     cards.forEach(function (card) {
       counts.all++;
       Object.keys(KEYWORDS).forEach(function (f) {
         if (matchesFilter(card, f)) counts[f]++;
       });
+      var pt = getPubType(card);
+      if (pt === 'journal') counts.journal++;
+      if (pt === 'conference') counts.conference++;
     });
     Object.keys(counts).forEach(function (f) {
       var el = document.getElementById("count-" + f);
@@ -80,7 +93,8 @@
     if (showingEl) showingEl.textContent = visible;
     if (filterLabelEl) {
       var labels = { all: "All Topics", security: "Security & Adversarial ML",
-                     biomedical: "Biomedical AI", explainable: "Explainable AI" };
+                     biomedical: "Biomedical AI", explainable: "Explainable AI",
+                     journal: "Journal Articles", conference: "Conference Papers" };
       filterLabelEl.textContent = labels[currentFilter] || "All Topics";
     }
   }
