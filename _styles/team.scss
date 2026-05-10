@@ -469,6 +469,25 @@
   margin-top: auto;
 }
 
+.mem-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.mem-card-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: rgba(7,55,123,0.09);
+  color: #07377b;
+  white-space: nowrap;
+}
+
 .mem-link {
   display: inline-flex;
   align-items: center;

@@ -42,5 +42,12 @@
         {% endif %}
       {% endfor %}
     </div>
+    {% if member.research_tags and member.research_tags.size > 0 %}
+    <div class="mem-card-tags">
+      {% for tag in member.research_tags %}
+        <span class="mem-card-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </div>
