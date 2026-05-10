@@ -1,7 +1,7 @@
 ---
 name: Mohammed Abuhamad
 image: images/mohammed-abuhamad.jpeg
-role: pro
+role: associate pro
 group: collab
 aliases:
 links:
@@ -22,7 +22,7 @@ research_tags:
   - Malware Detection
 ---
 
-Dr. Mohammed Abuhamad is an assistant professor of Computer Science at Loyola University Chicago . He received a Ph.D. degree in Computer Science from the University of Central Florida (UCF) in 2020. He also received a Ph.D. degree in Electrical and Computer Engineering from INHA University , (Incheon, Republic of Korea) in 2020. He received a Master degree in Information Technology (Artificial Intelligence) from the National University of Malaysia , (Bangi, Malaysia) in 2013.
+Dr. Mohammed Abuhamad is an Associate Professor of Computer Science at Loyola University Chicago . He received a Ph.D. degree in Computer Science from the University of Central Florida (UCF) in 2020. He also received a Ph.D. degree in Electrical and Computer Engineering from INHA University , (Incheon, Republic of Korea) in 2020. He received a Master degree in Information Technology (Artificial Intelligence) from the National University of Malaysia , (Bangi, Malaysia) in 2013.
 
 He is interested in AI/Deep-Learning-based Information Security, especially Software and Mobile/IoT Security. He is also interested in Machine Learning-based Applications and Adversarial Machine Learning. He has published several peer-reviewed research papers in top-tier conferences and journals such as ACM CCS, PoPETS, IEEE ICDCS, and IEEE IoT-J.
 

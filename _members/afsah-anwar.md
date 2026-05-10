@@ -1,7 +1,7 @@
 ---
 name: Afsah Anwar
 image: images/afsah-anwar.jpg
-role: assistant professor
+role: assistant pro
 group: collab
 aliases:
 links:

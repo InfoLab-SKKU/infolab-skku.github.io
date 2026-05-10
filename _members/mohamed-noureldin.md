@@ -1,7 +1,7 @@
 ---
 name: Mohamed Noureldin
 image: images/mohamed--noureldin.jpeg
-role: associate professor
+role: associate pro
 group: collab
 aliases:
 links:

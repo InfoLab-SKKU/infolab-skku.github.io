@@ -21,7 +21,7 @@ Dr. Tamer ABUHMED is a **Tenure-track Associate Professor** in the College of Co
 
 ## Research Impact
 
-With over **6,000+ citations**, an **h-index of 35+**, and an **i10-index of 64+** (Google Scholar), Dr. Abuhmed's research has demonstrated significant impact in Systems Security and responsible AI. His publication record includes more than **76+ peer-reviewed journal articles** and **25+ conference/chapter papers**, with citation growth increasing substantially year-over-year. 
+With over **6,200+ citations**, an **h-index of 35+**, and an **i10-index of 65+** (Google Scholar), Dr. Abuhmed's research has demonstrated significant impact in Systems Security and responsible AI. His publication record includes more than **76+ peer-reviewed journal articles** and **25+ conference/chapter papers**, with citation growth increasing substantially year-over-year. 
 
 ## Research Interests
 
