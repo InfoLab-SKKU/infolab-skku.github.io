@@ -1,7 +1,7 @@
 ---
 name: George K. Thiruvathukal
 image: images/george-k-thiruvathukal.jpeg
-role: professor
+role: pro
 group: collab
 aliases:
 links:
