@@ -14,7 +14,7 @@ links:
    instagram: 
    youtube: 
    email: 
-   home-page: https://scholar.google.com/citations?user=Eleytz0AAAAJ&hl=en
+   home-page: https://chantin.cs.luc.edu/~chantin/
 research_tags:
   - Information Security
   - Privacy-Preserving AI

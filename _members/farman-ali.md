@@ -5,10 +5,10 @@ role: associate pro
 group: collab
 aliases:
 links:
-   orcid: 
+   orcid: https://orcid.org/0000-0002-9420-1588
    linkedin: 
    github: 
-   google-scholar: 
+   google-scholar: https://scholar.google.com/citations?user=i8OvtQoAAAAJ&hl=en
    twitter: 
    facebook: 
    instagram: 
