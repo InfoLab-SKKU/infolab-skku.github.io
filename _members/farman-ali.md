@@ -13,7 +13,7 @@ links:
    facebook: 
    instagram: 
    youtube: 
-   email: farmankanju@sejong.ac.kr
+   email: farman0977@skku.edu
    home-page: https://sites.google.com/view/farmanali
 research_tags:
   - Biomedical AI
