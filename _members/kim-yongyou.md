@@ -5,7 +5,7 @@ role: intern
 group: alum
 links:
    orcid: 
-   linkedin: ?�규-김-93322934b
+   linkedin: ?°ê·œ-ê¹€-93322934b
    github: 
    home-page: 
    google-scholar: 

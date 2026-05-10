@@ -11,6 +11,6 @@ research_tags:
 ---
 
 ### Education
-Sungkyunkwan University (SKKU) ??Bachelor?™s Student in Computer Science and Engineering <br>
+Sungkyunkwan University (SKKU) ??Bachelor?â„¢s Student in Computer Science and Engineering <br>
 2022 ??Present
 

@@ -12,12 +12,12 @@ research_tags:
   - "Natural Language Processing"
 ---
 
-Zichen Song is an incoming **Combined Master?ìPhD** student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea (Fall 2025). His research focuses on security and privacy for large language models?îparticularly membership inference and data extraction attacks?îas well as optimization of (multi)modal LLMs, deep spiking neural networks, and medical AI.
+Zichen Song is an incoming **Combined Master?‚ÄúPhD** student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea (Fall 2025). His research focuses on security and privacy for large language models?‚Äùparticularly membership inference and data extraction attacks?‚Äùas well as optimization of (multi)modal LLMs, deep spiking neural networks, and medical AI.
 
 His broader interests include trustworthy AI, federated learning, and efficient training/inference for foundation models. He has experience with Python, C/C++, PyTorch, TensorFlow, and Linux, and enjoys building reproducible research codebases and clean experimental pipelines.
 
 ### Education
-- **Sungkyunkwan University (SKKU), South Korea ??Combined Master?ìPhD, Computer Science and Engineering (incoming)**  
+- **Sungkyunkwan University (SKKU), South Korea ??Combined Master?‚ÄúPhD, Computer Science and Engineering (incoming)**  
   2025 ??Present
 
 - **Lanzhou University, China ??B.S. in Computer Science**  

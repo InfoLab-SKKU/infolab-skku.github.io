@@ -11,13 +11,13 @@ research_tags:
   - "Biomedical AI"
 --- 
  
-Ryu Sihyeon is a Bachelor?™s student in Computer Science and Engineering at 
+Ryu Sihyeon is a Bachelor?â„¢s student in Computer Science and Engineering at 
 Sungkyunkwan University (SKKU), South Korea. 
  
 Fluent in Chinese. 
  
 ### Education 
-Sungkyunkwan University (SKKU) - Bachelor?™s Degree in Computer science and 
+Sungkyunkwan University (SKKU) - Bachelor?â„¢s Degree in Computer science and 
 engineering <br> 
 2020 - Present 
  

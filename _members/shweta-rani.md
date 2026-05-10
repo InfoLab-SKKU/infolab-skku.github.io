@@ -12,7 +12,7 @@ research_tags:
   - "Machine Unlearning"
 ---
 
-Shwetarani is a Ph.D student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, focusing on security in machine learning. Holds a Master?™s degree in Electrical and Computer Engineering from Sungkyunkwan University.
+Shwetarani is a Ph.D student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, focusing on security in machine learning. Holds a Master?â„¢s degree in Electrical and Computer Engineering from Sungkyunkwan University.
 
 Research interests includes Security in AI, Machine Learning and Data.
 

@@ -19,4 +19,4 @@ research_tags:
   - "Explainable AI"
 ---
 
-Nasir Rahim is a Research Fellow at the College of Innovation and Technology, University of Michigan?“Flint.
+Nasir Rahim is a Research Fellow at the College of Innovation and Technology, University of Michigan?â€œFlint.

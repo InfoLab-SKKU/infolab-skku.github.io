@@ -14,7 +14,7 @@ research_tags:
   - "Explainable AI"
 ---
 
-ZHENG CHENSHENG is an alumnus of the Master's program in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, where he focused on security in deep learning, medical image processing, and computer vision. He holds a Bachelor?™s degree in Computer Science and Technology from Northeastern University, with prior work experience in IoT and machine learning. He is currently working at Samsung R&D, China.
+ZHENG CHENSHENG is an alumnus of the Master's program in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, where he focused on security in deep learning, medical image processing, and computer vision. He holds a Bachelor?â„¢s degree in Computer Science and Technology from Northeastern University, with prior work experience in IoT and machine learning. He is currently working at Samsung R&D, China.
 
 His research interests include machine learning, deep learning, computer vision, medical image processing, and IoT.
 

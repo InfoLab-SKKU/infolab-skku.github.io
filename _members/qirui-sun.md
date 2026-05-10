@@ -20,4 +20,4 @@ research_tags:
   - "Malware Detection"
 ---
 
-QIRUI SUN is an alumnus of the Master?™s program and is currently working at a **security company in China**.
+QIRUI SUN is an alumnus of the Master?â„¢s program and is currently working at a **security company in China**.

@@ -24,10 +24,10 @@ His work is broadly motivated by the development of reliable, robust, and practi
 Sungkyunkwan University (SKKU) ??M.S. in Computer Science and Engineering (Alumnus)
 2024 ??2026
 
-University of Oran1 Ahmed Ben Bella ??Master?™s Degree in Computer Science
+University of Oran1 Ahmed Ben Bella ??Master?â„¢s Degree in Computer Science
 2018 ??2020
 
-UHBC University ??Bachelor?™s Degree in Computer Systems
+UHBC University ??Bachelor?â„¢s Degree in Computer Systems
 2015 ??2018
 
 {% include section.html %}
