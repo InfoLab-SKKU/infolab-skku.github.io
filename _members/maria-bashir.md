@@ -14,7 +14,7 @@ research_tags:
 ---
 
 Maria Bashir is a PhD student in Computer Engineering at Sungkyunkwan University (SKKU),
-South Korea, specializing in machine learning. She holds a master?™s degree in Information
+South Korea, specializing in machine learning. She holds a master's degree in Information
 Technology, with prior research experience in neural networks and recommendation systems.
 Her research interests include the Internet of Things (IoT), explainable AI (XAI), large language
 models (LLMs), and diagnosis methods for biomedical applications. She has experience in both

@@ -18,7 +18,7 @@ YoungHyun Moses Choi is a 3rd year undergraduate student in Computer Science and
 Fluent in English and Korean.
 
 ### Education
-Sungkyunkwan University (SKKU) ??3rd Year Undergraduate Student in Computer Science and Engineering 2022.8 ~ present <br>
+Sungkyunkwan University (SKKU) – 3rd Year Undergraduate Student in Computer Science and Engineering 2022.8 ~ present <br>
 
 Memorial University of Newfoundland - 3rd Year Undergraduate Exchange Student in Computer Science and Engineering 2025.1 ~ 2025.5
 

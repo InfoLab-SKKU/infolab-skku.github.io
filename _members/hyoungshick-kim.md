@@ -21,7 +21,7 @@ research_tags:
   - Blockchain
 ---
 
-Professor Hyoungshick Kim leads the Security Laboratory at Sungkyunkwan University. His research interests include usable security, blockchain, security vulnerability analysis, and data-driven security.
+Professor Hyoungshick Kim is a Professor of Computer Science and Engineering at Sungkyunkwan University (SKKU) and the leader of the Security Laboratory. His research focuses on usable security, blockchain, security vulnerability analysis, and data-driven security, with additional interests in security engineering, human authentication, and social network analysis.
 
 {% include section.html %}
 ## Publications

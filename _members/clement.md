@@ -19,11 +19,11 @@ His current research interests include deep learning, computer vision, medical i
 
 
 ### Education
-ECE Ecole d'Ingenieurs, Paris ??Master 1 in Cybersecurity <br>
-2021.9 ??Present
+ECE Ecole d'Ingenieurs, Paris – Master 1 in Cybersecurity <br>
+2021.9 – Present
 
-Hanyang University, Ansan-si, South Korea  ??Exchange Semester (Courses : Network Security, UX/UI, Algorithm Theory, Statistics)<br>
-2023.9 ??2023.12
+Hanyang University, Ansan-si, South Korea  – Exchange Semester (Courses : Network Security, UX/UI, Algorithm Theory, Statistics)<br>
+2023.9 – 2023.12
 
 
 {% include section.html %}

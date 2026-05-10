@@ -21,8 +21,8 @@ Beyond software engineering, Daler is deeply interested in deep learning, partic
 Proficient in English, Korean, and Russian. 
 
 ### Education
-Sungkyunkwan University (SKKU) ??Undergraduate student in Computer Science and Engineering <br>
-2022 ??Present
+Sungkyunkwan University (SKKU) – Undergraduate student in Computer Science and Engineering <br>
+2022 – Present
 (Expected Graduation: June 2026)
 
 {% include section.html %}

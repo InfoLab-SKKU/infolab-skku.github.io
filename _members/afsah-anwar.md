@@ -13,14 +13,14 @@ links:
    facebook: 
    instagram: 
    youtube: 
-   email: 
-   home-page: https://scholar.google.com.sg/citations?user=Z52AG6wAAAAJ&hl=en
+   email: afsah@unm.edu
+   home-page: https://www.afsah.org/
 research_tags:
   - Information Systems
   - AI Security Applications
 ---
 
-Dr. Afsah Anwar is an Assistant Professor in the Department of Computer and Information Sciences at Florida A&M University, USA. Her research interests include computer science education and information systems.
+Dr. Afsah Anwar is an Assistant Professor in the Department of Computer Science at the University of New Mexico (UNM), Albuquerque, NM. His research focuses on understanding malicious activity on the Internet and its impact on individuals and society. His work supports security- and privacy-focused technology adoption by developing defenses against malicious applications, enabling safer use of online privacy tools, improving trust attribution in digital ecosystems, and supporting the secure adoption of emerging communication technologies. His research draws on malware analysis, vulnerability management, and threat intelligence to identify system weaknesses, develop new threat models, and design defense mechanisms against evolving attack vectors.
 
 {% include section.html %}
 ## Publications

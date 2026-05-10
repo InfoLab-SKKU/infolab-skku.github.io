@@ -5,7 +5,7 @@ role: intern
 group: alum
 links:
    orcid: 
-   linkedin: ?°ê·œ-ê¹€-93322934b
+   linkedin: 
    github: 
    home-page: 
    google-scholar: 

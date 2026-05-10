@@ -21,14 +21,14 @@ Abdenour Soubih is a Ph.D. student in AI Systems Engineering at Sungkyunkwan Uni
 
 His work is broadly motivated by the development of reliable, robust, and practical AI systems that can be deployed in real-world environments. He has prior research experience in federated learning security, privacy risks, poisoning attacks, and AI system robustness, as well as practical experience in IoT platforms and web-based intelligent systems.
 ### Education
-Sungkyunkwan University (SKKU) ??M.S. in Computer Science and Engineering (Alumnus)
-2024 ??2026
+Sungkyunkwan University (SKKU) – M.S. in Computer Science and Engineering (Alumnus)
+2024 – 2026
 
-University of Oran1 Ahmed Ben Bella ??Master?™s Degree in Computer Science
-2018 ??2020
+University of Oran1 Ahmed Ben Bella – Master's Degree in Computer Science
+2018 – 2020
 
-UHBC University ??Bachelor?™s Degree in Computer Systems
-2015 ??2018
+UHBC University – Bachelor's Degree in Computer Systems
+2015 – 2018
 
 {% include section.html %}
 ## Publications

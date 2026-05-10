@@ -20,5 +20,5 @@ Currently working as a research intern focusing on robustness verification of de
 Technical work and learning progress are documented on GitHub and Velog, with an emphasis on clear organization and continuous reflection.
 
 ### Education  
-Sungkyunkwan University ??B.S. in Mathematics and Software (Double Major) <br>
-2020 ??Present
+Sungkyunkwan University – B.S. in Mathematics and Software (Double Major) <br>
+2020 – Present

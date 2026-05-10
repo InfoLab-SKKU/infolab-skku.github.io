@@ -16,16 +16,16 @@ Mazen ElFayoumi is an AI Engineer and Data Scientist specializing in Large Langu
 
 His professional work at **Brainzx.ai** includes developing AI-driven solutions for healthcare, finance, and education. He led the creation of **Thoth**, the first AI-powered LMS in Egypt, integrating LLMs for personalized learning. He has also built intelligent medical diagnostic chatbots, stock market prediction systems, and explainable AI models for diabetes risk assessment using transformers and RAG architectures.  
 
-Mazen?™s research contributions include work on **knowledge-augmented LLMs for diabetes prediction**, **AI-driven stock market recommendation systems**, and **hybrid models for Arabic fake news detection**. His expertise spans deep learning, NLP, explainable AI, and optimization algorithms, with proficiency in **Python, TypeScript, JavaScript, TensorFlow, Hugging Face, LangChain, and Flask**.  
+Mazen's research contributions include work on **knowledge-augmented LLMs for diabetes prediction**, **AI-driven stock market recommendation systems**, and **hybrid models for Arabic fake news detection**. His expertise spans deep learning, NLP, explainable AI, and optimization algorithms, with proficiency in **Python, TypeScript, JavaScript, TensorFlow, Hugging Face, LangChain, and Flask**.  
 
 Fluent in Arabic, English, and French, Mazen is passionate about building transparent, impactful AI systems that bridge advanced research with real-world applications.  
 
 ### Education
-Galala University ??B.Sc. in Computer Science (Artificial Intelligence Science Program)  
-2021 ??2025  
+Galala University – B.Sc. in Computer Science (Artificial Intelligence Science Program)  
+2021 – 2025  
 
-CollÃ¨ge des FrÃ¨res (Bab al-Louq), Cairo ??High School, Mathematics Track  
-2006 ??2021  
+Collège des Frères (Bab al-Louq), Cairo – High School, Mathematics Track  
+2006 – 2021  
 
 {% include section.html %}
 ## Publications

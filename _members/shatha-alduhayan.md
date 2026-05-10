@@ -14,17 +14,17 @@ research_tags:
   - "Biomedical AI"
 ---
 
-Shatha Al-duhayan is a Master's student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, focusing on security in machine learning, particularly federated learning and data analysis. Holds a Bachelor?™s degree in Information Technology from Saudi Arabia, with previous knowledge in data-driven systems and distributed environments.
+Shatha Al-duhayan is a Master's student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, focusing on security in machine learning, particularly federated learning and data analysis. Holds a Bachelor's degree in Information Technology from Saudi Arabia, with previous knowledge in data-driven systems and distributed environments.
 
 Research areas include federated learning, data analysis, and data security. Proficient in Arabic and Korean, with good knowledge of English, and currently involved in research related to these fields.
 
 
 ### Education
-Sungkyunkwan University (SKKU) ??Master?™s Student in Computer Science and Engineering <br>
-2024 ??Present
+Sungkyunkwan University (SKKU) – Master's Student in Computer Science and Engineering <br>
+2024 – Present
 
-Qassim University ??Bachelor?™s Degree in Information Technology<br>
-2019 ??2023
+Qassim University – Bachelor's Degree in Information Technology<br>
+2019 – 2023
 
 
 {% include section.html %}
