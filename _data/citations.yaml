@@ -618,7 +618,7 @@
   shaker-el-sappagh-list: true
   plugin: sources.py
   file: sources.yaml
-  image: ''
+  image: images/thumbnails/10_1186_s12911-019-0806-z.png
   buttons:
   - type: pdf
     link: pdf/s12911-019-0806-z.pdf
@@ -839,7 +839,7 @@
   shaker-el-sappagh-list: true
   plugin: sources.py
   file: sources.yaml
-  image: ''
+  image: images/thumbnails/10_1186_s13326-018-0176-y.gif
   buttons:
   - type: pdf
     link: pdf/s13326-018-0176-y.pdf
@@ -859,7 +859,7 @@
   shaker-el-sappagh-list: true
   plugin: sources.py
   file: sources.yaml
-  image: ''
+  image: images/thumbnails/10_1186_s12911-018-0651-5.png
   buttons:
   - type: pdf
     link: pdf/s12911-018-0651-5.pdf
@@ -1601,7 +1601,7 @@
   tamer-abuhmed-list: true
   plugin: sources.py
   file: sources.yaml
-  image: ''
+  image: images/thumbnails/10_1038_s41598-023-42796-6.png
   buttons:
   - type: pdf
     link: pdf/s41598-023-42796-6.pdf
@@ -1688,7 +1688,7 @@
   tamer-abuhmed-list: true
   plugin: sources.py
   file: sources.yaml
-  image: ''
+  image: images/thumbnails/10_1038_s41598-023-27815-w.png
   buttons:
   - type: pdf
     link: pdf/s41598-023-27815-w.pdf
@@ -2591,7 +2591,7 @@
   pmcid: PMC10174516
   date: '2023-05-11'
   link: https://doi.org/gs6qrs
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0285455.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0285455.pdf
@@ -2720,7 +2720,7 @@
   pmcid: PMC6907279
   date: '2019-12-01'
   link: https://doi.org/ggpcsr
-  image: ''
+  image: images/thumbnails/10_1186_s12859-019-3297-0.png
   buttons:
   - type: pdf
     link: pdf/s12859-019-3297-0.pdf
@@ -2780,7 +2780,7 @@
   pmcid: PMC5338812
   date: '2017-03-06'
   link: https://doi.org/f9s3sj
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0173375.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0173375.pdf
@@ -2934,7 +2934,7 @@
   pmcid: PMC10116472
   date: '2023-04-20'
   link: https://doi.org/gr9ccd
-  image: ''
+  image: images/thumbnails/10_1186_s12859-023-05258-4.png
   buttons:
   - type: pdf
     link: pdf/s12859-023-05258-4.pdf
@@ -3055,7 +3055,7 @@
   pmcid: PMC5796402
   date: '2018-02-01'
   link: https://doi.org/grfnc4
-  image: ''
+  image: images/thumbnails/10_1186_s12859-018-2041-5.gif
   buttons:
   - type: pdf
     link: pdf/s12859-018-2041-5.pdf
@@ -3145,7 +3145,7 @@
   pmcid: PMC4858870
   date: '2016-05-06'
   link: https://doi.org/gqgsp3
-  image: ''
+  image: images/thumbnails/10_1186_s13059-016-0953-9.gif
   buttons:
   - type: pdf
     link: pdf/s13059-016-0953-9.pdf
@@ -3208,7 +3208,7 @@
   pmcid: PMC3983045
   date: '2014-04-10'
   link: https://doi.org/f5388d
-  image: ''
+  image: images/thumbnails/10_1371_journal_ppat_1004045.jpg
   buttons:
   - type: pdf
     link: pdf/journal_ppat_1004045.pdf
@@ -3224,7 +3224,7 @@
   pmid: '19198638'
   date: '2009-02-06'
   link: https://doi.org/dkkj84
-  image: ''
+  image: images/thumbnails/10_1038_ja_2009_7.gif
   buttons:
   - type: pdf
     link: pdf/ja_2009_7.pdf
@@ -3267,7 +3267,7 @@
   pmcid: PMC10505144
   date: '2023-09-16'
   link: https://doi.org/gtrg2b
-  image: ''
+  image: images/thumbnails/10_1038_s41597-023-02534-z.png
   buttons:
   - type: pdf
     link: pdf/s41597-023-02534-z.pdf
@@ -3386,7 +3386,7 @@
   pmcid: PMC5626511
   date: '2017-09-15'
   link: https://doi.org/gbw67w
-  image: ''
+  image: images/thumbnails/10_1371_journal_pgen_1006997.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pgen_1006997.pdf
@@ -3421,7 +3421,7 @@
   pmcid: PMC10290352
   date: '2023-06-24'
   link: https://doi.org/gtr8pn
-  image: ''
+  image: images/thumbnails/10_1186_s13195-023-01255-0.png
   buttons:
   - type: pdf
     link: pdf/s13195-023-01255-0.pdf
@@ -3455,7 +3455,7 @@
   pmcid: PMC9950378
   date: '2023-02-23'
   link: https://doi.org/gtr8pq
-  image: ''
+  image: images/thumbnails/10_1038_s41597-023-01968-9.png
   buttons:
   - type: pdf
     link: pdf/s41597-023-01968-9.pdf
@@ -3494,7 +3494,7 @@
   pmcid: PMC10399614
   date: '2023-02-23'
   link: https://doi.org/gr9gvs
-  image: ''
+  image: images/thumbnails/10_1038_s41592-023-01769-3.png
   buttons:
   - type: pdf
     link: pdf/s41592-023-01769-3.pdf
@@ -3558,7 +3558,7 @@
   pmcid: PMC7820539
   date: '2021-01-22'
   link: https://doi.org/gndrg7
-  image: ''
+  image: images/thumbnails/10_1186_s12915-020-00940-y.png
   buttons:
   - type: pdf
     link: pdf/s12915-020-00940-y.pdf
@@ -3640,7 +3640,7 @@
   pmcid: PMC7603405
   date: '2020-07-24'
   link: https://doi.org/gg5zh8
-  image: ''
+  image: images/thumbnails/10_1038_s41586-020-2577-1.png
   buttons:
   - type: pdf
     link: pdf/s41586-020-2577-1.pdf
@@ -3667,7 +3667,7 @@
   pmcid: PMC7034361
   date: '2020-02-14'
   link: https://doi.org/gj7mh4
-  image: ''
+  image: images/thumbnails/10_3389_fgene_2019_01355.jpg
   buttons:
   - type: pdf
     link: pdf/fgene_2019_01355.pdf
@@ -3695,7 +3695,7 @@
   pmcid: PMC6764653
   date: '2019-09-27'
   link: https://doi.org/gtr8pv
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0222165.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0222165.pdf
@@ -3767,7 +3767,7 @@
   pmcid: PMC6550256
   date: '2018-09-05'
   link: https://doi.org/gmxd4x
-  image: ''
+  image: images/thumbnails/10_1038_s41746-018-0052-2.png
   buttons:
   - type: pdf
     link: pdf/s41746-018-0052-2.pdf
@@ -3803,7 +3803,7 @@
   pmcid: PMC5941560
   date: '2018-05-08'
   link: https://doi.org/gst8gc
-  image: ''
+  image: images/thumbnails/10_1186_s12864-018-4718-6.gif
   buttons:
   - type: pdf
     link: pdf/s12864-018-4718-6.pdf
@@ -3894,7 +3894,7 @@
   pmcid: PMC6226017
   date: '2016-12-31'
   link: https://doi.org/ghbvc7
-  image: ''
+  image: images/thumbnails/10_5334_cstp_56.png
   buttons:
   - type: pdf
     link: pdf/cstp_56.pdf
@@ -3988,7 +3988,7 @@
   pmcid: PMC4986259
   date: '2016-08-16'
   link: https://doi.org/gg8v8v
-  image: ''
+  image: images/thumbnails/10_1186_s12864-016-2855-3.gif
   buttons:
   - type: pdf
     link: pdf/s12864-016-2855-3.pdf
@@ -4030,7 +4030,7 @@
   pmcid: PMC4830068
   date: '2016-04-12'
   link: https://doi.org/f3rs38
-  image: ''
+  image: images/thumbnails/10_1186_s13326-016-0061-5.gif
   buttons:
   - type: pdf
     link: pdf/s13326-016-0061-5.pdf
@@ -4066,7 +4066,7 @@
   pmcid: PMC4769089
   date: '2016-02-26'
   link: https://doi.org/gtrg2w
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0149621.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0149621.pdf
@@ -4141,7 +4141,7 @@
   pmcid: PMC4494802
   date: '2015-05-21'
   link: https://doi.org/gb34tr
-  image: ''
+  image: images/thumbnails/10_1186_s12920-015-0095-z.gif
   buttons:
   - type: pdf
     link: pdf/s12920-015-0095-z.pdf
@@ -4193,7 +4193,7 @@
   pmcid: PMC4132376
   date: '2014-08-14'
   link: https://doi.org/gtrg22
-  image: ''
+  image: images/thumbnails/10_3389_fcimb_2014_00108.jpg
   buttons:
   - type: pdf
     link: pdf/fcimb_2014_00108.pdf
@@ -4212,7 +4212,7 @@
   pmcid: PMC4281950
   date: '2014-08-27'
   link: https://doi.org/gnp849
-  image: ''
+  image: images/thumbnails/10_1186_s13059-014-0438-7.jpg
   buttons:
   - type: pdf
     link: pdf/s13059-014-0438-7.pdf
@@ -4233,7 +4233,7 @@
   pmcid: PMC4307816
   date: '2014-07-29'
   link: https://doi.org/ggv7vg
-  image: ''
+  image: images/thumbnails/10_2196_games_3350.png
   buttons:
   - type: pdf
     link: pdf/games_3350.pdf
@@ -4274,7 +4274,7 @@
   pmid: '23734599'
   date: '2013-04-01'
   link: https://doi.org/gtrg24
-  image: ''
+  image: images/thumbnails/10_1186_2041-1480-4-S1-S4.jpg
   buttons:
   - type: pdf
     link: pdf/2041-1480-4-S1-S4.pdf
@@ -4291,7 +4291,7 @@
   pmcid: PMC3737187
   date: '2013-08-07'
   link: https://doi.org/gtrg25
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0071171.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0071171.pdf
@@ -4313,7 +4313,7 @@
   pmcid: PMC3757023
   date: '2013-08-29'
   link: https://doi.org/gtrg27
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0072511.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0072511.pdf
@@ -4415,7 +4415,7 @@
   pmcid: PMC3814290
   date: '2012-11-15'
   link: https://doi.org/gb8xht
-  image: ''
+  image: images/thumbnails/10_1186_1741-7007-10-90.jpg
   buttons:
   - type: pdf
     link: pdf/1741-7007-10-90.pdf
@@ -4433,7 +4433,7 @@
   pmcid: PMC3469763
   date: '2012-07-31'
   link: https://doi.org/f4bv8k
-  image: ''
+  image: images/thumbnails/10_1007_s00335-012-9408-0.gif
   buttons:
   - type: pdf
     link: pdf/s00335-012-9408-0.pdf
@@ -4450,7 +4450,7 @@
   pmid: '22541597'
   date: '2012-04-24'
   link: https://doi.org/gtrg29
-  image: ''
+  image: images/thumbnails/10_1186_2041-1480-3-S1-S6.jpg
   buttons:
   - type: pdf
     link: pdf/2041-1480-3-S1-S6.pdf
@@ -4469,7 +4469,7 @@
   pmcid: PMC3189939
   date: '2011-10-10'
   link: https://doi.org/fmscjd
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0025807.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0025807.pdf
@@ -4485,7 +4485,7 @@
   pmcid: PMC3334605
   date: '2011-01-01'
   link: https://doi.org/fxr3dh
-  image: ''
+  image: images/thumbnails/10_1186_gb-2011-12-12-135.jpg
   buttons:
   - type: pdf
     link: pdf/gb-2011-12-12-135.pdf
@@ -4504,7 +4504,7 @@
   pmcid: PMC3271090
   date: '2011-12-01'
   link: https://doi.org/fqqwdt
-  image: ''
+  image: images/thumbnails/10_1186_1471-2164-12-603.jpg
   buttons:
   - type: pdf
     link: pdf/1471-2164-12-603.pdf
@@ -4533,7 +4533,7 @@
   pmcid: PMC2856555
   date: '2010-03-19'
   link: https://doi.org/dqs
-  image: ''
+  image: images/thumbnails/10_1186_1752-0509-4-29.jpg
   buttons:
   - type: pdf
     link: pdf/1752-0509-4-29.pdf
@@ -4557,7 +4557,7 @@
   pmcid: PMC2978079
   date: '2010-11-10'
   link: https://doi.org/dn4x6n
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0013920.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0013920.pdf
@@ -4577,7 +4577,7 @@
   pmcid: PMC3012073
   date: '2010-12-29'
   link: https://doi.org/bndzcc
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0014458.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0014458.pdf
@@ -4644,7 +4644,7 @@
   pmcid: PMC2650792
   date: '2009-03-06'
   link: https://doi.org/dw3
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0004649.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0004649.pdf
@@ -4670,7 +4670,7 @@
   pmcid: PMC3091323
   date: '2009-11-17'
   link: https://doi.org/dth
-  image: ''
+  image: images/thumbnails/10_1186_gb-2009-10-11-r130.jpg
   buttons:
   - type: pdf
     link: pdf/gb-2009-10-11-r130.pdf
@@ -4693,7 +4693,7 @@
   pmcid: PMC2651120
   date: '2009-01-16'
   link: https://doi.org/dwx
-  image: ''
+  image: images/thumbnails/10_1186_1472-6769-9-2.jpg
   buttons:
   - type: pdf
     link: pdf/1472-6769-9-2.pdf
@@ -4715,7 +4715,7 @@
   pmcid: PMC2443188
   date: '2008-07-08'
   link: https://doi.org/d2s
-  image: ''
+  image: images/thumbnails/10_1371_journal_pbio_0060175.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pbio_0060175.pdf
@@ -4750,7 +4750,7 @@
   pmcid: PMC2346558
   date: '2008-05-09'
   link: https://doi.org/d3d
-  image: ''
+  image: images/thumbnails/10_1371_journal_pgen_1000070.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pgen_1000070.pdf
@@ -4775,7 +4775,7 @@
   pmcid: PMC2563687
   date: '2008-10-24'
   link: https://doi.org/dzt
-  image: ''
+  image: images/thumbnails/10_1371_journal_pgen_1000232.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pgen_1000232.pdf
@@ -4791,7 +4791,7 @@
   pmcid: PMC1895997
   date: '2007-01-01'
   link: https://doi.org/d6m
-  image: ''
+  image: images/thumbnails/10_1186_gb-2007-8-4-404.jpg
   buttons:
   - type: pdf
     link: pdf/gb-2007-8-4-404.pdf
@@ -4851,7 +4851,7 @@
   pmcid: PMC1409800
   date: '2006-02-09'
   link: https://doi.org/d9v
-  image: ''
+  image: images/thumbnails/10_1186_1471-2105-7-61.jpg
   buttons:
   - type: pdf
     link: pdf/1471-2105-7-61.pdf
@@ -4945,7 +4945,7 @@
   pmcid: PMC383321
   date: '2004-04-01'
   link: https://doi.org/dcfv8j
-  image: ''
+  image: images/thumbnails/10_1101_gr_2161804.gif
   buttons:
   - type: pdf
     link: pdf/gr_2161804.pdf
@@ -4973,7 +4973,7 @@
   pmcid: PMC526179
   date: '2004-11-09'
   link: https://doi.org/ff3
-  image: ''
+  image: images/thumbnails/10_1371_journal_pbio_0020393.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pbio_0020393.pdf
