@@ -1236,7 +1236,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:PPRN:156926166
+- id: wosuid:PPRN:156877634
   title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
     Transformer Systems under Attack'
   authors: []
@@ -2476,6 +2476,16 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: wosuid:000297084200007
+  title: A Software-Based Group Attestation for Wireless Sensor Networks
+  authors: []
+  publisher: Ad Hoc & Sensor Wireless Networks
+  date: '2026-05-10'
+  link: https://publons.com/wos-op/publon/32581141/
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: wosuid:WOS:000297084200007
   title: A Software-Based Group Attestation for Wireless Sensor Networks
   authors: []
@@ -2518,6 +2528,17 @@
   publisher: ArXiv
   date: '2026-05-09'
   link: https://publons.com/wos-op/publon/83508547/
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:PPRN:156926166
+  title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
+    Transformer Systems under Attack'
+  authors: []
+  publisher: ArXiv
+  date: '2026-05-09'
+  link: https://publons.com/wos-op/publon/78720308/
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
