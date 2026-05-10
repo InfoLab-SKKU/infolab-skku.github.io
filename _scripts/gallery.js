@@ -1,11 +1,14 @@
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
-    var items        = document.querySelectorAll(".gallery-item");
-    var filterBtns   = document.querySelectorAll(".gallery-filter-btn");
-    var emptyEl      = document.getElementById("gallery-empty");
-    var lightbox     = document.getElementById("gallery-lightbox");
+    var items      = document.querySelectorAll(".gallery-item");
+    var catBtns    = document.querySelectorAll("#gallery-cat-bar .gallery-filter-btn");
+    var yearBtns   = document.querySelectorAll("#gallery-year-bar .gallery-year-btn");
+    var emptyEl    = document.getElementById("gallery-empty");
+    var lightbox   = document.getElementById("gallery-lightbox");
 
-    // Only run on the gallery page
+    // Support legacy pages without the new id-based bars
+    if (!catBtns.length) catBtns = document.querySelectorAll(".gallery-filter-btn");
+
     if (!items.length || !lightbox) return;
 
     var lbImg     = document.getElementById("lb-img");
@@ -15,44 +18,58 @@
     var lbPrev    = document.getElementById("lb-prev");
     var lbNext    = document.getElementById("lb-next");
 
-    var currentFilter = "all";
-    var visibleItems  = [];
-    var currentIdx    = 0;
+    var currentCat  = "all";
+    var currentYear = "all";
+    var visibleItems = [];
+    var currentIdx   = 0;
 
-    /* ── Count badges ──────────────────────────────── */
-    function updateBadges() {
+    /* -- Count badges (category only) --------------------------------- */
+    function updateCatBadges() {
       var counts = { all: items.length };
       items.forEach(function (item) {
         var cat = item.dataset.category;
         counts[cat] = (counts[cat] || 0) + 1;
       });
-      filterBtns.forEach(function (btn) {
+      catBtns.forEach(function (btn) {
         var badge = btn.querySelector(".gallery-filter-count");
         if (badge) badge.textContent = counts[btn.dataset.filter] || 0;
       });
     }
 
-    /* ── Filter ────────────────────────────────────── */
-    function applyFilter(filter) {
+    /* -- Apply both filters ------------------------------------------- */
+    function applyFilters() {
       var visible = 0;
       items.forEach(function (item) {
-        var show = filter === "all" || item.dataset.category === filter;
+        var catOk  = currentCat  === "all" || item.dataset.category === currentCat;
+        var yearOk = currentYear === "all" || item.dataset.year === currentYear;
+        var show   = catOk && yearOk;
         item.setAttribute("data-hidden", show ? "false" : "true");
         if (show) visible++;
       });
       if (emptyEl) emptyEl.style.display = visible === 0 ? "block" : "none";
     }
 
-    filterBtns.forEach(function (btn) {
+    /* -- Category buttons --------------------------------------------- */
+    catBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        filterBtns.forEach(function (b) { b.classList.remove("active"); });
+        catBtns.forEach(function (b) { b.classList.remove("active"); });
         btn.classList.add("active");
-        currentFilter = btn.dataset.filter;
-        applyFilter(currentFilter);
+        currentCat = btn.dataset.filter;
+        applyFilters();
       });
     });
 
-    /* ── Lightbox ──────────────────────────────────── */
+    /* -- Year buttons -------------------------------------------------- */
+    yearBtns.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        yearBtns.forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        currentYear = btn.dataset.year;
+        applyFilters();
+      });
+    });
+
+    /* -- Lightbox ------------------------------------------------------ */
     function getVisibleItems() {
       return Array.from(items).filter(function (item) {
         return item.getAttribute("data-hidden") !== "true";
@@ -80,7 +97,6 @@
       document.body.style.overflow = "";
     }
 
-    // Attach click to each item
     items.forEach(function (item) {
       item.querySelector(".gallery-img-wrap").addEventListener("click", function () {
         visibleItems = getVisibleItems();
@@ -90,28 +106,24 @@
     });
 
     lbClose.addEventListener("click", closeLightbox);
-
     lightbox.addEventListener("click", function (e) {
       if (e.target === lightbox) closeLightbox();
     });
-
     lbPrev.addEventListener("click", function () {
       showImage((currentIdx - 1 + visibleItems.length) % visibleItems.length);
     });
-
     lbNext.addEventListener("click", function () {
       showImage((currentIdx + 1) % visibleItems.length);
     });
-
     document.addEventListener("keydown", function (e) {
       if (lightbox.style.display !== "flex") return;
-      if (e.key === "Escape")      closeLightbox();
-      if (e.key === "ArrowLeft")   showImage((currentIdx - 1 + visibleItems.length) % visibleItems.length);
-      if (e.key === "ArrowRight")  showImage((currentIdx + 1) % visibleItems.length);
+      if (e.key === "Escape")     closeLightbox();
+      if (e.key === "ArrowLeft")  showImage((currentIdx - 1 + visibleItems.length) % visibleItems.length);
+      if (e.key === "ArrowRight") showImage((currentIdx + 1) % visibleItems.length);
     });
 
-    /* ── Init ──────────────────────────────────────── */
-    updateBadges();
-    applyFilter("all");
+    /* -- Init ---------------------------------------------------------- */
+    updateCatBadges();
+    applyFilters();
   });
 })();
