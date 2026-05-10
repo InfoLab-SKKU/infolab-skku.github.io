@@ -376,7 +376,7 @@
   - type: pdf
     link: pdf/s41592-023-01769-3.pdf
 - id: doi:10.1111/cts.13302
-  image: ''
+  image: images/thumbnails/10_1111_cts_13302.jpg
   buttons:
   - type: pdf
     link: pdf/cts_13302.pdf
@@ -421,7 +421,7 @@
   - type: pdf
     link: pdf/s41746-018-0052-2.pdf
 - id: doi:10.1101/367599
-  image: ''
+  image: images/thumbnails/10_1101_367599.png
   buttons:
   - type: pdf
     link: pdf/367599.pdf
