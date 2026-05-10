@@ -118,6 +118,7 @@
 .impact-venue-badge--nature  { background: #004c97; color: #fff; }
 .impact-venue-badge--acm    { background: #0085ca; color: #fff; }
 .impact-venue-badge--usenix  { background: #6d2077; color: #fff; }
+.impact-venue-badge--springer { background: #b5122c; color: #fff; }
 
 .impact-venue-name {
   font-size: 0.84rem;
@@ -168,6 +169,13 @@
 .impact-funding-meta {
   font-size: 0.78rem;
   color: var(--gray);
+}
+
+.impact-funding-period {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 6px;
 }
 
 /* --- Research areas --- */

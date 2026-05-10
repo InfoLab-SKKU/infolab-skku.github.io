@@ -31,7 +31,7 @@ nav:
       </div>
       <div class="team-hstat-sep"></div>
       <div class="team-hstat">
-        <span class="team-hstat-num">{{ total_pubs }}</span>
+        <span class="team-hstat-num">90+</span>
         <span class="team-hstat-lbl">Publications</span>
       </div>
     </div>
@@ -114,14 +114,19 @@ nav:
     <div class="impact-venue-note">TIFS · Q1</div>
   </div>
   <div class="impact-venue-card">
-    <div class="impact-venue-badge impact-venue-badge--ieee">IEEE</div>
-    <div class="impact-venue-name">IEEE Access</div>
-    <div class="impact-venue-note">Open Access · Q1</div>
+    <div class="impact-venue-badge impact-venue-badge--elsevier">Elsevier</div>
+    <div class="impact-venue-name">Engineering Applications of Artificial Intelligence</div>
+    <div class="impact-venue-note">EAAI · Q1</div>
   </div>
   <div class="impact-venue-card">
     <div class="impact-venue-badge impact-venue-badge--elsevier">Elsevier</div>
     <div class="impact-venue-name">Information Fusion</div>
-    <div class="impact-venue-note">IF > 14 · Q1</div>
+    <div class="impact-venue-note">IF &gt; 14 · Q1</div>
+  </div>
+  <div class="impact-venue-card">
+    <div class="impact-venue-badge impact-venue-badge--ieee">IEEE</div>
+    <div class="impact-venue-name">IEEE Journal of Biomedical and Health Informatics</div>
+    <div class="impact-venue-note">JBHI · Q1</div>
   </div>
   <div class="impact-venue-card">
     <div class="impact-venue-badge impact-venue-badge--elsevier">Elsevier</div>
@@ -129,9 +134,9 @@ nav:
     <div class="impact-venue-note">KBS · Q1</div>
   </div>
   <div class="impact-venue-card">
-    <div class="impact-venue-badge impact-venue-badge--nature">Nature</div>
-    <div class="impact-venue-name">Scientific Reports</div>
-    <div class="impact-venue-note">Open Access · Q1</div>
+    <div class="impact-venue-badge impact-venue-badge--ieee">IEEE</div>
+    <div class="impact-venue-name">IEEE Transactions on Reliability</div>
+    <div class="impact-venue-note">TR · Q1</div>
   </div>
   <div class="impact-venue-card">
     <div class="impact-venue-badge impact-venue-badge--acm">ACM</div>
@@ -139,9 +144,19 @@ nav:
     <div class="impact-venue-note">Conference · Top-4 Security</div>
   </div>
   <div class="impact-venue-card">
-    <div class="impact-venue-badge impact-venue-badge--usenix">USENIX</div>
+    <div class="impact-venue-badge impact-venue-badge--acm">ACM</div>
     <div class="impact-venue-name">NDSS Symposium</div>
     <div class="impact-venue-note">Conference · Top-4 Security</div>
+  </div>
+  <div class="impact-venue-card">
+    <div class="impact-venue-badge impact-venue-badge--acm">ACM</div>
+    <div class="impact-venue-name">ACM ASIACCS</div>
+    <div class="impact-venue-note">Conference · Top Security</div>
+  </div>
+  <div class="impact-venue-card">
+    <div class="impact-venue-badge impact-venue-badge--springer">Springer</div>
+    <div class="impact-venue-name">ICPR</div>
+    <div class="impact-venue-note">Conference · Top Data Science</div>
   </div>
 </div>
 
@@ -151,14 +166,28 @@ nav:
 
 <div class="impact-funding-grid">
   <div class="impact-funding-card">
-    <div class="impact-funding-agency">NRF</div>
-    <div class="impact-funding-title">Alzheimer's Disease Clinical Decision Support</div>
-    <div class="impact-funding-meta">National Research Foundation of Korea · 2021–2024</div>
+    <div class="impact-funding-agency">NRF · MSIP</div>
+    <div class="impact-funding-title">Intelligent and Robust Clinical Decision Support System for Alzheimer Disease</div>
+    <div class="impact-funding-meta">Mid-Career Researcher Program · National Research Foundation (NRF)</div>
+    <div class="impact-funding-period">March 2021 – Feb. 2024</div>
   </div>
   <div class="impact-funding-card">
     <div class="impact-funding-agency">IITP</div>
-    <div class="impact-funding-title">SW-Oriented University Supporting Program</div>
-    <div class="impact-funding-meta">Institute for Information &amp; Communications Technology Planning &amp; Evaluation · 2021–2026</div>
+    <div class="impact-funding-title">SW-oriented College, Sungkyunkwan University</div>
+    <div class="impact-funding-meta">SW-oriented University Supporting Program (SW중심대학지원)</div>
+    <div class="impact-funding-period">April 2021 – Dec. 2026</div>
+  </div>
+  <div class="impact-funding-card">
+    <div class="impact-funding-agency">IITP</div>
+    <div class="impact-funding-title">Towards Super Sapiens: Superintelligence for Future Human Innovations</div>
+    <div class="impact-funding-meta">ICT Creative Consilience Program (ICT명품인재)</div>
+    <div class="impact-funding-period">Sep. 2021 – Dec. 2027</div>
+  </div>
+  <div class="impact-funding-card">
+    <div class="impact-funding-agency">IITP</div>
+    <div class="impact-funding-title">Development of a Policy-Adaptive AI Platform for Personal Information Protection Compliance</div>
+    <div class="impact-funding-meta">Institute for Information &amp; Communications Technology Planning &amp; Evaluation</div>
+    <div class="impact-funding-period">Feb. 2022 – Dec. 2027</div>
   </div>
 </div>
 
