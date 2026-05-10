@@ -1241,7 +1241,7 @@
     Transformer Systems under Attack'
   authors: []
   publisher: ArXiv
-  date: '2026-05-09'
+  date: '2026-05-10'
   link: https://publons.com/wos-op/publon/78583142/
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -2476,26 +2476,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:000297084200007
-  title: A Software-Based Group Attestation for Wireless Sensor Networks
-  authors: []
-  publisher: Ad Hoc & Sensor Wireless Networks
-  date: '2026-05-10'
-  link: https://publons.com/wos-op/publon/32581141/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:WOS:000297084200007
-  title: A Software-Based Group Attestation for Wireless Sensor Networks
-  authors: []
-  publisher: Ad Hoc & Sensor Wireless Networks
-  date: '2011-05-09'
-  link: https://publons.com/wos-op/publon/32581141/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/GLOCOM.2009.5425280
   title: Software-Based Remote Code Attestation in Wireless Sensor Network
   authors:
@@ -2528,17 +2508,6 @@
   publisher: ArXiv
   date: '2026-05-09'
   link: https://publons.com/wos-op/publon/83508547/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:PPRN:156926166
-  title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
-    Transformer Systems under Attack'
-  authors: []
-  publisher: ArXiv
-  date: '2026-05-09'
-  link: https://publons.com/wos-op/publon/78720308/
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -3554,7 +3523,7 @@
   pmcid: PMC9372416
   date: '2022-06-06'
   link: https://doi.org/gq6hdn
-  image: ''
+  image: images/thumbnails/10_1111_cts_13302.jpg
   buttons:
   - type: pdf
     link: pdf/cts_13302.pdf
@@ -3805,7 +3774,7 @@
   publisher: openRxiv
   date: '2018-07-11'
   link: https://doi.org/gkwvfq
-  image: ''
+  image: images/thumbnails/10_1101_367599.png
   buttons:
   - type: pdf
     link: pdf/367599.pdf
