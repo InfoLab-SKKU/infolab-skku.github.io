@@ -10,6 +10,10 @@ links:
    <!-- home-page: https://soubihabdenour.github.io/ -->
    <!-- google-scholar: dxgFhR8AAAAJ -->
    email: alekulyn@skku.edu
+research_tags:
+  - Model Optimization
+  - Edge AI
+  - IoT Security
 ---
 
 Abdulrahman Al-Sharabati is a Doctoral student in the Dept of Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, focusing on model optimization. He attained in his Bachelor's and Master's degrees in Computer Science from the United States, where he focused on parallel computing, machine learning, embedded computing, and disaggregated server architectures.

@@ -15,6 +15,9 @@ links:
    youtube: 
    email: 
    home-page: https://scholar.google.com.sg/citations?user=Z52AG6wAAAAJ&hl=en
+research_tags:
+  - Information Systems
+  - AI Security Applications
 ---
 
 Dr. Afsah Anwar is an Assistant Professor in the Department of Computer and Information Sciences at Florida A&M University, USA. Her research interests include computer science education and information systems.

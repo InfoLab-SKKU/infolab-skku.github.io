@@ -15,6 +15,9 @@ links:
    youtube: 
    email: 
    home-page: https://scholar.google.com/citations?user=Ls7yS0IAAAAJ&hl=en
+research_tags:
+  - Distributed Systems
+  - High-Performance Computing
 ---
 
 George K. Thiruvathukal is a Professor with expertise in distributed systems, software engineering, and computational science. His work focuses on advancing collaborative and scalable computing solutions.

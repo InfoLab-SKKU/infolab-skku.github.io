@@ -16,6 +16,10 @@ links:
    email: mabuhamad@luc.edu
    home-page: https://aisec.cs.luc.edu/
 
+research_tags:
+  - AI Security Applications
+  - Security & Adversarial ML
+  - Malware Detection
 ---
 
 Dr. Mohammed Abuhamad is an assistant professor of Computer Science at Loyola University Chicago . He received a Ph.D. degree in Computer Science from the University of Central Florida (UCF) in 2020. He also received a Ph.D. degree in Electrical and Computer Engineering from INHA University , (Incheon, Republic of Korea) in 2020. He received a Master degree in Information Technology (Artificial Intelligence) from the National University of Malaysia , (Bangi, Malaysia) in 2013.

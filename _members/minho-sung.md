@@ -10,6 +10,9 @@ links:
    home-page: https://github.com/minhos0430
    google-scholar: 
    email: minhos2004@gmail.com
+research_tags:
+  - Security & Adversarial ML
+  - Deep Learning
 ---
 
 Min ho Sung is a 2nd year undergraduate student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, currently exploring the fundamental concepts of Computer Science and Engineering. 

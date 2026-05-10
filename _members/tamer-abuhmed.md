@@ -11,6 +11,10 @@ links:
    email: tamer@skku.edu
    researchgate: Tamer-Abuhmed
    twitter: infolabskku
+research_tags:
+  - Security & Adversarial ML
+  - Biomedical AI
+  - Explainable AI
 ---
 
 Dr. Tamer ABUHMED is a **Tenure-track Associate Professor** in the College of Computing and Informatics at Sungkyunkwan University (SKKU), where he has served since September 2019. He is the founder and director of the SKKU Information Research Laboratory (InfoLab). Before joining SKKU, he was an Assistant Professor at Inha University, where he also founded the Software Security Research Laboratory (SecLab). He held visiting scholar positions at Loyola University Chicago (Jan 2023 – Jan 2026), the University of Notre Dame (Jun–Aug 2024), and the University of Chicago (Jun–Aug 2023), and serves as a Technology Consultant for the Gyeonggi-Do Province Government, South Korea.

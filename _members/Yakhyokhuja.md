@@ -7,6 +7,10 @@ links:
    github: yakhyo
    home-page: https://yakhyo.github.io/
    google-scholar: I66QbJIAAAAJ
+research_tags:
+  - Large Language Models
+  - Multimodal AI
+  - Trustworthy AI
 ---
 
 Yakhyokhuja (Yakhyo) Valikhujaev is an incoming Ph.D. student at InfoLab, Sungkyunkwan University (SKKU), starting in Fall 2026. His research interests include large language models, retrieval-augmented generation, vision-language models, multimodal AI, and reliable AI systems.
