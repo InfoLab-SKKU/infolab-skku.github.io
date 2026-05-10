@@ -112,6 +112,7 @@
   display: flex;
   align-items: flex-start;
   gap: 12px;
+  text-align: left;
 }
 
 .sw-card-icon {
@@ -135,15 +136,17 @@
 .sw-card-name {
   font-size: 0.97rem;
   font-weight: 700;
-  color: #1a202c;
+  color: #07377b;
   line-height: 1.25;
+  text-align: left;
 }
 
 .sw-card-repo {
   font-size: 0.72rem;
-  color: #718096;
+  color: #4a6fa5;
   font-family: monospace;
   margin-top: 2px;
+  text-align: left;
 }
 
 /* ---------- pip / dataset badges ---------- */

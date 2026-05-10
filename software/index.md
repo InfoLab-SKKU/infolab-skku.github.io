@@ -588,20 +588,3 @@ nav:
 If you use any InfoLab code or datasets in your research, please cite the corresponding paper. BibTeX entries are available on the [Publications](/pubs/) page via the **Cite** button on each paper card.
 
 For questions, collaborations, or data access requests, [contact us](/contact/).
-
-<script>
-(function () {
-  var btns = document.querySelectorAll('.sw-filter-btn');
-  var cards = document.querySelectorAll('.sw-repo-card');
-  btns.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      btns.forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
-      var cat = btn.dataset.cat;
-      cards.forEach(function (card) {
-        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
-      });
-    });
-  });
-})();
-</script>
