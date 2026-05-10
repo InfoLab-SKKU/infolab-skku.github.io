@@ -1,7 +1,7 @@
 ---
 name: Farman Ali
 image: images/farman-ali.png
-role: associate professor
+role: associate pro
 group: collab
 aliases:
 links:
