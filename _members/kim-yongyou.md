@@ -5,10 +5,13 @@ role: intern
 group: alum
 links:
    orcid: 
-   linkedin: 연규-김-93322934b
+   linkedin: ?�규-김-93322934b
    github: 
    home-page: 
    google-scholar: 
    email: 
+research_tags:
+  - "Security & Adversarial ML"
+  - "Deep Learning Verification"
 ---
 

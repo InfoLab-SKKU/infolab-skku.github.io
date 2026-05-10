@@ -10,6 +10,8 @@ links:
    home-page: https://dk1603.github.io/
    google-scholar: 
    email: dalerkim4@gmail.com
+research_tags:
+  - "Biomedical AI"
 ---
 
 Daler Kim is an undergraduate student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, with a strong academic record and a focus on back-end development and database management. He has hands-on experience in full-stack web and mobile application development.
@@ -19,8 +21,8 @@ Beyond software engineering, Daler is deeply interested in deep learning, partic
 Proficient in English, Korean, and Russian. 
 
 ### Education
-Sungkyunkwan University (SKKU) – Undergraduate student in Computer Science and Engineering <br>
-2022 – Present
+Sungkyunkwan University (SKKU) ??Undergraduate student in Computer Science and Engineering <br>
+2022 ??Present
 (Expected Graduation: June 2026)
 
 {% include section.html %}

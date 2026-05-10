@@ -8,6 +8,8 @@ links:
    linkedin: ycko725
    home-page: https://github.com/ycko725
    email: yuchanko725@gmail.com
+research_tags:
+  - "Deep Learning Applications"
 ---
 
 Yuchan Ko is a 3rd year undergraduate student in Computer Science and Artificial Intelligence at University of Nottingham Ningbo China (UNNC), with a strong interest in Artificial Intelligence.
@@ -18,8 +20,8 @@ Fluent in English, Korean, and Spanish.
 
 
 ### Education
-University of Nottingham Ningbo China – Computer Science and Artificial Intelligence <br>
-2020.9 – Present
+University of Nottingham Ningbo China ??Computer Science and Artificial Intelligence <br>
+2020.9 ??Present
 
 {% include section.html %}
 ## Publications

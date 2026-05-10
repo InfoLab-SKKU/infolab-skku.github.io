@@ -10,6 +10,8 @@ links:
    home-page:
    google-scholar: 
    email: mawwad@skku.edu
+research_tags:
+  - "Security & Adversarial ML"
 ---
 
 Mohammed Awwad is a Master's student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea,

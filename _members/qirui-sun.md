@@ -15,6 +15,9 @@ links:
    instagram: 
    youtube:
 
+research_tags:
+  - "AI Security Applications"
+  - "Malware Detection"
 ---
 
-QIRUI SUN is an alumnus of the Masterâ€™s program and is currently working at a **security company in China**.
+QIRUI SUN is an alumnus of the Master?™s program and is currently working at a **security company in China**.

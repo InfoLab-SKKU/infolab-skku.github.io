@@ -133,6 +133,16 @@
     var pub     = card.dataset.publisher || "";
     var doi     = card.dataset.doi     || "";
     var key     = (authors.split(" ")[0] || "Unknown") + year;
+    var isConf  = getPubType(card) === "conference";
+    if (isConf) {
+      return "@inproceedings{" + key + ",\n" +
+             "  title     = {" + title + "},\n" +
+             "  author    = {" + authors + "},\n" +
+             "  year      = {" + year + "},\n" +
+             "  booktitle = {" + pub + "},\n" +
+             (doi ? "  doi       = {" + doi + "},\n" : "") +
+             "}";
+    }
     return "@article{" + key + ",\n" +
            "  title     = {" + title + "},\n" +
            "  author    = {" + authors + "},\n" +

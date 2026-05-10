@@ -9,6 +9,10 @@ links:
    github: fukashi-hatakenazar
    email: fjuraev@g.skku.edu
    google-scholar: hkXk_X8AAAAJ
+research_tags:
+  - "Security & Adversarial ML"
+  - "Agentic AI Systems"
+  - "Dynamic Ensemble Learning"
 ---
 
 Firuz Juraev is a combined M.S./Ph.D. student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea. His research interests lie at the intersection of Machine Learning, Federated Learning, and Computer Vision, with a special focus on Multimodal Fusion techniques in the Healthcare domain.

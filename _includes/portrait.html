@@ -68,5 +68,13 @@
         {% endif %}
       </span>
     {% endif %}
+
+    {% if member.research_tags and member.research_tags.size > 0 %}
+      <span class="portrait-tags" aria-label="Research interests">
+        {% for tag in member.research_tags %}
+          <span class="portrait-tag">{{ tag }}</span>
+        {% endfor %}
+      </span>
+    {% endif %}
   </a>
 </div>

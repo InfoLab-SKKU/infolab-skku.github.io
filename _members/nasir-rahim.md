@@ -14,6 +14,9 @@ links:
   twitter:
   facebook:
   youtube:
+research_tags:
+  - "Biomedical AI"
+  - "Explainable AI"
 ---
 
-Nasir Rahim is a Research Fellow at the College of Innovation and Technology, University of Michiganâ€“Flint.
+Nasir Rahim is a Research Fellow at the College of Innovation and Technology, University of Michigan?“Flint.

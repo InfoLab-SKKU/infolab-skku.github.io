@@ -15,6 +15,9 @@ links:
    youtube: 
    email: 
    home-page: https://dash-lab.github.io
+research_tags:
+  - "Security & Adversarial ML"
+  - "Deepfakes"
 ---
 
 Simon S. Woo is an Assistant Professor in the Department of Applied Data Science at Sungkyunkwan University, South Korea. His research focuses on data science applications and methodologies.
