@@ -77,7 +77,14 @@ def main(entry):
         author = scholarly.fill(author, sections=["publications"])
         return author.get("publications", [])
 
-    publications = query(gsid)
+    try:
+        publications = query(gsid)
+    except Exception as e:
+        # scholarly is often blocked by Google bot-detection in CI environments.
+        # Treat this as a non-fatal warning so ORCID + sources.yaml still run.
+        log(f"Google Scholar fetch failed (bot-detection or network issue): {e}", 2, "WARNING")
+        log("Skipping Google Scholar — publications will be sourced from ORCID and sources.yaml instead.", 2, "WARNING")
+        return []
 
     sources = []
 
