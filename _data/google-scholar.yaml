@@ -1,0 +1,16 @@
+# Publications sourced from Prof. Tamer AbuHmed's Google Scholar profile.
+# The `gsid` is the Google Scholar author ID (the value of ?user= in the profile URL).
+# All other fields are stamped onto every publication produced by this entry,
+# so they appear in the filtered pubs page and on member profile pages.
+#
+# The cite pipeline will:
+#   1. Fetch the full publication list from Google Scholar (scholarly library).
+#   2. Attempt to resolve each title to a DOI via Crossref.
+#   3. Use Manubot to generate a full citation for any DOI-resolved paper.
+#   4. Fall back to raw bibliographic fields for papers without a DOI.
+#
+# Results are cached for 24 hours; re-run `python _cite/cite.py` to refresh.
+
+- gsid: pLC4l6YAAAAJ
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
