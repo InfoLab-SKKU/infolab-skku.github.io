@@ -255,10 +255,6 @@
   color: var(--gray);
   line-height: 1.65;
   margin: 0 0 10px;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .nci-link {
