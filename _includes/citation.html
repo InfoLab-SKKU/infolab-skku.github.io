@@ -13,6 +13,14 @@
   {% assign citation = include %}
 {% endif %}
 
+{% comment %} Skip publications missing both an identifier and author list {% endcomment %}
+{% assign _has_id = false %}
+{% if citation.id and citation.id != "" %}{% assign _has_id = true %}{% endif %}
+{% assign _has_authors = false %}
+{% if citation.authors and citation.authors.size > 0 %}{% assign _has_authors = true %}{% endif %}
+
+{% if _has_id or _has_authors %}
+
 {% assign cit_year = citation.date | default: "0000" | date: "%Y" %}
 {% assign cit_doi  = citation.id | remove: "doi:" | strip %}
 {% assign cit_pub_lower = citation.publisher | downcase %}
@@ -89,7 +97,7 @@
           | join: ", "
           | markdownify
           | remove: "<p>" | remove: "</p>"
-          | default: "[no author info]"
+          | default: ""
         }}
       </div>
 
@@ -101,10 +109,12 @@
         <span class="citation-date">
           {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
         </span>
+        {% if citation.id and citation.id != "" %}
         &nbsp;·&nbsp;
         <span class="citation-id">
-          {{- citation.id | default: "[no id info]" -}}
+          {{- citation.id -}}
         </span>
+        {% endif %}
         {% if citation.pmid %}
           &nbsp;·&nbsp;
           <span class="citation-pmid">
@@ -161,3 +171,4 @@
     </div>
   </div>
 </div>
+{% endif %}
