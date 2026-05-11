@@ -74,21 +74,16 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1145/3243734.3243738
-  title: Large-Scale and Language-Oblivious Code Authorship Identification
-  authors:
-  - Mohammed Abuhamad
-  - Tamer AbuHmed
-  - Aziz Mohaisen
-  - DaeHun Nyang
-  publisher: Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications
-    Security
-  date: '2018-10-15'
-  link: https://doi.org/gnrn69
+- id: ''
+  title: Large-scale and language-oblivious code authorship identification
+  authors: []
+  publisher: ''
+  date: '2018-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: ''
   title: A survey on deep packet inspection for intrusion detection systems
   authors: []
@@ -1045,14 +1040,13 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.3837/tiis.2008.05.001
-  title: Two-level Key Pool Design-based Random Key Pre-distribution in Wireless Sensor
-    Networks
-  authors:
-  - Abedelaziz Mohaisen
-  publisher: KSII Transactions on Internet and Information Systems
-  date: '2008-10-25'
-  link: https://doi.org/bpq7d3
+- id: ''
+  title: Two-level key pool design-based random key pre-distribution in wireless sensor
+    networks.
+  authors: []
+  publisher: ''
+  date: '2008-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1151,12 +1145,12 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/tip.2013.2289638
+- id: doi:10.1109/tip.2024.3513592
   title: Reviewer Summary for Transactions on Image Processing
   authors: []
   publisher: IEEE Transactions on Image Processing
-  date: '2013-12-01'
-  link: https://doi.org/hb3f7f
+  date: '2024-01-01'
+  link: https://doi.org/hb3f6v
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1833,26 +1827,17 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.3390/e22080841
+- id: ''
   title: Performance Analysis and Constellation Design for the Parallel Quadrature
     Spatial Modulation
-  authors:
-  - Manar Mohaisen
-  - Tasnim Holoubi
-  - Tamer Abuhmed
-  publisher: Entropy
-  pmid: '33286611'
-  pmcid: PMC7517441
-  date: '2020-07-30'
-  link: https://doi.org/g9b3dq
+  authors: []
+  publisher: ''
+  date: '2020-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/e22080841.pdf
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.4018/978-1-61350-110-8.ch010
   title: Computationally Efficient Cooperative Public Key Authentication Protocols
     in Ubiquitous Sensor Network
@@ -3687,6 +3672,21 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1145/3243734.3243738
+  title: Large-Scale and Language-Oblivious Code Authorship Identification
+  authors:
+  - Mohammed Abuhamad
+  - Tamer AbuHmed
+  - Aziz Mohaisen
+  - DaeHun Nyang
+  publisher: Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications
+    Security
+  date: '2018-10-15'
+  link: https://doi.org/gnrn69
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICC.2012.6364127
   title: Collaboration in social network-based information dissemination
   authors:
@@ -3762,6 +3762,24 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.3390/e22080841
+  title: Performance Analysis and Constellation Design for the Parallel Quadrature
+    Spatial Modulation
+  authors:
+  - Manar Mohaisen
+  - Tasnim Holoubi
+  - Tamer Abuhmed
+  publisher: Entropy
+  pmid: '33286611'
+  pmcid: PMC7517441
+  date: '2020-07-30'
+  link: https://doi.org/g9b3dq
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/e22080841.pdf
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1101/2023.05.01.538993
   title: 'DrugMechDB: A Curated Database of Drug Mechanisms'
   authors:
