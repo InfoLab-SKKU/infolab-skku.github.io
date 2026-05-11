@@ -1,8 +1,6 @@
 ---
 title: Research Impact
-nav:
-  order: 4
-  tooltip: Citation metrics and research impact
+published: false
 ---
 
 {% assign current_year = 'now' | date: "%Y" %}

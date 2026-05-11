@@ -48,10 +48,10 @@ nav:
       <option value="oldest">Oldest First</option>
     </select>
     <div class="pubs-view-toggle" role="group" aria-label="View mode">
-      <button class="pubs-view-btn active" data-view="rich" title="Rich view">
+      <button class="pubs-view-btn" data-view="rich" title="Rich view">
         <i class="fa-solid fa-grip"></i>
       </button>
-      <button class="pubs-view-btn" data-view="compact" title="Compact view">
+      <button class="pubs-view-btn active" data-view="compact" title="Compact view">
         <i class="fa-solid fa-list"></i>
       </button>
     </div>

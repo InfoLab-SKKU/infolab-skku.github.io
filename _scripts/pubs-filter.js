@@ -27,7 +27,7 @@
   /* ── State ──────────────────────────────────────────── */
   var currentFilter = "all";
   var currentSort   = "newest";
-  var currentView   = "rich";
+  var currentView   = "compact";
 
   /* ── DOM Refs (populated on DOMContentLoaded) ───────── */
   var wrapper, filterBtns, sortSelect, viewBtns, showingEl, filterLabelEl;
@@ -259,6 +259,7 @@
     attachCopyButtons();
     updateCountBadges();
     applyAll();
+    applyView();
     bindEvents();
   });
 })();
