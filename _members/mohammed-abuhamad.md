@@ -1,7 +1,7 @@
 ---
 name: Mohammed Abuhamad
 image: images/mohammed-abuhamad.jpeg
-role: associate pro
+role: collab
 group: collab
 aliases:
 links:

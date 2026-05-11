@@ -5,7 +5,7 @@ role: intern
 group: active
 links:
    github: MosesChoi
-   linkedin: https://www.linkedin.com/in/moses-choi-787a84369/
+   linkedin: moses-choi-787a84369
    home-page: https://github.com/MosesChoi
    email: moseschoi0904@gmail.com
 research_tags:
@@ -25,4 +25,4 @@ Memorial University of Newfoundland - 3rd Year Undergraduate Exchange Student in
 {% include section.html %}
 ## Publications
 
-{% include list.html data="citations" component="citation" filters="abdenour-soubih-list: true" style="rich" %}
+{% include list.html data="citations" component="citation" filters="moses-choi-list: true" style="rich" %}

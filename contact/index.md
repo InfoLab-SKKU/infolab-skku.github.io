@@ -1,7 +1,7 @@
 ---
 title: Contact
 nav:
-  order: 8
+  order: 9
   tooltip: Contact information
 ---
 

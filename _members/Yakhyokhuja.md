@@ -22,4 +22,4 @@ He received his M.S. in Computer Engineering from Gachon University and his B.S.
 {% include section.html %}
 ## Publications
 
-{% include list.html data="citations" component="citation" filters="abdenour-soubih-list: true" style="rich" %}
+{% include list.html data="citations" component="citation" filters="yakhyokhuja-valikhujaev-list: true" style="rich" %}

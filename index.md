@@ -95,12 +95,14 @@ title: Home
     </div>
     <div class="stat-sep" aria-hidden="true"></div>
     <div class="stat-item">
-      <span class="stat-num">30+</span>
+      {% assign active_members = site.members | where: "group", "active" %}
+      <span class="stat-num">{{ active_members.size }}</span>
       <span class="stat-lbl">Lab Members</span>
     </div>
     <div class="stat-sep" aria-hidden="true"></div>
     <div class="stat-item">
-      <span class="stat-num">5</span>
+      {% assign project_count = site.data.projects | size %}
+      <span class="stat-num">{{ project_count }}</span>
       <span class="stat-lbl">Research Projects</span>
     </div>
     <div class="stat-sep" aria-hidden="true"></div>
@@ -194,7 +196,7 @@ A great way to explore our work is through our publications. Browse or search ou
 %}
 
 {% capture text %}
-Our team includes graduate students, postdoctoral researchers, programmers, and staff, with diverse backgrounds in experimental biology, computer science, and bioinformatics. Come meet the people behind the research!
+Our team includes graduate students, postdoctoral researchers, and researchers, with diverse backgrounds in computer science, AI, cybersecurity, and biomedical informatics. Come meet the people behind the research!
 
 {%
   include button.html

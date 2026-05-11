@@ -54,6 +54,10 @@ visitor:
   icon: fa-solid fa-globe
   description: Visiting Scientist
 
+collab:
+  icon: fa-solid fa-handshake
+  description: Collaborator
+
 # general
 
 link:

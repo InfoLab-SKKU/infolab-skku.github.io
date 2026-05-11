@@ -1,7 +1,7 @@
 ---
 title: Software & Datasets
 nav:
-  order: 5
+  order: 6
   tooltip: Open-source code and datasets from InfoLab
 ---
 

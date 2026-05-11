@@ -1,7 +1,7 @@
 ---
 title: Gallery
 nav:
-  order: 7
+  order: 8
   tooltip: Lab photos and activities
 ---
 

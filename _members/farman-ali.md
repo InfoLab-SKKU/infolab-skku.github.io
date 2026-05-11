@@ -1,14 +1,14 @@
 ---
 name: Farman Ali
 image: images/farman-ali.png
-role: associate pro
+role: collab
 group: collab
 aliases:
 links:
-   orcid: https://orcid.org/0000-0002-9420-1588
+   orcid: 0000-0002-9420-1588
    linkedin: 
    github: 
-   google-scholar: https://scholar.google.com/citations?user=i8OvtQoAAAAJ&hl=en
+   google-scholar: i8OvtQoAAAAJ
    twitter: 
    facebook: 
    instagram: 
