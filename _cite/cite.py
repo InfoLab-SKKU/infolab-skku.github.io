@@ -109,6 +109,39 @@ for a in range(0, len(sources)):
 sources = [entry for entry in sources if entry]
 
 
+log("Deduplicating sources by title")
+
+def _norm_title(entry):
+    """Normalised title for comparison: lowercase, collapse whitespace."""
+    return " ".join(get_safe(entry, "title", "").lower().split())
+
+seen_titles = {}   # norm_title -> index into sources[]
+for i, source in enumerate(sources):
+    t = _norm_title(source)
+    if not t:
+        continue
+    if t not in seen_titles:
+        seen_titles[t] = i
+    else:
+        keep = seen_titles[t]
+        dupe = i
+        # prefer the entry with a doi: id; otherwise prefer the one with any id
+        keep_id = get_safe(sources, f"{keep}.id", "")
+        dupe_id = get_safe(sources, f"{dupe}.id", "")
+        if (not keep_id.startswith("doi:")) and dupe_id.startswith("doi:"):
+            # swap: the duplicate has the better id, merge keep INTO dupe then use dupe slot
+            sources[dupe].update({k: v for k, v in sources[keep].items() if k not in sources[dupe] or not sources[dupe][k]})
+            sources[keep] = {}
+            seen_titles[t] = dupe
+        else:
+            # keep existing winner; merge any extra fields from the duplicate
+            sources[keep].update({k: v for k, v in sources[dupe].items() if k not in sources[keep] or not sources[keep][k]})
+            sources[dupe] = {}
+        log(f"Removed title duplicate: {get_safe(sources[seen_titles[t]], 'title', t)[:60]}", 2)
+
+sources = [entry for entry in sources if entry]
+
+
 log(f"{len(sources)} total source(s) to cite")
 
 
