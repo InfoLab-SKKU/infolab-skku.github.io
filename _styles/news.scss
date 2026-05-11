@@ -27,6 +27,34 @@
   top: 80px;
 }
 
+.news-rss-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--light-gray);
+}
+
+.news-rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #e07a17;
+  text-decoration: none;
+
+  &:hover { text-decoration: underline; }
+
+  i { font-size: 0.9rem; }
+}
+
+.news-rss-note {
+  font-size: 0.72rem;
+  color: var(--gray);
+}
+
 /* Inline filter bar (inside column, left-aligned) */
 .news-filter-bar--inline {
   justify-content: flex-start;

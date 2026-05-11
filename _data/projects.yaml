@@ -20,12 +20,12 @@
   tags:
 
 - title: Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications
-  subtitle: images/thumbnails/projects/Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications.png
+  subtitle: 
   group: security
   icon: fa-solid fa-shield
   image: images/thumbnails/projects/Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications.png
   link: "projects/explinable-ai"
-  description: TThe project seeks to address the growing need for transparency, accountability, and interpretability in artificial intelligence (AI) systems used in healthcare. As deep learning and other machine learning techniques become integral to medical diagnostics, prognosis, and treatment planning, the "black-box" nature of many AI models poses significant challenges for clinical adoption, regulatory approval, and patient trust.
+  description: The project seeks to address the growing need for transparency, accountability, and interpretability in artificial intelligence (AI) systems used in healthcare. As deep learning and other machine learning techniques become integral to medical diagnostics, prognosis, and treatment planning, the "black-box" nature of many AI models poses significant challenges for clinical adoption, regulatory approval, and patient trust.
 
   repo: https://github.com/InfoLab-SKKU
   tags:
@@ -47,7 +47,7 @@
   icon: fa-solid fa-shield
   image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-022-31037-5/MediaObjects/41467_2022_31037_Fig4_HTML.png
   link: "projects/alzeimer-detection"
-  description: Traditional authentication methods—such as passwords, PINs, and even biometric systems (fingerprint, facial recognition)—typically secure mobile devices only at the point of entry. However, they fail to offer protection throughout a session, leaving devices vulnerable to unauthorized access when unattended. To bridge this security gap, the research group InfoLab at Sungkyunkwan University (SKKU) has led a series of studies on continuous, sensor-based, and adversarially-aware user authentication mechanisms.
+  description: Alzheimer's disease (AD) is the most common form of dementia, affecting millions globally, yet early and accurate detection remains a critical challenge. InfoLab leads a research program combining multimodal neuroimaging data (MRI, PET), clinical assessments, and genetic biomarkers with state-of-the-art deep learning to detect and track AD progression. Our models incorporate explainable AI techniques that highlight which brain regions and biomarkers drive predictions, enabling clinicians to interpret and trust model outputs. We further harden these systems against adversarial perturbations to ensure diagnostic robustness in real-world clinical settings.
   repo: https://github.com/InfoLab-SKKU
   tags:
 
@@ -57,7 +57,7 @@
   icon: fa-solid fa-shield
   image: https://media.springernature.com/lw1200/springer-static/image/art%3A10.1038%2Fs41591-022-01981-2/MediaObjects/41591_2022_1981_Fig1_HTML.png
   link: "projects/intelligent-decision-support"
-  description: Traditional authentication methods—such as passwords, PINs, and even biometric systems (fingerprint, facial recognition)—typically secure mobile devices only at the point of entry. However, they fail to offer protection throughout a session, leaving devices vulnerable to unauthorized access when unattended. To bridge this security gap, the research group InfoLab at Sungkyunkwan University (SKKU) has led a series of studies on continuous, sensor-based, and adversarially-aware user authentication mechanisms.
+  description: Clinical decision-making demands the integration of heterogeneous data sources—lab results, imaging, clinical notes, vital signs, and genomic data—that no single model handles optimally. InfoLab develops dynamic ensemble frameworks that adaptively combine specialized sub-models at late fusion stages, weighting their contributions based on data availability and uncertainty. Each ensemble decision is paired with an explainability layer that surfaces the evidence supporting the recommendation, enabling clinicians to validate, override, or defer to the system with confidence. Applications span depression severity assessment, sepsis risk stratification, and post-surgical outcome prediction.
   repo: https://github.com/InfoLab-SKKU
   tags:
 
@@ -67,6 +67,6 @@
   icon: fa-solid fa-shield
   image: https://ars.els-cdn.com/content/image/1-s2.0-S1532046423002472-ga1.jpg
   link: "projects/mortality"
-  description: Traditional authentication methods—such as passwords, PINs, and even biometric systems (fingerprint, facial recognition)—typically secure mobile devices only at the point of entry. However, they fail to offer protection throughout a session, leaving devices vulnerable to unauthorized access when unattended. To bridge this security gap, the research group InfoLab at Sungkyunkwan University (SKKU) has led a series of studies on continuous, sensor-based, and adversarially-aware user authentication mechanisms.
+  description: Predicting patient outcomes in the Intensive Care Unit (ICU)—mortality risk, length of stay, and deterioration events—can save lives and optimize resource allocation, yet the complexity of clinical time-series data makes this a formidable modeling challenge. InfoLab applies dynamic ensemble methods that fuse longitudinal vital signs, lab measurements, medication histories, and diagnostic codes from large-scale ICU databases such as MIMIC and eICU. Our explainable models generate patient-level risk scores alongside interpretable feature attributions, giving intensivists actionable insight into which clinical indicators are driving the prediction at each point in time.
   repo: https://github.com/InfoLab-SKKU
   tags:

@@ -232,3 +232,41 @@
   #lb-prev { left: 6px; padding: 10px 13px; }
   #lb-next { right: 6px; padding: 10px 13px; }
 }
+
+
+/* ── Gallery Year Filter ────────────────────────────────────────── */
+.gallery-year-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 0 auto 28px;
+  max-width: 900px;
+  padding: 0 16px;
+}
+
+.gallery-year-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 16px;
+  border: 1.5px solid var(--primary);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+
+  &:hover {
+    background: var(--primary);
+    color: #fff;
+  }
+
+  &.active {
+    background: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+  }
+}

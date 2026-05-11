@@ -8,6 +8,9 @@ links:
    linkedin: https://www.linkedin.com/in/moses-choi-787a84369/
    home-page: https://github.com/MosesChoi
    email: moseschoi0904@gmail.com
+research_tags:
+  - "Deep Learning"
+  - "Deepfakes"
 ---
 
 YoungHyun Moses Choi is a 3rd year undergraduate student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea, with a strong interest in developing practical AI models and conducting research on machine learning and deep learning.

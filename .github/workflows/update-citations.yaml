@@ -34,8 +34,17 @@ jobs:
       - name: Checkout branch contents
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.event.pull_request.head.repo.full_name }}
-          ref: ${{ github.head_ref }}
+          # head_ref is set for PRs; ref_name (e.g. "main") is set for push events.
+          # Without an explicit ref, checkout uses the triggering SHA in detached
+          # HEAD mode, which prevents git-auto-commit-action from pushing.
+          repository: ${{ github.event.pull_request.head.repo.full_name || github.repository }}
+          ref: ${{ github.head_ref || github.ref_name }}
+          fetch-depth: 0
+
+      - name: Pull latest remote changes
+        # Rebase onto the current remote tip so our commit is always fast-forward.
+        # This guards against another commit landing between our checkout and push.
+        run: git pull --rebase origin ${{ github.head_ref || github.ref_name }}
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -52,6 +61,14 @@ jobs:
       - if: runner.debug == '1'
         uses: mxschmitt/action-tmate@v3
 
+      - name: Fetch publication thumbnails
+        # Downloads OG/cover images for papers with empty image: in sources.yaml.
+        # Papers that can't be fetched (e.g. MDPI returns 403) are left empty and
+        # the client-side pub-thumbs.js SVG word-cloud renders for them instead.
+        run: python _cite/fetch_thumbs.py
+        continue-on-error: true   # network failures must not block citation updates
+        timeout-minutes: 10
+
       - name: Build updated citations
         run: python _cite/cite.py
         timeout-minutes: 15
@@ -62,6 +79,8 @@ jobs:
         with:
           files: |
             _data/citations.yaml
+            _data/sources.yaml
+            images/thumbnails/**
 
       - name: Commit updated citations to branch
         if: |
@@ -69,7 +88,8 @@ jobs:
           inputs.open-pr != true
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update citations"
+          commit_message: "Update citations [skip ci]"
+          push_options: "--force-with-lease"
 
       - name: Open pull request with updated citations
         if: |

@@ -15,6 +15,8 @@ links:
    instagram: 
    youtube:
 
+research_tags:
+  - "Biomedical AI"
 ---
 
-Amir was a gradudate student in the lab between August 2023 and August 2024
+Amir was a graduate student in the lab between August 2023 and August 2024

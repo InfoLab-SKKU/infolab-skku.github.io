@@ -8,6 +8,9 @@ links:
    github: zincc92
    home-page: https://github.com/zincc92
    email: clement.pompei@gmail.com
+research_tags:
+  - "Biomedical AI"
+  - "Explainable AI"
 ---
 
 POMPEI CLÉMENT is a master's student in cybersecurity at ECE Paris, France, currently focusing on deep learning, computer vision, network security, and databases. He has many previous professional experiences in various domains, such as a web developer internship, an LLM classifier part-time job, and a portfolio with many computer science and electronics-driven projects (multiple strategy games, electrocardiogram, AI speech recognizer, console from scratch, management software...).

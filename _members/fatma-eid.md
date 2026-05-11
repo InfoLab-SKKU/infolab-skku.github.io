@@ -10,6 +10,9 @@ links:
    home-page:
    google-scholar: QJZrOHcAAAAJ
    email: 
+research_tags:
+  - "Biomedical AI"
+  - "Explainable AI"
 ---
 
 Fatma Eid is a PHD student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea. 

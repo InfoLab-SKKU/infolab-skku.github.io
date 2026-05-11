@@ -11,6 +11,10 @@ links:
    home-page: https://soubihabdenour.github.io/
    google-scholar: dxgFhR8AAAAJ
    email: abdenour@skku.edu
+research_tags:
+  - "Security & Adversarial ML"
+  - "Federated Learning"
+  - "Agentic AI Systems"
 ---
 
 Abdenour Soubih is a Ph.D. student in AI Systems Engineering at Sungkyunkwan University (SKKU), South Korea. His research interests lie in large language models, agentic AI systems, multi-agent systems, and trustworthy AI.
@@ -20,10 +24,10 @@ His work is broadly motivated by the development of reliable, robust, and practi
 Sungkyunkwan University (SKKU) – M.S. in Computer Science and Engineering (Alumnus)
 2024 – 2026
 
-University of Oran1 Ahmed Ben Bella – Master’s Degree in Computer Science
+University of Oran1 Ahmed Ben Bella – Master's Degree in Computer Science
 2018 – 2020
 
-UHBC University – Bachelor’s Degree in Computer Systems
+UHBC University – Bachelor's Degree in Computer Systems
 2015 – 2018
 
 {% include section.html %}

@@ -15,6 +15,9 @@ links:
    instagram: 
    youtube:
 
+research_tags:
+  - "Security & Adversarial ML"
+  - "Explainable AI"
 ---
 
 Eldor Abdukhamidov was a graduate student in the lab from August 2020 to August 2023. He is currently working as an R&D Engineer in the USA.

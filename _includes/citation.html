@@ -15,9 +15,16 @@
 
 {% assign cit_year = citation.date | default: "0000" | date: "%Y" %}
 {% assign cit_doi  = citation.id | remove: "doi:" | strip %}
+{% assign cit_pub_lower = citation.publisher | downcase %}
+{% if cit_pub_lower contains "conference" or cit_pub_lower contains "symposium" or cit_pub_lower contains "workshop" or cit_pub_lower contains "proceedings" or cit_pub_lower contains "congress" %}
+  {% assign cit_pubtype = "conference" %}
+{% else %}
+  {% assign cit_pubtype = "journal" %}
+{% endif %}
 <div class="citation-container"
   data-year="{{ cit_year }}"
   data-publisher="{{ citation.publisher | downcase }}"
+  data-pubtype="{{ cit_pubtype }}"
   data-type="{{ citation.type | default: "paper" }}"
   data-title="{{ citation.title | strip_html | strip }}"
   data-authors="{{ citation.authors | join: "; " }}"
@@ -32,17 +39,30 @@
         class="citation-image"
         aria-label="{{ citation.title | default: "citation link" }}"
       >
-        <img
-          src="{{ citation.image | relative_url }}"
-          alt="{{ citation.title | default: "citation image" }}"
-          loading="lazy"
-          {% include fallback.html %}
-        >
+        {% if citation.image and citation.image != "" %}
+          <img
+            src="{{ citation.image | relative_url }}"
+            alt="{{ citation.title | default: "citation image" }}"
+            loading="lazy"
+            {% include fallback.html %}
+          >
+        {% else %}
+          <div class="citation-thumb-gen"
+            data-title="{{ citation.title | strip_html | strip | xml_escape }}"
+            data-pub="{{ citation.publisher | default: '' | xml_escape }}"
+            data-year="{{ cit_year }}"
+            data-tags="{{ citation.tags | join: ' ' | xml_escape }}">
+          </div>
+        {% endif %}
       </a>
     {% endif %}
 
     <div class="citation-text">
-      {% assign type = site.data.types[citation.type] %}
+      {% if citation.type and citation.type != "" %}
+        {% assign type = site.data.types[citation.type] %}
+      {% else %}
+        {% assign type = site.data.types[cit_pubtype] %}
+      {% endif %}
       {% include icon.html icon=type.icon %}
 
       <a

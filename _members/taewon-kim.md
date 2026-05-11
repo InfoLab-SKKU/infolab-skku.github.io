@@ -8,6 +8,9 @@ links:
    github: chris40461
    home-page: https://velog.io/@chris40461/posts
    email: chris40461@gmail.com
+research_tags:
+  - "Deep Learning Verification"
+  - "Natural Language Processing"
 ---
 
 Undergraduate student at Sungkyunkwan University, double majoring in Mathematics and Software. Research interests include natural language processing (NLP) and large language models (LLMs), with experience in text classification, question answering, and information retrieval through project-based learning.

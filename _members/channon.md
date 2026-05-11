@@ -7,6 +7,10 @@ links:
    linkedin: shannon-henry-b0299360
    github: ShannonH98
    email: henry.shannon3301@gmail.com
+research_tags:
+  - AI Security Applications
+  - Information Security
+  - Deep Learning
 ---
 
 Shannon Henry is a combined M.S/Ph.D student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea. Her academic and professional interests include cybersecurity, artificial intelligence,  machine learning, software quality assurance, and secure systems. She has previous experience in cybersecurity and is currently expanding her skills in Python, automation, and software testing.

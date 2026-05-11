@@ -1,7 +1,7 @@
 ---
 name: DaeHun Nyang
 image: images/daehun-nyang.png
-role: professor
+role: pro
 group: collab
 aliases:
 links:
@@ -15,6 +15,8 @@ links:
    youtube: 
    email: nyang@ewha.ac.kr
    home-page: https://pure.ewha.ac.kr/en/persons/daehun-nyang
+research_tags:
+  - "Information Security"
 ---
 
 Professor DaeHun Nyang is a faculty member in the Department of Cyber Security at Ewha Womans University. His research interests include cryptography, privacy, usable security, network security, and system security. He has an extensive publication record in these areas.

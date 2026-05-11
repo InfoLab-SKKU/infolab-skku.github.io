@@ -15,6 +15,8 @@ links:
    instagram: 
    youtube:
 
+research_tags:
+  - "AI Security Applications"
 ---
 
-Bojun Wang is an alumnus of the Master’s program who worked in the lab from 2022 to 2023. He is currently the **CEO and Founder of Obscura Labs**.
+Bojun Wang is an alumnus of the Master's program who worked in the lab from 2022 to 2023. He is currently the **CEO and Founder of Obscura Labs**.

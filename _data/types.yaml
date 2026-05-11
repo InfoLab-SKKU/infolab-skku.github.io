@@ -186,6 +186,16 @@ paper:
   text: Paper
   tooltip: Paper
 
+conference:
+  icon: fa-solid fa-person-chalkboard
+  text: Conference
+  tooltip: Conference Paper
+
+journal:
+  icon: fa-regular fa-newspaper
+  text: Journal
+  tooltip: Journal Article
+
 book:
   icon: fa-solid fa-book
   text: Book

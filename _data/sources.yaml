@@ -1,55 +1,67 @@
 - id: doi:10.1109/imcom64595.2025.10857574
-  image: 'images/thumbnails/Screenshot from 2025-04-10 04-21-10.png'
+  image: images/thumbnails/Screenshot from 2025-04-10 04-21-10.png
   buttons:
   - type: pdf
-    link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity (1).pdf
+    link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity
+      (1).pdf
 - id: doi:10.1109/TR.2025.3551717
-  image: 'images/thumbnails/Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning.png'
+  image: images/thumbnails/Stealthy Query-Efficient Opaque Attack Against Interpretable
+    Deep Learning.png
   buttons:
   - type: pdf
     link: pdf/Stealthy_Query-Efficient_Opaque_Attack_Against_Interpretable_Deep_Learning.pdf
 - id: doi:10.57197/JDR-2024-0101
-  image: 'images/thumbnails/Responsible Artificial Intelligence for Mental Health Disorders: Current Applications and Future Challenges.png'
+  image: 'images/thumbnails/Responsible Artificial Intelligence for Mental Health
+    Disorders: Current Applications and Future Challenges.png'
   buttons:
   - type: pdf
     link: pdf/resposible_artificial_intiligence.pdf
 - id: doi:10.1109/ACCESS.2025.3547573
-  image: 'images/thumbnails/FiSC: A Novel Approach for Fitzpatrick Scale-Based Skin Analyzer’s Image Classification.png'
+  image: 'images/thumbnails/FiSC: A Novel Approach for Fitzpatrick Scale-Based Skin
+    Analyzer’s Image Classification.png'
   buttons:
   - type: pdf
-    link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification (1).pdf
+    link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification
+      (1).pdf
 - id: doi:10.3390/diagnostics14212385
-  image: 'images/thumbnails/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression Detection and Severity Assessment.png'
+  image: images/thumbnails/Explainable Multi-Layer Dynamic Ensemble Framework Optimized
+    for Depression Detection and Severity Assessment.png
   buttons:
   - type: pdf
-    link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression Detection and Severity Assessment.pdf
+    link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
+      Detection and Severity Assessment.pdf
 - id: doi:10.1109/TDSC.2023.3341090
-  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating Adversarial Threats and Defenses.png'
+  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
+    Adversarial Threats and Defenses.png'
   buttons:
   - type: pdf
     link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
 - id: doi:10.3390/app13063937
-  image: 'https://www.mdpi.com/applsci/applsci-13-03937/article_deploy/html/images/applsci-13-03937-g002.png'
+  image: https://www.mdpi.com/applsci/applsci-13-03937/article_deploy/html/images/applsci-13-03937-g002.png
   buttons:
   - type: pdf
     link: pdf/app13063937.pdf
 - id: doi:10.1016/j.cmpb.2024.108348
-  image: 'images/thumbnails/Alzheimers disease diagnosis in the metaverse.jpg'
+  image: images/thumbnails/Alzheimers disease diagnosis in the metaverse.jpg
   buttons:
   - type: pdf
     link: pdf/Alzheimers disease diagnosis in the metaverse.pdf
 - id: doi:10.3390/info15100583
-  image: 'images/thumbnails/Smart Collaborative Intrusion Detection System for Securing Vehicular Networks Using Ensemble Machine Learning Model.webp'
+  image: images/thumbnails/Smart Collaborative Intrusion Detection System for Securing
+    Vehicular Networks Using Ensemble Machine Learning Model.webp
   buttons:
   - type: pdf
-    link: pdf/Smart Collaborative Intrusion Detection System for Securing Vehicular Networks Using Ensemble Machine Learning Model.pdf
+    link: pdf/Smart Collaborative Intrusion Detection System for Securing Vehicular
+      Networks Using Ensemble Machine Learning Model.pdf
 - id: doi:10.1109/TDSC.2023.3341090
-  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating Adversarial Threats and Defenses.png'
+  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
+    Adversarial Threats and Defenses.png'
   buttons:
   - type: pdf
     link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
 - id: doi:10.1109/TIFS.2024.3407652
-  image: 'images/thumbnails/SingleADV: Single-Class Target-Specific Attack Against Interpretable Deep Learning Systems.png'
+  image: 'images/thumbnails/SingleADV: Single-Class Target-Specific Attack Against
+    Interpretable Deep Learning Systems.png'
   buttons:
   - type: pdf
     link: pdf/SingleADV_Single-Class_Target-Specific_Attack_Against_Interpretable_Deep_Learning_Systems.pdf
@@ -124,7 +136,7 @@
   - type: pdf
     link: pdf/tnse_2018_2877646.pdf
 - id: doi:10.1186/s12911-019-0806-z
-  image: ''
+  image: images/thumbnails/10_1186_s12911-019-0806-z.png
   buttons:
   - type: pdf
     link: pdf/s12911-019-0806-z.pdf
@@ -139,17 +151,17 @@
   - type: pdf
     link: pdf/s19020234.pdf
 - id: doi:10.1186/s13326-018-0176-y
-  image: ''
+  image: images/thumbnails/10_1186_s13326-018-0176-y.gif
   buttons:
   - type: pdf
     link: pdf/s13326-018-0176-y.pdf
 - id: doi:10.1186/s12911-018-0651-5
-  image: ''
+  image: images/thumbnails/10_1186_s12911-018-0651-5.png
   buttons:
   - type: pdf
     link: pdf/s12911-018-0651-5.pdf
 - id: doi:10.1038/s41598-023-42796-6
-  image: ''
+  image: images/thumbnails/10_1038_s41598-023-42796-6.png
   buttons:
   - type: pdf
     link: pdf/s41598-023-42796-6.pdf
@@ -169,12 +181,12 @@
   - type: pdf
     link: pdf/f14071325.pdf
 - id: doi:10.1371/journal.pone.0285455
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0285455.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0285455.pdf
 - id: doi:10.1038/s41598-023-27815-w
-  image: ''
+  image: images/thumbnails/10_1038_s41598-023-27815-w.png
   buttons:
   - type: pdf
     link: pdf/s41598-023-27815-w.pdf
@@ -209,7 +221,7 @@
   - type: pdf
     link: pdf/2023_05_01_538993.pdf
 - id: doi:10.1186/s12859-019-3297-0
-  image: ''
+  image: images/thumbnails/10_1186_s12859-019-3297-0.png
   buttons:
   - type: pdf
     link: pdf/s12859-019-3297-0.pdf
@@ -224,7 +236,7 @@
   - type: pdf
     link: pdf/acs_jproteome_6b00938.pdf
 - id: doi:10.1371/journal.pone.0173375
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0173375.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0173375.pdf
@@ -249,7 +261,7 @@
   - type: pdf
     link: pdf/cts_2023_619.pdf
 - id: doi:10.1186/s12859-023-05258-4
-  image: ''
+  image: images/thumbnails/10_1186_s12859-023-05258-4.png
   buttons:
   - type: pdf
     link: pdf/s12859-023-05258-4.pdf
@@ -274,7 +286,7 @@
   - type: pdf
     link: pdf/hc_v6i1_4.pdf
 - id: doi:10.1186/s12859-018-2041-5
-  image: ''
+  image: images/thumbnails/10_1186_s12859-018-2041-5.gif
   buttons:
   - type: pdf
     link: pdf/s12859-018-2041-5.pdf
@@ -294,7 +306,7 @@
   - type: pdf
     link: pdf/j_gene_2016_04_053.pdf
 - id: doi:10.1186/s13059-016-0953-9
-  image: ''
+  image: images/thumbnails/10_1186_s13059-016-0953-9.gif
   buttons:
   - type: pdf
     link: pdf/s13059-016-0953-9.pdf
@@ -304,12 +316,12 @@
   - type: pdf
     link: pdf/035667.pdf
 - id: doi:10.1371/journal.ppat.1004045
-  image: ''
+  image: images/thumbnails/10_1371_journal_ppat_1004045.jpg
   buttons:
   - type: pdf
     link: pdf/journal_ppat_1004045.pdf
 - id: doi:10.1038/ja.2009.7
-  image: ''
+  image: images/thumbnails/10_1038_ja_2009_7.gif
   buttons:
   - type: pdf
     link: pdf/ja_2009_7.pdf
@@ -319,7 +331,7 @@
   - type: pdf
     link: pdf/ja_2007_2.pdf
 - id: doi:10.1038/s41597-023-02534-z
-  image: ''
+  image: images/thumbnails/10_1038_s41597-023-02534-z.png
   buttons:
   - type: pdf
     link: pdf/s41597-023-02534-z.pdf
@@ -339,7 +351,7 @@
   - type: pdf
     link: pdf/8qdse.pdf
 - id: doi:10.1371/journal.pgen.1006997
-  image: ''
+  image: images/thumbnails/10_1371_journal_pgen_1006997.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pgen_1006997.pdf
@@ -349,27 +361,27 @@
   - type: pdf
     link: pdf/121178.pdf
 - id: doi:10.1186/s13195-023-01255-0
-  image: ''
+  image: images/thumbnails/10_1186_s13195-023-01255-0.png
   buttons:
   - type: pdf
     link: pdf/s13195-023-01255-0.pdf
 - id: doi:10.1038/s41597-023-01968-9
-  image: ''
+  image: images/thumbnails/10_1038_s41597-023-01968-9.png
   buttons:
   - type: pdf
     link: pdf/s41597-023-01968-9.pdf
 - id: doi:10.1038/s41592-023-01769-3
-  image: ''
+  image: images/thumbnails/10_1038_s41592-023-01769-3.png
   buttons:
   - type: pdf
     link: pdf/s41592-023-01769-3.pdf
 - id: doi:10.1111/cts.13302
-  image: ''
+  image: images/thumbnails/10_1111_cts_13302.jpg
   buttons:
   - type: pdf
     link: pdf/cts_13302.pdf
 - id: doi:10.1186/s12915-020-00940-y
-  image: ''
+  image: images/thumbnails/10_1186_s12915-020-00940-y.png
   buttons:
   - type: pdf
     link: pdf/s12915-020-00940-y.pdf
@@ -379,17 +391,17 @@
   - type: pdf
     link: pdf/genes11111384.pdf
 - id: doi:10.1038/s41586-020-2577-1
-  image: ''
+  image: images/thumbnails/10_1038_s41586-020-2577-1.png
   buttons:
   - type: pdf
     link: pdf/s41586-020-2577-1.pdf
 - id: doi:10.3389/fgene.2019.01355
-  image: ''
+  image: images/thumbnails/10_3389_fgene_2019_01355.jpg
   buttons:
   - type: pdf
     link: pdf/fgene_2019_01355.pdf
 - id: doi:10.1371/journal.pone.0222165
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0222165.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0222165.pdf
@@ -404,17 +416,17 @@
   - type: pdf
     link: pdf/444497.pdf
 - id: doi:10.1038/s41746-018-0052-2
-  image: ''
+  image: images/thumbnails/10_1038_s41746-018-0052-2.png
   buttons:
   - type: pdf
     link: pdf/s41746-018-0052-2.pdf
 - id: doi:10.1101/367599
-  image: ''
+  image: images/thumbnails/10_1101_367599.png
   buttons:
   - type: pdf
     link: pdf/367599.pdf
 - id: doi:10.1186/s12864-018-4718-6
-  image: ''
+  image: images/thumbnails/10_1186_s12864-018-4718-6.gif
   buttons:
   - type: pdf
     link: pdf/s12864-018-4718-6.pdf
@@ -439,7 +451,7 @@
   - type: pdf
     link: pdf/science_aao0462.pdf
 - id: doi:10.5334/cstp.56
-  image: ''
+  image: images/thumbnails/10_5334_cstp_56.png
   buttons:
   - type: pdf
     link: pdf/cstp_56.pdf
@@ -459,17 +471,17 @@
   - type: pdf
     link: pdf/j_joca_2016_04_015.pdf
 - id: doi:10.1186/s12864-016-2855-3
-  image: ''
+  image: images/thumbnails/10_1186_s12864-016-2855-3.gif
   buttons:
   - type: pdf
     link: pdf/s12864-016-2855-3.pdf
 - id: doi:10.1186/s13326-016-0061-5
-  image: ''
+  image: images/thumbnails/10_1186_s13326-016-0061-5.gif
   buttons:
   - type: pdf
     link: pdf/s13326-016-0061-5.pdf
 - id: doi:10.1371/journal.pone.0149621
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0149621.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0149621.pdf
@@ -479,7 +491,7 @@
   - type: pdf
     link: pdf/scitranslmed_3009986.pdf
 - id: doi:10.1186/s12920-015-0095-z
-  image: ''
+  image: images/thumbnails/10_1186_s12920-015-0095-z.gif
   buttons:
   - type: pdf
     link: pdf/s12920-015-0095-z.pdf
@@ -494,17 +506,17 @@
   - type: pdf
     link: pdf/009332.pdf
 - id: doi:10.3389/fcimb.2014.00108
-  image: ''
+  image: images/thumbnails/10_3389_fcimb_2014_00108.jpg
   buttons:
   - type: pdf
     link: pdf/fcimb_2014_00108.pdf
 - id: doi:10.1186/s13059-014-0438-7
-  image: ''
+  image: images/thumbnails/10_1186_s13059-014-0438-7.jpg
   buttons:
   - type: pdf
     link: pdf/s13059-014-0438-7.pdf
 - id: doi:10.2196/games.3350
-  image: ''
+  image: images/thumbnails/10_2196_games_3350.png
   buttons:
   - type: pdf
     link: pdf/games_3350.pdf
@@ -514,17 +526,17 @@
   - type: pdf
     link: pdf/jimmunol_1301279.pdf
 - id: doi:10.1186/2041-1480-4-S1-S4
-  image: ''
+  image: images/thumbnails/10_1186_2041-1480-4-S1-S4.jpg
   buttons:
   - type: pdf
     link: pdf/2041-1480-4-S1-S4.pdf
 - id: doi:10.1371/journal.pone.0071171
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0071171.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0071171.pdf
 - id: doi:10.1371/journal.pone.0072511
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0072511.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0072511.pdf
@@ -544,47 +556,47 @@
   - type: pdf
     link: pdf/art_37760.pdf
 - id: doi:10.1186/1741-7007-10-90
-  image: ''
+  image: images/thumbnails/10_1186_1741-7007-10-90.jpg
   buttons:
   - type: pdf
     link: pdf/1741-7007-10-90.pdf
 - id: doi:10.1007/s00335-012-9408-0
-  image: ''
+  image: images/thumbnails/10_1007_s00335-012-9408-0.gif
   buttons:
   - type: pdf
     link: pdf/s00335-012-9408-0.pdf
 - id: doi:10.1186/2041-1480-3-S1-S6
-  image: ''
+  image: images/thumbnails/10_1186_2041-1480-3-S1-S6.jpg
   buttons:
   - type: pdf
     link: pdf/2041-1480-3-S1-S6.pdf
 - id: doi:10.1371/journal.pone.0025807
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0025807.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0025807.pdf
 - id: doi:10.1186/gb-2011-12-12-135
-  image: ''
+  image: images/thumbnails/10_1186_gb-2011-12-12-135.jpg
   buttons:
   - type: pdf
     link: pdf/gb-2011-12-12-135.pdf
 - id: doi:10.1186/1471-2164-12-603
-  image: ''
+  image: images/thumbnails/10_1186_1471-2164-12-603.jpg
   buttons:
   - type: pdf
     link: pdf/1471-2164-12-603.pdf
 - id: doi:10.1186/1752-0509-4-29
-  image: ''
+  image: images/thumbnails/10_1186_1752-0509-4-29.jpg
   buttons:
   - type: pdf
     link: pdf/1752-0509-4-29.pdf
 - id: doi:10.1371/journal.pone.0013920
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0013920.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0013920.pdf
 - id: doi:10.1371/journal.pone.0014458
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0014458.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0014458.pdf
@@ -594,37 +606,37 @@
   - type: pdf
     link: pdf/pnas_0914019107.pdf
 - id: doi:10.1371/journal.pone.0004649
-  image: ''
+  image: images/thumbnails/10_1371_journal_pone_0004649.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pone_0004649.pdf
 - id: doi:10.1186/gb-2009-10-11-r130
-  image: ''
+  image: images/thumbnails/10_1186_gb-2009-10-11-r130.jpg
   buttons:
   - type: pdf
     link: pdf/gb-2009-10-11-r130.pdf
 - id: doi:10.1186/1472-6769-9-2
-  image: ''
+  image: images/thumbnails/10_1186_1472-6769-9-2.jpg
   buttons:
   - type: pdf
     link: pdf/1472-6769-9-2.pdf
 - id: doi:10.1371/journal.pbio.0060175
-  image: ''
+  image: images/thumbnails/10_1371_journal_pbio_0060175.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pbio_0060175.pdf
 - id: doi:10.1371/journal.pgen.1000070
-  image: ''
+  image: images/thumbnails/10_1371_journal_pgen_1000070.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pgen_1000070.pdf
 - id: doi:10.1371/journal.pgen.1000232
-  image: ''
+  image: images/thumbnails/10_1371_journal_pgen_1000232.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pgen_1000232.pdf
 - id: doi:10.1186/gb-2007-8-4-404
-  image: ''
+  image: images/thumbnails/10_1186_gb-2007-8-4-404.jpg
   buttons:
   - type: pdf
     link: pdf/gb-2007-8-4-404.pdf
@@ -634,7 +646,7 @@
   - type: pdf
     link: pdf/pnas_0511292103.pdf
 - id: doi:10.1186/1471-2105-7-61
-  image: ''
+  image: images/thumbnails/10_1186_1471-2105-7-61.jpg
   buttons:
   - type: pdf
     link: pdf/1471-2105-7-61.pdf
@@ -654,12 +666,12 @@
   - type: pdf
     link: pdf/pnas_0400782101.pdf
 - id: doi:10.1101/gr.2161804
-  image: ''
+  image: images/thumbnails/10_1101_gr_2161804.gif
   buttons:
   - type: pdf
     link: pdf/gr_2161804.pdf
 - id: doi:10.1371/journal.pbio.0020393
-  image: ''
+  image: images/thumbnails/10_1371_journal_pbio_0020393.jpg
   buttons:
   - type: pdf
     link: pdf/journal_pbio_0020393.pdf

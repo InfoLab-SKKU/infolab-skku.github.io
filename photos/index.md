@@ -43,8 +43,8 @@ nav:
 
 {% include section.html %}
 
-<!-- FILTER BAR -->
-<div class="gallery-filter-bar">
+<!-- FILTER BAR — Category -->
+<div class="gallery-filter-bar" id="gallery-cat-bar">
   <button class="gallery-filter-btn active" data-filter="all">
     <i class="fa-solid fa-images"></i> All
     <span class="gallery-filter-count">{{ all_photos.size }}</span>
@@ -69,6 +69,17 @@ nav:
     <i class="fa-solid fa-flask"></i> Lab Life
     <span class="gallery-filter-count">{{ lab_photos.size }}</span>
   </button>
+</div>
+
+<!-- FILTER BAR — Year -->
+<div class="gallery-year-bar" id="gallery-year-bar">
+  <button class="gallery-year-btn active" data-year="all">
+    <i class="fa-solid fa-calendar"></i> All Years
+  </button>
+  {% assign years_desc = sorted_years | reverse %}
+  {% for yr in years_desc %}
+  <button class="gallery-year-btn" data-year="{{ yr }}">{{ yr }}</button>
+  {% endfor %}
 </div>
 
 <!-- MASONRY GRID -->

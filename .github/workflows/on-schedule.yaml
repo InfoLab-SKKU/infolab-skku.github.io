@@ -12,12 +12,20 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  pages: write
+  id-token: write
 
 jobs:
   update-citations:
     # only run on user instance of template, not template itself
     if: github.repository != 'greenelab/lab-website-template'
     uses: ./.github/workflows/update-citations.yaml
+
+  build-site:
+    needs: update-citations
+    # only rebuild if citations actually changed
+    if: needs.update-citations.outputs.changed == 'true'
+    uses: ./.github/workflows/build-site.yaml
     with:
       open-pr: true
 
