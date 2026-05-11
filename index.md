@@ -161,7 +161,7 @@ title: Home
       <div class="hp-news-date">{{ post.date | date: "%b %d, %Y" }}</div>
       <div class="hp-news-title">{{ post.title }}</div>
       {% if post.description %}
-        <div class="hp-news-desc">{{ post.description | truncate: 130 }}</div>
+        <div class="hp-news-desc">{{ post.description }}</div>
       {% endif %}
       {% if post.url %}
         <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer" class="hp-news-link">Read more &rarr;</a>
