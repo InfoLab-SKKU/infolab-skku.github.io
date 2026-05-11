@@ -25,9 +25,7 @@ env:
 jobs:
   update-citations:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
-    steps:
+    timeout-minutes: 30
       # for debugging
       - uses: crazy-max/ghaction-dump-context@v2
 
@@ -63,7 +61,7 @@ jobs:
 
       - name: Build updated citations
         run: python _cite/cite.py
-        timeout-minutes: 15
+        timeout-minutes: 25
 
       - name: Check if citations changed
         id: changed
