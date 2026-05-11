@@ -10,6 +10,11 @@
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
 
+- title: "Welcome to InfoLab, Yakhyo and Shannon!"
+  date: 2026-05-11
+  description: "We are delighted to welcome two new members to InfoLab! Yakhyokhuja (Yakhyo) Valikhujaev joins as an incoming Ph.D. student, bringing expertise in large language models, multimodal AI, and trustworthy AI systems. Shannon Henry joins as a combined M.S./Ph.D. student, with a background in AI security, deep learning, and information security. We look forward to their contributions!"
+  url:
+
 - title: "Our paper on Personalized Vigilance Estimation has been accepted at CogSci 2026."
   date: 2026-04-09
   description: "Our paper, 'KANformer: Personalized Vigilance Estimation with Transformer Features and Kolmogorov–Arnold Sequence Modeling,' has been accepted at CogSci 2026 with a highly competitive 9.3% acceptance rate. Congratulations to the team!"
