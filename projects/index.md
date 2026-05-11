@@ -101,26 +101,17 @@ nav:
       <img src="/images/iitp-logo.jpg" alt="IITP Logo" class="proj-funding-logo">
       <div class="proj-funding-info">
         <strong>Towards Super Sapiens: Superintelligence for Future Human Innovations</strong>
-        <span>ICT Creative Consilience program (ICT명품인재) · IITP</span>
-        <span class="proj-funding-date">Sep. 2021 – Dec. 2022</span>
+        <span>ICT Creative Consilience Program (ICT명품인재) · IITP</span>
+        <span class="proj-funding-date">Sep. 2021 – Dec. 2027</span>
       </div>
     </a>
 
-    <a href="https://www.chowis.com/" class="proj-funding-card" target="_blank" rel="noopener noreferrer">
-      <img src="https://static.wixstatic.com/media/a716c2_9c42e1548c9b43078135f37ff87b2190~mv2.png/v1/fill/w_127,h_31,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/chowislogo.png" alt="Chowis Logo" class="proj-funding-logo">
+    <a href="https://www.iitp.kr/en/main.it" class="proj-funding-card" target="_blank" rel="noopener noreferrer">
+      <img src="/images/iitp-logo.jpg" alt="IITP Logo" class="proj-funding-logo">
       <div class="proj-funding-info">
-        <strong>Artificial Intelligent-based Skin Analysis Algorithms</strong>
-        <span>Industry collaboration · Chowis Co., Ltd</span>
-        <span class="proj-funding-date">Oct. 2020 – April 2021</span>
-      </div>
-    </a>
-
-    <a href="https://www.nrf.re.kr/eng/main" class="proj-funding-card" target="_blank" rel="noopener noreferrer">
-      <img src="/images/nrf-logo.png" alt="NRF Logo" class="proj-funding-logo">
-      <div class="proj-funding-info">
-        <strong>Software Authorship Identification Based on Deep Learning</strong>
-        <span>Young Researcher Program · National Research Foundation (NRF) · MSIP</span>
-        <span class="proj-funding-date">Nov. 2016 – Nov. 2019</span>
+        <strong>Development of a Policy-Adaptive AI Platform for Personal Information Protection Compliance</strong>
+        <span>Institute for Information &amp; Communications Technology Planning &amp; Evaluation · IITP</span>
+        <span class="proj-funding-date">Feb. 2022 – Dec. 2027</span>
       </div>
     </a>
 
