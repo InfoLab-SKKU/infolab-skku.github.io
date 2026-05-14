@@ -74,26 +74,21 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
-  title: Large-scale and language-oblivious code authorship identification
-  authors: []
-  publisher: ''
-  date: '2018-01-01'
-  link: ''
+- id: doi:10.1145/3243734.3243738
+  title: Large-Scale and Language-Oblivious Code Authorship Identification
+  authors:
+  - Mohammed Abuhamad
+  - Tamer AbuHmed
+  - Aziz Mohaisen
+  - DaeHun Nyang
+  publisher: Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications
+    Security
+  date: '2018-10-15'
+  link: https://doi.org/gnrn69
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: A survey on deep packet inspection for intrusion detection systems
-  authors: []
-  publisher: ''
-  date: '2008-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.knosys.2020.106688
   title: "Robust hybrid deep learning models for Alzheimer\u2019s progression detection"
   authors:
@@ -525,6 +520,23 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1038/s41598-024-54065-1
+  title: A dynamic fuzzy rule-based inference system using fuzzy inference with semantic
+    reasoning
+  authors:
+  - Nora Shoaip
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Mohammed Elmogy
+  publisher: Scientific Reports
+  pmid: '38383597'
+  pmcid: PMC10881567
+  date: '2024-02-21'
+  link: https://doi.org/hb28vj
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1016/j.aej.2023.09.050
   title: "Time-series visual explainability for Alzheimer\u2019s disease progression\
     \ detection for smart healthcare"
@@ -563,23 +575,6 @@
   buttons:
   - type: pdf
     link: pdf/f14071325.pdf
-- id: doi:10.1038/s41598-024-54065-1
-  title: A dynamic fuzzy rule-based inference system using fuzzy inference with semantic
-    reasoning
-  authors:
-  - Nora Shoaip
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: Scientific Reports
-  pmid: '38383597'
-  pmcid: PMC10881567
-  date: '2024-02-21'
-  link: https://doi.org/hb28vj
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1111/mice.13015
   title: "Explainable probabilistic deep learning framework for seismic assessment\
     \ of structures using distribution\u2010free prediction intervals"
@@ -595,20 +590,6 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.2478/popets-2020-0044
-  title: "Multi-\u03C7: Identifying Multiple Authors from Source Code Files"
-  authors:
-  - Mohammed Abuhamad
-  - Tamer Abuhmed
-  - DaeHun Nyang
-  - David Mohaisen
-  publisher: Proceedings on Privacy Enhancing Technologies
-  date: '2020-07-01'
-  link: https://doi.org/g9b3dr
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1145/3461666
   title: Large-scale and Robust Code Authorship Identification with Deep Feature Learning
   authors:
@@ -619,6 +600,20 @@
   publisher: ACM Transactions on Privacy and Security
   date: '2021-07-19'
   link: https://doi.org/gprnz3
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.2478/popets-2020-0044
+  title: "Multi-\u03C7: Identifying Multiple Authors from Source Code Files"
+  authors:
+  - Mohammed Abuhamad
+  - Tamer Abuhmed
+  - DaeHun Nyang
+  - David Mohaisen
+  publisher: Proceedings on Privacy Enhancing Technologies
+  date: '2020-07-01'
+  link: https://doi.org/g9b3dr
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -634,6 +629,22 @@
   publisher: Journal of Alloys and Compounds
   date: '2022-02-01'
   link: https://doi.org/gqb5kb
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-030-91434-9_9
+  title: 'AdvEdge: Optimizing Adversarial Perturbations Against Interpretable Deep
+    Learning'
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Firuz Juraev
+  - Eric Chan-Tin
+  - Tamer AbuHmed
+  publisher: Lecture Notes in Computer Science
+  date: '2021-01-01'
+  link: https://doi.org/hb28vx
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -654,22 +665,6 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1007/978-3-030-91434-9_9
-  title: 'AdvEdge: Optimizing Adversarial Perturbations Against Interpretable Deep
-    Learning'
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Firuz Juraev
-  - Eric Chan-Tin
-  - Tamer AbuHmed
-  publisher: Lecture Notes in Computer Science
-  date: '2021-01-01'
-  link: https://doi.org/hb28vx
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: ''
   title: Alzheimer's disease diagnosis in the metaverse
   authors: []
@@ -695,6 +690,22 @@
   plugin: orcid.py
   file: orcid.yaml
   shaker-el-sappagh-list: true
+- id: doi:10.1145/3488932.3527294
+  title: Leveraging Spectral Representations of Control Flow Graphs for Efficient
+    Analysis of Windows Malware
+  authors:
+  - Qirui Sun
+  - Eldor Abdukhamidov
+  - Tamer Abuhmed
+  - Mohammed Abuhamad
+  publisher: Proceedings of the 2022 ACM on Asia Conference on Computer and Communications
+    Security
+  date: '2022-05-30'
+  link: https://doi.org/hb28vw
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.jenvman.2024.120682
   title: Spatial mapping of land susceptibility to dust emissions using optimization
     of attentive Interpretable Tabular Learning (TabNet) model
@@ -712,22 +723,6 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1145/3488932.3527294
-  title: Leveraging Spectral Representations of Control Flow Graphs for Efficient
-    Analysis of Windows Malware
-  authors:
-  - Qirui Sun
-  - Eldor Abdukhamidov
-  - Tamer Abuhmed
-  - Mohammed Abuhamad
-  publisher: Proceedings of the 2022 ACM on Asia Conference on Computer and Communications
-    Security
-  date: '2022-05-30'
-  link: https://doi.org/hb28vw
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.3390/electronics11101648
   title: "Sentiment Analysis of Users\u2019 Reactions on Social Media during the Pandemic"
   authors:
@@ -877,6 +872,22 @@
   buttons:
   - type: pdf
     link: pdf/math10050766.pdf
+- id: doi:10.1109/tdsc.2023.3341090
+  title: 'Hardening Interpretable Deep Learning Systems: Investigating Adversarial
+    Threats and Defenses'
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: IEEE Transactions on Dependable and Secure Computing
+  date: '2024-07-01'
+  link: https://doi.org/g9b3cf
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.3390/diagnostics14212385
   title: Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
     Detection and Severity Assessment
@@ -901,22 +912,6 @@
   - type: pdf
     link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
       Detection and Severity Assessment.pdf
-- id: doi:10.1109/tdsc.2023.3341090
-  title: 'Hardening Interpretable Deep Learning Systems: Investigating Adversarial
-    Threats and Defenses'
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Simon S. Woo
-  - Eric Chan-Tin
-  - Tamer Abuhmed
-  publisher: IEEE Transactions on Dependable and Secure Computing
-  date: '2024-07-01'
-  link: https://doi.org/g9b3cf
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1038/s41598-024-56136-9
   title: Temporal dynamics of urban gas pipeline risks
   authors:
@@ -976,6 +971,17 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: arxiv:2211.15926
+  title: 'Interpretations cannot be trusted: Stealthy and effective adversarial perturbations
+    against interpretable deep learning'
+  authors: []
+  publisher: ''
+  date: '2022-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1109/thms.2015.2449309
   title: 'UOIT Keyboard: A Constructive Keyboard for Small Touchscreen Devices'
   authors:
@@ -1020,17 +1026,6 @@
   plugin: google-scholar.py
   file: google-scholar.yaml
 - id: ''
-  title: 'Interpretations cannot be trusted: Stealthy and effective adversarial perturbations
-    against interpretable deep learning'
-  authors: []
-  publisher: ''
-  date: '2022-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
   title: A dynamic level-based secure data aggregation in wireless sensor network
   authors: []
   publisher: ''
@@ -1040,13 +1035,14 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
-  title: Two-level key pool design-based random key pre-distribution in wireless sensor
-    networks.
-  authors: []
-  publisher: ''
-  date: '2008-01-01'
-  link: ''
+- id: doi:10.3837/tiis.2008.05.001
+  title: Two-level Key Pool Design-based Random Key Pre-distribution in Wireless Sensor
+    Networks
+  authors:
+  - Abedelaziz Mohaisen
+  publisher: KSII Transactions on Internet and Information Systems
+  date: '2008-10-25'
+  link: https://doi.org/bpq7d3
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1145,12 +1141,12 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/tip.2024.3513592
+- id: doi:10.1109/tip.2015.2488780
   title: Reviewer Summary for Transactions on Image Processing
   authors: []
   publisher: IEEE Transactions on Image Processing
-  date: '2024-01-01'
-  link: https://doi.org/hb3f6v
+  date: '2015-12-01'
+  link: https://doi.org/hb3xb2
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1247,12 +1243,12 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
+- id: wosuid:PPRN:88760232
   title: Impact of architectural modifications on deep learning adversarial robustness
   authors: []
-  publisher: ''
+  publisher: ArXiv
   date: '2024-01-01'
-  link: ''
+  link: https://publons.com/wos-op/publon/68109325/
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1345,34 +1341,23 @@
   buttons:
   - type: pdf
     link: pdf/app13169425.pdf
-- id: ''
+- id: wosuid:PPRN:74080261
   title: Unveiling vulnerabilities in interpretable deep learning systems with query-efficient
     black-box attacks
   authors: []
-  publisher: ''
+  publisher: ArXiv
   date: '2023-01-01'
-  link: ''
+  link: https://publons.com/wos-op/publon/68205175/
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
+- id: arxiv:2307.06496
   title: Microbial Genetic Algorithm-based Black-box Attack against Interpretable
     Deep Learning Systems
   authors: []
   publisher: ''
   date: '2023-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: An Exploration of Geo-temporal Characteristics of Users' Reactions on Social
-    Media During the Pandemic
-  authors: []
-  publisher: ''
-  date: '2021-01-01'
   link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -1422,13 +1407,13 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
+- id: wosuid:PPRN:88761299
   title: 'From Attack to Defense: Insights into Deep Learning Security Measures in
     Black-Box Settings'
   authors: []
-  publisher: ''
+  publisher: ArXiv
   date: '2024-01-01'
-  link: ''
+  link: https://publons.com/wos-op/publon/68864877/
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1553,7 +1538,7 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
+- id: arxiv:2307.06484
   title: Single-Class Target-Specific Attack against Interpretable Deep Learning Systems
   authors: []
   publisher: ''
@@ -1666,13 +1651,17 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
+- id: doi:10.14722/ndss.2026.241872
   title: A Deep Dive into Function Inlining and its Security Implications for ML-based
     Binary Analysis
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
+  authors:
+  - Omar Abusabha
+  - Jiyong Uhm
+  - Tamer Abuhmed
+  - Hyungjoon Koo
+  publisher: Proceedings 2026 Network and Distributed System Security Symposium
+  date: '2026-01-01'
+  link: https://doi.org/hb3xb3
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1712,16 +1701,6 @@
   plugin: google-scholar.py
   file: google-scholar.yaml
 - id: ''
-  title: Analyzing Adversarial Strategies and Countermeasures for Cyberbullying Detection
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
   title: Attacking interpretable NLP systems
   authors: []
   publisher: ''
@@ -1731,13 +1710,13 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
+- id: wosuid:PPRN:156877634
   title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
     Transformer Systems under Attack'
   authors: []
-  publisher: ''
+  publisher: ArXiv
   date: '2025-01-01'
-  link: ''
+  link: https://publons.com/wos-op/publon/78583142/
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1827,17 +1806,26 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: ''
+- id: doi:10.3390/e22080841
   title: Performance Analysis and Constellation Design for the Parallel Quadrature
     Spatial Modulation
-  authors: []
-  publisher: ''
-  date: '2020-01-01'
-  link: ''
+  authors:
+  - Manar Mohaisen
+  - Tasnim Holoubi
+  - Tamer Abuhmed
+  publisher: Entropy
+  pmid: '33286611'
+  pmcid: PMC7517441
+  date: '2020-07-30'
+  link: https://doi.org/g9b3dq
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/e22080841.pdf
 - id: doi:10.4018/978-1-61350-110-8.ch010
   title: Computationally Efficient Cooperative Public Key Authentication Protocols
     in Ubiquitous Sensor Network
@@ -2840,17 +2828,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:PPRN:156877634
-  title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
-    Transformer Systems under Attack'
-  authors: []
-  publisher: ArXiv
-  date: '2026-05-09'
-  link: https://publons.com/wos-op/publon/78583142/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/ICEENG64546.2025.11031335
   title: Chronic Kidney Disease Detection Augmented with Hybrid Explainable AI
   authors:
@@ -3012,27 +2989,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:PPRN:88761299
-  title: 'From Attack to Defense: Insights into Deep Learning Security Measures in
-    Black-Box Settings'
-  authors: []
-  publisher: ArXiv
-  date: '2026-05-09'
-  link: https://publons.com/wos-op/publon/68864877/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:PPRN:88760232
-  title: Impact of Architectural Modifications on Deep Learning Adversarial Robustness
-  authors: []
-  publisher: ArXiv
-  date: '2026-05-09'
-  link: https://publons.com/wos-op/publon/68109325/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1016/J.ASOC.2024.111749
   title: Information fusion-based Bayesian optimized heterogeneous deep ensemble model
     based on longitudinal neuroimaging data
@@ -3175,37 +3131,6 @@
   publisher: Geo-spatial Information Science
   date: '2022-07-05'
   link: https://doi.org/g9b3cq
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: arxiv:2307.06496
-  title: Microbial Genetic Algorithm-based Black-box Attack against Interpretable
-    Deep Learning Systems
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Simon S. Woo
-  - Eric Chan-Tin
-  - Tamer Abuhmed
-  publisher: arXiv
-  date: '2024-02-19'
-  link: https://arxiv.org/abs/2307.06496
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: arxiv:2307.06484
-  title: Single-Class Target-Specific Attack against Interpretable Deep Learning Systems
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - George K. Thiruvathukal
-  - Hyoungshick Kim
-  - Tamer Abuhmed
-  publisher: arXiv
-  date: '2024-02-19'
-  link: https://arxiv.org/abs/2307.06484
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -3358,17 +3283,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:PPRN:74080261
-  title: Unveiling Vulnerabilities in Interpretable Deep Learning Systems with Query-Efficient
-    Black-box Attacks
-  authors: []
-  publisher: ArXiv
-  date: '2026-05-09'
-  link: https://publons.com/wos-op/publon/68205175/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.3390/F14071325
   title: Wildfire Susceptibility Mapping Using Deep Learning Algorithms in Two Satellite
     Imagery Dataset
@@ -3400,22 +3314,6 @@
   pmid: '36037451'
   date: '2022-12-01'
   link: https://doi.org/g9b3cz
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: arxiv:2211.15926
-  title: 'Interpretations Cannot Be Trusted: Stealthy and Effective Adversarial Perturbations
-    against Interpretable Deep Learning'
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Simon S. Woo
-  - Eric Chan-Tin
-  - Tamer Abuhmed
-  publisher: arXiv
-  date: '2024-02-19'
-  link: https://arxiv.org/abs/2211.15926
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -3672,21 +3570,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1145/3243734.3243738
-  title: Large-Scale and Language-Oblivious Code Authorship Identification
-  authors:
-  - Mohammed Abuhamad
-  - Tamer AbuHmed
-  - Aziz Mohaisen
-  - DaeHun Nyang
-  publisher: Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications
-    Security
-  date: '2018-10-15'
-  link: https://doi.org/gnrn69
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/ICC.2012.6364127
   title: Collaboration in social network-based information dissemination
   authors:
@@ -3751,35 +3634,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:PPRN:156926166
-  title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
-    Transformer Systems under Attack'
-  authors: []
-  publisher: ArXiv
-  date: '2026-05-09'
-  link: https://publons.com/wos-op/publon/78720308/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/e22080841
-  title: Performance Analysis and Constellation Design for the Parallel Quadrature
-    Spatial Modulation
-  authors:
-  - Manar Mohaisen
-  - Tasnim Holoubi
-  - Tamer Abuhmed
-  publisher: Entropy
-  pmid: '33286611'
-  pmcid: PMC7517441
-  date: '2020-07-30'
-  link: https://doi.org/g9b3dq
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/e22080841.pdf
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1101/2023.05.01.538993
   title: 'DrugMechDB: A Curated Database of Drug Mechanisms'
   authors:
