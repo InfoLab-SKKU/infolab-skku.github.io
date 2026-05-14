@@ -53,6 +53,14 @@ jobs:
           cache: "pip"
           cache-dependency-path: "**/requirements.txt"
 
+      - name: Cache cite data
+        uses: actions/cache@v4
+        with:
+          path: ./_cite/.cache
+          key: cite-cache-${{ runner.os }}-${{ hashFiles('_data/*.yaml') }}
+          restore-keys: |
+            cite-cache-${{ runner.os }}-
+
       - name: Install Python packages
         run: |
           python -m pip install --upgrade --requirement ./_cite/requirements.txt

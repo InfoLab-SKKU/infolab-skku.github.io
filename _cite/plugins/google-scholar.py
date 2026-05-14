@@ -24,10 +24,13 @@ def _extract_doi(url: str) -> str:
     return m.group(0).rstrip("./") if m else ""
 
 
+@log_cache
+@cache.memoize(name="crossref_doi", expire=7 * (60 * 60 * 24))
 def _crossref_doi(title: str) -> str:
     """
     Look up a DOI from Crossref by title.
     Returns empty string when no close match is found.
+    Results are cached for 7 days to avoid repeated network calls.
     """
     if not title:
         return ""

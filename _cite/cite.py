@@ -3,6 +3,7 @@ cite process to convert sources and metasources into full citations
 """
 
 import traceback
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from importlib import import_module
 from pathlib import Path
 from dotenv import load_dotenv
@@ -149,17 +150,17 @@ log()
 
 log("Generating citations")
 
-# list of new citations
-citations = []
+# list of new citations (index preserved for ordering)
+citations_map = {}
 
 
-# loop through compiled sources
-for index, source in enumerate(sources):
+def _process_source(index, source):
+    """Resolve a single source to a citation dict. Returns (index, citation_or_None, is_error)."""
     log(f"Processing source {index + 1} of {len(sources)}, {label(source)}")
 
     # if explicitly flagged, remove/ignore entry
     if get_safe(source, "remove", False) == True:
-        continue
+        return index, None, False
 
     # new citation data for source
     citation = {}
@@ -180,12 +181,12 @@ for index, source in enumerate(sources):
             # if regular source (id entered by user), throw error
             if get_safe(source, "plugin", "") == "sources.py":
                 log(e, 3, "ERROR")
-                error = True
+                return index, None, True
             # otherwise, if from metasource (id retrieved from some third-party API), just warn
             else:
                 log(e, 3, "WARNING")
                 # discard source from citations
-                continue
+                return index, None, False
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
@@ -194,8 +195,25 @@ for index, source in enumerate(sources):
     if get_safe(citation, "date", ""):
         citation["date"] = format_date(get_safe(citation, "date", ""))
 
-    # add new citation to list
-    citations.append(citation)
+    return index, citation, False
+
+
+# run Manubot citations in parallel (I/O-bound subprocesses)
+max_workers = 8
+with ThreadPoolExecutor(max_workers=max_workers) as executor:
+    futures = {
+        executor.submit(_process_source, i, src): i
+        for i, src in enumerate(sources)
+    }
+    for future in as_completed(futures):
+        idx, citation, is_error = future.result()
+        if is_error:
+            error = True
+        if citation is not None:
+            citations_map[idx] = citation
+
+# restore original source order
+citations = [citations_map[i] for i in sorted(citations_map)]
 
 
 log()
