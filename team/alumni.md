@@ -3,7 +3,10 @@ title: Lab Alumni
 ---
 
 {% assign alum_members = site.members | where: "group", "alum" %}
-{% assign alum_grads = alum_members | where_exp: "m", "m.role == 'phd' or m.role == 'master' or m.role == 'combined'" %}
+{% assign alum_phd = alum_members | where: "role", "phd" %}
+{% assign alum_master = alum_members | where: "role", "master" %}
+{% assign alum_combined = alum_members | where: "role", "combined" %}
+{% assign alum_grads = alum_phd | concat: alum_master | concat: alum_combined %}
 {% assign alum_interns = alum_members | where: "role", "intern" %}
 
 <!-- ALUMNI HERO -->
