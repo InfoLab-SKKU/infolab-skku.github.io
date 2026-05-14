@@ -34,9 +34,9 @@ nav:
 
 {% include team-nav.html %}
 
-{% include section.html %}
-
 {% include collab-map.html %}
+
+{% include section.html %}
 
 <div class="team-section">
   <div class="team-section-header">

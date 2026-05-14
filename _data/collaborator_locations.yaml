@@ -16,11 +16,6 @@
   lat: 28.6139
   lng: 77.2090
 
-- name: "Iran"
-  region: "Asia"
-  lat: 35.6892
-  lng: 51.3890
-
 - name: "Jordan"
   region: "Asia"
   lat: 31.9454
@@ -55,6 +50,16 @@
   region: "Americas"
   lat: 37.0902
   lng: -95.7129
+
+- name: "Finland"
+  region: "Europe"
+  lat: 60.1699
+  lng: 24.9384
+
+- name: "Canada"
+  region: "Americas"
+  lat: 56.1304
+  lng: -106.3468
 
 - name: "Hungary"
   region: "Europe"
