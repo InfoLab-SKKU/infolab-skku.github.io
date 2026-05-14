@@ -10,7 +10,7 @@ module Jekyll
 
     # get list of hash keys or array entries
     def object_items(object)
-      if object.is_a?(Hash)
+      if object.respond_to?(:keys)
         return object.keys
       elsif object.is_a?(Array)
         return object

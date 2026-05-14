@@ -13,7 +13,9 @@ Research updates, lab news, and insights from the InfoLab team at SKKU.
 
 {% include search-box.html %}
 
-{% include tags.html tags=site.tags %}
+{% capture _tags_csv %}{% for tag_pair in site.tags %}{{ tag_pair[0] }},{% endfor %}{% endcapture %}
+{% assign _blog_tags = _tags_csv | split: "," | uniq | sort %}
+{% include tags.html tags=_blog_tags %}
 
 {% include search-info.html %}
 
