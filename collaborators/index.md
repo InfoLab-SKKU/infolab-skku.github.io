@@ -36,6 +36,8 @@ nav:
 
 {% include section.html %}
 
+{% include collab-map.html %}
+
 <div class="team-section">
   <div class="team-section-header">
     <span class="team-section-icon"><i class="fa-solid fa-handshake"></i></span>

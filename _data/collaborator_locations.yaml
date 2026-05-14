@@ -1,0 +1,82 @@
+# Countries with which InfoLab has collaborated in the last five years.
+# lat/lng values are approximate country centroids or capital cities.
+
+- name: "Egypt"
+  region: "Africa"
+  lat: 30.0444
+  lng: 31.2357
+
+- name: "China"
+  region: "Asia"
+  lat: 39.9042
+  lng: 116.4074
+
+- name: "India"
+  region: "Asia"
+  lat: 28.6139
+  lng: 77.2090
+
+- name: "Iran"
+  region: "Asia"
+  lat: 35.6892
+  lng: 51.3890
+
+- name: "Jordan"
+  region: "Asia"
+  lat: 31.9454
+  lng: 35.9284
+
+- name: "South Korea"
+  region: "Asia"
+  lat: 37.5665
+  lng: 126.9780
+
+- name: "Oman"
+  region: "Asia"
+  lat: 23.5880
+  lng: 58.3829
+
+- name: "Qatar"
+  region: "Asia"
+  lat: 25.2854
+  lng: 51.5310
+
+- name: "Saudi Arabia"
+  region: "Asia"
+  lat: 24.6877
+  lng: 46.7219
+
+- name: "United Arab Emirates"
+  region: "Asia"
+  lat: 24.4539
+  lng: 54.3773
+
+- name: "United States"
+  region: "Americas"
+  lat: 37.0902
+  lng: -95.7129
+
+- name: "Hungary"
+  region: "Europe"
+  lat: 47.4979
+  lng: 19.0402
+
+- name: "Italy"
+  region: "Europe"
+  lat: 41.9028
+  lng: 12.4964
+
+- name: "Spain"
+  region: "Europe"
+  lat: 40.4168
+  lng: -3.7038
+
+- name: "United Kingdom"
+  region: "Europe"
+  lat: 51.5074
+  lng: -0.1278
+
+- name: "Australia"
+  region: "Oceania"
+  lat: -25.2744
+  lng: 133.7751
