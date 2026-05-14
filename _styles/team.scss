@@ -581,7 +581,7 @@
   border-radius: var(--rounded);
   border: 1px solid var(--light-gray);
   box-shadow: var(--shadow);
-  overflow: hidden;
+  position: relative; /* required for Leaflet */
   z-index: 0;
 
   @media (max-width: 600px) {

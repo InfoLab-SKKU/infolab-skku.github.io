@@ -7,9 +7,7 @@
 <!-- Leaflet CSS -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-  crossorigin=""
+  href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css"
 />
 
 <div class="collab-map-wrap">
@@ -40,14 +38,14 @@
 </div>
 
 <!-- Leaflet JS -->
-<script
-  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV/XN/WLfU="
-  crossorigin=""
-></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js"></script>
 
 <script>
 (function () {
+  function initCollabMap() {
+    var el = document.getElementById('collab-map');
+    if (!el || typeof L === 'undefined') return;
+
   /* ── Data injected from _data/collaborator_locations.yaml ── */
   var COLLAB = [
     {% for c in site.data.collaborator_locations %}
@@ -61,7 +59,7 @@
   ];
 
   /* ── Map init ── */
-  var map = L.map('collab-map', {
+  var map = L.map(el, {
     center: [25, 15],
     zoom: 2,
     minZoom: 1,
@@ -70,7 +68,7 @@
     attributionControl: true
   });
 
-  /* CartoDB Positron — clean, label-only tiles */
+  /* CartoDB Positron — clean, minimal tiles */
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' +
@@ -81,25 +79,20 @@
 
   /* ── Home institution pin (InfoLab @ SKKU, Suwon) ── */
   var homeIcon = L.divIcon({
-    className:  'collab-home-icon',
-    html:       '<i class="fa-solid fa-location-dot"></i>',
-    iconSize:   [22, 28],
-    iconAnchor: [11, 28],
-    popupAnchor:[0, -30]
+    className:   'collab-home-icon',
+    html:        '<i class="fa-solid fa-location-dot"></i>',
+    iconSize:    [22, 28],
+    iconAnchor:  [11, 28],
+    popupAnchor: [0, -30]
   });
 
   L.marker([37.2935, 127.0450], { icon: homeIcon })
     .bindPopup(
-      '<div class="collab-popup">' +
-        '<strong>InfoLab @ SKKU</strong>' +
-        '<span class="collab-popup-region">Suwon, South Korea</span>' +
-      '</div>',
+      '<div class="collab-popup"><strong>InfoLab @ SKKU</strong>' +
+      '<span class="collab-popup-region">Suwon, South Korea</span></div>',
       { maxWidth: 220, className: 'collab-map-popup' }
     )
-    .bindTooltip('InfoLab @ SKKU', {
-      direction: 'top',
-      className: 'collab-map-tt'
-    })
+    .bindTooltip('InfoLab @ SKKU', { direction: 'top', className: 'collab-map-tt' })
     .addTo(map);
 
   /* ── Collaboration country markers ── */
@@ -113,17 +106,23 @@
       fillOpacity: 0.88
     })
       .bindPopup(
-        '<div class="collab-popup">' +
-          '<strong>' + c.name + '</strong>' +
-          '<span class="collab-popup-region">' + c.region + '</span>' +
-        '</div>',
+        '<div class="collab-popup"><strong>' + c.name + '</strong>' +
+        '<span class="collab-popup-region">' + c.region + '</span></div>',
         { maxWidth: 200, className: 'collab-map-popup' }
       )
-      .bindTooltip(c.name, {
-        direction: 'top',
-        className: 'collab-map-tt'
-      })
+      .bindTooltip(c.name, { direction: 'top', className: 'collab-map-tt' })
       .addTo(map);
   });
+
+  /* Ensure correct size after layout paint */
+  setTimeout(function () { map.invalidateSize(); }, 200);
+}
+
+  /* Run now if DOM is ready, otherwise wait */
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCollabMap);
+  } else {
+    initCollabMap();
+  }
 }());
 </script>
