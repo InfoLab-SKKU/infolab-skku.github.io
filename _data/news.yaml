@@ -10,6 +10,11 @@
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
 
+- title: "Our paper VisionDES has been accepted at ACM SIGKDD (KDD 2026)!"
+  date: 2026-05-16
+  description: "We are thrilled to announce that our paper, 'VisionDES: Robust and Explainable Dynamic Vision Ensemble,' has been accepted at the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2026) — one of the most prestigious and competitive venues in data mining and machine learning (BK=4). VisionDES is the first systematic dynamic ensemble selection framework for robust and explainable vision classification, improving reliability under adversarial attacks and distribution shifts. Congratulations to the team on this outstanding achievement!"
+  url:
+
 - title: "Welcome to InfoLab, Yakhyo and Shannon!"
   date: 2026-05-11
   description: "We are delighted to welcome two new members to InfoLab! Yakhyokhuja (Yakhyo) Valikhujaev joins as an incoming Ph.D. student, bringing expertise in large language models, multimodal AI, and trustworthy AI systems. Shannon Henry joins as a combined M.S./Ph.D. student, with a background in AI security, deep learning, and information security. We look forward to their contributions!"
