@@ -161,10 +161,14 @@ title: Home
       <div class="hp-news-date">{{ post.date | date: "%b %d, %Y" }}</div>
       <div class="hp-news-title">{{ post.title }}</div>
       {% if post.description %}
-        <div class="hp-news-desc">{{ post.description }}</div>
-      {% endif %}
-      {% if post.url %}
-        <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer" class="hp-news-link">Read more &rarr;</a>
+        <div class="hp-news-desc">{{ post.description | truncate: 320 }}</div>
+        {% if post.description.size > 320 or post.url %}
+          {% if post.url %}
+            <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer" class="hp-news-link">Read more &rarr;</a>
+          {% else %}
+            <a href="/news" class="hp-news-link">Read more &rarr;</a>
+          {% endif %}
+        {% endif %}
       {% endif %}
     </div>
     {% endfor %}
