@@ -1,4 +1,4 @@
-# DO NOT EDIT, GENERATED AUTOMATICALLY
+﻿# DO NOT EDIT, GENERATED AUTOMATICALLY
 
 - id: doi:10.1109/imcom64595.2025.10857574
   title: 'Towards Robust Federated Learning: Investigating Poisoning Attacks Under
@@ -176,7 +176,7 @@
   buttons:
   - type: pdf
     link: pdf/app12199710.pdf
-- id: doi:10.3390/electronics11101648
+- id: doi:10.3390/ELECTRONICS11101648
   title: "Sentiment Analysis of Users\u2019 Reactions on Social Media during the Pandemic"
   authors:
   - Eldor Abdukhamidov
@@ -187,14 +187,10 @@
   publisher: Electronics
   date: '2022-05-22'
   link: https://doi.org/g9b3c6
-  orcid: 0000-0001-9705-1477
-  shaker-el-sappagh-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics11101648.pdf
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.3390/electronics10141733
   title: An Extended Semantic Interoperability Model for Distributed Electronic Health
     Record Based on Fuzzy Ontology Semantics
@@ -234,7 +230,7 @@
   plugin: orcid.py
   file: orcid.yaml
   tamer-abuhmed-list: true
-- id: doi:10.1016/j.knosys.2020.106688
+- id: doi:10.1016/J.KNOSYS.2020.106688
   title: "Robust hybrid deep learning models for Alzheimer\u2019s progression detection"
   authors:
   - Tamer Abuhmed
@@ -243,14 +239,10 @@
   publisher: Knowledge-Based Systems
   date: '2021-02-01'
   link: https://doi.org/gm64vk
-  orcid: 0000-0001-9705-1477
-  shaker-el-sappagh-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/j_knosys_2020_106688.pdf
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.future.2020.07.047
   title: An intelligent healthcare monitoring framework using wearable sensors and
     social networking data
@@ -395,7 +387,7 @@
   plugin: orcid.py
   file: orcid.yaml
   tamer-abuhmed-list: true
-- id: doi:10.3390/electronics9091443
+- id: doi:10.3390/ELECTRONICS9091443
   title: Staging Melanocytic Skin Neoplasms Using High-Level Pixel-Based Features
   authors:
   - Mai Ramadan Ibraheem
@@ -405,14 +397,10 @@
   publisher: Electronics
   date: '2020-09-04'
   link: https://doi.org/g9b3dp
-  orcid: 0000-0001-9705-1477
-  shaker-el-sappagh-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics9091443.pdf
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.3390/electronics9091439
   title: End-To-End Deep Learning Framework for Coronavirus (COVID-19) Detection and
     Monitoring
@@ -564,7 +552,7 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/access.2020.3010556
+- id: doi:10.1109/ACCESS.2020.3010556
   title: 'Intensive Care Unit Mortality Prediction: An Improved Patient-Specific Stacking
     Ensemble Model'
   authors:
@@ -576,8 +564,8 @@
   publisher: IEEE Access
   date: '2020-01-01'
   link: https://doi.org/g9b3dt
-  orcid: 0000-0001-9705-1477
-  shaker-el-sappagh-list: true
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1109/access.2020.3042273
@@ -2129,21 +2117,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3390/ELECTRONICS11101648
-  title: "Sentiment Analysis of Users\u2019 Reactions on Social Media during the Pandemic"
-  authors:
-  - Eldor Abdukhamidov
-  - Firuz Juraev
-  - Mohammed Abuhamad
-  - Shaker El-Sappagh
-  - Tamer AbuHmed
-  publisher: Electronics
-  date: '2022-05-22'
-  link: https://doi.org/g9b3c6
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1007/S00521-021-06631-1
   title: Sepsis prediction in intensive care unit based on genetic feature optimization
     and stacked deep ensemble learning
@@ -2323,19 +2296,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/J.KNOSYS.2020.106688
-  title: "Robust hybrid deep learning models for Alzheimer\u2019s progression detection"
-  authors:
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  - Jose M. Alonso
-  publisher: Knowledge-Based Systems
-  date: '2021-02-01'
-  link: https://doi.org/gm64vk
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.2478/popets-2020-0044
   title: "Multi-\u03C7: Identifying Multiple Authors from Source Code Files"
   authors:
@@ -2365,22 +2325,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/ACCESS.2020.3010556
-  title: 'Intensive Care Unit Mortality Prediction: An Improved Patient-Specific Stacking
-    Ensemble Model'
-  authors:
-  - Nora El-Rashidy
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Samir Abdelrazek
-  - Hazem M. El-Bakry
-  publisher: IEEE Access
-  date: '2020-01-01'
-  link: https://doi.org/g9b3dt
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.3390/E22080841
   title: Performance Analysis and Constellation Design for the Parallel Quadrature
     Spatial Modulation
@@ -2393,20 +2337,6 @@
   pmcid: PMC7517441
   date: '2020-07-30'
   link: https://doi.org/g9b3dq
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/ELECTRONICS9091443
-  title: Staging Melanocytic Skin Neoplasms Using High-Level Pixel-Based Features
-  authors:
-  - Mai Ramadan Ibraheem
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: Electronics
-  date: '2020-09-04'
-  link: https://doi.org/g9b3dp
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -2536,133 +2466,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3390/app13169425
-  title: 'TruMuzic: A Deep Learning and Data Provenance-Based Approach to Evaluating
-    the Authenticity of Music'
-  authors:
-  - Kuldeep Gurjar
-  - Yang-Sae Moon
-  - Tamer Abuhmed
-  publisher: Applied Sciences
-  date: '2023-08-19'
-  link: https://doi.org/g9b3cm
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/app13169425.pdf
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.20944/preprints202307.0585.v1
-  title: 'Underwater Image Restoration and Enhancement: A Comprehensive Review of
-    Recent Trends, Challenges, and Applications'
-  authors:
-  - Yasmin M. Alsakar
-  - Nehal A Sakr
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: MDPI AG
-  date: '2023-07-10'
-  link: https://doi.org/g9b3cp
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/preprints202307_0585_v1.pdf
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.3390/f14071325
-  title: Wildfire Susceptibility Mapping Using Deep Learning Algorithms in Two Satellite
-    Imagery Dataset
-  authors:
-  - Nazanin Bahadori
-  - Seyed Vahid Razavi-Termeh
-  - Abolghasem Sadeghi-Niaraki
-  - Khalifa M. Al-Kindi
-  - Tamer Abuhmed
-  - Behrokh Nazeri
-  - Soo-Mi Choi
-  publisher: Forests
-  date: '2023-06-28'
-  link: https://doi.org/g9b3cs
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/f14071325.pdf
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1038/s41598-023-27815-w
-  title: "A deep learning based dual encoder\u2013decoder framework for anatomical\
-    \ structure segmentation in chest X-ray images"
-  authors:
-  - Ihsan Ullah
-  - Farman Ali
-  - Babar Shah
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Sang Hyun Park
-  publisher: Scientific Reports
-  pmid: '36646735'
-  pmcid: PMC9842654
-  date: '2023-01-16'
-  link: https://doi.org/g55f46
-  image: images/thumbnails/10_1038_s41598-023-27815-w.png
-  buttons:
-  - type: pdf
-    link: pdf/s41598-023-27815-w.pdf
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.3390/math10030351
-  title: An Enhanced Grey Wolf Optimizer with a Velocity-Aided Global Search Mechanism
-  authors:
-  - Farshad Rezaei
-  - Hamid Reza Safavi
-  - Mohamed Abd Elaziz
-  - Shaker H. Ali El-Sappagh
-  - Mohammed Azmi Al-Betar
-  - Tamer Abuhmed
-  publisher: Mathematics
-  date: '2022-01-24'
-  link: https://doi.org/gtq6g4
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/math10030351.pdf
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.3390/electronics10161956
-  title: A Short Review on the Machine Learning-Guided Oxygen Uptake Prediction for
-    Sport Science Applications
-  authors:
-  - Haneen Alzamer
-  - Tamer Abuhmed
-  - Kotiba Hamad
-  publisher: Electronics
-  date: '2021-08-13'
-  link: https://doi.org/g9b3dc
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics10161956.pdf
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.3390/e22080841
-  title: Performance Analysis and Constellation Design for the Parallel Quadrature
-    Spatial Modulation
-  authors:
-  - Manar Mohaisen
-  - Tasnim Holoubi
-  - Tamer Abuhmed
-  publisher: Entropy
-  pmid: '33286611'
-  pmcid: PMC7517441
-  date: '2020-07-30'
-  link: https://doi.org/g9b3dq
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/e22080841.pdf
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1101/2023.05.01.538993
   title: 'DrugMechDB: A Curated Database of Drug Mechanisms'
   authors:
