@@ -331,6 +331,15 @@
   }
 }
 
+/* ---------- dark mode overrides ---------- */
+[data-dark="true"] {
+  .nci-badge-publication { background: rgba(56, 189, 248, 0.15);  color: #7dd3fc; }
+  .nci-badge-member      { background: rgba(74, 222, 128, 0.15);  color: #86efac; }
+  .nci-badge-patent      { background: rgba(167, 139, 250, 0.15); color: #c4b5fd; }
+  .nci-badge-award       { background: rgba(251, 146, 60, 0.15);  color: #fdba74; }
+  .nci-badge-other       { background: rgba(148, 163, 184, 0.15); color: #cbd5e1; }
+}
+
 /* ===========================================
    LEGACY — kept for homepage hp-news-* classes
    =========================================== */
