@@ -23,6 +23,9 @@ div.highlighter-rouge {
   overflow-x: auto;
   overflow-y: auto;
   text-align: left;
+  background: #111827;
+  color: #f8fafc;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
 
   div.highlight {
     display: contents;
@@ -32,7 +35,19 @@ div.highlighter-rouge {
       min-width: 100%;
       margin: 0;
       padding: 20px;
-      color: var(--white);
+      color: inherit;
+      background: transparent;
     }
   }
+}
+
+.blog-content pre,
+.blog-content code {
+  background: #111827;
+  color: #f8fafc;
+}
+
+.blog-content code {
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--rounded);
 }

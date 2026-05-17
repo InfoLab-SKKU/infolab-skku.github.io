@@ -3,18 +3,15 @@ layout: default
 ---
 
 {% include section.html background=page.image %}
-
-<h1 class="center">{{ page.title }}</h1>
-
-{%
-  include post-info.html
-  author=page.author
-  member=page.member
-  published=page.date
-  updated=page.last_modified_at
-  tags=page.tags
-%}
-
+  <div class="blog-hero">
+    <div class="blog-hero-copy">
+      <h1>{{ page.title }}</h1>
+      {% if page.excerpt %}
+        <p class="blog-hero-subtitle">{{ page.excerpt }}</p>
+      {% endif %}
+      {% include post-info.html author=page.author member=page.member published=page.date updated=page.last_modified_at tags=page.tags %}
+    </div>
+  </div>
 {% include section.html %}
 
 <article class="blog-content">
