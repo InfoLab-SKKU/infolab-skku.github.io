@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-dark="true">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dark Mode Test</title>
+  <style>
+    /* dark-mode variables copied from _styles/-theme.scss */
+    [data-dark="true"] {
+      --primary: #38bdf8;
+      --secondary: #3888b5;
+      --accent: #2dd4bf;
+      --accent-dark: #14b8a6;
+      --text: #e2e8f0;
+      --background: #0f172a;
+      --background-alt: #1e293b;
+      --light-gray: #334155;
+      --gray: #748297;
+      --dark-gray: #94a3b8;
+      --overlay: rgba(255,255,255,0.07);
+    }
+
+    :root{
+      --title: "IBM Plex Sans", sans-serif;
+      --body: "IBM Plex Sans", sans-serif;
+      --rounded: 8px;
+      --shadow: 0 2px 16px var(--overlay);
+    }
+
+    html,body{height:100%;}
+    body{
+      margin:0;
+      font-family:var(--body);
+      background:var(--background);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      padding:24px;
+    }
+
+    header{display:flex;align-items:center;gap:16px;margin-bottom:24px}
+    .brand{font-weight:700;color:var(--primary);font-size:1.4rem}
+    .muted{color:var(--gray)}
+
+    .hero{background:var(--background-alt);padding:20px;border-radius:12px;box-shadow:var(--shadow);margin-bottom:20px}
+
+    .cards{display:flex;gap:16px}
+    .ra-card{flex:1;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:10px;border-top:6px solid var(--primary);box-shadow:var(--shadow)}
+    .ra-card h3{margin:0 0 8px 0;color:var(--text)}
+    .ra-card p{margin:0;color:var(--gray)}
+
+    /* homepage overrides in dark mode */
+    .ra-card.card1{border-top-color:#38bdf8}
+    .ra-card.card2{border-top-color:#2dd4bf}
+    .ra-card.card3{border-top-color:#a78bfa}
+
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(56,189,248,0.12);color:var(--primary);font-weight:600}
+
+    a{color:var(--secondary)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Infolab SKKU</div>
+    <div class="muted">Blog — Dark mode preview</div>
+  </header>
+
+  <section class="hero">
+    <h1 style="margin:0 0 6px 0">Welcome to the blog</h1>
+    <div class="muted">Testing colors and contrast in dark mode</div>
+    <div style="margin-top:12px"><span class="pill">Featured</span></div>
+  </section>
+
+  <section class="cards">
+    <article class="ra-card card1">
+      <h3>Security</h3>
+      <p>Short description about security research. Accent color should be readable.</p>
+    </article>
+    <article class="ra-card card2">
+      <h3>Biomedical</h3>
+      <p>Short description about biomedical research. Check background tint.</p>
+    </article>
+    <article class="ra-card card3">
+      <h3>Trustworthy</h3>
+      <p>Short description about trustworthy AI. Accent and text contrast check.</p>
+    </article>
+  </section>
+
+  <footer style="margin-top:24px;color:var(--gray)">Example footer — links <a href="#">here</a></footer>
+</body>
+</html>
