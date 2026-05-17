@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en" data-dark="true">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog Hero Test</title>
+  <style>
+    /* theme variables (dark) */
+    [data-dark="true"]{
+      --primary: #38bdf8;
+      --secondary: #3888b5;
+      --accent: #2dd4bf;
+      --accent-dark: #14b8a6;
+      --text: #e2e8f0;
+      --background: #0f172a;
+      --background-alt: #1e293b;
+      --light-gray: #334155;
+      --gray: #748297;
+      --dark-gray: #94a3b8;
+      --overlay: rgba(255,255,255,0.07);
+      --hero-1: #05243a;
+      --hero-2: #0a4f6f;
+      --hero-3: #0f6b94;
+    }
+    :root{--rounded:8px;--shadow:0 2px 16px var(--overlay);}    
+
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--background);color:var(--text)}
+
+    .team-hero{position:relative;width:100vw;margin:-20px calc(-50vw + 50%) 0 calc(-50vw + 50%);background:linear-gradient(135deg,var(--hero-1) 0%,var(--hero-2) 55%,var(--hero-3) 100%);padding:80px 40px 60px;color:#fff;text-align:center;overflow:hidden}
+    .team-hero-content{position:relative;z-index:1;max-width:680px;margin:0 auto}
+    .team-hero-badge{display:inline-block;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.28);color:rgba(255,255,255,0.9);padding:5px 16px;border-radius:999px;font-size:0.76rem;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.2rem}
+    .team-hero-title{font-size:2.4rem;font-weight:700;margin:0 0 1rem;color:#fff;letter-spacing:-0.02em;line-height:1.15}
+    .team-hero-sub{font-size:1.05rem;line-height:1.75;opacity:0.88;margin:0 auto 2rem;max-width:560px}
+    .team-hero-stats{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;margin-top:2rem;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.18);border-radius:var(--rounded);padding:20px 40px;max-width:480px;margin-left:auto;margin-right:auto}
+    .team-hstat{display:flex;flex-direction:column;align-items:center;padding:0 28px}
+    .team-hstat-num{font-size:2.2rem;font-weight:700;color:#fff;line-height:1;margin-bottom:4px}
+    .team-hstat-lbl{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.06em;opacity:0.75}
+    .team-hstat-sep{width:1px;height:40px;background:rgba(255,255,255,0.25)}
+
+  </style>
+</head>
+<body>
+  <div class="team-hero">
+    <div class="team-hero-content">
+      <div class="team-hero-badge">InfoLab</div>
+      <h1 class="team-hero-title">Blog</h1>
+      <p class="team-hero-sub">Research updates, lab news, and insights from the InfoLab team at SKKU.</p>
+      <div class="team-hero-stats">
+        <div class="team-hstat">
+          <span class="team-hstat-num">128</span>
+          <span class="team-hstat-lbl">Posts</span>
+        </div>
+        <div class="team-hstat-sep"></div>
+        <div class="team-hstat">
+          <span class="team-hstat-num">2019–2026</span>
+          <span class="team-hstat-lbl">Years</span>
+        </div>
+        <div class="team-hstat-sep"></div>
+        <div class="team-hstat">
+          <span class="team-hstat-num">May 2026</span>
+          <span class="team-hstat-lbl">Latest</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

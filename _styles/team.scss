@@ -88,7 +88,7 @@
   position: relative;
   width: 100vw;
   margin: -60px calc(-50vw + 50%) 0 calc(-50vw + 50%);
-  background: linear-gradient(135deg, #07377b 0%, #0a4fa8 55%, #0d6ecc 100%);
+  background: linear-gradient(135deg, var(--hero-1, #07377b) 0%, var(--hero-2, #0a4fa8) 55%, var(--hero-3, #0d6ecc) 100%);
   padding: 80px 40px 60px;
   color: #fff;
   text-align: center;
