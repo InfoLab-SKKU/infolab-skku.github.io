@@ -6,6 +6,7 @@ author: "InfoLab · SKKU"
 categories: blog
 tags: [vision, ensemble, robustness, interpretability]
 image: /images/blogs/desvision/Figure2.png
+thumbnail: /images/blogs/desvision/Figure2.png
 excerpt: "VisionDES is a dynamic, similarity-weighted ensemble for robust and interpretable image classification — this post summarizes the approach and highlights experimental results."
 ---
 

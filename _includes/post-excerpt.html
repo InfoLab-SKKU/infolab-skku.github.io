@@ -12,16 +12,16 @@
   <div class="post-excerpt">
     {% assign url = post.url %}
     {% assign title = post.title %}
-    {% assign image = post.image %}
+    {% assign thumbnail = post.thumbnail | default: post.image %}
 
-    {% if image %}
+    {% if thumbnail %}
       <a
         href="{{ url | relative_url }}"
         class="post-excerpt-image"
         aria-label="{{ title | default: "excerpt link" }}"
       >
         <img
-          src="{{ image | relative_url }}"
+          src="{{ thumbnail | relative_url }}"
           alt="{{ title | default: "excerpt image" }}"
           loading="lazy"
           {% include fallback.html %}
@@ -53,7 +53,7 @@
         | regex_strip
       %}
       <p data-search="{{ search }}">
-        {{ excerpt }}
+        {{ excerpt | truncate: 400 }}
       </p>
     </div>
   </div>
