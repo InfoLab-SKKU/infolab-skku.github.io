@@ -1,4 +1,4 @@
-﻿# DO NOT EDIT, GENERATED AUTOMATICALLY
+# DO NOT EDIT, GENERATED AUTOMATICALLY
 
 - id: doi:10.1016/j.inffus.2023.101805
   title: 'Explainable Artificial Intelligence (XAI): What we know and what is left
@@ -49,7 +49,7 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1007/s10462-024-11005-9
+- id: doi:10.1007/S10462-024-11005-9
   title: 'Robustness in deep learning models for medical diagnostics: security and
     adversarial challenges towards robust AI applications'
   authors:
@@ -59,6 +59,17 @@
   publisher: Artificial Intelligence Review
   date: '2024-11-08'
   link: https://doi.org/hb28vp
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: ''
+  title: 'AUToSen: Deep-Learning-Based Implicit Continuous Authentication Using Smartphone
+    Sensors'
+  authors: []
+  publisher: ''
+  date: '2020-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -78,7 +89,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/J.KNOSYS.2020.106688
+- id: doi:10.1016/j.knosys.2020.106688
   title: "Robust hybrid deep learning models for Alzheimer\u2019s progression detection"
   authors:
   - Tamer Abuhmed
@@ -89,8 +100,13 @@
   link: https://doi.org/gm64vk
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  shaker-el-sappagh-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_knosys_2020_106688.pdf
 - id: doi:10.1109/ACCESS.2020.3010556
   title: 'Intensive Care Unit Mortality Prediction: An Improved Patient-Specific Stacking
     Ensemble Model'
@@ -107,7 +123,8 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.inffus.2022.11.028
+  shaker-el-sappagh-list: true
+- id: doi:10.1016/J.INFFUS.2022.11.028
   title: Prediction of Alzheimer's progression based on multimodal Deep-Learning-based
     fusion and visual Explainability of time-series data
   authors:
@@ -122,8 +139,8 @@
   link: https://doi.org/g9b3cx
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.cmpb.2023.107495
   title: "Explainable machine learning models based on multimodal time-series data\
     \ for the early detection of Parkinson\u2019s disease"
@@ -141,7 +158,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/access.2021.3052870
+- id: doi:10.1109/ACCESS.2021.3052870
   title: Automatic Diabetic Retinopathy Grading System Based on Detecting Multiple
     Retinal Lesions
   authors:
@@ -155,9 +172,9 @@
   link: https://doi.org/g9b3dj
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1007/s00521-022-07263-9
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/S00521-022-07263-9
   title: "Two-stage deep learning model for Alzheimer\u2019s disease detection and\
     \ prediction of the mild cognitive impairment time"
   authors:
@@ -171,9 +188,9 @@
   link: https://doi.org/gtpjxh
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/tnsm.2022.3200741
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/TNSM.2022.3200741
   title: Effective Multitask Deep Learning for IoT Malware Detection and Identification
     Using Behavioral Traffic Analysis
   authors:
@@ -187,8 +204,8 @@
   link: https://doi.org/g9b3ct
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.neucom.2022.09.009
   title: "Automatic detection of Alzheimer\u2019s disease progression: An efficient\
     \ information fusion approach with heterogeneous ensemble classifiers"
@@ -224,7 +241,7 @@
   plugin: orcid.py
   file: orcid.yaml
   shaker-el-sappagh-list: true
-- id: doi:10.1109/access.2021.3090998
+- id: doi:10.1109/ACCESS.2021.3090998
   title: Classification and Analysis of Android Malware Images Using Feature Fusion
     Technique
   authors:
@@ -239,8 +256,8 @@
   link: https://doi.org/g9b3dk
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.mtcomm.2020.101897
   title: Machine learning-aided design of aluminum alloys with high performance
   authors:
@@ -254,7 +271,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3390/diagnostics11071155
+- id: doi:10.3390/DIAGNOSTICS11071155
   title: Comprehensive Survey of Using Machine Learning in the COVID-19 Pandemic
   authors:
   - Nora El-Rashidy
@@ -271,9 +288,9 @@
   link: https://doi.org/gnr6cf
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1016/j.future.2018.12.038
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.FUTURE.2018.12.038
   title: Code authorship identification using convolutional neural networks
   authors:
   - Mohammed Abuhamad
@@ -287,8 +304,8 @@
   link: https://doi.org/g9b3dw
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/glocom.2009.5425280
   title: Software-Based Remote Code Attestation in Wireless Sensor Network
   authors:
@@ -339,7 +356,7 @@
   buttons:
   - type: pdf
     link: pdf/preprints202307_0585_v1.pdf
-- id: doi:10.1007/s10462-023-10415-5
+- id: doi:10.1007/S10462-023-10415-5
   title: "Trustworthy artificial intelligence in Alzheimer\u2019s disease: state of\
     \ the art, opportunities, and challenges"
   authors:
@@ -353,8 +370,8 @@
   link: https://doi.org/gtnpbk
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1038/s41598-023-27815-w
   title: "A deep learning based dual encoder\u2013decoder framework for anatomical\
     \ structure segmentation in chest X-ray images"
@@ -378,7 +395,7 @@
   buttons:
   - type: pdf
     link: pdf/s41598-023-27815-w.pdf
-- id: doi:10.1007/s00521-021-06631-1
+- id: doi:10.1007/S00521-021-06631-1
   title: Sepsis prediction in intensive care unit based on genetic feature optimization
     and stacked deep ensemble learning
   authors:
@@ -394,8 +411,8 @@
   link: https://doi.org/g9b3c8
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.jbi.2022.104216
   title: Multilayer dynamic ensemble model for intensive care unit mortality prediction
     of neonate patients
@@ -433,7 +450,7 @@
   buttons:
   - type: pdf
     link: pdf/math10030351.pdf
-- id: doi:10.1007/s00607-025-01485-0
+- id: doi:10.1007/S00607-025-01485-0
   title: 'Sustainable energy management in the AI era: a comprehensive analysis of
     ML and DL approaches'
   authors:
@@ -446,9 +463,9 @@
   link: https://doi.org/hb28vh
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1016/j.jag.2022.102854
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.JAG.2022.102854
   title: Integration of machine learning algorithms and GIS-based approaches to cutaneous
     leishmaniasis prevalence risk mapping
   authors:
@@ -462,8 +479,8 @@
   link: https://doi.org/g9fxqr
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.3390/electronics8060635
   title: "A Comprehensive Medical Decision\u2013Support Framework Based on a Heterogeneous\
     \ Ensemble Classifier for Diabetes Prediction"
@@ -486,7 +503,7 @@
   buttons:
   - type: pdf
     link: pdf/electronics8060635.pdf
-- id: doi:10.1038/s41598-024-54065-1
+- id: doi:10.1038/S41598-024-54065-1
   title: A dynamic fuzzy rule-based inference system using fuzzy inference with semantic
     reasoning
   authors:
@@ -501,9 +518,9 @@
   link: https://doi.org/hb28vj
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/jbhi.2022.3202178
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/JBHI.2022.3202178
   title: Multitask Deep Learning for Cost-Effective Prediction of Patient's Length
     of Stay and Readmission State Using Multimodal Physical Activity Sensory Data
   authors:
@@ -518,8 +535,8 @@
   link: https://doi.org/g9b3cz
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.aej.2023.09.050
   title: "Time-series visual explainability for Alzheimer\u2019s disease progression\
     \ detection for smart healthcare"
@@ -558,7 +575,7 @@
   buttons:
   - type: pdf
     link: pdf/f14071325.pdf
-- id: doi:10.1111/mice.13015
+- id: doi:10.1111/MICE.13015
   title: "Explainable probabilistic deep learning framework for seismic assessment\
     \ of structures using distribution\u2010free prediction intervals"
   authors:
@@ -571,8 +588,8 @@
   link: https://doi.org/gt2k5p
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.2478/popets-2020-0044
   title: "Multi-\u03C7: Identifying Multiple Authors from Source Code Files"
   authors:
@@ -616,7 +633,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.asoc.2024.111749
+- id: doi:10.1016/J.ASOC.2024.111749
   title: Information fusion-based Bayesian optimized heterogeneous deep ensemble model
     based on longitudinal neuroimaging data
   authors:
@@ -630,8 +647,8 @@
   link: https://doi.org/hb28vm
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1007/978-3-030-91434-9_9
   title: 'AdvEdge: Optimizing Adversarial Perturbations Against Interpretable Deep
     Learning'
@@ -648,6 +665,16 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: ''
+  title: Alzheimer's disease diagnosis in the metaverse
+  authors: []
+  publisher: ''
+  date: '2024-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1007/978-3-030-55190-2_36
   title: Alzheimer Disease Prediction Model Based on Decision Fusion of CNN-BiLSTM
     Deep Neural Networks
@@ -663,7 +690,7 @@
   plugin: orcid.py
   file: orcid.yaml
   shaker-el-sappagh-list: true
-- id: doi:10.1016/j.jenvman.2024.120682
+- id: doi:10.1016/J.JENVMAN.2024.120682
   title: Spatial mapping of land susceptibility to dust emissions using optimization
     of attentive Interpretable Tabular Learning (TabNet) model
   authors:
@@ -678,8 +705,8 @@
   link: https://doi.org/g9vswn
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1145/3488932.3527294
   title: Leveraging Spectral Representations of Control Flow Graphs for Efficient
     Analysis of Windows Malware
@@ -696,7 +723,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3390/ELECTRONICS11101648
+- id: doi:10.3390/electronics11101648
   title: "Sentiment Analysis of Users\u2019 Reactions on Social Media during the Pandemic"
   authors:
   - Eldor Abdukhamidov
@@ -709,8 +736,13 @@
   link: https://doi.org/g9b3c6
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  shaker-el-sappagh-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics11101648.pdf
 - id: doi:10.32604/cmc.2021.019069
   title: "Alzheimer\u2019s Disease Diagnosis Based on a Semantic Rule-Based Modeling\
     \ and Reasoning Approach"
@@ -765,7 +797,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/j.pmcj.2024.101922
+- id: doi:10.1016/J.PMCJ.2024.101922
   title: 'MotionID: Towards practical behavioral biometrics-based implicit user authentication
     on smartphones'
   authors:
@@ -778,8 +810,8 @@
   link: https://doi.org/hb28vn
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1038/s41598-023-42796-6
   title: Computer aided progression detection model based on optimized deep LSTM ensemble
     model and the fusion of multivariate time series data
@@ -864,7 +896,7 @@
   - type: pdf
     link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
       Detection and Severity Assessment.pdf
-- id: doi:10.1109/tdsc.2023.3341090
+- id: doi:10.1109/TDSC.2023.3341090
   title: 'Hardening Interpretable Deep Learning Systems: Investigating Adversarial
     Threats and Defenses'
   authors:
@@ -878,9 +910,14 @@
   link: https://doi.org/g9b3cf
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1038/s41598-024-56136-9
+  plugin: sources.py
+  file: sources.yaml
+  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
+    Adversarial Threats and Defenses.png'
+  buttons:
+  - type: pdf
+    link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
+- id: doi:10.1038/S41598-024-56136-9
   title: Temporal dynamics of urban gas pipeline risks
   authors:
   - Fatema Rahimi
@@ -893,6 +930,17 @@
   pmcid: PMC10918077
   date: '2024-03-06'
   link: https://doi.org/hb28vq
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: ''
+  title: Early Detection of Alzheimer's Disease Based on Laplacian Re-Decomposition
+    and XGBoosting.
+  authors: []
+  publisher: ''
+  date: '2023-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -982,7 +1030,17 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.3837/tiis.2008.05.001
+- id: ''
+  title: A dynamic level-based secure data aggregation in wireless sensor network
+  authors: []
+  publisher: ''
+  date: '2009-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.3837/TIIS.2008.05.001
   title: Two-level Key Pool Design-based Random Key Pre-distribution in Wireless Sensor
     Networks
   authors:
@@ -992,9 +1050,9 @@
   link: https://doi.org/bpq7d3
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.57197/jdr-2024-0101
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.57197/JDR-2024-0101
   title: 'Responsible Artificial Intelligence for Mental Health Disorders: Current
     Applications and Future Challenges'
   authors:
@@ -1007,9 +1065,14 @@
   link: https://doi.org/g9b3b9
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/access.2022.3229440
+  plugin: sources.py
+  file: sources.yaml
+  image: 'images/thumbnails/Responsible Artificial Intelligence for Mental Health
+    Disorders: Current Applications and Future Challenges.png'
+  buttons:
+  - type: pdf
+    link: pdf/resposible_artificial_intiligence.pdf
+- id: doi:10.1109/ACCESS.2022.3229440
   title: An IoT-Based Approach for Learning Geometric Shapes in Early Childhood
   authors:
   - Jalal Safari Bazargani
@@ -1022,8 +1085,8 @@
   link: https://doi.org/g4n4s4
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.3390/su142315681
   title: 'AR Search Engine: Semantic Information Retrieval for Augmented Reality Domain'
   authors:
@@ -1074,7 +1137,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/icc.2012.6364127
+- id: doi:10.1109/ICC.2012.6364127
   title: Collaboration in social network-based information dissemination
   authors:
   - Aziz Mohaisen
@@ -1086,8 +1149,8 @@
   link: https://doi.org/hb28vz
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/tip.2015.2488780
   title: Reviewer Summary for Transactions on Image Processing
   authors: []
@@ -1113,6 +1176,17 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: ''
+  title: 'Mistaking friends for foes: An analysis of a social network-based Sybil
+    defense in mobile networks'
+  authors: []
+  publisher: ''
+  date: '2011-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1109/imcom64595.2025.10857525
   title: Knowledge Augmented Significant Language Model-Based Chatbot for Explainable
     Diabetes Mellitus Prediction
@@ -1130,7 +1204,7 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/tifs.2024.3407652
+- id: doi:10.1109/TIFS.2024.3407652
   title: 'SingleADV: Single-Class Target-Specific Attack Against Interpretable Deep
     Learning Systems'
   authors:
@@ -1144,8 +1218,13 @@
   link: https://doi.org/g9b3ch
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: sources.py
+  file: sources.yaml
+  image: 'images/thumbnails/SingleADV: Single-Class Target-Specific Attack Against
+    Interpretable Deep Learning Systems.png'
+  buttons:
+  - type: pdf
+    link: pdf/SingleADV_Single-Class_Target-Specific_Attack_Against_Interpretable_Deep_Learning_Systems.pdf
 - id: doi:10.1371/journal.pone.0285455
   title: Henry gas solubility optimization double machine learning classifier for
     neurosurgical patients
@@ -1179,6 +1258,17 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: ''
+  title: Explainable dynamic ensemble framework for classification based on the late
+    fusion of heterogeneous multimodal data
+  authors: []
+  publisher: ''
+  date: '2023-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.32604/cmc.2021.014446
   title: Timing and Classification of Patellofemoral Osteoarthritis Patients Using
     Fast Large Margin Classifier
@@ -1201,7 +1291,7 @@
   buttons:
   - type: pdf
     link: pdf/cmc_2021_014446.pdf
-- id: doi:10.3390/ELECTRONICS9091443
+- id: doi:10.3390/electronics9091443
   title: Staging Melanocytic Skin Neoplasms Using High-Level Pixel-Based Features
   authors:
   - Mai Ramadan Ibraheem
@@ -1213,8 +1303,13 @@
   link: https://doi.org/g9b3dp
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  shaker-el-sappagh-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics9091443.pdf
 - id: doi:10.1109/imcom64595.2025.10857582
   title: 'Leveraging Large Language Models for Smart Pharmacy Systems: Enhancing Drug
     Safety and Operational Efficiency'
@@ -1290,7 +1385,18 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/svcc61185.2024.10637364
+- id: ''
+  title: "FiSC: A novel approach for Fitzpatrick Scale based Skin Analyzer\u2019s\
+    \ Image Classification"
+  authors: []
+  publisher: ''
+  date: '2025-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1109/SVCC61185.2024.10637364
   title: 'Unmasking the Vulnerabilities of Deep Learning Models: A Multi-Dimensional
     Analysis of Adversarial Attacks and Defenses'
   authors:
@@ -1304,8 +1410,8 @@
   link: https://doi.org/hb28vs
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: wosuid:PPRN:88761299
   title: 'From Attack to Defense: Insights into Deep Learning Security Measures in
     Black-Box Settings'
@@ -1313,6 +1419,17 @@
   publisher: ArXiv
   date: '2024-01-01'
   link: https://publons.com/wos-op/publon/68864877/
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: ''
+  title: 'Infodeslib: Python Library for Dynamic Ensemble Learning using Late Fusion
+    of Multimodal Data'
+  authors: []
+  publisher: ''
+  date: '2024-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1348,7 +1465,7 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/iceeng64546.2025.11031335
+- id: doi:10.1109/ICEENG64546.2025.11031335
   title: Chronic Kidney Disease Detection Augmented with Hybrid Explainable AI
   authors:
   - Mohamed Desoky
@@ -1358,6 +1475,16 @@
   publisher: 2025 15th International Conference on Electrical Engineering (ICEENG)
   date: '2025-05-12'
   link: https://doi.org/hb28vg
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: ''
+  title: Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning
+  authors: []
+  publisher: ''
+  date: '2025-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1400,7 +1527,7 @@
   - type: pdf
     link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity
       (1).pdf
-- id: doi:10.1109/svcc61185.2024.10637362
+- id: doi:10.1109/SVCC61185.2024.10637362
   title: The Impact of Model Variations on the Robustness of Deep Learning Models
     in Adversarial Settings
   authors:
@@ -1414,8 +1541,8 @@
   link: https://doi.org/hb28vr
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: arxiv:2307.06484
   title: Single-Class Target-Specific Attack against Interpretable Deep Learning Systems
   authors: []
@@ -1554,7 +1681,7 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/tifs.2025.3622073
+- id: doi:10.1109/TIFS.2025.3622073
   title: 'AdvChar: Attacking Interpretable NLP Systems'
   authors:
   - Eldor Abdukhamidov
@@ -1564,6 +1691,59 @@
   publisher: IEEE Transactions on Information Forensics and Security
   date: '2025-01-01'
   link: https://doi.org/g97cmw
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: ''
+  title: Analyzing Adversarial Strategies and Countermeasures for Cyberbullying Detection
+  authors: []
+  publisher: ''
+  date: '2025-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: ''
+  title: Attacking interpretable NLP systems
+  authors: []
+  publisher: ''
+  date: '2025-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: ''
+  title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
+    Transformer Systems under Attack'
+  authors: []
+  publisher: ''
+  date: '2025-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: ''
+  title: Semantic information retrieval method for augmented reality domain and device
+    thereof
+  authors: []
+  publisher: ''
+  date: '2025-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: ''
+  title: Iot-based approach method for learning geometric shapes in early childhood
+    and device thereof
+  authors: []
+  publisher: ''
+  date: '2025-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1610,6 +1790,27 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: ''
+  title: Neurological Disorder Progression Prediction and Diagnostic Platform
+  authors: []
+  publisher: ''
+  date: '2023-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: ''
+  title: "Research Article The Role of Medication Data to Enhance the Prediction of\
+    \ Alzheimer\u2019s Progression Using Machine Learning"
+  authors: []
+  publisher: ''
+  date: '2021-01-01'
+  link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.3390/e22080841
   title: Performance Analysis and Constellation Design for the Parallel Quadrature
     Spatial Modulation
@@ -1640,6 +1841,16 @@
   publisher: Advancements in Distributed Computing and Internet Technologies
   date: ''
   link: https://doi.org/cjh563
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: ''
+  title: An analysis of a social network-based Sybil defense in mobile networks
+  authors: []
+  publisher: ''
+  date: '2011-01-01'
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
