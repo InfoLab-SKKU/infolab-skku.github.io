@@ -15,7 +15,7 @@ $sticky: true;
   left: 0;
   height: 3px;
   width: 0%;
-  background: linear-gradient(90deg, #7dd3fc, #0d9488);
+  background: linear-gradient(90deg, var(--secondary), var(--accent));
   z-index: 1001;
   transition: width 0.1s linear;
   pointer-events: none;
@@ -39,7 +39,7 @@ header {
 }
 
 header a {
-  color: #dfe3e7;
+  color: var(--header-link);
   text-decoration: none;
 }
 
@@ -89,7 +89,7 @@ header a {
   width: 30px;
   height: 30px;
   margin: 0;
-  color: #dfe3e7;
+  color: var(--header-link);
   appearance: none;
   transition: background var(--transition);
 }
@@ -99,7 +99,7 @@ header a {
   position: absolute;
   left: 50%;
   top: 50%;
-  color: #dfe3e7;
+  color: var(--header-link);
   font-size: 15px;
   font-family: "Font Awesome 6 Free";
   font-weight: 900;

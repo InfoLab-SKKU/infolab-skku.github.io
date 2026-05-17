@@ -36,6 +36,9 @@
 }
 
 :root {
+  // header nav link color (always on dark header background)
+  --header-link: #dfe3e7;
+
   // font families
   --title: "IBM Plex Sans", sans-serif;
   --heading: "IBM Plex Sans", sans-serif;
