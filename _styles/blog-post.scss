@@ -1,0 +1,142 @@
+---
+---
+
+.blog-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 24px;
+  background: var(--background);
+  color: var(--text);
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+.blog-content section.background {
+  background: transparent;
+}
+
+.blog-content p {
+  margin: 1.6rem 0;
+  line-height: 1.9;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  color: var(--text);
+}
+
+.blog-content h2,
+.blog-content h3,
+.blog-content h4 {
+  margin-top: 2.4rem;
+  line-height: 1.25;
+}
+
+.blog-content h1 {
+  text-align: center;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid var(--accent);
+  background: color-mix(in srgb, var(--accent), var(--background) 92%);
+  padding: 28px 32px;
+  margin: 2rem 0;
+  color: var(--dark-gray);
+  font-style: normal;
+}
+
+.blog-content blockquote p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.blog-content figure {
+  margin: 2.5rem auto;
+  max-width: 100%;
+}
+
+.blog-content figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+}
+
+.blog-content .figure-caption,
+.blog-content figcaption {
+  margin-top: 0.75rem;
+  color: var(--gray);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 1.3rem 0 1.3rem 1.5rem;
+  line-height: 1.85;
+}
+
+.blog-content li + li {
+  margin-top: 0.65rem;
+}
+
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.blog-content th,
+.blog-content td {
+  border: 1px solid var(--light-gray);
+  padding: 1rem;
+  text-align: left;
+}
+
+.blog-content th {
+  background: var(--background-alt);
+}
+
+.blog-content a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.blog-content a:hover {
+  color: var(--accent-dark);
+}
+
+.blog-content pre,
+.blog-content code {
+  background: var(--background-alt);
+  border-radius: var(--rounded);
+}
+
+.blog-content pre {
+  padding: 1rem 1.2rem;
+  overflow: auto;
+}
+
+.blog-content code {
+  padding: 0.2rem 0.4rem;
+}
+
+@media (max-width: 840px) {
+  .blog-content {
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 620px) {
+  .blog-content {
+    padding: 22px 18px;
+  }
+}
