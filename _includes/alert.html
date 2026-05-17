@@ -1,5 +1,5 @@
 {% assign color = site.data.types[include.type].color | default: "#808080" %}
-<div class="alert" style="--color: {{ color }}">
+<div class="alert" role="alert" style="--color: {{ color }}">
   {% assign icon = site.data.types[include.type].icon
     | default: "fa-solid fa-circle-info"
   %}

@@ -58,9 +58,6 @@
       if (response.names) return response.names;
       else throw new Error(JSON.stringify(response));
     } catch (error) {
-      console.groupCollapsed("GitHub fetch tags error");
-      console.log(error);
-      console.groupEnd();
       return [];
     }
   };

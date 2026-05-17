@@ -215,11 +215,6 @@ article:
   text: Article
   tooltip: Article
 
-journal:
-  icon: fa-regular fa-newspaper
-  text: Journal
-  tooltip: Journal
-
 preprint:
   icon: fa-regular fa-eye
   text: Preprint
