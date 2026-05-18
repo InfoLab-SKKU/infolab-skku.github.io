@@ -23,7 +23,7 @@ body {
     flex-grow: 1;
   }
 
-  section {
+  section.background {
     box-sizing: content-box;
     padding: 60px 40px; // fallback
     padding: 60px Max(40px, calc((100% - #{$page}) / 2));
@@ -34,15 +34,15 @@ body {
     }
   }
 
-  section:nth-of-type(even) {
+  section.background:nth-of-type(odd) {
     background: $white;
   }
 
-  section:nth-of-type(even) {
+  section.background:nth-of-type(even) {
     background: $gray-50;
   }
 
-  section:last-of-type {
+  section.background:last-of-type {
     flex-grow: 1;
   }
 }
