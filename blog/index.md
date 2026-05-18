@@ -40,9 +40,29 @@ nav:
 
 {% include search-box.html %}
 
-{% capture _tags_csv %}{% for tag_pair in site.tags %}{{ tag_pair[0] }},{% endfor %}{% endcapture %}
-{% assign _blog_tags = _tags_csv | split: "," | uniq | sort %}
-{% include tags.html tags=_blog_tags %}
+{%- comment -%}
+  Build a list of "padded-count|tagname" strings so a lexical descending sort
+  surfaces the most-used tags first. Take the top 10, strip the count prefix,
+  pass the resulting tag list to tags.html.
+{%- endcomment -%}
+{%- capture tagEntries -%}
+  {%- for tag_pair in site.tags -%}
+    {%- assign tagCount = tag_pair[1].size -%}
+    {%- if tagCount < 10 -%}00{{ tagCount }}
+    {%- elsif tagCount < 100 -%}0{{ tagCount }}
+    {%- else -%}{{ tagCount }}
+    {%- endif -%}|{{ tag_pair[0] }},
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign sortedTags = tagEntries | split: "," | array_filter | sort | reverse -%}
+{%- assign topTags    = sortedTags | slice: 0, 10 -%}
+{%- assign blogTags   = ""         | split: "," -%}
+{%- for tagEntry in topTags -%}
+  {%- assign tagName = tagEntry | split: "|" | last -%}
+  {%- assign blogTags = blogTags | push: tagName -%}
+{%- endfor -%}
+{%- assign blogTags = blogTags | sort -%}
+{% include tags.html tags=blogTags %}
 
 {% include search-info.html %}
 

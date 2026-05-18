@@ -91,7 +91,7 @@
   line-height: 1;
   padding: 3px 7px;
   border-radius: 999px;
-  background: rgba(7,55,123,0.12);
-  color: #07377b;
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
+  color: var(--primary);
   white-space: nowrap;
 }

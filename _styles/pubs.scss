@@ -223,17 +223,17 @@
 
 .citation-container[data-type="journal"] .citation,
 .citation-container[data-type="article"] .citation {
-  border-left-color: #0d9488; /* teal = journal */
+  border-left-color: var(--biomedical); /* teal = journal */
 }
 
 .citation-container[data-type="paper"] .citation,
 .citation-container[data-type="proceedings"] .citation,
 .citation-container[data-type="conference"] .citation {
-  border-left-color: #07377b; /* navy = conference */
+  border-left-color: var(--security); /* navy/sky = conference */
 }
 
 .citation-container[data-type="preprint"] .citation {
-  border-left-color: #d97706; /* amber = preprint */
+  border-left-color: var(--warning); /* amber = preprint */
 }
 
 /* Base card styles */
@@ -296,13 +296,13 @@
   &:hover {
     border-color: var(--primary);
     color: var(--primary);
-    background: rgba(7, 55, 123, 0.05);
+    background: color-mix(in srgb, var(--primary) 8%, transparent);
   }
 
   &.copied {
-    border-color: #0d9488;
-    color: #0d9488;
-    background: rgba(13, 148, 136, 0.07);
+    border-color: var(--biomedical);
+    color: var(--biomedical);
+    background: color-mix(in srgb, var(--biomedical) 10%, transparent);
   }
 }
 

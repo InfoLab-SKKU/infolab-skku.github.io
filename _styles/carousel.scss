@@ -58,8 +58,8 @@
 
 .carousel-caption {
   height:  50px;
-  background: white;
-  color: black;
+  background: var(--background);
+  color: var(--text);
   padding: 5px 5px;
   display: flex;
   align-items: center;
