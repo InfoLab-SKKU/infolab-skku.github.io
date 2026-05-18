@@ -1,898 +1,26 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1016/j.inffus.2023.101805
-  title: 'Explainable Artificial Intelligence (XAI): What we know and what is left
-    to attain Trustworthy Artificial Intelligence'
+- id: doi:10.1109/imcom64595.2025.10857574
+  title: 'Towards Robust Federated Learning: Investigating Poisoning Attacks Under
+    Clients Data Heterogeneity'
   authors:
-  - Sajid Ali
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  - Khan Muhammad
-  - Jose M. Alonso-Moral
-  - Roberto Confalonieri
-  - Riccardo Guidotti
-  - Javier Del Ser
-  - "Natalia D\xEDaz-Rodr\xEDguez"
-  - Francisco Herrera
-  publisher: Information Fusion
-  date: '2023-11-01'
-  link: https://doi.org/gsrxxb
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.neucom.2020.05.087
-  title: "Multimodal multitask deep learning model for Alzheimer\u2019s disease progression\
-    \ detection based on time series data"
-  authors:
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - S.M. Riazul Islam
-  - Kyung Sup Kwak
-  publisher: Neurocomputing
-  date: '2020-10-01'
-  link: https://doi.org/gjgtgg
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-  shaker-el-sappagh-list: true
-- id: ''
-  title: "Shaker El-Sappagh, Khan Muhammad, Jose M. Alonso-Moral, Roberto Confalonieri,\
-    \ Riccardo Guidotti, Javier Del Ser, Natalia D\xEDaz-Rodr\xEDguez, and Francisco\
-    \ Herrera. 2023 \u2026"
-  authors: []
-  publisher: ''
-  date: '2023-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1007/S10462-024-11005-9
-  title: 'Robustness in deep learning models for medical diagnostics: security and
-    adversarial challenges towards robust AI applications'
-  authors:
-  - Haseeb Javed
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: Artificial Intelligence Review
-  date: '2024-11-08'
-  link: https://doi.org/hb28vp
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: ''
-  title: 'AUToSen: Deep-Learning-Based Implicit Continuous Authentication Using Smartphone
-    Sensors'
-  authors: []
-  publisher: ''
-  date: '2020-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1145/3243734.3243738
-  title: Large-Scale and Language-Oblivious Code Authorship Identification
-  authors:
-  - Mohammed Abuhamad
-  - Tamer AbuHmed
-  - Aziz Mohaisen
-  - DaeHun Nyang
-  publisher: Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications
-    Security
-  date: '2018-10-15'
-  link: https://doi.org/gnrn69
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.knosys.2020.106688
-  title: "Robust hybrid deep learning models for Alzheimer\u2019s progression detection"
-  authors:
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  - Jose M. Alonso
-  publisher: Knowledge-Based Systems
-  date: '2021-02-01'
-  link: https://doi.org/gm64vk
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  shaker-el-sappagh-list: true
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/j_knosys_2020_106688.pdf
-- id: doi:10.1109/ACCESS.2020.3010556
-  title: 'Intensive Care Unit Mortality Prediction: An Improved Patient-Specific Stacking
-    Ensemble Model'
-  authors:
-  - Nora El-Rashidy
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Samir Abdelrazek
-  - Hazem M. El-Bakry
-  publisher: IEEE Access
-  date: '2020-01-01'
-  link: https://doi.org/g9b3dt
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-  shaker-el-sappagh-list: true
-- id: doi:10.1016/J.INFFUS.2022.11.028
-  title: Prediction of Alzheimer's progression based on multimodal Deep-Learning-based
-    fusion and visual Explainability of time-series data
-  authors:
-  - Nasir Rahim
-  - Shaker El-Sappagh
-  - Sajid Ali
-  - Khan Muhammad
-  - Javier Del Ser
-  - Tamer Abuhmed
-  publisher: Information Fusion
-  date: '2023-04-01'
-  link: https://doi.org/g9b3cx
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.cmpb.2023.107495
-  title: "Explainable machine learning models based on multimodal time-series data\
-    \ for the early detection of Parkinson\u2019s disease"
-  authors:
-  - Muhammad Junaid
-  - Sajid Ali
-  - Fatma Eid
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: Computer Methods and Programs in Biomedicine
-  pmid: '37003039'
-  date: '2023-06-01'
-  link: https://doi.org/gtgxft
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ACCESS.2021.3052870
-  title: Automatic Diabetic Retinopathy Grading System Based on Detecting Multiple
-    Retinal Lesions
-  authors:
-  - Eman Abdelmaksoud
-  - Shaker El-Sappagh
-  - Sherif Barakat
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: IEEE Access
-  date: '2021-01-01'
-  link: https://doi.org/g9b3dj
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/S00521-022-07263-9
-  title: "Two-stage deep learning model for Alzheimer\u2019s disease detection and\
-    \ prediction of the mild cognitive impairment time"
-  authors:
-  - Shaker El-Sappagh
-  - Hager Saleh
-  - Farman Ali
-  - Eslam Amer
-  - Tamer Abuhmed
-  publisher: Neural Computing and Applications
-  date: '2022-05-08'
-  link: https://doi.org/gtpjxh
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/TNSM.2022.3200741
-  title: Effective Multitask Deep Learning for IoT Malware Detection and Identification
-    Using Behavioral Traffic Analysis
-  authors:
-  - Sajid Ali
-  - Omar Abusabha
-  - Farman Ali
-  - Muhammad Imran
-  - Tamer Abuhmed
-  publisher: IEEE Transactions on Network and Service Management
-  date: '2023-06-01'
-  link: https://doi.org/g9b3ct
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.neucom.2022.09.009
-  title: "Automatic detection of Alzheimer\u2019s disease progression: An efficient\
-    \ information fusion approach with heterogeneous ensemble classifiers"
-  authors:
-  - Shaker El-Sappagh
-  - Farman Ali
-  - Tamer Abuhmed
-  - Jaiteg Singh
-  - Jose M. Alonso
-  publisher: Neurocomputing
-  date: '2022-11-01'
-  link: https://doi.org/g9b3c3
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.future.2020.10.005
-  title: "Alzheimer\u2019s disease progression detection model based on an early fusion\
-    \ of cost-effective multimodal data"
-  authors:
-  - Shaker El-Sappagh
-  - Hager Saleh
-  - Radhya Sahal
-  - Tamer Abuhmed
-  - S.M. Riazul Islam
-  - Farman Ali
-  - Eslam Amer
-  publisher: Future Generation Computer Systems
-  date: '2021-02-01'
-  link: https://doi.org/g9b3df
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-  shaker-el-sappagh-list: true
-- id: doi:10.1109/ACCESS.2021.3090998
-  title: Classification and Analysis of Android Malware Images Using Feature Fusion
-    Technique
-  authors:
-  - Jaiteg Singh
-  - Deepak Thakur
-  - Tanya Gera
-  - Babar Shah
-  - Tamer Abuhmed
-  - Farman Ali
-  publisher: IEEE Access
-  date: '2021-01-01'
-  link: https://doi.org/g9b3dk
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.mtcomm.2020.101897
-  title: Machine learning-aided design of aluminum alloys with high performance
-  authors:
-  - Umer Masood Chaudry
-  - Kotiba Hamad
-  - Tamer Abuhmed
-  publisher: Materials Today Communications
-  date: '2021-03-01'
-  link: https://doi.org/gqb5kd
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/diagnostics11071155
-  title: Comprehensive Survey of Using Machine Learning in the COVID-19 Pandemic
-  authors:
-  - Nora El-Rashidy
-  - Samir Abdelrazik
-  - Tamer Abuhmed
-  - Eslam Amer
-  - Farman Ali
-  - Jong-Wan Hu
-  - Shaker El-Sappagh
-  publisher: Diagnostics
-  pmid: '34202587'
-  pmcid: PMC8303306
-  date: '2021-06-24'
-  link: https://doi.org/gnr6cf
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.future.2018.12.038
-  title: Code authorship identification using convolutional neural networks
-  authors:
-  - Mohammed Abuhamad
-  - Ji-su Rhim
-  - Tamer AbuHmed
-  - Sana Ullah
-  - Sanggil Kang
-  - DaeHun Nyang
-  publisher: Future Generation Computer Systems
-  date: '2019-06-01'
-  link: https://doi.org/g9b3dw
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/glocom.2009.5425280
-  title: Software-Based Remote Code Attestation in Wireless Sensor Network
-  authors:
-  - Tamer AbuHmed
-  - Nandinbold Nyamaa
-  - DaeHun Nyang
-  publisher: GLOBECOM 2009 - 2009 IEEE Global Telecommunications Conference
-  date: '2009-11-01'
-  link: https://doi.org/fqs4ds
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/access.2017.2768564
-  title: "A Fuzzy Ontology and SVM\u2013Based Web Content Classification System"
-  authors:
-  - Farman Ali
-  - Pervez Khan
-  - Kashif Riaz
-  - Daehan Kwak
-  - Tamer Abuhmed
-  - Daeyoung Park
-  - Kyung Sup Kwak
-  publisher: IEEE Access
-  date: '2017-01-01'
-  link: https://doi.org/gddktn
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.20944/preprints202307.0585.v1
-  title: 'Underwater Image Restoration and Enhancement: A Comprehensive Review of
-    Recent Trends, Challenges, and Applications'
-  authors:
-  - Yasmin M. Alsakar
-  - Nehal A Sakr
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: MDPI AG
-  date: '2023-07-10'
-  link: https://doi.org/g9b3cp
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/preprints202307_0585_v1.pdf
-- id: doi:10.1007/S10462-023-10415-5
-  title: "Trustworthy artificial intelligence in Alzheimer\u2019s disease: state of\
-    \ the art, opportunities, and challenges"
-  authors:
-  - Shaker El-Sappagh
-  - Jose M. Alonso-Moral
-  - Tamer Abuhmed
-  - Farman Ali
-  - "Alberto Bugar\xEDn-Diz"
-  publisher: Artificial Intelligence Review
-  date: '2023-03-12'
-  link: https://doi.org/gtnpbk
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1038/s41598-023-27815-w
-  title: "A deep learning based dual encoder\u2013decoder framework for anatomical\
-    \ structure segmentation in chest X-ray images"
-  authors:
-  - Ihsan Ullah
-  - Farman Ali
-  - Babar Shah
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Sang Hyun Park
-  publisher: Scientific Reports
-  pmid: '36646735'
-  pmcid: PMC9842654
-  date: '2023-01-16'
-  link: https://doi.org/g55f46
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: images/thumbnails/10_1038_s41598-023-27815-w.png
-  buttons:
-  - type: pdf
-    link: pdf/s41598-023-27815-w.pdf
-- id: doi:10.1007/s00521-021-06631-1
-  title: Sepsis prediction in intensive care unit based on genetic feature optimization
-    and stacked deep ensemble learning
-  authors:
-  - Nora El-Rashidy
-  - Tamer Abuhmed
-  - Louai Alarabi
-  - Hazem M. El-Bakry
-  - Samir Abdelrazek
-  - Farman Ali
-  - Shaker El-Sappagh
-  publisher: Neural Computing and Applications
-  date: '2021-11-03'
-  link: https://doi.org/g9b3c8
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.jbi.2022.104216
-  title: Multilayer dynamic ensemble model for intensive care unit mortality prediction
-    of neonate patients
-  authors:
-  - Firuz Juraev
-  - Shaker El-Sappagh
-  - Eldor Abdukhamidov
-  - Farman Ali
-  - Tamer Abuhmed
-  publisher: Journal of Biomedical Informatics
-  pmid: '36208833'
-  date: '2022-11-01'
-  link: https://doi.org/g9b3c4
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/math10030351
-  title: An Enhanced Grey Wolf Optimizer with a Velocity-Aided Global Search Mechanism
-  authors:
-  - Farshad Rezaei
-  - Hamid Reza Safavi
-  - Mohamed Abd Elaziz
-  - Shaker H. Ali El-Sappagh
-  - Mohammed Azmi Al-Betar
-  - Tamer Abuhmed
-  publisher: Mathematics
-  date: '2022-01-24'
-  link: https://doi.org/gtq6g4
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/math10030351.pdf
-- id: doi:10.1007/S00607-025-01485-0
-  title: 'Sustainable energy management in the AI era: a comprehensive analysis of
-    ML and DL approaches'
-  authors:
-  - Haseeb Javed
-  - Fatma Eid
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: Computing
-  date: '2025-05-22'
-  link: https://doi.org/hb28vh
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/J.JAG.2022.102854
-  title: Integration of machine learning algorithms and GIS-based approaches to cutaneous
-    leishmaniasis prevalence risk mapping
-  authors:
-  - Negar Shabanpour
-  - Seyed Vahid Razavi-Termeh
-  - Abolghasem Sadeghi-Niaraki
-  - Soo-Mi Choi
-  - Tamer Abuhmed
-  publisher: International Journal of Applied Earth Observation and Geoinformation
-  date: '2022-08-01'
-  link: https://doi.org/g9fxqr
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/electronics8060635
-  title: "A Comprehensive Medical Decision\u2013Support Framework Based on a Heterogeneous\
-    \ Ensemble Classifier for Diabetes Prediction"
-  authors:
-  - Shaker El-Sappagh
-  - Mohammed Elmogy
-  - Farman Ali
-  - Tamer ABUHMED
-  - S. M. Riazul Islam
-  - Kyung-Sup Kwak
-  publisher: Electronics
-  date: '2019-06-05'
-  link: https://doi.org/g9b3dv
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  shaker-el-sappagh-list: true
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics8060635.pdf
-- id: doi:10.1038/S41598-024-54065-1
-  title: A dynamic fuzzy rule-based inference system using fuzzy inference with semantic
-    reasoning
-  authors:
-  - Nora Shoaip
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: Scientific Reports
-  pmid: '38383597'
-  pmcid: PMC10881567
-  date: '2024-02-21'
-  link: https://doi.org/hb28vj
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/JBHI.2022.3202178
-  title: Multitask Deep Learning for Cost-Effective Prediction of Patient's Length
-    of Stay and Readmission State Using Multimodal Physical Activity Sensory Data
-  authors:
-  - Sajid Ali
-  - Shaker El-Sappagh
-  - Farman Ali
-  - Muhammad Imran
-  - Tamer Abuhmed
-  publisher: IEEE Journal of Biomedical and Health Informatics
-  pmid: '36037451'
-  date: '2022-12-01'
-  link: https://doi.org/g9b3cz
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.aej.2023.09.050
-  title: "Time-series visual explainability for Alzheimer\u2019s disease progression\
-    \ detection for smart healthcare"
-  authors:
-  - Nasir Rahim
-  - Tamer Abuhmed
-  - Seyedali Mirjalili
-  - Shaker El-Sappagh
-  - Khan Muhammad
-  publisher: Alexandria Engineering Journal
-  date: '2023-11-01'
-  link: https://doi.org/g9b3cj
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/f14071325
-  title: Wildfire Susceptibility Mapping Using Deep Learning Algorithms in Two Satellite
-    Imagery Dataset
-  authors:
-  - Nazanin Bahadori
-  - Seyed Vahid Razavi-Termeh
-  - Abolghasem Sadeghi-Niaraki
-  - Khalifa M. Al-Kindi
-  - Tamer Abuhmed
-  - Behrokh Nazeri
-  - Soo-Mi Choi
-  publisher: Forests
-  date: '2023-06-28'
-  link: https://doi.org/g9b3cs
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/f14071325.pdf
-- id: doi:10.1111/MICE.13015
-  title: "Explainable probabilistic deep learning framework for seismic assessment\
-    \ of structures using distribution\u2010free prediction intervals"
-  authors:
-  - Mohamed Noureldin
-  - Tamer Abuhmed
-  - Melike Saygi
-  - Jinkoo Kim
-  publisher: Computer-Aided Civil and Infrastructure Engineering
-  date: '2023-08-01'
-  link: https://doi.org/gt2k5p
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.2478/popets-2020-0044
-  title: "Multi-\u03C7: Identifying Multiple Authors from Source Code Files"
-  authors:
+  - Abdenour Soubih
+  - Seyyid Ahmed Lahmer
   - Mohammed Abuhamad
   - Tamer Abuhmed
-  - DaeHun Nyang
-  - David Mohaisen
-  publisher: Proceedings on Privacy Enhancing Technologies
-  date: '2020-07-01'
-  link: https://doi.org/g9b3dr
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1145/3461666
-  title: Large-scale and Robust Code Authorship Identification with Deep Feature Learning
-  authors:
-  - Mohammed Abuhamad
-  - Tamer Abuhmed
-  - David Mohaisen
-  - Daehun Nyang
-  publisher: ACM Transactions on Privacy and Security
-  date: '2021-07-19'
-  link: https://doi.org/gprnz3
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.jallcom.2021.162104
-  title: Age-hardening behavior guided by the multi-objective evolutionary algorithm
-    and machine learning
-  authors:
-  - Russlan Jaafreh
-  - Umer Masood Chaudry
-  - Kotiba Hamad
-  - Tamer Abuhmed
-  publisher: Journal of Alloys and Compounds
-  date: '2022-02-01'
-  link: https://doi.org/gqb5kb
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/J.ASOC.2024.111749
-  title: Information fusion-based Bayesian optimized heterogeneous deep ensemble model
-    based on longitudinal neuroimaging data
-  authors:
-  - Nasir Rahim
-  - Shaker El-Sappagh
-  - Haytham Rizk
-  - Omar Amin El-serafy
-  - Tamer Abuhmed
-  publisher: Applied Soft Computing
-  date: '2024-09-01'
-  link: https://doi.org/hb28vm
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1007/978-3-030-91434-9_9
-  title: 'AdvEdge: Optimizing Adversarial Perturbations Against Interpretable Deep
-    Learning'
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Firuz Juraev
-  - Eric Chan-Tin
-  - Tamer AbuHmed
-  publisher: Lecture Notes in Computer Science
-  date: '2021-01-01'
-  link: https://doi.org/hb28vx
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: ''
-  title: Alzheimer's disease diagnosis in the metaverse
-  authors: []
-  publisher: ''
-  date: '2024-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1007/978-3-030-55190-2_36
-  title: Alzheimer Disease Prediction Model Based on Decision Fusion of CNN-BiLSTM
-    Deep Neural Networks
-  authors:
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Kyung Sup Kwak
-  publisher: Advances in Intelligent Systems and Computing
-  date: '2020-08-25'
-  link: https://doi.org/g9b3dh
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-  shaker-el-sappagh-list: true
-- id: doi:10.1016/J.JENVMAN.2024.120682
-  title: Spatial mapping of land susceptibility to dust emissions using optimization
-    of attentive Interpretable Tabular Learning (TabNet) model
-  authors:
-  - Seyed Vahid Razavi-Termeh
-  - Abolghasem Sadeghi-Niaraki
-  - Armin Sorooshian
-  - Tamer Abuhmed
-  - Soo-Mi Choi
-  publisher: Journal of Environmental Management
-  pmid: '38670008'
-  date: '2024-05-01'
-  link: https://doi.org/g9vswn
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1145/3488932.3527294
-  title: Leveraging Spectral Representations of Control Flow Graphs for Efficient
-    Analysis of Windows Malware
-  authors:
-  - Qirui Sun
-  - Eldor Abdukhamidov
-  - Tamer Abuhmed
-  - Mohammed Abuhamad
-  publisher: Proceedings of the 2022 ACM on Asia Conference on Computer and Communications
-    Security
-  date: '2022-05-30'
-  link: https://doi.org/hb28vw
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/electronics11101648
-  title: "Sentiment Analysis of Users\u2019 Reactions on Social Media during the Pandemic"
-  authors:
-  - Eldor Abdukhamidov
-  - Firuz Juraev
-  - Mohammed Abuhamad
-  - Shaker El-Sappagh
-  - Tamer AbuHmed
-  publisher: Electronics
-  date: '2022-05-22'
-  link: https://doi.org/g9b3c6
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
+  publisher: 2025 19th International Conference on Ubiquitous Information Management
+    and Communication (IMCOM)
+  date: '2025-01-03'
+  link: https://doi.org/g9ck37
+  orcid: 0009-0002-4648-9289
+  abdenour-soubih-list: true
   plugin: sources.py
   file: sources.yaml
-  shaker-el-sappagh-list: true
-  image: ''
+  image: images/thumbnails/Screenshot from 2025-04-10 04-21-10.png
   buttons:
   - type: pdf
-    link: pdf/electronics11101648.pdf
-- id: doi:10.32604/cmc.2021.019069
-  title: "Alzheimer\u2019s Disease Diagnosis Based on a Semantic Rule-Based Modeling\
-    \ and Reasoning Approach"
-  authors:
-  - Nora Shoaip
-  - Amira Rezk
-  - Shaker EL-Sappagh
-  - Tamer Abuhmed
-  - Sherif Barakat
-  - Mohammed Elmogy
-  publisher: Computers, Materials &amp; Continua
-  date: '2021-01-01'
-  link: https://doi.org/g869jj
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/electronics10161956
-  title: A Short Review on the Machine Learning-Guided Oxygen Uptake Prediction for
-    Sport Science Applications
-  authors:
-  - Haneen Alzamer
-  - Tamer Abuhmed
-  - Kotiba Hamad
-  publisher: Electronics
-  date: '2021-08-13'
-  link: https://doi.org/g9b3dc
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics10161956.pdf
-- id: doi:10.1155/2021/8439655
-  title: "The Role of Medication Data to Enhance the Prediction of Alzheimer\u2019\
-    s Progression Using Machine Learning"
-  authors:
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Bader Alouffi
-  - Radhya Sahal
-  - Naglaa Abdelhade
-  - Hager Saleh
-  publisher: Computational Intelligence and Neuroscience
-  pmid: '34603436'
-  pmcid: PMC8481044
-  date: '2021-01-01'
-  link: https://doi.org/g6srcw
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/J.PMCJ.2024.101922
-  title: 'MotionID: Towards practical behavioral biometrics-based implicit user authentication
-    on smartphones'
-  authors:
-  - Mohsen Ali Alawami
-  - Tamer Abuhmed
-  - Mohammed Abuhamad
-  - Hyoungshick Kim
-  publisher: Pervasive and Mobile Computing
-  date: '2024-07-01'
-  link: https://doi.org/hb28vn
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1038/s41598-023-42796-6
-  title: Computer aided progression detection model based on optimized deep LSTM ensemble
-    model and the fusion of multivariate time series data
-  authors:
-  - Hager Saleh
-  - Eslam Amer
-  - Tamer Abuhmed
-  - Amjad Ali
-  - Ala Al-Fuqaha
-  - Shaker El-Sappagh
-  publisher: Scientific Reports
-  pmid: '37770490'
-  pmcid: PMC10539296
-  date: '2023-09-28'
-  link: https://doi.org/g9b3ck
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: images/thumbnails/10_1038_s41598-023-42796-6.png
-  buttons:
-  - type: pdf
-    link: pdf/s41598-023-42796-6.pdf
-- id: doi:10.1145/3488932.3527283
-  title: Black-box and Target-specific Attack Against Interpretable Deep Learning
-    Systems
-  authors:
-  - Eldor Abdukhamidov
-  - Firuz Juraev
-  - Mohammed Abuhamad
-  - Tamer Abuhmed
-  publisher: Proceedings of the 2022 ACM on Asia Conference on Computer and Communications
-    Security
-  date: '2022-05-30'
-  link: https://doi.org/g4n9xv
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/math10050766
-  title: A Comparative Study of Strain Rate Constitutive and Machine Learning Models
-    for Flow Behavior of AZ31-0.5 Ca Mg Alloy during Hot Deformation
-  authors:
-  - Umer Masood Chaudry
-  - Russlan Jaafreh
-  - Abdul Malik
-  - Tea-Sung Jun
-  - Kotiba Hamad
-  - Tamer Abuhmed
-  publisher: Mathematics
-  date: '2022-02-27'
-  link: https://doi.org/g9b3c9
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/math10050766.pdf
-- id: doi:10.1109/TDSC.2023.3341090
-  title: 'Hardening Interpretable Deep Learning Systems: Investigating Adversarial
-    Threats and Defenses'
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Simon S. Woo
-  - Eric Chan-Tin
-  - Tamer Abuhmed
-  publisher: IEEE Transactions on Dependable and Secure Computing
-  date: '2024-07-01'
-  link: https://doi.org/g9b3cf
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
-    Adversarial Threats and Defenses.png'
-  buttons:
-  - type: pdf
-    link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
+    link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity
+      (1).pdf
 - id: doi:10.3390/diagnostics14212385
   title: Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
     Detection and Severity Assessment
@@ -907,954 +35,16 @@
   date: '2024-10-25'
   link: https://doi.org/g9b3cd
   orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
+  shaker-el-sappagh-list: true
   plugin: sources.py
   file: sources.yaml
-  shaker-el-sappagh-list: true
+  tamer-abuhmed-list: true
   image: images/thumbnails/Explainable Multi-Layer Dynamic Ensemble Framework Optimized
     for Depression Detection and Severity Assessment.png
   buttons:
   - type: pdf
     link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
       Detection and Severity Assessment.pdf
-- id: doi:10.1038/S41598-024-56136-9
-  title: Temporal dynamics of urban gas pipeline risks
-  authors:
-  - Fatema Rahimi
-  - Abolghasem Sadeghi-Niaraki
-  - Mostafa Ghodousi
-  - Tamer Abuhmed
-  - Soo-Mi Choi
-  publisher: Scientific Reports
-  pmid: '38448517'
-  pmcid: PMC10918077
-  date: '2024-03-06'
-  link: https://doi.org/hb28vq
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: ''
-  title: Early Detection of Alzheimer's Disease Based on Laplacian Re-Decomposition
-    and XGBoosting.
-  authors: []
-  publisher: ''
-  date: '2023-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1016/j.jmat.2021.11.004
-  title: Crystal structure guided machine learning for the discovery and design of
-    intrinsically hard materials
-  authors:
-  - Russlan Jaafreh
-  - Tamer Abuhmed
-  - Jung-Gu Kim
-  - Kotiba Hamad
-  publisher: Journal of Materiomics
-  date: '2022-05-01'
-  link: https://doi.org/g9b3c7
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1145/3488932.3527278
-  title: 'Depth, Breadth, and Complexity: Ways to Attack and Defend Deep Learning
-    Models'
-  authors:
-  - Firuz Juraev
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Tamer Abuhmed
-  publisher: Proceedings of the 2022 ACM on Asia Conference on Computer and Communications
-    Security
-  date: '2022-05-30'
-  link: https://doi.org/gsjswp
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/thms.2015.2449309
-  title: 'UOIT Keyboard: A Constructive Keyboard for Small Touchscreen Devices'
-  authors:
-  - Tamer AbuHmed
-  - Kyunghee Lee
-  - DaeHun Nyang
-  publisher: IEEE Transactions on Human-Machine Systems
-  date: '2015-12-01'
-  link: https://doi.org/g5h28r
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.13088/jiis.2024.30.2.025
-  title: Integrating Digital Twin Technology with Dynamic Ensemble Learning for Sepsis
-    Prediction in Intensive Care Units
-  authors:
-  - Amirhossein Danesh
-  - Firuz Juraev
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: Journal of Intelligence and Information Systems
-  date: '2024-06-30'
-  link: https://doi.org/hb3f6s
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/niles59815.2023.10296640
-  title: "LSTM deep learning model for Alzheimer\u2019s disease prediction based on\
-    \ cost-effective time series cognitive scores"
-  authors:
-  - Hager Saleh
-  - Nora El-Rashidy
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  publisher: 2023 5th Novel Intelligent and Leading Emerging Sciences Conference (NILES)
-  date: '2023-10-21'
-  link: https://doi.org/hb3f6t
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2211.15926
-  title: 'Interpretations cannot be trusted: Stealthy and effective adversarial perturbations
-    against interpretable deep learning'
-  authors: []
-  publisher: ''
-  date: '2022-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: A dynamic level-based secure data aggregation in wireless sensor network
-  authors: []
-  publisher: ''
-  date: '2009-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.3837/TIIS.2008.05.001
-  title: Two-level Key Pool Design-based Random Key Pre-distribution in Wireless Sensor
-    Networks
-  authors:
-  - Abedelaziz Mohaisen
-  publisher: KSII Transactions on Internet and Information Systems
-  date: '2008-10-25'
-  link: https://doi.org/bpq7d3
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.57197/JDR-2024-0101
-  title: 'Responsible Artificial Intelligence for Mental Health Disorders: Current
-    Applications and Future Challenges'
-  authors:
-  - Shaker El-Sappagh
-  - Waleed Nazih
-  - Meshal Alharbi
-  - Tamer Abuhmed
-  publisher: Journal of Disability Research
-  date: '2025-01-01'
-  link: https://doi.org/g9b3b9
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: 'images/thumbnails/Responsible Artificial Intelligence for Mental Health
-    Disorders: Current Applications and Future Challenges.png'
-  buttons:
-  - type: pdf
-    link: pdf/resposible_artificial_intiligence.pdf
-- id: doi:10.1109/ACCESS.2022.3229440
-  title: An IoT-Based Approach for Learning Geometric Shapes in Early Childhood
-  authors:
-  - Jalal Safari Bazargani
-  - Abolghasem Sadeghi-Niaraki
-  - Fatema Rahimi
-  - Tamer Abuhmed
-  - Soo-Mi Choi
-  publisher: IEEE Access
-  date: '2022-01-01'
-  link: https://doi.org/g4n4s4
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.3390/su142315681
-  title: 'AR Search Engine: Semantic Information Retrieval for Augmented Reality Domain'
-  authors:
-  - Maryam Shakeri
-  - Abolghasem Sadeghi-Niaraki
-  - Soo-Mi Choi
-  - Tamer AbuHmed
-  publisher: Sustainability
-  date: '2022-11-25'
-  link: https://doi.org/gr6s9n
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/su142315681.pdf
-- id: doi:10.1145/3494108.3522768
-  title: 'MLxPack: Investigating the Effects of Packers on ML-based Malware Detection
-    Systems Using Static and Dynamic Traits'
-  authors:
-  - Qirui Sun
-  - Mohammed Abuhamad
-  - Eldor Abdukhamidov
-  - Eric Chan-Tin
-  - Tamer Abuhmed
-  publisher: Proceedings of the 1st Workshop on Cybersecurity and Social Sciences
-  date: '2022-05-30'
-  link: https://doi.org/hb28vv
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.eswa.2025.129812
-  title: 'GraphShield: Advanced dynamic graph-based malware detection using graph
-    neural networks'
-  authors:
-  - Eslam Amer
-  - Shaker El-Sappagh
-  - Tamer Abuhamad
-  - Bander Ali Saleh Al-Rimy
-  - Alaa Mohasseb
-  publisher: Expert Systems with Applications
-  date: '2026-03-01'
-  link: https://doi.org/g95wqv
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ICC.2012.6364127
-  title: Collaboration in social network-based information dissemination
-  authors:
-  - Aziz Mohaisen
-  - Tamer AbuHmed
-  - Ting Zhu
-  - Manar Mohaisen
-  publisher: 2012 IEEE International Conference on Communications (ICC)
-  date: '2012-06-01'
-  link: https://doi.org/hb28vz
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/tip.2015.2488780
-  title: Reviewer Summary for Transactions on Image Processing
-  authors: []
-  publisher: IEEE Transactions on Image Processing
-  date: '2015-12-01'
-  link: https://doi.org/hb3xb2
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/imcom56909.2023.10035603
-  title: Real-time human detection and behavior recognition using low-cost hardware
-  authors:
-  - Bojun Wang
-  - Sajid Ali
-  - Xinyi Fan
-  - Tamer Abuhmed
-  publisher: 2023 17th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2023-01-03'
-  link: https://doi.org/hb3f6w
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: 'Mistaking friends for foes: An analysis of a social network-based Sybil
-    defense in mobile networks'
-  authors: []
-  publisher: ''
-  date: '2011-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/imcom64595.2025.10857525
-  title: Knowledge Augmented Significant Language Model-Based Chatbot for Explainable
-    Diabetes Mellitus Prediction
-  authors:
-  - Mazen Elfayoumi
-  - Mohamed AbouElazm
-  - Omar Mohamed
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  publisher: 2025 19th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2025-01-03'
-  link: https://doi.org/hb3f6x
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/TIFS.2024.3407652
-  title: 'SingleADV: Single-Class Target-Specific Attack Against Interpretable Deep
-    Learning Systems'
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - George K. Thiruvathukal
-  - Hyoungshick Kim
-  - Tamer Abuhmed
-  publisher: IEEE Transactions on Information Forensics and Security
-  date: '2024-01-01'
-  link: https://doi.org/g9b3ch
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: 'images/thumbnails/SingleADV: Single-Class Target-Specific Attack Against
-    Interpretable Deep Learning Systems.png'
-  buttons:
-  - type: pdf
-    link: pdf/SingleADV_Single-Class_Target-Specific_Attack_Against_Interpretable_Deep_Learning_Systems.pdf
-- id: doi:10.1371/journal.pone.0285455
-  title: Henry gas solubility optimization double machine learning classifier for
-    neurosurgical patients
-  authors:
-  - Diana T. Mosa
-  - Amena Mahmoud
-  - John Zaki
-  - Shaymaa E. Sorour
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: PLOS ONE
-  pmid: '37167226'
-  pmcid: PMC10174516
-  date: '2023-05-11'
-  link: https://doi.org/gs6qrs
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: images/thumbnails/10_1371_journal_pone_0285455.jpg
-  buttons:
-  - type: pdf
-    link: pdf/journal_pone_0285455.pdf
-- id: wosuid:PPRN:88760232
-  title: Impact of architectural modifications on deep learning adversarial robustness
-  authors: []
-  publisher: ArXiv
-  date: '2024-01-01'
-  link: https://publons.com/wos-op/publon/68109325/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: Explainable dynamic ensemble framework for classification based on the late
-    fusion of heterogeneous multimodal data
-  authors: []
-  publisher: ''
-  date: '2023-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.32604/cmc.2021.014446
-  title: Timing and Classification of Patellofemoral Osteoarthritis Patients Using
-    Fast Large Margin Classifier
-  authors:
-  - Mai Ramadan Ibraheem
-  - Jilan adel
-  - Alaa Eldin Balbaa
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: Computers, Materials &amp; Continua
-  date: '2021-01-01'
-  link: https://doi.org/g9b3dn
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  shaker-el-sappagh-list: true
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/cmc_2021_014446.pdf
-- id: doi:10.3390/electronics9091443
-  title: Staging Melanocytic Skin Neoplasms Using High-Level Pixel-Based Features
-  authors:
-  - Mai Ramadan Ibraheem
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: Electronics
-  date: '2020-09-04'
-  link: https://doi.org/g9b3dp
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  shaker-el-sappagh-list: true
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics9091443.pdf
-- id: doi:10.1109/imcom64595.2025.10857582
-  title: 'Leveraging Large Language Models for Smart Pharmacy Systems: Enhancing Drug
-    Safety and Operational Efficiency'
-  authors:
-  - Abdelrahman Osheba
-  - Ahmed Abou-El-Ela
-  - Osama Adel
-  - Youssef Maaod
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  publisher: 2025 19th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2025-01-03'
-  link: https://doi.org/g94xw2
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.3390/app13169425
-  title: 'TruMuzic: A Deep Learning and Data Provenance-Based Approach to Evaluating
-    the Authenticity of Music'
-  authors:
-  - Kuldeep Gurjar
-  - Yang-Sae Moon
-  - Tamer Abuhmed
-  publisher: Applied Sciences
-  date: '2023-08-19'
-  link: https://doi.org/g9b3cm
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/app13169425.pdf
-- id: arxiv:2307.11906
-  title: Unveiling vulnerabilities in interpretable deep learning systems with query-efficient
-    black-box attacks
-  authors: []
-  publisher: ''
-  date: '2023-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: arxiv:2307.06496
-  title: Microbial Genetic Algorithm-based Black-box Attack against Interpretable
-    Deep Learning Systems
-  authors: []
-  publisher: ''
-  date: '2023-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1371/journal.pone.0332134
-  title: Mortality prediction for ICU patients with mental disorders using large language
-    models ensemble and unstructured medical notes
-  authors:
-  - Waleed Nazih
-  - Tamer Abuhmed
-  - Meshal Alharbi
-  - Shaker El-Sappagh
-  publisher: PLOS One
-  pmid: '40971951'
-  pmcid: PMC12448993
-  date: '2025-09-19'
-  link: https://doi.org/g939nc
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: ''
-  title: "FiSC: A novel approach for Fitzpatrick Scale based Skin Analyzer\u2019s\
-    \ Image Classification"
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/SVCC61185.2024.10637364
-  title: 'Unmasking the Vulnerabilities of Deep Learning Models: A Multi-Dimensional
-    Analysis of Adversarial Attacks and Defenses'
-  authors:
-  - Firuz Juraev
-  - Mohammed Abuhamad
-  - Eric Chan-Tin
-  - George K. Thiruvathukal
-  - Tamer Abuhmed
-  publisher: 2024 Silicon Valley Cybersecurity Conference (SVCC)
-  date: '2024-06-17'
-  link: https://doi.org/hb28vs
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: wosuid:PPRN:88761299
-  title: 'From Attack to Defense: Insights into Deep Learning Security Measures in
-    Black-Box Settings'
-  authors: []
-  publisher: ArXiv
-  date: '2024-01-01'
-  link: https://publons.com/wos-op/publon/68864877/
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: 'Infodeslib: Python Library for Dynamic Ensemble Learning using Late Fusion
-    of Multimodal Data'
-  authors: []
-  publisher: ''
-  date: '2024-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1016/j.knosys.2025.115104
-  title: Multi-plane multi-slice longitudinal MRI for deep ensemble progression detection
-    based on enhanced residual multi-head self-attention
-  authors:
-  - Nasir Rahim
-  - Shaker El-Sappagh
-  - Mustaqeem Khan
-  - Maria Bashir
-  - Younhyun Jung
-  - Tamer Abuhmed
-  publisher: Knowledge-Based Systems
-  date: '2026-02-01'
-  link: https://doi.org/hb28vf
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/jbhi.2025.3631655
-  title: '4DfCF: 4D fMRI CrossFormer Vision Transformer'
-  authors:
-  - Chensheng Zheng
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: IEEE Journal of Biomedical and Health Informatics
-  pmid: '41231696'
-  date: '2025-01-01'
-  link: https://doi.org/hb3f6z
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/ICEENG64546.2025.11031335
-  title: Chronic Kidney Disease Detection Augmented with Hybrid Explainable AI
-  authors:
-  - Mohamed Desoky
-  - Nada Gamal ElAdl
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  publisher: 2025 15th International Conference on Electrical Engineering (ICEENG)
-  date: '2025-05-12'
-  link: https://doi.org/hb28vg
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: ''
-  title: Stealthy Query-Efficient Opaque Attack Against Interpretable Deep Learning
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1101/2025.01.25.24319689
-  title: Bone Densitometry Dataset for Computer Aided Osteoporosis Disease Detection
-  authors:
-  - Negin Masnabadi
-  - Abolghasem Sadeghi-Niaraki
-  - Mohammad Karimi
-  - Tamer AbuHmed
-  - Nasrin Azarbani
-  - Soo-Mi Choi
-  publisher: openRxiv
-  date: '2025-01-28'
-  link: https://doi.org/hb3f62
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/imcom64595.2025.10857574
-  title: 'Towards Robust Federated Learning: Investigating Poisoning Attacks Under
-    Clients Data Heterogeneity'
-  authors:
-  - Abdenour Soubih
-  - Seyyid Ahmed Lahmer
-  - Mohammed Abuhamad
-  - Tamer Abuhmed
-  publisher: 2025 19th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2025-01-03'
-  link: https://doi.org/g9ck37
-  orcid: 0009-0002-4648-9289
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  abdenour-soubih-list: true
-  image: images/thumbnails/Screenshot from 2025-04-10 04-21-10.png
-  buttons:
-  - type: pdf
-    link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity
-      (1).pdf
-- id: doi:10.1109/SVCC61185.2024.10637362
-  title: The Impact of Model Variations on the Robustness of Deep Learning Models
-    in Adversarial Settings
-  authors:
-  - Firuz Juraev
-  - Mohammed Abuhamad
-  - Simon S. Woo
-  - George K Thiruvathukal
-  - Tamer Abuhmed
-  publisher: 2024 Silicon Valley Cybersecurity Conference (SVCC)
-  date: '2024-06-17'
-  link: https://doi.org/hb28vr
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: arxiv:2307.06484
-  title: Single-Class Target-Specific Attack against Interpretable Deep Learning Systems
-  authors: []
-  publisher: ''
-  date: '2023-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.21203/rs.3.rs-49216/v1
-  title: An Approach for Measuring Spatial Similarity Among COVID-19 Epicenters
-  authors:
-  - Neda Kaffash Charandabi
-  - Abolghasem Sadeghi-Niaraki
-  - Soo-Mi Choi
-  publisher: Springer Science and Business Media LLC
-  date: '2020-08-04'
-  link: https://doi.org/hb3f63
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/jiot.2020.3046055
-  title: 2020 Index IEEE Internet of Things Journal Vol. 7
-  authors: []
-  publisher: IEEE Internet of Things Journal
-  date: '2020-12-01'
-  link: https://doi.org/hb3f64
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1016/j.engappai.2026.114291
-  title: "Trustworthy Alzheimer\u2019s diagnosis: Integrating robustness, fairness,\
-    \ and explainability in neuroimaging based deep ensemble framework"
-  authors:
-  - Maria Bashir
-  - Nasir Rahim
-  - Shaker El-Sappagh
-  - Omar Amin El-Serafy
-  - Tamer Abuhmed
-  publisher: Engineering Applications of Artificial Intelligence
-  date: '2026-05-01'
-  link: https://doi.org/hbq4s7
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/imcom69009.2026.11360837
-  title: 'Towards Reliable and Interpretable Wheat Disease Diagnosis: Unified Framework
-    Incorporating Vision Transformer and Advanced Object Detection'
-  authors:
-  - Mohamed Rady
-  - Mohamed Elsayed
-  - Aser Mohamed
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: 2026 20th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2026-01-04'
-  link: https://doi.org/hb3f65
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/imcom69009.2026.11360803
-  title: Explainable Ensemble Deep Learning Architecture for Fruit Disease Detection
-    for Sustainable Agriculture and Food System Resilience
-  authors:
-  - Nabila Ahmed Ali Mohammed Hafez
-  - Mohammed Haitham Mohammed
-  - Farah Mohamed
-  - Mohamed Ghetas
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: 2026 20th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2026-01-04'
-  link: https://doi.org/hb3f66
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/imcom69009.2026.11360976
-  title: Robust Multi-Scale 3D Crossformer Model for Multimodal Medical Image Analysis
-    using Volumetric MRI and Structured Data
-  authors:
-  - Chensheng Zheng
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: 2026 20th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2026-01-04'
-  link: https://doi.org/hb3f67
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1016/b978-0-443-27448-0.00007-x
-  title: 'Smart healthcare: fusion of multimodal medical signals'
-  authors:
-  - Nasir Rahim
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: Cybersecurity for Healthcare Systems in the Internet of Medical Things
-    Era
-  date: '2026-01-01'
-  link: https://doi.org/hb3f68
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.14722/ndss.2026.241872
-  title: A Deep Dive into Function Inlining and its Security Implications for ML-based
-    Binary Analysis
-  authors:
-  - Omar Abusabha
-  - Jiyong Uhm
-  - Tamer Abuhmed
-  - Hyungjoon Koo
-  publisher: Proceedings 2026 Network and Distributed System Security Symposium
-  date: '2026-01-01'
-  link: https://doi.org/hb3xb3
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/tr.2025.3646839
-  title: 2025 Index IEEE Transactions on Reliability Vol. 74
-  authors: []
-  publisher: IEEE Transactions on Reliability
-  date: '2025-12-01'
-  link: https://doi.org/hb3f69
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/TIFS.2025.3622073
-  title: 'AdvChar: Attacking Interpretable NLP Systems'
-  authors:
-  - Eldor Abdukhamidov
-  - Tamer Abuhmed
-  - Joanna C. S. Santos
-  - Mohammed Abuhamad
-  publisher: IEEE Transactions on Information Forensics and Security
-  date: '2025-01-01'
-  link: https://doi.org/g97cmw
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: ''
-  title: Analyzing Adversarial Strategies and Countermeasures for Cyberbullying Detection
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: Attacking interpretable NLP systems
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
-    Transformer Systems under Attack'
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: Semantic information retrieval method for augmented reality domain and device
-    thereof
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: Iot-based approach method for learning geometric shapes in early childhood
-    and device thereof
-  authors: []
-  publisher: ''
-  date: '2025-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/imcom64595.2025.10857489
-  title: End-to-End Optimized Ensemble Model for Alzheimer's Disease Detection
-  authors:
-  - Abdelrahman Hassan
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  publisher: 2025 19th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2025-01-03'
-  link: https://doi.org/hb3f7b
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1016/b978-0-443-36370-2.00011-6
-  title: Digital twin and sensor networks for healthcare monitoring frameworks
-  authors:
-  - Amirhossein Danesh
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: Sensor Networks for Smart Hospitals
-  date: '2025-01-01'
-  link: https://doi.org/hb3f7c
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.21203/rs.3.rs-3128427/v1
-  title: 'A Dynamic Fuzzy Rule-Based Inference System: Fuzzy Inference with Semantic
-    Reasoning'
-  authors:
-  - Nora Shoaip
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: Research Square Platform LLC
-  date: '2023-07-17'
-  link: https://doi.org/hb3f7d
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: Neurological Disorder Progression Prediction and Diagnostic Platform
-  authors: []
-  publisher: ''
-  date: '2023-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: "Research Article The Role of Medication Data to Enhance the Prediction of\
-    \ Alzheimer\u2019s Progression Using Machine Learning"
-  authors: []
-  publisher: ''
-  date: '2021-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.3390/e22080841
-  title: Performance Analysis and Constellation Design for the Parallel Quadrature
-    Spatial Modulation
-  authors:
-  - Manar Mohaisen
-  - Tasnim Holoubi
-  - Tamer Abuhmed
-  publisher: Entropy
-  pmid: '33286611'
-  pmcid: PMC7517441
-  date: '2020-07-30'
-  link: https://doi.org/g9b3dq
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/e22080841.pdf
-- id: doi:10.4018/978-1-61350-110-8.ch010
-  title: Computationally Efficient Cooperative Public Key Authentication Protocols
-    in Ubiquitous Sensor Network
-  authors:
-  - Abedelaziz Mohaisen
-  - Tamer AbuHmed
-  - DaeHun Nyang
-  publisher: Advancements in Distributed Computing and Internet Technologies
-  date: ''
-  link: https://doi.org/cjh563
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: ''
-  title: An analysis of a social network-based Sybil defense in mobile networks
-  authors: []
-  publisher: ''
-  date: '2011-01-01'
-  link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.3390/info15100583
   title: Smart Collaborative Intrusion Detection System for Securing Vehicular Networks
     Using Ensemble Machine Learning Model
@@ -1986,6 +176,26 @@
   buttons:
   - type: pdf
     link: pdf/app12199710.pdf
+- id: doi:10.3390/electronics11101648
+  title: "Sentiment Analysis of Users\u2019 Reactions on Social Media during the Pandemic"
+  authors:
+  - Eldor Abdukhamidov
+  - Firuz Juraev
+  - Mohammed Abuhamad
+  - Shaker El-Sappagh
+  - Tamer AbuHmed
+  publisher: Electronics
+  date: '2022-05-22'
+  link: https://doi.org/g9b3c6
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: sources.py
+  file: sources.yaml
+  tamer-abuhmed-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics11101648.pdf
 - id: doi:10.3390/electronics10141733
   title: An Extended Semantic Interoperability Model for Distributed Electronic Health
     Record Based on Fuzzy Ontology Semantics
@@ -2006,6 +216,43 @@
   buttons:
   - type: pdf
     link: pdf/electronics10141733.pdf
+- id: doi:10.1016/j.future.2020.10.005
+  title: "Alzheimer\u2019s disease progression detection model based on an early fusion\
+    \ of cost-effective multimodal data"
+  authors:
+  - Shaker El-Sappagh
+  - Hager Saleh
+  - Radhya Sahal
+  - Tamer Abuhmed
+  - S.M. Riazul Islam
+  - Farman Ali
+  - Eslam Amer
+  publisher: Future Generation Computer Systems
+  date: '2021-02-01'
+  link: https://doi.org/g9b3df
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+  tamer-abuhmed-list: true
+- id: doi:10.1016/j.knosys.2020.106688
+  title: "Robust hybrid deep learning models for Alzheimer\u2019s progression detection"
+  authors:
+  - Tamer Abuhmed
+  - Shaker El-Sappagh
+  - Jose M. Alonso
+  publisher: Knowledge-Based Systems
+  date: '2021-02-01'
+  link: https://doi.org/gm64vk
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: sources.py
+  file: sources.yaml
+  tamer-abuhmed-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_knosys_2020_106688.pdf
 - id: doi:10.1016/j.future.2020.07.047
   title: An intelligent healthcare monitoring framework using wearable sensors and
     social networking data
@@ -2041,6 +288,43 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1007/978-3-030-55190-2_36
+  title: Alzheimer Disease Prediction Model Based on Decision Fusion of CNN-BiLSTM
+    Deep Neural Networks
+  authors:
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Kyung Sup Kwak
+  publisher: Advances in Intelligent Systems and Computing
+  date: '2020-08-25'
+  link: https://doi.org/g9b3dh
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+  tamer-abuhmed-list: true
+- id: doi:10.32604/cmc.2021.014446
+  title: Timing and Classification of Patellofemoral Osteoarthritis Patients Using
+    Fast Large Margin Classifier
+  authors:
+  - Mai Ramadan Ibraheem
+  - Jilan adel
+  - Alaa Eldin Balbaa
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Mohammed Elmogy
+  publisher: Computers, Materials &amp; Continua
+  date: '2021-01-01'
+  link: https://doi.org/g9b3dn
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: sources.py
+  file: sources.yaml
+  tamer-abuhmed-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/cmc_2021_014446.pdf
 - id: doi:10.1016/j.inffus.2020.06.008
   title: A smart healthcare monitoring system for heart disease prediction based on
     ensemble deep learning and feature fusion
@@ -2097,6 +381,41 @@
   buttons:
   - type: pdf
     link: pdf/math8111863.pdf
+- id: doi:10.1016/j.neucom.2020.05.087
+  title: "Multimodal multitask deep learning model for Alzheimer\u2019s disease progression\
+    \ detection based on time series data"
+  authors:
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - S.M. Riazul Islam
+  - Kyung Sup Kwak
+  publisher: Neurocomputing
+  date: '2020-10-01'
+  link: https://doi.org/gjgtgg
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+  tamer-abuhmed-list: true
+- id: doi:10.3390/electronics9091443
+  title: Staging Melanocytic Skin Neoplasms Using High-Level Pixel-Based Features
+  authors:
+  - Mai Ramadan Ibraheem
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Mohammed Elmogy
+  publisher: Electronics
+  date: '2020-09-04'
+  link: https://doi.org/g9b3dp
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: sources.py
+  file: sources.yaml
+  tamer-abuhmed-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics9091443.pdf
 - id: doi:10.3390/electronics9091439
   title: End-To-End Deep Learning Framework for Coronavirus (COVID-19) Detection and
     Monitoring
@@ -2248,6 +567,23 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1109/ACCESS.2020.3010556
+  title: 'Intensive Care Unit Mortality Prediction: An Improved Patient-Specific Stacking
+    Ensemble Model'
+  authors:
+  - Nora El-Rashidy
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Samir Abdelrazek
+  - Hazem M. El-Bakry
+  publisher: IEEE Access
+  date: '2020-01-01'
+  link: https://doi.org/g9b3dt
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+  tamer-abuhmed-list: true
 - id: doi:10.1109/access.2020.3042273
   title: 'Medical Diagnostic Systems Using Artificial Intelligence (AI) Algorithms:
     Principles and Perspectives'
@@ -2323,6 +659,28 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.3390/electronics8060635
+  title: "A Comprehensive Medical Decision\u2013Support Framework Based on a Heterogeneous\
+    \ Ensemble Classifier for Diabetes Prediction"
+  authors:
+  - Shaker El-Sappagh
+  - Mohammed Elmogy
+  - Farman Ali
+  - Tamer ABUHMED
+  - S. M. Riazul Islam
+  - Kyung-Sup Kwak
+  publisher: Electronics
+  date: '2019-06-05'
+  link: https://doi.org/g9b3dv
+  orcid: 0000-0001-9232-4843
+  shaker-el-sappagh-list: true
+  plugin: sources.py
+  file: sources.yaml
+  tamer-abuhmed-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics8060635.pdf
 - id: doi:10.1016/j.knosys.2019.02.033
   title: Transportation sentiment analysis using word embedding and ontology-based
     topic modeling
@@ -2762,6 +1120,55 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1016/j.engappai.2026.114291
+  title: "Trustworthy Alzheimer\u2019s diagnosis: Integrating robustness, fairness,\
+    \ and explainability in neuroimaging based deep ensemble framework"
+  authors:
+  - Maria Bashir
+  - Nasir Rahim
+  - Shaker El-Sappagh
+  - Omar Amin El-Serafy
+  - Tamer Abuhmed
+  publisher: Engineering Applications of Artificial Intelligence
+  date: '2026-05-01'
+  link: https://doi.org/hbq4s7
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.eswa.2025.129812
+  title: 'GraphShield: Advanced dynamic graph-based malware detection using graph
+    neural networks'
+  authors:
+  - Eslam Amer
+  - Shaker El-Sappagh
+  - Tamer Abuhamad
+  - Bander Ali Saleh Al-Rimy
+  - Alaa Mohasseb
+  publisher: Expert Systems with Applications
+  date: '2026-03-01'
+  link: https://doi.org/g95wqv
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pone.0332134
+  title: Mortality prediction for ICU patients with mental disorders using large language
+    models ensemble and unstructured medical notes
+  authors:
+  - Waleed Nazih
+  - Tamer Abuhmed
+  - Meshal Alharbi
+  - Shaker El-Sappagh
+  publisher: PLOS One
+  pmid: '40971951'
+  pmcid: PMC12448993
+  date: '2025-09-19'
+  link: https://doi.org/g939nc
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/TR.2025.3551717
   title: Stealthy Query-Efficient OpaqueAttack Against Interpretable Deep Learning
   authors:
@@ -2782,6 +1189,34 @@
   buttons:
   - type: pdf
     link: pdf/Stealthy_Query-Efficient_Opaque_Attack_Against_Interpretable_Deep_Learning.pdf
+- id: doi:10.1109/TIFS.2025.3622073
+  title: 'AdvChar: Attacking Interpretable NLP Systems'
+  authors:
+  - Eldor Abdukhamidov
+  - Tamer Abuhmed
+  - Joanna C. S. Santos
+  - Mohammed Abuhamad
+  publisher: IEEE Transactions on Information Forensics and Security
+  date: '2025-01-01'
+  link: https://doi.org/g97cmw
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICEENG64546.2025.11031335
+  title: Chronic Kidney Disease Detection Augmented with Hybrid Explainable AI
+  authors:
+  - Mohamed Desoky
+  - Nada Gamal ElAdl
+  - Tamer Abuhmed
+  - Shaker El-Sappagh
+  publisher: 2025 15th International Conference on Electrical Engineering (ICEENG)
+  date: '2025-05-12'
+  link: https://doi.org/hb28vg
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ACCESS.2025.3547573
   title: "FiSC: A Novel Approach for Fitzpatrick Scale-Based Skin Analyzer\u2019s\
     \ Image Classification"
@@ -2805,6 +1240,41 @@
   - type: pdf
     link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification
       (1).pdf
+- id: doi:10.57197/JDR-2024-0101
+  title: 'Responsible Artificial Intelligence for Mental Health Disorders: Current
+    Applications and Future Challenges'
+  authors:
+  - Shaker El-Sappagh
+  - Waleed Nazih
+  - Meshal Alharbi
+  - Tamer Abuhmed
+  publisher: Journal of Disability Research
+  date: '2025-01-01'
+  link: https://doi.org/g9b3b9
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: 'images/thumbnails/Responsible Artificial Intelligence for Mental Health
+    Disorders: Current Applications and Future Challenges.png'
+  buttons:
+  - type: pdf
+    link: pdf/resposible_artificial_intiligence.pdf
+- id: doi:10.1007/S00607-025-01485-0
+  title: 'Sustainable energy management in the AI era: a comprehensive analysis of
+    ML and DL approaches'
+  authors:
+  - Haseeb Javed
+  - Fatma Eid
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  publisher: Computing
+  date: '2025-05-22'
+  link: https://doi.org/hb28vh
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1007/S00371-024-03630-W
   title: 'Underwater image restoration and enhancement: a comprehensive review of
     recent trends, challenges, and applications'
@@ -2842,6 +1312,44 @@
   buttons:
   - type: pdf
     link: pdf/Alzheimers disease diagnosis in the metaverse.pdf
+- id: doi:10.1109/TDSC.2023.3341090
+  title: 'Hardening Interpretable Deep Learning Systems: Investigating Adversarial
+    Threats and Defenses'
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: IEEE Transactions on Dependable and Secure Computing
+  date: '2024-07-01'
+  link: https://doi.org/g9b3cf
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
+    Adversarial Threats and Defenses.png'
+  buttons:
+  - type: pdf
+    link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
+- id: doi:10.1038/S41598-024-54065-1
+  title: A dynamic fuzzy rule-based inference system using fuzzy inference with semantic
+    reasoning
+  authors:
+  - Nora Shoaip
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Mohammed Elmogy
+  publisher: Scientific Reports
+  pmid: '38383597'
+  pmcid: PMC10881567
+  date: '2024-02-21'
+  link: https://doi.org/hb28vj
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1007/978-3-031-47715-7_38
   title: "Explainable Dynamic Ensemble Framework for\_Classification Based on\_the\_\
     Late Fusion of\_Heterogeneous Multimodal Data"
@@ -2856,6 +1364,237 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: wosuid:PPRN:88761299
+  title: 'From Attack to Defense: Insights into Deep Learning Security Measures in
+    Black-Box Settings'
+  authors: []
+  publisher: ArXiv
+  date: '2026-05-09'
+  link: https://publons.com/wos-op/publon/68864877/
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: wosuid:PPRN:88760232
+  title: Impact of Architectural Modifications on Deep Learning Adversarial Robustness
+  authors: []
+  publisher: ArXiv
+  date: '2026-05-09'
+  link: https://publons.com/wos-op/publon/68109325/
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.ASOC.2024.111749
+  title: Information fusion-based Bayesian optimized heterogeneous deep ensemble model
+    based on longitudinal neuroimaging data
+  authors:
+  - Nasir Rahim
+  - Shaker El-Sappagh
+  - Haytham Rizk
+  - Omar Amin El-serafy
+  - Tamer Abuhmed
+  publisher: Applied Soft Computing
+  date: '2024-09-01'
+  link: https://doi.org/hb28vm
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.PMCJ.2024.101922
+  title: 'MotionID: Towards practical behavioral biometrics-based implicit user authentication
+    on smartphones'
+  authors:
+  - Mohsen Ali Alawami
+  - Tamer Abuhmed
+  - Mohammed Abuhamad
+  - Hyoungshick Kim
+  publisher: Pervasive and Mobile Computing
+  date: '2024-07-01'
+  link: https://doi.org/hb28vn
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/S10462-024-11005-9
+  title: 'Robustness in deep learning models for medical diagnostics: security and
+    adversarial challenges towards robust AI applications'
+  authors:
+  - Haseeb Javed
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  publisher: Artificial Intelligence Review
+  date: '2024-11-08'
+  link: https://doi.org/hb28vp
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/TIFS.2024.3407652
+  title: 'SingleADV: Single-Class Target-Specific Attack Against Interpretable Deep
+    Learning Systems'
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - George K. Thiruvathukal
+  - Hyoungshick Kim
+  - Tamer Abuhmed
+  publisher: IEEE Transactions on Information Forensics and Security
+  date: '2024-01-01'
+  link: https://doi.org/g9b3ch
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: 'images/thumbnails/SingleADV: Single-Class Target-Specific Attack Against
+    Interpretable Deep Learning Systems.png'
+  buttons:
+  - type: pdf
+    link: pdf/SingleADV_Single-Class_Target-Specific_Attack_Against_Interpretable_Deep_Learning_Systems.pdf
+- id: doi:10.1016/J.JENVMAN.2024.120682
+  title: Spatial mapping of land susceptibility to dust emissions using optimization
+    of attentive Interpretable Tabular Learning (TabNet) model
+  authors:
+  - Seyed Vahid Razavi-Termeh
+  - Abolghasem Sadeghi-Niaraki
+  - Armin Sorooshian
+  - Tamer Abuhmed
+  - Soo-Mi Choi
+  publisher: Journal of Environmental Management
+  pmid: '38670008'
+  date: '2024-05-01'
+  link: https://doi.org/g9vswn
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/S41598-024-56136-9
+  title: Temporal dynamics of urban gas pipeline risks
+  authors:
+  - Fatema Rahimi
+  - Abolghasem Sadeghi-Niaraki
+  - Mostafa Ghodousi
+  - Tamer Abuhmed
+  - Soo-Mi Choi
+  publisher: Scientific Reports
+  pmid: '38448517'
+  pmcid: PMC10918077
+  date: '2024-03-06'
+  link: https://doi.org/hb28vq
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/SVCC61185.2024.10637362
+  title: The Impact of Model Variations on the Robustness of Deep Learning Models
+    in Adversarial Settings
+  authors:
+  - Firuz Juraev
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - George K Thiruvathukal
+  - Tamer Abuhmed
+  publisher: 2024 Silicon Valley Cybersecurity Conference (SVCC)
+  date: '2024-06-17'
+  link: https://doi.org/hb28vr
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/SVCC61185.2024.10637364
+  title: 'Unmasking the Vulnerabilities of Deep Learning Models: A Multi-Dimensional
+    Analysis of Adversarial Attacks and Defenses'
+  authors:
+  - Firuz Juraev
+  - Mohammed Abuhamad
+  - Eric Chan-Tin
+  - George K. Thiruvathukal
+  - Tamer Abuhmed
+  publisher: 2024 Silicon Valley Cybersecurity Conference (SVCC)
+  date: '2024-06-17'
+  link: https://doi.org/hb28vs
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.inffus.2023.101805
+  title: 'Explainable Artificial Intelligence (XAI): What we know and what is left
+    to attain Trustworthy Artificial Intelligence'
+  authors:
+  - Sajid Ali
+  - Tamer Abuhmed
+  - Shaker El-Sappagh
+  - Khan Muhammad
+  - Jose M. Alonso-Moral
+  - Roberto Confalonieri
+  - Riccardo Guidotti
+  - Javier Del Ser
+  - "Natalia D\xEDaz-Rodr\xEDguez"
+  - Francisco Herrera
+  publisher: Information Fusion
+  date: '2023-11-01'
+  link: https://doi.org/gsrxxb
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.aej.2023.09.050
+  title: "Time-series visual explainability for Alzheimer\u2019s disease progression\
+    \ detection for smart healthcare"
+  authors:
+  - Nasir Rahim
+  - Tamer Abuhmed
+  - Seyedali Mirjalili
+  - Shaker El-Sappagh
+  - Khan Muhammad
+  publisher: Alexandria Engineering Journal
+  date: '2023-11-01'
+  link: https://doi.org/g9b3cj
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41598-023-42796-6
+  title: Computer aided progression detection model based on optimized deep LSTM ensemble
+    model and the fusion of multivariate time series data
+  authors:
+  - Hager Saleh
+  - Eslam Amer
+  - Tamer Abuhmed
+  - Amjad Ali
+  - Ala Al-Fuqaha
+  - Shaker El-Sappagh
+  publisher: Scientific Reports
+  pmid: '37770490'
+  pmcid: PMC10539296
+  date: '2023-09-28'
+  link: https://doi.org/g9b3ck
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: images/thumbnails/10_1038_s41598-023-42796-6.png
+  buttons:
+  - type: pdf
+    link: pdf/s41598-023-42796-6.pdf
+- id: doi:10.3390/app13169425
+  title: 'TruMuzic: A Deep Learning and Data Provenance-Based Approach to Evaluating
+    the Authenticity of Music'
+  authors:
+  - Kuldeep Gurjar
+  - Yang-Sae Moon
+  - Tamer Abuhmed
+  publisher: Applied Sciences
+  date: '2023-08-19'
+  link: https://doi.org/g9b3cm
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/app13169425.pdf
 - id: doi:10.1080/10095020.2022.2088303
   title: An approach for measuring spatial similarity among COVID-19 epicenters
   authors:
@@ -2870,6 +1609,109 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: arxiv:2307.06496
+  title: Microbial Genetic Algorithm-based Black-box Attack against Interpretable
+    Deep Learning Systems
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: arXiv
+  date: '2024-02-19'
+  link: https://arxiv.org/abs/2307.06496
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: arxiv:2307.06484
+  title: Single-Class Target-Specific Attack against Interpretable Deep Learning Systems
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - George K. Thiruvathukal
+  - Hyoungshick Kim
+  - Tamer Abuhmed
+  publisher: arXiv
+  date: '2024-02-19'
+  link: https://arxiv.org/abs/2307.06484
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: arxiv:2307.11906
+  title: Unveiling Vulnerabilities in Interpretable Deep Learning Systems with Query-Efficient
+    Black-box Attacks
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: arXiv
+  date: '2026-05-09'
+  link: https://arxiv.org/abs/2307.11906
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/TNSM.2022.3200741
+  title: Effective Multitask Deep Learning for IoT Malware Detection and Identification
+    Using Behavioral Traffic Analysis
+  authors:
+  - Sajid Ali
+  - Omar Abusabha
+  - Farman Ali
+  - Muhammad Imran
+  - Tamer Abuhmed
+  publisher: IEEE Transactions on Network and Service Management
+  date: '2023-06-01'
+  link: https://doi.org/g9b3ct
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.cmpb.2023.107495
+  title: "Explainable machine learning models based on multimodal time-series data\
+    \ for the early detection of Parkinson\u2019s disease"
+  authors:
+  - Muhammad Junaid
+  - Sajid Ali
+  - Fatma Eid
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  publisher: Computer Methods and Programs in Biomedicine
+  pmid: '37003039'
+  date: '2023-06-01'
+  link: https://doi.org/gtgxft
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1371/journal.pone.0285455
+  title: Henry gas solubility optimization double machine learning classifier for
+    neurosurgical patients
+  authors:
+  - Diana T. Mosa
+  - Amena Mahmoud
+  - John Zaki
+  - Shaymaa E. Sorour
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  publisher: PLOS ONE
+  pmid: '37167226'
+  pmcid: PMC10174516
+  date: '2023-05-11'
+  link: https://doi.org/gs6qrs
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: images/thumbnails/10_1371_journal_pone_0285455.jpg
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0285455.pdf
 - id: doi:10.32604/csse.2023.036371
   title: "Early Detection of Alzheimer\u2019s Disease Based on Laplacian Re-Decomposition\
     \ and XGBoosting"
@@ -2886,6 +1728,29 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1038/s41598-023-27815-w
+  title: "A deep learning based dual encoder\u2013decoder framework for anatomical\
+    \ structure segmentation in chest X-ray images"
+  authors:
+  - Ihsan Ullah
+  - Farman Ali
+  - Babar Shah
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Sang Hyun Park
+  publisher: Scientific Reports
+  pmid: '36646735'
+  pmcid: PMC9842654
+  date: '2023-01-16'
+  link: https://doi.org/g55f46
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: images/thumbnails/10_1038_s41598-023-27815-w.png
+  buttons:
+  - type: pdf
+    link: pdf/s41598-023-27815-w.pdf
 - id: doi:10.1038/S41598-023-41661-W
   title: "Author Correction: A deep learning based dual encoder\u2013decoder framework\
     \ for anatomical structure segmentation in chest X-ray images"
@@ -2905,6 +1770,543 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1111/MICE.13015
+  title: "Explainable probabilistic deep learning framework for seismic assessment\
+    \ of structures using distribution\u2010free prediction intervals"
+  authors:
+  - Mohamed Noureldin
+  - Tamer Abuhmed
+  - Melike Saygi
+  - Jinkoo Kim
+  publisher: Computer-Aided Civil and Infrastructure Engineering
+  date: '2023-08-01'
+  link: https://doi.org/gt2k5p
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.INFFUS.2022.11.028
+  title: Prediction of Alzheimer's progression based on multimodal Deep-Learning-based
+    fusion and visual Explainability of time-series data
+  authors:
+  - Nasir Rahim
+  - Shaker El-Sappagh
+  - Sajid Ali
+  - Khan Muhammad
+  - Javier Del Ser
+  - Tamer Abuhmed
+  publisher: Information Fusion
+  date: '2023-04-01'
+  link: https://doi.org/g9b3cx
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/S10462-023-10415-5
+  title: "Trustworthy artificial intelligence in Alzheimer\u2019s disease: state of\
+    \ the art, opportunities, and challenges"
+  authors:
+  - Shaker El-Sappagh
+  - Jose M. Alonso-Moral
+  - Tamer Abuhmed
+  - Farman Ali
+  - "Alberto Bugar\xEDn-Diz"
+  publisher: Artificial Intelligence Review
+  date: '2023-03-12'
+  link: https://doi.org/gtnpbk
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.20944/preprints202307.0585.v1
+  title: 'Underwater Image Restoration and Enhancement: A Comprehensive Review of
+    Recent Trends, Challenges, and Applications'
+  authors:
+  - Yasmin M. Alsakar
+  - Nehal A Sakr
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Mohammed Elmogy
+  publisher: MDPI AG
+  date: '2023-07-10'
+  link: https://doi.org/g9b3cp
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/preprints202307_0585_v1.pdf
+- id: doi:10.3390/f14071325
+  title: Wildfire Susceptibility Mapping Using Deep Learning Algorithms in Two Satellite
+    Imagery Dataset
+  authors:
+  - Nazanin Bahadori
+  - Seyed Vahid Razavi-Termeh
+  - Abolghasem Sadeghi-Niaraki
+  - Khalifa M. Al-Kindi
+  - Tamer Abuhmed
+  - Behrokh Nazeri
+  - Soo-Mi Choi
+  publisher: Forests
+  date: '2023-06-28'
+  link: https://doi.org/g9b3cs
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/f14071325.pdf
+- id: doi:10.1109/JBHI.2022.3202178
+  title: Multitask Deep Learning for Cost-Effective Prediction of Patient's Length
+    of Stay and Readmission State Using Multimodal Physical Activity Sensory Data
+  authors:
+  - Sajid Ali
+  - Shaker El-Sappagh
+  - Farman Ali
+  - Muhammad Imran
+  - Tamer Abuhmed
+  publisher: IEEE Journal of Biomedical and Health Informatics
+  pmid: '36037451'
+  date: '2022-12-01'
+  link: https://doi.org/g9b3cz
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/su142315681
+  title: 'AR Search Engine: Semantic Information Retrieval for Augmented Reality Domain'
+  authors:
+  - Maryam Shakeri
+  - Abolghasem Sadeghi-Niaraki
+  - Soo-Mi Choi
+  - Tamer AbuHmed
+  publisher: Sustainability
+  date: '2022-11-25'
+  link: https://doi.org/gr6s9n
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/su142315681.pdf
+- id: doi:10.1016/j.neucom.2022.09.009
+  title: "Automatic detection of Alzheimer\u2019s disease progression: An efficient\
+    \ information fusion approach with heterogeneous ensemble classifiers"
+  authors:
+  - Shaker El-Sappagh
+  - Farman Ali
+  - Tamer Abuhmed
+  - Jaiteg Singh
+  - Jose M. Alonso
+  publisher: Neurocomputing
+  date: '2022-11-01'
+  link: https://doi.org/g9b3c3
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: arxiv:2211.15926
+  title: 'Interpretations Cannot Be Trusted: Stealthy and Effective Adversarial Perturbations
+    against Interpretable Deep Learning'
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: arXiv
+  date: '2024-02-19'
+  link: https://arxiv.org/abs/2211.15926
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.jbi.2022.104216
+  title: Multilayer dynamic ensemble model for intensive care unit mortality prediction
+    of neonate patients
+  authors:
+  - Firuz Juraev
+  - Shaker El-Sappagh
+  - Eldor Abdukhamidov
+  - Farman Ali
+  - Tamer Abuhmed
+  publisher: Journal of Biomedical Informatics
+  pmid: '36208833'
+  date: '2022-11-01'
+  link: https://doi.org/g9b3c4
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.jmat.2021.11.004
+  title: Crystal structure guided machine learning for the discovery and design of
+    intrinsically hard materials
+  authors:
+  - Russlan Jaafreh
+  - Tamer Abuhmed
+  - Jung-Gu Kim
+  - Kotiba Hamad
+  publisher: Journal of Materiomics
+  date: '2022-05-01'
+  link: https://doi.org/g9b3c7
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/s00521-021-06631-1
+  title: Sepsis prediction in intensive care unit based on genetic feature optimization
+    and stacked deep ensemble learning
+  authors:
+  - Nora El-Rashidy
+  - Tamer Abuhmed
+  - Louai Alarabi
+  - Hazem M. El-Bakry
+  - Samir Abdelrazek
+  - Farman Ali
+  - Shaker El-Sappagh
+  publisher: Neural Computing and Applications
+  date: '2021-11-03'
+  link: https://doi.org/g9b3c8
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/math10050766
+  title: A Comparative Study of Strain Rate Constitutive and Machine Learning Models
+    for Flow Behavior of AZ31-0.5 Ca Mg Alloy during Hot Deformation
+  authors:
+  - Umer Masood Chaudry
+  - Russlan Jaafreh
+  - Abdul Malik
+  - Tea-Sung Jun
+  - Kotiba Hamad
+  - Tamer Abuhmed
+  publisher: Mathematics
+  date: '2022-02-27'
+  link: https://doi.org/g9b3c9
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/math10050766.pdf
+- id: doi:10.1016/j.jallcom.2021.162104
+  title: Age-hardening behavior guided by the multi-objective evolutionary algorithm
+    and machine learning
+  authors:
+  - Russlan Jaafreh
+  - Umer Masood Chaudry
+  - Kotiba Hamad
+  - Tamer Abuhmed
+  publisher: Journal of Alloys and Compounds
+  date: '2022-02-01'
+  link: https://doi.org/gqb5kb
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/math10030351
+  title: An Enhanced Grey Wolf Optimizer with a Velocity-Aided Global Search Mechanism
+  authors:
+  - Farshad Rezaei
+  - Hamid Reza Safavi
+  - Mohamed Abd Elaziz
+  - Shaker H. Ali El-Sappagh
+  - Mohammed Azmi Al-Betar
+  - Tamer Abuhmed
+  publisher: Mathematics
+  date: '2022-01-24'
+  link: https://doi.org/gtq6g4
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/math10030351.pdf
+- id: doi:10.1109/ACCESS.2022.3229440
+  title: An IoT-Based Approach for Learning Geometric Shapes in Early Childhood
+  authors:
+  - Jalal Safari Bazargani
+  - Abolghasem Sadeghi-Niaraki
+  - Fatema Rahimi
+  - Tamer Abuhmed
+  - Soo-Mi Choi
+  publisher: IEEE Access
+  date: '2022-01-01'
+  link: https://doi.org/g4n4s4
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/J.JAG.2022.102854
+  title: Integration of machine learning algorithms and GIS-based approaches to cutaneous
+    leishmaniasis prevalence risk mapping
+  authors:
+  - Negar Shabanpour
+  - Seyed Vahid Razavi-Termeh
+  - Abolghasem Sadeghi-Niaraki
+  - Soo-Mi Choi
+  - Tamer Abuhmed
+  publisher: International Journal of Applied Earth Observation and Geoinformation
+  date: '2022-08-01'
+  link: https://doi.org/g9fxqr
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/3494108.3522768
+  title: 'MLxPack: Investigating the Effects of Packers on ML-based Malware Detection
+    Systems Using Static and Dynamic Traits'
+  authors:
+  - Qirui Sun
+  - Mohammed Abuhamad
+  - Eldor Abdukhamidov
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: Proceedings of the 1st Workshop on Cybersecurity and Social Sciences
+  date: '2022-05-30'
+  link: https://doi.org/hb28vv
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/3488932.3527283
+  title: Black-box and Target-specific Attack Against Interpretable Deep Learning
+    Systems
+  authors:
+  - Eldor Abdukhamidov
+  - Firuz Juraev
+  - Mohammed Abuhamad
+  - Tamer Abuhmed
+  publisher: Proceedings of the 2022 ACM on Asia Conference on Computer and Communications
+    Security
+  date: '2022-05-30'
+  link: https://doi.org/g4n9xv
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/3488932.3527278
+  title: 'Depth, Breadth, and Complexity: Ways to Attack and Defend Deep Learning
+    Models'
+  authors:
+  - Firuz Juraev
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Tamer Abuhmed
+  publisher: Proceedings of the 2022 ACM on Asia Conference on Computer and Communications
+    Security
+  date: '2022-05-30'
+  link: https://doi.org/gsjswp
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/3488932.3527294
+  title: Leveraging Spectral Representations of Control Flow Graphs for Efficient
+    Analysis of Windows Malware
+  authors:
+  - Qirui Sun
+  - Eldor Abdukhamidov
+  - Tamer Abuhmed
+  - Mohammed Abuhamad
+  publisher: Proceedings of the 2022 ACM on Asia Conference on Computer and Communications
+    Security
+  date: '2022-05-30'
+  link: https://doi.org/hb28vw
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/S00521-022-07263-9
+  title: "Two-stage deep learning model for Alzheimer\u2019s disease detection and\
+    \ prediction of the mild cognitive impairment time"
+  authors:
+  - Shaker El-Sappagh
+  - Hager Saleh
+  - Farman Ali
+  - Eslam Amer
+  - Tamer Abuhmed
+  publisher: Neural Computing and Applications
+  date: '2022-05-08'
+  link: https://doi.org/gtpjxh
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1155/2021/8439655
+  title: "The Role of Medication Data to Enhance the Prediction of Alzheimer\u2019\
+    s Progression Using Machine Learning"
+  authors:
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Bader Alouffi
+  - Radhya Sahal
+  - Naglaa Abdelhade
+  - Hager Saleh
+  publisher: Computational Intelligence and Neuroscience
+  pmid: '34603436'
+  pmcid: PMC8481044
+  date: '2021-01-01'
+  link: https://doi.org/g6srcw
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/electronics10161956
+  title: A Short Review on the Machine Learning-Guided Oxygen Uptake Prediction for
+    Sport Science Applications
+  authors:
+  - Haneen Alzamer
+  - Tamer Abuhmed
+  - Kotiba Hamad
+  publisher: Electronics
+  date: '2021-08-13'
+  link: https://doi.org/g9b3dc
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics10161956.pdf
+- id: doi:10.1145/3461666
+  title: Large-scale and Robust Code Authorship Identification with Deep Feature Learning
+  authors:
+  - Mohammed Abuhamad
+  - Tamer Abuhmed
+  - David Mohaisen
+  - Daehun Nyang
+  publisher: ACM Transactions on Privacy and Security
+  date: '2021-07-19'
+  link: https://doi.org/gprnz3
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/diagnostics11071155
+  title: Comprehensive Survey of Using Machine Learning in the COVID-19 Pandemic
+  authors:
+  - Nora El-Rashidy
+  - Samir Abdelrazik
+  - Tamer Abuhmed
+  - Eslam Amer
+  - Farman Ali
+  - Jong-Wan Hu
+  - Shaker El-Sappagh
+  publisher: Diagnostics
+  pmid: '34202587'
+  pmcid: PMC8303306
+  date: '2021-06-24'
+  link: https://doi.org/gnr6cf
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.mtcomm.2020.101897
+  title: Machine learning-aided design of aluminum alloys with high performance
+  authors:
+  - Umer Masood Chaudry
+  - Kotiba Hamad
+  - Tamer Abuhmed
+  publisher: Materials Today Communications
+  date: '2021-03-01'
+  link: https://doi.org/gqb5kd
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1007/978-3-030-91434-9_9
+  title: 'AdvEdge: Optimizing Adversarial Perturbations Against Interpretable Deep
+    Learning'
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Firuz Juraev
+  - Eric Chan-Tin
+  - Tamer AbuHmed
+  publisher: Lecture Notes in Computer Science
+  date: '2021-01-01'
+  link: https://doi.org/hb28vx
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.32604/cmc.2021.019069
+  title: "Alzheimer\u2019s Disease Diagnosis Based on a Semantic Rule-Based Modeling\
+    \ and Reasoning Approach"
+  authors:
+  - Nora Shoaip
+  - Amira Rezk
+  - Shaker EL-Sappagh
+  - Tamer Abuhmed
+  - Sherif Barakat
+  - Mohammed Elmogy
+  publisher: Computers, Materials &amp; Continua
+  date: '2021-01-01'
+  link: https://doi.org/g869jj
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ACCESS.2021.3052870
+  title: Automatic Diabetic Retinopathy Grading System Based on Detecting Multiple
+    Retinal Lesions
+  authors:
+  - Eman Abdelmaksoud
+  - Shaker El-Sappagh
+  - Sherif Barakat
+  - Tamer Abuhmed
+  - Mohammed Elmogy
+  publisher: IEEE Access
+  date: '2021-01-01'
+  link: https://doi.org/g9b3dj
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ACCESS.2021.3090998
+  title: Classification and Analysis of Android Malware Images Using Feature Fusion
+    Technique
+  authors:
+  - Jaiteg Singh
+  - Deepak Thakur
+  - Tanya Gera
+  - Babar Shah
+  - Tamer Abuhmed
+  - Farman Ali
+  publisher: IEEE Access
+  date: '2021-01-01'
+  link: https://doi.org/g9b3dk
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.2478/popets-2020-0044
+  title: "Multi-\u03C7: Identifying Multiple Authors from Source Code Files"
+  authors:
+  - Mohammed Abuhamad
+  - Tamer Abuhmed
+  - DaeHun Nyang
+  - David Mohaisen
+  publisher: Proceedings on Privacy Enhancing Technologies
+  date: '2020-07-01'
+  link: https://doi.org/g9b3dr
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/JIOT.2020.2975779
   title: 'AUTo<i>Sen</i>: Deep-Learning-Based Implicit Continuous Authentication Using
     Smartphone Sensors'
@@ -2916,6 +2318,113 @@
   publisher: IEEE Internet of Things Journal
   date: '2020-06-01'
   link: https://doi.org/gn7t2d
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3390/e22080841
+  title: Performance Analysis and Constellation Design for the Parallel Quadrature
+    Spatial Modulation
+  authors:
+  - Manar Mohaisen
+  - Tasnim Holoubi
+  - Tamer Abuhmed
+  publisher: Entropy
+  pmid: '33286611'
+  pmcid: PMC7517441
+  date: '2020-07-30'
+  link: https://doi.org/g9b3dq
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/e22080841.pdf
+- id: doi:10.1016/j.future.2018.12.038
+  title: Code authorship identification using convolutional neural networks
+  authors:
+  - Mohammed Abuhamad
+  - Ji-su Rhim
+  - Tamer AbuHmed
+  - Sana Ullah
+  - Sanggil Kang
+  - DaeHun Nyang
+  publisher: Future Generation Computer Systems
+  date: '2019-06-01'
+  link: https://doi.org/g9b3dw
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1145/3243734.3243738
+  title: Large-Scale and Language-Oblivious Code Authorship Identification
+  authors:
+  - Mohammed Abuhamad
+  - Tamer AbuHmed
+  - Aziz Mohaisen
+  - DaeHun Nyang
+  publisher: Proceedings of the 2018 ACM SIGSAC Conference on Computer and Communications
+    Security
+  date: '2018-10-15'
+  link: https://doi.org/gnrn69
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/access.2017.2768564
+  title: "A Fuzzy Ontology and SVM\u2013Based Web Content Classification System"
+  authors:
+  - Farman Ali
+  - Pervez Khan
+  - Kashif Riaz
+  - Daehan Kwak
+  - Tamer Abuhmed
+  - Daeyoung Park
+  - Kyung Sup Kwak
+  publisher: IEEE Access
+  date: '2017-01-01'
+  link: https://doi.org/gddktn
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/thms.2015.2449309
+  title: 'UOIT Keyboard: A Constructive Keyboard for Small Touchscreen Devices'
+  authors:
+  - Tamer AbuHmed
+  - Kyunghee Lee
+  - DaeHun Nyang
+  publisher: IEEE Transactions on Human-Machine Systems
+  date: '2015-12-01'
+  link: https://doi.org/g5h28r
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ICC.2012.6364127
+  title: Collaboration in social network-based information dissemination
+  authors:
+  - Aziz Mohaisen
+  - Tamer AbuHmed
+  - Ting Zhu
+  - Manar Mohaisen
+  publisher: 2012 IEEE International Conference on Communications (ICC)
+  date: '2012-06-01'
+  link: https://doi.org/hb28vz
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3837/TIIS.2008.05.001
+  title: Two-level Key Pool Design-based Random Key Pre-distribution in Wireless Sensor
+    Networks
+  authors:
+  - Abedelaziz Mohaisen
+  publisher: KSII Transactions on Internet and Information Systems
+  date: '2008-10-25'
+  link: https://doi.org/bpq7d3
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
