@@ -42,9 +42,9 @@ nav:
      ============================================================ -->
 <div class="proj-section">
   <div class="proj-filter-bar" role="group" aria-label="Filter projects by research area">
-    <button class="proj-filter-btn active" data-filter="all">All Projects</button>
-    <button class="proj-filter-btn" data-filter="security">Security &amp; Adversarial ML</button>
-    <button class="proj-filter-btn" data-filter="medical">Biomedical AI</button>
+    <button class="proj-filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+    <button class="proj-filter-btn" data-filter="security" aria-pressed="false">Security &amp; Adversarial ML</button>
+    <button class="proj-filter-btn" data-filter="medical" aria-pressed="false">Biomedical AI</button>
   </div>
 
   <div class="proj-grid">

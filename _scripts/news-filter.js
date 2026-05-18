@@ -57,8 +57,12 @@
     /* ── Filter button clicks ──────────────────── */
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        filterBtns.forEach(function (b) { b.classList.remove("active"); });
+        filterBtns.forEach(function (b) {
+          b.classList.remove("active");
+          b.setAttribute("aria-pressed", "false");
+        });
         btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
         currentFilter = btn.dataset.filter;
         applyFilter(currentFilter);
       });

@@ -1,17 +1,14 @@
-{% assign image = page.header | default: site.header | relative_url %}
-{% assign dark = page.header-dark | is_nil: site.header-dark | is_nil: true %}
-
 {% assign png = "images/logo.png" | file_exists %}
 {% assign jpg = "images/logo.jpg" | file_exists %}
 {% assign logo = svg | default: png | default: jpg | default: nil %}
 
+<!-- Skip to main content (accessibility) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 <!-- Reading progress bar -->
 <div id="read-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Page reading progress"></div>
 
-<header
-  class="background"
-  style=" background-color: #07377b;"
->
+<header class="background site-header">
   <a href="{{ "/" | relative_url }}" class="home">
     {% if logo %}
       <span class="logo">

@@ -16,7 +16,30 @@
   --overlay: #00000018;
   --hero-1: #07377b;
   --hero-2: #0a4fa8;
+  --hero-2-soft: #0a4fa0;
   --hero-3: #0d6ecc;
+
+  // Research-area accents
+  --security: #07377b;
+  --biomedical: #0d9488;
+  --trustworthy: #7c3aed;
+
+  // Status / category accents
+  --success: #16a34a;
+  --warning: #d97706;
+  --info: #7c3aed;
+  --neutral: #64748b;
+
+  // Project-card medical gradient
+  --medical-1: #065f46;
+  --medical-2: #059669;
+
+  // Chrome backgrounds
+  --header-bg: #07377b;
+  --footer-bg: #0f2044;
+
+  // BlueSky brand
+  --bluesky: #0085ff;
 }
 [data-dark="true"] {
   --primary: #38bdf8;
@@ -32,7 +55,30 @@
   --overlay: #ffffff12;
   --hero-1: #05243a;
   --hero-2: #0a4f6f;
+  --hero-2-soft: #0a4f6f;
   --hero-3: #0f6b94;
+
+  // Research-area accents
+  --security: #38bdf8;
+  --biomedical: #2dd4bf;
+  --trustworthy: #a78bfa;
+
+  // Status / category accents
+  --success: #4ade80;
+  --warning: #fb923c;
+  --info: #a78bfa;
+  --neutral: #94a3b8;
+
+  // Project-card medical gradient
+  --medical-1: #064e3b;
+  --medical-2: #047857;
+
+  // Chrome backgrounds
+  --header-bg: #05243a;
+  --footer-bg: #0a1730;
+
+  // BlueSky brand
+  --bluesky: #38bdf8;
 }
 
 :root {

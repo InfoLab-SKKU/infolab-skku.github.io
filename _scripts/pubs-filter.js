@@ -220,8 +220,12 @@
   function bindEvents() {
     filterBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        filterBtns.forEach(function (b) { b.classList.remove("active"); });
+        filterBtns.forEach(function (b) {
+          b.classList.remove("active");
+          b.setAttribute("aria-pressed", "false");
+        });
         btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
         currentFilter = btn.getAttribute("data-filter") || "all";
         applyAll();
       });
@@ -236,8 +240,12 @@
 
     viewBtns.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        viewBtns.forEach(function (b) { b.classList.remove("active"); });
+        viewBtns.forEach(function (b) {
+          b.classList.remove("active");
+          b.setAttribute("aria-pressed", "false");
+        });
         btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
         currentView = btn.getAttribute("data-view") || "rich";
         applyView();
       });

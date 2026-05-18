@@ -10,8 +10,12 @@
 
     buttons.forEach(function (btn) {
       btn.addEventListener("click", function () {
-        buttons.forEach(function (b) { b.classList.remove("active"); });
+        buttons.forEach(function (b) {
+          b.classList.remove("active");
+          b.setAttribute("aria-pressed", "false");
+        });
         btn.classList.add("active");
+        btn.setAttribute("aria-pressed", "true");
 
         var filter = btn.getAttribute("data-filter");
 

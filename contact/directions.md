@@ -38,13 +38,14 @@ Several express buses connect Seoul and Suwon; alight at **Suwon Intercity Bus T
 
 ## Google Maps
 
-<div style="border-radius:12px;overflow:hidden;margin:1.5rem 0;">
+<div class="contact-map-wrap">
   <iframe
     title="SKKU Natural Science Campus map"
     width="100%"
     height="380"
     frameborder="0"
     src="https://maps.google.com/maps?q=Sungkyunkwan+University+Natural+Science+Campus,+Suwon&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+    referrerpolicy="no-referrer-when-downgrade"
     allowfullscreen
     loading="lazy"
   ></iframe>

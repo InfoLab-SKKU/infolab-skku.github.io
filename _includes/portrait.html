@@ -14,7 +14,7 @@
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
-    aria-label="{{ member.name | default: "member link" }}"
+    {% if member.name %}aria-label="{{ member.name }}"{% endif %}
   >
     <img
       src="{{ member.image | relative_url }}"

@@ -272,13 +272,9 @@
   box-shadow: 0 10px 36px var(--overlay);
 }
 
-.ra-card:nth-child(1) { border-top-color: #07377b; }
-.ra-card:nth-child(2) { border-top-color: #0d9488; }
-.ra-card:nth-child(3) { border-top-color: #7c3aed; }
-
-[data-dark="true"] .ra-card:nth-child(1) { border-top-color: #38bdf8; }
-[data-dark="true"] .ra-card:nth-child(2) { border-top-color: #2dd4bf; }
-[data-dark="true"] .ra-card:nth-child(3) { border-top-color: #a78bfa; }
+.ra-card:nth-child(1) { border-top-color: var(--security); }
+.ra-card:nth-child(2) { border-top-color: var(--biomedical); }
+.ra-card:nth-child(3) { border-top-color: var(--trustworthy); }
 
 .ra-icon-wrap {
   width: 62px;
@@ -294,13 +290,9 @@
   font-size: 1.6rem;
 }
 
-.ra-security { background: rgba(7, 55, 123, 0.1); color: #07377b; }
-.ra-biomedical { background: rgba(13, 148, 136, 0.1); color: #0d9488; }
-.ra-trustworthy { background: rgba(124, 58, 237, 0.1); color: #7c3aed; }
-
-[data-dark="true"] .ra-security { background: rgba(56, 189, 248, 0.15); color: #38bdf8; }
-[data-dark="true"] .ra-biomedical { background: rgba(45, 212, 191, 0.15); color: #2dd4bf; }
-[data-dark="true"] .ra-trustworthy { background: rgba(167, 139, 250, 0.15); color: #a78bfa; }
+.ra-security    { background: color-mix(in srgb, var(--security) 12%, transparent);    color: var(--security); }
+.ra-biomedical  { background: color-mix(in srgb, var(--biomedical) 12%, transparent);  color: var(--biomedical); }
+.ra-trustworthy { background: color-mix(in srgb, var(--trustworthy) 12%, transparent); color: var(--trustworthy); }
 
 .ra-card h3 {
   font-size: 1.1rem;
@@ -430,6 +422,18 @@
   background: var(--primary);
   color: #fff;
   transform: translateY(-2px);
+}
+
+/* Lab team photo on homepage */
+.home-team-photo {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.home-team-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--rounded);
 }
 
 /* ===========================================

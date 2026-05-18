@@ -15,33 +15,37 @@ h6 {
 }
 
 h1 {
-  font-size: 1.6rem;
-  font-weight: var(--regular);
+  font-size: 1.9rem;
+  font-weight: var(--bold);
   text-transform: uppercase;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   padding-bottom: 5px;
   border-bottom: solid 1px var(--light-gray);
-  font-weight: var(--regular);
+  font-weight: var(--semi-bold);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: var(--semi-bold);
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-weight: var(--semi-bold);
 }
 
 h5 {
-  font-size: 1.15rem;
+  font-size: 1rem;
+  font-weight: var(--semi-bold);
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 0.92rem;
+  font-weight: var(--semi-bold);
 }
 
 :where(h1, h2, h3, h4, h5, h6) > .icon {

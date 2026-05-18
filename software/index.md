@@ -28,7 +28,7 @@ nav:
       </div>
       <div class="team-hstat-sep"></div>
       <div class="team-hstat">
-        <a href="https://github.com/InfoLab-SKKU" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">
+        <a href="https://github.com/InfoLab-SKKU" target="_blank" rel="noopener noreferrer" class="team-hstat-link">
           <span class="team-hstat-num"><i class="fa-brands fa-github"></i></span>
           <span class="team-hstat-lbl">InfoLab-SKKU</span>
         </a>

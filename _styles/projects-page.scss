@@ -48,11 +48,11 @@
 }
 
 .proj-cat-security {
-  background: linear-gradient(135deg, #07377b 0%, #0a4fa8 100%);
+  background: linear-gradient(135deg, var(--hero-1) 0%, var(--hero-2) 100%);
 }
 
 .proj-cat-medical {
-  background: linear-gradient(135deg, #065f46 0%, #059669 100%);
+  background: linear-gradient(135deg, var(--medical-1) 0%, var(--medical-2) 100%);
 }
 
 .proj-cat-icon {
@@ -222,13 +222,13 @@
 }
 
 .proj-tag-security {
-  background: rgba(7, 55, 123, 0.1);
-  color: var(--primary);
+  background: color-mix(in srgb, var(--security) 12%, transparent);
+  color: var(--security);
 }
 
 .proj-tag-medical {
-  background: rgba(5, 150, 105, 0.12);
-  color: #065f46;
+  background: color-mix(in srgb, var(--biomedical) 14%, transparent);
+  color: var(--biomedical);
 }
 
 /* --- Funding Section --- */

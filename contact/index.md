@@ -75,6 +75,7 @@ nav:
         height="380"
         frameborder="0"
         src="https://maps.google.com/maps?q=Hwasan-ro,%20Yulcheon-dong,%20Jangan-gu,%20Suwon-si,%20Gyeonggi-do+(Infolab)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+        referrerpolicy="no-referrer-when-downgrade"
         allowfullscreen
         loading="lazy"
       ></iframe>
@@ -124,9 +125,9 @@ nav:
         <li><i class="fa-solid fa-check"></i> Competitive scholarship opportunities</li>
         <li><i class="fa-solid fa-check"></i> International research collaborations</li>
       </ul>
-      <span class="contact-obf" data-u="tamer" data-d="skku.edu" data-t="email-btn" data-s="Graduate%20Application%20Inquiry" class="contact-join-btn">
-        <i class="fa-solid fa-paper-plane"></i> Send an Inquiry
-      </span>
+      <button type="button" class="contact-obf contact-join-btn" data-u="tamer" data-d="skku.edu" data-t="email-btn" data-s="Graduate%20Application%20Inquiry">
+        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send an Inquiry
+      </button>
     </div>
 
   </div>
@@ -152,8 +153,6 @@ document.addEventListener('DOMContentLoaded', function () {
       el.appendChild(a);
     } else if (t === 'email-btn') {
       var addr = el.dataset.u + '\x40' + el.dataset.d;
-      el.style.cursor = 'pointer';
-      el.classList.add('contact-join-btn');
       el.addEventListener('click', function () {
         window.location.href = 'mai' + 'lto:' + addr + '?subject=' + el.dataset.s;
       });

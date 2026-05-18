@@ -1,9 +1,7 @@
-{% assign image = page.footer | default: site.footer | relative_url %}
 {% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
 
 <footer
-  class="background"
-  style="background-color: #0f2044; padding: 3rem 0 1.5rem;"
+  class="background site-footer"
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
@@ -36,7 +34,7 @@
     <!-- Lab Visitors column -->
     <div class="footer-col">
       <h5 class="footer-heading">Lab Visitors</h5>
-      <script type='text/javascript' id='clustrmaps' src='https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=240&t=n&d=mQz5owgHoo51mOnAZzlTHAqmiNF4eaJD34BWqA920RE&co=0f2044&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+      <script type="text/javascript" id="clustrmaps" async src="https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=240&t=n&d=mQz5owgHoo51mOnAZzlTHAqmiNF4eaJD34BWqA920RE&co=0f2044&cmo=3acc3a&cmn=ff5353&ct=ffffff"></script>
     </div>
   </div>
 
@@ -53,55 +51,4 @@
   <div class="footer-copy">
     &copy; {{ site.time | date: "%Y" }} {{ site.title }} &middot; Sungkyunkwan University
   </div>
-</footer>
-
-
-  <!-- <script src="https://unpkg.com/jsvectormap"></script>
-  <script src="https://unpkg.com/jsvectormap/dist/maps/world-merc.js"></script>
-  <script>
-    var markers = [
-      { name: "Suwon", coords: [37.2636, 127.0286] },
-      { name: "USA", coords: [37.0902, -95.7129] },
-      { name: "India", coords: [20.5937, 78.9629] },
-      { name: "Uzbekistan", coords: [41.3775, 64.5853] },
-      { name: "Pakistan", coords: [30.3753, 69.3451] },
-      { name: "France", coords: [46.6034, 1.8883] },
-      { name: "Palestine", coords: [31.9522, 35.2332] }
-    ];
-
-    var jvm = new jsVectorMap({
-      map: "world_merc",
-      selector: "#map",
-      zoomButtons: true,
-      zoomOnScroll: true,
-      regionStyle: {
-        initial: { fill: "#d1d5db" }
-      },
-      labels: {
-        markers: { render: (marker) => "" }
-      },
-      markersSelectable: true,
-      selectedMarkers: markers.map((marker, index) => {
-        var name = marker.name;
-        if (name === "Suwon" || name === "Brazil") {
-          return index;
-        }
-      }),
-      markers: markers,
-      markerStyle: {
-        initial: { fill: "#12ad07" },
-        selected: { fill: "#ff5050" }
-      },
-      markerLabelStyle: {
-        initial: {
-          fontFamily: "Roboto",
-          fontWeight: 400,
-          fontSize: 13,
-        }
-      }
-    });
-  </script> -->
-
-
-  <!-- <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=COvPQVJGuO8N7b5dqprqmgk25CrRMR0mNGZhOqOFasw&co=08447d'></script> -->
 </footer>

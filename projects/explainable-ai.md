@@ -1,5 +1,8 @@
 ---
 title: Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications
+redirect_from:
+  - /projects/explinable-ai/
+  - /projects/explinable-ai.html
 ---
 
 {% include breadcrumbs.html %}

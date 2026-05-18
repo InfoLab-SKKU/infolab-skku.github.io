@@ -38,6 +38,10 @@ header {
   }
 }
 
+.site-header {
+  background-color: var(--header-bg);
+}
+
 header a {
   color: var(--header-link);
   text-decoration: none;

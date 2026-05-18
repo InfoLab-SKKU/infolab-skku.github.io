@@ -47,7 +47,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #07377b, #0d6ecc);
+  background: linear-gradient(135deg, var(--hero-1), var(--hero-3));
   color: #fff;
   display: flex;
   align-items: center;
@@ -189,7 +189,7 @@
     font-size: 0.85rem;
     color: var(--text);
 
-    i { color: #16a34a; font-size: 0.8rem; flex-shrink: 0; }
+    i { color: var(--success); font-size: 0.8rem; flex-shrink: 0; }
   }
 }
 
@@ -201,16 +201,24 @@
   width: 100%;
   padding: 11px 16px;
   border-radius: var(--rounded);
-  background: linear-gradient(135deg, #07377b 0%, #0d6ecc 100%);
+  background: linear-gradient(135deg, var(--hero-1) 0%, var(--hero-3) 100%);
   color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
   transition: opacity 0.2s, transform 0.2s;
 
   &:hover {
     opacity: 0.88;
     transform: translateY(-2px);
     color: #fff;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
   }
 }

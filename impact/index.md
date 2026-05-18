@@ -40,6 +40,10 @@ published: false
 
 ## {% include icon.html icon="fa-solid fa-chart-line" %} Bibliometric Overview
 
+<p class="impact-asof-note">
+  Bibliometric figures below are snapshots from Google Scholar; last updated May 2026. Live counts: see the Google Scholar profile linked below.
+</p>
+
 <div class="impact-metrics-grid">
   <div class="impact-metric-card impact-metric-card--primary">
     <div class="impact-metric-icon"><i class="fa-solid fa-quote-left"></i></div>

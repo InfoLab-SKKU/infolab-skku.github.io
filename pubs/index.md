@@ -35,12 +35,12 @@ nav:
 <!-- Filter bar + controls -->
 <div class="pubs-header-bar">
   <div class="pubs-filter-btns" role="group" aria-label="Filter publications by topic">
-    <button class="pubs-filter-btn active" data-filter="all">All <span class="pubs-filter-count" id="count-all"></span></button>
-    <button class="pubs-filter-btn" data-filter="security">Security &amp; Adversarial ML <span class="pubs-filter-count" id="count-security"></span></button>
-    <button class="pubs-filter-btn" data-filter="biomedical">Biomedical AI <span class="pubs-filter-count" id="count-biomedical"></span></button>
-    <button class="pubs-filter-btn" data-filter="explainable">Explainable AI <span class="pubs-filter-count" id="count-explainable"></span></button>
-    <button class="pubs-filter-btn pubs-filter-btn--type" data-filter="journal"><i class="fa-regular fa-newspaper"></i> Journals <span class="pubs-filter-count" id="count-journal"></span></button>
-    <button class="pubs-filter-btn pubs-filter-btn--type" data-filter="conference"><i class="fa-solid fa-person-chalkboard"></i> Conferences <span class="pubs-filter-count" id="count-conference"></span></button>
+    <button class="pubs-filter-btn active" data-filter="all" aria-pressed="true">All <span class="pubs-filter-count" id="count-all"></span></button>
+    <button class="pubs-filter-btn" data-filter="security" aria-pressed="false">Security &amp; Adversarial ML <span class="pubs-filter-count" id="count-security"></span></button>
+    <button class="pubs-filter-btn" data-filter="biomedical" aria-pressed="false">Biomedical AI <span class="pubs-filter-count" id="count-biomedical"></span></button>
+    <button class="pubs-filter-btn" data-filter="explainable" aria-pressed="false">Explainable AI <span class="pubs-filter-count" id="count-explainable"></span></button>
+    <button class="pubs-filter-btn pubs-filter-btn--type" data-filter="journal" aria-pressed="false"><i class="fa-regular fa-newspaper" aria-hidden="true"></i> Journals <span class="pubs-filter-count" id="count-journal"></span></button>
+    <button class="pubs-filter-btn pubs-filter-btn--type" data-filter="conference" aria-pressed="false"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i> Conferences <span class="pubs-filter-count" id="count-conference"></span></button>
   </div>
   <div class="pubs-controls">
     <select class="pubs-sort-select" id="pubs-sort" aria-label="Sort publications">
@@ -48,11 +48,11 @@ nav:
       <option value="oldest">Oldest First</option>
     </select>
     <div class="pubs-view-toggle" role="group" aria-label="View mode">
-      <button class="pubs-view-btn" data-view="rich" title="Rich view">
-        <i class="fa-solid fa-grip"></i>
+      <button class="pubs-view-btn" data-view="rich" title="Rich view" aria-pressed="false">
+        <i class="fa-solid fa-grip" aria-hidden="true"></i>
       </button>
-      <button class="pubs-view-btn active" data-view="compact" title="Compact view">
-        <i class="fa-solid fa-list"></i>
+      <button class="pubs-view-btn active" data-view="compact" title="Compact view" aria-pressed="true">
+        <i class="fa-solid fa-list" aria-hidden="true"></i>
       </button>
     </div>
     {%

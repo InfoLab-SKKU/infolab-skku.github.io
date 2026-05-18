@@ -5,8 +5,7 @@ title: Home
 <!-- ============================================================
      HERO SECTION
      ============================================================ -->
-<div class="hero-section" id="main-content" role="banner">
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+<section class="hero-section" aria-labelledby="hero-title">
   <div class="hero-bg" aria-hidden="true">
     <svg class="hero-network-svg" viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
       <g opacity="0.16">
@@ -49,7 +48,7 @@ title: Home
 
   <div class="hero-content">
     <div class="hero-badge">Information Research Laboratory &middot; SKKU</div>
-    <h1 class="hero-title">
+    <h1 id="hero-title" class="hero-title">
       Advancing <span class="hero-accent">Security</span> &amp;
       <span class="hero-accent">Machine Learning</span>
     </h1>
@@ -74,12 +73,12 @@ title: Home
       <a href="https://www.skku.edu/eng/" rel="noopener noreferrer">Sungkyunkwan University</a>.
     </p>
   </div>
-</div>
+</section>
 
 <!-- ============================================================
      STATS BAR
      ============================================================ -->
-<div class="stats-bar" aria-label="Lab statistics">
+<section class="stats-bar" aria-label="Lab statistics">
   <div class="stats-inner">
     <div class="stat-item">
       {% assign pub_orcids = "0000-0001-9232-4843,0000-0002-0086-8155,0009-0002-4648-9289" | split: "," %}
@@ -112,12 +111,12 @@ title: Home
       <span class="stat-lbl">Years Active</span>
     </div>
   </div>
-</div>
+</section>
 
 <!-- ============================================================
      RESEARCH AREAS
      ============================================================ -->
-<div class="ra-section">
+<section class="ra-section" aria-label="Research areas">
   <div class="ra-grid">
     <a href="/projects/security" class="ra-card ra-card-link">
       <div class="ra-icon-wrap ra-security" aria-hidden="true">
@@ -133,7 +132,7 @@ title: Home
       <h3>Biomedical AI</h3>
       <p>Applying deep learning to medical imaging, Alzheimer's detection, multimodal clinical prediction, and biomedical discovery.</p>
     </a>
-    <a href="/projects/explinable-ai" class="ra-card ra-card-link">
+    <a href="/projects/explainable-ai" class="ra-card ra-card-link">
       <div class="ra-icon-wrap ra-trustworthy" aria-hidden="true">
         {% include icon.html icon="fa-solid fa-brain" %}
       </div>
@@ -141,7 +140,7 @@ title: Home
       <p>Building transparent, interpretable, and robust AI systems for critical domains including healthcare, finance, and security.</p>
     </a>
   </div>
-</div>
+</section>
 
 ## {% include icon.html icon="fa-solid fa-flask" %} Our Projects
 
@@ -150,7 +149,7 @@ title: Home
 <!-- ============================================================
      RECENT NEWS
      ============================================================ -->
-<div class="hp-news-section">
+<section class="hp-news-section" aria-label="Recent news">
   <div class="hp-news-header">
     <h2>{% include icon.html icon="fa-solid fa-newspaper" %} Recent News</h2>
   </div>
@@ -176,7 +175,7 @@ title: Home
   <div class="hp-news-more">
     <a href="/news" class="hp-news-all-btn">See All News &rarr;</a>
   </div>
-</div>
+</section>
 
 {% capture text %}
 A great way to explore our work is through our publications. Browse or search our full list of research outputs to learn more about what we do.
@@ -219,9 +218,9 @@ Our team includes graduate students, postdoctoral researchers, and researchers, 
   text=text
 %}
 
-<center>
-<img src="../images/gallery/team-itrc.jpeg" alt="Lab team photo at ITRC event" style="width:100%"/>
-</center>
+<p class="home-team-photo">
+<img src="../images/gallery/team-itrc.jpeg" alt="Lab team photo at ITRC event" loading="lazy"/>
+</p>
 
 {%
   include button.html
@@ -230,7 +229,7 @@ Our team includes graduate students, postdoctoral researchers, and researchers, 
   link="/team/join"
 %}
 
-#### Our funders
+### Our funders
 
 {% capture col1 %}
 <img src="images/skku-logo.png" alt="SKKU Logo">

@@ -4,12 +4,12 @@
     {% if include.link %}
       href="{{ include.link | relative_url }}"
     {% endif %}
-    aria-label="{{ include.title | default: "card link" }}"
+    {% if include.title %}aria-label="{{ include.title }}"{% endif %}
     class="card-image"
   >
     <img
       src="{{ include.image | relative_url }}"
-      alt="{{ include.title | default: "card image" }}"
+      alt="{{ include.title | default: '' }}"
       loading="lazy"
       {% include fallback.html %}
     >

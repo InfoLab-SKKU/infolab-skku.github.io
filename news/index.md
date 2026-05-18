@@ -44,25 +44,25 @@ nav:
 <div class="news-col-main">
 
 <!-- CATEGORY FILTER -->
-<div class="news-filter-bar news-filter-bar--inline">
-  <button class="news-filter-btn active" data-filter="all">
-    <i class="fa-solid fa-layer-group"></i> All
+<div class="news-filter-bar news-filter-bar--inline" role="group" aria-label="Filter updates by category">
+  <button class="news-filter-btn active" data-filter="all" aria-pressed="true">
+    <i class="fa-solid fa-layer-group" aria-hidden="true"></i> All
     <span class="news-filter-count"></span>
   </button>
-  <button class="news-filter-btn" data-filter="publication">
-    <i class="fa-solid fa-file-lines"></i> Publications
+  <button class="news-filter-btn" data-filter="publication" aria-pressed="false">
+    <i class="fa-solid fa-file-lines" aria-hidden="true"></i> Publications
     <span class="news-filter-count"></span>
   </button>
-  <button class="news-filter-btn" data-filter="member">
-    <i class="fa-solid fa-user-plus"></i> Members
+  <button class="news-filter-btn" data-filter="member" aria-pressed="false">
+    <i class="fa-solid fa-user-plus" aria-hidden="true"></i> Members
     <span class="news-filter-count"></span>
   </button>
-  <button class="news-filter-btn" data-filter="patent">
-    <i class="fa-solid fa-certificate"></i> Patents
+  <button class="news-filter-btn" data-filter="patent" aria-pressed="false">
+    <i class="fa-solid fa-certificate" aria-hidden="true"></i> Patents
     <span class="news-filter-count"></span>
   </button>
-  <button class="news-filter-btn" data-filter="award">
-    <i class="fa-solid fa-trophy"></i> Awards
+  <button class="news-filter-btn" data-filter="award" aria-pressed="false">
+    <i class="fa-solid fa-trophy" aria-hidden="true"></i> Awards
     <span class="news-filter-count"></span>
   </button>
 </div>

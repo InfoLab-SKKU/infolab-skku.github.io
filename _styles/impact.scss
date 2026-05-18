@@ -5,6 +5,15 @@
    RESEARCH IMPACT PAGE STYLES
    =========================================== */
 
+.impact-asof-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-style: italic;
+  max-width: 640px;
+  margin: 0 auto 16px;
+}
+
 /* --- Metrics grid --- */
 .impact-metrics-grid {
   display: grid;
@@ -39,7 +48,7 @@
 }
 
 .impact-metric-card--primary {
-  background: linear-gradient(135deg, #07377b 0%, #0a4fa8 100%);
+  background: linear-gradient(135deg, var(--hero-1) 0%, var(--hero-2) 100%);
   color: #fff;
 
   .impact-metric-icon,

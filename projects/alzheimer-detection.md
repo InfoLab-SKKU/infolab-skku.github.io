@@ -1,5 +1,8 @@
 ---
 title: Multimodal, Explainable, and Adversarially-Robust Deep Learning for Alzheimer’s Disease Progression Detection
+redirect_from:
+  - /projects/alzeimer-detection/
+  - /projects/alzeimer-detection.html
 ---
 
 {% include breadcrumbs.html %}
