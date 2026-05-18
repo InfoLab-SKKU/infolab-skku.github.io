@@ -69,3 +69,7 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+  - tools
+  - node_modules
+  - package.json
+  - package-lock.json

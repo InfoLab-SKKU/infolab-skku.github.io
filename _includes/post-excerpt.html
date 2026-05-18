@@ -8,7 +8,7 @@
   {% assign post = include %}
 {% endif %}
 
-<div class="post-excerpt-container">
+<article class="post-excerpt-container">
   <div class="post-excerpt">
     {% assign url = post.url %}
     {% assign title = post.title %}
@@ -18,11 +18,13 @@
       <a
         href="{{ url | relative_url }}"
         class="post-excerpt-image"
-        aria-label="{{ title | default: "excerpt link" }}"
+        {% if title %}aria-label="{{ title }}"{% endif %}
       >
         <img
           src="{{ thumbnail | relative_url }}"
-          alt="{{ title | default: "excerpt image" }}"
+          alt="{{ title | default: '' }}"
+          width="400"
+          height="240"
           loading="lazy"
           {% include fallback.html %}
         >
@@ -48,7 +50,7 @@
         | strip_html
       %}
       {% assign search = post.content
-        | strip_html 
+        | strip_html
         | strip_newlines
         | regex_strip
       %}
@@ -57,4 +59,4 @@
       </p>
     </div>
   </div>
-</div>
+</article>

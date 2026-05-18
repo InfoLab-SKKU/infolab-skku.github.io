@@ -20,6 +20,8 @@
       src="{{ member.image | relative_url }}"
       class="portrait-image"
       alt="{{ member.name | default: "Lab member" }} portrait"
+      width="320"
+      height="320"
       loading="lazy"
       {% include fallback.html %}
     >

@@ -3,14 +3,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<!-- Font Awesome icons (load asynchronously due to size) -->
-{% assign fontawesome = "https://use.fontawesome.com/releases/v6.5.0/css/all.css" %}
-<link
-  href="{{ fontawesome }}"
-  rel="stylesheet"
-  media="none"
-  onload="this.removeAttribute('media'); this.onload = null;"
-/>
-<noscript>
-  <link href="{{ fontawesome }}" rel="stylesheet">
-</noscript>
+{% comment %}
+  Font Awesome loads asynchronously. Pages that don't render any icons
+  (e.g. 404) can opt out by setting `icons: false` in front matter.
+{% endcomment %}
+{% if page.icons != false %}
+  {% assign fontawesome = "https://use.fontawesome.com/releases/v6.5.0/css/all.css" %}
+  <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+  <link rel="preload" as="style" href="{{ fontawesome }}" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="{{ fontawesome }}"></noscript>
+{% endif %}

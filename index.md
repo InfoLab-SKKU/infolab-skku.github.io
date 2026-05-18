@@ -7,43 +7,7 @@ title: Home
      ============================================================ -->
 <section class="hero-section" aria-labelledby="hero-title">
   <div class="hero-bg" aria-hidden="true">
-    <svg class="hero-network-svg" viewBox="0 0 1200 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-      <g opacity="0.16">
-        <circle cx="120" cy="80" r="4" fill="white"/>
-        <circle cx="360" cy="160" r="3" fill="white"/>
-        <circle cx="600" cy="55" r="5" fill="white"/>
-        <circle cx="840" cy="130" r="3" fill="white"/>
-        <circle cx="1080" cy="75" r="4" fill="white"/>
-        <circle cx="210" cy="320" r="3" fill="white"/>
-        <circle cx="460" cy="390" r="4" fill="white"/>
-        <circle cx="720" cy="290" r="3" fill="white"/>
-        <circle cx="960" cy="370" r="4" fill="white"/>
-        <circle cx="70"  cy="440" r="3" fill="white"/>
-        <circle cx="1140" cy="410" r="3" fill="white"/>
-        <circle cx="310" cy="470" r="4" fill="white"/>
-        <circle cx="800" cy="460" r="3" fill="white"/>
-        <circle cx="500" cy="230" r="3" fill="white"/>
-        <circle cx="1000" cy="200" r="4" fill="white"/>
-        <line x1="120" y1="80"  x2="360" y2="160"  stroke="white" stroke-width="1"/>
-        <line x1="360" y1="160" x2="600" y2="55"   stroke="white" stroke-width="1"/>
-        <line x1="600" y1="55"  x2="840" y2="130"  stroke="white" stroke-width="1"/>
-        <line x1="840" y1="130" x2="1080" y2="75"  stroke="white" stroke-width="1"/>
-        <line x1="120" y1="80"  x2="210" y2="320"  stroke="white" stroke-width="1"/>
-        <line x1="360" y1="160" x2="460" y2="390"  stroke="white" stroke-width="1"/>
-        <line x1="600" y1="55"  x2="500" y2="230"  stroke="white" stroke-width="1"/>
-        <line x1="840" y1="130" x2="960" y2="370"  stroke="white" stroke-width="1"/>
-        <line x1="1080" y1="75" x2="1000" y2="200" stroke="white" stroke-width="1"/>
-        <line x1="210" y1="320" x2="460" y2="390"  stroke="white" stroke-width="1"/>
-        <line x1="460" y1="390" x2="720" y2="290"  stroke="white" stroke-width="1"/>
-        <line x1="720" y1="290" x2="960" y2="370"  stroke="white" stroke-width="1"/>
-        <line x1="960" y1="370" x2="1140" y2="410" stroke="white" stroke-width="1"/>
-        <line x1="70"  y1="440" x2="210" y2="320"  stroke="white" stroke-width="1"/>
-        <line x1="70"  y1="440" x2="310" y2="470"  stroke="white" stroke-width="1"/>
-        <line x1="800" y1="460" x2="960" y2="370"  stroke="white" stroke-width="1"/>
-        <line x1="1000" y1="200" x2="1140" y2="410" stroke="white" stroke-width="1"/>
-        <line x1="500" y1="230" x2="720" y2="290"  stroke="white" stroke-width="1"/>
-      </g>
-    </svg>
+    {% include hero-svg.html %}
   </div>
 
   <div class="hero-content">
@@ -118,21 +82,21 @@ title: Home
      ============================================================ -->
 <section class="ra-section" aria-label="Research areas">
   <div class="ra-grid">
-    <a href="/projects/security" class="ra-card ra-card-link">
+    <a href="/projects/security" class="ra-card ra-card-link" data-area="security">
       <div class="ra-icon-wrap ra-security" aria-hidden="true">
         {% include icon.html icon="fa-solid fa-shield-halved" %}
       </div>
       <h3>Security &amp; Adversarial ML</h3>
       <p>Defending AI systems against adversarial attacks, malware, binary analysis, and exploitation of interpretability mechanisms in high-stakes environments.</p>
     </a>
-    <a href="/projects/medical" class="ra-card ra-card-link">
+    <a href="/projects/medical" class="ra-card ra-card-link" data-area="biomedical">
       <div class="ra-icon-wrap ra-biomedical" aria-hidden="true">
         {% include icon.html icon="fa-solid fa-dna" %}
       </div>
       <h3>Biomedical AI</h3>
       <p>Applying deep learning to medical imaging, Alzheimer's detection, multimodal clinical prediction, and biomedical discovery.</p>
     </a>
-    <a href="/projects/explainable-ai" class="ra-card ra-card-link">
+    <a href="/projects/explainable-ai" class="ra-card ra-card-link" data-area="trustworthy">
       <div class="ra-icon-wrap ra-trustworthy" aria-hidden="true">
         {% include icon.html icon="fa-solid fa-brain" %}
       </div>
@@ -156,7 +120,7 @@ title: Home
   <div class="hp-news-grid">
     {% assign sorted_news = site.data.news | sort: "date" | reverse %}
     {% for post in sorted_news limit:6 %}
-    <div class="hp-news-card">
+    <article class="hp-news-card">
       <div class="hp-news-date">{{ post.date | date: "%b %d, %Y" }}</div>
       <div class="hp-news-title">{{ post.title }}</div>
       {% if post.description %}
@@ -169,7 +133,7 @@ title: Home
           {% endif %}
         {% endif %}
       {% endif %}
-    </div>
+    </article>
     {% endfor %}
   </div>
   <div class="hp-news-more">

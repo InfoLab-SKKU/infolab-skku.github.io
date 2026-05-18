@@ -10,6 +10,8 @@
     <img
       src="{{ include.image | relative_url }}"
       alt="{{ include.title | default: '' }}"
+      width="400"
+      height="300"
       loading="lazy"
       {% include fallback.html %}
     >

@@ -42,10 +42,14 @@
 {% assign feed = "feed.xml" | absolute_url %}
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07377b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#05243a" media="(prefers-color-scheme: dark)">
 
 <title>{{ fulltitle }}</title>
 
 <link rel="icon" href="{{ icon }}">
+<link rel="apple-touch-icon" href="{{ icon }}">
+<link rel="manifest" href="{{ "/manifest.webmanifest" | relative_url }}">
 
 {% assign meta_title = title | default: site.title %}
 {% assign meta_description = description | default: site.description | strip %}

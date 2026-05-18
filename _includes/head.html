@@ -1,4 +1,7 @@
 <head>
+  <!-- Dark-mode pre-paint: prevent FOUC by setting data-dark before stylesheets evaluate -->
+  <script>document.documentElement.dataset.dark = localStorage.getItem('dark-mode') ?? 'false';</script>
+
   {% include analytics.html %}
   {% include verification.html %}
   {% include meta.html %}

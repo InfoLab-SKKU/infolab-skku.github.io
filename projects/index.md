@@ -52,9 +52,9 @@ nav:
     <a href="/{{ project.link }}" class="proj-card" data-group="{{ project.group }}">
       <div class="proj-card-img">
         {% if project.image contains "://" %}
-          <img src="{{ project.image }}" alt="{{ project.title }}" loading="lazy" onerror="this.closest('.proj-card-img').style.display='none'">
+          <img src="{{ project.image }}" alt="{{ project.title }}" width="400" height="180" loading="lazy" data-fallback-hide>
         {% else %}
-          <img src="/{{ project.image }}" alt="{{ project.title }}" loading="lazy" onerror="this.closest('.proj-card-img').style.display='none'">
+          <img src="/{{ project.image }}" alt="{{ project.title }}" width="400" height="180" loading="lazy" data-fallback-hide>
         {% endif %}
       </div>
       <div class="proj-card-body">

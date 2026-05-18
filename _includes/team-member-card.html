@@ -1,12 +1,21 @@
+{% comment %}
+  Person card variants live in three files: card.html (generic),
+  portrait.html (round image only), team-member-card.html (this one).
+  All three duplicate the member.links iteration. Consider merging into
+  a single _includes/person.html with style="card|portrait|tile" in a
+  future refactor (needs visual regression testing first).
+{% endcomment %}
 {% assign member = include.member %}
 {% assign mtype = site.data.types[member.role] %}
 
-<div class="mem-card">
+<article class="mem-card">
   <a href="{{ member.url | relative_url }}" class="mem-card-photo-link" aria-label="{{ member.name }}">
     <img
       src="{{ member.image | relative_url }}"
       alt="{{ member.name }}"
       class="mem-card-photo"
+      width="320"
+      height="320"
       loading="lazy"
       {% include fallback.html %}
     >
@@ -50,4 +59,4 @@
     </div>
     {% endif %}
   </div>
-</div>
+</article>

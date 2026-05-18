@@ -6,7 +6,7 @@
             <div class="carousel-item">
               <a href="/projects/#project-{{ forloop.index }}" class="carousel-link">
                 <div class="carousel-image-container">
-                  <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="carousel-image">
+                  <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="carousel-image" width="300" height="200" loading="lazy">
                 </div>
                 <div class="carousel-caption">
                   <h3>{{ project.title }}</h3>

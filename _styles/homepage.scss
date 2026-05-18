@@ -272,9 +272,9 @@
   box-shadow: 0 10px 36px var(--overlay);
 }
 
-.ra-card:nth-child(1) { border-top-color: var(--security); }
-.ra-card:nth-child(2) { border-top-color: var(--biomedical); }
-.ra-card:nth-child(3) { border-top-color: var(--trustworthy); }
+.ra-card[data-area="security"]    { border-top-color: var(--security); }
+.ra-card[data-area="biomedical"]  { border-top-color: var(--biomedical); }
+.ra-card[data-area="trustworthy"] { border-top-color: var(--trustworthy); }
 
 .ra-icon-wrap {
   width: 62px;

@@ -89,8 +89,8 @@ nav:
       {% else %}
         {% assign item_type = "publication" %}
       {% endif %}
-      <div class="news-card-item" data-type="{{ item_type }}" data-year="{{ item_year }}">
-        <div class="nci-accent nci-{{ item_type }}"></div>
+      <article class="news-card-item" data-type="{{ item_type }}" data-year="{{ item_year }}">
+        <div class="nci-accent nci-{{ item_type }}" aria-hidden="true"></div>
         <div class="nci-body">
           <div class="nci-meta">
             <span class="nci-type-badge nci-badge-{{ item_type }}">
@@ -111,10 +111,10 @@ nav:
           </h3>
           <p class="nci-desc">{{ item.description }}</p>
           {% if item.url %}
-            <a href="{{ item.url }}" class="nci-link" target="_blank" rel="noopener">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="{{ item.url }}" class="nci-link" target="_blank" rel="noopener">Read more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
           {% endif %}
         </div>
-      </div>
+      </article>
     {% endfor %}
   </div>
 </div>
@@ -134,7 +134,7 @@ nav:
       <a href="https://bsky.app/profile/infolab.bsky.social" target="_blank" rel="noopener" class="news-social-handle">@infolab.bsky.social</a>
     </div>
     <div class="bluesky-embed-wrap">
-      <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
+      <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed@0.1.16/dist/bsky-embed.es.js" async></script>
       <bsky-embed
         username="infolab.bsky.social"
         mode=""

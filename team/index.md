@@ -53,7 +53,7 @@ nav:
   {% if pi_member %}
   <div class="pi-card">
     <a href="{{ pi_member.url | relative_url }}" class="pi-card-photo-wrap" aria-label="{{ pi_member.name }}">
-      <img src="{{ pi_member.image | relative_url }}" alt="{{ pi_member.name }}" class="pi-card-photo" loading="lazy">
+      <img src="{{ pi_member.image | relative_url }}" alt="{{ pi_member.name }}" class="pi-card-photo" width="180" height="180" loading="lazy">
     </a>
     <div class="pi-card-body">
       <span class="pi-role-pill">Professor &amp; Lab Director</span>
