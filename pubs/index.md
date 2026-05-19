@@ -7,12 +7,9 @@ nav:
 
 <!-- Stats bar -->
 {% assign pub_orcids = "0000-0001-9232-4843,0000-0002-0086-8155,0009-0002-4648-9289" | split: "," %}
-{% assign total_pubs = 0 %}
-{% for citation in site.data.citations %}
-  {% if pub_orcids contains citation.orcid %}
-    {% assign total_pubs = total_pubs | plus: 1 %}
-  {% endif %}
-{% endfor %}
+{% assign filtered_pubs = site.data.citations | where_exp: "c", "pub_orcids contains c.orcid" %}
+{% assign renderable_pubs = filtered_pubs | where_exp: "c", "c.id != '' or c.authors.size > 0" %}
+{% assign total_pubs = renderable_pubs.size %}
 {% assign current_year = 'now' | date: "%Y" %}
 
 <div class="pubs-stats-bar">
@@ -72,5 +69,5 @@ nav:
 {% include search-info.html %}
 
 <div id="pubs-list-wrapper">
-{% include list.html data="citations" component="citation" style="rich" filters="orcid: 0000-0001-9232-4843|0000-0002-0086-8155|0009-0002-4648-9289"%}
+{% include list.html data_array=renderable_pubs component="citation" style="rich" %}
 </div>
