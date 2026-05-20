@@ -271,6 +271,14 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- title: "Explainable Artificial Intelligence for Alzheimer\u2019s disease: A multi-layer\
+    \ multimodal detection and prediction mode"
+  publisher: Scientific Reports, Nature
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/access.2020.3048435
   title: "A Comprehensive Fuzzy Ontology-Based Decision Support System for Alzheimer\u2019\
     s Disease Diagnosis"
@@ -567,6 +575,14 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- title: Alzheimer Disease Prediction Model Based on Decision Fusion of CNN-BiLSTM
+    Deep Neural Networks
+  publisher: ' IntelliSys 2020: Intelligent Systems and Applications, 2020.'
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ACCESS.2020.3010556
   title: 'Intensive Care Unit Mortality Prediction: An Improved Patient-Specific Stacking
     Ensemble Model'
@@ -600,6 +616,14 @@
   publisher: IEEE Access
   date: '2020-01-01'
   link: https://doi.org/g9cmc9
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: authenticusid:1020200029747
+  title: Semantically intelligent clinical decision support system for diabetes mellitus
+    treatment
+  date: '2021-01-18'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -827,6 +851,20 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- title: Supplementary Material
+  publisher: CC BY 4.0
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: Word2vec and LSTM-based Offensive Content Detection
+  publisher: Proceedings of Symposium of the KICs, 2019
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1186/s13326-018-0176-y
   title: 'DMTO: a realistic ontology for standard diabetes mellitus treatment'
   authors:
@@ -965,6 +1003,29 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- title: Feature-based Transportation Sentiment Analysis Using Fuzzy Ontology and
+    SentiWordNe
+  publisher: The 9th International Conference on Information and Communication Technology
+    (ICT) Convergence, ICT Convergence Powered by Smart Intelligence, 2018
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: Sentiment analysis of transportation using word embedding and LDA approaches
+  publisher: Proceedings of Symposium of the KICs, pp.1111-1112, 2018
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: "\u201CLiver Fibrosis Diagnosis with Mamdani FIS"
+  publisher: 'Journal of Advanced Research Design '
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.jestch.2017.03.009
   title: A fuzzy ontology modeling for case base knowledge in diabetes mellitus domain
   authors:
@@ -973,6 +1034,14 @@
   publisher: Engineering Science and Technology, an International Journal
   date: '2017-06-01'
   link: https://doi.org/grfqjz
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: ': A Fibrosis Diagnosis Clinical Decision Support System'
+  publisher: "the 2nd International conference on Advanced Technology and Applied\
+    \ Sciences (ICaTAS\u20192017), Abu Qir, Alexandria, Egypt, 2017."
+  date: '2021-01-18'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -1105,6 +1174,24 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- title: A Diabetes Diagnostic Domain Ontology for CBR System from the Conceptual
+    Model of SNOMED C
+  publisher: "The IEEE second International Conference on Engineering and Technology\
+    \ (ICET 2014), Cairo, Egypt, 1 \u2013 7, 2014"
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: A proposed SNOMED CT ontology-based encoding methodology for diabetes diagnosis
+    case-base
+  publisher: The 9th IEEE International Conference on Computer Engineering and Systems
+    (ICCES 2014), 184-191, 2014.
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1007/978-3-319-13461-1_45
   title: EHR Data Preparation for Case Based Reasoning Construction
   authors:
@@ -1116,6 +1203,45 @@
   publisher: Communications in Computer and Information Science
   date: '2014-01-01'
   link: https://doi.org/g9cmd5
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: A Proposal of Clinical Decision Support system Architecture for Distributed
+    Electronic Health Record
+  publisher: 'BIOCOMP''11 - 12th International Conference on Bioinformatics and Computational
+    Biology, USA, 2011. '
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: An Electronic Commerce Security Policy Model
+  publisher: 'In the proceeding of the fifth international conference of informatics
+    and systems (INFOS 2007), Cairo, Egypt, 421-435, 2007. '
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: Liver Fibrosis Diagnosis with Mamdani FIS
+  date: '2021-01-18'
+  link: https://www.researchgate.net/publication/319942814_Liver_Fibrosis_Diagnosis_with_Mamdani_FIS
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: 'Viral Hepatitis Diagnosis: A Survey of Artificial Intelligent Techniques'
+  date: '2021-01-18'
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: "\u201CA real-time framework for diabetes mellitus patient monitoring based\
+    \ on wireless body area network"
+  publisher: ",\u201D The 11th International Conference on Informatics and Systems\
+    \ (INFOS), Cairo, Egypt, 2018."
+  date: '2021-01-18'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -1148,6 +1274,32 @@
   publisher: Expert Systems with Applications
   date: '2026-03-01'
   link: https://doi.org/g95wqv
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: Explainable Ensemble Deep Learning Architecture for Fruit Disease Detection
+    for Sustainable Agriculture and Food System Resilience
+  publisher: 2026 20th International Conference on Ubiquitous Information Management
+    and Communication (IMCOM)
+  date: '2026-05-14'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: 'Smart healthcare: fusion of multimodal medical signals'
+  publisher: Cybersecurity for Healthcare Systems in the Internet of Medical Things
+    Era
+  date: '2026-05-14'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: 'Towards Reliable and Interpretable Wheat Disease Diagnosis: Unified Framework
+    Incorporating Vision Transformer and Advanced Object Detection'
+  publisher: 2026 20th International Conference on Ubiquitous Information Management
+    and Communication (IMCOM)
+  date: '2026-05-14'
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -1203,6 +1355,14 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
+    Transformer Systems under Attack'
+  publisher: arXiv preprint arXiv:2507.14248
+  date: '2026-05-14'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICEENG64546.2025.11031335
   title: Chronic Kidney Disease Detection Augmented with Hybrid Explainable AI
   authors:
@@ -1240,6 +1400,14 @@
   - type: pdf
     link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification
       (1).pdf
+- title: Multi-Plane Multi-Slice Longitudinal MRI for Deep Ensemble Progression Detection
+    based on Enhanced Residual Multi-Head Self-Attention
+  publisher: Knowledge-Based Systems
+  date: '2026-05-14'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.57197/JDR-2024-0101
   title: 'Responsible Artificial Intelligence for Mental Health Disorders: Current
     Applications and Future Challenges'
@@ -2214,6 +2382,16 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: arxiv:arXiv:2103.13032v1
+  title: An Exploration of Geo-temporal Characteristics of Users' Reactions on Social
+    Media During the Pandemic
+  publisher: ArXiv
+  date: '2026-05-09'
+  link: https://publons.com/wos-op/publon/58825553/
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.mtcomm.2020.101897
   title: Machine learning-aided design of aluminum alloys with high performance
   authors:
@@ -2403,6 +2581,15 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- title: Computationally efficient cooperative public key authentication protocols
+    in ubiquitous sensor network
+  publisher: 'Advancements in Distributed Computing and Internet Technologies: Trends
+    and Issues'
+  date: '2026-05-18'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/ICC.2012.6364127
   title: Collaboration in social network-based information dissemination
   authors:
@@ -2413,6 +2600,23 @@
   publisher: 2012 IEEE International Conference on Communications (ICC)
   date: '2012-06-01'
   link: https://doi.org/hb28vz
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: A Software-Based Group Attestation for Wireless Sensor Networks.
+  publisher: Adhoc & Sensor Wireless Networks
+  date: '2026-05-16'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: arxiv:arXiv:0803.0037v1
+  title: A Survey on Deep Packet Inspection for Intrusion Detection Systems
+  publisher: Magazine of Korea Telecommunication Society, vol. 24, No. 11, pp. 25-36,
+    November 2007
+  date: '2026-05-09'
+  link: https://publons.com/wos-op/publon/58825555/
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
