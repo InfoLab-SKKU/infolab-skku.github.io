@@ -49,7 +49,13 @@ title: Home
       {% assign pub_count = 0 %}
       {% for citation in site.data.citations %}
         {% if pub_orcids contains citation.orcid %}
-          {% assign pub_count = pub_count | plus: 1 %}
+          {% comment %} Match /pubs render filter: citation.html only renders entries with id or authors {% endcomment %}
+          {% assign _renderable = false %}
+          {% if citation.id and citation.id != "" %}{% assign _renderable = true %}{% endif %}
+          {% if citation.authors and citation.authors.size > 0 %}{% assign _renderable = true %}{% endif %}
+          {% if _renderable %}
+            {% assign pub_count = pub_count | plus: 1 %}
+          {% endif %}
         {% endif %}
       {% endfor %}
       {% assign pub_tens = pub_count | divided_by: 10 | times: 10 %}
