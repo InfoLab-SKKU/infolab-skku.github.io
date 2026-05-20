@@ -95,7 +95,7 @@
   publisher: Magazine of Korea Telecommunication Society, vol. 24, No. 11, pp. 25-36,
     November 2007
   date: '2008-01-01'
-  link: https://publons.com/wos-op/publon/58825555/
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -185,7 +185,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1007/S00521-022-07263-9
+- id: doi:10.1007/s00521-022-07263-9
   title: "Two-stage deep learning model for Alzheimer\u2019s disease detection and\
     \ prediction of the mild cognitive impairment time"
   authors:
@@ -367,7 +367,7 @@
   buttons:
   - type: pdf
     link: pdf/preprints202307_0585_v1.pdf
-- id: doi:10.1007/S10462-023-10415-5
+- id: doi:10.1007/s10462-023-10415-5
   title: "Trustworthy artificial intelligence in Alzheimer\u2019s disease: state of\
     \ the art, opportunities, and challenges"
   authors:
@@ -461,7 +461,7 @@
   buttons:
   - type: pdf
     link: pdf/math10030351.pdf
-- id: doi:10.1007/S00607-025-01485-0
+- id: doi:10.1007/s00607-025-01485-0
   title: 'Sustainable energy management in the AI era: a comprehensive analysis of
     ML and DL approaches'
   authors:
@@ -474,8 +474,8 @@
   link: https://doi.org/hb28vh
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1016/J.JAG.2022.102854
   title: Integration of machine learning algorithms and GIS-based approaches to cutaneous
     leishmaniasis prevalence risk mapping
@@ -514,7 +514,7 @@
   buttons:
   - type: pdf
     link: pdf/electronics8060635.pdf
-- id: doi:10.1038/S41598-024-54065-1
+- id: doi:10.1038/s41598-024-54065-1
   title: A dynamic fuzzy rule-based inference system using fuzzy inference with semantic
     reasoning
   authors:
@@ -529,8 +529,8 @@
   link: https://doi.org/hb28vj
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1016/j.aej.2023.09.050
   title: "Time-series visual explainability for Alzheimer\u2019s disease progression\
     \ detection for smart healthcare"
@@ -696,7 +696,7 @@
   publisher: Advances in Intelligent Systems and Computing
   date: '2020-08-25'
   link: https://doi.org/g9b3dh
-  orcid: 0000-0001-9232-4843
+  orcid: 0000-0001-9705-1477
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
@@ -808,7 +808,7 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1016/J.PMCJ.2024.101922
+- id: doi:10.1016/j.pmcj.2024.101922
   title: 'MotionID: Towards practical behavioral biometrics-based implicit user authentication
     on smartphones'
   authors:
@@ -821,8 +821,8 @@
   link: https://doi.org/hb28vn
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1038/s41598-023-42796-6
   title: Computer aided progression detection model based on optimized deep LSTM ensemble
     model and the fusion of multivariate time series data
@@ -1269,12 +1269,12 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: wosuid:PPRN:88760232
+- id: arxiv:https://arxiv.org/abs/2405.01934
   title: Impact of architectural modifications on deep learning adversarial robustness
   authors: []
-  publisher: ArXiv
+  publisher: arXiv preprint arXiv:2405.01934
   date: '2024-01-01'
-  link: https://publons.com/wos-op/publon/68109325/
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1393,9 +1393,9 @@
   title: An Exploration of Geo-temporal Characteristics of Users' Reactions on Social
     Media During the Pandemic
   authors: []
-  publisher: ArXiv
+  publisher: ''
   date: '2021-01-01'
-  link: https://publons.com/wos-op/publon/58825553/
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1444,13 +1444,13 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:PPRN:88761299
+- id: arxiv:https://arxiv.org/abs/2405.01963
   title: 'From Attack to Defense: Insights into Deep Learning Security Measures in
     Black-Box Settings'
   authors: []
-  publisher: ArXiv
+  publisher: arXiv preprint arXiv:2405.01963
   date: '2024-01-01'
-  link: https://publons.com/wos-op/publon/68864877/
+  link: ''
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1701,8 +1701,8 @@
   link: https://doi.org/hb3xb3
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/tr.2025.3646839
   title: 2025 Index IEEE Transactions on Reliability Vol. 74
   authors: []
@@ -2997,18 +2997,10 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1007/S00371-024-03630-W
-  title: 'Underwater image restoration and enhancement: a comprehensive review of
-    recent trends, challenges, and applications'
-  authors:
-  - Yasmin M. Alsakar
-  - Nehal A. Sakr
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Mohammed Elmogy
-  publisher: The Visual Computer
-  date: '2024-10-10'
-  link: https://doi.org/g9f4pk
+- title: 'Sustainable energy management in the AI era: a comprehensive analysis of
+    ML and DL approaches'
+  publisher: Computing
+  date: '2026-05-20'
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -3034,14 +3026,45 @@
   buttons:
   - type: pdf
     link: pdf/Alzheimers disease diagnosis in the metaverse.pdf
-- id: doi:10.1007/978-3-031-47715-7_38
+- id: doi:http://dx.doi.org/10.13088/jiis.2024.30.2.025
+  title: Integrating Digital Twin Technology with Dynamic Ensemble Learning for Sepsis
+    Prediction in Intensive Care Units
+  authors:
+  - Amirhossein Danesh
+  - Firuz Juraev
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  publisher: "\uC9C0\uB2A5\uC815\uBCF4\uC5F0\uAD6C"
+  date: '2024-06-01'
+  link: https://doi.org/hb3f6s
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: A dynamic fuzzy rule-based inference system using fuzzy inference with semantic
+    reasoning
+  publisher: Scientific reports
+  date: '2026-05-20'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: 'MotionID: Towards practical behavioral biometrics-based implicit user authentication
+    on smartphones'
+  publisher: Pervasive and Mobile Computing
+  date: '2026-05-20'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:https://doi.org/10.1007/978-3-031-47715-7_38
   title: "Explainable Dynamic Ensemble Framework for\_Classification Based on\_the\_\
     Late Fusion of\_Heterogeneous Multimodal Data"
   authors:
   - Firuz Juraev
   - Shaker El-Sappagh
   - Tamer Abuhmed
-  publisher: Lecture Notes in Networks and Systems
+  publisher: Intelligent Systems and Applications
   date: '2024-01-01'
   link: https://doi.org/hb28vk
   orcid: 0000-0001-9232-4843
@@ -3097,6 +3120,20 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:https://doi.org/10.1007/978-3-030-55190-2_36
+  title: Alzheimer Disease Prediction Model Based on Decision Fusion of CNN-BiLSTM
+    Deep Neural Networks
+  authors:
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Kyung Sup Kwak
+  publisher: Intelligent Systems and Applications
+  date: '2021-01-01'
+  link: https://doi.org/g9b3dh
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1109/JIOT.2020.2975779
   title: 'AUTo<i>Sen</i>: Deep-Learning-Based Implicit Continuous Authentication Using
     Smartphone Sensors'
@@ -3116,7 +3153,7 @@
     in ubiquitous sensor network
   publisher: 'Advancements in Distributed Computing and Internet Technologies: Trends
     and Issues'
-  date: '2026-05-18'
+  date: '2026-05-20'
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
