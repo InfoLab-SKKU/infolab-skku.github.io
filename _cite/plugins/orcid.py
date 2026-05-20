@@ -50,8 +50,11 @@ def main(entry):
         id_type = get_safe(_id, "external-id-type", "")
         id_value = get_safe(_id, "external-id-value", "")
 
-        # create source
-        source = {"id": f"{id_type}:{id_value}"}
+        # create source; omit id entirely when ORCID has no external id,
+        # so cite.py won't try to resolve a bogus ":" via Manubot
+        source = {}
+        if id_type and id_value:
+            source["id"] = f"{id_type}:{id_value}"
 
         # if not a doi, Manubot likely can't cite, so keep citation details
         if id_type != "doi":

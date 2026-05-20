@@ -185,8 +185,11 @@ def _process_source(index, source):
             # otherwise, if from metasource (id retrieved from some third-party API), just warn
             else:
                 log(e, 3, "WARNING")
-                # discard source from citations
-                return index, None, False
+                # keep source if the metasource already supplied a title;
+                # otherwise there's nothing to render, so discard
+                if not get_safe(source, "title", ""):
+                    return index, None, False
+                citation = {}
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
