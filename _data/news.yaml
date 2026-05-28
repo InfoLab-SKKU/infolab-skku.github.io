@@ -10,6 +10,16 @@
 # Otherwise, leave `link` blank.
 # Please add the new entries on the top although these are sorted by date. 
 
+- title: "Our paper on a new framework for system-level convergence of IoMT, LLMs, and XAI for healthcare has been accepted to Information Fusion"
+  date: 2026-05-28
+  description: "We are pleased to announce that our paper, 'Toward Trustworthy Digital Healthcare: A System-Level Convergence of IoMT, Large Language Models, and Explainable AI,' has been accepted to Information Fusion — a top-tier journal in computer science with an Impact Factor of 15.5 and a JCR ranking in the top 1-2%. Congratulations to the team!"
+  url:
+
+- title: "Our paper on Explainable Ensemble Learning for Anxiety and Stress Detection has been accepted to Applied Soft Computing Journal"
+  date: 2026-05-27
+  description: "We are excited to announce that our paper, 'Explainable Ensemble Learning Framework for Anxiety and Stress Detection in Pediatric Sleep EEG,' has been accepted to Applied Soft Computing Journal (IF=6.6, JCR top 10%). Congratulations to the team on this important publication milestone!"
+  url:
+
 - title: "Our paper VisionDES has been accepted at ACM SIGKDD (KDD 2026)!"
   date: 2026-05-16
   description: "We are thrilled to announce that our paper, 'VisionDES: Robust and Explainable Dynamic Vision Ensemble,' has been accepted at the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2026) — one of the most prestigious and competitive venues in data mining and machine learning (BK=4). VisionDES is the first systematic dynamic ensemble selection framework for robust and explainable vision classification, improving reliability under adversarial attacks and distribution shifts. Congratulations to the team on this outstanding achievement!"
