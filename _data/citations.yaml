@@ -217,6 +217,22 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1016/j.neucom.2022.09.009
+  title: "Automatic detection of Alzheimer\u2019s disease progression: An efficient\
+    \ information fusion approach with heterogeneous ensemble classifiers"
+  authors:
+  - Shaker El-Sappagh
+  - Farman Ali
+  - Tamer Abuhmed
+  - Jaiteg Singh
+  - Jose M. Alonso
+  publisher: Neurocomputing
+  date: '2022-11-01'
+  link: https://doi.org/g9b3c3
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.future.2020.10.005
   title: "Alzheimer\u2019s disease progression detection model based on an early fusion\
     \ of cost-effective multimodal data"
@@ -236,22 +252,6 @@
   plugin: orcid.py
   file: orcid.yaml
   shaker-el-sappagh-list: true
-- id: doi:10.1016/j.neucom.2022.09.009
-  title: "Automatic detection of Alzheimer\u2019s disease progression: An efficient\
-    \ information fusion approach with heterogeneous ensemble classifiers"
-  authors:
-  - Shaker El-Sappagh
-  - Farman Ali
-  - Tamer Abuhmed
-  - Jaiteg Singh
-  - Jose M. Alonso
-  publisher: Neurocomputing
-  date: '2022-11-01'
-  link: https://doi.org/g9b3c3
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1109/ACCESS.2021.3090998
   title: Classification and Analysis of Android Malware Images Using Feature Fusion
     Technique
@@ -492,28 +492,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3390/electronics8060635
-  title: "A Comprehensive Medical Decision\u2013Support Framework Based on a Heterogeneous\
-    \ Ensemble Classifier for Diabetes Prediction"
-  authors:
-  - Shaker El-Sappagh
-  - Mohammed Elmogy
-  - Farman Ali
-  - Tamer ABUHMED
-  - S. M. Riazul Islam
-  - Kyung-Sup Kwak
-  publisher: Electronics
-  date: '2019-06-05'
-  link: https://doi.org/g9b3dv
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  shaker-el-sappagh-list: true
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics8060635.pdf
 - id: doi:10.1038/s41598-024-54065-1
   title: A dynamic fuzzy rule-based inference system using fuzzy inference with semantic
     reasoning
@@ -547,6 +525,45 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.3390/electronics8060635
+  title: "A Comprehensive Medical Decision\u2013Support Framework Based on a Heterogeneous\
+    \ Ensemble Classifier for Diabetes Prediction"
+  authors:
+  - Shaker El-Sappagh
+  - Mohammed Elmogy
+  - Farman Ali
+  - Tamer ABUHMED
+  - S. M. Riazul Islam
+  - Kyung-Sup Kwak
+  publisher: Electronics
+  date: '2019-06-05'
+  link: https://doi.org/g9b3dv
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  shaker-el-sappagh-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics8060635.pdf
+- id: doi:10.1109/JBHI.2022.3202178
+  title: Multitask Deep Learning for Cost-Effective Prediction of Patient's Length
+    of Stay and Readmission State Using Multimodal Physical Activity Sensory Data
+  authors:
+  - Sajid Ali
+  - Shaker El-Sappagh
+  - Farman Ali
+  - Muhammad Imran
+  - Tamer Abuhmed
+  publisher: IEEE Journal of Biomedical and Health Informatics
+  pmid: '36037451'
+  date: '2022-12-01'
+  link: https://doi.org/g9b3cz
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.3390/f14071325
   title: Wildfire Susceptibility Mapping Using Deep Learning Algorithms in Two Satellite
     Imagery Dataset
@@ -569,23 +586,6 @@
   buttons:
   - type: pdf
     link: pdf/f14071325.pdf
-- id: doi:10.1109/JBHI.2022.3202178
-  title: Multitask Deep Learning for Cost-Effective Prediction of Patient's Length
-    of Stay and Readmission State Using Multimodal Physical Activity Sensory Data
-  authors:
-  - Sajid Ali
-  - Shaker El-Sappagh
-  - Farman Ali
-  - Muhammad Imran
-  - Tamer Abuhmed
-  publisher: IEEE Journal of Biomedical and Health Informatics
-  pmid: '36037451'
-  date: '2022-12-01'
-  link: https://doi.org/g9b3cz
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1111/MICE.13015
   title: "Explainable probabilistic deep learning framework for seismic assessment\
     \ of structures using distribution\u2010free prediction intervals"
@@ -754,23 +754,6 @@
   buttons:
   - type: pdf
     link: pdf/electronics11101648.pdf
-- id: doi:10.32604/cmc.2021.019069
-  title: "Alzheimer\u2019s Disease Diagnosis Based on a Semantic Rule-Based Modeling\
-    \ and Reasoning Approach"
-  authors:
-  - Nora Shoaip
-  - Amira Rezk
-  - Shaker EL-Sappagh
-  - Tamer Abuhmed
-  - Sherif Barakat
-  - Mohammed Elmogy
-  publisher: Computers, Materials &amp; Continua
-  date: '2021-01-01'
-  link: https://doi.org/g869jj
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.3390/electronics10161956
   title: A Short Review on the Machine Learning-Guided Oxygen Uptake Prediction for
     Sport Science Applications
@@ -789,6 +772,23 @@
   buttons:
   - type: pdf
     link: pdf/electronics10161956.pdf
+- id: doi:10.32604/cmc.2021.019069
+  title: "Alzheimer\u2019s Disease Diagnosis Based on a Semantic Rule-Based Modeling\
+    \ and Reasoning Approach"
+  authors:
+  - Nora Shoaip
+  - Amira Rezk
+  - Shaker EL-Sappagh
+  - Tamer Abuhmed
+  - Sherif Barakat
+  - Mohammed Elmogy
+  publisher: Computers, Materials &amp; Continua
+  date: '2021-01-01'
+  link: https://doi.org/g869jj
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1155/2021/8439655
   title: "The Role of Medication Data to Enhance the Prediction of Alzheimer\u2019\
     s Progression Using Machine Learning"
@@ -846,6 +846,51 @@
   buttons:
   - type: pdf
     link: pdf/s41598-023-42796-6.pdf
+- id: doi:10.1109/TDSC.2023.3341090
+  title: 'Hardening Interpretable Deep Learning Systems: Investigating Adversarial
+    Threats and Defenses'
+  authors:
+  - Eldor Abdukhamidov
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: IEEE Transactions on Dependable and Secure Computing
+  date: '2024-07-01'
+  link: https://doi.org/g9b3cf
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
+    Adversarial Threats and Defenses.png'
+  buttons:
+  - type: pdf
+    link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
+- id: doi:10.3390/diagnostics14212385
+  title: Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
+    Detection and Severity Assessment
+  authors:
+  - Dillan Imans
+  - Tamer Abuhmed
+  - Meshal Alharbi
+  - Shaker El-Sappagh
+  publisher: Diagnostics
+  pmid: '39518353'
+  pmcid: PMC11545061
+  date: '2024-10-25'
+  link: https://doi.org/g9b3cd
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  shaker-el-sappagh-list: true
+  image: images/thumbnails/Explainable Multi-Layer Dynamic Ensemble Framework Optimized
+    for Depression Detection and Severity Assessment.png
+  buttons:
+  - type: pdf
+    link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
+      Detection and Severity Assessment.pdf
 - id: doi:10.1145/3488932.3527283
   title: Black-box and Target-specific Attack Against Interpretable Deep Learning
     Systems
@@ -883,27 +928,6 @@
   buttons:
   - type: pdf
     link: pdf/math10050766.pdf
-- id: doi:10.1109/TDSC.2023.3341090
-  title: 'Hardening Interpretable Deep Learning Systems: Investigating Adversarial
-    Threats and Defenses'
-  authors:
-  - Eldor Abdukhamidov
-  - Mohammed Abuhamad
-  - Simon S. Woo
-  - Eric Chan-Tin
-  - Tamer Abuhmed
-  publisher: IEEE Transactions on Dependable and Secure Computing
-  date: '2024-07-01'
-  link: https://doi.org/g9b3cf
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
-    Adversarial Threats and Defenses.png'
-  buttons:
-  - type: pdf
-    link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
 - id: doi:10.1038/S41598-024-56136-9
   title: Temporal dynamics of urban gas pipeline risks
   authors:
@@ -921,30 +945,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3390/diagnostics14212385
-  title: Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
-    Detection and Severity Assessment
-  authors:
-  - Dillan Imans
-  - Tamer Abuhmed
-  - Meshal Alharbi
-  - Shaker El-Sappagh
-  publisher: Diagnostics
-  pmid: '39518353'
-  pmcid: PMC11545061
-  date: '2024-10-25'
-  link: https://doi.org/g9b3cd
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  shaker-el-sappagh-list: true
-  image: images/thumbnails/Explainable Multi-Layer Dynamic Ensemble Framework Optimized
-    for Depression Detection and Severity Assessment.png
-  buttons:
-  - type: pdf
-    link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
-      Detection and Severity Assessment.pdf
 - id: ''
   title: Early Detection of Alzheimer's Disease Based on Laplacian Re-Decomposition
     and XGBoosting.
@@ -1162,6 +1162,23 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1109/imcom64595.2025.10857525
+  title: Knowledge Augmented Significant Language Model-Based Chatbot for Explainable
+    Diabetes Mellitus Prediction
+  authors:
+  - Mazen Elfayoumi
+  - Mohamed AbouElazm
+  - Omar Mohamed
+  - Tamer Abuhmed
+  - Shaker El-Sappagh
+  publisher: 2025 19th International Conference on Ubiquitous Information Management
+    and Communication (IMCOM)
+  date: '2025-01-03'
+  link: https://doi.org/hb3f6x
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1109/tip.2015.2488780
   title: Reviewer Summary for Transactions on Image Processing
   authors: []
@@ -1172,6 +1189,29 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1371/journal.pone.0285455
+  title: Henry gas solubility optimization double machine learning classifier for
+    neurosurgical patients
+  authors:
+  - Diana T. Mosa
+  - Amena Mahmoud
+  - John Zaki
+  - Shaymaa E. Sorour
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  publisher: PLOS ONE
+  pmid: '37167226'
+  pmcid: PMC10174516
+  date: '2023-05-11'
+  link: https://doi.org/gs6qrs
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: images/thumbnails/10_1371_journal_pone_0285455.jpg
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0285455.pdf
 - id: doi:10.1109/imcom56909.2023.10035603
   title: Real-time human detection and behavior recognition using low-cost hardware
   authors:
@@ -1198,23 +1238,6 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1109/imcom64595.2025.10857525
-  title: Knowledge Augmented Significant Language Model-Based Chatbot for Explainable
-    Diabetes Mellitus Prediction
-  authors:
-  - Mazen Elfayoumi
-  - Mohamed AbouElazm
-  - Omar Mohamed
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  publisher: 2025 19th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2025-01-03'
-  link: https://doi.org/hb3f6x
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1109/TIFS.2024.3407652
   title: 'SingleADV: Single-Class Target-Specific Attack Against Interpretable Deep
     Learning Systems'
@@ -1236,35 +1259,30 @@
   buttons:
   - type: pdf
     link: pdf/SingleADV_Single-Class_Target-Specific_Attack_Against_Interpretable_Deep_Learning_Systems.pdf
-- id: doi:10.1371/journal.pone.0285455
-  title: Henry gas solubility optimization double machine learning classifier for
-    neurosurgical patients
-  authors:
-  - Diana T. Mosa
-  - Amena Mahmoud
-  - John Zaki
-  - Shaymaa E. Sorour
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: PLOS ONE
-  pmid: '37167226'
-  pmcid: PMC10174516
-  date: '2023-05-11'
-  link: https://doi.org/gs6qrs
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: images/thumbnails/10_1371_journal_pone_0285455.jpg
-  buttons:
-  - type: pdf
-    link: pdf/journal_pone_0285455.pdf
 - id: ''
   title: A Software-Based Group Attestation for Wireless Sensor Networks.
   authors: []
   publisher: Adhoc & Sensor Wireless Networks
   date: '2011-01-01'
   link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.1109/imcom64595.2025.10857582
+  title: 'Leveraging Large Language Models for Smart Pharmacy Systems: Enhancing Drug
+    Safety and Operational Efficiency'
+  authors:
+  - Abdelrahman Osheba
+  - Ahmed Abou-El-Ela
+  - Osama Adel
+  - Youssef Maaod
+  - Tamer Abuhmed
+  - Shaker El-Sappagh
+  publisher: 2025 19th International Conference on Ubiquitous Information Management
+    and Communication (IMCOM)
+  date: '2025-01-03'
+  link: https://doi.org/g94xw2
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1331,24 +1349,23 @@
   buttons:
   - type: pdf
     link: pdf/electronics9091443.pdf
-- id: doi:10.1109/imcom64595.2025.10857582
-  title: 'Leveraging Large Language Models for Smart Pharmacy Systems: Enhancing Drug
-    Safety and Operational Efficiency'
+- id: doi:10.1371/journal.pone.0332134
+  title: Mortality prediction for ICU patients with mental disorders using large language
+    models ensemble and unstructured medical notes
   authors:
-  - Abdelrahman Osheba
-  - Ahmed Abou-El-Ela
-  - Osama Adel
-  - Youssef Maaod
+  - Waleed Nazih
   - Tamer Abuhmed
+  - Meshal Alharbi
   - Shaker El-Sappagh
-  publisher: 2025 19th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2025-01-03'
-  link: https://doi.org/g94xw2
+  publisher: PLOS One
+  pmid: '40971951'
+  pmcid: PMC12448993
+  date: '2025-09-19'
+  link: https://doi.org/g939nc
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.3390/app13169425
   title: 'TruMuzic: A Deep Learning and Data Provenance-Based Approach to Evaluating
     the Authenticity of Music'
@@ -1400,23 +1417,6 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
-- id: doi:10.1371/journal.pone.0332134
-  title: Mortality prediction for ICU patients with mental disorders using large language
-    models ensemble and unstructured medical notes
-  authors:
-  - Waleed Nazih
-  - Tamer Abuhmed
-  - Meshal Alharbi
-  - Shaker El-Sappagh
-  publisher: PLOS One
-  pmid: '40971951'
-  pmcid: PMC12448993
-  date: '2025-09-19'
-  link: https://doi.org/g939nc
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: ''
   title: "FiSC: A novel approach for Fitzpatrick Scale based Skin Analyzer\u2019s\
     \ Image Classification"
@@ -1462,6 +1462,19 @@
   publisher: ''
   date: '2024-01-01'
   link: ''
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.21203/rs.3.rs-49216/v1
+  title: An Approach for Measuring Spatial Similarity Among COVID-19 Epicenters
+  authors:
+  - Neda Kaffash Charandabi
+  - Abolghasem Sadeghi-Niaraki
+  - Soo-Mi Choi
+  publisher: Springer Science and Business Media LLC
+  date: '2020-08-04'
+  link: https://doi.org/hb3f63
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1581,19 +1594,6 @@
   publisher: ''
   date: '2023-01-01'
   link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.21203/rs.3.rs-49216/v1
-  title: An Approach for Measuring Spatial Similarity Among COVID-19 Epicenters
-  authors:
-  - Neda Kaffash Charandabi
-  - Abolghasem Sadeghi-Niaraki
-  - Soo-Mi Choi
-  publisher: Springer Science and Business Media LLC
-  date: '2020-08-04'
-  link: https://doi.org/hb3f63
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -2920,11 +2920,27 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1016/j.inffus.2026.104507
+  title: 'Toward Trustworthy Digital Healthcare: A System-Level Convergence of IoMT,
+    Large Language Models, and Explainable AI'
+  authors:
+  - Maria Bashir
+  - Shaker El-Sappagh
+  - Simon S. Woo
+  - Dong In Kim
+  - Tamer Abuhmed
+  publisher: Information Fusion
+  date: '2026-05-01'
+  link: https://doi.org/hb54n2
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - title: Explainable Ensemble Deep Learning Architecture for Fruit Disease Detection
     for Sustainable Agriculture and Food System Resilience
   publisher: 2026 20th International Conference on Ubiquitous Information Management
     and Communication (IMCOM)
-  date: '2026-05-14'
+  date: '2026-05-20'
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
