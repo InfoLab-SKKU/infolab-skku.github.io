@@ -1245,6 +1245,22 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1016/j.asoc.2026.115590
+  title: Explainable ensemble learning framework for anxiety and stress detection
+    in pediatric sleep EEG
+  authors:
+  - Maria Bashir
+  - Shaker El-Sappagh
+  - Waleed Nazih
+  - Abolghasem Sadeghi-Niaraki
+  - Tamer Abuhmed
+  publisher: Applied Soft Computing
+  date: '2026-06-01'
+  link: https://doi.org/hb6fhj
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.inffus.2026.104507
   title: 'Toward Trustworthy Digital Healthcare: A System-Level Convergence of IoMT,
     Large Language Models, and Explainable AI'
