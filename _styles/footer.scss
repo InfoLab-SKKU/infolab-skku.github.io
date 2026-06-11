@@ -102,19 +102,19 @@ footer .icon {
   width: 100%;
 }
 
-.footer-visitor-widget .footer-visitor-badge {
+.footer-visitor-widget a {
   display: block;
   width: 100%;
   max-width: 240px;
   text-align: center;
 }
 
-.footer-clustrmaps-badge {
+.footer-visitor-widget img {
   display: block;
   width: 100%;
   max-width: 240px;
   height: auto;
-  margin: 0.75rem auto 0;
+  margin: 0;
   border: 0;
 }
 
