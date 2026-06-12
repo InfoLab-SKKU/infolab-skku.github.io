@@ -5,7 +5,7 @@ tags:
   - federated learning
   - security
   - machine learning
-image: images/thumbnails/Screenshot from 2025-04-10 04-21-10.png
+image: images/thumbnails/FLIMCOM25.png
 ---
 
 We are excited to share our latest paper accepted at **IMCOM 2025**: *Towards Robust Federated Learning: Investigating Poisoning Attacks Under Clients Data Heterogeneity*.

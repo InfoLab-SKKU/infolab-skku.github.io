@@ -1,38 +1,43 @@
+# Featured (selected) publications shown in the highlight strip on /pubs.
+# Add `featured: true` to any source entry to include it there.
+- id: doi:10.14722/ndss.2026.241872
+  featured: true
+- id: doi:10.1109/TIFS.2025.3622073
+  featured: true
+- id: doi:10.1016/j.inffus.2023.101805
+  featured: true
 - id: doi:10.1109/imcom64595.2025.10857574
-  image: images/thumbnails/Screenshot from 2025-04-10 04-21-10.png
+  image: images/thumbnails/FLIMCOM25.png
   buttons:
   - type: pdf
     link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity
       (1).pdf
 - id: doi:10.1109/TR.2025.3551717
-  image: images/thumbnails/Stealthy Query-Efficient Opaque Attack Against Interpretable
-    Deep Learning.png
+  image: images/thumbnails/StealthyQuery-EfficientAttack.png
   buttons:
   - type: pdf
     link: pdf/Stealthy_Query-Efficient_Opaque_Attack_Against_Interpretable_Deep_Learning.pdf
 - id: doi:10.57197/JDR-2024-0101
-  image: 'images/thumbnails/Responsible Artificial Intelligence for Mental Health
-    Disorders: Current Applications and Future Challenges.png'
+  image: images/thumbnails/ResponsibleAIMental.png.png
   buttons:
   - type: pdf
     link: pdf/resposible_artificial_intiligence.pdf
 - id: doi:10.1109/ACCESS.2025.3547573
-  image: 'images/thumbnails/FiSC: A Novel Approach for Fitzpatrick Scale-Based Skin
-    Analyzer’s Image Classification.png'
+  image: images/thumbnails/FiSC A novel approach for Fitzpatrick Scale based Skin
+    Analyzers Image Classification.png
   buttons:
   - type: pdf
     link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification
       (1).pdf
 - id: doi:10.3390/diagnostics14212385
-  image: images/thumbnails/Explainable Multi-Layer Dynamic Ensemble Framework Optimized
-    for Depression Detection and Severity Assessment.png
+  image: images/thumbnails/ExplainableMulti-LayerDEDepression.png
   buttons:
   - type: pdf
     link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
       Detection and Severity Assessment.pdf
 - id: doi:10.1109/TDSC.2023.3341090
-  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
-    Adversarial Threats and Defenses.png'
+  featured: true
+  image: images/thumbnails/HardeningIDS.png
   buttons:
   - type: pdf
     link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
@@ -42,26 +47,24 @@
   - type: pdf
     link: pdf/app13063937.pdf
 - id: doi:10.1016/j.cmpb.2024.108348
-  image: images/thumbnails/Alzheimers disease diagnosis in the metaverse.jpg
+  image: images/thumbnails/AlzheimersMetaverse.jpg
   buttons:
   - type: pdf
     link: pdf/Alzheimers disease diagnosis in the metaverse.pdf
 - id: doi:10.3390/info15100583
-  image: images/thumbnails/Smart Collaborative Intrusion Detection System for Securing
-    Vehicular Networks Using Ensemble Machine Learning Model.webp
+  image: images/thumbnails/SmartCollaborativeIntrusion DetectionSystem.webp
   buttons:
   - type: pdf
     link: pdf/Smart Collaborative Intrusion Detection System for Securing Vehicular
       Networks Using Ensemble Machine Learning Model.pdf
 - id: doi:10.1109/TDSC.2023.3341090
-  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
-    Adversarial Threats and Defenses.png'
+  featured: true
+  image: images/thumbnails/HardeningIDS.png
   buttons:
   - type: pdf
     link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
 - id: doi:10.1109/TIFS.2024.3407652
-  image: 'images/thumbnails/SingleADV: Single-Class Target-Specific Attack Against
-    Interpretable Deep Learning Systems.png'
+  image: images/thumbnails/SingleADV.png
   buttons:
   - type: pdf
     link: pdf/SingleADV_Single-Class_Target-Specific_Attack_Against_Interpretable_Deep_Learning_Systems.pdf

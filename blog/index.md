@@ -66,4 +66,31 @@ nav:
 
 {% include search-info.html %}
 
-{% include list.html data="posts" component="post-excerpt" %}
+<!-- Featured (latest) post -->
+{% assign featured_post = site.posts | first %}
+{% if featured_post %}
+<div class="blog-featured">
+  <div class="blog-featured-badge">
+    {% include icon.html icon="fa-solid fa-star" %}
+    Latest Post
+  </div>
+  {% include post-excerpt.html post=featured_post %}
+</div>
+{% endif %}
+
+<!-- All posts, grouped by year -->
+{% assign post_years = site.posts | group_by_exp: "p", "p.date | date: '%Y'" | sort: "name" | reverse %}
+{% for year in post_years %}
+  {% assign year_posts = year.items | sort: "date" | reverse %}
+  {% comment %} skip a year whose only post is the featured one {% endcomment %}
+  {% if year_posts.size == 1 and year_posts.first.url == featured_post.url %}
+    {% continue %}
+  {% endif %}
+  <h3 class="blog-year" id="{{ year.name }}">{{ year.name }}</h3>
+  <div class="blog-grid">
+    {% for post in year_posts %}
+      {% if post.url == featured_post.url %}{% continue %}{% endif %}
+      {% include post-excerpt.html post=post %}
+    {% endfor %}
+  </div>
+{% endfor %}

@@ -1,0 +1,8 @@
+{% comment %}
+  Spam-protected email link. The address never appears whole in the HTML:
+  it is split into data attributes and assembled by _scripts/email-protect.js.
+  Rendered on a single line so it can be used inside markdown text.
+  Usage: {% include email.html address="user@example.com" %}
+{% endcomment %}
+{% assign e_parts = include.address | split: "@" %}
+<a href="#" class="email-protected" data-eu="{{ e_parts[0] }}" data-ed="{{ e_parts[1] }}" data-show="true">{{ e_parts[0] }}&nbsp;[at]&nbsp;{{ e_parts[1] | replace: ".", "&nbsp;[dot]&nbsp;" }}</a>

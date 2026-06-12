@@ -364,6 +364,14 @@
   box-shadow: var(--shadow);
 }
 
+.hp-news-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .hp-news-date {
   font-size: 0.74rem;
   color: var(--gray);
@@ -371,6 +379,12 @@
   letter-spacing: 0.06em;
   font-weight: 600;
 }
+
+/* category accent on left border (badge colors come from news.scss) */
+.hp-news-card--publication { border-left-color: var(--primary); }
+.hp-news-card--member      { border-left-color: var(--success); }
+.hp-news-card--patent      { border-left-color: var(--info); }
+.hp-news-card--award       { border-left-color: var(--warning); }
 
 .hp-news-title {
   font-size: 0.95rem;

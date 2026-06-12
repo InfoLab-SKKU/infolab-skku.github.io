@@ -13,7 +13,7 @@
   subtitle: Architecture, Diversity, and Defense Analysis
   group: security
   icon: fa-solid fa-shield
-  image: images/thumbnails/projects/image3.png
+  image: images/news/AdversarialAttacks2025.jpg
   link: "projects/adversarial-robustness"
   description: Adversarial attacks pose a serious challenge to the reliability and security of deep learning (DL) models. These attacks, often crafted by introducing imperceptible perturbations to input data, can cause models to make incorrect predictions with high confidence. As a result, understanding and mitigating such threats has become a critical area of research in the field of trustworthy AI. Defenses against adversarial attacks range from input preprocessing and adversarial training to robust model design, yet no single approach has proven universally effective.
   repo: https://github.com/InfoLab-SKKU

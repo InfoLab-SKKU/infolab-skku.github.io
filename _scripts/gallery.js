@@ -46,6 +46,11 @@
         item.setAttribute("data-hidden", show ? "false" : "true");
         if (show) visible++;
       });
+      // hide year sections whose photos are all filtered out
+      document.querySelectorAll(".gallery-year-group").forEach(function (group) {
+        var any = group.querySelector('.gallery-item[data-hidden="false"]');
+        group.style.display = any ? "" : "none";
+      });
       if (emptyEl) emptyEl.style.display = visible === 0 ? "block" : "none";
     }
 

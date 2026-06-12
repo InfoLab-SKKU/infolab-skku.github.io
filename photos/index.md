@@ -82,29 +82,40 @@ nav:
   {% endfor %}
 </div>
 
-<!-- MASONRY GRID -->
-<div class="gallery-masonry" id="gallery-grid">
-  {% for photo in sorted_photos %}
-    {% assign encoded_src = photo.image | relative_url %}
-    <div class="gallery-item"
-      data-category="{{ photo.category }}"
-      data-year="{{ photo.year }}"
-      data-src="{{ encoded_src }}"
-      data-caption="{{ photo.caption | escape }}">
-      <div class="gallery-img-wrap">
-        <img
-          src="{{ encoded_src }}"
-          alt="{{ photo.caption | escape }}"
-          class="gallery-img"
-          loading="lazy"
-          {% include fallback.html %}
-        >
-        {% if photo.caption and photo.caption != "" %}
-          <div class="gallery-caption-overlay">{{ photo.caption }}</div>
-        {% endif %}
-        <div class="gallery-item-year">{{ photo.year }}</div>
-      </div>
+<!-- YEAR-GROUPED MASONRY GRID -->
+<div id="gallery-grid">
+  {% assign photos_by_year = all_photos | group_by: "year" | sort: "name" | reverse %}
+  {% for year_group in photos_by_year %}
+  <div class="gallery-year-group">
+    <div class="gallery-year-header">
+      <span class="gallery-year-label">{{ year_group.name }}</span>
+      <span class="gallery-year-count">{{ year_group.items.size }} photo{% if year_group.items.size != 1 %}s{% endif %}</span>
     </div>
+    <div class="gallery-masonry">
+      {% for photo in year_group.items %}
+        {% assign encoded_src = photo.image | relative_url %}
+        <div class="gallery-item"
+          data-category="{{ photo.category }}"
+          data-year="{{ photo.year }}"
+          data-src="{{ encoded_src }}"
+          data-caption="{{ photo.caption | escape }}">
+          <div class="gallery-img-wrap">
+            <img
+              src="{{ encoded_src }}"
+              alt="{{ photo.caption | escape }}"
+              class="gallery-img"
+              loading="lazy"
+              {% include fallback.html %}
+            >
+            {% if photo.caption and photo.caption != "" %}
+              <div class="gallery-caption-overlay">{{ photo.caption }}</div>
+            {% endif %}
+            <div class="gallery-item-year">{{ photo.year }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
   {% endfor %}
 </div>
 

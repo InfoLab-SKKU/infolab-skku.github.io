@@ -698,3 +698,52 @@
     border-top-color: rgba(20, 20, 20, 0.82);
   }
 }
+
+/* ===========================================
+   MEMBER DETAIL PAGE
+   =========================================== */
+
+.member-research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 6px 0 18px;
+}
+
+.member-research-tag {
+  display: inline-flex;
+  align-items: center;
+  background: color-mix(in srgb, var(--primary) 9%, transparent);
+  color: var(--primary);
+  border: 1px solid color-mix(in srgb, var(--primary) 25%, transparent);
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.member-pubs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 26px;
+  border: 2px solid var(--primary);
+  border-radius: var(--rounded);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.92rem;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.member-pubs-btn:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.member-pubs-btn .icon {
+  font-size: 0.9em;
+}

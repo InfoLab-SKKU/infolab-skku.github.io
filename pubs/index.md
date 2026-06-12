@@ -28,6 +28,44 @@ nav:
   </div>
 </div>
 
+<!-- Selected publications (entries flagged `featured: true` in sources.yaml) -->
+{% assign featured_pubs = site.data.citations | where: "featured", true | sort: "date" | reverse %}
+{% if featured_pubs.size > 0 %}
+<div class="pubs-featured">
+  <div class="pubs-featured-header">
+    <h2>{% include icon.html icon="fa-solid fa-star" %} Selected Publications</h2>
+    <p>Representative work published at top-tier venues</p>
+  </div>
+  <div class="pubs-featured-grid">
+    {% for pub in featured_pubs limit: 4 %}
+      {% assign pf_pub_lower = pub.publisher | downcase %}
+      {% assign pf_venue = nil %}
+      {% for venue in site.data.top-venues %}
+        {% if pf_pub_lower contains venue.match %}
+          {% assign pf_venue = venue.label %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+      <a class="pubs-featured-card" {% if pub.link %}href="{{ pub.link }}" target="_blank" rel="noopener noreferrer"{% endif %}>
+        <div class="pf-top">
+          <span class="pf-venue">
+            {% include icon.html icon="fa-solid fa-star" %}
+            {{ pf_venue | default: pub.publisher | truncate: 30 }}
+          </span>
+          <span class="pf-year">{{ pub.date | date: "%Y" }}</span>
+        </div>
+        <div class="pf-title">{{ pub.title }}</div>
+        {% if pub.authors and pub.authors.size > 0 %}
+          {% assign pf_authors = pub.authors | slice: 0, 3 %}
+          <div class="pf-authors">{{ pf_authors | join: ", " }}{% if pub.authors.size > 3 %} et al.{% endif %}</div>
+        {% endif %}
+        <span class="pf-link">View Paper {% include icon.html icon="fa-solid fa-arrow-right" %}</span>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
 <!-- Filter bar + controls -->
 <div class="pubs-header-bar">
   <div class="pubs-filter-btns" role="group" aria-label="Filter publications by topic">
@@ -61,7 +99,7 @@ nav:
   </div>
 </div>
 
-# {% include icon.html icon="fa-regular fa-newspaper" %} Featured Publications
+# {% include icon.html icon="fa-regular fa-newspaper" %} All Publications
 
 {% include search-box.html %}
 

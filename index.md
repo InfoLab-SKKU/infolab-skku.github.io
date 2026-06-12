@@ -3,41 +3,10 @@ title: Home
 ---
 
 <!-- ============================================================
-     HERO SECTION
+     FEATURED HERO CAROUSEL
+     (lab intro + top news + featured projects)
      ============================================================ -->
-<section class="hero-section" aria-labelledby="hero-title">
-  <div class="hero-bg" aria-hidden="true">
-    {% include hero-svg.html %}
-  </div>
-
-  <div class="hero-content">
-    <div class="hero-badge">Information Research Laboratory &middot; SKKU</div>
-    <h1 id="hero-title" class="hero-title">
-      Advancing <span class="hero-accent">Security</span> &amp;
-      <span class="hero-accent">Machine Learning</span>
-    </h1>
-    <p class="hero-lead">
-      Pushing boundaries in bioinformatics, biomedical discovery, and trustworthy AI
-      at Sungkyunkwan University, South Korea.
-    </p>
-    <div class="hero-ctas">
-      <a href="/pubs" class="hero-btn-primary">
-        {% include icon.html icon="fa-regular fa-newspaper" %}
-        View Publications
-      </a>
-      <a href="/team" class="hero-btn-secondary">
-        {% include icon.html icon="fa-solid fa-users" %}
-        Meet the Team
-      </a>
-    </div>
-    <p class="hero-affiliation">
-      Part of the
-      <a href="https://sw.skku.edu/eng_sw/index.do" rel="noopener noreferrer">College of Computing and Informatics</a>
-      at
-      <a href="https://www.skku.edu/eng/" rel="noopener noreferrer">Sungkyunkwan University</a>.
-    </p>
-  </div>
-</section>
+{% include featured-carousel.html %}
 
 <!-- ============================================================
      STATS BAR
@@ -112,10 +81,6 @@ title: Home
   </div>
 </section>
 
-## {% include icon.html icon="fa-solid fa-flask" %} Our Projects
-
-{% include project-carousel.html %}
-
 <!-- ============================================================
      RECENT NEWS
      ============================================================ -->
@@ -126,8 +91,26 @@ title: Home
   <div class="hp-news-grid">
     {% assign sorted_news = site.data.news | sort: "date" | reverse %}
     {% for post in sorted_news limit:6 %}
-    <article class="hp-news-card">
-      <div class="hp-news-date">{{ post.date | date: "%b %d, %Y" }}</div>
+    {% comment %} category inference — keep in sync with /news/index.md {% endcomment %}
+    {% assign t = post.title | downcase %}
+    {% assign d = post.description | downcase %}
+    {% if t contains "patent" or d contains "patent application" %}
+      {% assign hp_type = "patent" %}{% assign hp_type_label = "Patent" %}{% assign hp_type_icon = "fa-solid fa-certificate" %}
+    {% elsif t contains "welcome" or t contains "new team" or t contains "new lab member" or t contains "new researcher" %}
+      {% assign hp_type = "member" %}{% assign hp_type_label = "New Member" %}{% assign hp_type_icon = "fa-solid fa-user-plus" %}
+    {% elsif t contains "award" or t contains "fellowship" or t contains "prize" %}
+      {% assign hp_type = "award" %}{% assign hp_type_label = "Award" %}{% assign hp_type_icon = "fa-solid fa-trophy" %}
+    {% else %}
+      {% assign hp_type = "publication" %}{% assign hp_type_label = "Publication" %}{% assign hp_type_icon = "fa-solid fa-file-lines" %}
+    {% endif %}
+    <article class="hp-news-card hp-news-card--{{ hp_type }}">
+      <div class="hp-news-top">
+        <span class="nci-type-badge nci-badge-{{ hp_type }}">
+          {% include icon.html icon=hp_type_icon %}
+          {{ hp_type_label }}
+        </span>
+        <span class="hp-news-date">{{ post.date | date: "%b %d, %Y" }}</span>
+      </div>
       <div class="hp-news-title">{{ post.title }}</div>
       {% if post.description %}
         <div class="hp-news-desc">{{ post.description | truncate: 320 }}</div>

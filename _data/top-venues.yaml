@@ -1,0 +1,18 @@
+# Top-tier venues highlighted with a badge on the Publications page.
+# `match` is checked (case-insensitive) against each citation's publisher;
+# `label` is the short badge text shown next to matching publications.
+
+- match: network and distributed system security
+  label: NDSS
+- match: knowledge discovery and data mining
+  label: ACM KDD
+- match: sigkdd
+  label: ACM KDD
+- match: dependable and secure computing
+  label: IEEE TDSC
+- match: information forensics and security
+  label: IEEE TIFS
+- match: information fusion
+  label: Information Fusion
+- match: transactions on privacy and security
+  label: ACM TOPS

@@ -1,11 +1,28 @@
 {% assign button = include %}
 {% assign button = button | hash_default: site.data.types[include.type] %}
 
+{% comment %}
+  Email links get spam protection: the address is split into data
+  attributes and assembled at runtime by _scripts/email-protect.js.
+{% endcomment %}
+{% assign btn_href = button.link | replace: "$LINK", button.link %}
+{% assign btn_is_email = false %}
+{% if btn_href contains "mailto:" %}
+  {% assign btn_is_email = true %}
+  {% assign e_parts = btn_href | remove: "mailto:" | split: "@" %}
+{% endif %}
+
 {% if button.link or button.icon or button.text %}
   <div class="button-wrapper">
     <a
-      class="button"
-      href="{{ button.link | replace: "$LINK", button.link | relative_url }}"
+      class="button{% if btn_is_email %} email-protected{% endif %}"
+      {% if btn_is_email %}
+        href="#"
+        data-eu="{{ e_parts[0] }}"
+        data-ed="{{ e_parts[1] }}"
+      {% else %}
+        href="{{ btn_href | relative_url }}"
+      {% endif %}
       {% if button.tooltip %}
         data-tooltip="{{ button.tooltip }}"
       {% endif %}

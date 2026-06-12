@@ -2,12 +2,23 @@
 title: Code of Conduct
 ---
 
-# {% include icon.html icon="fa-solid fa-star" %}Code of Conduct
+<!-- HERO -->
+<div class="team-hero">
+  <div class="team-hero-content">
+    <div class="team-hero-badge">Our Values</div>
+    <h1 class="team-hero-title">Code of Conduct</h1>
+    <p class="team-hero-sub">The expectations and commitments that keep InfoLab a respectful, welcoming, and inclusive place to do science.</p>
+  </div>
+</div>
+
+{% include section.html %}
+
+## {% include icon.html icon="fa-solid fa-star" %}Code of Conduct
 
 We love our group dynamic. We have been grateful and lucky that current and past lab members have intuitively understood what it means to maintain a respectful and welcoming environment. However, it’s time to make these expectations more explicit in this Code of Conduct.
 
 * We strive to maintain a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation. We expect all conduct to support this goal of creating an open, welcoming, and inclusive community.
-* Harassment of any kind is not tolerated. If you feel you or another is experiencing harassment at any time, whether in our group or within SKKU at large, please inform Prof. Tamer Abuhmed ([tamer@skku.edu](mailto:tamer@skku.edu)) or the lab contact ([infolabskku@gmail.com](mailto:infolabskku@gmail.com)), and/or SKKU Human Resources. Information shared with Prof. Abuhmed will be handled with the utmost care and discretion. However, it is important to note that in some circumstances, he is legally required to report certain types of incidents to others in the organization. In those situations, you can expect that he will: 1) Listen to your concerns with empathy and respect, 2) Explain any obligation to report the incident and the process involved, 3) Report the incident to the relevant individuals promptly and accurately, and 4) Provide you with information on available support resources and next steps.
+* Harassment of any kind is not tolerated. If you feel you or another is experiencing harassment at any time, whether in our group or within SKKU at large, please inform Prof. Tamer Abuhmed ({% include email.html address="tamer@skku.edu" %}) or the lab contact ({% include email.html address="infolabskku@gmail.com" %}), and/or SKKU Human Resources. Information shared with Prof. Abuhmed will be handled with the utmost care and discretion. However, it is important to note that in some circumstances, he is legally required to report certain types of incidents to others in the organization. In those situations, you can expect that he will: 1) Listen to your concerns with empathy and respect, 2) Explain any obligation to report the incident and the process involved, 3) Report the incident to the relevant individuals promptly and accurately, and 4) Provide you with information on available support resources and next steps.
 * Everyone’s perspective is valuable and should be listened to equally and respectfully. Discussions are encouraged, provided they adhere to considerate language.
 * Err on the side of positivity, especially in electronic communications where intent can be difficult to convey or interpret. Overly negative comments and personal attacks should be avoided.
 * We expect ethical conduct in all aspects of our lab’s activities, and we all share the responsibility of raising any issues for discussion. If you witness unethical behavior of any form, let us know.

@@ -1,18 +1,25 @@
-<div class="post-nav">
-  <span>
-    {% if include.post.previous %}
-      {% include icon.html icon="fa-solid fa-angle-left" %} Previous post<br>
-      <a href="{{ include.post.previous.url | relative_url }}">
-        {{ include.post.previous.title }}
-      </a>
-    {% endif %}
-  </span>
-  <span>
-    {% if include.post.next %}
-      Next post {% include icon.html icon="fa-solid fa-angle-right" %}<br>
-      <a href="{{ include.post.next.url | relative_url }}">
-        {{ include.post.next.title }}
-      </a>
-    {% endif %}
-  </span>
-</div>
+<nav class="post-nav" aria-label="Previous and next posts">
+  {% if include.post.previous %}
+    <a href="{{ include.post.previous.url | relative_url }}" class="post-nav-card post-nav-prev">
+      <span class="post-nav-label">
+        {% include icon.html icon="fa-solid fa-arrow-left" %}
+        Previous Post
+      </span>
+      <span class="post-nav-title">{{ include.post.previous.title }}</span>
+    </a>
+  {% else %}
+    <span class="post-nav-spacer" aria-hidden="true"></span>
+  {% endif %}
+
+  {% if include.post.next %}
+    <a href="{{ include.post.next.url | relative_url }}" class="post-nav-card post-nav-next">
+      <span class="post-nav-label">
+        Next Post
+        {% include icon.html icon="fa-solid fa-arrow-right" %}
+      </span>
+      <span class="post-nav-title">{{ include.post.next.title }}</span>
+    </a>
+  {% else %}
+    <span class="post-nav-spacer" aria-hidden="true"></span>
+  {% endif %}
+</nav>

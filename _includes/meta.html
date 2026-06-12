@@ -25,7 +25,7 @@
   {%- endcapture %}
 {% endif %}
 {% capture url -%}
-  {{ site.url }}{{ site.baseurl }}
+  {{ page.url | replace: "index.html", "" | absolute_url }}
 {%- endcapture %}
 
 {% assign png = "images/icon.png" | file_exists %}
@@ -34,7 +34,8 @@
 
 {% assign jpg = "images/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
-{% assign share = jpg | default: png | relative_url %}
+{% comment %} prefer the page's own image (e.g. blog post thumbnail) for social shares {% endcomment %}
+{% assign share = page.image | default: jpg | default: png | absolute_url %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}
@@ -47,6 +48,7 @@
 
 <title>{{ fulltitle }}</title>
 
+<link rel="canonical" href="{{ url }}">
 <link rel="icon" href="{{ icon }}">
 <link rel="apple-touch-icon" href="{{ icon }}">
 <link rel="manifest" href="{{ "/manifest.webmanifest" | relative_url }}">
@@ -87,7 +89,7 @@
     "@context": "https://schema.org",
     {% if page.author %}
       "@type": "BlogPosting",
-      "author": { "@type": "Person", "name": "{{ title }}" },
+      "author": { "@type": "Person", "name": "{{ page.author }}" },
       "datePublished": "{{ published }}",
       "dateModified": "{{ updated }}",
     {% else %}
@@ -98,7 +100,7 @@
     "headline": "{{ title }}",
     "publisher": {
       "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
+      "logo": { "@type": "ImageObject", "url": "{{ icon | absolute_url }}" }
     },
     "url": "{{ url }}"
   }

@@ -70,15 +70,21 @@ nav:
             {% assign ltype = site.data.types[lkey] %}
             {% if ltype %}
               {% if lkey == "email" %}
-                {% assign lhref = "mailto:" | append: lval %}
-              {% elsif ltype.link %}
-                {% assign lhref = ltype.link | replace: "$VALUE", lval %}
+                {% comment %} spam protection: address split into data attrs, assembled by email-protect.js {% endcomment %}
+                {% assign e_parts = lval | split: "@" %}
+                <a href="#" class="pi-link pi-link-email email-protected" data-eu="{{ e_parts[0] }}" data-ed="{{ e_parts[1] }}" title="{{ ltype.tooltip | default: lkey }}">
+                  {% include icon.html icon=ltype.icon %}
+                </a>
               {% else %}
-                {% assign lhref = lval %}
+                {% if ltype.link %}
+                  {% assign lhref = ltype.link | replace: "$VALUE", lval %}
+                {% else %}
+                  {% assign lhref = lval %}
+                {% endif %}
+                <a href="{{ lhref }}" class="pi-link pi-link-{{ lkey }}" title="{{ ltype.tooltip | default: lkey }}" target="_blank" rel="noopener noreferrer">
+                  {% include icon.html icon=ltype.icon %}
+                </a>
               {% endif %}
-              <a href="{{ lhref }}" class="pi-link pi-link-{{ lkey }}" title="{{ ltype.tooltip | default: lkey }}"{% unless lkey == "email" %} target="_blank" rel="noopener noreferrer"{% endunless %}>
-                {% include icon.html icon=ltype.icon %}
-              </a>
             {% endif %}
           {% endif %}
         {% endfor %}

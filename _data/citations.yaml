@@ -16,7 +16,7 @@
   abdenour-soubih-list: true
   plugin: sources.py
   file: sources.yaml
-  image: images/thumbnails/Screenshot from 2025-04-10 04-21-10.png
+  image: images/thumbnails/FLIMCOM25.png
   buttons:
   - type: pdf
     link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity
@@ -39,8 +39,7 @@
   plugin: sources.py
   file: sources.yaml
   tamer-abuhmed-list: true
-  image: images/thumbnails/Explainable Multi-Layer Dynamic Ensemble Framework Optimized
-    for Depression Detection and Severity Assessment.png
+  image: images/thumbnails/ExplainableMulti-LayerDEDepression.png
   buttons:
   - type: pdf
     link: pdf/Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
@@ -1294,6 +1293,7 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.14722/ndss.2026.241872
+  featured: true
   title: A Deep Dive into Function Inlining and its Security Implications for ML-based
     Binary Analysis
   authors:
@@ -1366,12 +1366,12 @@
   tamer-abuhmed-list: true
   plugin: sources.py
   file: sources.yaml
-  image: images/thumbnails/Stealthy Query-Efficient Opaque Attack Against Interpretable
-    Deep Learning.png
+  image: images/thumbnails/StealthyQuery-EfficientAttack.png
   buttons:
   - type: pdf
     link: pdf/Stealthy_Query-Efficient_Opaque_Attack_Against_Interpretable_Deep_Learning.pdf
 - id: doi:10.1109/TIFS.2025.3622073
+  featured: true
   title: 'AdvChar: Attacking Interpretable NLP Systems'
   authors:
   - Eldor Abdukhamidov
@@ -1424,8 +1424,8 @@
   tamer-abuhmed-list: true
   plugin: sources.py
   file: sources.yaml
-  image: "images/thumbnails/FiSC: A Novel Approach for Fitzpatrick Scale-Based Skin\
-    \ Analyzer\u2019s Image Classification.png"
+  image: images/thumbnails/FiSC A novel approach for Fitzpatrick Scale based Skin
+    Analyzers Image Classification.png
   buttons:
   - type: pdf
     link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification
@@ -1453,8 +1453,7 @@
   tamer-abuhmed-list: true
   plugin: sources.py
   file: sources.yaml
-  image: 'images/thumbnails/Responsible Artificial Intelligence for Mental Health
-    Disorders: Current Applications and Future Challenges.png'
+  image: images/thumbnails/ResponsibleAIMental.png.png
   buttons:
   - type: pdf
     link: pdf/resposible_artificial_intiligence.pdf
@@ -1483,11 +1482,12 @@
   tamer-abuhmed-list: true
   plugin: sources.py
   file: sources.yaml
-  image: images/thumbnails/Alzheimers disease diagnosis in the metaverse.jpg
+  image: images/thumbnails/AlzheimersMetaverse.jpg
   buttons:
   - type: pdf
     link: pdf/Alzheimers disease diagnosis in the metaverse.pdf
 - id: doi:10.1109/TDSC.2023.3341090
+  featured: true
   title: 'Hardening Interpretable Deep Learning Systems: Investigating Adversarial
     Threats and Defenses'
   authors:
@@ -1503,8 +1503,7 @@
   tamer-abuhmed-list: true
   plugin: sources.py
   file: sources.yaml
-  image: 'images/thumbnails/Hardening Interpretable Deep Learning Systems: Investigating
-    Adversarial Threats and Defenses.png'
+  image: images/thumbnails/HardeningIDS.png
   buttons:
   - type: pdf
     link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
@@ -1602,8 +1601,7 @@
   tamer-abuhmed-list: true
   plugin: sources.py
   file: sources.yaml
-  image: 'images/thumbnails/SingleADV: Single-Class Target-Specific Attack Against
-    Interpretable Deep Learning Systems.png'
+  image: images/thumbnails/SingleADV.png
   buttons:
   - type: pdf
     link: pdf/SingleADV_Single-Class_Target-Specific_Attack_Against_Interpretable_Deep_Learning_Systems.pdf
@@ -1674,6 +1672,7 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1016/j.inffus.2023.101805
+  featured: true
   title: 'Explainable Artificial Intelligence (XAI): What we know and what is left
     to attain Trustworthy Artificial Intelligence'
   authors:

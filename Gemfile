@@ -4,6 +4,10 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 gem "webrick", "~> 1.7"
 
+# NOTE: do not add the `wdm` gem for faster Windows file-watching —
+# wdm 0.2.0 crashes the `jekyll serve` watcher under Ruby 4.0 (tested 2026-06).
+# Polling (the default) is slower but stable.
+
 # Ruby 4.0 standard library gems
 gem "logger"
 gem "csv"

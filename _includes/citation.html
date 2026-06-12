@@ -100,7 +100,21 @@
         }}
       </div>
 
+      {% assign cit_venue_label = nil %}
+      {% for venue in site.data.top-venues %}
+        {% if cit_pub_lower contains venue.match %}
+          {% assign cit_venue_label = venue.label %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
       <div class="citation-details">
+        {% if cit_venue_label %}
+          <span class="citation-venue-badge" data-tooltip="Top-tier venue">
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
+            {{ cit_venue_label }}
+          </span>
+          &nbsp;
+        {% endif %}
         <span class="citation-publisher-pill">
           {{- citation.publisher | default: "" | truncate: 40 -}}
         </span>

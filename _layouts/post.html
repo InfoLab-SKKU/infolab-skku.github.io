@@ -2,22 +2,140 @@
 layout: default
 ---
 
-{% include section.html background=page.image %}
-  <div class="blog-hero">
-    <div class="blog-hero-copy">
-      <h1>{{ page.title }}</h1>
-      {% if page.excerpt %}
-        <p class="blog-hero-subtitle">{{ page.excerpt }}</p>
+{% assign words = content | strip_html | number_of_words %}
+{% assign read_time = words | divided_by: 200 | at_least: 1 %}
+
+<!-- ============================================================
+     POST HERO
+     ============================================================ -->
+<section class="post-hero" aria-labelledby="post-title">
+  <div class="post-hero-bg" aria-hidden="true">
+    {% include hero-svg.html %}
+  </div>
+
+  <div class="post-hero-inner">
+    <a href="{{ '/blog' | relative_url }}" class="post-hero-back">
+      {% include icon.html icon="fa-solid fa-arrow-left" %}
+      InfoLab Blog
+    </a>
+
+    {% if page.tags and page.tags.size > 0 %}
+      <div class="post-hero-tags">
+        {% include tags.html tags=page.tags link="/blog" %}
+      </div>
+    {% endif %}
+
+    <h1 id="post-title" class="post-hero-title">{{ page.title }}</h1>
+
+    {% if page.excerpt %}
+      <p class="post-hero-sub">{{ page.excerpt | strip_html | truncate: 300 }}</p>
+    {% endif %}
+
+    <div class="post-hero-meta">
+      {% if page.author %}
+        {% assign member = site.members
+          | where_exp: "member", "member.slug == page.author"
+          | first
+        %}
+        <span class="post-hero-meta-item">
+          {% include icon.html icon="fa-solid fa-feather-pointed" %}
+          {% if member %}{{ member.name }}{% else %}{{ page.author }}{% endif %}
+        </span>
       {% endif %}
-      {% include post-info.html author=page.author member=page.member published=page.date updated=page.last_modified_at tags=page.tags %}
+      <span class="post-hero-meta-item">
+        {% include icon.html icon="fa-regular fa-calendar" %}
+        {{ page.date | date: "%B %d, %Y" }}
+      </span>
+      {% assign published = page.date | date: "%B %d, %Y" %}
+      {% assign updated = page.last_modified_at | date: "%B %d, %Y" %}
+      {% if updated and updated != "" and updated != published %}
+        <span class="post-hero-meta-item">
+          {% include icon.html icon="fa-solid fa-clock-rotate-left" %}
+          Updated {{ updated }}
+        </span>
+      {% endif %}
+      <span class="post-hero-meta-item">
+        {% include icon.html icon="fa-regular fa-clock" %}
+        {{ read_time }} min read
+      </span>
     </div>
   </div>
-{% include section.html %}
+</section>
 
+<!-- ============================================================
+     POST CONTENT
+     ============================================================ -->
 <article class="blog-content">
   {{ content }}
+
+  <footer class="post-footer">
+    {% if page.tags and page.tags.size > 0 %}
+      {% include tags.html tags=page.tags link="/blog" %}
+    {% endif %}
+
+    {% assign share_url = page.url | absolute_url | url_encode %}
+    {% assign share_title = page.title | url_encode %}
+    <div class="post-share" aria-label="Share this post">
+      <span class="post-share-label">Share</span>
+      <a
+        href="https://twitter.com/intent/tweet?text={{ share_title }}&url={{ share_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="post-share-btn"
+        aria-label="Share on X"
+        data-tooltip="Share on X"
+      >
+        {% include icon.html icon="fa-brands fa-x-twitter" %}
+      </a>
+      <a
+        href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="post-share-btn"
+        aria-label="Share on LinkedIn"
+        data-tooltip="Share on LinkedIn"
+      >
+        {% include icon.html icon="fa-brands fa-linkedin-in" %}
+      </a>
+      <button
+        type="button"
+        class="post-share-btn"
+        aria-label="Copy link"
+        data-tooltip="Copy link"
+        onclick="navigator.clipboard.writeText(window.location.href).then(() => { const i = this.querySelector('.icon'); i.classList.replace('fa-link', 'fa-check'); setTimeout(() => i.classList.replace('fa-check', 'fa-link'), 1500); })"
+      >
+        {% include icon.html icon="fa-solid fa-link" %}
+      </button>
+    </div>
+  </footer>
 </article>
 
 {% include section.html %}
 
 {% include post-nav.html post=page %}
+
+<!-- ============================================================
+     MORE FROM THE BLOG
+     ============================================================ -->
+{% assign more_posts = "" | split: "" %}
+{% for post in site.posts %}
+  {% if post.url != page.url and more_posts.size < 3 %}
+    {% assign more_posts = more_posts | push: post %}
+  {% endif %}
+{% endfor %}
+{% if more_posts.size > 0 %}
+  <div class="post-more">
+    <h2 class="post-more-title">More from the Blog</h2>
+    <div class="blog-grid">
+      {% for post in more_posts %}
+        {% include post-excerpt.html post=post %}
+      {% endfor %}
+    </div>
+    <div class="post-more-all">
+      <a href="{{ '/blog' | relative_url }}" class="post-more-btn">
+        View All Posts
+        {% include icon.html icon="fa-solid fa-arrow-right" %}
+      </a>
+    </div>
+  </div>
+{% endif %}

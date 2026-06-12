@@ -1,5 +1,16 @@
-{% if include.lookup %}
-  {% assign post = site.posts 
+{% comment %}
+  Blog post card. Accepts either:
+  - post: a post object (preferred)
+  - lookup: a post slug
+  - or individual fields passed by list.html
+  The root keeps the .post-excerpt class so search.js can filter cards,
+  and tags render as .tag elements for tag filtering.
+{% endcomment %}
+
+{% if include.post %}
+  {% assign post = include.post %}
+{% elsif include.lookup %}
+  {% assign post = site.posts
     | where_exp: "post", "post.slug == include.lookup"
     | first
     | default: include
@@ -8,55 +19,72 @@
   {% assign post = include %}
 {% endif %}
 
-<article class="post-excerpt-container">
-  <div class="post-excerpt">
-    {% assign url = post.url %}
-    {% assign title = post.title %}
-    {% assign thumbnail = post.thumbnail | default: post.image %}
+{% assign url = post.url %}
+{% assign title = post.title %}
+{% assign thumbnail = post.thumbnail | default: post.image %}
+{% assign words = post.content | default: "" | strip_html | number_of_words %}
+{% assign read_time = words | divided_by: 200 | at_least: 1 %}
 
+<article class="post-excerpt bc-card">
+  <a
+    href="{{ url | relative_url }}"
+    class="bc-image"
+    tabindex="-1"
+    aria-hidden="true"
+  >
     {% if thumbnail %}
-      <a
-        href="{{ url | relative_url }}"
-        class="post-excerpt-image"
-        {% if title %}aria-label="{{ title }}"{% endif %}
+      <img
+        src="{{ thumbnail | relative_url }}"
+        alt=""
+        loading="lazy"
+        {% include fallback.html %}
       >
-        <img
-          src="{{ thumbnail | relative_url }}"
-          alt="{{ title | default: '' }}"
-          width="400"
-          height="240"
-          loading="lazy"
-          {% include fallback.html %}
-        >
-      </a>
+    {% else %}
+      <span class="bc-image-placeholder">
+        {% include icon.html icon="fa-regular fa-newspaper" %}
+      </span>
     {% endif %}
+  </a>
 
-    <div class="post-excerpt-text">
-      <a href="{{ url | relative_url }}">{{ title }}</a>
+  <div class="bc-body">
+    <div class="bc-meta">
+      <span class="bc-date">
+        {% include icon.html icon="fa-regular fa-calendar" %}
+        {{ post.date | date: "%b %d, %Y" }}
+      </span>
+      <span class="bc-read">
+        {% include icon.html icon="fa-regular fa-clock" %}
+        {{ read_time }} min read
+      </span>
+    </div>
 
-      {%
-        include post-info.html
-        author=post.author
-        published=post.date
-        updated=post.last_modified_at
-        tags=post.tags
-      %}
+    <a href="{{ url | relative_url }}" class="bc-title">{{ title }}</a>
 
-      {% assign excerpt = post.content
-        | default: ""
-        | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->", true
-        | default: post.excerpt
-        | default: ""
-        | strip_html
-      %}
-      {% assign search = post.content
-        | strip_html
-        | strip_newlines
-        | regex_strip
-      %}
-      <p data-search="{{ search }}">
-        {{ excerpt | truncate: 400 }}
-      </p>
+    {% assign excerpt = post.content
+      | default: ""
+      | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->", true
+      | default: post.excerpt
+      | default: ""
+      | strip_html
+    %}
+    {% assign search = post.content
+      | strip_html
+      | strip_newlines
+      | regex_strip
+    %}
+    <p class="bc-excerpt" data-search="{{ search }}">
+      {{ excerpt | truncate: 180 }}
+    </p>
+
+    <div class="bc-foot">
+      {% if post.tags and post.tags.size > 0 %}
+        {% assign card_tags = post.tags | slice: 0, 3 %}
+        {% include tags.html tags=card_tags link="blog" %}
+      {% endif %}
+      <a href="{{ url | relative_url }}" class="bc-more">
+        Read Article
+        {% include icon.html icon="fa-solid fa-arrow-right" %}
+      </a>
     </div>
   </div>
 </article>

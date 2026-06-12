@@ -65,6 +65,43 @@
   color: var(--gray);
 }
 
+/* ── Year group sections ────────────────────── */
+
+.gallery-year-group {
+  max-width: 1200px;
+  margin: 0 auto 34px;
+}
+
+.gallery-year-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 0 0 16px;
+  text-align: left;
+}
+
+.gallery-year-label {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.gallery-year-count {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+}
+
+.gallery-year-header::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: var(--light-gray);
+  align-self: center;
+}
+
 /* ── Masonry grid ───────────────────────────── */
 
 .gallery-masonry {
