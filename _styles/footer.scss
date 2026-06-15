@@ -1,76 +1,139 @@
 ---
 ---
 
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 0;
-  padding: 40px;
-  line-height: var(--spacing);
-  box-shadow: var(--shadow);
+/* =====================================================================
+   SITE FOOTER  —  research-lab style
+   Multi-column (brand · explore · research · university · contact)
+   + a slim bottom bar. The footer wrapper forces data-dark="true", so
+   every var(--token) below resolves to the dark palette.
+   ===================================================================== */
+
+footer.site-footer {
+  display: block;
+  padding: 0;
+  background: var(--footer-bg);
+  color: var(--gray);
+  border-top: 1px solid var(--hairline);
+  box-shadow: none;
+  line-height: var(--compact);
+  text-align: left;
 }
 
-.site-footer {
-  background-color: var(--footer-bg);
-  padding: 3rem 0 1.5rem;
+/* subtle azure wash at the top edge */
+footer.site-footer::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--primary) 45%, transparent), transparent);
+  pointer-events: none;
 }
 
-footer a {
-  color: rgba(255, 255, 255, 0.75) !important;
-  text-decoration: none;
-  transition: color var(--transition);
-}
-
-footer a:hover {
-  color: #fff !important;
-}
-
-footer .icon {
-  font-size: var(--xl);
-}
-
-.footer-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2.5rem;
-  max-width: 1100px;
-  width: 100%;
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.6fr 3fr;
+  gap: 48px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px 2rem;
+  padding: 56px 24px 40px;
+}
+
+/* ---------------------------- Brand ---------------------------- */
+.footer-brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+.footer-logo {
+  height: 44px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.footer-brand-title {
+  display: block;
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--text-strong);
+  letter-spacing: -0.01em;
+}
+
+.footer-brand-sub {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray);
+}
+
+.footer-about {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--gray);
+  margin: 0 0 18px;
+  max-width: 360px;
+}
+
+/* ---------------------------- Social ---------------------------- */
+.footer-social {
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.footer-social .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  color: var(--gray) !important;
+  font-size: 1rem;
+  transition: color var(--transition), border-color var(--transition),
+    background var(--transition), transform var(--transition);
+}
+
+.footer-social .button:hover {
+  color: var(--primary) !important;
+  border-color: var(--primary);
+  background: var(--surface-2);
+  transform: translateY(-2px);
+}
+
+.footer-social .icon {
+  font-size: 1rem;
+}
+
+/* ------------------------- Link columns ------------------------- */
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
 }
 
 .footer-col {
-  flex: 1 1 200px;
-  min-width: 180px;
-  color: #fff;
+  min-width: 0;
 }
 
 .footer-heading {
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
-  margin: 0 0 14px 0;
-  padding-bottom: 8px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-}
-
-.footer-text {
-  font-size: 0.88rem;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.8);
-  margin: 0 0 10px 0;
-}
-
-.footer-location {
-  font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.55);
-  margin: 0;
+  color: var(--dim);
+  margin: 0 0 16px;
 }
 
 .footer-links {
@@ -79,86 +142,135 @@ footer .icon {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
-.footer-links li a {
-  font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.75) !important;
+.footer-links a {
+  font-size: 0.86rem;
+  color: var(--gray) !important;
+  text-decoration: none;
   transition: color var(--transition), padding-left var(--transition);
-  display: block;
 }
 
-.footer-links li a:hover {
-  color: #fff !important;
-  padding-left: 4px;
+.footer-links a:hover {
+  color: var(--primary) !important;
+  padding-left: 3px;
 }
 
-.footer-visitor-widget {
+/* ---------------------------- Contact ---------------------------- */
+.footer-contact {
+  font-style: normal;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.75rem;
-  width: 100%;
+  gap: 12px;
+  font-size: 0.84rem;
+  color: var(--gray);
+  line-height: 1.55;
 }
 
-.footer-visitor-widget a {
-  display: block;
-  width: 100%;
-  max-width: 240px;
-  text-align: center;
-}
-
-.footer-visitor-widget img {
-  display: block;
-  width: 100%;
-  max-width: 240px;
-  height: auto;
-  margin: 0;
-  border: 0;
-}
-
-.footer-social {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 16px 20px 10px;
+.footer-contact-line {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  width: 100%;
-  max-width: 1100px;
+  gap: 9px;
+  align-items: flex-start;
+}
+
+.footer-contact-line i {
+  color: var(--primary);
+  font-size: 0.85rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.footer-contact a {
+  color: var(--gray) !important;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.footer-contact a:hover {
+  color: var(--primary) !important;
+}
+
+/* --------------------------- Bottom bar --------------------------- */
+.footer-bottom {
+  border-top: 1px solid var(--hairline);
+}
+
+.footer-bottom-inner {
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-.footer-social .button {
-  color: rgba(255, 255, 255, 0.7) !important;
-  background: transparent;
-  font-size: var(--xl);
-  transition: color var(--transition), transform var(--transition);
-}
-
-.footer-social .button:hover {
-  color: #fff !important;
-  background: transparent;
-  transform: translateY(-3px);
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .footer-copy {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.35);
-  padding: 10px 20px 0;
-  text-align: center;
-  width: 100%;
+  color: var(--dim);
 }
 
-@media (max-width: 768px) {
-  .footer-main {
+.footer-bottom-links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.footer-bottom-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 0.73rem;
+  letter-spacing: 0.03em;
+  color: var(--gray) !important;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+.footer-bottom-links a:hover {
+  color: var(--primary) !important;
+}
+
+.footer-totop i {
+  transition: transform var(--transition);
+}
+
+.footer-totop:hover i {
+  transform: translateY(-2px);
+}
+
+/* ---------------------------- Responsive ---------------------------- */
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    padding: 44px 20px 32px;
+  }
+  .footer-nav {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+  .footer-about {
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bottom-inner {
     flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .footer-col {
-    min-width: 100%;
+    align-items: flex-start;
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .footer-social .button:hover,
+  .footer-totop:hover i {
+    transform: none;
+  }
+  .footer-links a:hover {
+    padding-left: 0;
+  }
+}

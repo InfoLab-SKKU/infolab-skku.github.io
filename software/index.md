@@ -81,6 +81,52 @@ nav:
           <div class="sw-card-name">AdvEdge / AdvEdge+</div>
           <div class="sw-card-repo">InfoLab-SKKU/AdvEdge-Attack</div>
         </div>
+          <div class="sw-repo-card" data-cat="library">
+            <div class="sw-card-accent sw-accent--library"></div>
+            <div class="sw-card-body">
+              <div class="sw-card-top">
+                <div class="sw-card-icon sw-icon--library"><i class="fa-solid fa-star"></i></div>
+                <div>
+                  <div class="sw-card-name">Awesome Dynamic Ensemble Learning</div>
+                  <div class="sw-card-repo">InfoLab-SKKU/awesome-dynamic-ensemble-learning</div>
+                </div>
+              </div>
+              <p class="sw-card-desc">A curated list of resources, libraries, and papers about Dynamic Ensemble Selection (DES), Dynamic Ensemble Learning, and related explainable ensemble methods. Includes implementations, benchmarks, and reading lists to help researchers and practitioners explore the field.</p>
+              <div class="sw-card-tags">
+                <span class="sw-tag">Awesome List</span>
+                <span class="sw-tag">Dynamic Ensemble</span>
+                <span class="sw-tag">Survey</span>
+                <span class="sw-tag">Resources</span>
+              </div>
+              <div class="sw-card-footer">
+                <a href="https://github.com/InfoLab-SKKU/awesome-dynamic-ensemble-learning" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sw-repo-card" data-cat="vision">
+            <div class="sw-card-accent sw-accent--vision"></div>
+            <div class="sw-card-body">
+              <div class="sw-card-top">
+                <div class="sw-card-icon sw-icon--vision"><i class="fa-solid fa-eye"></i></div>
+                <div>
+                  <div class="sw-card-name">VisionDES</div>
+                  <div class="sw-card-repo">InfoLab-SKKU/VisionDES</div>
+                </div>
+              </div>
+              <p class="sw-card-desc">VisionDES provides dynamic ensemble selection methods tailored for computer vision tasks. Includes training and evaluation scripts, pretrained models, and integration examples for image classification benchmarks using dynamic ensemble strategies.</p>
+              <div class="sw-card-tags">
+                <span class="sw-tag">Dynamic Ensemble</span>
+                <span class="sw-tag">Vision</span>
+                <span class="sw-tag">PyTorch</span>
+                <span class="sw-tag">ImageNet</span>
+              </div>
+              <div class="sw-card-footer">
+                <a href="https://github.com/InfoLab-SKKU/VisionDES" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
       </div>
       <p class="sw-card-desc">Introduces two white-box adversarial attacks that simultaneously fool a DNN classifier <em>and</em> its coupled interpretation model (GradCAM, LIME, SHAP). Demonstrates that interpretable deep learning systems are vulnerable to adversarial inputs designed to produce misleading yet visually plausible explanations.</p>
       <div class="sw-card-tags">

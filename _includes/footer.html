@@ -7,57 +7,90 @@
   {% endif %}
   data-size="wide"
 >
-  <div class="footer-main">
-    <!-- About column -->
-    <div class="footer-col">
-      <h5 class="footer-heading">About InfoLab</h5>
-      <p class="footer-text">
-        InfoLab at SKKU conducts leading research in data science, AI, security, and medical computer vision to advance robust, intelligent systems.
-      </p>
-      <p class="footer-location">
-        <span aria-hidden="true">&#x1F4CD;</span>
-        Engineering Building 2, SKKU, Suwon, South Korea
-      </p>
-      <p class="footer-location">
-        <span aria-hidden="true">&#x2709;&#xFE0F;</span>
-        {% include email.html address="infolabskku@gmail.com" %}
-      </p>
-    </div>
+  <div class="footer-inner">
 
-    <!-- Site map column (heading intentionally left empty) -->
-
-    <!-- Useful Links column -->
-    <div class="footer-col">
-      <h5 class="footer-heading">Useful Links</h5>
-      <ul class="footer-links">
-        <li><a href="https://gradschool.skku.edu/grad/" rel="noopener noreferrer">SKKU Graduate School</a></li>
-        <li><a href="https://cse.skku.edu/" rel="noopener noreferrer">Computer Science &amp; Engineering Dept.</a></li>
-        <li><a href="https://ai.skku.edu/ai/index.do" rel="noopener noreferrer">Dept. of Artificial Intelligence</a></li>
-        <li><a href="https://skb.skku.edu/skkuaai/index.do" rel="noopener noreferrer">Dept. of Applied Artificial Intelligence</a></li>
-      </ul>
-    </div>
-
-    <!-- Lab Visitors column 
-    <div class="footer-col">
-      <h5 class="footer-heading">Lab Visitors</h5>
-      <div class="footer-visitor-widget">
-        <a href='https://mapmyvisitors.com/web/1c5c1'  title='Visit tracker'><img src='https://mapmyvisitors.com/map.png?cl=0e1633&w=300&t=tt&d=XcdWHsMXXCWg7NkfzLreAraYz6ptHCwXvj_ob5gyqyw&co=0b4975&ct=cdd4d9'/></a>
+    <!-- Brand / identity -->
+    <div class="footer-brand">
+      <a href="{{ '/' | relative_url }}" class="footer-brand-link" aria-label="InfoLab home">
+        <img src="{{ 'images/logo.png' | relative_url }}" alt="InfoLab logo" class="footer-logo" height="44" loading="lazy">
+        <span class="footer-brand-text">
+          <span class="footer-brand-title">InfoLab</span>
+          <span class="footer-brand-sub">Information Research Laboratory · SKKU</span>
+        </span>
+      </a>
+      <p class="footer-about">
+        We build robust, interpretable and secure machine-learning systems —
+        advancing Trustworthy &amp; Explainable AI, Adversarial ML, and Biomedical AI
+        at Sungkyunkwan University.
+      </p>
+      <div class="footer-social">
+        {% for link in site.links %}
+          {% assign key = link[0] %}
+          {% assign value = link[1] %}
+          {% include button.html type=key text="" link=value style="bare" %}
+        {% endfor %}
       </div>
     </div>
-    -->
+
+    <!-- Link columns -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h5 class="footer-heading">Explore</h5>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
+          <li><a href="{{ '/pubs' | relative_url }}">Publications</a></li>
+          <li><a href="{{ '/team' | relative_url }}">Team</a></li>
+          <li><a href="{{ '/news' | relative_url }}">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Research</h5>
+        <ul class="footer-links">
+          <li><a href="{{ '/projects/security' | relative_url }}">Security &amp; Adversarial ML</a></li>
+          <li><a href="{{ '/projects/medical' | relative_url }}">Biomedical AI</a></li>
+          <li><a href="{{ '/projects/explainable-ai' | relative_url }}">Trustworthy &amp; Explainable AI</a></li>
+          <li><a href="{{ '/team/join' | relative_url }}">Join the Lab</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Sungkyunkwan Univ.</h5>
+        <ul class="footer-links">
+          <li><a href="https://gradschool.skku.edu/grad/" target="_blank" rel="noopener noreferrer">Graduate School</a></li>
+          <li><a href="https://cse.skku.edu/" target="_blank" rel="noopener noreferrer">Computer Science &amp; Eng.</a></li>
+          <li><a href="https://ai.skku.edu/ai/index.do" target="_blank" rel="noopener noreferrer">Dept. of Artificial Intelligence</a></li>
+          <li><a href="https://skb.skku.edu/skkuaai/index.do" target="_blank" rel="noopener noreferrer">Dept. of Applied AI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <h5 class="footer-heading">Contact</h5>
+        <address class="footer-contact">
+          <span class="footer-contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Engineering Building 2,<br>SKKU, Suwon, South Korea</span>
+          </span>
+          <span class="footer-contact-line">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>{% include email.html address="infolabskku@gmail.com" %}</span>
+          </span>
+        </address>
+      </div>
+    </nav>
   </div>
 
-  <!-- Social links row -->
-  <div class="footer-social">
-    {% for link in site.links %}
-      {% assign key = link[0] %}
-      {% assign value = link[1] %}
-      {% include button.html type=key text="" link=value style="bare" %}
-    {% endfor %}
-  </div>
-
-  <!-- Copyright -->
-  <div class="footer-copy">
-    &copy; {{ site.time | date: "%Y" }} {{ site.title }} &middot; Sungkyunkwan University
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span class="footer-copy">
+        &copy; {{ site.time | date: "%Y" }} {{ site.title }} &middot; Sungkyunkwan University
+      </span>
+      <span class="footer-bottom-links">
+        <a href="{{ '/feed.xml' | relative_url }}"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS</a>
+        <a href="#main-content" class="footer-totop">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+      </span>
+    </div>
   </div>
 </footer>

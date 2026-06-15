@@ -139,11 +139,23 @@
           {% else %}
             {% assign b_type = "publication" %}{% assign b_label = "Publication" %}
           {% endif %}
+          {% comment %} venue tag: explicit `venue` field, else lookup by title + description {% endcomment %}
+          {% assign b_venue = post.venue %}
+          {% if b_venue == nil or b_venue == "" %}
+            {% assign b_hay = post.title | append: " · " | append: post.description | downcase %}
+            {% for v in site.data.venue-tags %}
+              {% if b_hay contains v.match %}{% assign b_venue = v.label %}{% break %}{% endif %}
+            {% endfor %}
+          {% endif %}
           <div class="b-news-item" data-type="{{ b_type }}">
             <span class="b-news-dot" aria-hidden="true"></span>
             <span class="b-news-body">
               <span class="b-news-item-title">{{ post.title | truncate: 110 }}</span>
-              <span class="b-news-item-type">{{ b_label }}</span>
+              {% if b_type == "publication" and b_venue %}
+                <span class="b-news-venue">{{ b_venue }}</span>
+              {% else %}
+                <span class="b-news-item-type">{{ b_label }}</span>
+              {% endif %}
             </span>
             <span class="b-news-date">{{ post.date | date: "%b %Y" }}</span>
           </div>

@@ -12,36 +12,29 @@ InfoLab at Sungkyunkwan University (SKKU), led by Professor Tamer Abuhmed, condu
 
 ## Open Positions
 
-<div class="ra-grid">
-  <div class="ra-card">
-    <div class="ra-icon-wrap ra-security" aria-hidden="true">
-      {% include icon.html icon="fa-solid fa-graduation-cap" %}
-    </div>
-    <h3>Graduate Students (M.S. / Ph.D.)</h3>
-    <p>Recruited on a rolling basis for admission each spring and fall semester. Funded positions are tied to ongoing research projects.</p>
-  </div>
-  <div class="ra-card">
-    <div class="ra-icon-wrap ra-biomedical" aria-hidden="true">
-      {% include icon.html icon="fa-solid fa-flask" %}
-    </div>
-    <h3>Postdoctoral Researchers</h3>
-    <p>Openings depend on active grants. A strong publication record in security, machine learning, or biomedical AI is expected.</p>
-  </div>
-  <div class="ra-card">
-    <div class="ra-icon-wrap ra-trustworthy" aria-hidden="true">
-      {% include icon.html icon="fa-solid fa-lightbulb" %}
-    </div>
-    <h3>Research Interns</h3>
-    <p>Undergraduate and visiting internships for students who want hands-on research experience before committing to graduate study.</p>
-  </div>
-  <div class="ra-card">
-    <div class="ra-icon-wrap ra-security" aria-hidden="true">
-      {% include icon.html icon="fa-solid fa-code" %}
-    </div>
-    <h3>Research Developers</h3>
-    <p>Engineering-focused roles building the systems, datasets, and tools behind our research projects.</p>
-  </div>
-</div>
+{% include icon.html icon="fa-solid fa-graduation-cap" %}
+
+### Graduate Students (M.S. / Ph.D.)
+
+Recruited on a rolling basis for admission each spring and fall semester. Funded positions are tied to ongoing research projects.
+
+{% include icon.html icon="fa-solid fa-flask" %}
+
+### Postdoctoral Researchers
+
+Openings depend on active grants. A strong publication record in security, machine learning, or biomedical AI is expected.
+
+{% include icon.html icon="fa-solid fa-lightbulb" %}
+
+### Research Interns
+
+Undergraduate and visiting internships for students who want hands-on research experience before committing to graduate study.
+
+{% include icon.html icon="fa-solid fa-code" %}
+
+### Research Developers
+
+Engineering-focused roles building the systems, datasets, and tools behind our research projects.
 
 ## What We Look For
 
@@ -53,7 +46,7 @@ InfoLab at Sungkyunkwan University (SKKU), led by Professor Tamer Abuhmed, condu
 ## What You Can Expect
 
 - Active projects spanning [security & adversarial ML, biomedical AI, and explainable AI](/projects/) with publications at venues such as NDSS, ACM KDD, IEEE TDSC, IEEE TIFS, and Information Fusion.
-- Collaboration with academic and industry partners in Korea and internationally — see our [collaborators](/collaborators/).
+- Collaboration with academic and industry partners in Korea and internationally.
 - Mentoring toward your own first-author publications, starting from your first semester.
 - A diverse, international lab — meet the [current team](/team/).
 
@@ -65,9 +58,4 @@ InfoLab at Sungkyunkwan University (SKKU), led by Professor Tamer Abuhmed, condu
 
 **Important:** if your message does not clearly explain *why* you are interested in InfoLab specifically, it may be overlooked. Personalized, thoughtful inquiries that reference our papers or projects are strongly encouraged — generic mass emails are not.
 
-{%
-  include button.html
-  icon="fa-solid fa-envelope"
-  text="Contact Us"
-  link="/contact"
-%}
+{% include button.html icon="fa-solid fa-envelope" text="Contact Us" link="/contact" %}

@@ -30,6 +30,17 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
 
+      - name: Set up Ruby (no bundle install)
+        if: github.event.action != 'closed'
+        uses: ruby/setup-ruby@v1.196.0
+        with:
+          ruby-version: "3.2"
+          bundler-cache: false
+
+      - name: Add Linux platform to Gemfile.lock
+        if: github.event.action != 'closed'
+        run: bundle lock --add-platform x86_64-linux
+
       - name: Install Ruby packages
         if: github.event.action != 'closed'
         uses: ruby/setup-ruby@v1.196.0
