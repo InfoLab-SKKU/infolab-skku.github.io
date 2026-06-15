@@ -1,8 +1,5 @@
 ---
 title: Upcoming Venues & Deadlines
-nav:
-  order: 4
-  tooltip: Conference and journal deadlines
 ---
 
 <!-- Introduction section -->
