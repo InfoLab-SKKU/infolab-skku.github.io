@@ -1,9 +1,11 @@
 ---
 ---
 
-/* ===========================================
-   TEAM PAGE STYLES
-   =========================================== */
+/* =====================================================================
+   TEAM PAGE  —  Cyber-Sci reskin
+   Glass cards, PI "spotlight" tile, role-tier accents
+   (researchers = cyan/primary, interns = amber).
+   ===================================================================== */
 
 .team-jumpnav {
   display: flex;
@@ -12,7 +14,8 @@
   justify-content: center;
   padding: 16px 20px;
   background: var(--background-alt);
-  border-radius: var(--rounded);
+  border: 1px solid var(--hairline);
+  border-radius: var(--rounded-lg);
   margin: 0 auto 20px;
   max-width: 900px;
 }
@@ -23,34 +26,37 @@
   gap: 6px;
   padding: 8px 18px;
   border-radius: 999px;
-  background: var(--background);
+  background: var(--surface);
   color: var(--text);
-  font-size: 0.88rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--hairline);
   transition: background var(--transition), color var(--transition),
-    border-color var(--transition), transform var(--transition);
+    border-color var(--transition), transform var(--transition),
+    box-shadow var(--transition);
 }
 
 .team-jumpnav-item:hover {
-  background: var(--primary);
-  color: #fff;
   border-color: var(--primary);
+  color: var(--primary);
   transform: translateY(-2px);
 }
 
 .team-jumpnav-join {
-  background: var(--primary);
-  color: #fff !important;
-  border-color: var(--primary);
+  background: var(--grad-brand);
+  color: #03131f !important;
+  border-color: transparent;
+  box-shadow: var(--glow-primary);
   font-weight: 600;
 }
 
 .team-jumpnav-item.team-jumpnav-active {
-  background: var(--primary);
-  color: #fff;
-  border-color: var(--primary);
+  background: var(--grad-brand);
+  color: #03131f;
+  border-color: transparent;
+  box-shadow: var(--glow-primary);
 }
 
 .team-jumpnav-join-active {
@@ -72,7 +78,6 @@
   vertical-align: top;
 }
 
-/* Make portrait cards uniform in height within their row */
 .list[data-component="portrait"] {
   display: flex;
   flex-wrap: wrap;
@@ -88,9 +93,10 @@
   position: relative;
   width: 100vw;
   margin: -60px calc(-50vw + 50%) 0 calc(-50vw + 50%);
-  background: linear-gradient(135deg, var(--hero-1) 0%, var(--hero-2) 55%, var(--hero-3) 100%);
+  background: var(--grad-hero);
+  border-bottom: 1px solid var(--hairline);
   padding: 80px 40px 60px;
-  color: #fff;
+  color: var(--text);
   text-align: center;
   overflow: hidden;
 }
@@ -104,23 +110,25 @@
 
 .team-hero-badge {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid var(--hairline-strong);
+  color: var(--secondary);
   padding: 5px 16px;
   border-radius: 999px;
-  font-size: 0.76rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
 }
 
 .team-hero-title {
+  font-family: var(--display);
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   margin: 0 0 1rem;
-  color: #fff;
+  color: var(--text-strong);
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
@@ -128,7 +136,7 @@
 .team-hero-sub {
   font-size: 1.05rem;
   line-height: 1.75;
-  opacity: 0.88;
+  color: var(--gray);
   margin: 0 auto 2rem;
   max-width: 560px;
 }
@@ -138,14 +146,13 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: var(--rounded);
+  margin: 2rem auto 0;
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--rounded-lg);
   padding: 20px 40px;
   max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .team-hstat {
@@ -156,24 +163,26 @@
 }
 
 .team-hstat-num {
+  font-family: var(--display);
   font-size: 2.2rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--primary);
   line-height: 1;
   margin-bottom: 4px;
 }
 
 .team-hstat-lbl {
-  font-size: 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  opacity: 0.75;
+  letter-spacing: 0.08em;
+  color: var(--gray);
 }
 
 .team-hstat-sep {
   width: 1px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.25);
+  background: var(--hairline-strong);
 
   @media (max-width: 540px) {
     display: none;
@@ -209,7 +218,7 @@
   gap: 14px;
   margin-bottom: 32px;
   padding-bottom: 16px;
-  border-bottom: 2px solid var(--light-gray);
+  border-bottom: 1px solid var(--hairline);
 }
 
 .team-section-icon {
@@ -218,9 +227,9 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: var(--primary);
-  color: #fff;
-  border-radius: var(--rounded);
+  background: var(--grad-brand);
+  color: #03131f;
+  border-radius: 12px;
   font-size: 1.1rem;
   flex-shrink: 0;
 }
@@ -228,29 +237,44 @@
 .team-section-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--text);
+  color: var(--text-strong);
   margin: 0;
 }
 
 /* ===========================================
-   PI CARD
+   PI CARD  —  spotlight tile
    =========================================== */
 
 .pi-card {
+  position: relative;
   display: flex;
   gap: 40px;
   align-items: flex-start;
-  background: var(--background);
-  border: 1px solid var(--light-gray);
-  border-left: 4px solid var(--primary);
-  border-radius: var(--rounded);
+  background:
+    radial-gradient(120% 140% at 0% 0%, color-mix(in srgb, var(--primary) 12%, transparent), transparent 55%),
+    var(--surface);
+  border: 1px solid var(--hairline-strong);
+  border-radius: var(--rounded-lg);
   padding: 36px;
   box-shadow: var(--shadow);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 3px;
+    background: var(--grad-brand);
+  }
 }
 
 .pi-card-photo-wrap {
   flex-shrink: 0;
   display: block;
+  border-radius: 50%;
+  padding: 3px;
+  background: var(--grad-brand);
+  box-shadow: var(--glow-primary);
 }
 
 .pi-card-photo {
@@ -258,7 +282,8 @@
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  display: block;
+  border: 3px solid var(--surface);
   transition: transform 0.3s ease;
 }
 
@@ -272,11 +297,12 @@
 
 .pi-role-pill {
   display: inline-block;
-  background: var(--primary);
-  color: #fff;
-  padding: 3px 14px;
+  background: var(--grad-brand);
+  color: #03131f;
+  padding: 4px 14px;
   border-radius: 999px;
-  font-size: 0.72rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -289,7 +315,7 @@
   margin: 0 0 4px;
 
   a {
-    color: var(--text);
+    color: var(--text-strong);
     text-decoration: none;
 
     &:hover {
@@ -324,18 +350,19 @@
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: var(--background-alt);
+  background: var(--surface-2);
   color: var(--gray);
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--hairline);
   font-size: 1rem;
   text-decoration: none;
-  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s,
+    box-shadow 0.2s;
 
   &:hover {
-    background: var(--primary);
-    color: #fff;
+    color: var(--primary);
     border-color: var(--primary);
     transform: translateY(-2px);
+    box-shadow: var(--glow-primary);
   }
 }
 
@@ -348,10 +375,11 @@
 }
 
 .team-role-label {
-  font-size: 0.78rem;
-  font-weight: 700;
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--gray);
   margin: 0 0 20px;
   display: flex;
@@ -362,7 +390,7 @@
     content: "";
     flex: 1;
     height: 1px;
-    background: var(--light-gray);
+    background: var(--hairline);
   }
 }
 
@@ -377,31 +405,46 @@
 }
 
 /* ===========================================
-   MEMBER CARD
+   MEMBER CARD  —  glass + role-tier accent
    =========================================== */
 
 .mem-card {
-  background: var(--background);
-  border: 1px solid var(--light-gray);
-  border-radius: var(--rounded);
-  box-shadow: var(--shadow);
+  --rc: var(--primary); /* researcher tier default */
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-sm);
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: transform 0.25s, box-shadow 0.25s;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 3px;
+    background: var(--rc);
+    z-index: 2;
+  }
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.12);
+    border-color: color-mix(in srgb, var(--rc) 45%, transparent);
+    box-shadow: 0 0 24px color-mix(in srgb, var(--rc) 26%, transparent);
   }
 }
+
+/* Interns read as a distinct tier */
+.mem-card[data-role="intern"] { --rc: var(--warning); }
 
 .mem-card-photo-link {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  background: var(--background-alt);
+  background: var(--surface-2);
 }
 
 .mem-card-photo {
@@ -424,12 +467,14 @@
 
 .mem-role-pill {
   display: inline-block;
-  background: var(--background-alt);
-  color: var(--primary);
+  background: color-mix(in srgb, var(--rc) 14%, transparent);
+  color: var(--rc);
+  border: 1px solid color-mix(in srgb, var(--rc) 30%, transparent);
   padding: 2px 10px;
-  border-radius: 999px;
-  font-size: 0.67rem;
-  font-weight: 700;
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -443,11 +488,11 @@
   line-height: 1.3;
 
   a {
-    color: var(--text);
+    color: var(--text-strong);
     text-decoration: none;
 
     &:hover {
-      color: var(--primary);
+      color: var(--rc);
     }
   }
 }
@@ -473,11 +518,10 @@
   gap: 5px;
 
   i {
-    color: var(--primary);
+    color: var(--rc);
     font-size: 0.72rem;
   }
 }
-
 
 .mem-card-links {
   display: flex;
@@ -495,13 +539,16 @@
 
 .mem-card-tag {
   display: inline-block;
-  font-size: 0.65rem;
-  font-weight: 600;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
   line-height: 1;
-  padding: 3px 8px;
-  border-radius: 999px;
-  background: var(--background-alt);
-  color: var(--primary);
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  border: 1px solid var(--hairline);
+  color: var(--gray);
   white-space: nowrap;
 }
 
@@ -512,18 +559,27 @@
   width: 29px;
   height: 29px;
   border-radius: 50%;
-  background: var(--background-alt);
+  background: var(--surface-2);
   color: var(--gray);
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--hairline);
   font-size: 0.8rem;
   text-decoration: none;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 
   &:hover {
-    background: var(--primary);
-    color: #fff;
-    border-color: var(--primary);
+    color: var(--rc, var(--primary));
+    border-color: var(--rc, var(--primary));
   }
+}
+
+/* ===========================================
+   LIGHT MODE
+   =========================================== */
+[data-dark="false"] {
+  .team-jumpnav-item.team-jumpnav-active,
+  .team-jumpnav-join { color: #ffffff !important; }
+  .team-section-icon,
+  .pi-role-pill { color: #ffffff; }
 }
 
 /* ===========================================
@@ -559,6 +615,14 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .mem-card:hover,
+  .mem-card:hover .mem-card-photo,
+  .pi-card-photo:hover,
+  .team-jumpnav-item:hover,
+  .pi-link:hover { transform: none; }
+}
+
 /* ===========================================
    COLLABORATION MAP
    =========================================== */
@@ -583,7 +647,7 @@
   font-size: 1.35rem;
   font-weight: 700;
   margin: 0;
-  color: var(--text);
+  color: var(--text-strong);
 }
 
 .collab-map-sub {
@@ -596,7 +660,7 @@
   width: 100%;
   height: 430px;
   border-radius: var(--rounded);
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--hairline);
   box-shadow: var(--shadow);
   position: relative; /* required for Leaflet */
   z-index: 0;
@@ -632,7 +696,7 @@
   display: inline-block;
   width: 1px;
   height: 14px;
-  background: var(--light-gray);
+  background: var(--hairline);
   margin: 0 4px;
 }
 
@@ -740,7 +804,7 @@
 
 .member-pubs-btn:hover {
   background: var(--primary);
-  color: #fff;
+  color: #02121f;
   transform: translateY(-2px);
 }
 

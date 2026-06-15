@@ -26,11 +26,12 @@
 
   /* ── State ──────────────────────────────────────────── */
   var currentFilter = "all";
+  var currentVenue  = "all";
   var currentSort   = "newest";
   var currentView   = "compact";
 
   /* ── DOM Refs (populated on DOMContentLoaded) ───────── */
-  var wrapper, filterBtns, sortSelect, viewBtns, showingEl, filterLabelEl;
+  var wrapper, filterBtns, venueSelect, sortSelect, viewBtns, showingEl, filterLabelEl;
 
   /* ── Helpers ────────────────────────────────────────── */
   function getCards() {
@@ -47,6 +48,10 @@
     var authors   = (card.dataset.authors   || "").toLowerCase();
     var text = title + " " + publisher + " " + authors;
     return (KEYWORDS[filter] || []).some(function (kw) { return text.indexOf(kw) !== -1; });
+  }
+
+  function matchesVenue(card) {
+    return currentVenue === "all" || (card.dataset.venue || "") === currentVenue;
   }
 
   function getYear(card) {
@@ -201,7 +206,7 @@
   /* ── Core: filter + sort + separators ───────────────── */
   function applyAll() {
     getCards().forEach(function (card) {
-      var show = matchesFilter(card, currentFilter);
+      var show = matchesFilter(card, currentFilter) && matchesVenue(card);
       if (show) { card.removeAttribute("data-hidden"); }
       else      { card.setAttribute("data-hidden", "true"); }
     });
@@ -231,6 +236,13 @@
       });
     });
 
+    if (venueSelect) {
+      venueSelect.addEventListener("change", function () {
+        currentVenue = venueSelect.value || "all";
+        applyAll();
+      });
+    }
+
     if (sortSelect) {
       sortSelect.addEventListener("change", function () {
         currentSort = sortSelect.value;
@@ -257,6 +269,7 @@
     // Capture DOM refs now that DOM is ready
     wrapper       = document.getElementById("pubs-list-wrapper");
     filterBtns    = document.querySelectorAll(".pubs-filter-btn");
+    venueSelect   = document.getElementById("pubs-venue");
     sortSelect    = document.getElementById("pubs-sort");
     viewBtns      = document.querySelectorAll(".pubs-view-btn");
     showingEl     = document.getElementById("pubs-showing-count");

@@ -3,133 +3,15 @@ title: Home
 ---
 
 <!-- ============================================================
-     FEATURED HERO CAROUSEL
-     (lab intro + top news + featured projects)
+     HOMEPAGE BENTO FRAMEWORK
+     hero (animated neural canvas) · live stats · research pillars ·
+     featured publication · news activity stream · join CTA
      ============================================================ -->
-{% include featured-carousel.html %}
+{% include hero-bento.html %}
 
 <!-- ============================================================
-     STATS BAR
+     EDITORIAL FEATURES
      ============================================================ -->
-<section class="stats-bar" aria-label="Lab statistics">
-  <div class="stats-inner">
-    <div class="stat-item">
-      {% assign pub_orcids = "0000-0001-9232-4843,0000-0002-0086-8155,0009-0002-4648-9289" | split: "," %}
-      {% assign pub_count = 0 %}
-      {% for citation in site.data.citations %}
-        {% if pub_orcids contains citation.orcid %}
-          {% comment %} Match /pubs render filter: citation.html only renders entries with id or authors {% endcomment %}
-          {% assign _renderable = false %}
-          {% if citation.id and citation.id != "" %}{% assign _renderable = true %}{% endif %}
-          {% if citation.authors and citation.authors.size > 0 %}{% assign _renderable = true %}{% endif %}
-          {% if _renderable %}
-            {% assign pub_count = pub_count | plus: 1 %}
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-      {% assign pub_tens = pub_count | divided_by: 10 | times: 10 %}
-      <span class="stat-num">{{ pub_tens }}+</span>
-      <span class="stat-lbl">Publications</span>
-    </div>
-    <div class="stat-sep" aria-hidden="true"></div>
-    <div class="stat-item">
-      {% assign active_members = site.members | where: "group", "active" %}
-      <span class="stat-num">{{ active_members.size }}</span>
-      <span class="stat-lbl">Lab Members</span>
-    </div>
-    <div class="stat-sep" aria-hidden="true"></div>
-    <div class="stat-item">
-      {% assign project_count = site.data.projects | size %}
-      <span class="stat-num">{{ project_count }}</span>
-      <span class="stat-lbl">Research Projects</span>
-    </div>
-    <div class="stat-sep" aria-hidden="true"></div>
-    <div class="stat-item">
-      {% assign years_active = 'now' | date: "%Y" | minus: 2019 %}
-      <span class="stat-num">{{ years_active }}+</span>
-      <span class="stat-lbl">Years Active</span>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     RESEARCH AREAS
-     ============================================================ -->
-<section class="ra-section" aria-label="Research areas">
-  <div class="ra-grid">
-    <a href="/projects/security" class="ra-card ra-card-link" data-area="security">
-      <div class="ra-icon-wrap ra-security" aria-hidden="true">
-        {% include icon.html icon="fa-solid fa-shield-halved" %}
-      </div>
-      <h3>Security &amp; Adversarial ML</h3>
-      <p>Defending AI systems against adversarial attacks, malware, binary analysis, and exploitation of interpretability mechanisms in high-stakes environments.</p>
-    </a>
-    <a href="/projects/medical" class="ra-card ra-card-link" data-area="biomedical">
-      <div class="ra-icon-wrap ra-biomedical" aria-hidden="true">
-        {% include icon.html icon="fa-solid fa-dna" %}
-      </div>
-      <h3>Biomedical AI</h3>
-      <p>Applying deep learning to medical imaging, Alzheimer's detection, multimodal clinical prediction, and biomedical discovery.</p>
-    </a>
-    <a href="/projects/explainable-ai" class="ra-card ra-card-link" data-area="trustworthy">
-      <div class="ra-icon-wrap ra-trustworthy" aria-hidden="true">
-        {% include icon.html icon="fa-solid fa-brain" %}
-      </div>
-      <h3>Trustworthy &amp; Explainable AI</h3>
-      <p>Building transparent, interpretable, and robust AI systems for critical domains including healthcare, finance, and security.</p>
-    </a>
-  </div>
-</section>
-
-<!-- ============================================================
-     RECENT NEWS
-     ============================================================ -->
-<section class="hp-news-section" aria-label="Recent news">
-  <div class="hp-news-header">
-    <h2>{% include icon.html icon="fa-solid fa-newspaper" %} Recent News</h2>
-  </div>
-  <div class="hp-news-grid">
-    {% assign sorted_news = site.data.news | sort: "date" | reverse %}
-    {% for post in sorted_news limit:6 %}
-    {% comment %} category inference — keep in sync with /news/index.md {% endcomment %}
-    {% assign t = post.title | downcase %}
-    {% assign d = post.description | downcase %}
-    {% if t contains "patent" or d contains "patent application" %}
-      {% assign hp_type = "patent" %}{% assign hp_type_label = "Patent" %}{% assign hp_type_icon = "fa-solid fa-certificate" %}
-    {% elsif t contains "welcome" or t contains "new team" or t contains "new lab member" or t contains "new researcher" %}
-      {% assign hp_type = "member" %}{% assign hp_type_label = "New Member" %}{% assign hp_type_icon = "fa-solid fa-user-plus" %}
-    {% elsif t contains "award" or t contains "fellowship" or t contains "prize" %}
-      {% assign hp_type = "award" %}{% assign hp_type_label = "Award" %}{% assign hp_type_icon = "fa-solid fa-trophy" %}
-    {% else %}
-      {% assign hp_type = "publication" %}{% assign hp_type_label = "Publication" %}{% assign hp_type_icon = "fa-solid fa-file-lines" %}
-    {% endif %}
-    <article class="hp-news-card hp-news-card--{{ hp_type }}">
-      <div class="hp-news-top">
-        <span class="nci-type-badge nci-badge-{{ hp_type }}">
-          {% include icon.html icon=hp_type_icon %}
-          {{ hp_type_label }}
-        </span>
-        <span class="hp-news-date">{{ post.date | date: "%b %d, %Y" }}</span>
-      </div>
-      <div class="hp-news-title">{{ post.title }}</div>
-      {% if post.description %}
-        <div class="hp-news-desc">{{ post.description | truncate: 320 }}</div>
-        {% if post.description.size > 320 or post.url %}
-          {% if post.url %}
-            <a href="{{ post.url }}" target="_blank" rel="noopener noreferrer" class="hp-news-link">Read more &rarr;</a>
-          {% else %}
-            <a href="/news" class="hp-news-link">Read more &rarr;</a>
-          {% endif %}
-        {% endif %}
-      {% endif %}
-    </article>
-    {% endfor %}
-  </div>
-  <div class="hp-news-more">
-    <a href="/news" class="hp-news-all-btn">See All News &rarr;</a>
-  </div>
-</section>
-
 {% capture text %}
 A great way to explore our work is through our publications. Browse or search our full list of research outputs to learn more about what we do.
 
@@ -197,4 +79,3 @@ Our team includes graduate students, postdoctoral researchers, and researchers, 
 {% endcapture %}
 
 {% include cols.html col1=col1 col2=col2 col3=col3 %}
-

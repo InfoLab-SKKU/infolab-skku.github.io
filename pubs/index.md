@@ -77,6 +77,13 @@ nav:
     <button class="pubs-filter-btn pubs-filter-btn--type" data-filter="conference" aria-pressed="false"><i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i> Conferences <span class="pubs-filter-count" id="count-conference"></span></button>
   </div>
   <div class="pubs-controls">
+    {% assign venue_labels = site.data.top-venues | map: "label" | uniq %}
+    <select class="pubs-venue-select" id="pubs-venue" aria-label="Filter by venue">
+      <option value="all">All Venues</option>
+      {% for label in venue_labels %}
+        <option value="{{ label }}">{{ label }}</option>
+      {% endfor %}
+    </select>
     <select class="pubs-sort-select" id="pubs-sort" aria-label="Sort publications">
       <option value="newest">Newest First</option>
       <option value="oldest">Oldest First</option>
