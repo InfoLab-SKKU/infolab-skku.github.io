@@ -13,12 +13,12 @@ nav:
     <p class="team-hero-sub">Open-source tools, libraries, and datasets from InfoLab research — freely available for the research community.</p>
     <div class="team-hero-stats">
       <div class="team-hstat">
-        <span class="team-hstat-num">21</span>
+        <span class="team-hstat-num">23</span>
         <span class="team-hstat-lbl">Repositories</span>
       </div>
       <div class="team-hstat-sep"></div>
       <div class="team-hstat">
-        <span class="team-hstat-num">2</span>
+        <span class="team-hstat-num">3</span>
         <span class="team-hstat-lbl">pip Libraries</span>
       </div>
       <div class="team-hstat-sep"></div>
@@ -43,7 +43,7 @@ nav:
 <div class="sw-filter-bar">
   <button class="sw-filter-btn active" data-cat="all">
     <i class="fa-solid fa-layer-group"></i> All
-    <span class="sw-filter-count">21</span>
+    <span class="sw-filter-count">23</span>
   </button>
   <button class="sw-filter-btn" data-cat="security">
     <i class="fa-solid fa-shield-halved"></i> Security &amp; Adversarial ML
@@ -129,6 +129,7 @@ nav:
           <div class="sw-card-repo">InfoLab-SKKU/VisionDES</div>
         </div>
       </div>
+      <div class="sw-pip-badge"><i class="fa-brands fa-python"></i> pip install vision-des</div>
       <p class="sw-card-desc">VisionDES provides dynamic ensemble selection methods tailored for computer vision tasks. Includes training and evaluation scripts, pretrained models, and integration examples for image classification benchmarks using dynamic ensemble strategies.</p>
       <div class="sw-card-tags">
         <span class="sw-tag">Dynamic Ensemble</span>
