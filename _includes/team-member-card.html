@@ -8,7 +8,7 @@
 {% assign member = include.member %}
 {% assign mtype = site.data.types[member.role] %}
 
-<article class="mem-card">
+<article class="mem-card" data-role="{{ member.role }}">
   <a href="{{ member.url | relative_url }}" class="mem-card-photo-link" aria-label="{{ member.name }}">
     <img
       src="{{ member.image | relative_url }}"

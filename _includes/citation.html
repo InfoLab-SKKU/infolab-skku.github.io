@@ -29,10 +29,19 @@
 {% else %}
   {% assign cit_pubtype = "journal" %}
 {% endif %}
+{% comment %} Resolve top-tier venue label once; reused for badge + venue filter {% endcomment %}
+{% assign cit_venue_label = nil %}
+{% for venue in site.data.top-venues %}
+  {% if cit_pub_lower contains venue.match %}
+    {% assign cit_venue_label = venue.label %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 <div class="citation-container"
   data-year="{{ cit_year }}"
   data-publisher="{{ citation.publisher | downcase }}"
   data-pubtype="{{ cit_pubtype }}"
+  data-venue="{{ cit_venue_label }}"
   data-type="{{ citation.type | default: "paper" }}"
   data-title="{{ citation.title | strip_html | strip }}"
   data-authors="{{ citation.authors | join: "; " }}"
@@ -100,13 +109,6 @@
         }}
       </div>
 
-      {% assign cit_venue_label = nil %}
-      {% for venue in site.data.top-venues %}
-        {% if cit_pub_lower contains venue.match %}
-          {% assign cit_venue_label = venue.label %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
       <div class="citation-details">
         {% if cit_venue_label %}
           <span class="citation-venue-badge" data-tooltip="Top-tier venue">

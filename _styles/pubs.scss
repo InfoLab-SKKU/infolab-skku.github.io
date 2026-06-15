@@ -10,12 +10,12 @@
   display: flex;
   align-items: center;
   gap: 0;
-  background: linear-gradient(135deg, var(--hero-1) 0%, var(--hero-2) 100%);
-  border-radius: var(--rounded);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--rounded-lg);
   padding: 18px 32px;
   margin: 24px 0 0;
   flex-wrap: wrap;
-  gap: 0;
 }
 
 .pubs-stat {
@@ -23,31 +23,33 @@
   flex-direction: column;
   align-items: center;
   padding: 0 28px;
-  color: #fff;
+  color: var(--text);
   flex: 1;
   min-width: 120px;
 }
 
 .pubs-stat-num {
+  font-family: var(--display);
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.1;
-  color: #fff;
+  color: var(--primary);
 }
 
 .pubs-stat-lbl {
-  font-size: 0.72rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
   text-transform: uppercase;
-  letter-spacing: 0.07em;
-  opacity: 0.78;
+  letter-spacing: 0.08em;
+  color: var(--gray);
   font-weight: 500;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .pubs-stat-sep {
   width: 1px;
   height: 40px;
-  background: rgba(255,255,255,0.25);
+  background: var(--hairline);
   flex-shrink: 0;
 }
 
@@ -93,15 +95,16 @@
   gap: 6px;
   padding: 8px 16px;
   border-radius: 999px;
-  border: 1.5px solid var(--light-gray);
-  background: var(--background);
+  border: 1px solid var(--hairline);
+  background: var(--surface);
   color: var(--gray);
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   font-weight: 500;
+  letter-spacing: 0.01em;
   cursor: pointer;
-  font-family: var(--body);
+  font-family: var(--mono);
   transition: background var(--transition), color var(--transition),
-    border-color var(--transition);
+    border-color var(--transition), box-shadow var(--transition);
 }
 
 .pubs-filter-btn:hover {
@@ -110,9 +113,10 @@
 }
 
 .pubs-filter-btn.active {
-  background: var(--primary);
-  color: #fff;
-  border-color: var(--primary);
+  background: var(--grad-brand);
+  color: #03131f;
+  border-color: transparent;
+  box-shadow: var(--glow-primary);
 }
 
 .pubs-filter-count {
@@ -144,11 +148,11 @@
 .pubs-sort-select {
   padding: 7px 12px;
   border-radius: 8px;
-  border: 1.5px solid var(--light-gray);
-  background: var(--background);
+  border: 1px solid var(--hairline);
+  background: var(--surface);
   color: var(--text);
-  font-size: 0.84rem;
-  font-family: var(--body);
+  font-size: 0.82rem;
+  font-family: var(--mono);
   cursor: pointer;
   transition: border-color var(--transition);
 
@@ -161,14 +165,14 @@
 
 .pubs-view-toggle {
   display: flex;
-  border: 1.5px solid var(--light-gray);
+  border: 1px solid var(--hairline);
   border-radius: 8px;
   overflow: hidden;
 }
 
 .pubs-view-btn {
   padding: 7px 11px;
-  background: var(--background);
+  background: var(--surface);
   border: none;
   color: var(--gray);
   cursor: pointer;
@@ -177,17 +181,17 @@
   line-height: 1;
 
   &:hover {
-    background: var(--light-gray);
+    background: var(--surface-2);
     color: var(--primary);
   }
 
   &.active {
     background: var(--primary);
-    color: #fff;
+    color: #02121f;
   }
 
   & + & {
-    border-left: 1.5px solid var(--light-gray);
+    border-left: 1px solid var(--hairline);
   }
 }
 
@@ -238,24 +242,27 @@
 
 /* Base card styles */
 .citation {
-  transition: box-shadow var(--transition), transform var(--transition);
+  transition: box-shadow var(--transition), transform var(--transition),
+    border-color var(--transition);
 }
 
 .citation:hover {
-  box-shadow: 0 6px 28px rgba(0,0,0,0.1);
+  box-shadow: var(--glow-primary);
+  border-color: color-mix(in srgb, var(--primary) 40%, transparent);
   transform: translateY(-2px);
 }
 
 /* Publisher pill */
 .citation-publisher-pill {
   display: inline-block;
-  background: rgba(7, 55, 123, 0.09);
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
   color: var(--primary);
-  border-radius: 20px;
+  border-radius: 6px;
   padding: 2px 10px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   max-width: 280px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -426,18 +433,22 @@
   flex-direction: column;
   gap: 10px;
   padding: 20px 22px;
-  background: var(--background);
-  border: 1px solid var(--light-gray);
+  background:
+    radial-gradient(130% 130% at 100% 0%, color-mix(in srgb, var(--primary) 10%, transparent), transparent 58%),
+    var(--surface);
+  border: 1px solid var(--hairline);
   border-top: 3px solid var(--primary);
-  border-radius: calc(var(--rounded) * 1.5);
-  box-shadow: var(--shadow);
+  border-radius: var(--rounded-lg);
+  box-shadow: var(--shadow-sm);
   text-decoration: none;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: transform var(--transition), box-shadow var(--transition),
+    border-color var(--transition);
 }
 
 .pubs-featured-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 36px var(--overlay);
+  border-color: color-mix(in srgb, var(--primary) 45%, transparent);
+  box-shadow: var(--glow-primary);
 }
 
 .pf-top {
@@ -451,13 +462,14 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  background: color-mix(in srgb, var(--primary) 12%, transparent);
   color: var(--primary);
   padding: 4px 12px;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -518,15 +530,106 @@
   color: var(--warning);
   border: 1px solid color-mix(in srgb, var(--warning) 35%, transparent);
   padding: 2px 10px;
-  border-radius: 999px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   vertical-align: middle;
 }
 
 .citation-venue-badge .fa-star {
   font-size: 0.8em;
+}
+
+/* =====================================================================
+   COMPACT-VIEW HOVER REVEAL
+   In compact view the abstract + code/links collapse to a drawer that
+   slides open on hover or keyboard focus — a subtle way to surface the
+   "Abstract" and "Code / GitHub" links without bloating the list.
+   ===================================================================== */
+#pubs-list-wrapper.compact-view {
+  .citation-description,
+  .citation-buttons,
+  .citation-text > .tags {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin: 0;
+    transition: max-height 0.35s ease, opacity 0.3s ease, margin 0.3s ease;
+  }
+
+  .citation-buttons,
+  .citation-text > .tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* "Abstract" label chip prepended to the revealed description */
+  .citation-description::before {
+    content: "Abstract";
+    display: inline-block;
+    margin-right: 8px;
+    font-family: var(--mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary);
+  }
+
+  .citation-container:hover,
+  .citation-container:focus-within {
+    .citation-description {
+      max-height: 220px;
+      opacity: 1;
+      margin-top: 6px;
+    }
+    .citation-buttons,
+    .citation-text > .tags {
+      max-height: 90px;
+      opacity: 1;
+      margin-top: 8px;
+    }
+  }
+}
+
+/* =====================================================================
+   VENUE FILTER SELECT
+   ===================================================================== */
+.pubs-venue-select {
+  padding: 7px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: border-color var(--transition);
+
+  &:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-color: var(--primary);
+  }
+}
+
+/* light-mode contrast fix for gradient-filled active pills */
+[data-dark="false"] .pubs-filter-btn.active {
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .citation:hover,
+  .pubs-featured-card:hover { transform: none; }
+
+  #pubs-list-wrapper.compact-view {
+    .citation-description,
+    .citation-buttons,
+    .citation-text > .tags { transition: none; }
+  }
 }
 

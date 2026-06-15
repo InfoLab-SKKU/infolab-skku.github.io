@@ -1,9 +1,11 @@
 ---
 ---
 
-/* ===========================================
-   NEWS PAGE
-   =========================================== */
+/* =====================================================================
+   NEWS PAGE  —  vertical activity-stream timeline
+   Each update is a node on a rail, colored by category. Markup &
+   data-type attributes are unchanged so news-filter.js keeps working.
+   ===================================================================== */
 
 /* ── Two-column layout ───────────────────────── */
 
@@ -14,13 +16,8 @@
   align-items: start;
 }
 
-.news-col-main {
-  min-width: 0;
-}
-
-.news-col-side {
-  min-width: 0;
-}
+.news-col-main { min-width: 0; }
+.news-col-side { min-width: 0; }
 
 .news-social-sticky {
   position: sticky;
@@ -33,7 +30,7 @@
   gap: 4px;
   margin-top: 16px;
   padding-top: 14px;
-  border-top: 1px solid var(--light-gray);
+  border-top: 1px solid var(--hairline);
 }
 
 .news-rss-link {
@@ -42,7 +39,7 @@
   gap: 7px;
   font-size: 0.84rem;
   font-weight: 600;
-  color: #e07a17;
+  color: var(--warning);
   text-decoration: none;
 
   &:hover { text-decoration: underline; }
@@ -55,20 +52,14 @@
   color: var(--gray);
 }
 
-/* Inline filter bar (inside column, left-aligned) */
 .news-filter-bar--inline {
   justify-content: flex-start;
   margin-bottom: 28px;
 }
 
 @media (max-width: 900px) {
-  .news-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .news-social-sticky {
-    position: static;
-  }
+  .news-layout { grid-template-columns: 1fr; }
+  .news-social-sticky { position: static; }
 }
 
 /* ── Filter bar ─────────────────────────────── */
@@ -88,25 +79,27 @@
   gap: 7px;
   padding: 8px 18px;
   border-radius: 999px;
-  border: 1px solid var(--light-gray);
-  background: var(--background);
-  color: var(--text);
-  font-size: 0.88rem;
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  color: var(--gray);
+  font-family: var(--mono);
+  font-size: 0.82rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s,
+    box-shadow 0.2s;
 
   &:hover {
-    background: var(--primary);
-    color: #fff;
     border-color: var(--primary);
+    color: var(--primary);
     transform: translateY(-2px);
   }
 
   &.active {
-    background: var(--primary);
-    color: #fff;
-    border-color: var(--primary);
+    background: var(--grad-brand);
+    color: #03131f;
+    border-color: transparent;
+    box-shadow: var(--glow-primary);
   }
 }
 
@@ -118,85 +111,115 @@
   height: 20px;
   padding: 0 5px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.18);
   font-size: 0.72rem;
   font-weight: 700;
   line-height: 1;
 }
 
 .news-filter-btn:not(.active) .news-filter-count {
-  background: var(--light-gray);
+  background: var(--surface-2);
   color: var(--gray);
 }
 
 /* ── Year group headers ──────────────────────── */
 
 .news-year-group {
-  margin-bottom: 44px;
+  margin-bottom: 40px;
 }
 
 .news-year-header {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--light-gray);
+  border-bottom: 1px solid var(--hairline);
 }
 
 .news-year-label {
-  font-size: 1.25rem;
+  font-family: var(--display);
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--primary);
+  letter-spacing: -0.01em;
 }
 
 .news-year-count {
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
   color: var(--gray);
-  background: var(--background-alt);
-  padding: 2px 12px;
+  background: var(--surface);
+  padding: 3px 12px;
   border-radius: 999px;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--hairline);
 }
 
-/* ── News card grid ──────────────────────────── */
+/* ── Timeline rail ──────────────────────────── */
 
 .news-cards-grid {
-  display: grid;
-  gap: 14px;
-}
-
-/* ── Individual news card ────────────────────── */
-
-.news-card-item {
+  position: relative;
   display: flex;
-  background: var(--background-alt);
-  border-radius: var(--rounded);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 30px;
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 9px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--hairline-strong), var(--hairline));
   }
 }
 
-.nci-accent {
-  width: 5px;
-  flex-shrink: 0;
+/* ── Timeline node + card ────────────────────── */
+
+.news-card-item {
+  --dot: var(--neutral);
+  position: relative;
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--dot);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -26px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--dot);
+    border: 3px solid var(--background);
+    box-shadow: 0 0 12px var(--dot);
+    z-index: 1;
+  }
+
+  &:hover {
+    transform: translateX(4px);
+    border-color: color-mix(in srgb, var(--dot) 45%, transparent);
+    box-shadow: 0 0 22px color-mix(in srgb, var(--dot) 26%, transparent);
+  }
 }
 
-.nci-publication { background: var(--primary); }
-.nci-member      { background: var(--success); }
-.nci-patent      { background: var(--info); }
-.nci-award       { background: var(--warning); }
-.nci-other       { background: var(--neutral); }
+.news-card-item[data-type="publication"] { --dot: var(--primary); }
+.news-card-item[data-type="member"]      { --dot: var(--success); }
+.news-card-item[data-type="patent"]      { --dot: var(--info); }
+.news-card-item[data-type="award"]       { --dot: var(--warning); }
+
+/* old solid accent bar replaced by the rail dot + card border */
+.nci-accent { display: none; }
 
 .nci-body {
   padding: 16px 20px;
-  flex: 1;
   min-width: 0;
 }
 
@@ -213,23 +236,25 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 0.72rem;
-  font-weight: 700;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  font-weight: 600;
   padding: 3px 10px;
-  border-radius: 999px;
+  border-radius: 6px;
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.05em;
 }
 
-.nci-badge-publication { background: color-mix(in srgb, var(--primary) 12%, transparent); color: var(--primary); }
-.nci-badge-member      { background: color-mix(in srgb, var(--success) 12%, transparent); color: var(--success); }
-.nci-badge-patent      { background: color-mix(in srgb, var(--info) 12%, transparent);    color: var(--info); }
-.nci-badge-award       { background: color-mix(in srgb, var(--warning) 12%, transparent); color: var(--warning); }
-.nci-badge-other       { background: color-mix(in srgb, var(--neutral) 12%, transparent); color: var(--neutral); }
+.nci-badge-publication { background: color-mix(in srgb, var(--primary) 14%, transparent); color: var(--primary); border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent); }
+.nci-badge-member      { background: color-mix(in srgb, var(--success) 14%, transparent); color: var(--success); border: 1px solid color-mix(in srgb, var(--success) 30%, transparent); }
+.nci-badge-patent      { background: color-mix(in srgb, var(--info) 14%, transparent);    color: var(--info);    border: 1px solid color-mix(in srgb, var(--info) 30%, transparent); }
+.nci-badge-award       { background: color-mix(in srgb, var(--warning) 14%, transparent); color: var(--warning); border: 1px solid color-mix(in srgb, var(--warning) 30%, transparent); }
+.nci-badge-other       { background: color-mix(in srgb, var(--neutral) 14%, transparent); color: var(--neutral); border: 1px solid color-mix(in srgb, var(--neutral) 30%, transparent); }
 
 .nci-date {
-  font-size: 0.78rem;
-  color: var(--gray);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--dim);
   display: flex;
   align-items: center;
   gap: 5px;
@@ -243,10 +268,10 @@
   line-height: 1.45;
 
   a {
-    color: var(--text);
+    color: var(--text-strong);
     text-decoration: none;
 
-    &:hover { color: var(--primary); }
+    &:hover { color: var(--dot); }
   }
 }
 
@@ -261,13 +286,15 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--primary);
+  font-family: var(--mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--dot);
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: gap 0.2s;
 
-  &:hover { opacity: 0.75; }
+  &:hover { gap: 9px; }
 }
 
 /* ── Empty state ─────────────────────────────── */
@@ -282,11 +309,11 @@
 /* ── BlueSky section ─────────────────────────── */
 
 .news-social-section {
-  background: var(--background-alt);
-  border-radius: var(--rounded);
+  background: var(--surface);
+  border-radius: var(--rounded-lg);
   padding: 20px;
-  border: 1px solid var(--light-gray);
-  box-shadow: var(--shadow);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow-sm);
 }
 
 .news-social-header {
@@ -296,13 +323,14 @@
   font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 22px;
-  color: var(--text);
+  color: var(--text-strong);
 
   i { color: var(--bluesky); font-size: 1.2rem; }
 }
 
 .news-social-handle {
-  font-size: 0.88rem;
+  font-family: var(--mono);
+  font-size: 0.8rem;
   font-weight: 500;
   color: var(--bluesky);
   text-decoration: none;
@@ -314,9 +342,7 @@
   &:hover { background: color-mix(in srgb, var(--bluesky) 18%, transparent); }
 }
 
-.bluesky-embed-wrap {
-  width: 100%;
-}
+.bluesky-embed-wrap { width: 100%; }
 
 /* ── Responsive ──────────────────────────────── */
 
@@ -326,9 +352,13 @@
     align-items: flex-start;
   }
 
-  .nci-body {
-    padding: 14px 16px;
-  }
+  .nci-body { padding: 14px 16px; }
 }
 
-/* Dark-mode badge variants are inherited from the token system */
+@media (prefers-reduced-motion: reduce) {
+  .news-card-item:hover,
+  .news-filter-btn:hover { transform: none; }
+}
+
+/* Light mode: gradient-filled active pill needs white text */
+[data-dark="false"] .news-filter-btn.active { color: #ffffff; }

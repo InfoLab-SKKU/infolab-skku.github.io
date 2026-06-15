@@ -1,0 +1,164 @@
+{% comment %}
+  Homepage bento framework.
+  Tiles: hero (animated neural canvas) · live stats · 3 research pillars ·
+  featured publication · news activity stream · join CTA.
+  Replaces the legacy carousel + stats-bar + research-areas + news grid.
+  All numbers/cards stay data-driven (no hardcoded values).
+{% endcomment %}
+
+<div class="bento">
+  <div class="bento-grid">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="b-tile b-hero" aria-label="Lab introduction">
+      <canvas class="neural-hero" aria-hidden="true"></canvas>
+      <div class="b-hero-inner">
+        <span class="b-eyebrow">Information Research Laboratory · SKKU</span>
+        <h1 class="b-hero-title">
+          Advancing <span class="b-grad b-grad-security">Trustworthy AI</span>,
+          <span class="b-grad b-grad-trust">Explainable&nbsp;AI</span> &amp;
+          <span class="b-grad b-grad-biomedical">Biomedical&nbsp;AI</span>
+        </h1>
+        <p class="b-hero-lead">
+          We build robust, interpretable and secure machine-learning systems —
+          defending AI against adversarial threats and advancing biomedical
+          discovery at Sungkyunkwan University, South Korea.
+        </p>
+        <div class="b-hero-ctas">
+          <a href="{{ '/projects' | relative_url }}" class="b-btn b-btn-primary">
+            {% include icon.html icon="fa-solid fa-flask" %} Explore Research
+          </a>
+          <a href="{{ '/pubs' | relative_url }}" class="b-btn b-btn-ghost">
+            {% include icon.html icon="fa-regular fa-newspaper" %} Publications
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ STATS ============================ -->
+    {% comment %} Publications — match the /pubs render filter {% endcomment %}
+    {% assign pub_orcids = "0000-0001-9232-4843,0000-0002-0086-8155,0009-0002-4648-9289" | split: "," %}
+    {% assign pub_count = 0 %}
+    {% for citation in site.data.citations %}
+      {% if pub_orcids contains citation.orcid %}
+        {% assign _renderable = false %}
+        {% if citation.id and citation.id != "" %}{% assign _renderable = true %}{% endif %}
+        {% if citation.authors and citation.authors.size > 0 %}{% assign _renderable = true %}{% endif %}
+        {% if _renderable %}{% assign pub_count = pub_count | plus: 1 %}{% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pub_tens = pub_count | divided_by: 10 | times: 10 %}
+    {% assign active_members = site.members | where: "group", "active" %}
+    {% assign project_count = site.data.projects | size %}
+    {% assign years_active = 'now' | date: "%Y" | minus: 2019 %}
+
+    <section class="b-tile b-stats" aria-label="Lab at a glance">
+      <div class="b-stat">
+        <span class="b-stat-num"><span data-count="{{ pub_tens }}">0</span><span class="b-plus">+</span></span>
+        <span class="b-stat-lbl">Publications</span>
+      </div>
+      <div class="b-stat">
+        <span class="b-stat-num"><span data-count="{{ active_members.size }}">0</span><span class="b-plus">+</span></span>
+        <span class="b-stat-lbl">Lab Members</span>
+      </div>
+      <div class="b-stat">
+        <span class="b-stat-num"><span data-count="{{ project_count }}">0</span><span class="b-plus">+</span></span>
+        <span class="b-stat-lbl">Research Projects</span>
+      </div>
+      <div class="b-stat">
+        <span class="b-stat-num"><span data-count="{{ years_active }}">0</span><span class="b-plus">+</span></span>
+        <span class="b-stat-lbl">Years Active</span>
+      </div>
+    </section>
+
+    <!-- ========================== PILLARS ========================== -->
+    <a href="{{ '/projects/security' | relative_url }}" class="b-tile b-pillar" data-area="security">
+      <span class="b-pillar-icon">{% include icon.html icon="fa-solid fa-shield-halved" %}</span>
+      <h3>Security &amp; Adversarial ML</h3>
+      <p>Defending AI against adversarial attacks, malware, binary analysis, and exploitation of interpretability mechanisms.</p>
+      <span class="b-pillar-more">Explore {% include icon.html icon="fa-solid fa-arrow-right" %}</span>
+    </a>
+
+    <a href="{{ '/projects/medical' | relative_url }}" class="b-tile b-pillar" data-area="biomedical">
+      <span class="b-pillar-icon">{% include icon.html icon="fa-solid fa-dna" %}</span>
+      <h3>Biomedical AI</h3>
+      <p>Deep learning for medical imaging, Alzheimer's detection, and multimodal clinical prediction.</p>
+      <span class="b-pillar-more">Explore {% include icon.html icon="fa-solid fa-arrow-right" %}</span>
+    </a>
+
+    <a href="{{ '/projects/explainable-ai' | relative_url }}" class="b-tile b-pillar" data-area="trustworthy">
+      <span class="b-pillar-icon">{% include icon.html icon="fa-solid fa-brain" %}</span>
+      <h3>Trustworthy &amp; Explainable AI</h3>
+      <p>Transparent, interpretable and robust AI for healthcare, finance and security.</p>
+      <span class="b-pillar-more">Explore {% include icon.html icon="fa-solid fa-arrow-right" %}</span>
+    </a>
+
+    <!-- ====================== FEATURED PAPER ====================== -->
+    {% assign feat = site.data.citations | where: "featured", true | sort: "date" | reverse | first %}
+    {% if feat == nil %}
+      {% assign feat = site.data.citations | where_exp: "c", "c.orcid == '0000-0001-9232-4843'" | sort: "date" | reverse | first %}
+    {% endif %}
+    {% if feat %}
+      {% assign feat_pub_lower = feat.publisher | downcase %}
+      {% assign feat_venue = nil %}
+      {% for venue in site.data.top-venues %}
+        {% if feat_pub_lower contains venue.match %}{% assign feat_venue = venue.label %}{% break %}{% endif %}
+      {% endfor %}
+      <a class="b-tile b-featured" {% if feat.link %}href="{{ feat.link }}" target="_blank" rel="noopener noreferrer"{% endif %}>
+        <span class="b-card-eyebrow">{% include icon.html icon="fa-solid fa-star" %} Featured Publication</span>
+        <span class="b-venue-row">
+          <span class="b-venue-chip">{{ feat_venue | default: feat.publisher | truncate: 34 }}</span>
+          <span class="b-venue-year">{{ feat.date | date: "%Y" }}</span>
+        </span>
+        <span class="b-featured-title">{{ feat.title }}</span>
+        {% if feat.authors and feat.authors.size > 0 %}
+          {% assign feat_authors = feat.authors | slice: 0, 3 %}
+          <span class="b-featured-authors">{{ feat_authors | join: ", " }}{% if feat.authors.size > 3 %} et al.{% endif %}</span>
+        {% endif %}
+        <span class="b-featured-link">View Paper {% include icon.html icon="fa-solid fa-arrow-right" %}</span>
+      </a>
+    {% endif %}
+
+    <!-- ======================= NEWS STREAM ======================= -->
+    <section class="b-tile b-news" aria-label="Recent news">
+      <div class="b-news-head">
+        <h2>{% include icon.html icon="fa-solid fa-satellite-dish" %} Activity Stream</h2>
+        <a href="{{ '/news' | relative_url }}" class="b-news-all">All news →</a>
+      </div>
+      <div class="b-news-stream">
+        {% assign sorted_news = site.data.news | sort: "date" | reverse %}
+        {% for post in sorted_news limit: 4 %}
+          {% assign t = post.title | downcase %}
+          {% assign d = post.description | downcase %}
+          {% if t contains "patent" or d contains "patent application" %}
+            {% assign b_type = "patent" %}{% assign b_label = "Patent" %}
+          {% elsif t contains "welcome" or t contains "new team" or t contains "new lab member" or t contains "new researcher" %}
+            {% assign b_type = "member" %}{% assign b_label = "New Member" %}
+          {% elsif t contains "award" or t contains "fellowship" or t contains "prize" %}
+            {% assign b_type = "award" %}{% assign b_label = "Award" %}
+          {% else %}
+            {% assign b_type = "publication" %}{% assign b_label = "Publication" %}
+          {% endif %}
+          <div class="b-news-item" data-type="{{ b_type }}">
+            <span class="b-news-dot" aria-hidden="true"></span>
+            <span class="b-news-body">
+              <span class="b-news-item-title">{{ post.title | truncate: 110 }}</span>
+              <span class="b-news-item-type">{{ b_label }}</span>
+            </span>
+            <span class="b-news-date">{{ post.date | date: "%b %Y" }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- ========================= JOIN CTA ========================= -->
+    <a href="{{ '/team/join' | relative_url }}" class="b-tile b-join">
+      <span class="b-join-text">
+        <h2>Join the Lab</h2>
+        <p>We're looking for curious minds in trustworthy, secure and biomedical AI.</p>
+      </span>
+      <span class="b-join-btn">{% include icon.html icon="fa-solid fa-door-open" %} Open Positions</span>
+    </a>
+
+  </div>
+</div>

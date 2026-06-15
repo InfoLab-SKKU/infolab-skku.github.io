@@ -1,113 +1,184 @@
 ---
 ---
 
-// colors
-[data-dark="false"] {
-  --primary: #07377b;
-  --secondary: #7dd3fc;
-  --accent: #0d9488;
-  --accent-dark: #0f766e;
-  --text: #1a2332;
-  --background: #ffffff;
-  --background-alt: #f8fafc;
-  --light-gray: #e2e8f0;
-  --gray: #64748b;
-  --dark-gray: #334155;
-  --overlay: #00000018;
-  --hero-1: #07377b;
-  --hero-2: #0a4fa8;
-  --hero-2-soft: #0a4fa0;
-  --hero-3: #0d6ecc;
+/* =====================================================================
+   InfoLab Design Tokens — "Trustworthy Tech"
+   A dark-default Minimalist Cyber-Sci system. Neon is used for accents,
+   borders, icons and large display type ONLY — never for body copy
+   (every text token below is AA-contrast on its background).
+   The toggle still works: a refined light palette is kept for daytime,
+   print and accessibility preferences.
+   ===================================================================== */
 
-  // Research-area accents
-  --security: #07377b;
-  --biomedical: #0d9488;
-  --trustworthy: #7c3aed;
-
-  // Status / category accents
-  --success: #16a34a;
-  --warning: #d97706;
-  --info: #7c3aed;
-  --neutral: #64748b;
-
-  // Project-card medical gradient
-  --medical-1: #065f46;
-  --medical-2: #059669;
-
-  // Chrome backgrounds
-  --header-bg: #07377b;
-  --footer-bg: #0f2044;
-
-  // BlueSky brand
-  --bluesky: #0085ff;
-}
+/* ---------------------------------------------------------------------
+   DARK  (default)
+   --------------------------------------------------------------------- */
 [data-dark="true"] {
-  --primary: #38bdf8;
-  --secondary: #3888b5;
-  --accent: #2dd4bf;
-  --accent-dark: #14b8a6;
-  --text: #e2e8f0;
-  --background: #0f172a;
-  --background-alt: #1e293b;
-  --light-gray: #334155;
-  --gray: #748297;
-  --dark-gray: #94a3b8;
-  --overlay: #ffffff12;
-  --hero-1: #05243a;
-  --hero-2: #0a4f6f;
-  --hero-2-soft: #0a4f6f;
-  --hero-3: #0f6b94;
+  // surfaces (layered depth)
+  --background:      #0a0e17;
+  --background-alt:  #0f1623;
+  --surface:         #131c2b;
+  --surface-2:       #1a2536;
+  --hairline:        rgba(255, 255, 255, 0.07);
+  --hairline-strong: rgba(255, 255, 255, 0.13);
+  --glass:           rgba(17, 24, 38, 0.62);
 
-  // Research-area accents
-  --security: #38bdf8;
-  --biomedical: #2dd4bf;
-  --trustworthy: #a78bfa;
+  // text
+  --text:        #e6edf3;
+  --text-strong: #f4f8fb;
+  --gray:        #9aa7b8;
+  --dim:         #6b7890;
 
-  // Status / category accents
-  --success: #4ade80;
-  --warning: #fb923c;
-  --info: #a78bfa;
+  // brand / links / CTAs  — Refined Academic Azure
+  --primary:     #5b9bd5; // professional azure
+  --primary-700: #4585c4;
+  --secondary:   #9cc4e8; // light azure (eyebrows / secondary accents)
+  --accent:      #3fa48f; // muted teal-green
+  --accent-dark: #348a78;
+
+  // pillar accents (encode meaning — restrained, scholarly)
+  --security:    #4f93cc; // steel blue       — signal / threat
+  --biomedical:  #3fa48f; // muted teal-green — vitals / imaging
+  --trustworthy: #8089c4; // slate indigo     — interpretation
+
+  // tasteful pillar glows (low intensity)
+  --glow-security:    0 0 24px rgba(79, 147, 204, 0.22);
+  --glow-biomedical:  0 0 24px rgba(63, 164, 143, 0.22);
+  --glow-trustworthy: 0 0 24px rgba(128, 137, 196, 0.22);
+  --glow-primary:     0 0 24px rgba(91, 155, 213, 0.22);
+
+  // micro-gradients (used sparingly, harmonized blues)
+  --grad-security:   linear-gradient(135deg, #4f93cc 0%, #3f6fb0 100%);
+  --grad-biomedical: linear-gradient(135deg, #3fa48f 0%, #3a86a8 100%);
+  --grad-trust:      linear-gradient(135deg, #8089c4 0%, #5f6cb0 100%);
+  --grad-brand:      linear-gradient(135deg, #5b9bd5 0%, #6f78c2 100%);
+  --grad-hero:       radial-gradient(125% 130% at 82% -20%, #14304e 0%, #0b1422 48%, #0a0e17 100%);
+
+  // status / category accents
+  --success: #4fb08f; // refined emerald
+  --warning: #e6b052; // muted amber
+  --info:    #8089c4; // slate indigo (matches trustworthy)
   --neutral: #94a3b8;
 
-  // Project-card medical gradient
+  // project-card medical gradient (legacy compat)
   --medical-1: #064e3b;
   --medical-2: #047857;
 
-  // Chrome backgrounds
-  --header-bg: #05243a;
-  --footer-bg: #0a1730;
+  // hero gradient stops (legacy .hero-section / carousel compat)
+  --hero-1:      #0b1422;
+  --hero-2:      #102a43;
+  --hero-2-soft: #0e2336;
+  --hero-3:      #14304e;
 
-  // BlueSky brand
-  --bluesky: #38bdf8;
+  // chrome
+  --header-bg: #070d18;
+  --footer-bg: #070b12;
+
+  // misc legacy tokens still referenced across stylesheets
+  --overlay:    #00000060;
+  --light-gray: #2a3650;
+  --dark-gray:  #aab6c6;
+  --bluesky:    #38bdf8;
 }
 
+/* ---------------------------------------------------------------------
+   LIGHT  (refined — retained for the toggle, print & a11y prefs)
+   --------------------------------------------------------------------- */
+[data-dark="false"] {
+  --background:      #ffffff;
+  --background-alt:  #f5f8fc;
+  --surface:         #ffffff;
+  --surface-2:       #eef3f9;
+  --hairline:        rgba(15, 23, 42, 0.10);
+  --hairline-strong: rgba(15, 23, 42, 0.16);
+  --glass:           rgba(255, 255, 255, 0.72);
+
+  --text:        #14233b;
+  --text-strong: #0b1626;
+  --gray:        #51607a;
+  --dim:         #7a8aa3;
+
+  --primary:     #0e6fd1;
+  --primary-700: #0a4fa8;
+  --secondary:   #0891b2;
+  --accent:      #0d9488;
+  --accent-dark: #0f766e;
+
+  --security:    #0e7490;
+  --biomedical:  #0f766e;
+  --trustworthy: #6d28d9;
+
+  --glow-security:    0 6px 22px rgba(14, 116, 144, 0.18);
+  --glow-biomedical:  0 6px 22px rgba(15, 118, 110, 0.18);
+  --glow-trustworthy: 0 6px 22px rgba(109, 40, 217, 0.18);
+  --glow-primary:     0 6px 22px rgba(14, 111, 209, 0.18);
+
+  --grad-security:   linear-gradient(135deg, #06b6d4 0%, #2563eb 100%);
+  --grad-biomedical: linear-gradient(135deg, #10b981 0%, #0891b2 100%);
+  --grad-trust:      linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+  --grad-brand:      linear-gradient(135deg, #0e6fd1 0%, #4f46e5 100%);
+  --grad-hero:       radial-gradient(125% 130% at 82% -20%, #e6f1fb 0%, #f5f8fc 60%, #ffffff 100%);
+
+  --success: #16a34a;
+  --warning: #d97706;
+  --info:    #7c3aed;
+  --neutral: #64748b;
+
+  --medical-1: #065f46;
+  --medical-2: #059669;
+
+  --hero-1:      #07377b;
+  --hero-2:      #0a4fa8;
+  --hero-2-soft: #0a4fa0;
+  --hero-3:      #0d6ecc;
+
+  --header-bg: #07377b;
+  --footer-bg: #0f2044;
+
+  --overlay:    #00000018;
+  --light-gray: #e2e8f0;
+  --dark-gray:  #334155;
+  --bluesky:    #0085ff;
+}
+
+/* ---------------------------------------------------------------------
+   MODE-INDEPENDENT TOKENS
+   --------------------------------------------------------------------- */
 :root {
-  // header nav link color (always on dark header background)
+  // header nav link color (always sits on a dark header background)
   --header-link: #dfe3e7;
 
   // font families
-  --title: "IBM Plex Sans", sans-serif;
+  --title:   "Space Grotesk", "IBM Plex Sans", sans-serif;
+  --display: "Space Grotesk", "IBM Plex Sans", sans-serif;
   --heading: "IBM Plex Sans", sans-serif;
-  --body: "IBM Plex Sans", sans-serif;
-  --code: "Roboto Mono", monospace;
+  --body:    "IBM Plex Sans", sans-serif;
+  --mono:    "JetBrains Mono", "Roboto Mono", monospace;
+  --code:    "JetBrains Mono", "Roboto Mono", monospace;
 
   // font sizes
   --large: 1.2rem;
-  --xl: 1.4rem;
-  --xxl: 1.6rem;
+  --xl:    1.4rem;
+  --xxl:   1.6rem;
 
   // font weights
-  --thin: 300;
-  --regular: 400;
+  --thin:      300;
+  --regular:   400;
   --semi-bold: 500;
-  --bold: 700;
+  --bold:      700;
 
   // text line spacing
   --spacing: 2;
   --compact: 1.6;
 
-  // effects
-  --rounded: 8px;
-  --shadow: 0 2px 16px 0 var(--overlay);
+  // form / shape
+  --rounded:    10px;
+  --rounded-sm: 8px;
+  --rounded-lg: 18px;
+
+  // elevation (auto-adapts via --overlay per mode)
+  --shadow:    0 8px 30px var(--overlay);
+  --shadow-sm: 0 2px 12px var(--overlay);
+
   --transition: 0.2s ease;
 }

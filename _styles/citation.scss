@@ -12,9 +12,10 @@ $wrap: 800px;
   display: flex;
   margin: 20px 0;
   border-radius: var(--rounded);
-  background: var(--background-alt);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
   overflow: hidden;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-sm);
 }
 
 .citation-image {
