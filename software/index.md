@@ -13,7 +13,7 @@ nav:
     <p class="team-hero-sub">Open-source tools, libraries, and datasets from InfoLab research — freely available for the research community.</p>
     <div class="team-hero-stats">
       <div class="team-hstat">
-        <span class="team-hstat-num">21</span>
+        <span class="team-hstat-num">23</span>
         <span class="team-hstat-lbl">Repositories</span>
       </div>
       <div class="team-hstat-sep"></div>
@@ -81,6 +81,7 @@ nav:
           <div class="sw-card-name">AdvEdge / AdvEdge+</div>
           <div class="sw-card-repo">InfoLab-SKKU/AdvEdge-Attack</div>
         </div>
+      </div>
       <p class="sw-card-desc">Introduces two white-box adversarial attacks that simultaneously fool a DNN classifier <em>and</em> its coupled interpretation model (GradCAM, LIME, SHAP). Demonstrates that interpretable deep learning systems are vulnerable to adversarial inputs designed to produce misleading yet visually plausible explanations.</p>
       <div class="sw-card-tags">
         <span class="sw-tag">Adversarial Attack</span>
