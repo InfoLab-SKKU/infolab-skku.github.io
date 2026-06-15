@@ -119,23 +119,6 @@
   buttons:
   - type: pdf
     link: pdf/j_knosys_2020_106688.pdf
-- id: doi:10.1109/ACCESS.2020.3010556
-  title: 'Intensive Care Unit Mortality Prediction: An Improved Patient-Specific Stacking
-    Ensemble Model'
-  authors:
-  - Nora El-Rashidy
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  - Samir Abdelrazek
-  - Hazem M. El-Bakry
-  publisher: IEEE Access
-  date: '2020-01-01'
-  link: https://doi.org/g9b3dt
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-  shaker-el-sappagh-list: true
 - id: doi:10.1016/J.INFFUS.2022.11.028
   title: Prediction of Alzheimer's progression based on multimodal Deep-Learning-based
     fusion and visual Explainability of time-series data
@@ -153,6 +136,23 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1109/ACCESS.2020.3010556
+  title: 'Intensive Care Unit Mortality Prediction: An Improved Patient-Specific Stacking
+    Ensemble Model'
+  authors:
+  - Nora El-Rashidy
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  - Samir Abdelrazek
+  - Hazem M. El-Bakry
+  publisher: IEEE Access
+  date: '2020-01-01'
+  link: https://doi.org/g9b3dt
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+  shaker-el-sappagh-list: true
 - id: doi:10.1016/j.cmpb.2023.107495
   title: "Explainable machine learning models based on multimodal time-series data\
     \ for the early detection of Parkinson\u2019s disease"
@@ -368,6 +368,22 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1007/s10462-023-10415-5
+  title: "Trustworthy artificial intelligence in Alzheimer\u2019s disease: state of\
+    \ the art, opportunities, and challenges"
+  authors:
+  - Shaker El-Sappagh
+  - Jose M. Alonso-Moral
+  - Tamer Abuhmed
+  - Farman Ali
+  - "Alberto Bugar\xEDn-Diz"
+  publisher: Artificial Intelligence Review
+  date: '2023-03-12'
+  link: https://doi.org/gtnpbk
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1038/s41598-023-27815-w
   title: "A deep learning based dual encoder\u2013decoder framework for anatomical\
     \ structure segmentation in chest X-ray images"
@@ -391,22 +407,6 @@
   buttons:
   - type: pdf
     link: pdf/s41598-023-27815-w.pdf
-- id: doi:10.1007/s10462-023-10415-5
-  title: "Trustworthy artificial intelligence in Alzheimer\u2019s disease: state of\
-    \ the art, opportunities, and challenges"
-  authors:
-  - Shaker El-Sappagh
-  - Jose M. Alonso-Moral
-  - Tamer Abuhmed
-  - Farman Ali
-  - "Alberto Bugar\xEDn-Diz"
-  publisher: Artificial Intelligence Review
-  date: '2023-03-12'
-  link: https://doi.org/gtnpbk
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1007/s00521-021-06631-1
   title: Sepsis prediction in intensive care unit based on genetic feature optimization
     and stacked deep ensemble learning
@@ -442,6 +442,21 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1007/s00607-025-01485-0
+  title: 'Sustainable energy management in the AI era: a comprehensive analysis of
+    ML and DL approaches'
+  authors:
+  - Haseeb Javed
+  - Fatma Eid
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  publisher: Computing
+  date: '2025-05-22'
+  link: https://doi.org/hb28vh
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.3390/math10030351
   title: An Enhanced Grey Wolf Optimizer with a Velocity-Aided Global Search Mechanism
   authors:
@@ -462,21 +477,6 @@
   buttons:
   - type: pdf
     link: pdf/math10030351.pdf
-- id: doi:10.1007/s00607-025-01485-0
-  title: 'Sustainable energy management in the AI era: a comprehensive analysis of
-    ML and DL approaches'
-  authors:
-  - Haseeb Javed
-  - Fatma Eid
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: Computing
-  date: '2025-05-22'
-  link: https://doi.org/hb28vh
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
 - id: doi:10.1016/J.JAG.2022.102854
   title: Integration of machine learning algorithms and GIS-based approaches to cutaneous
     leishmaniasis prevalence risk mapping
@@ -526,28 +526,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.3390/electronics8060635
-  title: "A Comprehensive Medical Decision\u2013Support Framework Based on a Heterogeneous\
-    \ Ensemble Classifier for Diabetes Prediction"
-  authors:
-  - Shaker El-Sappagh
-  - Mohammed Elmogy
-  - Farman Ali
-  - Tamer ABUHMED
-  - S. M. Riazul Islam
-  - Kyung-Sup Kwak
-  publisher: Electronics
-  date: '2019-06-05'
-  link: https://doi.org/g9b3dv
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  shaker-el-sappagh-list: true
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics8060635.pdf
 - id: doi:10.3390/f14071325
   title: Wildfire Susceptibility Mapping Using Deep Learning Algorithms in Two Satellite
     Imagery Dataset
@@ -570,6 +548,28 @@
   buttons:
   - type: pdf
     link: pdf/f14071325.pdf
+- id: doi:10.3390/electronics8060635
+  title: "A Comprehensive Medical Decision\u2013Support Framework Based on a Heterogeneous\
+    \ Ensemble Classifier for Diabetes Prediction"
+  authors:
+  - Shaker El-Sappagh
+  - Mohammed Elmogy
+  - Farman Ali
+  - Tamer ABUHMED
+  - S. M. Riazul Islam
+  - Kyung-Sup Kwak
+  publisher: Electronics
+  date: '2019-06-05'
+  link: https://doi.org/g9b3dv
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  shaker-el-sappagh-list: true
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics8060635.pdf
 - id: doi:10.1109/JBHI.2022.3202178
   title: Multitask Deep Learning for Cost-Effective Prediction of Patient's Length
     of Stay and Readmission State Using Multimodal Physical Activity Sensory Data
@@ -755,24 +755,6 @@
   buttons:
   - type: pdf
     link: pdf/electronics11101648.pdf
-- id: doi:10.3390/electronics10161956
-  title: A Short Review on the Machine Learning-Guided Oxygen Uptake Prediction for
-    Sport Science Applications
-  authors:
-  - Haneen Alzamer
-  - Tamer Abuhmed
-  - Kotiba Hamad
-  publisher: Electronics
-  date: '2021-08-13'
-  link: https://doi.org/g9b3dc
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/electronics10161956.pdf
 - id: doi:10.1155/2021/8439655
   title: "The Role of Medication Data to Enhance the Prediction of Alzheimer\u2019\
     s Progression Using Machine Learning"
@@ -832,6 +814,24 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.3390/electronics10161956
+  title: A Short Review on the Machine Learning-Guided Oxygen Uptake Prediction for
+    Sport Science Applications
+  authors:
+  - Haneen Alzamer
+  - Tamer Abuhmed
+  - Kotiba Hamad
+  publisher: Electronics
+  date: '2021-08-13'
+  link: https://doi.org/g9b3dc
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/electronics10161956.pdf
 - id: doi:10.1016/j.pmcj.2024.101922
   title: 'MotionID: Towards practical behavioral biometrics-based implicit user authentication
     on smartphones'
@@ -1082,37 +1082,6 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1145/3494108.3522768
-  title: 'MLxPack: Investigating the Effects of Packers on ML-based Malware Detection
-    Systems Using Static and Dynamic Traits'
-  authors:
-  - Qirui Sun
-  - Mohammed Abuhamad
-  - Eldor Abdukhamidov
-  - Eric Chan-Tin
-  - Tamer Abuhmed
-  publisher: Proceedings of the 1st Workshop on Cybersecurity and Social Sciences
-  date: '2022-05-30'
-  link: https://doi.org/hb28vv
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1109/ACCESS.2022.3229440
-  title: An IoT-Based Approach for Learning Geometric Shapes in Early Childhood
-  authors:
-  - Jalal Safari Bazargani
-  - Abolghasem Sadeghi-Niaraki
-  - Fatema Rahimi
-  - Tamer Abuhmed
-  - Soo-Mi Choi
-  publisher: IEEE Access
-  date: '2022-01-01'
-  link: https://doi.org/g4n4s4
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.3390/su142315681
   title: 'AR Search Engine: Semantic Information Retrieval for Augmented Reality Domain'
   authors:
@@ -1131,6 +1100,22 @@
   buttons:
   - type: pdf
     link: pdf/su142315681.pdf
+- id: doi:10.1145/3494108.3522768
+  title: 'MLxPack: Investigating the Effects of Packers on ML-based Malware Detection
+    Systems Using Static and Dynamic Traits'
+  authors:
+  - Qirui Sun
+  - Mohammed Abuhamad
+  - Eldor Abdukhamidov
+  - Eric Chan-Tin
+  - Tamer Abuhmed
+  publisher: Proceedings of the 1st Workshop on Cybersecurity and Social Sciences
+  date: '2022-05-30'
+  link: https://doi.org/hb28vv
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1016/j.eswa.2025.129812
   title: 'GraphShield: Advanced dynamic graph-based malware detection using graph
     neural networks'
@@ -1143,6 +1128,21 @@
   publisher: Expert Systems with Applications
   date: '2026-03-01'
   link: https://doi.org/g95wqv
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1109/ACCESS.2022.3229440
+  title: An IoT-Based Approach for Learning Geometric Shapes in Early Childhood
+  authors:
+  - Jalal Safari Bazargani
+  - Abolghasem Sadeghi-Niaraki
+  - Fatema Rahimi
+  - Tamer Abuhmed
+  - Soo-Mi Choi
+  publisher: IEEE Access
+  date: '2022-01-01'
+  link: https://doi.org/g4n4s4
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -1237,6 +1237,24 @@
   tamer-abuhmed-list: true
   plugin: google-scholar.py
   file: google-scholar.yaml
+- id: doi:10.1109/imcom64595.2025.10857582
+  title: 'Leveraging Large Language Models for Smart Pharmacy Systems: Enhancing Drug
+    Safety and Operational Efficiency'
+  authors:
+  - Abdelrahman Osheba
+  - Ahmed Abou-El-Ela
+  - Osama Adel
+  - Youssef Maaod
+  - Tamer Abuhmed
+  - Shaker El-Sappagh
+  publisher: 2025 19th International Conference on Ubiquitous Information Management
+    and Communication (IMCOM)
+  date: '2025-01-03'
+  link: https://doi.org/g94xw2
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1109/TIFS.2024.3407652
   title: 'SingleADV: Single-Class Target-Specific Attack Against Interpretable Deep
     Learning Systems'
@@ -1274,24 +1292,6 @@
   publisher: Adhoc & Sensor Wireless Networks
   date: '2011-01-01'
   link: ''
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: google-scholar.py
-  file: google-scholar.yaml
-- id: doi:10.1109/imcom64595.2025.10857582
-  title: 'Leveraging Large Language Models for Smart Pharmacy Systems: Enhancing Drug
-    Safety and Operational Efficiency'
-  authors:
-  - Abdelrahman Osheba
-  - Ahmed Abou-El-Ela
-  - Osama Adel
-  - Youssef Maaod
-  - Tamer Abuhmed
-  - Shaker El-Sappagh
-  publisher: 2025 19th International Conference on Ubiquitous Information Management
-    and Communication (IMCOM)
-  date: '2025-01-03'
-  link: https://doi.org/g94xw2
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
@@ -1634,6 +1634,20 @@
   publisher: IEEE Internet of Things Journal
   date: '2020-12-01'
   link: https://doi.org/hb3f64
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
+- id: doi:10.21203/rs.3.rs-8614100/v1
+  title: 'Hybrid Deep Ensemble Architecture for Robust Diabetic Retinopathy Classification:
+    Leveraging Transfer Learning and CNN-Transformer Synergy'
+  authors:
+  - Youssef Maaod
+  - Tamer Abuhamd
+  - Shaker El-Sappagh
+  publisher: Springer Science and Business Media LLC
+  date: '2026-02-19'
+  link: https://doi.org/hb7ptm
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: google-scholar.py
