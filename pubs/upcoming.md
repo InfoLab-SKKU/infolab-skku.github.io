@@ -1,81 +1,222 @@
 ---
+title: Upcoming Venues & Deadlines
+nav:
+  order: 4
+  tooltip: Conference and journal deadlines
 ---
 
-{% include breadcrumbs.html %}
+<!-- Introduction section -->
+<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+  <h2>{% include icon.html icon="fa-solid fa-calendar-check" %} Upcoming Conferences and Journals</h2>
+  <p style="margin: 0.5rem 0 0 0; font-size: 1.1rem; opacity: 0.95;">Track deadlines and discover top-tier venues across computer science domains—security, AI, software engineering, and more.</p>
+</div>
 
-# Upcoming Conferences and Journals
-
-This page provides a curated collection of top-tier conferences and journals across various computer science domains, including security, privacy, AI, and more.
+<!-- Quick access buttons -->
+<div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap;">
+  <button onclick="document.getElementById('conferences').scrollIntoView({behavior: 'smooth'})" style="padding: 0.75rem 1.5rem; background: #667eea; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: 500;">
+    {% include icon.html icon="fa-solid fa-person-chalkboard" %} Conferences
+  </button>
+  <button onclick="document.getElementById('journals').scrollIntoView({behavior: 'smooth'})" style="padding: 0.75rem 1.5rem; background: #764ba2; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: 500;">
+    {% include icon.html icon="fa-regular fa-newspaper" %} Journals
+  </button>
+</div>
 
 ---
 
-## 🎯 Conference Call For Papers & Deadlines
+## {% include icon.html icon="fa-solid fa-calendar-days" %} Conference Call For Papers & Deadlines {#conferences}
 
 {% include alert.html icon="info" type="info" content="**Deadline calendars:** Bookmark these resources to track upcoming submission deadlines for major conferences." %}
 
 ### Multi-Domain Conference Tracking
 
-- **[Security and Privacy Conference Deadlines](https://sec-deadlines.github.io/)** - Comprehensive deadlines for security and privacy conferences
-- **[AI Conference Call For Paper Deadlines](http://aideadlines.org/?sub=ML,CV,NLP,RO,SP,DM,AP,KR,HCI,IRSM,MISC)** - AI and machine learning conference deadlines
-- **[CCF Computer Science Conference Deadlines](https://ccfddl.github.io/)** - Computer science conference rankings and deadlines across major domains (A, B, C ranked conferences)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+
+  <a href="https://sec-deadlines.github.io/" target="_blank" rel="noopener noreferrer" style="padding: 1.5rem; border: 2px solid #667eea; border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease; background: #f8f9ff;">
+    <div style="font-weight: 600; color: #667eea; margin-bottom: 0.5rem; font-size: 1.1rem;">{% include icon.html icon="fa-solid fa-lock" %} Security & Privacy Deadlines</div>
+    <p style="margin: 0; color: #666; font-size: 0.95rem;">Comprehensive deadlines for security and privacy conferences</p>
+  </a>
+
+  <a href="http://aideadlines.org/?sub=ML,CV,NLP,RO,SP,DM,AP,KR,HCI,IRSM,MISC" target="_blank" rel="noopener noreferrer" style="padding: 1.5rem; border: 2px solid #764ba2; border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease; background: #f8f5ff;">
+    <div style="font-weight: 600; color: #764ba2; margin-bottom: 0.5rem; font-size: 1.1rem;">{% include icon.html icon="fa-solid fa-brain" %} AI & ML Deadlines</div>
+    <p style="margin: 0; color: #666; font-size: 0.95rem;">AI and machine learning conference deadlines</p>
+  </a>
+
+  <a href="https://ccfddl.github.io/" target="_blank" rel="noopener noreferrer" style="padding: 1.5rem; border: 2px solid #f093fb; border-radius: 8px; text-decoration: none; color: inherit; transition: all 0.3s ease; background: #fff5fe;">
+    <div style="font-weight: 600; color: #f093fb; margin-bottom: 0.5rem; font-size: 1.1rem;">{% include icon.html icon="fa-solid fa-graduation-cap" %} CCF Computer Science</div>
+    <p style="margin: 0; color: #666; font-size: 0.95rem;">Computer science rankings and deadlines (A, B, C tiers)</p>
+  </a>
+
+</div>
 
 ---
 
-## 📚 Top-Tier Journals
+## 📚 Top-Tier Journals {#journals}
 
 ### Security & Privacy Focused
 
-- **[ACM Transactions on Privacy and Security (TOPS)](https://dl.acm.org/journal/tops)** - Leading journal for privacy and security research
-- **[IEEE Transactions on Information Forensics and Security (TIFS)](https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security)** - Forensics and security innovations
-- **[IEEE Transactions on Dependable and Secure Computing (TDSC)](https://www.computer.org/csdl/journal/tq)** - Dependability and secure computing systems
-- **[IET Information Security](https://ietresearch.onlinelibrary.wiley.com/journal/ietis)** - Information security research
-- **[International Journal of Information Security](https://www.springer.com/journal/10207)** - Theoretical and practical aspects of information security
-- **[Journal of Computer Security](https://www.iospress.com/catalog/journals/journal-of-computer-security)** - Computer security and trust
-- **[Journal of Cryptology](https://www.springer.com/journal/145)** - Cryptographic research and theory
-- **[ACM Transactions on Security and Privacy (TSAP)](https://dl.acm.org/journal/tsap)** - Security and privacy by design
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+  <a href="https://dl.acm.org/journal/tops" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #667eea; background: #f8f9ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #667eea;">ACM Transactions on Privacy and Security (TOPS)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Leading journal for privacy and security research</p>
+  </a>
+  <a href="https://signalprocessingsociety.org/publications-resources/ieee-transactions-information-forensics-and-security" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #667eea; background: #f8f9ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #667eea;">IEEE Transactions on Information Forensics and Security (TIFS)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Forensics and security innovations</p>
+  </a>
+  <a href="https://www.computer.org/csdl/journal/tq" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #667eea; background: #f8f9ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #667eea;">IEEE Transactions on Dependable and Secure Computing (TDSC)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Dependability and secure computing systems</p>
+  </a>
+  <a href="https://ietresearch.onlinelibrary.wiley.com/journal/ietis" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #667eea; background: #f8f9ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #667eea;">IET Information Security</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Information security research</p>
+  </a>
+  <a href="https://www.springer.com/journal/10207" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #667eea; background: #f8f9ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #667eea;">International Journal of Information Security</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Theoretical and practical aspects of information security</p>
+  </a>
+  <a href="https://www.iospress.com/catalog/journals/journal-of-computer-security" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #667eea; background: #f8f9ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #667eea;">Journal of Computer Security</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Computer security and trust</p>
+  </a>
+  <a href="https://www.springer.com/journal/145" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #667eea; background: #f8f9ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #667eea;">Journal of Cryptology</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Cryptographic research and theory</p>
+  </a>
+  <a href="https://dl.acm.org/journal/tsap" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #667eea; background: #f8f9ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #667eea;">ACM Transactions on Security and Privacy (TSAP)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Security and privacy by design</p>
+  </a>
+</div>
 
 ### General Computer Science & Applications
 
-- **[Computers & Security](https://www.sciencedirect.com/journal/computers-and-security)** - Practical security applications and case studies
-- **[IEEE Security & Privacy](https://www.computer.org/csdl/magazine/sp)** - Magazine covering security and privacy trends
-- **[Digital Investigation](https://www.journals.elsevier.com/digital-investigation)** - Digital forensics and incident response
-- **[Computer Law & Security Review](https://www.journals.elsevier.com/computer-law-and-security-review)** - Legal and policy aspects of cybersecurity
-- **[Security and Communication Networks](https://www.hindawi.com/journals/scn/)** - Network security and communication protocols
-- **[IEEE Network](https://www.computer.org/csdl/magazine/ne)** - Networking and communication systems
-- **[Computer Networks](https://www.sciencedirect.com/journal/computer-networks)** - Network security, protocols, and communication systems (Elsevier)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+  <a href="https://www.sciencedirect.com/journal/computers-and-security" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #764ba2; background: #f8f5ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #764ba2;">Computers & Security</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Practical security applications and case studies</p>
+  </a>
+  <a href="https://www.computer.org/csdl/magazine/sp" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #764ba2; background: #f8f5ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #764ba2;">IEEE Security & Privacy</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Magazine covering security and privacy trends</p>
+  </a>
+  <a href="https://www.journals.elsevier.com/digital-investigation" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #764ba2; background: #f8f5ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #764ba2;">Digital Investigation</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Digital forensics and incident response</p>
+  </a>
+  <a href="https://www.journals.elsevier.com/computer-law-and-security-review" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #764ba2; background: #f8f5ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #764ba2;">Computer Law & Security Review</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Legal and policy aspects of cybersecurity</p>
+  </a>
+  <a href="https://www.hindawi.com/journals/scn/" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #764ba2; background: #f8f5ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #764ba2;">Security and Communication Networks</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Network security and communication protocols</p>
+  </a>
+  <a href="https://www.computer.org/csdl/magazine/ne" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #764ba2; background: #f8f5ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #764ba2;">IEEE Network</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Networking and communication systems</p>
+  </a>
+  <a href="https://www.sciencedirect.com/journal/computer-networks" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #764ba2; background: #f8f5ff; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #764ba2;">Computer Networks (Elsevier)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Network security, protocols, and communication systems</p>
+  </a>
+</div>
 
 ### Software Engineering & Systems
 
-- **[IEEE Transactions on Software Engineering (TSE)](https://www.computer.org/csdl/journal/ts)** - Software development, testing, and verification
-- **[ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/tosem)** - Software engineering methodologies and practices
-- **[ACM Transactions on Computer Systems (TOCS)](https://dl.acm.org/journal/tocs)** - Computer systems, operating systems, and distributed systems
-- **[IEEE Transactions on Cloud Computing](https://www.computer.org/csdl/journal/cc)** - Cloud computing systems and security
-- **[The Journal of Systems and Software](https://www.sciencedirect.com/journal/the-journal-of-systems-and-software)** - Software development, testing, and maintenance (Elsevier)
-- **[Future Generation Computer Systems](https://www.sciencedirect.com/journal/future-generation-computer-systems)** - Distributed systems and emerging computing (Elsevier)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+  <a href="https://www.computer.org/csdl/journal/ts" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #f093fb; background: #fff5fe; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #f093fb;">IEEE Transactions on Software Engineering (TSE)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Software development, testing, and verification</p>
+  </a>
+  <a href="https://dl.acm.org/journal/tosem" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #f093fb; background: #fff5fe; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #f093fb;">ACM Transactions on Software Engineering and Methodology (TOSEM)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Software engineering methodologies and practices</p>
+  </a>
+  <a href="https://dl.acm.org/journal/tocs" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #f093fb; background: #fff5fe; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #f093fb;">ACM Transactions on Computer Systems (TOCS)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Computer systems, operating systems, and distributed systems</p>
+  </a>
+  <a href="https://www.computer.org/csdl/journal/cc" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #f093fb; background: #fff5fe; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #f093fb;">IEEE Transactions on Cloud Computing</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Cloud computing systems and security</p>
+  </a>
+  <a href="https://www.sciencedirect.com/journal/the-journal-of-systems-and-software" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #f093fb; background: #fff5fe; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #f093fb;">The Journal of Systems and Software (Elsevier)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Software development, testing, and maintenance</p>
+  </a>
+  <a href="https://www.sciencedirect.com/journal/future-generation-computer-systems" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #f093fb; background: #fff5fe; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #f093fb;">Future Generation Computer Systems (Elsevier)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Distributed systems and emerging computing</p>
+  </a>
+</div>
 
 ### Artificial Intelligence & Machine Learning
 
-- **[Artificial Intelligence Journal](https://www.sciencedirect.com/journal/artificial-intelligence)** - AI theory and applications
-- **[IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)](https://www.computer.org/csdl/journal/tp)** - Machine learning, computer vision, and pattern recognition
-- **[Machine Learning Journal](https://www.springer.com/journal/10994)** - Theoretical and applied machine learning
-- **[IEEE Transactions on Neural Networks and Learning Systems](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385)** - Neural networks and deep learning
-- **[Expert Systems with Applications](https://www.sciencedirect.com/journal/expert-systems-with-applications)** - Practical AI applications and expert systems (Elsevier)
-- **[Neural Networks](https://www.sciencedirect.com/journal/neural-networks)** - Neural network theory and applications (Elsevier)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+  <a href="https://www.sciencedirect.com/journal/artificial-intelligence" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #4ecdc4; background: #f0fdfc; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #4ecdc4;">Artificial Intelligence Journal</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">AI theory and applications</p>
+  </a>
+  <a href="https://www.computer.org/csdl/journal/tp" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #4ecdc4; background: #f0fdfc; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #4ecdc4;">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Machine learning, computer vision, and pattern recognition</p>
+  </a>
+  <a href="https://www.springer.com/journal/10994" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #4ecdc4; background: #f0fdfc; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #4ecdc4;">Machine Learning Journal</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Theoretical and applied machine learning</p>
+  </a>
+  <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #4ecdc4; background: #f0fdfc; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #4ecdc4;">IEEE Transactions on Neural Networks and Learning Systems</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Neural networks and deep learning</p>
+  </a>
+  <a href="https://www.sciencedirect.com/journal/expert-systems-with-applications" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #4ecdc4; background: #f0fdfc; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #4ecdc4;">Expert Systems with Applications (Elsevier)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Practical AI applications and expert systems</p>
+  </a>
+  <a href="https://www.sciencedirect.com/journal/neural-networks" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #4ecdc4; background: #f0fdfc; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #4ecdc4;">Neural Networks (Elsevier)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Neural network theory and applications</p>
+  </a>
+</div>
 
 ### Data & Databases
 
-- **[IEEE Transactions on Knowledge and Data Engineering (TKDE)](https://www.computer.org/csdl/journal/tk)** - Data mining, databases, and knowledge systems
-- **[ACM Transactions on Database Systems (TODS)](https://dl.acm.org/journal/tods)** - Database design, theory, and applications
-- **[VLDB Journal](https://www.springer.com/journal/778)** - Very large data bases and data systems
-- **[Data & Knowledge Engineering](https://www.sciencedirect.com/journal/data-and-knowledge-engineering)** - Data management and knowledge representation (Elsevier)
-- **[Information Systems](https://www.sciencedirect.com/journal/information-systems)** - Database systems and information management (Elsevier)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+  <a href="https://www.computer.org/csdl/journal/tk" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #ff6b6b; background: #fff5f5; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #ff6b6b;">IEEE Transactions on Knowledge and Data Engineering (TKDE)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Data mining, databases, and knowledge systems</p>
+  </a>
+  <a href="https://dl.acm.org/journal/tods" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #ff6b6b; background: #fff5f5; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #ff6b6b;">ACM Transactions on Database Systems (TODS)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Database design, theory, and applications</p>
+  </a>
+  <a href="https://www.springer.com/journal/778" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #ff6b6b; background: #fff5f5; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #ff6b6b;">VLDB Journal</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Very large data bases and data systems</p>
+  </a>
+  <a href="https://www.sciencedirect.com/journal/data-and-knowledge-engineering" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #ff6b6b; background: #fff5f5; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #ff6b6b;">Data & Knowledge Engineering (Elsevier)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Data management and knowledge representation</p>
+  </a>
+  <a href="https://www.sciencedirect.com/journal/information-systems" target="_blank" rel="noopener noreferrer" style="padding: 1rem; border-left: 4px solid #ff6b6b; background: #fff5f5; text-decoration: none; color: inherit; border-radius: 4px;">
+    <div style="font-weight: 600; color: #ff6b6b;">Information Systems (Elsevier)</div>
+    <p style="margin: 0.5rem 0 0 0; color: #666; font-size: 0.9rem;">Database systems and information management</p>
+  </a>
+</div>
 
 ---
 
 ## 💡 Additional Recommended Resources
 
-- **[DBLP Computer Science Bibliography](https://dblp.uni-trier.de/)** - Comprehensive index of computer science publications
-- **[Google Scholar Metrics](https://scholar.google.com/citations?view_op=top_venues)** - Rankings of conferences and journals by citations
-
----
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+  <a href="https://dblp.uni-trier.de/" target="_blank" rel="noopener noreferrer" style="padding: 1.5rem; border: 2px solid #4ecdc4; border-radius: 8px; text-decoration: none; color: inherit; background: #f0fdfc;">
+    <div style="font-weight: 600; color: #4ecdc4; font-size: 1.1rem; margin-bottom: 0.5rem;">{% include icon.html icon="fa-solid fa-book" %} DBLP Computer Science</div>
+    <p style="margin: 0; color: #666; font-size: 0.95rem;">Comprehensive index of computer science publications and research</p>
+  </a>
+  <a href="https://scholar.google.com/citations?view_op=top_venues" target="_blank" rel="noopener noreferrer" style="padding: 1.5rem; border: 2px solid #ffd93d; border-radius: 8px; text-decoration: none; color: inherit; background: #fffdf0;">
+    <div style="font-weight: 600; color: #f4a460; font-size: 1.1rem; margin-bottom: 0.5rem;">{% include icon.html icon="fa-solid fa-chart-line" %} Google Scholar Metrics</div>
+    <p style="margin: 0; color: #666; font-size: 0.95rem;">Rankings of conferences and journals by citations and impact</p>
+  </a>
+</div>
 
