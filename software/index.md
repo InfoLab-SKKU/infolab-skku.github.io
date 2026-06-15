@@ -13,7 +13,7 @@ nav:
     <p class="team-hero-sub">Open-source tools, libraries, and datasets from InfoLab research — freely available for the research community.</p>
     <div class="team-hero-stats">
       <div class="team-hstat">
-        <span class="team-hstat-num">21</span>
+        <span class="team-hstat-num">23</span>
         <span class="team-hstat-lbl">Repositories</span>
       </div>
       <div class="team-hstat-sep"></div>
