@@ -5,7 +5,7 @@
   Email links get spam protection: the address is split into data
   attributes and assembled at runtime by _scripts/email-protect.js.
 {% endcomment %}
-{% assign btn_href = button.link | replace: "$LINK", button.link %}
+{% assign btn_href = button.link | replace: "$VALUE", button.link %}
 {% assign btn_is_email = false %}
 {% if btn_href contains "mailto:" %}
   {% assign btn_is_email = true %}
