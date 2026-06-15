@@ -392,6 +392,22 @@
   letter-spacing: 0.08em;
   color: var(--gray);
 }
+
+/* venue chip (journal / conference name) */
+.b-news-venue {
+  align-self: flex-start;
+  width: fit-content;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--dotc, var(--primary));
+  background: color-mix(in srgb, var(--dotc, var(--primary)) 13%, transparent);
+  border: 1px solid color-mix(in srgb, var(--dotc, var(--primary)) 30%, transparent);
+  padding: 2px 7px;
+  border-radius: 5px;
+}
 .b-news-date {
   font-family: var(--mono);
   font-size: 0.7rem;
