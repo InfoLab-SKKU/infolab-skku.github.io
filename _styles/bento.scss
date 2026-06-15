@@ -194,27 +194,28 @@
   grid-column: span 4;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
   padding: 24px 24px 20px;
   min-height: 300px;
   background:
     radial-gradient(130% 130% at 100% 0%, color-mix(in srgb, var(--primary) 11%, transparent), transparent 58%),
     var(--surface);
 }
+/* All slides share one grid cell, so the track is always as tall as the
+   tallest slide — it can never collapse (flex) or clip its text (absolute). */
 .b-spot-track {
-  position: relative;
-  flex: 1;
-  min-height: 0;
+  display: grid;
 }
 .b-spot-slide {
-  position: absolute;
-  inset: 0;
+  grid-area: 1 / 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--transition);
+  transition: opacity var(--transition), visibility var(--transition);
   text-decoration: none;
   color: inherit;
 }
@@ -576,7 +577,6 @@
   .bento-grid { gap: 12px; padding: 20px 16px 4px; }
   .b-hero { min-height: 320px; }
   .b-hero-inner { padding: 28px 22px; }
-  .b-spotlight { min-height: 260px; }
   .b-statbar-item { flex: 1 1 45%; }
   .b-statbar-item + .b-statbar-item { border-left: 0; }
   .b-pillar { grid-column: span 12; min-height: 0; }
