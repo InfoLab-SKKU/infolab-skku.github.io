@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="true">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Dark-mode pre-paint: prevent FOUC by setting data-dark before stylesheets evaluate -->
+  <script>document.documentElement.dataset.dark = localStorage.getItem('dark-mode') ?? 'true';</script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZSRZR84K0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RZSRZR84K0');
+</script>
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07377b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#05243a" media="(prefers-color-scheme: dark)">
+
+<title>Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications | Information Laboratory (InfoLab) @ SKKU</title>
+
+<link rel="canonical" href="https://infolab-skku.github.io/preview/pr-14/projects/explainable-ai.html">
+<link rel="icon" href="/preview/pr-14/images/icon.png">
+<link rel="apple-touch-icon" href="/preview/pr-14/images/icon.png">
+<link rel="manifest" href="/preview/pr-14/manifest.webmanifest">
+
+
+
+
+<meta name="title" content="Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications">
+<meta name="description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+
+<meta property="og:title" content="Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications">
+<meta property="og:site_name" content="Information Laboratory (InfoLab) @ SKKU">
+<meta property="og:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta property="og:url" content="https://infolab-skku.github.io/preview/pr-14/projects/explainable-ai.html">
+<meta property="og:image" content="https://infolab-skku.github.io/preview/pr-14/images/share.jpg">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:title" content="Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications">
+<meta name="twitter:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://infolab-skku.github.io/preview/pr-14/images/share.jpg">
+
+<meta name="twitter:url" content="https://infolab-skku.github.io/preview/pr-14/projects/explainable-ai.html">
+
+
+  <meta property="og:type" content="website">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "WebSite",
+    
+    "name": "Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications",
+    "description": "Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.",
+    "headline": "Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "https://infolab-skku.github.io/preview/pr-14/preview/pr-14/images/icon.png" }
+    },
+    "url": "https://infolab-skku.github.io/preview/pr-14/projects/explainable-ai.html"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="https://infolab-skku.github.io/preview/pr-14/feed.xml">
+
+  <!-- IBM Plex Sans (body/UI), Space Grotesk (display), JetBrains Mono (mono accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+  <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"></noscript>
+
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/preview/pr-14/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/alert.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/all.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/anchor.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/bento.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/blog-post.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/body.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/bold.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/button.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/carousel.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/checkbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/citation.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/code.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/cols.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/contact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/feature.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/figure.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/float.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/font.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/footer.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/form.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/gallery.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/header.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/heading.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/homepage.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/icon.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/impact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/link.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/list.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/news.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/paragraph.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/portrait.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/post-excerpt.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/post-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/projects-page.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/pubs.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/quote.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/rule.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/scroll-progress.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/search-box.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/search-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/section.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/software.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/table.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/team.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/textbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/tooltip.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-14/_styles/util.css" rel="stylesheet">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<!-- include all css in styles folder -->
+
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/preview/pr-14/_scripts/anchors.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/carousel.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/dark-mode.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/email-protect.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/fetch-tags.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/gallery.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/image-fallback.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/neural-hero.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/news-filter.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/project-filtering.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/projects-filter.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/pub-thumbs.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/pubs-filter.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/scroll-progress.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/search.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/site-search.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/sw-filter.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/sw-register.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/table-wrap.js" defer></script>
+
+  <script src="/preview/pr-14/_scripts/tooltip.js" defer></script>
+
+
+</head>
+
+  <body>
+    
+
+
+
+<!-- Skip to main content (accessibility) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Reading progress bar -->
+<div id="read-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Page reading progress"></div>
+
+<header class="background site-header">
+  <a href="/preview/pr-14/" class="home">
+    
+      <span class="logo">
+        
+          <img src="/preview/pr-14/images/logo.png" alt="logo">
+        
+      </span>
+    
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+      
+        <a href="/preview/pr-14/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
+    
+      
+        <a href="/preview/pr-14/projects/" data-tooltip="Projects in the lab">
+          Projects
+        </a>
+      
+    
+      
+        <a href="/preview/pr-14/pubs/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
+        <a href="/preview/pr-14/team/" data-tooltip="Meet the team">
+          Team
+        </a>
+      
+    
+      
+        <a href="/preview/pr-14/collaborators/" data-tooltip="Our collaborators">
+          Collaborators
+        </a>
+      
+    
+      
+        <a href="/preview/pr-14/software/" data-tooltip="Open-source code and datasets from InfoLab">
+          Software &amp; Datasets
+        </a>
+      
+    
+      
+        <a href="/preview/pr-14/blog/" data-tooltip="News, insights, and research updates from InfoLab">
+          Blog
+        </a>
+      
+    
+      
+        <a href="/preview/pr-14/photos/" data-tooltip="Lab photos and activities">
+          Gallery
+        </a>
+      
+    
+      
+        <a href="/preview/pr-14/contact/" data-tooltip="Contact information">
+          Contact
+        </a>
+      
+    
+  </nav>
+
+  <input class="dark-toggle" type="checkbox" aria-label="toggle dark mode" onchange="window.onDarkToggleChange(event)">
+</header>
+
+    <main id="main-content">
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - filter out blank sections
+-->
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <nav id="breadcrumbs" aria-label="Breadcrumb">
+  
+  <a href="/">Home</a>
+
+  
+    
+      <!-- Default breadcrumb behavior -->
+      / <a href="/projects/">Projects</a>
+    
+  
+    
+      <!-- Last crumb is always the current page title -->
+      / Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications
+    
+  
+</nav>
+<h1 id="-explainable-artificial-intelligence-for-trustworthy-and-transparent-decision-making-in-medical-applications">
+<i class="icon fa-solid fa-heart-pulse"></i> Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications</h1>
+
+<h2 id="project-description">Project Description</h2>
+
+<p>The project seeks to address the growing need for <strong>transparency, accountability, and interpretability</strong> in artificial intelligence (AI) systems used in healthcare. As deep learning and other machine learning techniques become integral to medical diagnostics, prognosis, and treatment planning, the <em>black-box</em> nature of many AI models poses significant challenges for clinical adoption, regulatory approval, and patient trust.</p>
+
+<p>This research focuses on developing and evaluating <strong>Explainable Artificial Intelligence (XAI)</strong> methodologies tailored to medical contexts. The goal is to ensure that AI-driven decisions are not only accurate but also <strong>interpretable by clinicians</strong>, <strong>understandable to stakeholders</strong>, and <strong>compliant with ethical and legal standards</strong>.</p>
+
+<h2 id="core-framework-multi-dimensional-explainability">Core Framework: Multi-Dimensional Explainability</h2>
+
+<p>The project adopts a <strong>multi-dimensional framework</strong> for explainability, structured around four core axes:</p>
+
+<h3 id="1-data-explainability">1. Data Explainability</h3>
+<ul>
+  <li>Enhancing the transparency of input features and their individual contributions to model decisions.</li>
+  <li>Identifying data biases and improving feature relevance interpretation.</li>
+</ul>
+
+<h3 id="2-model-explainability">2. Model Explainability</h3>
+<ul>
+  <li>Designing or adapting models that are inherently interpretable (e.g., decision trees, rule-based models).</li>
+  <li>Exploring <strong>hybrid approaches</strong> that balance predictive accuracy with interpretability.</li>
+</ul>
+
+<h3 id="3-post-hoc-explainability">3. Post-hoc Explainability</h3>
+<ul>
+  <li>Applying <strong>state-of-the-art interpretability techniques</strong> such as:
+    <ul>
+      <li>SHAP (SHapley Additive exPlanations)</li>
+      <li>Grad-CAM (Gradient-weighted Class Activation Mapping)</li>
+      <li>LIME (Local Interpretable Model-Agnostic Explanations)</li>
+      <li>LRP (Layer-wise Relevance Propagation)</li>
+    </ul>
+  </li>
+  <li>Making complex model predictions more understandable to non-technical users.</li>
+</ul>
+
+<h3 id="4-assessment-of-explanations">4. Assessment of Explanations</h3>
+<ul>
+  <li>Developing <strong>robust evaluation methodologies</strong> including human-centered studies.</li>
+  <li>Measuring explanation quality, usability, trustworthiness, and clinical relevance.</li>
+</ul>
+
+<h2 id="project-objectives">Project Objectives</h2>
+
+<ul>
+  <li>Bridge the gap between <strong>algorithmic complexity</strong> and <strong>clinical insight</strong>.</li>
+  <li>Empower healthcare professionals with <strong>transparent and reliable</strong> AI systems.</li>
+  <li>Develop XAI methods that align with <strong>ethical standards</strong> and <strong>regulatory requirements</strong>.</li>
+  <li>Explore explainability from <strong>technical, clinical, and regulatory</strong> perspectives.</li>
+</ul>
+
+<h2 id="research-impact">Research Impact</h2>
+
+<p>This research contributes to the <strong>foundation of trustworthy AI in medicine</strong>, promoting the safer and more responsible use of intelligent systems in healthcare environments. By integrating explainability at all stages—data, model, interpretation, and evaluation—this project supports the development of AI solutions that clinicians can understand, trust, and effectively use in real-world medical decision-making.</p>
+  </section>
+
+
+    </main>
+    
+
+<footer class="background site-footer" data-dark="true" data-size="wide">
+  <div class="footer-inner">
+
+    <!-- Brand / identity -->
+    <div class="footer-brand">
+      <a href="/preview/pr-14/" class="footer-brand-link" aria-label="InfoLab home">
+        <img src="/preview/pr-14/images/logo.png" alt="InfoLab logo" class="footer-logo" height="44" loading="lazy">
+        <span class="footer-brand-text">
+          <span class="footer-brand-title">InfoLab</span>
+          <span class="footer-brand-sub">Information Research Laboratory · SKKU</span>
+        </span>
+      </a>
+      <p class="footer-about">
+        We build robust, interpretable and secure machine-learning systems —
+        advancing Trustworthy &amp; Explainable AI, Adversarial ML, and Biomedical AI
+        at Sungkyunkwan University.
+      </p>
+      <div class="footer-social">
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://orcid.org/0000-0001-9232-4843" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+      <i class="icon fa-brands fa-orcid"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+      <i class="icon fa-brands fa-google"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://github.com/InfoLab-SKKU" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+      <i class="icon fa-brands fa-github"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="/preview/pr-14/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" data-style="bare" aria-label="researchgate">
+      
+      
+    </a>
+  </div>
+
+
+        
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h5 class="footer-heading">Explore</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-14/">Home</a></li>
+          <li><a href="/preview/pr-14/projects">Projects</a></li>
+          <li><a href="/preview/pr-14/pubs">Publications</a></li>
+          <li><a href="/preview/pr-14/team">Team</a></li>
+          <li><a href="/preview/pr-14/news">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Research</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-14/projects/security">Security &amp; Adversarial ML</a></li>
+          <li><a href="/preview/pr-14/projects/medical">Biomedical AI</a></li>
+          <li><a href="/preview/pr-14/projects/explainable-ai">Trustworthy &amp; Explainable AI</a></li>
+          <li><a href="/preview/pr-14/team/join">Join the Lab</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Sungkyunkwan Univ.</h5>
+        <ul class="footer-links">
+          <li><a href="https://gradschool.skku.edu/grad/" target="_blank" rel="noopener noreferrer">Graduate School</a></li>
+          <li><a href="https://cse.skku.edu/" target="_blank" rel="noopener noreferrer">Computer Science &amp; Eng.</a></li>
+          <li><a href="https://ai.skku.edu/ai/index.do" target="_blank" rel="noopener noreferrer">Dept. of Artificial Intelligence</a></li>
+          <li><a href="https://skb.skku.edu/skkuaai/index.do" target="_blank" rel="noopener noreferrer">Dept. of Applied AI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <h5 class="footer-heading">Contact</h5>
+        <address class="footer-contact">
+          <span class="footer-contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Engineering Building 2,<br>SKKU, Suwon, South Korea</span>
+          </span>
+          <span class="footer-contact-line">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>
+
+<a href="#" class="email-protected" data-eu="infolabskku" data-ed="gmail.com" data-show="true">infolabskku [at] gmail [dot] com</a>
+</span>
+          </span>
+        </address>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span class="footer-copy">
+        © 2026 Information Laboratory (InfoLab) @ SKKU · Sungkyunkwan University
+      </span>
+      <span class="footer-bottom-links">
+        <a href="/preview/pr-14/feed.xml"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS</a>
+        <a href="#main-content" class="footer-totop">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Organization structured data for search engines -->
+    
+  </body>
+</html>
