@@ -35,7 +35,52 @@
       </div>
     </section>
 
-    <!-- ============================ STATS ============================ -->
+    <!-- ========================== SPOTLIGHT ========================== -->
+    {% comment %} Recent/featured publications for the spotlight carousel {% endcomment %}
+    {% assign spot_pubs = site.data.citations | where: "featured", true | sort: "date" | reverse %}
+    {% if spot_pubs.size < 3 %}
+      {% assign spot_pubs = site.data.citations | where_exp: "c", "c.orcid == '0000-0001-9232-4843'" | sort: "date" | reverse %}
+    {% endif %}
+    {% assign spot_pubs = spot_pubs | slice: 0, 5 %}
+
+    <section class="b-tile b-spotlight" aria-label="Research spotlight" aria-roledescription="carousel">
+      <span class="b-card-eyebrow">{% include icon.html icon="fa-solid fa-star" %} Research Spotlight</span>
+      <div class="b-spot-track">
+        {% for p in spot_pubs %}
+          {% comment %} venue label — mirror the .b-featured lookup (top-venues) {% endcomment %}
+          {% assign p_pub_lower = p.publisher | downcase %}
+          {% assign p_venue = nil %}
+          {% for venue in site.data.top-venues %}
+            {% if p_pub_lower contains venue.match %}{% assign p_venue = venue.label %}{% break %}{% endif %}
+          {% endfor %}
+          <a class="b-spot-slide{% if forloop.first %} is-active{% endif %}"
+             {% if p.link %}href="{{ p.link }}" target="_blank" rel="noopener noreferrer"{% endif %}
+             aria-hidden="{% unless forloop.first %}true{% endunless %}">
+            <span class="b-venue-row">
+              <span class="b-venue-chip">{{ p_venue | default: p.publisher | truncate: 30 }}</span>
+              <span class="b-venue-year">{{ p.date | date: "%Y" }}</span>
+            </span>
+            <span class="b-spot-title">{{ p.title | truncate: 110 }}</span>
+            {% if p.authors and p.authors.size > 0 %}
+              {% assign p_authors = p.authors | slice: 0, 3 %}
+              <span class="b-spot-authors">{{ p_authors | join: ", " }}{% if p.authors.size > 3 %} et al.{% endif %}</span>
+            {% endif %}
+            <span class="b-featured-link">View Paper {% include icon.html icon="fa-solid fa-arrow-right" %}</span>
+          </a>
+        {% endfor %}
+      </div>
+      <div class="b-spot-nav">
+        <button class="b-spot-arrow" type="button" data-dir="-1" aria-label="Previous publication">{% include icon.html icon="fa-solid fa-angle-left" %}</button>
+        <div class="b-spot-dots">
+          {% for p in spot_pubs %}
+            <button class="b-spot-dot{% if forloop.first %} is-active{% endif %}" type="button" data-i="{{ forloop.index0 }}" aria-label="Go to slide {{ forloop.index }}"></button>
+          {% endfor %}
+        </div>
+        <button class="b-spot-arrow" type="button" data-dir="1" aria-label="Next publication">{% include icon.html icon="fa-solid fa-angle-right" %}</button>
+      </div>
+    </section>
+
+    <!-- =========================== STAT BAR =========================== -->
     {% comment %} Publications — match the /pubs render filter {% endcomment %}
     {% assign pub_orcids = "0000-0001-9232-4843,0000-0002-0086-8155,0009-0002-4648-9289" | split: "," %}
     {% assign pub_count = 0 %}
@@ -52,20 +97,20 @@
     {% assign project_count = site.data.projects | size %}
     {% assign years_active = 'now' | date: "%Y" | minus: 2019 %}
 
-    <section class="b-tile b-stats" aria-label="Lab at a glance">
-      <div class="b-stat">
+    <section class="b-tile b-statbar" aria-label="Lab at a glance">
+      <div class="b-statbar-item">
         <span class="b-stat-num"><span data-count="{{ pub_tens }}">0</span><span class="b-plus">+</span></span>
         <span class="b-stat-lbl">Publications</span>
       </div>
-      <div class="b-stat">
+      <div class="b-statbar-item">
         <span class="b-stat-num"><span data-count="{{ active_members.size }}">0</span><span class="b-plus">+</span></span>
         <span class="b-stat-lbl">Lab Members</span>
       </div>
-      <div class="b-stat">
+      <div class="b-statbar-item">
         <span class="b-stat-num"><span data-count="{{ project_count }}">0</span><span class="b-plus">+</span></span>
         <span class="b-stat-lbl">Research Projects</span>
       </div>
-      <div class="b-stat">
+      <div class="b-statbar-item">
         <span class="b-stat-num"><span data-count="{{ years_active }}">0</span><span class="b-plus">+</span></span>
         <span class="b-stat-lbl">Years Active</span>
       </div>
