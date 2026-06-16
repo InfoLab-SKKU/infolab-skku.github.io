@@ -10,17 +10,23 @@
 /* The global rule wraps every block in a `section.background` with 60px
    top/bottom padding, which leaves large dead space around the hero /
    stats card and between blocks. Collapse it on the hero pages so they
-   read compact. The hero section keeps its 60px TOP (`.team-hero` offsets
-   it with a -60px margin); only its bottom is trimmed. */
+   read compact. */
+body section.background:has(.team-section) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* The hero is full-bleed and uses margin-top:-60px to sit flush under the
+   header, so its section MUST keep the 60px TOP padding; only the bottom
+   is trimmed. This rule comes AFTER the one above so it wins when a single
+   section holds both the hero and a .team-section (e.g. collaborators,
+   which has no section break between them). */
 body section.background:has(.team-hero) {
+  padding-top: 60px;
   padding-bottom: 8px;
 }
 body section.background:has(.team-hero) + section.background {
   padding-top: 14px;
-}
-body section.background:has(.team-section) {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 .team-jumpnav {
