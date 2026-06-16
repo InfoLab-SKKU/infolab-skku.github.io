@@ -410,8 +410,17 @@
 .b-featured-authors {
   font-size: 0.85rem;
   color: var(--gray);
+  margin-bottom: 14px;
+}
+.b-featured-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--primary) 18%, transparent);
   margin-bottom: 16px;
-  flex-grow: 1;
 }
 .b-featured-link {
   font-family: var(--mono);
