@@ -57,12 +57,6 @@ Our team includes graduate students, postdoctoral researchers, and researchers, 
 <img src="../images/gallery/team-itrc.jpeg" alt="Lab team photo at ITRC event" loading="lazy"/>
 </p>
 
-{%
-  include button.html
-  icon="fa-solid fa-door-open"
-  text="Join us"
-  link="/team/join"
-%}
 
 ### Our funders
 
