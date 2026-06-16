@@ -59,11 +59,11 @@ nav:
   </button>
   <button class="sw-filter-btn" data-cat="library">
     <i class="fa-solid fa-cube"></i> XAI &amp; Libraries
-    <span class="sw-filter-count">3</span>
+    <span class="sw-filter-count">4</span>
   </button>
   <button class="sw-filter-btn" data-cat="vision">
     <i class="fa-solid fa-camera"></i> Human Activity
-    <span class="sw-filter-count">2</span>
+    <span class="sw-filter-count">3</span>
   </button>
 </div>
 
