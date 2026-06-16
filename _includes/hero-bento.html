@@ -160,6 +160,7 @@
           {% assign feat_authors = feat.authors | slice: 0, 3 %}
           <span class="b-featured-authors">{{ feat_authors | join: ", " }}{% if feat.authors.size > 3 %} et al.{% endif %}</span>
         {% endif %}
+        <img class="b-featured-image" src="{{ '/images/news/ndss-Featured.jpg' | relative_url }}" alt="{{ feat.title }}" loading="lazy">
         <span class="b-featured-link">View Paper {% include icon.html icon="fa-solid fa-arrow-right" %}</span>
       </a>
     {% endif %}
