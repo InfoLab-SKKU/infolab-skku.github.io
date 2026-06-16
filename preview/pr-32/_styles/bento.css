@@ -1,0 +1,761 @@
+@charset "UTF-8";
+/* =====================================================================
+   HOMEPAGE BENTO FRAMEWORK
+   Hero canvas · live stats · research pillars · featured paper ·
+   news activity stream · join CTA. Tasteful neon on a layered dark
+   canvas; all hover/scale motion is disabled under reduced-motion.
+   ===================================================================== */
+.bento {
+  width: 100vw;
+  margin: -60px calc(50% - 50vw) 0;
+  text-align: left;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 28px 24px 8px;
+}
+
+/* ----------------------------- shared tile ----------------------------- */
+.b-tile {
+  position: relative;
+  border-radius: var(--rounded-lg);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.b-tile,
+.b-tile:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------------------------------- HERO -------------------------------- */
+.b-hero {
+  grid-column: span 8;
+  min-height: 380px;
+  display: flex;
+  align-items: flex-end;
+  background: var(--grad-hero);
+  border-color: var(--hairline-strong);
+}
+
+.neural-hero {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.b-hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 42px 44px;
+  max-width: 780px;
+}
+
+.b-eyebrow {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  padding: 5px 13px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.28);
+  margin-bottom: 18px;
+}
+
+.b-hero-title {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(1.9rem, 3.4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-strong);
+  margin: 0 0 16px;
+}
+
+.b-grad {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.b-grad-security {
+  background-image: var(--grad-security);
+}
+
+.b-grad-biomedical {
+  background-image: var(--grad-biomedical);
+}
+
+.b-grad-trust {
+  background-image: var(--grad-trust);
+}
+
+.b-hero-lead {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--gray);
+  max-width: 620px;
+  margin: 0 0 24px;
+}
+
+.b-hero-ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* -------------------------------- buttons -------------------------------- */
+.b-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), background var(--transition), border-color var(--transition);
+}
+
+.b-btn-primary {
+  background: var(--grad-brand);
+  color: #02121f;
+  box-shadow: var(--glow-primary);
+}
+
+.b-btn-primary:hover {
+  transform: translateY(-2px);
+  color: #02121f;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.45);
+}
+
+.b-btn-ghost {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  border: 1px solid var(--hairline-strong);
+}
+
+.b-btn-ghost:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+  color: var(--text);
+}
+
+/* ------------------------------- STAT BAR ------------------------------- */
+.b-statbar {
+  grid-column: span 12;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.b-statbar-item {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 18px;
+}
+
+.b-statbar-item + .b-statbar-item {
+  border-left: 1px solid var(--hairline);
+}
+
+.b-stat-num {
+  font-family: var(--display);
+  font-size: clamp(1.6rem, 2.2vw, 2.1rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.b-stat-num .b-plus {
+  color: var(--secondary);
+}
+
+.b-stat-lbl {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray);
+}
+
+/* ------------------------------ SPOTLIGHT ------------------------------ */
+.b-spotlight {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 24px 24px 20px;
+  min-height: 300px;
+  background: radial-gradient(130% 130% at 100% 0%, color-mix(in srgb, var(--primary) 11%, transparent), transparent 58%), var(--surface);
+}
+
+/* All slides share one grid cell, so the track is always as tall as the
+   tallest slide — it can never collapse (flex) or clip its text (absolute). */
+.b-spot-track {
+  display: grid;
+}
+
+.b-spot-slide {
+  grid-area: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--transition), visibility var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.b-spot-slide.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.b-spot-title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-strong);
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.b-spot-authors {
+  font-size: 0.83rem;
+  color: var(--gray);
+  margin-bottom: 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.b-spotlight:hover .b-featured-link {
+  gap: 11px;
+}
+
+.b-spot-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.b-spot-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--hairline);
+  color: var(--gray);
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.b-spot-arrow:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background: var(--surface-2);
+}
+
+.b-spot-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.b-spot-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--hairline-strong);
+  cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.b-spot-dot:hover {
+  background: var(--gray);
+}
+
+.b-spot-dot.is-active {
+  background: var(--primary);
+  transform: scale(1.25);
+}
+
+/* ------------------------------- PILLARS ------------------------------- */
+.b-pillar {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 24px 22px;
+  min-height: 196px;
+}
+
+.b-pillar::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--accent-bar);
+}
+
+.b-pillar[data-area=security] {
+  --accent-bar: var(--grad-security);
+  --c: var(--security);
+  --g: var(--glow-security);
+}
+
+.b-pillar[data-area=biomedical] {
+  --accent-bar: var(--grad-biomedical);
+  --c: var(--biomedical);
+  --g: var(--glow-biomedical);
+}
+
+.b-pillar[data-area=trustworthy] {
+  --accent-bar: var(--grad-trust);
+  --c: var(--trustworthy);
+  --g: var(--glow-trustworthy);
+}
+
+.b-pillar:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--c) 55%, transparent);
+  box-shadow: var(--g);
+}
+
+.b-pillar-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+  background: color-mix(in srgb, var(--c) 14%, transparent);
+  color: var(--c);
+  font-size: 1.25rem;
+}
+
+.b-pillar h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: var(--text-strong);
+}
+
+.b-pillar p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--gray);
+  margin: 0 0 14px;
+  flex-grow: 1;
+}
+
+.b-pillar-more {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--c);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap var(--transition);
+}
+
+.b-pillar:hover .b-pillar-more {
+  gap: 11px;
+}
+
+/* ------------------------------ FEATURED ------------------------------ */
+.b-featured {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 26px 24px;
+  background: radial-gradient(130% 130% at 100% 0%, color-mix(in srgb, var(--primary) 11%, transparent), transparent 58%), var(--surface);
+}
+
+.b-featured:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--primary) 45%, transparent);
+  box-shadow: var(--glow-primary);
+}
+
+.b-card-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 14px;
+}
+
+.b-venue-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.b-venue-chip {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text);
+  background: color-mix(in srgb, var(--primary) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+  padding: 3px 10px;
+  border-radius: 6px;
+}
+
+.b-venue-year {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--dim);
+}
+
+.b-featured-title {
+  font-size: 1.06rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--text-strong);
+  margin-bottom: 10px;
+}
+
+.b-featured-authors {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-bottom: 14px;
+}
+
+.b-featured-image {
+  display: block;
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, var(--primary) 18%, transparent);
+  margin-bottom: 16px;
+}
+
+.b-featured-link {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: gap var(--transition);
+}
+
+.b-featured:hover .b-featured-link {
+  gap: 11px;
+}
+
+/* -------------------------------- NEWS -------------------------------- */
+.b-news {
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 26px;
+}
+
+.b-news-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.b-news-head h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-strong);
+}
+
+.b-news-all {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.b-news-all:hover {
+  text-decoration: underline;
+}
+
+.b-news-stream {
+  display: flex;
+  flex-direction: column;
+}
+
+.b-news-item {
+  display: grid;
+  grid-template-columns: 12px 1fr auto;
+  gap: 14px;
+  align-items: start;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.b-news-item:last-child {
+  border-bottom: 0;
+}
+
+.b-news-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 5px;
+  background: var(--dotc);
+  box-shadow: 0 0 10px var(--dotc);
+}
+
+.b-news-item[data-type=publication] {
+  --dotc: var(--primary);
+}
+
+.b-news-item[data-type=member] {
+  --dotc: var(--success);
+}
+
+.b-news-item[data-type=patent] {
+  --dotc: var(--info);
+}
+
+.b-news-item[data-type=award] {
+  --dotc: var(--warning);
+}
+
+.b-news-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.b-news-item-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.b-news-item-type {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray);
+}
+
+/* venue chip (journal / conference name) */
+.b-news-venue {
+  align-self: flex-start;
+  width: fit-content;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--dotc, var(--primary));
+  background: color-mix(in srgb, var(--dotc, var(--primary)) 13%, transparent);
+  border: 1px solid color-mix(in srgb, var(--dotc, var(--primary)) 30%, transparent);
+  padding: 2px 7px;
+  border-radius: 5px;
+}
+
+.b-news-date {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--dim);
+  white-space: nowrap;
+  padding-top: 1px;
+}
+
+/* -------------------------------- JOIN -------------------------------- */
+.b-join {
+  grid-column: span 12;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 26px 32px;
+  border: none;
+  color: #02121f;
+  background: radial-gradient(130% 220% at 0% 0%, color-mix(in srgb, var(--trustworthy) 22%, transparent), transparent 52%), var(--grad-brand);
+}
+
+.b-join-text h2 {
+  margin: 0 0 4px;
+  font-family: var(--display);
+  font-size: 1.4rem;
+  color: #03131f;
+}
+
+.b-join-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #06304a;
+}
+
+.b-join-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  background: #02121f;
+  color: #e6edf3;
+  transition: transform var(--transition);
+}
+
+.b-join:hover .b-join-btn {
+  transform: translateY(-2px);
+}
+
+/* ============================== RESPONSIVE ============================== */
+@media (max-width: 1000px) {
+  .b-hero {
+    grid-column: span 12;
+  }
+  .b-spotlight {
+    grid-column: span 12;
+    min-height: 0;
+  }
+  .b-pillar {
+    grid-column: span 4;
+  }
+  .b-featured {
+    grid-column: span 12;
+  }
+  .b-news {
+    grid-column: span 12;
+  }
+}
+@media (max-width: 720px) {
+  .bento {
+    margin-top: -40px;
+  }
+  .bento-grid {
+    gap: 12px;
+    padding: 20px 16px 4px;
+  }
+  .b-hero {
+    min-height: 320px;
+  }
+  .b-hero-inner {
+    padding: 28px 22px;
+  }
+  .b-statbar-item {
+    flex: 1 1 45%;
+  }
+  .b-statbar-item + .b-statbar-item {
+    border-left: 0;
+  }
+  .b-pillar {
+    grid-column: span 12;
+    min-height: 0;
+  }
+  .b-join {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* ============================ REDUCED MOTION ============================ */
+@media (prefers-reduced-motion: reduce) {
+  .b-tile, .b-btn, .b-join-btn, .b-pillar-more, .b-featured-link,
+  .b-spot-slide, .b-spot-arrow, .b-spot-dot {
+    transition: none;
+  }
+  .b-pillar:hover, .b-featured:hover, .b-btn:hover, .b-join:hover .b-join-btn {
+    transform: none;
+  }
+  .b-spot-dot.is-active {
+    transform: none;
+  }
+}
+/* ========================== LIGHT-MODE TWEAKS ========================== */
+[data-dark=false] .b-eyebrow {
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--primary-700);
+  border-color: var(--hairline-strong);
+}
+[data-dark=false] .b-btn-primary {
+  color: #ffffff;
+}
+[data-dark=false] .b-btn-ghost {
+  background: var(--surface-2);
+}
+[data-dark=false] .b-join {
+  color: #ffffff;
+}
+[data-dark=false] .b-join-text h2 {
+  color: #ffffff;
+}
+[data-dark=false] .b-join-text p {
+  color: rgba(255, 255, 255, 0.9);
+}
+[data-dark=false] .b-join-btn {
+  background: #051a2e;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=bento.css.map */
