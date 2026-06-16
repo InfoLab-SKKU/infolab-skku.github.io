@@ -1,0 +1,20 @@
+{
+  "name": "InfoLab — Information Research Laboratory @ SKKU",
+  "short_name": "InfoLab",
+  "description": "InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#07377b",
+  "lang": "en",
+  "categories": ["education", "science"],
+  "icons": [
+    {
+      "src": "/images/icon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
