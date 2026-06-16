@@ -1,0 +1,48 @@
+pre,
+code,
+pre *,
+code * {
+  font-family: var(--code);
+}
+
+code.highlighter-rouge {
+  padding: 2px 6px;
+  background: var(--light-gray);
+  border-radius: var(--rounded);
+}
+
+div.highlighter-rouge {
+  width: 100%;
+  margin: 40px 0;
+  border-radius: var(--rounded);
+  overflow-x: auto;
+  overflow-y: auto;
+  text-align: left;
+  background: #111827;
+  color: #f8fafc;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+div.highlighter-rouge div.highlight {
+  display: contents;
+}
+div.highlighter-rouge div.highlight pre.highlight {
+  width: fit-content;
+  min-width: 100%;
+  margin: 0;
+  padding: 20px;
+  color: inherit;
+  background: transparent;
+}
+
+.blog-content pre,
+.blog-content code {
+  background: #111827;
+  color: #f8fafc;
+}
+
+.blog-content code {
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--rounded);
+}
+
+/*# sourceMappingURL=code.css.map */
