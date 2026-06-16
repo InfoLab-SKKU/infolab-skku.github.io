@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://infolab-skku.github.io/preview/pr-33/feed.xml" rel="self" type="application/atom+xml" /><link href="https://infolab-skku.github.io/preview/pr-33/" rel="alternate" type="text/html" /><updated>2026-06-16T09:53:09+00:00</updated><id>https://infolab-skku.github.io/preview/pr-33/feed.xml</id><title type="html">Information Laboratory (InfoLab) @ SKKU</title><subtitle>InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.</subtitle><entry><title type="html">VisionDES: Robust and Explainable Dynamic Vision Ensemble</title><link href="https://infolab-skku.github.io/preview/pr-33/blog/2026/05/17/visiondes-robust-explainable-dynamic-vision-ensemble.html" rel="alternate" type="text/html" title="VisionDES: Robust and Explainable Dynamic Vision Ensemble" /><published>2026-05-17T01:00:00+00:00</published><updated>2026-06-16T09:52:04+00:00</updated><id>https://infolab-skku.github.io/preview/pr-33/blog/2026/05/17/visiondes-robust-explainable-dynamic-vision-ensemble</id><content type="html" xml:base="https://infolab-skku.github.io/preview/pr-33/blog/2026/05/17/visiondes-robust-explainable-dynamic-vision-ensemble.html"><![CDATA[<blockquote>
+  <p><strong>Accepted at ACM SIGKDD 2026 · Jeju Island, South Korea</strong>
+Code: <a href="https://github.com/InfoLab-SKKU/VisionDES">github.com/InfoLab-SKKU/VisionDES</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>Dynamic Ensemble Selection (DES) has proven powerful for tabular data, yet remained largely unexplored in computer vision. <strong>VisionDES</strong> bridges this gap — using deep model embeddings, FAISS-based nearest-neighbor search, and similarity-weighted competence estimation to dynamically pick the most reliable classifiers for each test image. The result: up to <strong>+20% robust accuracy</strong> under strong adversarial attacks, and <strong>+2–3% gains</strong> under distribution shift, with built-in instance-level interpretability.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Robust accuracy gain (adversarial attacks)</td>
+      <td>**+20%**</td>
+    </tr>
+    <tr>
+      <td>Accuracy improvement (distribution shift)</td>
+      <td>**+2–3%**</td>
+    </tr>
+    <tr>
+      <td>Benchmarks evaluated</td>
+      <td>ImageNet, CIFAR-10/100, MedMNIST (×3)</td>
+    </tr>
+    <tr>
+      <td>Attack types tested</td>
+      <td>PGD, MIM, C&amp;W, AutoAttack</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="the-problem-with-static-ensembles">The Problem with Static Ensembles</h2>
+
+<p>Modern computer vision systems underpin high-stakes applications — autonomous driving, medical imaging, industrial inspection, and more. To boost reliability, researchers routinely turn to <strong>ensemble learning</strong>: combining multiple models so their errors cancel out. But the dominant approach is fundamentally <em>static</em>.</p>
+
+<p>Soft voting, hard voting, stacking — all of these aggregate every model’s prediction for every input, regardless of how appropriate each model is for that particular sample. Some models may excel at texture-rich images but fail on blurry ones. Some may be robust to PGD perturbations but brittle under distribution shift. Under a static ensemble, a compromised or miscalibrated model still gets a full vote.</p>
+
+<blockquote>
+  <p><em>“Every model contributes to every prediction — regardless of whether that model is reliable for this specific input.”</em></p>
+</blockquote>
+
+<p>This rigidity becomes acutely dangerous under adversarial attack. Once a subset of ensemble members is compromised, the corrupted predictions propagate directly into the final decision with no mechanism to reduce their influence.</p>
+
+<p><img src="/images/blogs/desvision/Figure1.png" alt="Figure 1: VisionDES vs. static ensembles under attack" /></p>
+
+<p><strong>Figure 1.</strong> An example illustrating VisionDES’s advantage over static ensembles. Two base models (highlighted in red) have been attacked. Soft voting and hard voting produce wrong or uncertain results because the attacked models still carry full weight. VisionDES detects their reduced reliability via feature similarity and down-weights them — correctly predicting class 6.</p>
+
+<hr />
+
+<h2 id="the-visiondes-approach">The VisionDES Approach</h2>
+
+<p>VisionDES introduces a per-sample classifier selection strategy grounded in <strong>Dynamic Ensemble Selection (DES)</strong> — a paradigm previously applied almost exclusively to tabular data. This work is the first systematic adaptation of traditional DES for modern, high-dimensional vision tasks.</p>
+
+<p>The core insight: instead of asking <em>“which model is globally best?”</em>, VisionDES asks <em>“which models are most reliable for <strong>this</strong> specific image?”</em> It answers by examining how each model behaves on semantically similar images — a <strong>Region of Competence (RoC)</strong> — and weighting contributions accordingly.</p>
+
+<blockquote>
+  <p><strong>Key innovation:</strong> VisionDES uses DINO-based ViT embeddings and FAISS approximate nearest-neighbor search to construct a local Region of Competence in embedding space for each test sample — then dynamically selects and weights classifiers based on both their local accuracy and feature-space consistency.</p>
+</blockquote>
+
+<h3 id="three-stages">Three Stages</h3>
+
+<p><strong>Stage 1 — Training</strong>
+Diverse vision models (ViT, ResNet, EfficientNet, VGG, etc.) are trained. DINO embeddings of a validation set (DSEL) are indexed in a FAISS store for fast retrieval.</p>
+
+<p><strong>Stage 2 — Selection</strong>
+For each test image, its DINO embedding is computed and <em>k</em>=7 nearest neighbors are retrieved, defining the RoC. Classifiers are scored by their accuracy within that region using one of three selection rules:</p>
+<ul>
+  <li><strong>KNORA-U</strong>: includes any classifier that correctly labels at least one RoC sample, weighted by competence score.</li>
+  <li><strong>KNORA-E</strong>: the stricter rule — only classifiers that correctly label <em>all</em> RoC samples are selected.</li>
+  <li><strong>FIRE</strong>: handles indecision regions near class boundaries by requiring correct predictions from each class present in the RoC.</li>
+</ul>
+
+<p><strong>Stage 3 — Aggregation</strong>
+Selected classifiers are combined via similarity-weighted voting. Models whose internal representations diverge from the RoC mean are automatically down-weighted.</p>
+
+<p><img src="/images/blogs/desvision/Figure2.png" alt="Figure 2: VisionDES framework" /></p>
+
+<p><strong>Figure 2.</strong> The VisionDES framework. At test time, the input image’s DINO embedding is used to retrieve a Region of Competence from the DSEL store. Competence and similarity scores are jointly computed and fused to produce the final weighted prediction.</p>
+
+<hr />
+
+<h2 id="similarity-weighted-competence">Similarity-Weighted Competence</h2>
+
+<p>The most distinctive technical contribution of VisionDES is the <strong>similarity-weighted competence mechanism</strong>. Classical DES methods assign weights based solely on a classifier’s accuracy within the RoC. VisionDES adds a second signal: <em>feature-space consistency</em>.</p>
+
+<p>For each classifier <code class="language-plaintext highlighter-rouge">c_i</code>, VisionDES computes the cosine similarity between the mean embedding of RoC samples (as seen through <code class="language-plaintext highlighter-rouge">c_i</code>’s penultimate layer) and the embedding of the test image itself. When a model has been adversarially perturbed, its internal representations become misaligned with those of clean neighboring samples — its similarity score drops, and so does its contribution.</p>
+
+<p>The competence and similarity scores are fused via a convex combination:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>w_i(t) = α_t · comp_i(t) + (1 − α_t) · s_i(t)
+</code></pre></div></div>
+
+<p>The mixing coefficient <code class="language-plaintext highlighter-rouge">α</code> is estimated <em>adaptively</em> per test sample, based on the relative variability of each signal across the ensemble. This lets similarity dominate when it provides a strong discriminative signal, while falling back to competence when similarity scores are homogeneous.</p>
+
+<p><img src="/images/blogs/desvision/Figure3.png" alt="Figure 3: Similarity-weighted aggregation" /></p>
+
+<p><strong>Figure 3.</strong> Similarity-weighted aggregation. For a benign image, a model’s internal representation closely matches the RoC mean — similarity ≈ 0.9. For an adversarially perturbed input, the same model’s representation drifts away — similarity drops to ≈ 0.5 — automatically reducing its weight in the ensemble decision.</p>
+
+<hr />
+
+<h2 id="instance-level-interpretability">Instance-Level Interpretability</h2>
+
+<p>Beyond robustness, VisionDES is <strong>inherently interpretable</strong>. Because classifier selection is explicit and per-sample, the framework reports — for any given prediction — exactly:</p>
+
+<ul>
+  <li>Which models were selected</li>
+  <li>Each model’s competence score and feature similarity score</li>
+  <li>Each model’s assigned weight</li>
+  <li>Each model’s top-5 class predictions</li>
+</ul>
+
+<p>The Region of Competence is also visualized: the nearest validation samples are shown alongside their L2 distances to the test image, giving a concrete picture of the neighborhood in which the decision was made.</p>
+
+<p><img src="/images/blogs/desvision/Figure4.png" alt="Figure 4: Interpretability under benign and adversarial conditions" /></p>
+
+<p><strong>Figure 4.</strong> Interpretability output for a test image under benign conditions (top) and under a PGD adversarial attack on the ViT model (bottom). Under attack, the ViT’s feature similarity collapses from 0.847 to 0.062 — its combined weight is automatically reduced. Unattacked models maintain stable similarity and correct predictions. The RoC structure is largely preserved thanks to DINO’s robustness.</p>
+
+<hr />
+
+<h2 id="experimental-results">Experimental Results</h2>
+
+<p>VisionDES is evaluated across three settings — clean conditions, adversarial attacks, and distribution shift — on ImageNet, CIFAR-10, CIFAR-100, and three MedMNIST datasets (RetinaMNIST, BloodMNIST, DermaMNIST).</p>
+
+<h3 id="clean-performance">Clean Performance</h3>
+
+<p>Under standard conditions, VisionDES consistently matches or outperforms soft voting, hard voting, stacking, and DUS across all benchmarks. Notably, while soft and hard voting <em>degrade</em> when weaker models are added to the pool, VisionDES continues to improve — rising to <strong>81.25%</strong> on ImageNet with six models, up from 80.95% with three. VisionDES can identify and down-weight weaker classifiers per-sample, rather than blending them in unconditionally.</p>
+
+<p><img src="/images/blogs/desvision/Figure5.png" alt="Figure 5: Clean performance comparison" /></p>
+
+<p><strong>Figure 5.</strong> Accuracy as a function of ensemble pool size under clean conditions on ImageNet-1000, CIFAR-100, RetinaMNIST, and DermaMNIST. VisionDES consistently outperforms static methods and DUS, and uniquely continues to improve as weaker models are added.</p>
+
+<h3 id="adversarial-robustness">Adversarial Robustness</h3>
+
+<p>We stress-test VisionDES with ensemble adversarial attacks, increasing the fraction of attacked base models from 1/6 to 6/6. When <strong>83.3% of models are under PGD attack</strong> on ImageNet:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Accuracy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**VisionDES**</td>
+      <td>**51.72%**</td>
+    </tr>
+    <tr>
+      <td>DUS</td>
+      <td>39.45%</td>
+    </tr>
+    <tr>
+      <td>Hard Voting</td>
+      <td>37.08%</td>
+    </tr>
+    <tr>
+      <td>Stacking</td>
+      <td>33.53%</td>
+    </tr>
+    <tr>
+      <td>Soft Voting</td>
+      <td>26.24%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>VisionDES also holds up across all four attack strategies. Under the <strong>C&amp;W attack</strong> with all models targeted, VisionDES achieves <strong>81.55% accuracy</strong> vs. 59.0% (soft), 61.9% (hard), 61.15% (stacking), and 64.8% (DUS) — an advantage exceeding 16 percentage points.</p>
+
+<p>Attack order also matters: targeting stronger models first produces more transferable adversarial examples, strongly impacting static ensembles. VisionDES remains stable across both orderings, confirming that dynamic selection and similarity-weighted aggregation mitigate transferability effects.</p>
+
+<p><img src="/images/blogs/desvision/Figure6.png" alt="Figure 6: Robustness under ensemble PGD attacks" /></p>
+
+<p><strong>Figure 6.</strong> Ensemble robustness under PGD attack (ε=0.05 for ImageNet, ε=8/255 for CIFAR-100), with the number of attacked base models increasing from 1/6 to 6/6. VisionDES maintains a significantly higher accuracy floor as more models are compromised.</p>
+
+<h3 id="increasing-perturbation-budget">Increasing Perturbation Budget</h3>
+
+<p>As the adversarial budget grows, the performance gap widens. At <strong>ε=0.031</strong>, VisionDES maintains accuracy gains exceeding 13% over static ensembles. At <strong>ε=0.05</strong> with half the pool attacked, VisionDES achieves over <strong>20% higher accuracy</strong> than both static methods and DUS.</p>
+
+<p><img src="/images/blogs/desvision/Figure8.png" alt="Figure 8: Performance under various PGD epsilon values" /></p>
+
+<p><strong>Figure 8.</strong> Ensemble accuracy on CIFAR-10 under PGD with ε ∈ {0.02, 0.031 (8/255), 0.05}, attacking models strongest-to-weakest. The advantage of VisionDES widens with both higher perturbation budget and more models attacked.</p>
+
+<h3 id="distribution-shift">Distribution Shift</h3>
+
+<p>Under natural distribution shift (CIFAR-10 → CIFAR-10.1), the accuracy drop for VisionDES with seven models is <strong>5.28%</strong>, compared to 6.36% (soft), 6.57% (hard), 6.77% (stacking), and 7.05% (DUS). Under synthetic Gaussian noise (σ=0.04), VisionDES sees an 11.1–11.9% drop versus 13–14% for static ensembles — consistently the smallest degradation across pool sizes.</p>
+
+<hr />
+
+<h2 id="ablation-highlights">Ablation Highlights</h2>
+
+<p><strong>Why DINO?</strong>
+DINO-ViT achieves the highest cosine similarity between clean and perturbed embeddings (≈0.990–0.996), far outpacing ResNet-50 (0.894) and CLIP-ViT (0.969–0.979) under CNN-generated noise. DINO’s perturbation robustness keeps the Region of Competence stable even when base classifiers are under attack.</p>
+
+<p><strong>Neighborhood size.</strong>
+<code class="language-plaintext highlighter-rouge">k=7</code> provides a stable balance between local sensitivity (<code class="language-plaintext highlighter-rouge">k=5</code>) and neighborhood dilution (<code class="language-plaintext highlighter-rouge">k=10</code>). Label agreement is consistent across K-NN, HNSW, and FAISS backends, confirming that embedding quality — not retrieval algorithm — is the dominant factor.</p>
+
+<p><strong>Inference overhead.</strong>
+VisionDES requires ~71 ms per sample on ImageNet vs. ~28–36 ms for static methods. This is substantially reduced by precomputing base model predictions on the DSEL set. FAISS IndexIVFPQ can compress the embedding index to just <strong>1.67 MB</strong> for memory-constrained deployment with no impact on inference time.</p>
+
+<p><strong>Larger pools.</strong>
+The benefits scale with ensemble size. An 8-member ensemble maintains accuracy above 80% across all attack ratios on CIFAR-10, outperforming both static methods and smaller VisionDES pools.</p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>VisionDES demonstrates that the question for ensemble learning should not be <em>“how many models?”</em> but <em>“which models, for this image?”</em>. By introducing Dynamic Ensemble Selection to computer vision — grounded in robust DINO embeddings, FAISS-powered neighborhood search, and similarity-weighted competence estimation — VisionDES consistently outperforms static ensembles and uncertainty-based dynamic methods under clean, adversarial, and distribution-shifted conditions.</p>
+
+<p>Beyond raw performance, the framework’s instance-level interpretability makes its decisions auditable and trustworthy, which is essential for safety-critical deployment. We see natural extensions toward multimodal ensembles, federated dynamic selection, and robust medical imaging systems.</p>
+
+<p>We look forward to presenting this work at <strong>ACM SIGKDD 2026 in Jeju Island, South Korea</strong>.</p>
+
+<hr />
+
+<h2 id="citation">Citation</h2>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">visiondes2026</span><span class="p">,</span>
+  <span class="na">title</span>     <span class="p">=</span> <span class="s">{VisionDES: Robust and Explainable Dynamic Vision Ensemble}</span><span class="p">,</span>
+  <span class="na">author</span>    <span class="p">=</span> <span class="s">{Firuz Juraev, Mohammed Abuhamad, Shaker El-Sappagh, Simon S. Woo, Tamer Abuhmed}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the ACM SIGKDD International Conference
+               on Knowledge Discovery and Data Mining (KDD)}</span><span class="p">,</span>
+  <span class="na">year</span>      <span class="p">=</span> <span class="s">{2026}</span>
+<span class="p">}</span>
+</code></pre></div></div>]]></content><author><name>InfoLab · SKKU</name></author><category term="blog" /><category term="vision" /><category term="ensemble" /><category term="robustness" /><category term="interpretability" /><summary type="html"><![CDATA[Accepted at ACM SIGKDD 2026 · Jeju Island, South Korea Code: github.com/InfoLab-SKKU/VisionDES]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://infolab-skku.github.io/preview/pr-33/images/blogs/desvision/post-thumbnail.png" /><media:content medium="image" url="https://infolab-skku.github.io/preview/pr-33/images/blogs/desvision/post-thumbnail.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive Embeddings and Dynamic Ensembles</title><link href="https://infolab-skku.github.io/preview/pr-33/blog/2026/05/12/mm-des-enhancing-multimodal-clinical-prediction.html" rel="alternate" type="text/html" title="MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive Embeddings and Dynamic Ensembles" /><published>2026-05-12T02:00:00+00:00</published><updated>2026-06-16T09:52:04+00:00</updated><id>https://infolab-skku.github.io/preview/pr-33/blog/2026/05/12/mm-des-enhancing-multimodal-clinical-prediction</id><content type="html" xml:base="https://infolab-skku.github.io/preview/pr-33/blog/2026/05/12/mm-des-enhancing-multimodal-clinical-prediction.html"><![CDATA[<blockquote>
+  <p><strong>Accepted at ICPR 2026</strong>
+<strong>Authors:</strong> Firuz Juraev, Abdenour Soubih, Tamer Abuhmed · Sungkyunkwan University
+<strong>Code:</strong> <a href="https://github.com/InfoLab-SKKU/mm-des">github.com/InfoLab-SKKU/mm-des</a></p>
+</blockquote>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>Multimodal learning is crucial in medical applications, where patient data spans heterogeneous sources — skin images, physiological signals, radiology reports, and clinical notes. While multimodal ensemble models exploit complementary information, they rely on static model sets and assume all modalities are available at inference time. <strong>MM-DES</strong> is the first multimodal dynamic ensemble selection framework that identifies the most competent subset of models for each individual test sample, using contrastive multimodal representations to construct a sample-wise region of competence.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Accuracy on PAD-UFES-20</td>
+      <td>**85.22%** (vs. 83.26% best baseline)</td>
+    </tr>
+    <tr>
+      <td>AUROC on MIMIC-IV (all modalities)</td>
+      <td>**86.14%**</td>
+    </tr>
+    <tr>
+      <td>AUROC gain over AutoPrognosis-M (MIMIC-IV)</td>
+      <td>**+4.13%**</td>
+    </tr>
+    <tr>
+      <td>Datasets evaluated</td>
+      <td>PAD-UFES-20, MIMIC-IV (Sepsis)</td>
+    </tr>
+    <tr>
+      <td>Modality types</td>
+      <td>Image · Tabular · Clinical Text</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="the-problem-with-static-multimodal-ensembles">The Problem with Static Multimodal Ensembles</h2>
+
+<p>In real clinical workflows, diagnostic decisions synthesize diverse data streams: a dermatologist reviews a smartphone photograph alongside patient history; an intensivist integrates radiology reports, vital-sign trends, and lab values. Multimodal machine learning mirrors this reality — but state-of-the-art approaches share a critical assumption: that the same set of models, with the same weights, is appropriate for every patient.</p>
+
+<p>This assumption breaks down in practice. Modality quality varies across patients. Tabular features may be informative for one patient but noisy for another. An image-based classifier may be reliable for certain lesion types yet unreliable for others. And in the real world, <strong>modalities are frequently missing or corrupted</strong> — a patient may arrive without imaging, or a sensor may fail.</p>
+
+<blockquote>
+  <p><em>“Static ensembles apply the same models to every patient — regardless of which modalities are reliable for this individual.”</em></p>
+</blockquote>
+
+<p>Dynamic Ensemble Selection (DES) addresses this by selecting and weighting classifiers at inference time, based on their performance on similar training samples. But DES has been studied almost exclusively for unimodal, tabular settings. MM-DES is the first framework to bring DES into the multimodal clinical domain.</p>
+
+<hr />
+
+<h2 id="the-mm-des-framework">The MM-DES Framework</h2>
+
+<p>MM-DES operates in two stages: a multimodal contrastive pretraining stage to build a shared embedding space, and a dynamic ensemble selection stage that performs sample-adaptive inference using modality-aware Regions of Competence.</p>
+
+<p><img src="/images/blogs/mmdes/Figure1.png" alt="Figure 1: MM-DES framework" /></p>
+
+<p><strong>Figure 1.</strong> The MM-DES framework. Stage I (top): modality-specific encoders are jointly pretrained with the Symile contrastive objective to produce aligned multimodal embeddings, stored in a FAISS-indexed DSEL memory. Stage II (bottom): at inference time, modality-wise nearest-neighbor retrieval constructs a Region of Competence, used to estimate classifier competence and produce a competence-weighted multimodal prediction.</p>
+
+<h3 id="stage-i--multimodal-contrastive-pretraining">Stage I — Multimodal Contrastive Pretraining</h3>
+
+<p>Modality-specific encoders (image CNN, tabular MLP, language transformer) are jointly trained using the <strong>Symile</strong> contrastive objective. Unlike CLIP-style pairwise alignment, Symile generalizes contrastive learning to arbitrarily many modalities via multilinear inner products, treating each modality symmetrically as an anchor:</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>L_Symile = (1/M) Σ_m (1/B) Σ_i CE(ℓ_i^(m), i)
+</code></pre></div></div>
+
+<p>After convergence, the pretrained model is frozen and used to embed a Dynamic Selection Dataset (DSEL), which serves as the reference memory for downstream competence estimation.</p>
+
+<p><strong>Why Symile over CLIP?</strong> CLIP is architecturally limited to two modalities, making it unsuitable for MIMIC-IV’s three-modality setting. Ablation confirms Symile’s advantage across all metrics on PAD-UFES-20 (AUROC 96.99% vs 96.94%).</p>
+
+<h3 id="stage-ii--multimodal-dynamic-ensemble-selection">Stage II — Multimodal Dynamic Ensemble Selection</h3>
+
+<p>For each test patient:</p>
+
+<ol>
+  <li><strong>Embedding:</strong> the patient’s available modalities are encoded via the pretrained CEM, producing L2-normalized per-modality query embeddings.</li>
+  <li><strong>RoC Construction:</strong> independent FAISS searches in each modality’s embedding space retrieve the top-K most similar DSEL patients, with similarity scores aggregated across modalities using modality-specific weights.</li>
+  <li><strong>Competence Estimation:</strong> each classifier is scored by its local accuracy within the RoC — how often it correctly predicted the RoC patients’ labels.</li>
+  <li><strong>Weighted Fusion:</strong> predictions are combined via competence- and modality-weighted aggregation: <code class="language-plaintext highlighter-rouge">p_q += w_m · κ_j^(m) · c_j^(m)(x_q^(m))</code></li>
+</ol>
+
+<blockquote>
+  <p><strong>Missing modality handling:</strong> When a modality is absent, MM-DES zeros out its weight and constructs the RoC from available modalities only — no imputation, no retraining. This makes the framework naturally robust to partial and complete modality absence.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="datasets-and-base-classifiers">Datasets and Base Classifiers</h2>
+
+<h3 id="pad-ufes-20--skin-lesion-classification">PAD-UFES-20 — Skin Lesion Classification</h3>
+
+<p>A publicly available dataset of 2,298 smartphone-acquired skin lesion images paired with patient metadata across six lesion categories (BCC, MEL, SCC, ACK, NEV, SEK), with all cancer cases biopsy-confirmed.</p>
+
+<p><strong>Classifier pool (10 models):</strong></p>
+<ul>
+  <li><strong>Image:</strong> ResNet-18, ResNet-34, EfficientNet-B0, MobileNet-V2, RegNet</li>
+  <li><strong>Tabular:</strong> Random Forest, CatBoost, XGBoost, MLP, SVC</li>
+</ul>
+
+<p>Best single models: CatBoost (82.17% acc, 95.86% AUROC) · ResNet-18 (76.96% acc, 92.60% AUROC)</p>
+
+<h3 id="mimic-iv--sepsis-prediction">MIMIC-IV — Sepsis Prediction</h3>
+
+<p>A balanced cohort of 8,156 patients (4,078 sepsis / 4,078 non-sepsis) from the MIMIC-IV clinical database, combining three modalities: radiology report text (INDICATION section), structured vital-sign summaries, and chest X-ray images.</p>
+
+<p><strong>Classifier pool (11 models):</strong></p>
+<ul>
+  <li><strong>Text:</strong> ClinicalBERT, PubMedBERT, BioBERT</li>
+  <li><strong>Tabular:</strong> CatBoost, XGBoost, Random Forest, MLP, SVC</li>
+  <li><strong>Image:</strong> ViT-Tiny, ResNet-18, MobileNet-V2</li>
+</ul>
+
+<hr />
+
+<h2 id="results">Results</h2>
+
+<h3 id="pad-ufes-20">PAD-UFES-20</h3>
+
+<p>MM-DES achieves the best results across all four metrics:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Modality</th>
+      <th>Accuracy</th>
+      <th>F1</th>
+      <th>Bal Acc</th>
+      <th>AUROC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**MM-DES (Ours)**</td>
+      <td>**MM**</td>
+      <td>**85.22%**</td>
+      <td>**79.73%**</td>
+      <td>**76.20%**</td>
+      <td>**96.99%**</td>
+    </tr>
+    <tr>
+      <td>AutoPrognosis-M</td>
+      <td>MM</td>
+      <td>83.26%</td>
+      <td>77.65%</td>
+      <td>74.51%</td>
+      <td>96.70%</td>
+    </tr>
+    <tr>
+      <td>Static Ensemble (Soft)</td>
+      <td>Tabular</td>
+      <td>82.39%</td>
+      <td>71.82%</td>
+      <td>66.91%</td>
+      <td>96.07%</td>
+    </tr>
+    <tr>
+      <td>Best Tab (CatBoost)</td>
+      <td>Tabular</td>
+      <td>82.17%</td>
+      <td>74.40%</td>
+      <td>70.16%</td>
+      <td>95.86%</td>
+    </tr>
+    <tr>
+      <td>Best Img (ResNet-18)</td>
+      <td>Image</td>
+      <td>76.96%</td>
+      <td>70.42%</td>
+      <td>66.13%</td>
+      <td>92.60%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The gain in <strong>balanced accuracy</strong> (+1.69% over AutoPrognosis-M) is particularly meaningful: dynamic, locally-estimated classifier selection helps overcome class imbalance that static ensembles struggle with.</p>
+
+<h3 id="mimic-iv-sepsis-prediction">MIMIC-IV Sepsis Prediction</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Modality</th>
+      <th>Accuracy</th>
+      <th>F1</th>
+      <th>Bal Acc</th>
+      <th>AUROC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**MM-DES (Ours)**</td>
+      <td>**MM-LTI**</td>
+      <td>**77.17%**</td>
+      <td>**76.99%**</td>
+      <td>**77.18%**</td>
+      <td>**86.14%**</td>
+    </tr>
+    <tr>
+      <td>**MM-DES (Ours)**</td>
+      <td>**MM-LT**</td>
+      <td>**75.98%**</td>
+      <td>**75.78%**</td>
+      <td>**75.98%**</td>
+      <td>**83.86%**</td>
+    </tr>
+    <tr>
+      <td>AutoPrognosis-M</td>
+      <td>MM-LTI</td>
+      <td>74.34%</td>
+      <td>74.11%</td>
+      <td>74.32%</td>
+      <td>82.01%</td>
+    </tr>
+    <tr>
+      <td>AutoPrognosis-M</td>
+      <td>MM-LT</td>
+      <td>73.68%</td>
+      <td>73.40%</td>
+      <td>73.68%</td>
+      <td>80.42%</td>
+    </tr>
+    <tr>
+      <td>Static Ensemble (Soft)</td>
+      <td>Text</td>
+      <td>72.84%</td>
+      <td>73.92%</td>
+      <td>72.84%</td>
+      <td>80.13%</td>
+    </tr>
+    <tr>
+      <td>Best Tab (CatBoost)</td>
+      <td>Tabular</td>
+      <td>71.65%</td>
+      <td>71.56%</td>
+      <td>71.65%</td>
+      <td>77.72%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>MM-LT = language + tabular; MM-LTI = language + tabular + image.</p>
+
+<hr />
+
+<h2 id="robustness-to-missing-modalities">Robustness to Missing Modalities</h2>
+
+<p>A defining challenge in clinical deployment is modality absence. MM-DES handles this gracefully — by constructing the RoC from whatever modalities are available.</p>
+
+<h3 id="pad-ufes-20-1">PAD-UFES-20</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Setting</th>
+      <th>Missing</th>
+      <th>Accuracy</th>
+      <th>F1</th>
+      <th>Bal Acc</th>
+      <th>AUROC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full</td>
+      <td>None</td>
+      <td>85.22%</td>
+      <td>79.73%</td>
+      <td>76.20%</td>
+      <td>96.99%</td>
+    </tr>
+    <tr>
+      <td>Image only</td>
+      <td>Tabular (100%)</td>
+      <td>77.61%</td>
+      <td>70.40%</td>
+      <td>67.81%</td>
+      <td>93.20%</td>
+    </tr>
+    <tr>
+      <td>Tabular only</td>
+      <td>Image (100%)</td>
+      <td>82.83%</td>
+      <td>72.65%</td>
+      <td>67.71%</td>
+      <td>96.20%</td>
+    </tr>
+    <tr>
+      <td>Partial</td>
+      <td>Tabular (20%)</td>
+      <td>82.10%</td>
+      <td>76.20%</td>
+      <td>72.90%</td>
+      <td>95.40%</td>
+    </tr>
+    <tr>
+      <td>Partial</td>
+      <td>Image (20%)</td>
+      <td>84.10%</td>
+      <td>78.10%</td>
+      <td>74.80%</td>
+      <td>96.50%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Under a realistic 20% partial-missing rate, performance remains within 1–3% of the fully-observed baseline. The system does not over-rely on any single modality.</p>
+
+<p><img src="/images/blogs/mmdes/Figure2.png" alt="Figure 2: Missing modality results table" /></p>
+
+<hr />
+
+<h2 id="instance-level-interpretability">Instance-Level Interpretability</h2>
+
+<p>MM-DES provides multi-level interpretability for every prediction:</p>
+
+<p><strong>Model contributions:</strong> for each classifier in the pool, MM-DES reports the prediction, competence score <code class="language-plaintext highlighter-rouge">κ</code>, and assigned weight <code class="language-plaintext highlighter-rouge">w</code> — revealing which models the ensemble relied on and why.</p>
+
+<p><strong>Modality-level insights:</strong> the applied modality weights are reported explicitly, showing whether the final decision was driven by imaging, tabular variables, or clinical text.</p>
+
+<p><strong>Feature-level explanations:</strong></p>
+<ul>
+  <li><strong>Image models</strong> → Grad-CAM highlights salient lesion regions</li>
+  <li><strong>Tabular models</strong> → SHAP quantifies feature contributions (e.g., smoking history, age, vital signs)</li>
+  <li><strong>Language models</strong> → CAPTUM attributes importance to specific tokens in clinical notes</li>
+</ul>
+
+<p><img src="/images/blogs/mmdes/Figure3.png" alt="Figure 3: PAD-UFES-20 interpretability" /></p>
+
+<p><strong>Figure 3.</strong> Interpretability output for a PAD-UFES-20 test sample. Despite image models initially receiving higher weights, competence analysis reveals that tabular models perform better locally and correctly drive the prediction. SHAP shows smoking history and age are the most important features; Grad-CAM highlights the lesion region.</p>
+
+<hr />
+
+<h2 id="ablation-highlights">Ablation Highlights</h2>
+
+<p><strong>Neighborhood size (k):</strong> Performance peaks at <code class="language-plaintext highlighter-rouge">k=10</code> and plateaus. Smaller neighborhoods (k=5) introduce instability; larger ones (k=15) dilute locality. Default: <code class="language-plaintext highlighter-rouge">k=10</code>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>k</th>
+      <th>Accuracy</th>
+      <th>F1</th>
+      <th>Bal Acc</th>
+      <th>AUROC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5</td>
+      <td>84.78%</td>
+      <td>79.30%</td>
+      <td>75.52%</td>
+      <td>96.43%</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>85.00%</td>
+      <td>79.24%</td>
+      <td>75.55%</td>
+      <td>96.64%</td>
+    </tr>
+    <tr>
+      <td>**10**</td>
+      <td>**85.22%**</td>
+      <td>**79.73%**</td>
+      <td>**76.20%**</td>
+      <td>**96.99%**</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>85.03%</td>
+      <td>79.63%</td>
+      <td>76.11%</td>
+      <td>96.94%</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>85.03%</td>
+      <td>79.63%</td>
+      <td>76.11%</td>
+      <td>96.94%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Modality weights:</strong> Emphasizing tabular slightly more (0.4 image, 0.6 tabular) yields the best results for PAD-UFES-20, reflecting the higher discriminative power of structured clinical variables.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Img</th>
+      <th>Tab</th>
+      <th>Accuracy</th>
+      <th>AUROC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.2</td>
+      <td>0.8</td>
+      <td>84.35%</td>
+      <td>94.51%</td>
+    </tr>
+    <tr>
+      <td>0.3</td>
+      <td>0.7</td>
+      <td>84.78%</td>
+      <td>95.02%</td>
+    </tr>
+    <tr>
+      <td>**0.4**</td>
+      <td>**0.6**</td>
+      <td>**85.22%**</td>
+      <td>**96.99%**</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>84.13%</td>
+      <td>95.91%</td>
+    </tr>
+    <tr>
+      <td>0.6</td>
+      <td>0.4</td>
+      <td>84.04%</td>
+      <td>94.98%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Search backend:</strong> FAISS (67 ms, 1.8 MB) outperforms both HNSW (70 ms, 2.1 MB) and brute-force K-NN (970 ms, 1.8 MB) on latency — the clear choice for clinical deployment.</p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>MM-DES demonstrates that Dynamic Ensemble Selection, previously confined to unimodal tabular settings, can be successfully extended to multimodal clinical prediction. By grounding the Region of Competence in contrastive multimodal embeddings, MM-DES achieves sample-adaptive model selection that naturally handles missing modalities, improves over static multimodal ensembles, and remains interpretable at the instance level.</p>
+
+<p>The results across PAD-UFES-20 and MIMIC-IV show consistent improvements over AutoPrognosis-M and unimodal baselines, with the largest gains in challenging missing-modality and class-imbalanced scenarios — precisely the conditions most common in real clinical deployment.</p>
+
+<p><strong>Future directions:</strong> adaptive per-sample modality weighting, uncertainty-aware DES parameter selection, richer modality-contribution analyses, and extension to larger clinical datasets.</p>
+
+<hr />
+
+<h2 id="citation">Citation</h2>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">mmdes2026</span><span class="p">,</span>
+  <span class="na">title</span>     <span class="p">=</span> <span class="s">{MM-DES: Enhancing Multimodal Clinical Prediction
+               with Joint Contrastive Embeddings and Dynamic Ensembles}</span><span class="p">,</span>
+  <span class="na">author</span>    <span class="p">=</span> <span class="s">{Juraev, Firuz and Soubih, Abdenour and Abuhmed, Tamer}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the International Conference on
+               Pattern Recognition (ICPR)}</span><span class="p">,</span>
+  <span class="na">year</span>      <span class="p">=</span> <span class="s">{2026}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p><em>This work was supported by the National Research Foundation of Korea (NRF) grant RS-2021-NR058558 and IITP-ICT Creative Consilience Program (IITP-2026-RS-2020-II201821).</em></p>]]></content><author><name>InfoLab · SKKU</name></author><category term="blog" /><category term="mm-des" /><category term="multimodal" /><category term="clinical" /><category term="contrastive" /><category term="ensemble" /><summary type="html"><![CDATA[Accepted at ICPR 2026 Authors: Firuz Juraev, Abdenour Soubih, Tamer Abuhmed · Sungkyunkwan University Code: github.com/InfoLab-SKKU/mm-des]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://infolab-skku.github.io/preview/pr-33/images/blogs/mmdes/post-thumbnail.png" /><media:content medium="image" url="https://infolab-skku.github.io/preview/pr-33/images/blogs/mmdes/post-thumbnail.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">MRI-DeepTrust: Trustworthy Alzheimer’s Diagnosis Integrating Robustness, Fairness, and Explainability</title><link href="https://infolab-skku.github.io/preview/pr-33/blog/2026/04/20/mri-deeptrust-trustworthy-alzheimers-diagnosis.html" rel="alternate" type="text/html" title="MRI-DeepTrust: Trustworthy Alzheimer’s Diagnosis Integrating Robustness, Fairness, and Explainability" /><published>2026-04-20T03:00:00+00:00</published><updated>2026-06-16T09:52:04+00:00</updated><id>https://infolab-skku.github.io/preview/pr-33/blog/2026/04/20/mri-deeptrust-trustworthy-alzheimers-diagnosis</id><content type="html" xml:base="https://infolab-skku.github.io/preview/pr-33/blog/2026/04/20/mri-deeptrust-trustworthy-alzheimers-diagnosis.html"><![CDATA[<blockquote>
+  <p><strong>Published in:</strong> Engineering Applications of Artificial Intelligence, Vol. 172 (2026), Article 114291
+<strong>DOI:</strong> <a href="https://doi.org/10.1016/j.engappai.2026.114291">10.1016/j.engappai.2026.114291</a>
+<strong>Authors:</strong> Maria Bashir, Nasir Rahim, Shaker El-Sappagh, Omar Amin El-Serafy, Tamer Abuhmed
+<strong>Affiliations:</strong> Sungkyunkwan University · Gachon University · Galala University · Cairo University</p>
+</blockquote>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>Mild Cognitive Impairment (MCI) sits on the transitional continuum between healthy aging and Alzheimer’s Disease. Identifying which patients will progress (pMCI) versus remain stable (sMCI) is among the most clinically consequential and technically difficult problems in neuroimaging AI. <strong>MRI-DeepTrust</strong> addresses this challenge through a tissue-aware deep ensemble framework that independently models Gray Matter (GM), White Matter (WM), and Cerebrospinal Fluid (CSF) via Bayesian-optimized CNNs — while simultaneously and systematically evaluating three pillars of trustworthy AI: adversarial robustness, gender-based fairness, and visual explainability.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mAUC on ADNI (proposed ensemble)</td>
+      <td>**89%**</td>
+    </tr>
+    <tr>
+      <td>Accuracy on ADNI (clean conditions)</td>
+      <td>**88%**</td>
+    </tr>
+    <tr>
+      <td>Accuracy after adversarial attack (PGD)</td>
+      <td>**81%**</td>
+    </tr>
+    <tr>
+      <td>Demographic Parity gap (proposed EL)</td>
+      <td>**0.01**</td>
+    </tr>
+    <tr>
+      <td>External validation on NACC (mAUC)</td>
+      <td>**81%**</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="why-trustworthiness-matters-for-alzheimers-diagnosis">Why Trustworthiness Matters for Alzheimer’s Diagnosis</h2>
+
+<p>Deep learning models for neuroimaging diagnosis have achieved remarkable accuracy on benchmark datasets. But accuracy alone is insufficient for clinical deployment. A diagnostic system that performs well on average may still fail for certain demographic subgroups, collapse under minor image perturbations, or provide predictions that clinicians cannot interpret or verify. In Alzheimer’s Disease prognosis, where diagnostic errors influence long-term treatment planning and patient counseling, these failures carry serious consequences.</p>
+
+<p>Existing frameworks typically address one pillar of trustworthiness in isolation. MRI-DeepTrust fills this gap with a system designed from the ground up to be <strong>accurate, robust, fair, and explainable simultaneously</strong> — a clinician-in-the-loop workflow ensures that visual explainability outputs and model stability are qualitatively reviewed throughout.</p>
+
+<blockquote>
+  <p><em>“No prior study combines GM, WM, and CSF-specific CNNs optimized via Bayesian search with unified assessments of adversarial robustness, demographic fairness, and clinically guided visual interpretability in a single end-to-end diagnostic framework.”</em></p>
+</blockquote>
+
+<h3 id="three-pillars">Three Pillars</h3>
+
+<p><strong>🛡 Robustness</strong> — PGD-based adversarial attack evaluation (ε=0.01, 10 steps) plus adversarial training at 20%, 35%, and 50% augmentation ratios. The ensemble reduces mAUC degradation to ~13% versus ~16–18% for single models.</p>
+
+<p><strong>⚖ Fairness</strong> — Gender-based evaluation using Demographic Parity (DP), Equal Opportunity (EO), and Group Sufficiency (GS). The proposed EL achieves DP=0.01, EO=0.02, GS=0.09 — the lowest disparities across all models.</p>
+
+<p><strong>🔍 Explainability</strong> — Dual-level: 3D brain surface renderings for global structural context, plus 2D Grad-CAM/MedCAM attention maps at the slice level — reviewed by a neurologist in a clinician-in-the-loop workflow.</p>
+
+<hr />
+
+<h2 id="the-mri-deeptrust-framework">The MRI-DeepTrust Framework</h2>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure1.png" alt="Figure 1: MRI-DeepTrust block diagram" /></p>
+
+<p><strong>Figure 1.</strong> Block diagram of MRI-DeepTrust. MRI scans are preprocessed and segmented into GM, WM, and CSF. Separate Bayesian-optimized CNNs are trained per tissue, then fused through an ensemble classifier. Four dedicated modules evaluate trustworthiness: PGD robustness, adversarial training defense, gender fairness, and Grad-CAM explainability. External validation on NACC assesses cross-cohort generalizability.</p>
+
+<h3 id="mri-preprocessing-pipeline">MRI Preprocessing Pipeline</h3>
+
+<p>Each scan undergoes a standardized six-step pipeline before tissue segmentation:</p>
+
+<ol>
+  <li><strong>Motion correction &amp; reorientation</strong> — FSLEyes inspection and <code class="language-plaintext highlighter-rouge">fslreorient2std</code> correction</li>
+  <li><strong>N4 bias field correction</strong> — ANTs N4 algorithm corrects intensity inhomogeneities</li>
+  <li><strong>MNI152 registration</strong> — Affine registration via FLIRT for spatial correspondence</li>
+  <li><strong>Skull stripping</strong> — BET2 from FSL with segmentation-based refinement</li>
+  <li><strong>Tissue segmentation</strong> — FSL 5.0 produces binary masks for GM, WM, and CSF</li>
+  <li><strong>Quality control</strong> — All masks visually inspected for anatomical accuracy</li>
+</ol>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure4.png" alt="Figure 4: Preprocessing pipeline" /></p>
+
+<p><strong>Figure 4.</strong> The complete MRI preprocessing pipeline from raw T1-weighted scan to tissue-segmented GM, WM, and CSF masks.</p>
+
+<h3 id="bayesian-optimized-tissue-specific-cnns">Bayesian-Optimized Tissue-Specific CNNs</h3>
+
+<p>A separate CNN is independently designed for each tissue type. Bayesian optimization searches over:</p>
+<ul>
+  <li>Convolutional depth: 4–10 layers</li>
+  <li>Filter counts: 96–320</li>
+  <li>Kernel sizes: 3×3 or 5×5</li>
+  <li>Dropout rates: 0.1–0.5</li>
+  <li>Dense layer widths: 128–512</li>
+  <li>Learning rates: 1e-2, 1e-3, 1e-4</li>
+</ul>
+
+<p>This yields three architecturally distinct, complementary networks (see Table 1 in the paper for layer-wise configurations). After optimization, the final Softmax layers are removed, networks are frozen, and their representations are concatenated and passed through fully connected layers forming the ensemble classifier.</p>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure3.png" alt="Figure 3: Ensemble framework" /></p>
+
+<p><strong>Figure 3.</strong> The proposed ensemble framework. Three tissue-specific CNNs (WM, GM, CSF) are trained independently, frozen, and fused through a fully connected ensemble classifier.</p>
+
+<hr />
+
+<h2 id="eight-experiments--one-unified-evaluation">Eight Experiments — One Unified Evaluation</h2>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure5.png" alt="Figure 5: Experimental pipeline" /></p>
+
+<p><strong>Figure 5.</strong> The structured eight-experiment evaluation pipeline.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>Focus</th>
+      <th>Key Finding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**Exp 1**</td>
+      <td>Tissue-specific CNNs</td>
+      <td>InceptionV3 best for GM; proposed model consistently competitive</td>
+    </tr>
+    <tr>
+      <td>**Exp 2**</td>
+      <td>Ensemble learning</td>
+      <td>Proposed EL reaches 89% mAUC; heterogeneous &gt; homogeneous</td>
+    </tr>
+    <tr>
+      <td>**Exp 3**</td>
+      <td>Tissue ablation</td>
+      <td>GM removal: −20–25% mAUC; CSF removal: −5–12% mAUC</td>
+    </tr>
+    <tr>
+      <td>**Exp 4**</td>
+      <td>PGD attack</td>
+      <td>Ensemble degrades ~13% vs. ~16–18% for base models</td>
+    </tr>
+    <tr>
+      <td>**Exp 5**</td>
+      <td>Adversarial training</td>
+      <td>Proposed EL: 84% mAUC at 50% augmentation ratio</td>
+    </tr>
+    <tr>
+      <td>**Exp 6**</td>
+      <td>Gender fairness</td>
+      <td>DP=0.01, EO=0.02, GS=0.09 (lowest across all models)</td>
+    </tr>
+    <tr>
+      <td>**Exp 7**</td>
+      <td>Explainability</td>
+      <td>pMCI: focal, anatomically coherent activations; sMCI: diffuse</td>
+    </tr>
+    <tr>
+      <td>**Exp 8**</td>
+      <td>NACC external validation</td>
+      <td>81% mAUC without fine-tuning; no catastrophic degradation</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="results">Results</h2>
+
+<h3 id="tissue-specific-and-ensemble-performance">Tissue-Specific and Ensemble Performance</h3>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure6.png" alt="Figure 6: mAUC by tissue" /></p>
+
+<p><strong>Figure 6.</strong> mAUC scores per tissue (GM, WM, CSF) across CNN architectures. EfficientNet and the proposed model maintain mAUC above 80% across all tissues, while other architectures exhibit tissue-dependent variability.</p>
+
+<p><strong>Ensemble comparison (ADNI, Accuracy):</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Accuracy</th>
+      <th>F1</th>
+      <th>AUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**Proposed EL (Heterogeneous)**</td>
+      <td>**88%**</td>
+      <td>**90%**</td>
+      <td>**89%**</td>
+    </tr>
+    <tr>
+      <td>Inception + Efficient + DenseNet</td>
+      <td>89%</td>
+      <td>88%</td>
+      <td>87%</td>
+    </tr>
+    <tr>
+      <td>Ensemble DenseNet-121</td>
+      <td>86%</td>
+      <td>86%</td>
+      <td>85%</td>
+    </tr>
+    <tr>
+      <td>Ensemble EfficientNet</td>
+      <td>81%</td>
+      <td>84%</td>
+      <td>84%</td>
+    </tr>
+    <tr>
+      <td>Ensemble VGG-16</td>
+      <td>78%</td>
+      <td>81%</td>
+      <td>82%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure7.png" alt="Figure 7: Ensemble vs base models" /></p>
+
+<p><strong>Figure 7.</strong> mAUC across base models, homogeneous, and heterogeneous ensembles. Heterogeneous configurations consistently provide the largest gains.</p>
+
+<h3 id="tissue-ablation">Tissue Ablation</h3>
+
+<p>All three tissues contribute meaningfully, but their roles differ:</p>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure8.png" alt="Figure 8: Tissue ablation" /></p>
+
+<p><strong>Figure 8.</strong> mAUC degradation when individual tissues are excluded. GM removal causes the largest drop (−20 to −25%), confirming its dominant role in discriminating pMCI from sMCI.</p>
+
+<ul>
+  <li><strong>GM removed</strong>: −20–25% mAUC — dominant contribution to classification</li>
+  <li><strong>WM removed</strong>: moderate degradation — deep and periventricular structural patterns</li>
+  <li><strong>CSF removed</strong>: −5–12% mAUC — ventricular and sulcal patterns still informative</li>
+</ul>
+
+<h3 id="adversarial-robustness">Adversarial Robustness</h3>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure9.png" alt="Figure 9: Adversarial attack degradation" /></p>
+
+<p><strong>Figure 9.</strong> mAUC degradation under PGD attacks. The proposed EL (rightmost) exhibits the smallest drop (~11%), versus ~16–18% for base architectures and ~13% for the heterogeneous ensemble.</p>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure10.png" alt="Figure 10: Adversarial training defense" /></p>
+
+<p><strong>Figure 10.</strong> mAUC under adversarial training at 20%, 35%, and 50% augmentation. The proposed EL improves monotonically and reaches 84% mAUC at 50% augmentation — the only model that does not plateau.</p>
+
+<p><strong>Adversarial training at 50% augmentation:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Accuracy</th>
+      <th>mAUC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**Proposed EL**</td>
+      <td>**85%**</td>
+      <td>**84%**</td>
+    </tr>
+    <tr>
+      <td>Inception + Efficient + DenseNet</td>
+      <td>83%</td>
+      <td>82%</td>
+    </tr>
+    <tr>
+      <td>Proposed base (GM)</td>
+      <td>78%</td>
+      <td>77%</td>
+    </tr>
+    <tr>
+      <td>EfficientNet base (GM)</td>
+      <td>75%</td>
+      <td>73%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="gender-based-fairness">Gender-Based Fairness</h3>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure11.png" alt="Figure 11: Fairness evaluation" /></p>
+
+<p><strong>Figure 11.</strong> Demographic Parity (DP), Equal Opportunity (EO), and Group Sufficiency (GS) across all models. Lower values indicate smaller gender disparities. The proposed EL achieves the lowest values across all three metrics.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>DP</th>
+      <th>EO</th>
+      <th>GS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**Proposed EL**</td>
+      <td>**0.01**</td>
+      <td>**0.02**</td>
+      <td>**0.09**</td>
+    </tr>
+    <tr>
+      <td>Proposed base (GM)</td>
+      <td>0.02</td>
+      <td>0.04</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>InceptionV3 (GM)</td>
+      <td>0.08</td>
+      <td>0.13</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>EfficientNetV2 (WM)</td>
+      <td>0.10</td>
+      <td>0.12</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>VGG-16 (GM)</td>
+      <td>0.12</td>
+      <td>0.17</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>DenseNet-121 (GM)</td>
+      <td>0.18</td>
+      <td>0.20</td>
+      <td>0.25</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Since all models were trained on identical data, fairness improvements stem from architectural design (tissue-specific learning + ensemble fusion) rather than dataset composition.</p>
+
+<hr />
+
+<h2 id="clinician-reviewed-explainability">Clinician-Reviewed Explainability</h2>
+
+<p>MRI-DeepTrust employs a dual-level explainability strategy:</p>
+
+<p><strong>Global level</strong> — 3D surface rendering visualizes brain tissues across GM, WM, and CSF, offering anatomically meaningful views of cortical and subcortical regions commonly affected during disease progression.</p>
+
+<p><strong>Local level</strong> — 2D Grad-CAM/MedCAM attention maps highlight voxels within individual MRI slices that most strongly influence each prediction, overlaid directly on the original image.</p>
+
+<p>Both outputs were reviewed by a neurologist in a <strong>clinician-in-the-loop workflow</strong>, confirming anatomical consistency and supporting translational feasibility.</p>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure12.png" alt="Figure 12: Explainability maps" /></p>
+
+<p><strong>Figure 12.</strong> Tissue-specific Grad-CAM explainability maps for sMCI (top rows) and pMCI (bottom rows). sMCI attention patterns are diffuse and spatially distributed. pMCI patterns are stronger, more focal, and anatomically structured — involving the hippocampus, amygdala, fusiform gyrus, superior/middle temporal gyri, and periventricular regions. 3D surface renderings (rightmost) confirm the progressive shift from uncertain to decisive network attention as cognitive impairment advances.</p>
+
+<hr />
+
+<h2 id="external-validation-on-nacc">External Validation on NACC</h2>
+
+<p>The ADNI-trained framework is directly evaluated on the independent NACC cohort — without fine-tuning — alongside ViT and CNN baselines. NACC presents greater scanner variability, demographic diversity, and labeling heterogeneity than ADNI.</p>
+
+<p><img src="/images/blogs/MRI-DeepTrust/Figure13.png" alt="Figure 13: Cross-cohort generalization" /></p>
+
+<p><strong>Figure 13.</strong> mAUC under internal (ADNI→ADNI) and external (ADNI→NACC) evaluation. The proposed framework consistently outperforms competing models in both settings.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Model (Tissue)</th>
+      <th>ADNI mAUC</th>
+      <th>NACC mAUC</th>
+      <th>Drop</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**Proposed EL**</td>
+      <td>**89%**</td>
+      <td>**81%**</td>
+      <td>−8%</td>
+    </tr>
+    <tr>
+      <td>EfficientNetV2 (GM)</td>
+      <td>80%</td>
+      <td>77%</td>
+      <td>−3%</td>
+    </tr>
+    <tr>
+      <td>InceptionV3 (GM)</td>
+      <td>82%</td>
+      <td>76%</td>
+      <td>−6%</td>
+    </tr>
+    <tr>
+      <td>ViT (GM)</td>
+      <td>81%</td>
+      <td>74%</td>
+      <td>−7%</td>
+    </tr>
+    <tr>
+      <td>VGG-16 (GM)</td>
+      <td>72%</td>
+      <td>66%</td>
+      <td>−6%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Performance decline is consistent with expected domain shift — no catastrophic degradation — reinforcing the framework’s translational potential.</p>
+
+<hr />
+
+<h2 id="state-of-the-art-comparison">State-of-the-Art Comparison</h2>
+
+<p>MRI-DeepTrust is the <strong>only framework</strong> in the field to simultaneously evaluate all three trustworthiness pillars (Exp = Explainability, Fair = Fairness, Rob = Robustness).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Method</th>
+      <th>Accuracy</th>
+      <th>Exp</th>
+      <th>Fair</th>
+      <th>Rob</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>**MRI-DeepTrust (Ours)**</td>
+      <td>**MRI-DeepTrust**</td>
+      <td>**88% / 81%***</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>✅</td>
+    </tr>
+    <tr>
+      <td>Leonardsen et al. 2024</td>
+      <td>CNN + LRP</td>
+      <td>84%</td>
+      <td>✅</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Vlontzou et al. 2025</td>
+      <td>SVM</td>
+      <td>87%</td>
+      <td>✅</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Tong et al. 2025</td>
+      <td>ML-Models</td>
+      <td>76%</td>
+      <td>✅</td>
+      <td>✅</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Zhang et al. 2023</td>
+      <td>DAUF</td>
+      <td>76%</td>
+      <td>✅</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Ahmed et al. 2019</td>
+      <td>EL-Model</td>
+      <td>86%</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>*88% before adversarial attack / 81% after adversarial attack (ε=0.01, PGD).</p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>MRI-DeepTrust demonstrates that it is possible — and necessary — to design neuroimaging AI systems that are simultaneously accurate, robust, fair, and explainable. By independently modeling GM, WM, and CSF through Bayesian-optimized CNNs and fusing their representations through a heterogeneous ensemble, the framework captures complementary tissue-specific disease signatures while naturally reducing demographic disparities and improving resilience to adversarial perturbations.</p>
+
+<p>The clinician-in-the-loop validation confirms anatomical consistency of the model’s attention patterns, bridging the gap between algorithmic performance and clinical relevance. External validation on NACC demonstrates stable cross-cohort generalization — a prerequisite for real-world deployment.</p>
+
+<p><strong>Future directions:</strong> extending fairness to ethnicity and socioeconomic attributes; stronger adversarial defenses; multimodal fusion with longitudinal and genetic data; validation across larger multi-center cohorts.</p>
+
+<hr />
+
+<h2 id="citation">Citation</h2>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">mrideeptrust2026</span><span class="p">,</span>
+  <span class="na">title</span>   <span class="p">=</span> <span class="s">{Trustworthy Alzheimer's diagnosis: Integrating robustness, fairness,
+             and explainability in neuroimaging based deep ensemble framework}</span><span class="p">,</span>
+  <span class="na">author</span>  <span class="p">=</span> <span class="s">{Bashir, Maria and Rahim, Nasir and El-Sappagh, Shaker and
+             El-Serafy, Omar Amin and Abuhmed, Tamer}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Engineering Applications of Artificial Intelligence}</span><span class="p">,</span>
+  <span class="na">volume</span>  <span class="p">=</span> <span class="s">{172}</span><span class="p">,</span>
+  <span class="na">pages</span>   <span class="p">=</span> <span class="s">{114291}</span><span class="p">,</span>
+  <span class="na">year</span>    <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span>     <span class="p">=</span> <span class="s">{10.1016/j.engappai.2026.114291}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<hr />
+
+<p><em>Supported by the National Research Foundation of Korea (NRF) grant RS-2021-NR058558, IITP-ICT Creative Consilience Program (IITP-2025-RS-2020-II201821), and AI Platform grant No. 2022-0-00688.</em></p>]]></content><author><name>InfoLab · SKKU</name></author><category term="blog" /><category term="MRI-DeepTrust" /><category term="alzheimer" /><category term="robustness" /><category term="fairness" /><category term="explainability" /><summary type="html"><![CDATA[Published in: Engineering Applications of Artificial Intelligence, Vol. 172 (2026), Article 114291 DOI: 10.1016/j.engappai.2026.114291 Authors: Maria Bashir, Nasir Rahim, Shaker El-Sappagh, Omar Amin El-Serafy, Tamer Abuhmed Affiliations: Sungkyunkwan University · Gachon University · Galala University · Cairo University]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://infolab-skku.github.io/preview/pr-33/images/blogs/MRI-DeepTrust/post-thumbnail-ml.png" /><media:content medium="image" url="https://infolab-skku.github.io/preview/pr-33/images/blogs/MRI-DeepTrust/post-thumbnail-ml.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">New Paper: Federated Learning Under Data Heterogeneity</title><link href="https://infolab-skku.github.io/preview/pr-33/2025/01/10/federated-learning-robustness.html" rel="alternate" type="text/html" title="New Paper: Federated Learning Under Data Heterogeneity" /><published>2025-01-10T00:00:00+00:00</published><updated>2026-06-16T09:52:04+00:00</updated><id>https://infolab-skku.github.io/preview/pr-33/2025/01/10/federated-learning-robustness</id><content type="html" xml:base="https://infolab-skku.github.io/preview/pr-33/2025/01/10/federated-learning-robustness.html"><![CDATA[<p>We are excited to share our latest paper accepted at <strong>IMCOM 2025</strong>: <em>Towards Robust Federated Learning: Investigating Poisoning Attacks Under Clients Data Heterogeneity</em>.</p>
+
+<p>Federated learning enables collaborative model training across distributed clients without sharing raw data — but it remains vulnerable to <strong>poisoning attacks</strong>, especially when client data distributions are heterogeneous.</p>
+
+<!-- more -->
+
+<p>Our work systematically evaluates state-of-the-art poisoning attack strategies under realistic non-IID data settings. We analyze how data heterogeneity affects attack success rates and propose defenses tailored to this challenging scenario.</p>
+
+<p><strong>Key contributions:</strong></p>
+<ul>
+  <li>Comprehensive evaluation of poisoning attacks under varying degrees of data heterogeneity</li>
+  <li>Analysis of why standard defenses (FedAvg + median/trimmed-mean aggregation) fail in non-IID settings</li>
+  <li>Lightweight mitigation strategy that degrades attack success without sacrificing model accuracy</li>
+</ul>
+
+<p>The full paper is available on our <a href="/pubs/">publications page</a>.</p>]]></content><author><name>Abdenour Soubih</name></author><category term="federated learning" /><category term="security" /><category term="machine learning" /><summary type="html"><![CDATA[We are excited to share our latest paper accepted at IMCOM 2025: Towards Robust Federated Learning: Investigating Poisoning Attacks Under Clients Data Heterogeneity.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://infolab-skku.github.io/preview/pr-33/images/thumbnails/FLIMCOM25.png" /><media:content medium="image" url="https://infolab-skku.github.io/preview/pr-33/images/thumbnails/FLIMCOM25.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">InfoLab Receives IITP Grant for Privacy-Adaptive AI Research</title><link href="https://infolab-skku.github.io/preview/pr-33/2022/02/01/iitp-privacy-grant.html" rel="alternate" type="text/html" title="InfoLab Receives IITP Grant for Privacy-Adaptive AI Research" /><published>2022-02-01T00:00:00+00:00</published><updated>2026-06-16T09:52:04+00:00</updated><id>https://infolab-skku.github.io/preview/pr-33/2022/02/01/iitp-privacy-grant</id><content type="html" xml:base="https://infolab-skku.github.io/preview/pr-33/2022/02/01/iitp-privacy-grant.html"><![CDATA[<p>InfoLab has been awarded a research grant from the <strong>Institute of Information and Communications Technology Planning and Evaluation (IITP)</strong> to develop <em>Policy-Adaptive AI Privacy</em> systems, running through December 2027.</p>
+
+<!-- more -->
+
+<p>As AI systems become more deeply integrated into critical infrastructure, healthcare, and personal services, ensuring that they respect user privacy while remaining useful is one of the central challenges of our field.</p>
+
+<p>This project develops AI frameworks that automatically adapt their privacy guarantees in response to changing policy contexts, regulatory requirements, and user preferences.</p>
+
+<p><strong>Research goals:</strong></p>
+<ul>
+  <li>Formal frameworks for policy-adaptive differential privacy</li>
+  <li>Real-time privacy budget allocation in federated and distributed learning settings</li>
+  <li>Evaluation against GDPR and Korean PIPA regulatory frameworks</li>
+</ul>
+
+<p>We thank IITP for their continued support of fundamental AI safety research.</p>]]></content><author><name>Tamer Abuhmed</name></author><category term="funding" /><category term="privacy" /><category term="AI" /><category term="news" /><summary type="html"><![CDATA[InfoLab has been awarded a research grant from the Institute of Information and Communications Technology Planning and Evaluation (IITP) to develop Policy-Adaptive AI Privacy systems, running through December 2027.]]></summary></entry><entry><title type="html">Welcome to the InfoLab Blog</title><link href="https://infolab-skku.github.io/preview/pr-33/2021/03/01/welcome-to-infolab-blog.html" rel="alternate" type="text/html" title="Welcome to the InfoLab Blog" /><published>2021-03-01T00:00:00+00:00</published><updated>2026-06-16T09:52:04+00:00</updated><id>https://infolab-skku.github.io/preview/pr-33/2021/03/01/welcome-to-infolab-blog</id><content type="html" xml:base="https://infolab-skku.github.io/preview/pr-33/2021/03/01/welcome-to-infolab-blog.html"><![CDATA[<p>Welcome to the official InfoLab blog. This space will serve as our home for research updates, paper announcements, lab news, and occasional deep-dives into topics at the frontier of AI security and biomedical AI.</p>
+
+<!-- more -->
+
+<p><strong>What you can expect here:</strong></p>
+
+<ul>
+  <li><strong>Paper announcements</strong> – plain-language summaries of our published research</li>
+  <li><strong>Lab news</strong> – welcomes for new members, graduations, conference trips, and milestones</li>
+  <li><strong>Research insights</strong> – longer-form posts on AI security, biomedical AI, and trustworthy ML</li>
+  <li><strong>Open-source releases</strong> – announcements for new code and datasets from InfoLab</li>
+</ul>
+
+<p>InfoLab at Sungkyunkwan University (SKKU) conducts research at the intersection of <strong>AI security</strong>, <strong>adversarial machine learning</strong>, <strong>biomedical AI</strong>, and <strong>explainable AI</strong>. Visit our <a href="/team/">Team</a> and <a href="/contact/">Contact</a> pages to learn more.</p>]]></content><author><name>Tamer Abuhmed</name></author><category term="news" /><category term="lab" /><summary type="html"><![CDATA[Welcome to the official InfoLab blog. This space will serve as our home for research updates, paper announcements, lab news, and occasional deep-dives into topics at the frontier of AI security and biomedical AI.]]></summary></entry></feed>
