@@ -1,18 +1,41 @@
-{% assign button = include %}
-{% assign button = button | hash_default: site.data.types[include.type] %}
-
 {% comment %}
+  Resolve button properties from the passed-in args, falling back to the
+  defaults defined in _data/types.yaml for the given `type`. This is done
+  with built-in Liquid only (no custom plugins) so links and icons still
+  render when the site is built without custom plugins — e.g. GitHub Pages
+  safe mode, which silently drops the `hash_default` filter and would
+  otherwise leave links as raw values (orcid id, scholar id, …).
+
   Email links get spam protection: the address is split into data
   attributes and assembled at runtime by _scripts/email-protect.js.
 {% endcomment %}
-{% assign btn_href = button.link | replace: "$VALUE", button.link %}
+{% assign btn_type = site.data.types[include.type] %}
+
+{% comment %} link: substitute the passed value into the type's URL template {% endcomment %}
+{% if btn_type.link and btn_type.link contains "$VALUE" %}
+  {% assign btn_href = btn_type.link | replace: "$VALUE", include.link %}
+{% else %}
+  {% assign btn_href = include.link | default: btn_type.link %}
+{% endif %}
+
+{% comment %} icon / tooltip fall back to the type defaults {% endcomment %}
+{% assign btn_icon = include.icon | default: btn_type.icon %}
+{% assign btn_tooltip = include.tooltip | default: btn_type.tooltip %}
+
+{% comment %} text: an explicit "" means "no label"; omitted means use the type default {% endcomment %}
+{% if include.text == nil %}
+  {% assign btn_text = btn_type.text %}
+{% else %}
+  {% assign btn_text = include.text %}
+{% endif %}
+
 {% assign btn_is_email = false %}
 {% if btn_href contains "mailto:" %}
   {% assign btn_is_email = true %}
   {% assign e_parts = btn_href | remove: "mailto:" | split: "@" %}
 {% endif %}
 
-{% if button.link or button.icon or button.text %}
+{% if btn_href or btn_icon or btn_text %}
   <div class="button-wrapper">
     <a
       class="button{% if btn_is_email %} email-protected{% endif %}"
@@ -23,18 +46,18 @@
       {% else %}
         href="{{ btn_href | relative_url }}"
       {% endif %}
-      {% if button.tooltip %}
-        data-tooltip="{{ button.tooltip }}"
+      {% if btn_tooltip %}
+        data-tooltip="{{ btn_tooltip }}"
       {% endif %}
       data-style="{{ include.style }}"
       {% if include.flip %}
         data-flip
       {% endif %}
-      {% if button.text == "" or button.text == nil %}aria-label="{{ button.tooltip | default: button.type | default: "button" }}"{% endif %}
+      {% if btn_text == "" or btn_text == nil %}aria-label="{{ btn_tooltip | default: include.type | default: "button" }}"{% endif %}
     >
-      {% include icon.html icon=button.icon %}
-      {% if button.text and button.text != "" %}
-        <span>{{ button.text }}</span>
+      {% include icon.html icon=btn_icon %}
+      {% if btn_text and btn_text != "" %}
+        <span>{{ btn_text }}</span>
       {% endif %}
     </a>
   </div>

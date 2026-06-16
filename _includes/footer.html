@@ -24,10 +24,28 @@
         at Sungkyunkwan University.
       </p>
       <div class="footer-social">
+        {% comment %}
+          Build links directly from site.data.types so they work even when
+          custom plugins (hash_default) are not run by the site builder.
+        {% endcomment %}
         {% for link in site.links %}
           {% assign key = link[0] %}
           {% assign value = link[1] %}
-          {% include button.html type=key text="" link=value style="bare" %}
+          {% assign type = site.data.types[key] %}
+          {% assign href = type.link | replace: "$VALUE", value %}
+          <div class="button-wrapper">
+            <a
+              class="button"
+              href="{{ href }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-style="bare"
+              {% if type.tooltip %}data-tooltip="{{ type.tooltip }}"{% endif %}
+              aria-label="{{ type.tooltip | default: key }}"
+            >
+              {% include icon.html icon=type.icon %}
+            </a>
+          </div>
         {% endfor %}
       </div>
     </div>
