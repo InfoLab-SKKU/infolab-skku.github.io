@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/* ===========================================
+   BLOG INDEX — POST CARDS, FEATURED POST,
+   YEAR HEADINGS & GRID
+   =========================================== */
+/* year heading between groups */
+.blog-year {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 48px 0 22px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  text-align: left;
+}
+
+.blog-year::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: var(--light-gray);
+}
+
+/* card grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  text-align: left;
+}
+
+/* ---------- post card ---------- */
+.bc-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--background);
+  border: 1px solid var(--light-gray);
+  border-radius: calc(var(--rounded) * 1.5);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  text-align: left;
+}
+
+.bc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px var(--overlay);
+}
+
+.bc-image {
+  display: block;
+  position: relative;
+  aspect-ratio: 16/9;
+  background: var(--background-alt);
+  overflow: hidden;
+}
+
+.bc-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.bc-card:hover .bc-image img {
+  transform: scale(1.04);
+}
+
+.bc-image-placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--hero-1), var(--hero-3));
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 2.4rem;
+}
+
+.bc-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  padding: 20px 22px 22px;
+}
+
+.bc-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+}
+
+.bc-meta .icon {
+  font-size: 0.85em;
+  margin-right: 4px;
+}
+
+.bc-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.bc-title:hover {
+  color: var(--primary);
+}
+
+.bc-excerpt {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--gray);
+  margin: 0;
+  flex-grow: 1;
+}
+
+.bc-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.bc-foot .tags {
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.bc-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.bc-more .icon {
+  font-size: 0.8em;
+  transition: transform 0.25s ease;
+}
+
+.bc-more:hover .icon {
+  transform: translateX(3px);
+}
+
+/* ---------- featured (latest) post ---------- */
+.blog-featured {
+  margin: 36px 0 8px;
+}
+
+.blog-featured .bc-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+}
+
+.blog-featured .bc-image {
+  aspect-ratio: auto;
+  min-height: 300px;
+}
+
+.blog-featured .bc-body {
+  padding: 34px 38px;
+  justify-content: center;
+}
+
+.blog-featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  color: var(--primary);
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blog-featured .bc-title {
+  font-size: 1.45rem;
+  line-height: 1.35;
+}
+
+.blog-featured .bc-excerpt {
+  font-size: 0.95rem;
+  flex-grow: 0;
+}
+
+@media (max-width: 800px) {
+  .blog-featured .bc-card {
+    grid-template-columns: 1fr;
+  }
+  .blog-featured .bc-image {
+    aspect-ratio: 16/9;
+    min-height: 0;
+  }
+  .blog-featured .bc-body {
+    padding: 22px 24px;
+  }
+  .blog-featured .bc-title {
+    font-size: 1.2rem;
+  }
+}
+
+/*# sourceMappingURL=post-excerpt.css.map */
