@@ -8,12 +8,15 @@
    ===================================================================== */
 
 /* Tighten the oversized vertical gaps the global 60px section padding
-   adds between each team block (nav ↔ PI ↔ researchers …). */
-body section.background:has(.team-hero),
-body section.background:has(.team-jumpnav),
+   adds between each team block (nav ↔ PI ↔ researchers …).
+   The hero section keeps its 60px top (`.team-hero` offsets it with a
+   -60px margin), so only its bottom is trimmed. */
+body section.background:has(.team-jumpnav) {
+  padding-bottom: 10px;
+}
 body section.background:has(.team-section) {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .team-jumpnav {
@@ -25,7 +28,7 @@ body section.background:has(.team-section) {
   background: var(--background-alt);
   border: 1px solid var(--hairline);
   border-radius: var(--rounded-lg);
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
   max-width: 900px;
 }
 
@@ -218,7 +221,7 @@ body section.background:has(.team-section) {
 .team-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 16px 0 16px;
+  padding: 8px 0 8px;
 }
 
 .team-section-header {
