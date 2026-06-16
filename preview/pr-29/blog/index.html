@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="true">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Dark-mode pre-paint: prevent FOUC by setting data-dark before stylesheets evaluate -->
+  <script>document.documentElement.dataset.dark = localStorage.getItem('dark-mode') ?? 'false';</script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZSRZR84K0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RZSRZR84K0');
+</script>
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07377b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#05243a" media="(prefers-color-scheme: dark)">
+
+<title>Blog | Information Laboratory (InfoLab) @ SKKU</title>
+
+<link rel="canonical" href="https://infolab-skku.github.io/preview/pr-29/blog/">
+<link rel="icon" href="/preview/pr-29/images/icon.png">
+<link rel="apple-touch-icon" href="/preview/pr-29/images/icon.png">
+<link rel="manifest" href="/preview/pr-29/manifest.webmanifest">
+
+
+
+
+<meta name="title" content="Blog">
+<meta name="description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+
+<meta property="og:title" content="Blog">
+<meta property="og:site_name" content="Information Laboratory (InfoLab) @ SKKU">
+<meta property="og:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta property="og:url" content="https://infolab-skku.github.io/preview/pr-29/blog/">
+<meta property="og:image" content="https://infolab-skku.github.io/preview/pr-29/images/share.jpg">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:title" content="Blog">
+<meta name="twitter:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://infolab-skku.github.io/preview/pr-29/images/share.jpg">
+
+<meta name="twitter:url" content="https://infolab-skku.github.io/preview/pr-29/blog/">
+
+
+  <meta property="og:type" content="website">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "WebSite",
+    
+    "name": "Blog",
+    "description": "Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.",
+    "headline": "Blog",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "https://infolab-skku.github.io/preview/pr-29/preview/pr-29/images/icon.png" }
+    },
+    "url": "https://infolab-skku.github.io/preview/pr-29/blog/"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="https://infolab-skku.github.io/preview/pr-29/feed.xml">
+
+  <!-- IBM Plex Sans (body/UI), Space Grotesk (display), JetBrains Mono (mono accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+  <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"></noscript>
+
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/preview/pr-29/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/alert.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/all.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/anchor.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/bento.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/blog-post.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/body.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/bold.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/button.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/carousel.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/checkbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/citation.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/code.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/cols.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/contact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/feature.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/figure.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/float.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/font.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/footer.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/form.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/gallery.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/header.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/heading.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/homepage.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/icon.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/impact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/link.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/list.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/news.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/paragraph.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/portrait.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/post-excerpt.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/post-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/projects-page.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/pubs.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/quote.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/rule.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/scroll-progress.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/search-box.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/search-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/section.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/software.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/table.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/team.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/textbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/tooltip.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-29/_styles/util.css" rel="stylesheet">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<!-- include all css in styles folder -->
+
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/preview/pr-29/_scripts/anchors.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/carousel.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/dark-mode.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/email-protect.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/fetch-tags.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/gallery.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/image-fallback.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/neural-hero.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/news-filter.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/project-filtering.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/projects-filter.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/pub-thumbs.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/pubs-filter.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/scroll-progress.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/search.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/site-search.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/spotlight.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/sw-filter.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/sw-register.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/table-wrap.js" defer></script>
+
+  <script src="/preview/pr-29/_scripts/tooltip.js" defer></script>
+
+
+</head>
+
+  <body>
+    
+
+
+
+<!-- Skip to main content (accessibility) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Reading progress bar -->
+<div id="read-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Page reading progress"></div>
+
+<header class="background site-header">
+  <a href="/preview/pr-29/" class="home">
+    
+      <span class="logo">
+        
+          <img src="/preview/pr-29/images/logo.png" alt="logo">
+        
+      </span>
+    
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+      
+        <a href="/preview/pr-29/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
+    
+      
+        <a href="/preview/pr-29/projects/" data-tooltip="Projects in the lab">
+          Projects
+        </a>
+      
+    
+      
+        <a href="/preview/pr-29/pubs/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
+        <a href="/preview/pr-29/team/" data-tooltip="Meet the team">
+          Team
+        </a>
+      
+    
+      
+        <a href="/preview/pr-29/collaborators/" data-tooltip="Our collaborators">
+          Collaborators
+        </a>
+      
+    
+      
+        <a href="/preview/pr-29/software/" data-tooltip="Open-source code and datasets from InfoLab">
+          Software &amp; Datasets
+        </a>
+      
+    
+      
+        <a href="/preview/pr-29/blog/" data-tooltip="News, insights, and research updates from InfoLab">
+          Blog
+        </a>
+      
+    
+      
+        <a href="/preview/pr-29/photos/" data-tooltip="Lab photos and activities">
+          Gallery
+        </a>
+      
+    
+      
+        <a href="/preview/pr-29/contact/" data-tooltip="Contact information">
+          Contact
+        </a>
+      
+    
+  </nav>
+
+  <input class="dark-toggle" type="checkbox" aria-label="toggle dark mode" onchange="window.onDarkToggleChange(event)">
+</header>
+
+    <main id="main-content">
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - filter out blank sections
+-->
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!-- HERO -->
+<div class="team-hero">
+  <div class="team-hero-content">
+    <div class="team-hero-badge">InfoLab</div>
+    <h1 class="team-hero-title">Blog</h1>
+    <p class="team-hero-sub">Research updates, lab news, and insights from the InfoLab team at SKKU.</p>
+    <div class="team-hero-stats">
+      <div class="team-hstat">
+        <span class="team-hstat-num">6</span>
+        <span class="team-hstat-lbl">Posts</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <span class="team-hstat-num">2021–2026</span>
+        <span class="team-hstat-lbl">Years</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <span class="team-hstat-num">May 2026</span>
+        <span class="team-hstat-lbl">Latest</span>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<div class="search-box">
+  <label for="search-input" class="sr-only">Search items on this page</label>
+  <input id="search-input" type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
+  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
+    <i class="icon fa-solid fa-magnifying-glass"></i>
+  </button>
+</div>
+
+<div class="tags" data-link="https://infolab-skku.github.io/preview/pr-29/blog/">
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20ensemble"' class="tag" data-tooltip='Show items with the tag "ensemble"'>
+        ensemble
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20lab"' class="tag" data-tooltip='Show items with the tag "lab"'>
+        lab
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20machine%20learning"' class="tag" data-tooltip='Show items with the tag "machine learning"'>
+        machine learning
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20mm-des"' class="tag" data-tooltip='Show items with the tag "mm-des"'>
+        mm-des
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20multimodal"' class="tag" data-tooltip='Show items with the tag "multimodal"'>
+        multimodal
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20news"' class="tag" data-tooltip='Show items with the tag "news"'>
+        news
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20privacy"' class="tag" data-tooltip='Show items with the tag "privacy"'>
+        privacy
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20robustness"' class="tag" data-tooltip='Show items with the tag "robustness"'>
+        robustness
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20security"' class="tag" data-tooltip='Show items with the tag "security"'>
+        security
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog/?search="tag:%20vision"' class="tag" data-tooltip='Show items with the tag "vision"'>
+        vision
+      </a>
+    
+  </div>
+
+<div class="search-info"></div>
+
+<!-- Featured (latest) post -->
+
+<div class="blog-featured">
+  <div class="blog-featured-badge">
+    <i class="icon fa-solid fa-star"></i>
+    Latest Post
+  </div>
+  
+
+
+
+
+
+
+
+
+
+<article class="post-excerpt bc-card">
+  <a href="/preview/pr-29/blog/2026/05/17/visiondes-robust-explainable-dynamic-vision-ensemble.html" class="bc-image" tabindex="-1" aria-hidden="true">
+    
+      <img src="/preview/pr-29/images/blogs/desvision/post-thumbnail.png" alt="" loading="lazy" data-fallback="/preview/pr-29/images/photo.png">
+    
+  </a>
+
+  <div class="bc-body">
+    <div class="bc-meta">
+      <span class="bc-date">
+        <i class="icon fa-regular fa-calendar"></i>
+        May 17, 2026
+      </span>
+      <span class="bc-read">
+        <i class="icon fa-regular fa-clock"></i>
+        8 min read
+      </span>
+    </div>
+
+    <a href="/preview/pr-29/blog/2026/05/17/visiondes-robust-explainable-dynamic-vision-ensemble.html" class="bc-title">VisionDES: Robust and Explainable Dynamic Vision Ensemble</a>
+
+    
+    
+    <p class="bc-excerpt" data-search="  Accepted at ACM SIGKDD 2026   Jeju Island  South KoreaCode  github com InfoLab SKKU VisionDESOverviewDynamic Ensemble Selection  DES  has proven powerful for tabular data  yet remained largely unexplored in computer vision  VisionDES bridges this gap   using deep model embeddings  FAISS based nearest neighbor search  and similarity weighted competence estimation to dynamically pick the most reliable classifiers for each test image  The result  up to  20  robust accuracy under strong adversarial attacks  and  2 3  gains under distribution shift  with built in instance level interpretability             Metric      Result                  Robust accuracy gain  adversarial attacks          20                 Accuracy improvement  distribution shift          2 3                 Benchmarks evaluated      ImageNet  CIFAR 10 100  MedMNIST   3               Attack types tested      PGD  MIM  C amp W  AutoAttack      The Problem with Static EnsemblesModern computer vision systems underpin high stakes applications   autonomous driving  medical imaging  industrial inspection  and more  To boost reliability  researchers routinely turn to ensemble learning  combining multiple models so their errors cancel out  But the dominant approach is fundamentally static Soft voting  hard voting  stacking   all of these aggregate every model s prediction for every input  regardless of how appropriate each model is for that particular sample  Some models may excel at texture rich images but fail on blurry ones  Some may be robust to PGD perturbations but brittle under distribution shift  Under a static ensemble  a compromised or miscalibrated model still gets a full vote    Every model contributes to every prediction   regardless of whether that model is reliable for this specific input  This rigidity becomes acutely dangerous under adversarial attack  Once a subset of ensemble members is compromised  the corrupted predictions propagate directly into the final decision with no mechanism to reduce their influence Figure 1  An example illustrating VisionDES s advantage over static ensembles  Two base models  highlighted in red  have been attacked  Soft voting and hard voting produce wrong or uncertain results because the attacked models still carry full weight  VisionDES detects their reduced reliability via feature similarity and down weights them   correctly predicting class 6 The VisionDES ApproachVisionDES introduces a per sample classifier selection strategy grounded in Dynamic Ensemble Selection  DES    a paradigm previously applied almost exclusively to tabular data  This work is the first systematic adaptation of traditional DES for modern  high dimensional vision tasks The core insight  instead of asking  which model is globally best    VisionDES asks  which models are most reliable for this specific image   It answers by examining how each model behaves on semantically similar images   a Region of Competence  RoC    and weighting contributions accordingly   Key innovation  VisionDES uses DINO based ViT embeddings and FAISS approximate nearest neighbor search to construct a local Region of Competence in embedding space for each test sample   then dynamically selects and weights classifiers based on both their local accuracy and feature space consistency Three StagesStage 1   TrainingDiverse vision models  ViT  ResNet  EfficientNet  VGG  etc   are trained  DINO embeddings of a validation set  DSEL  are indexed in a FAISS store for fast retrieval Stage 2   SelectionFor each test image  its DINO embedding is computed and k 7 nearest neighbors are retrieved  defining the RoC  Classifiers are scored by their accuracy within that region using one of three selection rules   KNORA U  includes any classifier that correctly labels at least one RoC sample  weighted by competence score   KNORA E  the stricter rule   only classifiers that correctly label all RoC samples are selected   FIRE  handles indecision regions near class boundaries by requiring correct predictions from each class present in the RoC Stage 3   AggregationSelected classifiers are combined via similarity weighted voting  Models whose internal representations diverge from the RoC mean are automatically down weighted Figure 2  The VisionDES framework  At test time  the input image s DINO embedding is used to retrieve a Region of Competence from the DSEL store  Competence and similarity scores are jointly computed and fused to produce the final weighted prediction Similarity Weighted CompetenceThe most distinctive technical contribution of VisionDES is the similarity weighted competence mechanism  Classical DES methods assign weights based solely on a classifier s accuracy within the RoC  VisionDES adds a second signal  feature space consistency For each classifier c i  VisionDES computes the cosine similarity between the mean embedding of RoC samples  as seen through c i s penultimate layer  and the embedding of the test image itself  When a model has been adversarially perturbed  its internal representations become misaligned with those of clean neighboring samples   its similarity score drops  and so does its contribution The competence and similarity scores are fused via a convex combination w i t    α t   comp i t     1   α t    s i t The mixing coefficient α is estimated adaptively per test sample  based on the relative variability of each signal across the ensemble  This lets similarity dominate when it provides a strong discriminative signal  while falling back to competence when similarity scores are homogeneous Figure 3  Similarity weighted aggregation  For a benign image  a model s internal representation closely matches the RoC mean   similarity   0 9  For an adversarially perturbed input  the same model s representation drifts away   similarity drops to   0 5   automatically reducing its weight in the ensemble decision Instance Level InterpretabilityBeyond robustness  VisionDES is inherently interpretable  Because classifier selection is explicit and per sample  the framework reports   for any given prediction   exactly   Which models were selected  Each model s competence score and feature similarity score  Each model s assigned weight  Each model s top 5 class predictionsThe Region of Competence is also visualized  the nearest validation samples are shown alongside their L2 distances to the test image  giving a concrete picture of the neighborhood in which the decision was made Figure 4  Interpretability output for a test image under benign conditions  top  and under a PGD adversarial attack on the ViT model  bottom   Under attack  the ViT s feature similarity collapses from 0 847 to 0 062   its combined weight is automatically reduced  Unattacked models maintain stable similarity and correct predictions  The RoC structure is largely preserved thanks to DINO s robustness Experimental ResultsVisionDES is evaluated across three settings   clean conditions  adversarial attacks  and distribution shift   on ImageNet  CIFAR 10  CIFAR 100  and three MedMNIST datasets  RetinaMNIST  BloodMNIST  DermaMNIST  Clean PerformanceUnder standard conditions  VisionDES consistently matches or outperforms soft voting  hard voting  stacking  and DUS across all benchmarks  Notably  while soft and hard voting degrade when weaker models are added to the pool  VisionDES continues to improve   rising to 81 25  on ImageNet with six models  up from 80 95  with three  VisionDES can identify and down weight weaker classifiers per sample  rather than blending them in unconditionally Figure 5  Accuracy as a function of ensemble pool size under clean conditions on ImageNet 1000  CIFAR 100  RetinaMNIST  and DermaMNIST  VisionDES consistently outperforms static methods and DUS  and uniquely continues to improve as weaker models are added Adversarial RobustnessWe stress test VisionDES with ensemble adversarial attacks  increasing the fraction of attacked base models from 1 6 to 6 6  When 83 3  of models are under PGD attack on ImageNet             Method      Accuracy                    VisionDES          51 72                 DUS      39 45               Hard Voting      37 08               Stacking      33 53               Soft Voting      26 24       VisionDES also holds up across all four attack strategies  Under the C amp W attack with all models targeted  VisionDES achieves 81 55  accuracy vs  59 0   soft   61 9   hard   61 15   stacking   and 64 8   DUS    an advantage exceeding 16 percentage points Attack order also matters  targeting stronger models first produces more transferable adversarial examples  strongly impacting static ensembles  VisionDES remains stable across both orderings  confirming that dynamic selection and similarity weighted aggregation mitigate transferability effects Figure 6  Ensemble robustness under PGD attack  ε 0 05 for ImageNet  ε 8 255 for CIFAR 100   with the number of attacked base models increasing from 1 6 to 6 6  VisionDES maintains a significantly higher accuracy floor as more models are compromised Increasing Perturbation BudgetAs the adversarial budget grows  the performance gap widens  At ε 0 031  VisionDES maintains accuracy gains exceeding 13  over static ensembles  At ε 0 05 with half the pool attacked  VisionDES achieves over 20  higher accuracy than both static methods and DUS Figure 8  Ensemble accuracy on CIFAR 10 under PGD with ε    0 02  0 031  8 255   0 05   attacking models strongest to weakest  The advantage of VisionDES widens with both higher perturbation budget and more models attacked Distribution ShiftUnder natural distribution shift  CIFAR 10   CIFAR 10 1   the accuracy drop for VisionDES with seven models is 5 28   compared to 6 36   soft   6 57   hard   6 77   stacking   and 7 05   DUS   Under synthetic Gaussian noise  σ 0 04   VisionDES sees an 11 1 11 9  drop versus 13 14  for static ensembles   consistently the smallest degradation across pool sizes Ablation HighlightsWhy DINO DINO ViT achieves the highest cosine similarity between clean and perturbed embeddings   0 990 0 996   far outpacing ResNet 50  0 894  and CLIP ViT  0 969 0 979  under CNN generated noise  DINO s perturbation robustness keeps the Region of Competence stable even when base classifiers are under attack Neighborhood size k 7 provides a stable balance between local sensitivity  k 5  and neighborhood dilution  k 10   Label agreement is consistent across K NN  HNSW  and FAISS backends  confirming that embedding quality   not retrieval algorithm   is the dominant factor Inference overhead VisionDES requires  71 ms per sample on ImageNet vs   28 36 ms for static methods  This is substantially reduced by precomputing base model predictions on the DSEL set  FAISS IndexIVFPQ can compress the embedding index to just 1 67 MB for memory constrained deployment with no impact on inference time Larger pools The benefits scale with ensemble size  An 8 member ensemble maintains accuracy above 80  across all attack ratios on CIFAR 10  outperforming both static methods and smaller VisionDES pools ConclusionVisionDES demonstrates that the question for ensemble learning should not be  how many models   but  which models  for this image    By introducing Dynamic Ensemble Selection to computer vision   grounded in robust DINO embeddings  FAISS powered neighborhood search  and similarity weighted competence estimation   VisionDES consistently outperforms static ensembles and uncertainty based dynamic methods under clean  adversarial  and distribution shifted conditions Beyond raw performance  the framework s instance level interpretability makes its decisions auditable and trustworthy  which is essential for safety critical deployment  We see natural extensions toward multimodal ensembles  federated dynamic selection  and robust medical imaging systems We look forward to presenting this work at ACM SIGKDD 2026 in Jeju Island  South Korea Citation inproceedings visiondes2026   title        VisionDES  Robust and Explainable Dynamic Vision Ensemble    author       Firuz Juraev  Mohammed Abuhamad  Shaker El Sappagh  Simon S  Woo  Tamer Abuhmed    booktitle    Proceedings of the ACM SIGKDD International Conference               on Knowledge Discovery and Data Mining  KDD     year         2026  ">
+      
+  Accepted at ACM SIGKDD 2026 · Jeju Island, South Korea
+Code: github.com/InfoLab-SKKU/VisionDES
+
+
+    </p>
+
+    <div class="bc-foot">
+      
+        
+        
+
+
+  <div class="tags" data-link="https://infolab-skku.github.io/preview/pr-29/blog">
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20vision"' class="tag" data-tooltip='Show items with the tag "vision"'>
+        vision
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20ensemble"' class="tag" data-tooltip='Show items with the tag "ensemble"'>
+        ensemble
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20robustness"' class="tag" data-tooltip='Show items with the tag "robustness"'>
+        robustness
+      </a>
+    
+  </div>
+
+
+      
+      <a href="/preview/pr-29/blog/2026/05/17/visiondes-robust-explainable-dynamic-vision-ensemble.html" class="bc-more">
+        Read Article
+        <i class="icon fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</article>
+
+</div>
+
+<!-- All posts, grouped by year -->
+
+<h3 class="blog-year" id="2026">2026</h3>
+<div class="blog-grid">
+    
+      
+      
+      
+
+
+
+
+
+
+
+
+
+<article class="post-excerpt bc-card">
+  <a href="/preview/pr-29/blog/2026/05/12/mm-des-enhancing-multimodal-clinical-prediction.html" class="bc-image" tabindex="-1" aria-hidden="true">
+    
+      <img src="/preview/pr-29/images/blogs/mmdes/post-thumbnail.png" alt="" loading="lazy" data-fallback="/preview/pr-29/images/photo.png">
+    
+  </a>
+
+  <div class="bc-body">
+    <div class="bc-meta">
+      <span class="bc-date">
+        <i class="icon fa-regular fa-calendar"></i>
+        May 12, 2026
+      </span>
+      <span class="bc-read">
+        <i class="icon fa-regular fa-clock"></i>
+        7 min read
+      </span>
+    </div>
+
+    <a href="/preview/pr-29/blog/2026/05/12/mm-des-enhancing-multimodal-clinical-prediction.html" class="bc-title">MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive Embeddings and Dynamic Ensembles</a>
+
+    
+    
+    <p class="bc-excerpt" data-search="  Accepted at ICPR 2026Authors  Firuz Juraev  Abdenour Soubih  Tamer Abuhmed   Sungkyunkwan UniversityCode  github com InfoLab SKKU mm desOverviewMultimodal learning is crucial in medical applications  where patient data spans heterogeneous sources   skin images  physiological signals  radiology reports  and clinical notes  While multimodal ensemble models exploit complementary information  they rely on static model sets and assume all modalities are available at inference time  MM DES is the first multimodal dynamic ensemble selection framework that identifies the most competent subset of models for each individual test sample  using contrastive multimodal representations to construct a sample wise region of competence             Metric      Result                  Accuracy on PAD UFES 20        85 22     vs  83 26  best baseline               AUROC on MIMIC IV  all modalities         86 14                 AUROC gain over AutoPrognosis M  MIMIC IV          4 13                 Datasets evaluated      PAD UFES 20  MIMIC IV  Sepsis               Modality types      Image   Tabular   Clinical Text      The Problem with Static Multimodal EnsemblesIn real clinical workflows  diagnostic decisions synthesize diverse data streams  a dermatologist reviews a smartphone photograph alongside patient history  an intensivist integrates radiology reports  vital sign trends  and lab values  Multimodal machine learning mirrors this reality   but state of the art approaches share a critical assumption  that the same set of models  with the same weights  is appropriate for every patient This assumption breaks down in practice  Modality quality varies across patients  Tabular features may be informative for one patient but noisy for another  An image based classifier may be reliable for certain lesion types yet unreliable for others  And in the real world  modalities are frequently missing or corrupted   a patient may arrive without imaging  or a sensor may fail    Static ensembles apply the same models to every patient   regardless of which modalities are reliable for this individual  Dynamic Ensemble Selection  DES  addresses this by selecting and weighting classifiers at inference time  based on their performance on similar training samples  But DES has been studied almost exclusively for unimodal  tabular settings  MM DES is the first framework to bring DES into the multimodal clinical domain The MM DES FrameworkMM DES operates in two stages  a multimodal contrastive pretraining stage to build a shared embedding space  and a dynamic ensemble selection stage that performs sample adaptive inference using modality aware Regions of Competence Figure 1  The MM DES framework  Stage I  top   modality specific encoders are jointly pretrained with the Symile contrastive objective to produce aligned multimodal embeddings  stored in a FAISS indexed DSEL memory  Stage II  bottom   at inference time  modality wise nearest neighbor retrieval constructs a Region of Competence  used to estimate classifier competence and produce a competence weighted multimodal prediction Stage I   Multimodal Contrastive PretrainingModality specific encoders  image CNN  tabular MLP  language transformer  are jointly trained using the Symile contrastive objective  Unlike CLIP style pairwise alignment  Symile generalizes contrastive learning to arbitrarily many modalities via multilinear inner products  treating each modality symmetrically as an anchor L Symile    1 M  Σ m  1 B  Σ i CE ℓ i  m   i After convergence  the pretrained model is frozen and used to embed a Dynamic Selection Dataset  DSEL   which serves as the reference memory for downstream competence estimation Why Symile over CLIP  CLIP is architecturally limited to two modalities  making it unsuitable for MIMIC IV s three modality setting  Ablation confirms Symile s advantage across all metrics on PAD UFES 20  AUROC 96 99  vs 96 94   Stage II   Multimodal Dynamic Ensemble SelectionFor each test patient   Embedding  the patient s available modalities are encoded via the pretrained CEM  producing L2 normalized per modality query embeddings   RoC Construction  independent FAISS searches in each modality s embedding space retrieve the top K most similar DSEL patients  with similarity scores aggregated across modalities using modality specific weights   Competence Estimation  each classifier is scored by its local accuracy within the RoC   how often it correctly predicted the RoC patients  labels   Weighted Fusion  predictions are combined via competence  and modality weighted aggregation  p q    w m   κ j  m    c j  m  x q  m    Missing modality handling  When a modality is absent  MM DES zeros out its weight and constructs the RoC from available modalities only   no imputation  no retraining  This makes the framework naturally robust to partial and complete modality absence Datasets and Base ClassifiersPAD UFES 20   Skin Lesion ClassificationA publicly available dataset of 2 298 smartphone acquired skin lesion images paired with patient metadata across six lesion categories  BCC  MEL  SCC  ACK  NEV  SEK   with all cancer cases biopsy confirmed Classifier pool  10 models    Image  ResNet 18  ResNet 34  EfficientNet B0  MobileNet V2  RegNet  Tabular  Random Forest  CatBoost  XGBoost  MLP  SVCBest single models  CatBoost  82 17  acc  95 86  AUROC    ResNet 18  76 96  acc  92 60  AUROC MIMIC IV   Sepsis PredictionA balanced cohort of 8 156 patients  4 078 sepsis   4 078 non sepsis  from the MIMIC IV clinical database  combining three modalities  radiology report text  INDICATION section   structured vital sign summaries  and chest X ray images Classifier pool  11 models    Text  ClinicalBERT  PubMedBERT  BioBERT  Tabular  CatBoost  XGBoost  Random Forest  MLP  SVC  Image  ViT Tiny  ResNet 18  MobileNet V2ResultsPAD UFES 20MM DES achieves the best results across all four metrics             Model      Modality      Accuracy      F1      Bal Acc      AUROC                    MM DES  Ours           MM          85 22           79 73           76 20           96 99                 AutoPrognosis M      MM      83 26       77 65       74 51       96 70               Static Ensemble  Soft       Tabular      82 39       71 82       66 91       96 07               Best Tab  CatBoost       Tabular      82 17       74 40       70 16       95 86               Best Img  ResNet 18       Image      76 96       70 42       66 13       92 60       The gain in balanced accuracy   1 69  over AutoPrognosis M  is particularly meaningful  dynamic  locally estimated classifier selection helps overcome class imbalance that static ensembles struggle with MIMIC IV Sepsis Prediction            Model      Modality      Accuracy      F1      Bal Acc      AUROC                    MM DES  Ours           MM LTI          77 17           76 99           77 18           86 14                   MM DES  Ours           MM LT          75 98           75 78           75 98           83 86                 AutoPrognosis M      MM LTI      74 34       74 11       74 32       82 01               AutoPrognosis M      MM LT      73 68       73 40       73 68       80 42               Static Ensemble  Soft       Text      72 84       73 92       72 84       80 13               Best Tab  CatBoost       Tabular      71 65       71 56       71 65       77 72       MM LT   language   tabular  MM LTI   language   tabular   image Robustness to Missing ModalitiesA defining challenge in clinical deployment is modality absence  MM DES handles this gracefully   by constructing the RoC from whatever modalities are available PAD UFES 20            Setting      Missing      Accuracy      F1      Bal Acc      AUROC                  Full      None      85 22       79 73       76 20       96 99               Image only      Tabular  100        77 61       70 40       67 81       93 20               Tabular only      Image  100        82 83       72 65       67 71       96 20               Partial      Tabular  20        82 10       76 20       72 90       95 40               Partial      Image  20        84 10       78 10       74 80       96 50       Under a realistic 20  partial missing rate  performance remains within 1 3  of the fully observed baseline  The system does not over rely on any single modality Instance Level InterpretabilityMM DES provides multi level interpretability for every prediction Model contributions  for each classifier in the pool  MM DES reports the prediction  competence score κ  and assigned weight w   revealing which models the ensemble relied on and why Modality level insights  the applied modality weights are reported explicitly  showing whether the final decision was driven by imaging  tabular variables  or clinical text Feature level explanations   Image models   Grad CAM highlights salient lesion regions  Tabular models   SHAP quantifies feature contributions  e g   smoking history  age  vital signs   Language models   CAPTUM attributes importance to specific tokens in clinical notesFigure 3  Interpretability output for a PAD UFES 20 test sample  Despite image models initially receiving higher weights  competence analysis reveals that tabular models perform better locally and correctly drive the prediction  SHAP shows smoking history and age are the most important features  Grad CAM highlights the lesion region Ablation HighlightsNeighborhood size  k   Performance peaks at k 10 and plateaus  Smaller neighborhoods  k 5  introduce instability  larger ones  k 15  dilute locality  Default  k 10             k      Accuracy      F1      Bal Acc      AUROC                  5      84 78       79 30       75 52       96 43               7      85 00       79 24       75 55       96 64                 10          85 22           79 73           76 20           96 99                 12      85 03       79 63       76 11       96 94               15      85 03       79 63       76 11       96 94       Modality weights  Emphasizing tabular slightly more  0 4 image  0 6 tabular  yields the best results for PAD UFES 20  reflecting the higher discriminative power of structured clinical variables             Img      Tab      Accuracy      AUROC                  0 2      0 8      84 35       94 51               0 3      0 7      84 78       95 02                 0 4          0 6          85 22           96 99                 0 5      0 5      84 13       95 91               0 6      0 4      84 04       94 98       Search backend  FAISS  67 ms  1 8 MB  outperforms both HNSW  70 ms  2 1 MB  and brute force K NN  970 ms  1 8 MB  on latency   the clear choice for clinical deployment ConclusionMM DES demonstrates that Dynamic Ensemble Selection  previously confined to unimodal tabular settings  can be successfully extended to multimodal clinical prediction  By grounding the Region of Competence in contrastive multimodal embeddings  MM DES achieves sample adaptive model selection that naturally handles missing modalities  improves over static multimodal ensembles  and remains interpretable at the instance level The results across PAD UFES 20 and MIMIC IV show consistent improvements over AutoPrognosis M and unimodal baselines  with the largest gains in challenging missing modality and class imbalanced scenarios   precisely the conditions most common in real clinical deployment Future directions  adaptive per sample modality weighting  uncertainty aware DES parameter selection  richer modality contribution analyses  and extension to larger clinical datasets Citation inproceedings mmdes2026   title        MM DES  Enhancing Multimodal Clinical Prediction               with Joint Contrastive Embeddings and Dynamic Ensembles    author       Juraev  Firuz and Soubih  Abdenour and Abuhmed  Tamer    booktitle    Proceedings of the International Conference on               Pattern Recognition  ICPR     year         2026  This work was supported by the National Research Foundation of Korea  NRF  grant RS 2021 NR058558 and IITP ICT Creative Consilience Program  IITP 2026 RS 2020 II201821  ">
+      
+  Accepted at ICPR 2026
+Authors: Firuz Juraev, Abdenour Soubih, Tamer Abuhmed · Sungkyunkwan University
+Code: github.com/InfoLab-SKKU/mm-des
+
+
+    </p>
+
+    <div class="bc-foot">
+      
+        
+        
+
+
+  <div class="tags" data-link="https://infolab-skku.github.io/preview/pr-29/blog">
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20mm-des"' class="tag" data-tooltip='Show items with the tag "mm-des"'>
+        mm-des
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20multimodal"' class="tag" data-tooltip='Show items with the tag "multimodal"'>
+        multimodal
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20clinical"' class="tag" data-tooltip='Show items with the tag "clinical"'>
+        clinical
+      </a>
+    
+  </div>
+
+
+      
+      <a href="/preview/pr-29/blog/2026/05/12/mm-des-enhancing-multimodal-clinical-prediction.html" class="bc-more">
+        Read Article
+        <i class="icon fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</article>
+
+    
+      
+      
+
+
+
+
+
+
+
+
+
+<article class="post-excerpt bc-card">
+  <a href="/preview/pr-29/blog/2026/04/20/mri-deeptrust-trustworthy-alzheimers-diagnosis.html" class="bc-image" tabindex="-1" aria-hidden="true">
+    
+      <img src="/preview/pr-29/images/blogs/MRI-DeepTrust/post-thumbnail-ml.png" alt="" loading="lazy" data-fallback="/preview/pr-29/images/photo.png">
+    
+  </a>
+
+  <div class="bc-body">
+    <div class="bc-meta">
+      <span class="bc-date">
+        <i class="icon fa-regular fa-calendar"></i>
+        Apr 20, 2026
+      </span>
+      <span class="bc-read">
+        <i class="icon fa-regular fa-clock"></i>
+        8 min read
+      </span>
+    </div>
+
+    <a href="/preview/pr-29/blog/2026/04/20/mri-deeptrust-trustworthy-alzheimers-diagnosis.html" class="bc-title">MRI-DeepTrust: Trustworthy Alzheimer's Diagnosis Integrating Robustness, Fairness, and Explainability</a>
+
+    
+    
+    <p class="bc-excerpt" data-search="  Published in  Engineering Applications of Artificial Intelligence  Vol  172  2026   Article 114291DOI  10 1016 j engappai 2026 114291Authors  Maria Bashir  Nasir Rahim  Shaker El Sappagh  Omar Amin El Serafy  Tamer AbuhmedAffiliations  Sungkyunkwan University   Gachon University   Galala University   Cairo UniversityOverviewMild Cognitive Impairment  MCI  sits on the transitional continuum between healthy aging and Alzheimer s Disease  Identifying which patients will progress  pMCI  versus remain stable  sMCI  is among the most clinically consequential and technically difficult problems in neuroimaging AI  MRI DeepTrust addresses this challenge through a tissue aware deep ensemble framework that independently models Gray Matter  GM   White Matter  WM   and Cerebrospinal Fluid  CSF  via Bayesian optimized CNNs   while simultaneously and systematically evaluating three pillars of trustworthy AI  adversarial robustness  gender based fairness  and visual explainability             Metric      Result                  mAUC on ADNI  proposed ensemble         89                 Accuracy on ADNI  clean conditions         88                 Accuracy after adversarial attack  PGD         81                 Demographic Parity gap  proposed EL         0 01                External validation on NACC  mAUC         81         Why Trustworthiness Matters for Alzheimer s DiagnosisDeep learning models for neuroimaging diagnosis have achieved remarkable accuracy on benchmark datasets  But accuracy alone is insufficient for clinical deployment  A diagnostic system that performs well on average may still fail for certain demographic subgroups  collapse under minor image perturbations  or provide predictions that clinicians cannot interpret or verify  In Alzheimer s Disease prognosis  where diagnostic errors influence long term treatment planning and patient counseling  these failures carry serious consequences Existing frameworks typically address one pillar of trustworthiness in isolation  MRI DeepTrust fills this gap with a system designed from the ground up to be accurate  robust  fair  and explainable simultaneously   a clinician in the loop workflow ensures that visual explainability outputs and model stability are qualitatively reviewed throughout    No prior study combines GM  WM  and CSF specific CNNs optimized via Bayesian search with unified assessments of adversarial robustness  demographic fairness  and clinically guided visual interpretability in a single end to end diagnostic framework  Three Pillars  Robustness   PGD based adversarial attack evaluation  ε 0 01  10 steps  plus adversarial training at 20   35   and 50  augmentation ratios  The ensemble reduces mAUC degradation to  13  versus  16 18  for single models   Fairness   Gender based evaluation using Demographic Parity  DP   Equal Opportunity  EO   and Group Sufficiency  GS   The proposed EL achieves DP 0 01  EO 0 02  GS 0 09   the lowest disparities across all models   Explainability   Dual level  3D brain surface renderings for global structural context  plus 2D Grad CAM MedCAM attention maps at the slice level   reviewed by a neurologist in a clinician in the loop workflow The MRI DeepTrust FrameworkFigure 1  Block diagram of MRI DeepTrust  MRI scans are preprocessed and segmented into GM  WM  and CSF  Separate Bayesian optimized CNNs are trained per tissue  then fused through an ensemble classifier  Four dedicated modules evaluate trustworthiness  PGD robustness  adversarial training defense  gender fairness  and Grad CAM explainability  External validation on NACC assesses cross cohort generalizability MRI Preprocessing PipelineEach scan undergoes a standardized six step pipeline before tissue segmentation   Motion correction  amp  reorientation   FSLEyes inspection and fslreorient2std correction  N4 bias field correction   ANTs N4 algorithm corrects intensity inhomogeneities  MNI152 registration   Affine registration via FLIRT for spatial correspondence  Skull stripping   BET2 from FSL with segmentation based refinement  Tissue segmentation   FSL 5 0 produces binary masks for GM  WM  and CSF  Quality control   All masks visually inspected for anatomical accuracyFigure 4  The complete MRI preprocessing pipeline from raw T1 weighted scan to tissue segmented GM  WM  and CSF masks Bayesian Optimized Tissue Specific CNNsA separate CNN is independently designed for each tissue type  Bayesian optimization searches over   Convolutional depth  4 10 layers  Filter counts  96 320  Kernel sizes  3 3 or 5 5  Dropout rates  0 1 0 5  Dense layer widths  128 512  Learning rates  1e 2  1e 3  1e 4This yields three architecturally distinct  complementary networks  see Table 1 in the paper for layer wise configurations   After optimization  the final Softmax layers are removed  networks are frozen  and their representations are concatenated and passed through fully connected layers forming the ensemble classifier Figure 3  The proposed ensemble framework  Three tissue specific CNNs  WM  GM  CSF  are trained independently  frozen  and fused through a fully connected ensemble classifier Eight Experiments   One Unified EvaluationFigure 5  The structured eight experiment evaluation pipeline             Experiment      Focus      Key Finding                    Exp 1        Tissue specific CNNs      InceptionV3 best for GM  proposed model consistently competitive                Exp 2        Ensemble learning      Proposed EL reaches 89  mAUC  heterogeneous  gt  homogeneous                Exp 3        Tissue ablation      GM removal   20 25  mAUC  CSF removal   5 12  mAUC                Exp 4        PGD attack      Ensemble degrades  13  vs   16 18  for base models                Exp 5        Adversarial training      Proposed EL  84  mAUC at 50  augmentation ratio                Exp 6        Gender fairness      DP 0 01  EO 0 02  GS 0 09  lowest across all models                 Exp 7        Explainability      pMCI  focal  anatomically coherent activations  sMCI  diffuse                Exp 8        NACC external validation      81  mAUC without fine tuning  no catastrophic degradation      ResultsTissue Specific and Ensemble PerformanceFigure 6  mAUC scores per tissue  GM  WM  CSF  across CNN architectures  EfficientNet and the proposed model maintain mAUC above 80  across all tissues  while other architectures exhibit tissue dependent variability Ensemble comparison  ADNI  Accuracy              Model      Accuracy      F1      AUC                    Proposed EL  Heterogeneous           88           90           89                 Inception   Efficient   DenseNet      89       88       87               Ensemble DenseNet 121      86       86       85               Ensemble EfficientNet      81       84       84               Ensemble VGG 16      78       81       82       Figure 7  mAUC across base models  homogeneous  and heterogeneous ensembles  Heterogeneous configurations consistently provide the largest gains Tissue AblationAll three tissues contribute meaningfully  but their roles differ Figure 8  mAUC degradation when individual tissues are excluded  GM removal causes the largest drop   20 to  25    confirming its dominant role in discriminating pMCI from sMCI   GM removed   20 25  mAUC   dominant contribution to classification  WM removed  moderate degradation   deep and periventricular structural patterns  CSF removed   5 12  mAUC   ventricular and sulcal patterns still informativeAdversarial RobustnessFigure 9  mAUC degradation under PGD attacks  The proposed EL  rightmost  exhibits the smallest drop   11    versus  16 18  for base architectures and  13  for the heterogeneous ensemble Figure 10  mAUC under adversarial training at 20   35   and 50  augmentation  The proposed EL improves monotonically and reaches 84  mAUC at 50  augmentation   the only model that does not plateau Adversarial training at 50  augmentation             Model      Accuracy      mAUC                    Proposed EL          85           84                 Inception   Efficient   DenseNet      83       82               Proposed base  GM       78       77               EfficientNet base  GM       75       73       Gender Based FairnessFigure 11  Demographic Parity  DP   Equal Opportunity  EO   and Group Sufficiency  GS  across all models  Lower values indicate smaller gender disparities  The proposed EL achieves the lowest values across all three metrics             Model      DP      EO      GS                    Proposed EL          0 01          0 02          0 09                Proposed base  GM       0 02      0 04      0 16              InceptionV3  GM       0 08      0 13      0 20              EfficientNetV2  WM       0 10      0 12      0 17              VGG 16  GM       0 12      0 17      0 21              DenseNet 121  GM       0 18      0 20      0 25      Since all models were trained on identical data  fairness improvements stem from architectural design  tissue specific learning   ensemble fusion  rather than dataset composition Clinician Reviewed ExplainabilityMRI DeepTrust employs a dual level explainability strategy Global level   3D surface rendering visualizes brain tissues across GM  WM  and CSF  offering anatomically meaningful views of cortical and subcortical regions commonly affected during disease progression Local level   2D Grad CAM MedCAM attention maps highlight voxels within individual MRI slices that most strongly influence each prediction  overlaid directly on the original image Both outputs were reviewed by a neurologist in a clinician in the loop workflow  confirming anatomical consistency and supporting translational feasibility Figure 12  Tissue specific Grad CAM explainability maps for sMCI  top rows  and pMCI  bottom rows   sMCI attention patterns are diffuse and spatially distributed  pMCI patterns are stronger  more focal  and anatomically structured   involving the hippocampus  amygdala  fusiform gyrus  superior middle temporal gyri  and periventricular regions  3D surface renderings  rightmost  confirm the progressive shift from uncertain to decisive network attention as cognitive impairment advances External Validation on NACCThe ADNI trained framework is directly evaluated on the independent NACC cohort   without fine tuning   alongside ViT and CNN baselines  NACC presents greater scanner variability  demographic diversity  and labeling heterogeneity than ADNI Figure 13  mAUC under internal  ADNI ADNI  and external  ADNI NACC  evaluation  The proposed framework consistently outperforms competing models in both settings             Model  Tissue       ADNI mAUC      NACC mAUC      Drop                    Proposed EL          89           81          8               EfficientNetV2  GM       80       77        3               InceptionV3  GM       82       76        6               ViT  GM       81       74        7               VGG 16  GM       72       66        6       Performance decline is consistent with expected domain shift   no catastrophic degradation   reinforcing the framework s translational potential State of the Art ComparisonMRI DeepTrust is the only framework in the field to simultaneously evaluate all three trustworthiness pillars  Exp   Explainability  Fair   Fairness  Rob   Robustness              Study      Method      Accuracy      Exp      Fair      Rob                    MRI DeepTrust  Ours           MRI DeepTrust          88    81                                       Leonardsen et al  2024      CNN   LRP      84                                    Vlontzou et al  2025      SVM      87                                    Tong et al  2025      ML Models      76                                    Zhang et al  2023      DAUF      76                                    Ahmed et al  2019      EL Model      86                             88  before adversarial attack   81  after adversarial attack  ε 0 01  PGD  ConclusionMRI DeepTrust demonstrates that it is possible   and necessary   to design neuroimaging AI systems that are simultaneously accurate  robust  fair  and explainable  By independently modeling GM  WM  and CSF through Bayesian optimized CNNs and fusing their representations through a heterogeneous ensemble  the framework captures complementary tissue specific disease signatures while naturally reducing demographic disparities and improving resilience to adversarial perturbations The clinician in the loop validation confirms anatomical consistency of the model s attention patterns  bridging the gap between algorithmic performance and clinical relevance  External validation on NACC demonstrates stable cross cohort generalization   a prerequisite for real world deployment Future directions  extending fairness to ethnicity and socioeconomic attributes  stronger adversarial defenses  multimodal fusion with longitudinal and genetic data  validation across larger multi center cohorts Citation article mrideeptrust2026   title      Trustworthy Alzheimer s diagnosis  Integrating robustness  fairness              and explainability in neuroimaging based deep ensemble framework    author     Bashir  Maria and Rahim  Nasir and El Sappagh  Shaker and             El Serafy  Omar Amin and Abuhmed  Tamer    journal    Engineering Applications of Artificial Intelligence    volume     172    pages      114291    year       2026    doi        10 1016 j engappai 2026 114291  Supported by the National Research Foundation of Korea  NRF  grant RS 2021 NR058558  IITP ICT Creative Consilience Program  IITP 2025 RS 2020 II201821   and AI Platform grant No  2022 0 00688 ">
+      
+  Published in: Engineering Applications of Artificial Intelligence, Vol. 172 (2026), Article 114291
+DOI: 10.1016/j.engappai.2026.114291
+Authors: Maria Bashir, Nasir Rahim, Sha...
+    </p>
+
+    <div class="bc-foot">
+      
+        
+        
+
+
+  <div class="tags" data-link="https://infolab-skku.github.io/preview/pr-29/blog">
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20MRI-DeepTrust"' class="tag" data-tooltip='Show items with the tag "MRI-DeepTrust"'>
+        MRI-DeepTrust
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20alzheimer"' class="tag" data-tooltip='Show items with the tag "alzheimer"'>
+        alzheimer
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20robustness"' class="tag" data-tooltip='Show items with the tag "robustness"'>
+        robustness
+      </a>
+    
+  </div>
+
+
+      
+      <a href="/preview/pr-29/blog/2026/04/20/mri-deeptrust-trustworthy-alzheimers-diagnosis.html" class="bc-more">
+        Read Article
+        <i class="icon fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</article>
+
+    
+  </div>
+
+<h3 class="blog-year" id="2025">2025</h3>
+<div class="blog-grid">
+    
+      
+      
+
+
+
+
+
+
+
+
+
+<article class="post-excerpt bc-card">
+  <a href="/preview/pr-29/2025/01/10/federated-learning-robustness.html" class="bc-image" tabindex="-1" aria-hidden="true">
+    
+      <img src="/preview/pr-29/images/thumbnails/FLIMCOM25.png" alt="" loading="lazy" data-fallback="/preview/pr-29/images/photo.png">
+    
+  </a>
+
+  <div class="bc-body">
+    <div class="bc-meta">
+      <span class="bc-date">
+        <i class="icon fa-regular fa-calendar"></i>
+        Jan 10, 2025
+      </span>
+      <span class="bc-read">
+        <i class="icon fa-regular fa-clock"></i>
+        1 min read
+      </span>
+    </div>
+
+    <a href="/preview/pr-29/2025/01/10/federated-learning-robustness.html" class="bc-title">New Paper: Federated Learning Under Data Heterogeneity</a>
+
+    
+    
+    <p class="bc-excerpt" data-search="We are excited to share our latest paper accepted at IMCOM 2025  Towards Robust Federated Learning  Investigating Poisoning Attacks Under Clients Data Heterogeneity Federated learning enables collaborative model training across distributed clients without sharing raw data   but it remains vulnerable to poisoning attacks  especially when client data distributions are heterogeneous Our work systematically evaluates state of the art poisoning attack strategies under realistic non IID data settings  We analyze how data heterogeneity affects attack success rates and propose defenses tailored to this challenging scenario Key contributions   Comprehensive evaluation of poisoning attacks under varying degrees of data heterogeneity  Analysis of why standard defenses  FedAvg   median trimmed mean aggregation  fail in non IID settings  Lightweight mitigation strategy that degrades attack success without sacrificing model accuracyThe full paper is available on our publications page ">
+      We are excited to share our latest paper accepted at IMCOM 2025: Towards Robust Federated Learning: Investigating Poisoning Attacks Under Clients Data Heterogeneity.
+
+    </p>
+
+    <div class="bc-foot">
+      
+        
+        
+
+
+  <div class="tags" data-link="https://infolab-skku.github.io/preview/pr-29/blog">
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20federated%20learning"' class="tag" data-tooltip='Show items with the tag "federated learning"'>
+        federated learning
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20security"' class="tag" data-tooltip='Show items with the tag "security"'>
+        security
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20machine%20learning"' class="tag" data-tooltip='Show items with the tag "machine learning"'>
+        machine learning
+      </a>
+    
+  </div>
+
+
+      
+      <a href="/preview/pr-29/2025/01/10/federated-learning-robustness.html" class="bc-more">
+        Read Article
+        <i class="icon fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</article>
+
+    
+  </div>
+
+<h3 class="blog-year" id="2022">2022</h3>
+<div class="blog-grid">
+    
+      
+      
+
+
+
+
+
+
+
+
+
+<article class="post-excerpt bc-card">
+  <a href="/preview/pr-29/2022/02/01/iitp-privacy-grant.html" class="bc-image" tabindex="-1" aria-hidden="true">
+    
+      <span class="bc-image-placeholder">
+        <i class="icon fa-regular fa-newspaper"></i>
+      </span>
+    
+  </a>
+
+  <div class="bc-body">
+    <div class="bc-meta">
+      <span class="bc-date">
+        <i class="icon fa-regular fa-calendar"></i>
+        Feb 01, 2022
+      </span>
+      <span class="bc-read">
+        <i class="icon fa-regular fa-clock"></i>
+        1 min read
+      </span>
+    </div>
+
+    <a href="/preview/pr-29/2022/02/01/iitp-privacy-grant.html" class="bc-title">InfoLab Receives IITP Grant for Privacy-Adaptive AI Research</a>
+
+    
+    
+    <p class="bc-excerpt" data-search="InfoLab has been awarded a research grant from the Institute of Information and Communications Technology Planning and Evaluation  IITP  to develop Policy Adaptive AI Privacy systems  running through December 2027 As AI systems become more deeply integrated into critical infrastructure  healthcare  and personal services  ensuring that they respect user privacy while remaining useful is one of the central challenges of our field This project develops AI frameworks that automatically adapt their privacy guarantees in response to changing policy contexts  regulatory requirements  and user preferences Research goals   Formal frameworks for policy adaptive differential privacy  Real time privacy budget allocation in federated and distributed learning settings  Evaluation against GDPR and Korean PIPA regulatory frameworksWe thank IITP for their continued support of fundamental AI safety research ">
+      InfoLab has been awarded a research grant from the Institute of Information and Communications Technology Planning and Evaluation (IITP) to develop Policy-Adaptive AI Privacy sy...
+    </p>
+
+    <div class="bc-foot">
+      
+        
+        
+
+
+  <div class="tags" data-link="https://infolab-skku.github.io/preview/pr-29/blog">
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20funding"' class="tag" data-tooltip='Show items with the tag "funding"'>
+        funding
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20privacy"' class="tag" data-tooltip='Show items with the tag "privacy"'>
+        privacy
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20AI"' class="tag" data-tooltip='Show items with the tag "AI"'>
+        AI
+      </a>
+    
+  </div>
+
+
+      
+      <a href="/preview/pr-29/2022/02/01/iitp-privacy-grant.html" class="bc-more">
+        Read Article
+        <i class="icon fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</article>
+
+    
+  </div>
+
+<h3 class="blog-year" id="2021">2021</h3>
+<div class="blog-grid">
+    
+      
+      
+
+
+
+
+
+
+
+
+
+<article class="post-excerpt bc-card">
+  <a href="/preview/pr-29/2021/03/01/welcome-to-infolab-blog.html" class="bc-image" tabindex="-1" aria-hidden="true">
+    
+      <span class="bc-image-placeholder">
+        <i class="icon fa-regular fa-newspaper"></i>
+      </span>
+    
+  </a>
+
+  <div class="bc-body">
+    <div class="bc-meta">
+      <span class="bc-date">
+        <i class="icon fa-regular fa-calendar"></i>
+        Mar 01, 2021
+      </span>
+      <span class="bc-read">
+        <i class="icon fa-regular fa-clock"></i>
+        1 min read
+      </span>
+    </div>
+
+    <a href="/preview/pr-29/2021/03/01/welcome-to-infolab-blog.html" class="bc-title">Welcome to the InfoLab Blog</a>
+
+    
+    
+    <p class="bc-excerpt" data-search="Welcome to the official InfoLab blog  This space will serve as our home for research updates  paper announcements  lab news  and occasional deep dives into topics at the frontier of AI security and biomedical AI What you can expect here   Paper announcements   plain language summaries of our published research  Lab news   welcomes for new members  graduations  conference trips  and milestones  Research insights   longer form posts on AI security  biomedical AI  and trustworthy ML  Open source releases   announcements for new code and datasets from InfoLabInfoLab at Sungkyunkwan University  SKKU  conducts research at the intersection of AI security  adversarial machine learning  biomedical AI  and explainable AI  Visit our Team and Contact pages to learn more ">
+      Welcome to the official InfoLab blog. This space will serve as our home for research updates, paper announcements, lab news, and occasional deep-dives into topics at the frontie...
+    </p>
+
+    <div class="bc-foot">
+      
+        
+        
+
+
+  <div class="tags" data-link="https://infolab-skku.github.io/preview/pr-29/blog">
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20news"' class="tag" data-tooltip='Show items with the tag "news"'>
+        news
+      </a>
+    
+      <a href='https://infolab-skku.github.io/preview/pr-29/blog?search="tag:%20lab"' class="tag" data-tooltip='Show items with the tag "lab"'>
+        lab
+      </a>
+    
+  </div>
+
+
+      
+      <a href="/preview/pr-29/2021/03/01/welcome-to-infolab-blog.html" class="bc-more">
+        Read Article
+        <i class="icon fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</article>
+
+    
+  </div>
+  </section>
+
+
+    </main>
+    
+
+<footer class="background site-footer" data-dark="true" data-size="wide">
+  <div class="footer-inner">
+
+    <!-- Brand / identity -->
+    <div class="footer-brand">
+      <a href="/preview/pr-29/" class="footer-brand-link" aria-label="InfoLab home">
+        <img src="/preview/pr-29/images/logo.png" alt="InfoLab logo" class="footer-logo" height="44" loading="lazy">
+        <span class="footer-brand-text">
+          <span class="footer-brand-title">InfoLab</span>
+          <span class="footer-brand-sub">Information Research Laboratory · SKKU</span>
+        </span>
+      </a>
+      <p class="footer-about">
+        We build robust, interpretable and secure machine-learning systems —
+        advancing Trustworthy &amp; Explainable AI, Adversarial ML, and Biomedical AI
+        at Sungkyunkwan University.
+      </p>
+      <div class="footer-social">
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://orcid.org/0000-0001-9232-4843" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+      <i class="icon fa-brands fa-orcid"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+      <i class="icon fa-brands fa-google"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://github.com/InfoLab-SKKU" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+      <i class="icon fa-brands fa-github"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://www.researchgate.net/lab/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" data-tooltip="ResearchGate" data-style="bare" aria-label="ResearchGate">
+      <i class="icon fa-brands fa-researchgate"></i>
+      
+    </a>
+  </div>
+
+
+        
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h5 class="footer-heading">Explore</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-29/">Home</a></li>
+          <li><a href="/preview/pr-29/projects">Projects</a></li>
+          <li><a href="/preview/pr-29/pubs">Publications</a></li>
+          <li><a href="/preview/pr-29/team">Team</a></li>
+          <li><a href="/preview/pr-29/news">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Research</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-29/projects/security">Adversarial ML</a></li>
+          <li><a href="/preview/pr-29/projects/medical">Biomedical AI</a></li>
+          <li><a href="/preview/pr-29/projects/explainable-ai">Explainable AI</a></li>
+          <li><a href="/preview/pr-29/team/join">Join the Lab</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Sungkyunkwan Univ.</h5>
+        <ul class="footer-links">
+          <li><a href="https://gradschool.skku.edu/grad/" target="_blank" rel="noopener noreferrer">Graduate School</a></li>
+          <li><a href="https://cse.skku.edu/" target="_blank" rel="noopener noreferrer">Computer Science</a></li>
+          <li><a href="https://ai.skku.edu/ai/index.do" target="_blank" rel="noopener noreferrer">Artificial Intelligence</a></li>
+          <li><a href="https://skb.skku.edu/skkuaai/index.do" target="_blank" rel="noopener noreferrer">Applied AI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <h5 class="footer-heading">Contact us</h5>
+        <address class="footer-contact">
+          <span class="footer-contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Engineering Building 2,<br>SKKU, Suwon, South Korea</span>
+          </span>
+          <span class="footer-contact-line">
+            <a href="#" class="footer-contact-link email-protected" data-eu="infolabskku" data-ed="gmail.com" data-show="false" aria-label="Contact InfoLab by email" title="Contact us by email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Contact us by email</span>
+            </a>
+          </span>
+        </address>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span class="footer-copy">
+        © 2026 Information Laboratory (InfoLab) @ SKKU · Sungkyunkwan University
+      </span>
+      <span class="footer-bottom-links">
+        <a href="/preview/pr-29/feed.xml"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS</a>
+        <a href="#main-content" class="footer-totop">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Organization structured data for search engines -->
+    
+  </body>
+</html>
