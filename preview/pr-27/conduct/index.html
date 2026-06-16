@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="true">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Dark-mode pre-paint: prevent FOUC by setting data-dark before stylesheets evaluate -->
+  <script>document.documentElement.dataset.dark = localStorage.getItem('dark-mode') ?? 'false';</script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZSRZR84K0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RZSRZR84K0');
+</script>
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07377b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#05243a" media="(prefers-color-scheme: dark)">
+
+<title>Code of Conduct | Information Laboratory (InfoLab) @ SKKU</title>
+
+<link rel="canonical" href="https://infolab-skku.github.io/preview/pr-27/conduct/">
+<link rel="icon" href="/preview/pr-27/images/icon.png">
+<link rel="apple-touch-icon" href="/preview/pr-27/images/icon.png">
+<link rel="manifest" href="/preview/pr-27/manifest.webmanifest">
+
+
+
+
+<meta name="title" content="Code of Conduct">
+<meta name="description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+
+<meta property="og:title" content="Code of Conduct">
+<meta property="og:site_name" content="Information Laboratory (InfoLab) @ SKKU">
+<meta property="og:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta property="og:url" content="https://infolab-skku.github.io/preview/pr-27/conduct/">
+<meta property="og:image" content="https://infolab-skku.github.io/preview/pr-27/images/share.jpg">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:title" content="Code of Conduct">
+<meta name="twitter:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://infolab-skku.github.io/preview/pr-27/images/share.jpg">
+
+<meta name="twitter:url" content="https://infolab-skku.github.io/preview/pr-27/conduct/">
+
+
+  <meta property="og:type" content="website">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "WebSite",
+    
+    "name": "Code of Conduct",
+    "description": "Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.",
+    "headline": "Code of Conduct",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "https://infolab-skku.github.io/preview/pr-27/preview/pr-27/images/icon.png" }
+    },
+    "url": "https://infolab-skku.github.io/preview/pr-27/conduct/"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="https://infolab-skku.github.io/preview/pr-27/feed.xml">
+
+  <!-- IBM Plex Sans (body/UI), Space Grotesk (display), JetBrains Mono (mono accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+  <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"></noscript>
+
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/preview/pr-27/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/alert.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/all.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/anchor.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/bento.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/blog-post.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/body.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/bold.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/button.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/carousel.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/checkbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/citation.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/code.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/cols.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/contact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/feature.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/figure.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/float.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/font.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/footer.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/form.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/gallery.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/header.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/heading.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/homepage.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/icon.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/impact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/link.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/list.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/news.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/paragraph.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/portrait.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/post-excerpt.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/post-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/projects-page.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/pubs.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/quote.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/rule.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/scroll-progress.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/search-box.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/search-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/section.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/software.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/table.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/team.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/textbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/tooltip.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-27/_styles/util.css" rel="stylesheet">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<!-- include all css in styles folder -->
+
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/preview/pr-27/_scripts/anchors.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/carousel.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/dark-mode.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/email-protect.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/fetch-tags.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/gallery.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/image-fallback.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/neural-hero.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/news-filter.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/project-filtering.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/projects-filter.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/pub-thumbs.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/pubs-filter.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/scroll-progress.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/search.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/site-search.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/spotlight.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/sw-filter.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/sw-register.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/table-wrap.js" defer></script>
+
+  <script src="/preview/pr-27/_scripts/tooltip.js" defer></script>
+
+
+</head>
+
+  <body>
+    
+
+
+
+<!-- Skip to main content (accessibility) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Reading progress bar -->
+<div id="read-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Page reading progress"></div>
+
+<header class="background site-header">
+  <a href="/preview/pr-27/" class="home">
+    
+      <span class="logo">
+        
+          <img src="/preview/pr-27/images/logo.png" alt="logo">
+        
+      </span>
+    
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+      
+        <a href="/preview/pr-27/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
+    
+      
+        <a href="/preview/pr-27/projects/" data-tooltip="Projects in the lab">
+          Projects
+        </a>
+      
+    
+      
+        <a href="/preview/pr-27/pubs/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
+        <a href="/preview/pr-27/team/" data-tooltip="Meet the team">
+          Team
+        </a>
+      
+    
+      
+        <a href="/preview/pr-27/collaborators/" data-tooltip="Our collaborators">
+          Collaborators
+        </a>
+      
+    
+      
+        <a href="/preview/pr-27/software/" data-tooltip="Open-source code and datasets from InfoLab">
+          Software &amp; Datasets
+        </a>
+      
+    
+      
+        <a href="/preview/pr-27/blog/" data-tooltip="News, insights, and research updates from InfoLab">
+          Blog
+        </a>
+      
+    
+      
+        <a href="/preview/pr-27/photos/" data-tooltip="Lab photos and activities">
+          Gallery
+        </a>
+      
+    
+      
+        <a href="/preview/pr-27/contact/" data-tooltip="Contact information">
+          Contact
+        </a>
+      
+    
+  </nav>
+
+  <input class="dark-toggle" type="checkbox" aria-label="toggle dark mode" onchange="window.onDarkToggleChange(event)">
+</header>
+
+    <main id="main-content">
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - filter out blank sections
+-->
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!-- HERO -->
+<div class="team-hero">
+  <div class="team-hero-content">
+    <div class="team-hero-badge">Our Values</div>
+    <h1 class="team-hero-title">Code of Conduct</h1>
+    <p class="team-hero-sub">The expectations and commitments that keep InfoLab a respectful, welcoming, and inclusive place to do science.</p>
+  </div>
+</div>
+  </section>
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="code-of-conduct">
+<i class="icon fa-solid fa-star"></i>Code of Conduct</h2>
+
+<p>We love our group dynamic. We have been grateful and lucky that current and past lab members have intuitively understood what it means to maintain a respectful and welcoming environment. However, it’s time to make these expectations more explicit in this Code of Conduct.</p>
+
+<ul>
+  <li>We strive to maintain a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation. We expect all conduct to support this goal of creating an open, welcoming, and inclusive community.</li>
+  <li>Harassment of any kind is not tolerated. If you feel you or another is experiencing harassment at any time, whether in our group or within SKKU at large, please inform Prof. Tamer Abuhmed (</li>
+</ul>
+
+<p><a href="#" class="email-protected" data-eu="tamer" data-ed="skku.edu" data-show="true">tamer [at] skku [dot] edu</a>
+) or the lab contact (</p>
+
+<p><a href="#" class="email-protected" data-eu="infolabskku" data-ed="gmail.com" data-show="true">infolabskku [at] gmail [dot] com</a>
+), and/or SKKU Human Resources. Information shared with Prof. Abuhmed will be handled with the utmost care and discretion. However, it is important to note that in some circumstances, he is legally required to report certain types of incidents to others in the organization. In those situations, you can expect that he will: 1) Listen to your concerns with empathy and respect, 2) Explain any obligation to report the incident and the process involved, 3) Report the incident to the relevant individuals promptly and accurately, and 4) Provide you with information on available support resources and next steps.</p>
+<ul>
+  <li>Everyone’s perspective is valuable and should be listened to equally and respectfully. Discussions are encouraged, provided they adhere to considerate language.</li>
+  <li>Err on the side of positivity, especially in electronic communications where intent can be difficult to convey or interpret. Overly negative comments and personal attacks should be avoided.</li>
+  <li>We expect ethical conduct in all aspects of our lab’s activities, and we all share the responsibility of raising any issues for discussion. If you witness unethical behavior of any form, let us know.</li>
+  <li>We value collaboration over competition, both within the lab and with external colleagues. In the context of collaboration, we expect everyone to openly and generously credit all individuals who contribute to a project.
+This list is not exhaustive. If you think of something that should be explicitly stated, let Prof. Abuhmed know.</li>
+</ul>
+  </section>
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="diversity-equity-and-inclusion">
+<i class="icon fa-solid fa-rainbow"></i>Diversity, Equity, and Inclusion</h2>
+<p>We are a collaborative group of scientists and engineers committed to fostering diversity, equity, and inclusion (DEI). The best science comes from a positive, inclusive, and diverse environment. We welcome people of all backgrounds. The following is our pledge to contribute to an inclusive community and culture:</p>
+
+<ul>
+  <li>We recruit with diversity in mind. Our science is diverse and multidisciplinary, so our team should be as well. We welcome individuals from many educational backgrounds (including bioinformatics, computer science, biology, and chemistry), job histories (academia, industry, and new graduates), as well as people who don’t fall neatly into any single group. We prioritize curiosity, creativity, and tenacity over checking specific boxes on a resume. We also recognize that gender and racial biases exist in our scientific institutions, and we actively seek to counteract those biases.</li>
+  <li>We value diversity in our speakers. Ever attend a panel discussion that feels like an echo chamber? We don’t like that either. We prefer hearing from people who will expand our horizons and challenge our ideas. Thus, we invite speakers from a broad array of backgrounds in terms of both topics and demographics.</li>
+  <li>We work in the open. We often cite the FAIR principles in our work, so it’s not surprising that we value open science and open data. Whenever possible, our projects are developed using open source licensing where anyone can use and adapt our work, and the data we generate is released via a CC0 waiver.</li>
+  <li>We collaborate with each other. We don’t like working alone. Most of our projects combine the skills and talents of multiple people (and often multiple labs), and the science we do and the tools we create are better as a result. We pride ourselves on maintaining a respectful environment where “I don’t know” is a starting point for learning and not a sign of weakness, and where we all continually learn from each other.</li>
+  <li>We care about your future. We want to know how you define personal and professional success, and whatever that may be, we want to help you achieve it. That means we devote lab meetings to career development topics, including grant writing, CV building, alumni panels, and code improvement. We’re supportive of professional development opportunities such as conferences, formal and informal presentations, and courses. If your aspirations eventually lead you out of the lab, we’ll gladly provide advice, guidance, and networking contacts to help you take the next step in your career.</li>
+  <li>We believe in a fun work environment. Sure, the data-munging can be awful, but at least your coworkers are not. We have regular social events organized by our lab social committee (with a yearly budget!). These activities are completely optional, so attend as many or as few as you like.</li>
+  <li>We encourage discussion. Discussions on ethics and justice can be awkward, uncomfortable conversations to have, but we don’t shy away from them. For example, the Black Lives Matter movement led to several discussions on how we can better support Black scientists, and we believe our lab and our institute are much better as a result.</li>
+</ul>
+  </section>
+
+
+    </main>
+    
+
+<footer class="background site-footer" data-dark="true" data-size="wide">
+  <div class="footer-inner">
+
+    <!-- Brand / identity -->
+    <div class="footer-brand">
+      <a href="/preview/pr-27/" class="footer-brand-link" aria-label="InfoLab home">
+        <img src="/preview/pr-27/images/logo.png" alt="InfoLab logo" class="footer-logo" height="44" loading="lazy">
+        <span class="footer-brand-text">
+          <span class="footer-brand-title">InfoLab</span>
+          <span class="footer-brand-sub">Information Research Laboratory · SKKU</span>
+        </span>
+      </a>
+      <p class="footer-about">
+        We build robust, interpretable and secure machine-learning systems —
+        advancing Trustworthy &amp; Explainable AI, Adversarial ML, and Biomedical AI
+        at Sungkyunkwan University.
+      </p>
+      <div class="footer-social">
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://orcid.org/0000-0001-9232-4843" data-tooltip="ORCID" data-style="bare" aria-label="ORCID">
+      <i class="icon fa-brands fa-orcid"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" data-tooltip="Google Scholar" data-style="bare" aria-label="Google Scholar">
+      <i class="icon fa-brands fa-google"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://github.com/InfoLab-SKKU" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
+      <i class="icon fa-brands fa-github"></i>
+      
+    </a>
+  </div>
+
+
+        
+          
+          
+          
+
+
+
+
+
+
+
+
+  <div class="button-wrapper">
+    <a class="button" href="https://www.researchgate.net/lab/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" data-tooltip="ResearchGate" data-style="bare" aria-label="ResearchGate">
+      <i class="icon fa-brands fa-researchgate"></i>
+      
+    </a>
+  </div>
+
+
+        
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h5 class="footer-heading">Explore</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-27/">Home</a></li>
+          <li><a href="/preview/pr-27/projects">Projects</a></li>
+          <li><a href="/preview/pr-27/pubs">Publications</a></li>
+          <li><a href="/preview/pr-27/team">Team</a></li>
+          <li><a href="/preview/pr-27/news">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Research</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-27/projects/security">Adversarial ML</a></li>
+          <li><a href="/preview/pr-27/projects/medical">Biomedical AI</a></li>
+          <li><a href="/preview/pr-27/projects/explainable-ai">Explainable AI</a></li>
+          <li><a href="/preview/pr-27/team/join">Join the Lab</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Sungkyunkwan Univ.</h5>
+        <ul class="footer-links">
+          <li><a href="https://gradschool.skku.edu/grad/" target="_blank" rel="noopener noreferrer">Graduate School</a></li>
+          <li><a href="https://cse.skku.edu/" target="_blank" rel="noopener noreferrer">Computer Science</a></li>
+          <li><a href="https://ai.skku.edu/ai/index.do" target="_blank" rel="noopener noreferrer">Artificial Intelligence</a></li>
+          <li><a href="https://skb.skku.edu/skkuaai/index.do" target="_blank" rel="noopener noreferrer">Applied AI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <h5 class="footer-heading">Contact us</h5>
+        <address class="footer-contact">
+          <span class="footer-contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Engineering Building 2,<br>SKKU, Suwon, South Korea</span>
+          </span>
+          <span class="footer-contact-line">
+            <a href="#" class="footer-contact-link email-protected" data-eu="infolabskku" data-ed="gmail.com" data-show="false" aria-label="Contact InfoLab by email" title="Contact us by email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Contact us by email</span>
+            </a>
+          </span>
+        </address>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span class="footer-copy">
+        © 2026 Information Laboratory (InfoLab) @ SKKU · Sungkyunkwan University
+      </span>
+      <span class="footer-bottom-links">
+        <a href="/preview/pr-27/feed.xml"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS</a>
+        <a href="#main-content" class="footer-totop">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Organization structured data for search engines -->
+    
+  </body>
+</html>
