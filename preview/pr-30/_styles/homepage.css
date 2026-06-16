@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* ===========================================
+   SHARED: SKIP-LINK · RESEARCH-AREA CARDS · TEAM PHOTO
+   The homepage hero, stats and news now live in bento.scss.
+   The research-area cards below are reused on /team/join.
+   =========================================== */
+/* Skip link (accessibility) */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--primary);
+  color: #02121f;
+  padding: 10px 20px;
+  z-index: 1100;
+  border-radius: 0 0 var(--rounded) 0;
+  font-weight: var(--bold);
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ===========================================
+   RESEARCH-AREA CARDS  (used on /team/join)
+   =========================================== */
+.ra-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.ra-card {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: var(--rounded-lg);
+  padding: 32px 26px 28px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.ra-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.ra-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.ra-icon-wrap .icon {
+  font-size: 1.5rem;
+}
+
+.ra-security {
+  background: color-mix(in srgb, var(--security) 14%, transparent);
+  color: var(--security);
+}
+
+.ra-biomedical {
+  background: color-mix(in srgb, var(--biomedical) 14%, transparent);
+  color: var(--biomedical);
+}
+
+.ra-trustworthy {
+  background: color-mix(in srgb, var(--trustworthy) 14%, transparent);
+  color: var(--trustworthy);
+}
+
+.ra-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: var(--text-strong);
+}
+
+.ra-card p {
+  color: var(--gray);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* Lab team photo on homepage */
+.home-team-photo {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.home-team-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--rounded-lg);
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+@media (max-width: 768px) {
+  .ra-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ra-card:hover {
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=homepage.css.map */
