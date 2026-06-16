@@ -7,12 +7,16 @@
    (researchers = cyan/primary, interns = amber).
    ===================================================================== */
 
-/* Tighten the oversized vertical gaps the global 60px section padding
-   adds between each team block (nav ↔ PI ↔ researchers …).
-   The hero section keeps its 60px top (`.team-hero` offsets it with a
-   -60px margin), so only its bottom is trimmed. */
-body section.background:has(.team-jumpnav) {
-  padding-bottom: 10px;
+/* The global rule wraps every block in a `section.background` with 60px
+   top/bottom padding, which leaves large dead space around the hero /
+   stats card and between blocks. Collapse it on the hero pages so they
+   read compact. The hero section keeps its 60px TOP (`.team-hero` offsets
+   it with a -60px margin); only its bottom is trimmed. */
+body section.background:has(.team-hero) {
+  padding-bottom: 8px;
+}
+body section.background:has(.team-hero) + section.background {
+  padding-top: 14px;
 }
 body section.background:has(.team-section) {
   padding-top: 10px;
@@ -107,7 +111,7 @@ body section.background:has(.team-section) {
   margin: -60px calc(-50vw + 50%) 0 calc(-50vw + 50%);
   background: var(--grad-hero);
   border-bottom: 1px solid var(--hairline);
-  padding: 80px 40px 60px;
+  padding: 44px 40px 36px;
   color: var(--text);
   text-align: center;
   overflow: hidden;
@@ -132,7 +136,7 @@ body section.background:has(.team-section) {
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.85rem;
 }
 
 .team-hero-title {
@@ -149,7 +153,7 @@ body section.background:has(.team-section) {
   font-size: 1.05rem;
   line-height: 1.75;
   color: var(--gray);
-  margin: 0 auto 2rem;
+  margin: 0 auto 1.25rem;
   max-width: 560px;
 }
 
@@ -158,12 +162,12 @@ body section.background:has(.team-section) {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 2rem auto 0;
+  margin: 1.25rem auto 0;
   background: var(--glass);
   backdrop-filter: blur(10px);
   border: 1px solid var(--hairline-strong);
   border-radius: var(--rounded-lg);
-  padding: 20px 40px;
+  padding: 16px 36px;
   max-width: 480px;
 }
 
@@ -600,7 +604,7 @@ body section.background:has(.team-section) {
 
 @media (max-width: 768px) {
   .team-hero {
-    padding: 60px 20px 44px;
+    padding: 36px 20px 28px;
   }
 
   .team-hero-stats {
