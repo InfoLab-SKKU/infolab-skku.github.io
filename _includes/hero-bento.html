@@ -196,7 +196,7 @@
           <div class="b-news-item" data-type="{{ b_type }}">
             <span class="b-news-dot" aria-hidden="true"></span>
             <span class="b-news-body">
-              <span class="b-news-item-title">{{ post.title | truncate: 110 }}</span>
+              <span class="b-news-item-title">{{ post.title }}</span>
               {% if b_type == "publication" and b_venue %}
                 <span class="b-news-venue">{{ b_venue }}</span>
               {% else %}
