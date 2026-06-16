@@ -7,6 +7,15 @@
    (researchers = cyan/primary, interns = amber).
    ===================================================================== */
 
+/* Tighten the oversized vertical gaps the global 60px section padding
+   adds between each team block (nav ↔ PI ↔ researchers …). */
+body section.background:has(.team-hero),
+body section.background:has(.team-jumpnav),
+body section.background:has(.team-section) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .team-jumpnav {
   display: flex;
   flex-wrap: wrap;
@@ -209,7 +218,7 @@
 .team-section {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 16px 0 40px;
+  padding: 16px 0 16px;
 }
 
 .team-section-header {
