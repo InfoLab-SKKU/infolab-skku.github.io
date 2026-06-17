@@ -2,7 +2,9 @@
 cite process to convert sources and metasources into full citations
 """
 
+import re
 import traceback
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from importlib import import_module
 from pathlib import Path
@@ -29,7 +31,13 @@ log("Compiling sources")
 sources = []
 
 # in-order list of plugins to run
-plugins = ["google-scholar", "pubmed", "orcid", "sources"]
+# NOTE: "google-scholar" is intentionally disabled. The scholarly library
+# scrapes Google Scholar, which bot-blocks intermittently — so it returned a
+# different (often polluted) set of publications on every run. ORCID +
+# sources.yaml give complete, deterministic results. Re-add "google-scholar"
+# only with a reliable backend (e.g. SerpAPI); the dedup below is hardened to
+# tolerate it.
+plugins = ["pubmed", "orcid", "sources"]
 
 # loop through plugins
 for plugin in plugins:
@@ -113,8 +121,32 @@ sources = [entry for entry in sources if entry]
 log("Deduplicating sources by title")
 
 def _norm_title(entry):
-    """Normalised title for comparison: lowercase, collapse whitespace."""
-    return " ".join(get_safe(entry, "title", "").lower().split())
+    """
+    Aggressively normalised title for comparison. Strips diacritics, unifies
+    "&"/"and", lowercases, and removes everything but letters and digits so
+    that punctuation, curly apostrophes, math symbols and spacing differences
+    (e.g. "Opaque Attack" vs "OpaqueAttack") collapse to the same key.
+    """
+    t = get_safe(entry, "title", "")
+    t = unicodedata.normalize("NFKD", t)
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    t = t.lower().replace("&", " and ")
+    return re.sub(r"[^a-z0-9]+", "", t)
+
+
+def _id_rank(id_str):
+    """Quality ranking of a source id, used to pick the winner among title
+    duplicates. Higher is better; any non-empty id beats a blank one."""
+    id_str = (id_str or "").lower()
+    if id_str.startswith("doi:"):
+        return 4
+    if id_str.startswith("pmid:"):
+        return 3
+    if id_str.startswith("arxiv:"):
+        return 2
+    if id_str:
+        return 1
+    return 0
 
 seen_titles = {}   # norm_title -> index into sources[]
 for i, source in enumerate(sources):
@@ -126,19 +158,17 @@ for i, source in enumerate(sources):
     else:
         keep = seen_titles[t]
         dupe = i
-        # prefer the entry with a doi: id; otherwise prefer the one with any id
-        keep_id = get_safe(sources, f"{keep}.id", "")
-        dupe_id = get_safe(sources, f"{dupe}.id", "")
-        if (not keep_id.startswith("doi:")) and dupe_id.startswith("doi:"):
-            # swap: the duplicate has the better id, merge keep INTO dupe then use dupe slot
-            sources[dupe].update({k: v for k, v in sources[keep].items() if k not in sources[dupe] or not sources[dupe][k]})
-            sources[keep] = {}
-            seen_titles[t] = dupe
+        # winner = entry with the higher-quality id (doi > pmid > arxiv >
+        # other > blank); ties keep the earlier entry
+        if _id_rank(get_safe(sources, f"{dupe}.id", "")) > _id_rank(get_safe(sources, f"{keep}.id", "")):
+            winner, loser = dupe, keep
         else:
-            # keep existing winner; merge any extra fields from the duplicate
-            sources[keep].update({k: v for k, v in sources[dupe].items() if k not in sources[keep] or not sources[keep][k]})
-            sources[dupe] = {}
-        log(f"Removed title duplicate: {get_safe(sources[seen_titles[t]], 'title', t)[:60]}", 2)
+            winner, loser = keep, dupe
+        # fill any fields the winner is missing/blank from the loser
+        sources[winner].update({k: v for k, v in sources[loser].items() if k not in sources[winner] or not sources[winner][k]})
+        sources[loser] = {}
+        seen_titles[t] = winner
+        log(f"Removed title duplicate: {get_safe(sources[winner], 'title', t)[:60]}", 2)
 
 sources = [entry for entry in sources if entry]
 

@@ -16,6 +16,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: $serif;
+  // full-bleed sections use width:100vw, which includes the vertical
+  // scrollbar gutter and overflows the viewport by the scrollbar width.
+  // Clip that sliver so it never causes horizontal scroll / clipped content.
+  overflow-x: clip;
 
   main {
     display: flex;
