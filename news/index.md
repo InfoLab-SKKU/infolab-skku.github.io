@@ -134,7 +134,7 @@ nav:
       <a href="https://bsky.app/profile/infolab.bsky.social" target="_blank" rel="noopener" class="news-social-handle">@infolab.bsky.social</a>
     </div>
     <div class="bluesky-embed-wrap">
-      <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed@0.1.16/dist/bsky-embed.es.js" async></script>
+      <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
       <bsky-embed
         username="infolab.bsky.social"
         mode=""
