@@ -1,0 +1,76 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 40px 0 20px 0;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: var(--bold);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.45rem;
+  padding-bottom: 5px;
+  border-bottom: solid 1px var(--light-gray);
+  font-weight: var(--semi-bold);
+}
+
+[data-dark=true] h1,
+[data-dark=true] h2 {
+  color: var(--primary);
+}
+
+[data-dark=true] h1 a,
+[data-dark=true] h2 a {
+  color: inherit;
+}
+
+/* Hero headings sit on dark gradients in both modes and must stay white. */
+[data-dark=true] .hero-title,
+[data-dark=true] .team-hero-title,
+[data-dark=true] .blog-hero h1 {
+  color: #fff;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: var(--semi-bold);
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: var(--semi-bold);
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: var(--semi-bold);
+}
+
+h6 {
+  font-size: 0.92rem;
+  font-weight: var(--semi-bold);
+}
+
+:where(h1, h2, h3, h4, h5, h6) > .icon {
+  margin-right: 1em;
+  color: var(--gray);
+  opacity: 0.7;
+}
+
+[data-dark=true] :where(h1, h2, h3, h4, h5, h6) > .icon {
+  color: var(--primary);
+  opacity: 0.85;
+}
+
+/*# sourceMappingURL=heading.css.map */
