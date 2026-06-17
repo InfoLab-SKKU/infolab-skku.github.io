@@ -188,6 +188,14 @@ def cite_with_manubot(_id):
     except Exception:
         raise Exception("Couldn't parse Manubot response")
 
+    # On a transient network failure (e.g. Crossref/DOI lookup timing out)
+    # Manubot can still emit a minimal stub with no title. Treat that as a
+    # failure and raise, so the empty result is NOT cached and the next run
+    # retries — otherwise a one-off flake poisons the 90-day cache and the
+    # entry renders blank forever.
+    if not get_safe(manubot, "title", "").strip():
+        raise Exception("Manubot returned no title (likely a transient lookup failure)")
+
     # new citation with only needed info
     citation = {}
 

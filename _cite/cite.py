@@ -149,29 +149,37 @@ def _id_rank(id_str):
         return 1
     return 0
 
-seen_titles = {}   # norm_title -> index into sources[]
-for i, source in enumerate(sources):
-    t = _norm_title(source)
-    if not t:
-        continue
-    if t not in seen_titles:
-        seen_titles[t] = i
-    else:
-        keep = seen_titles[t]
-        dupe = i
-        # winner = entry with the higher-quality id (doi > pmid > arxiv >
-        # other > blank); ties keep the earlier entry
-        if _id_rank(get_safe(sources, f"{dupe}.id", "")) > _id_rank(get_safe(sources, f"{keep}.id", "")):
+
+def dedupe_by_title(entries):
+    """
+    Collapse entries that share a normalised title, keeping the one with the
+    best id (see _id_rank) and merging any fields the winner is missing.
+    Run BOTH before citation generation (catches sources that already carry a
+    title) AND after (Manubot fills titles for id-only DOI sources, which only
+    then reveals preprint/published and doi-format-variant duplicates).
+    """
+    seen = {}   # norm_title -> index into entries[]
+    for i, entry in enumerate(entries):
+        t = _norm_title(entry)
+        if not t:
+            continue
+        if t not in seen:
+            seen[t] = i
+            continue
+        keep, dupe = seen[t], i
+        # winner = entry with the higher-quality id; ties keep the earlier one
+        if _id_rank(get_safe(entries, f"{dupe}.id", "")) > _id_rank(get_safe(entries, f"{keep}.id", "")):
             winner, loser = dupe, keep
         else:
             winner, loser = keep, dupe
-        # fill any fields the winner is missing/blank from the loser
-        sources[winner].update({k: v for k, v in sources[loser].items() if k not in sources[winner] or not sources[winner][k]})
-        sources[loser] = {}
-        seen_titles[t] = winner
-        log(f"Removed title duplicate: {get_safe(sources[winner], 'title', t)[:60]}", 2)
+        entries[winner].update({k: v for k, v in entries[loser].items() if k not in entries[winner] or not entries[winner][k]})
+        entries[loser] = {}
+        seen[t] = winner
+        log(f"Removed title duplicate: {get_safe(entries[winner], 'title', t)[:60]}", 2)
+    return [entry for entry in entries if entry]
 
-sources = [entry for entry in sources if entry]
+
+sources = dedupe_by_title(sources)
 
 
 log(f"{len(sources)} total source(s) to cite")
@@ -248,6 +256,15 @@ with ThreadPoolExecutor(max_workers=max_workers) as executor:
 
 # restore original source order
 citations = [citations_map[i] for i in sorted(citations_map)]
+
+# Manubot has now filled in titles for id-only DOI sources, so run the title
+# dedup again: this collapses same-paper duplicates that were invisible before
+# (preprint vs published, "doi:" vs "doi:https://doi.org/" id variants, and a
+# bare ORCID entry alongside its resolved-DOI twin).
+log("Deduplicating citations by title (post-Manubot)")
+before_n = len(citations)
+citations = dedupe_by_title(citations)
+log(f"{before_n - len(citations)} duplicate(s) removed; {len(citations)} citation(s) remain", 1)
 
 
 log()
