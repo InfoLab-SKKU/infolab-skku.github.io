@@ -1639,7 +1639,7 @@
   - Tamer AbuHmed
   - DaeHun Nyang
   publisher: Advancements in Distributed Computing and Internet Technologies
-  date: '2026-05-20'
+  date: '2012-03-04'
   link: https://doi.org/cjh563
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -1816,7 +1816,7 @@
 - title: "Explainable Artificial Intelligence for Alzheimer\u2019s disease: A multi-layer\
     \ multimodal detection and prediction mode"
   publisher: Scientific Reports, Nature
-  date: '2021-01-18'
+  date: '2021-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2068,7 +2068,7 @@
 - id: authenticusid:1020200029747
   title: Semantically intelligent clinical decision support system for diabetes mellitus
     treatment
-  date: '2021-01-18'
+  date: '2020-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2276,14 +2276,14 @@
   file: orcid.yaml
 - title: Supplementary Material
   publisher: CC BY 4.0
-  date: '2021-01-18'
+  date: '2019-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
 - title: Word2vec and LSTM-based Offensive Content Detection
   publisher: Proceedings of Symposium of the KICs, 2019
-  date: '2021-01-18'
+  date: '2019-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2430,21 +2430,21 @@
     SentiWordNe
   publisher: The 9th International Conference on Information and Communication Technology
     (ICT) Convergence, ICT Convergence Powered by Smart Intelligence, 2018
-  date: '2021-01-18'
+  date: '2018-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
 - title: Sentiment analysis of transportation using word embedding and LDA approaches
   publisher: Proceedings of Symposium of the KICs, pp.1111-1112, 2018
-  date: '2021-01-18'
+  date: '2018-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
 - title: "\u201CLiver Fibrosis Diagnosis with Mamdani FIS"
   publisher: 'Journal of Advanced Research Design '
-  date: '2021-01-18'
+  date: '2018-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2465,7 +2465,7 @@
 - title: ': A Fibrosis Diagnosis Clinical Decision Support System'
   publisher: "the 2nd International conference on Advanced Technology and Applied\
     \ Sciences (ICaTAS\u20192017), Abu Qir, Alexandria, Egypt, 2017."
-  date: '2021-01-18'
+  date: '2017-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2602,7 +2602,7 @@
     Model of SNOMED C
   publisher: "The IEEE second International Conference on Engineering and Technology\
     \ (ICET 2014), Cairo, Egypt, 1 \u2013 7, 2014"
-  date: '2021-01-18'
+  date: '2014-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2626,7 +2626,7 @@
     Electronic Health Record
   publisher: 'BIOCOMP''11 - 12th International Conference on Bioinformatics and Computational
     Biology, USA, 2011. '
-  date: '2021-01-18'
+  date: '2011-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2634,13 +2634,12 @@
 - title: An Electronic Commerce Security Policy Model
   publisher: 'In the proceeding of the fifth international conference of informatics
     and systems (INFOS 2007), Cairo, Egypt, 421-435, 2007. '
-  date: '2021-01-18'
+  date: '2007-01-01'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
 - title: 'Viral Hepatitis Diagnosis: A Survey of Artificial Intelligent Techniques'
-  date: '2021-01-18'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2649,7 +2648,6 @@
     \ on wireless body area network"
   publisher: ",\u201D The 11th International Conference on Informatics and Systems\
     \ (INFOS), Cairo, Egypt, 2018."
-  date: '2021-01-18'
   orcid: 0000-0001-9705-1477
   shaker-el-sappagh-list: true
   plugin: orcid.py
@@ -2676,7 +2674,7 @@
 - title: 'Breaking the Illusion of Security via Interpretation: Interpretable Vision
     Transformer Systems under Attack'
   publisher: arXiv preprint arXiv:2507.14248
-  date: '2026-05-14'
+  date: '2025-01-01'
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -2725,19 +2723,33 @@
   buttons:
   - type: pdf
     link: pdf/Alzheimers disease diagnosis in the metaverse.pdf
-- id: arxiv:https://arxiv.org/abs/2405.01963
+- id: arxiv:2405.01963
   title: 'From Attack to Defense: Insights into Deep Learning Security Measures in
     Black-Box Settings'
-  publisher: arXiv preprint arXiv:2405.01963
-  date: '2026-05-20'
+  authors:
+  - Firuz Juraev
+  - Mohammed Abuhamad
+  - Eric Chan-Tin
+  - George K. Thiruvathukal
+  - Tamer Abuhmed
+  publisher: arXiv
+  date: '2024-05-06'
+  link: https://arxiv.org/abs/2405.01963
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: arxiv:https://arxiv.org/abs/2405.01934
-  title: Impact of architectural modifications on deep learning adversarial robustness
-  publisher: arXiv preprint arXiv:2405.01934
-  date: '2026-05-20'
+- id: arxiv:2405.01934
+  title: Impact of Architectural Modifications on Deep Learning Adversarial Robustness
+  authors:
+  - Firuz Juraev
+  - Mohammed Abuhamad
+  - Simon S. Woo
+  - George K Thiruvathukal
+  - Tamer Abuhmed
+  publisher: arXiv
+  date: '2024-05-06'
+  link: https://arxiv.org/abs/2405.01934
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -2766,7 +2778,7 @@
   - Eric Chan-Tin
   - Tamer Abuhmed
   publisher: arXiv
-  date: '2024-02-19'
+  date: '2023-07-14'
   link: https://arxiv.org/abs/2307.06496
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -2781,7 +2793,7 @@
   - Hyoungshick Kim
   - Tamer Abuhmed
   publisher: arXiv
-  date: '2024-02-19'
+  date: '2023-07-14'
   link: https://arxiv.org/abs/2307.06484
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -2797,7 +2809,7 @@
   - Eric Chan-Tin
   - Tamer Abuhmed
   publisher: arXiv
-  date: '2026-05-20'
+  date: '2023-07-25'
   link: https://arxiv.org/abs/2307.11906
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -2848,17 +2860,23 @@
   - Eric Chan-Tin
   - Tamer Abuhmed
   publisher: arXiv
-  date: '2024-02-19'
+  date: '2022-11-30'
   link: https://arxiv.org/abs/2211.15926
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: arxiv:arXiv:2103.13032v1
+- id: arxiv:2103.13032
   title: An Exploration of Geo-temporal Characteristics of Users' Reactions on Social
     Media During the Pandemic
-  date: '2026-05-30'
-  link: https://arxiv.org/abs/2103.13032v1
+  authors:
+  - Eldor Abdukhamidov
+  - Firuz Juraev
+  - Mohammed Abuhamad
+  - Tamer AbuHmed
+  publisher: arXiv
+  date: '2021-03-25'
+  link: https://arxiv.org/abs/2103.13032
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -2880,7 +2898,7 @@
   file: orcid.yaml
 - title: A Software-Based Group Attestation for Wireless Sensor Networks.
   publisher: Adhoc & Sensor Wireless Networks
-  date: '2026-05-16'
+  date: '2011-03-03'
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
   plugin: orcid.py
@@ -2890,7 +2908,7 @@
   authors: []
   publisher: Magazine of Korea Telecommunication Society, vol. 24, No. 11, pp. 25-36,
     November 2007
-  date: '2026-05-30'
+  date: '2008-03-01'
   link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:22684408
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
