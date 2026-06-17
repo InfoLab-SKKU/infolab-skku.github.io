@@ -30,14 +30,13 @@ log("Compiling sources")
 # compiled list of sources
 sources = []
 
-# in-order list of plugins to run
-# NOTE: "google-scholar" is intentionally disabled. The scholarly library
-# scrapes Google Scholar, which bot-blocks intermittently — so it returned a
-# different (often polluted) set of publications on every run. ORCID +
-# sources.yaml give complete, deterministic results. Re-add "google-scholar"
-# only with a reliable backend (e.g. SerpAPI); the dedup below is hardened to
-# tolerate it.
-plugins = ["pubmed", "orcid", "sources"]
+# in-order list of plugins to run.
+# Google Scholar runs first so its (now DOI-only) entries get merged into the
+# richer ORCID/sources versions rather than the other way around. The scholarly
+# library bot-blocks intermittently; google-scholar.py treats that as a soft
+# failure (returns []) and only ever emits DOI-backed entries, and the dedup
+# below is hardened, so a flaky Scholar fetch can no longer pollute the output.
+plugins = ["google-scholar", "pubmed", "orcid", "sources"]
 
 # loop through plugins
 for plugin in plugins:
@@ -122,16 +121,18 @@ log("Deduplicating sources by title")
 
 def _norm_title(entry):
     """
-    Aggressively normalised title for comparison. Strips diacritics, unifies
-    "&"/"and", lowercases, and removes everything but letters and digits so
-    that punctuation, curly apostrophes, math symbols and spacing differences
-    (e.g. "Opaque Attack" vs "OpaqueAttack") collapse to the same key.
+    Normalised title for comparison. Strips diacritics, unifies "&"/"and",
+    lowercases, drops punctuation/apostrophes/math symbols, and collapses
+    whitespace — so curly vs straight apostrophes, "β"/"B", "&"/"and" and
+    subtitle punctuation no longer block a match. Word spacing is kept, so
+    genuinely different titles aren't accidentally merged.
     """
     t = get_safe(entry, "title", "")
     t = unicodedata.normalize("NFKD", t)
     t = "".join(c for c in t if not unicodedata.combining(c))
     t = t.lower().replace("&", " and ")
-    return re.sub(r"[^a-z0-9]+", "", t)
+    t = re.sub(r"[^a-z0-9\s]+", "", t)
+    return " ".join(t.split())
 
 
 def _id_rank(id_str):
