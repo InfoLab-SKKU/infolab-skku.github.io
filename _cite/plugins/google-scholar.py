@@ -106,34 +106,16 @@ def main(entry):
             or _crossref_doi(title)
         )
 
-        if doi:
-            # Manubot will resolve this DOI to a full, rich citation
-            source = {"id": f"doi:{doi}"}
-        else:
-            # No DOI found — supply raw bibliographic fields directly.
-            # Leaving id="" tells cite.py to skip Manubot and use these fields as-is.
-            year = str(get_safe(bib, "pub_year", "") or "")
-            author_str = get_safe(bib, "author", "") or ""
-            venue = (
-                get_safe(bib, "venue", "")
-                or get_safe(bib, "journal", "")
-                or get_safe(bib, "booktitle", "")
-                or ""
-            )
-            # scholarly uses " and " as the author separator
-            authors = [
-                a.strip()
-                for a in re.split(r"\s+and\s+", author_str)
-                if a.strip()
-            ]
-            source = {
-                "id": "",
-                "title": title,
-                "authors": authors,
-                "publisher": venue,
-                "date": f"{year}-01-01" if year else "",
-                "link": pub_url,
-            }
+        if not doi:
+            # No DOI resolved. Don't emit a sparse id="" stub: those can't be
+            # merged by id, frequently fail to dedupe against the ORCID/sources
+            # versions (slightly different titles), and pull in non-articles
+            # (patents, journal indexes, "Supplementary Material"). Skip — the
+            # paper is covered by ORCID/sources.yaml with proper metadata.
+            continue
+
+        # Manubot will resolve this DOI to a full, rich citation
+        source = {"id": f"doi:{doi}"}
 
         # ── Stamp orcid, list flags, etc. onto every source ─────────────────
         for key, val in extra.items():
