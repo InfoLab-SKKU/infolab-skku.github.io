@@ -2903,14 +2903,3 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: wosuid:PPRN:22684408
-  title: A Survey on Deep Packet Inspection for Intrusion Detection Systems
-  authors: []
-  publisher: Magazine of Korea Telecommunication Society, vol. 24, No. 11, pp. 25-36,
-    November 2007
-  date: '2008-03-01'
-  link: https://www.webofscience.com/wos/woscc/full-record/WOS:PPRN:22684408
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: orcid.py
-  file: orcid.yaml
