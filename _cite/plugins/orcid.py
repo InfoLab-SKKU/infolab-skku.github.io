@@ -1,4 +1,5 @@
 import json
+import re
 from urllib.request import Request, urlopen
 from util import *
 
@@ -50,14 +51,28 @@ def main(entry):
         id_type = get_safe(_id, "external-id-type", "")
         id_value = get_safe(_id, "external-id-value", "")
 
+        # normalise arxiv ids: ORCID stores these inconsistently
+        # ("arXiv:2103.13032v1", "https://arxiv.org/abs/2405.01934",
+        # "2307.11906"), which Manubot can't resolve unless reduced to a bare
+        # arxiv id. Without this they fall back to ORCID metadata (no authors,
+        # wrong date).
+        if id_type == "arxiv":
+            id_value = re.sub(r"(?i)^\s*arxiv:", "", id_value)
+            id_value = re.sub(r"(?i)^https?://arxiv\.org/abs/", "", id_value)
+            id_value = re.sub(r"(?i)v\d+$", "", id_value).strip()
+
         # create source; omit id entirely when ORCID has no external id,
         # so cite.py won't try to resolve a bogus ":" via Manubot
         source = {}
         if id_type and id_value:
             source["id"] = f"{id_type}:{id_value}"
 
-        # if not a doi, Manubot likely can't cite, so keep citation details
-        if id_type != "doi":
+        # doi and arxiv ids resolve to full, correct metadata via Manubot, so
+        # don't attach ORCID's own fields for them — in particular ORCID's
+        # last-modified-date is NOT a publication date and must never override
+        # Manubot's. Only entries with no Manubot-resolvable id fall back to
+        # ORCID metadata below.
+        if id_type not in ("doi", "arxiv"):
             # get summaries
             summaries = get_safe(work, "work-summary", [])
 
@@ -82,14 +97,17 @@ def main(entry):
             # get publisher
             publisher = first(lambda s: get_safe(s, "journal-title.value", ""))
 
-            # get date
-            date = (
-                get_safe(work, "last-modified-date.value")
-                or first(lambda s: get_safe(s, "last-modified-date.value"))
-                or get_safe(work, "created-date.value")
-                or first(lambda s: get_safe(s, "created-date.value"))
-                or 0
-            )
+            # get date from the actual publication-date (year/month/day), NOT
+            # last-modified-date (which is when the ORCID record changed)
+            def pub_date(s):
+                year = get_safe(s, "publication-date.year.value", "")
+                if not year:
+                    return None
+                month = (get_safe(s, "publication-date.month.value", "") or "1").zfill(2)
+                day = (get_safe(s, "publication-date.day.value", "") or "1").zfill(2)
+                return f"{year}-{month}-{day}"
+
+            date = first(pub_date)
 
             # get link
             link = first(lambda s: get_safe(s, "url.value", ""))
