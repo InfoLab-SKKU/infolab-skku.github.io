@@ -147,18 +147,6 @@ nav:
         date-format='{"type":"absolute","locale":"en","options":{"weekday":"long","year":"numeric","month":"long","day":"numeric"}}'
       ></bsky-embed>
     </div>
-
-[//]: # (    <div class="news-rss-block">)
-
-[//]: # (      <a href="/feed.xml" class="news-rss-link" title="Subscribe via RSS">)
-
-[//]: # (        <i class="fa-solid fa-rss"></i> RSS Feed)
-
-[//]: # (      </a>)
-
-[//]: # (      <span class="news-rss-note">Subscribe to lab news in any RSS reader</span>)
-
-[//]: # (    </div>)
   </div>
 </div><!-- /.news-col-side -->
 
