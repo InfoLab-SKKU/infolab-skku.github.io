@@ -1,0 +1,389 @@
+/* ===========================================
+   SOFTWARE & DATASETS PAGE STYLES
+   =========================================== */
+/* ---------- filter bar ---------- */
+.sw-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.sw-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 2px solid var(--light-gray);
+  border-radius: 999px;
+  background: var(--background);
+  color: var(--gray);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  line-height: 1;
+}
+.sw-filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--background-alt);
+}
+.sw-filter-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.sw-filter-btn.active .sw-filter-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.sw-filter-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--light-gray);
+  color: var(--gray);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: all 0.18s ease;
+}
+
+/* ---------- repo grid ---------- */
+.sw-repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+/* ---------- repo card ---------- */
+.sw-repo-card {
+  background: var(--background);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--light-gray);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.sw-repo-card:hover {
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.14);
+  transform: translateY(-2px);
+}
+
+/* ---------- accent bar ---------- */
+.sw-card-accent {
+  height: 4px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.sw-accent--security {
+  background: linear-gradient(90deg, #07377b, #1a5fc8);
+}
+
+.sw-accent--federated {
+  background: linear-gradient(90deg, #0d7c77, #1fb2ab);
+}
+
+.sw-accent--biomedical {
+  background: linear-gradient(90deg, #166534, #22c55e);
+}
+
+.sw-accent--library {
+  background: linear-gradient(90deg, #5b21b6, #9333ea);
+}
+
+.sw-accent--vision {
+  background: linear-gradient(90deg, #9a3412, #ea580c);
+}
+
+/* ---------- card body ---------- */
+.sw-card-body {
+  padding: 20px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.sw-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  text-align: left;
+}
+
+.sw-card-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.sw-icon--security {
+  background: rgba(7, 55, 123, 0.1);
+  color: #07377b;
+}
+
+.sw-icon--federated {
+  background: rgba(13, 124, 119, 0.1);
+  color: #0d7c77;
+}
+
+.sw-icon--biomedical {
+  background: rgba(22, 101, 52, 0.1);
+  color: #166534;
+}
+
+.sw-icon--library {
+  background: rgba(91, 33, 182, 0.1);
+  color: #5b21b6;
+}
+
+.sw-icon--vision {
+  background: rgba(154, 52, 18, 0.1);
+  color: #9a3412;
+}
+
+.sw-card-name {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.25;
+  text-align: left;
+}
+
+.sw-card-repo {
+  font-size: 0.72rem;
+  color: var(--gray);
+  font-family: monospace;
+  margin-top: 2px;
+  text-align: left;
+}
+
+/* ---------- pip / dataset badges ---------- */
+.sw-pip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #166534;
+  font-family: monospace;
+  width: fit-content;
+}
+
+.sw-dataset-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 11px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #1e40af;
+  width: fit-content;
+}
+
+/* ---------- description ---------- */
+.sw-card-desc {
+  font-size: 0.825rem;
+  color: var(--gray);
+  line-height: 1.65;
+  flex: 1;
+  margin: 0;
+}
+.sw-card-desc em {
+  font-style: italic;
+}
+.sw-card-desc strong {
+  color: var(--text);
+}
+.sw-card-desc code {
+  font-family: monospace;
+  font-size: 0.78rem;
+  background: var(--background-alt);
+  padding: 1px 4px;
+  border-radius: 3px;
+  color: var(--text);
+}
+.sw-card-desc a {
+  color: var(--primary);
+}
+
+/* ---------- tags ---------- */
+.sw-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.sw-tag {
+  display: inline-block;
+  font-size: 0.67rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--background-alt);
+  color: var(--gray);
+  white-space: nowrap;
+  line-height: 1.3;
+}
+
+/* ---------- card footer ---------- */
+.sw-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+  margin-top: auto;
+  border-top: 1px solid var(--light-gray);
+}
+
+/* ---------- paper badges ---------- */
+.sw-paper-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.67rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.sw-badge--ieee {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.sw-badge--elsevier {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.sw-badge--mdpi {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.sw-badge--acm {
+  background: #fef9c3;
+  color: #713f12;
+}
+
+.sw-badge--springer {
+  background: #fce7f3;
+  color: #831843;
+}
+
+/* ---------- GitHub button ---------- */
+.sw-gh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  background: var(--text);
+  color: var(--background) !important;
+  border-radius: 7px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  line-height: 1;
+  transition: background 0.16s ease;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.sw-gh-btn:hover {
+  background: var(--primary);
+  color: #fff !important;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 640px) {
+  .sw-repo-grid {
+    grid-template-columns: 1fr;
+  }
+  .sw-filter-bar {
+    gap: 6px;
+  }
+  .sw-filter-btn {
+    font-size: 0.76rem;
+    padding: 7px 12px;
+  }
+}
+/* ---------- dark mode overrides ---------- */
+[data-dark=true] .sw-icon--security {
+  background: rgba(56, 189, 248, 0.15);
+  color: #93c5fd;
+}
+[data-dark=true] .sw-icon--federated {
+  background: rgba(45, 212, 191, 0.15);
+  color: #5eead4;
+}
+[data-dark=true] .sw-icon--biomedical {
+  background: rgba(74, 222, 128, 0.15);
+  color: #86efac;
+}
+[data-dark=true] .sw-icon--library {
+  background: rgba(167, 139, 250, 0.15);
+  color: #c4b5fd;
+}
+[data-dark=true] .sw-icon--vision {
+  background: rgba(251, 146, 60, 0.15);
+  color: #fdba74;
+}
+[data-dark=true] .sw-pip-badge {
+  background: rgba(74, 222, 128, 0.1);
+  border-color: rgba(74, 222, 128, 0.25);
+  color: #86efac;
+}
+[data-dark=true] .sw-dataset-badge {
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.25);
+  color: #7dd3fc;
+}
+[data-dark=true] .sw-badge--ieee {
+  background: rgba(56, 189, 248, 0.12);
+  color: #7dd3fc;
+}
+[data-dark=true] .sw-badge--elsevier {
+  background: rgba(251, 146, 60, 0.12);
+  color: #fdba74;
+}
+[data-dark=true] .sw-badge--mdpi {
+  background: rgba(74, 222, 128, 0.12);
+  color: #86efac;
+}
+[data-dark=true] .sw-badge--acm {
+  background: rgba(250, 204, 21, 0.12);
+  color: #fde047;
+}
+[data-dark=true] .sw-badge--springer {
+  background: rgba(244, 114, 182, 0.12);
+  color: #f9a8d4;
+}
+
+/*# sourceMappingURL=software.css.map */
