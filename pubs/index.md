@@ -108,6 +108,8 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-newspaper" %} All Publications
 
+{% include alert.html icon="warning" type="warning" content="**Notice:** Downloaded papers are for personal research and educational use only. Copyright belongs to the respective publishers; further distribution is prohibited without permission." %}
+
 {% include search-box.html %}
 
 {% include search-info.html %}
