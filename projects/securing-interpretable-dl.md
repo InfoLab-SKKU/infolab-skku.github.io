@@ -2,8 +2,6 @@
 title: "Securing Interpretable Deep Learning Systems: Adversarial Threats, Stealthy Attacks, and Defense Mechanisms"
 ---
 
-{% include breadcrumbs.html %}
-
 # {% include icon.html icon="fa-solid fa-microscope" %}Securing Interpretable Deep Learning Systems: Adversarial Threats, Stealthy Attacks, and Defense Mechanisms
 
 

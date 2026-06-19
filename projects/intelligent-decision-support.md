@@ -1,8 +1,6 @@
 ---
-title: xplainable Dynamic Ensemble Learning with Late Fusion of Multimodal Data for Intelligent Decision
+title: Explainable Dynamic Ensemble Learning with Late Fusion of Multimodal Data for Intelligent Decision Support
 ---
-
-{% include breadcrumbs.html %}
 
 # {% include icon.html icon="fa-solid fa-layer-group" %} Explainable Dynamic Ensemble Learning with Late Fusion of Multimodal Data for Intelligent Decision Support
 

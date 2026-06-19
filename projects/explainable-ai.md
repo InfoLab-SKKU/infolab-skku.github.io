@@ -5,7 +5,6 @@ redirect_from:
   - /projects/explinable-ai.html
 ---
 
-{% include breadcrumbs.html %}
 # {% include icon.html icon="fa-solid fa-heart-pulse" %} Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications
 
 ## Project Description
