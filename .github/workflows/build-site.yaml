@@ -17,6 +17,15 @@ permissions:
   pages: write
   id-token: write
 
+# Pages allows only one active deployment at a time. Serialize all deploy runs
+# (from on-push, on-pages, on-schedule, or manual dispatch) into a single queue
+# so a second run waits for the first to finish instead of failing with
+# "Creating Pages deployment failed ... due to in progress deployment".
+# cancel-in-progress: false => let an in-flight deploy complete, don't abort it.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
   build-site:
     runs-on: ubuntu-latest
