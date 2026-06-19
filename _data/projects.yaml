@@ -19,9 +19,19 @@
   repo: https://github.com/InfoLab-SKKU
   tags:
 
-- title: Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications
-  subtitle: 
+- title: Robust Malware Detection in Adversarial Environments
+  subtitle: Analysis, Evaluation, and Defense Strategies
   group: security
+  icon: fa-solid fa-shield
+  image: images/news/AdversarialAttacks2025.jpg
+  link: "projects/malware-detection"
+  description: The dynamic evolution of malware, combined with increasingly sophisticated evasion techniques such as packing, obfuscation, and polymorphism, presents a significant challenge to conventional security mechanisms. Machine learning (ML)-based malware detection systems are widely adopted for their ability to generalize and automate malware identification, yet they remain susceptible to adversarial threats. InfoLab at SKKU investigates robust, interpretable detection pipelines—spanning spectral control-flow-graph analysis, the effects of packing on ML detectors, and visualization-based feature fusion—to identify evasive and morphed malware across desktop and mobile platforms.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
+- title: Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications
+  subtitle:
+  group: medical
   icon: fa-solid fa-shield
   image: images/thumbnails/projects/Explainable Artificial Intelligence for Trustworthy and Transparent Decision-Making in Medical Applications.png
   link: "projects/explainable-ai"
@@ -39,7 +49,17 @@
   description: Traditional authentication methods—such as passwords, PINs, and even biometric systems (fingerprint, facial recognition)—typically secure mobile devices only at the point of entry. However, they fail to offer protection throughout a session, leaving devices vulnerable to unauthorized access when unattended. To bridge this security gap, the research group InfoLab at Sungkyunkwan University (SKKU) has led a series of studies on continuous, sensor-based, and adversarially-aware user authentication mechanisms.
   repo: https://github.com/InfoLab-SKKU
   tags:
-  
+
+- title: "Robust Federated Learning: Defending Distributed AI Against Poisoning Attacks"
+  subtitle: Poisoning Attacks Under Client Data Heterogeneity
+  group: security
+  icon: fa-solid fa-shield
+  image: images/thumbnails/projects/ROBUST_FEDERATED_LEARNING.png
+  link: "projects/federated-learning-security"
+  description: Federated learning lets many clients collaboratively train a shared model without exchanging raw data, making it ideal for privacy-sensitive domains like healthcare and finance. But because the server never sees client data, malicious participants can quietly corrupt the global model through data- and model-poisoning attacks. InfoLab at SKKU investigates how robust federated learning really is once clean, identically distributed data is no longer assumed—studying how poisoning attacks behave under realistic client data heterogeneity (non-IID settings) and how robust-aggregation defenses must adapt when honest clients already look very different from one another.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
 
 - title: Multimodal, Explainable, and Adversarially-Robust Deep Learning for Alzheimer’s Disease Progression Detection
   subtitle: 
@@ -68,5 +88,25 @@
   image: https://ars.els-cdn.com/content/image/1-s2.0-S1532046423002472-ga1.jpg
   link: "projects/mortality"
   description: Predicting patient outcomes in the Intensive Care Unit (ICU)—mortality risk, length of stay, and deterioration events—can save lives and optimize resource allocation, yet the complexity of clinical time-series data makes this a formidable modeling challenge. InfoLab applies dynamic ensemble methods that fuse longitudinal vital signs, lab measurements, medication histories, and diagnostic codes from large-scale ICU databases such as MIMIC and eICU. Our explainable models generate patient-level risk scores alongside interpretable feature attributions, giving intensivists actionable insight into which clinical indicators are driving the prediction at each point in time.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
+- title: "Large Language Models for Trustworthy Healthcare and Clinical Decision Support"
+  subtitle: Clinical NLP, Smart Pharmacy, and Explainable Chatbots
+  group: medical
+  icon: fa-solid fa-shield
+  image: images/thumbnails/projects/LLMs_Trustworthy_Healthcare.png
+  link: "projects/llm-healthcare"
+  description: Large language models are reshaping how clinical knowledge is accessed, explained, and acted upon—but healthcare is precisely where hallucination, opacity, and unsafe recommendations are least acceptable. InfoLab at SKKU develops and evaluates LLM-powered systems that pair the fluency of modern language models with knowledge grounding, explainability, and responsible-AI safeguards. Our work spans smart pharmacy systems for drug safety, knowledge-augmented explainable chatbots that curb hallucination, and LLM-based clinical outcome prediction, all designed to be accurate, transparent, and safe enough for real clinical and pharmacy workflows.
+  repo: https://github.com/InfoLab-SKKU
+  tags:
+
+- title: "Explainable Deep Learning for Disease Diagnosis and Medical Imaging"
+  subtitle: Retinopathy, Kidney Disease, Osteoporosis, and Skin Cancer
+  group: medical
+  icon: fa-solid fa-shield
+  image: images/thumbnails/projects/XAI_Disease_Diagnosis.png
+  link: "projects/disease-diagnosis-imaging"
+  description: Deep learning now matches clinicians on many diagnostic and screening tasks, yet adoption stalls when models cannot explain their decisions or generalize beyond curated benchmarks. Across conditions—from sight-threatening eye disease to chronic kidney and bone disorders—InfoLab at SKKU builds diagnostic systems that are accurate, robust, and interpretable. This work unifies explainable AI for disease diagnosis and medical imaging beyond neurodegenerative disease, combining transfer learning, hybrid CNN–Transformer architectures, and ensembles with clinician-inspectable explanations across diabetic retinopathy grading, chronic kidney disease detection, osteoporosis screening, and skin-cancer staging.
   repo: https://github.com/InfoLab-SKKU
   tags:

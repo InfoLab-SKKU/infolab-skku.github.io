@@ -2,7 +2,6 @@
 title: Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction
 ---
 
-{% include breadcrumbs.html %}
 # {% include icon.html icon="fa-solid fa-heart-pulse" %} Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction
 
 ## Project Description

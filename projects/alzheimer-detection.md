@@ -5,7 +5,6 @@ redirect_from:
   - /projects/alzeimer-detection.html
 ---
 
-{% include breadcrumbs.html %}
 # {% include icon.html icon="fa-solid fa-brain" %} Multimodal, Explainable, and Adversarially-Robust Deep Learning for Alzheimer’s Disease Progression Detection
 
 ## Project Description

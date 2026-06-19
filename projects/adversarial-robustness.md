@@ -2,8 +2,6 @@
 title: "Comprehensive Evaluation of Adversarial Robustness in Deep Learning: Architecture, Diversity, and Defense Analysis"
 ---
 
-{% include breadcrumbs.html %}
-
 # {% include icon.html icon="fa-solid fa-shield-halved" %} Comprehensive Evaluation of Adversarial Robustness in Deep Learning: Architecture, Diversity, and Defense Analysis
 
 ## Project Description

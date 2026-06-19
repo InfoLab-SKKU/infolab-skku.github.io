@@ -1,8 +1,7 @@
 ---
-title: "Comprehensive Evaluation of Adversarial Robustness in Deep Learning: Architecture, Diversity, and Defense Analysis"
+title: "Behavioral Biometrics for Continuous and Adversarially Robust User Authentication on Smartphones"
 ---
 
-{% include breadcrumbs.html %}
 # {% include icon.html icon="fa-solid fa-user-shield" %} Behavioral Biometrics for Continuous and Adversarially Robust User Authentication on Smartphones
 ![Image3](../images/thumbnails/projects/Behavioral Biometrics for Continuous and Adversarially Robust User Authentication on Smartphones 1.jpg)
 
