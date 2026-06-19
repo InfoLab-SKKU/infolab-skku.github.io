@@ -98,6 +98,14 @@ $wrap: 800px;
 
 .citation-buttons .button {
   margin: 0;
+  // Match the design: muted secondary color (same as the description text),
+  // brightening to the azure accent on hover — rather than the bright default
+  // link color used by bare buttons elsewhere.
+  color: var(--gray);
+
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 .citation-text > .tags {
