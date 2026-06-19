@@ -1,17 +1,23 @@
-# Featured (selected) publications shown in the highlight strip on /pubs.
-# Add `featured: true` to any source entry to include it there.
 - id: doi:10.14722/ndss.2026.241872
   featured: true
+  buttons:
+  - type: pdf
+    link: pdf/ndss_2026_241872.pdf
 - id: doi:10.1109/TIFS.2025.3622073
   featured: true
+  buttons:
+  - type: pdf
+    link: pdf/TIFS_2025_3622073.pdf
 - id: doi:10.1016/j.inffus.2023.101805
   featured: true
+  buttons:
+  - type: pdf
+    link: pdf/j_inffus_2023_101805.pdf
 - id: doi:10.1109/imcom64595.2025.10857574
   image: images/thumbnails/FLIMCOM25.png
   buttons:
   - type: pdf
-    link: pdf/Towards_Robust_Federated_Learning_Investigating_Poisoning_Attacks_Under_Clients_Data_Heterogeneity
-      (1).pdf
+    link: pdf/Towards_Robust_FL.pdf
 - id: doi:10.1109/TR.2025.3551717
   image: images/thumbnails/StealthyQuery-EfficientAttack.png
   buttons:
@@ -218,3 +224,363 @@
   buttons:
   - type: pdf
     link: pdf/e22080841.pdf
+- id: doi:10.1007/S10462-024-11005-9
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/S10462-024-11005-9.pdf
+- id: doi:10.1109/ACCESS.2020.3010556
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ACCESS_2020_3010556.pdf
+- id: doi:10.1109/ACCESS.2021.3090998
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ACCESS_2021_3090998.pdf
+- id: doi:10.1007/s00607-025-01485-0
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s00607-025-01485-0.pdf
+- id: doi:10.1038/s41598-024-54065-1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s41598-024-54065-1.pdf
+- id: doi:10.1038/S41598-024-56136-9
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/S41598-024-56136-9.pdf
+- id: doi:10.1109/tip.2015.2488780
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/tip_2015_2488780.pdf
+- id: doi:10.21203/rs.3.rs-49216/v1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/rs_3_rs-49216_v1.pdf
+- id: doi:10.1101/2025.01.25.24319689
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2025_01_25_24319689.pdf
+- id: doi:10.1109/jiot.2020.3046055
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/jiot_2020_3046055.pdf
+- id: doi:10.21203/rs.3.rs-8614100/v1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/rs_3_rs-8614100_v1.pdf
+- id: doi:10.21203/rs.3.rs-3128427/v1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/rs_3_rs-3128427_v1.pdf
+- id: doi:10.1109/access.2020.3048435
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/access_2020_3048435.pdf
+- id: doi:10.1109/access.2020.3008019
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/access_2020_3008019.pdf
+- id: doi:10.1109/access.2020.2984269
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/access_2020_2984269.pdf
+- id: doi:10.1109/access.2018.2881001
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/access_2018_2881001.pdf
+- id: doi:10.1038/S41598-023-41661-W
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/S41598-023-41661-W.pdf
+- id: doi:10.1007/s00521-022-07263-9
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s00521-022-07263-9.pdf
+- id: doi:10.1007/s00521-021-06631-1
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s00521-021-06631-1.pdf
+- id: doi:10.2478/popets-2020-0044
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/popets-2020-0044.pdf
+- id: doi:10.1007/978-3-030-91434-9_9
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/978-3-030-91434-9_9.pdf
+- id: doi:10.1007/978-3-030-55190-2_36
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/978-3-030-55190-2_36.pdf
+- id: doi:10.32604/cmc.2021.019069
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/cmc_2021_019069.pdf
+- id: doi:10.1145/3488932.3527278
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/3488932_3527278.pdf
+- id: doi:10.1371/journal.pone.0332134
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/journal_pone_0332134.pdf
+- id: doi:10.1007/s11227-019-02984-6
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s11227-019-02984-6.pdf
+- id: doi:10.1007/s00500-018-3245-3
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s00500-018-3245-3.pdf
+- id: doi:10.1007/s13369-018-3670-8
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s13369-018-3670-8.pdf
+- id: doi:10.31209/2019.100000151
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2019_100000151.pdf
+- id: doi:10.1007/s10916-014-0067-4
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/s10916-014-0067-4.pdf
+- id: doi:10.1007/978-3-319-13461-1_45
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/978-3-319-13461-1_45.pdf
+- id: doi:https://doi.org/10.1007/978-3-031-47715-7_38
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/978-3-031-47715-7_38.pdf
+- id: doi:10.32604/csse.2023.036371
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/csse_2023_036371.pdf
+- id: doi:10.1016/j.neucom.2020.05.087
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_neucom_2020_05_087.pdf
+- id: doi:10.1145/3243734.3243738
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/3243734_3243738.pdf
+- id: doi:10.1016/J.INFFUS.2022.11.028
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/J_INFFUS_2022_11_028.pdf
+- id: doi:10.1016/j.cmpb.2023.107495
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_cmpb_2023_107495.pdf
+- id: doi:10.1109/ACCESS.2021.3052870
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ACCESS_2021_3052870.pdf
+- id: doi:10.1109/TNSM.2022.3200741
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/TNSM_2022_3200741.pdf
+- id: doi:10.1016/j.neucom.2022.09.009
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_neucom_2022_09_009.pdf
+- id: doi:10.1016/j.future.2020.10.005
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_future_2020_10_005.pdf
+- id: doi:10.1016/j.mtcomm.2020.101897
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_mtcomm_2020_101897.pdf
+- id: doi:10.3390/diagnostics11071155
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/diagnostics11071155.pdf
+- id: doi:10.1016/j.future.2018.12.038
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_future_2018_12_038.pdf
+- id: doi:10.1016/j.jbi.2022.104216
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_jbi_2022_104216.pdf
+- id: doi:10.1016/J.JAG.2022.102854
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/J_JAG_2022_102854.pdf
+- id: doi:10.1016/j.aej.2023.09.050
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_aej_2023_09_050.pdf
+- id: doi:10.1109/JBHI.2022.3202178
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/JBHI_2022_3202178.pdf
+- id: doi:10.1111/MICE.13015
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/MICE_13015.pdf
+- id: doi:10.1145/3461666
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/3461666.pdf
+- id: doi:10.1016/J.ASOC.2024.111749
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/J_ASOC_2024_111749.pdf
+- id: doi:10.1016/J.JENVMAN.2024.120682
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/J_JENVMAN_2024_120682.pdf
+- id: doi:10.1145/3488932.3527294
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/3488932_3527294.pdf
+- id: doi:10.1155/2021/8439655
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2021_8439655.pdf
+- id: doi:10.1016/j.pmcj.2024.101922
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_pmcj_2024_101922.pdf
+- id: doi:10.1145/3488932.3527283
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/3488932_3527283.pdf
+- id: doi:10.13088/jiis.2024.30.2.025
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/jiis_2024_30_2_025.pdf
+- id: doi:10.1145/3494108.3522768
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/3494108_3522768.pdf
+- id: doi:10.1016/j.eswa.2025.129812
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_eswa_2025_129812.pdf
+- id: doi:10.1109/ACCESS.2022.3229440
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ACCESS_2022_3229440.pdf
+- id: doi:10.1016/j.engappai.2026.114291
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_engappai_2026_114291.pdf
+- id: doi:10.1109/ICEENG64546.2025.11031335
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/ICEENG64546_2025_11031335.pdf
+- id: doi:10.1109/SVCC61185.2024.10637364
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/SVCC61185_2024_10637364.pdf
+- id: doi:10.1016/j.inffus.2026.104507
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_inffus_2026_104507.pdf
+- id: doi:10.1016/j.knosys.2025.115104
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_knosys_2025_115104.pdf
+- id: doi:10.1109/JBHI.2025.3631655
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/JBHI_2025_3631655.pdf
+- id: doi:10.1109/SVCC61185.2024.10637362
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/SVCC61185_2024_10637362.pdf
+- id: doi:10.1016/j.asoc.2026.115590
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_asoc_2026_115590.pdf
+- id: doi:10.1016/b978-0-443-27448-0.00007-x
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/b978-0-443-27448-0_00007-x.pdf
+- id: doi:10.1016/b978-0-443-36370-2.00011-6
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/b978-0-443-36370-2_00011-6.pdf
+- id: doi:10.1155/2018/6235379
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/2018_6235379.pdf
+- id: doi:10.1109/JIOT.2020.2975779
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/JIOT_2020_2975779.pdf
