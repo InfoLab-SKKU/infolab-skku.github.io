@@ -15,6 +15,11 @@
 # The 3 most recent entries are featured there; items without an image
 # fall back to a default picture.
 
+- title: "Welcome to InfoLab, Mironshoh!"
+  date: 2026-06-28
+  description: "We are delighted to welcome a new member to InfoLab! Mironshoh joins as an incoming combined M.S./Ph.D. student, bringing expertise in large language models, agantic AI, and trustworthy AI systems. We look forward to Mironshoh's contributions to our team!"
+  url: /team/
+
 - title: "Our paper on a new framework for system-level convergence of IoMT, LLMs, and XAI for healthcare has been accepted to Information Fusion"
   date: 2026-05-28
   description: "We are pleased to announce that our paper, 'Toward Trustworthy Digital Healthcare: A System-Level Convergence of IoMT, Large Language Models, and Explainable AI,' has been accepted to Information Fusion — a top-tier journal in computer science with an Impact Factor of 15.5 and a JCR ranking in the top 1-2%. Congratulations to the team!"
