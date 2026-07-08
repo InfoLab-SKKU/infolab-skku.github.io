@@ -2980,8 +2980,7 @@
     Analyzers Image Classification.png
   buttons:
   - type: pdf
-    link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification
-      (1).pdf
+    link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification.pdf
 - id: doi:10.1016/j.cmpb.2024.108348
   title: Alzheimer's disease diagnosis in the metaverse
   authors:
@@ -3099,6 +3098,9 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+  buttons:
+  - type: pdf
+    link: pdf/Unveiling Vulnerabilities in Interpretable Deep Learning Systems.pdf
 - id: doi:10.32604/csse.2023.036371
   title: "Early Detection of Alzheimer\u2019s Disease Based on Laplacian Re-Decomposition\
     \ and XGBoosting"
@@ -3173,6 +3175,9 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+  buttons:
+  - type: pdf
+    link: pdf/AN EXPLORATION OF GEO-TEMPORAL CHARACTERISTICS OF USERS REACTIONS ON SOCIAL MEDIA DURING THE PANDEMIC.pdf
 - id: doi:10.1109/JIOT.2020.2975779
   title: 'AUTo<i>Sen</i>: Deep-Learning-Based Implicit Continuous Authentication Using
     Smartphone Sensors'

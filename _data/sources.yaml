@@ -1,5 +1,6 @@
 - id: doi:10.14722/ndss.2026.241872
   featured: true
+  image: images/news/ndss-Featured.jpg
   buttons:
   - type: pdf
     link: pdf/ndss_2026_241872.pdf
@@ -33,8 +34,7 @@
     Analyzers Image Classification.png
   buttons:
   - type: pdf
-    link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification
-      (1).pdf
+    link: pdf/FiSC_A_Novel_Approach_for_Fitzpatrick_Scale-Based_Skin_Analyzers_Image_Classification.pdf
 - id: doi:10.3390/diagnostics14212385
   image: images/thumbnails/ExplainableMulti-LayerDEDepression.png
   buttons:
@@ -584,3 +584,11 @@
   buttons:
   - type: pdf
     link: pdf/JIOT_2020_2975779.pdf
+- id: arxiv:2307.11906
+  buttons:
+  - type: pdf
+    link: pdf/Unveiling Vulnerabilities in Interpretable Deep Learning Systems.pdf
+- id: arxiv:2103.13032
+  buttons:
+  - type: pdf
+    link: pdf/AN EXPLORATION OF GEO-TEMPORAL CHARACTERISTICS OF USERS REACTIONS ON SOCIAL MEDIA DURING THE PANDEMIC.pdf

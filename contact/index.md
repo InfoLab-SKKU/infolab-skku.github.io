@@ -74,7 +74,7 @@ nav:
         width="100%"
         height="380"
         frameborder="0"
-        src="https://maps.google.com/maps?q=Hwasan-ro,%20Yulcheon-dong,%20Jangan-gu,%20Suwon-si,%20Gyeonggi-do+(Infolab)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+        src="https://maps.google.com/maps?q=Sungkyunkwan+University+Natural+Science+Campus,+2066+Seobu-ro,+Jangan-gu,+Suwon-si+(InfoLab)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
         referrerpolicy="no-referrer-when-downgrade"
         allowfullscreen
         loading="lazy"

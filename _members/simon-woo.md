@@ -1,6 +1,6 @@
 ---
 name: Simon S. Woo
-image: https://dash-lab.github.io/img/member_images/SimonWoo_new.jpg
+image: images/simon-woo.jpg
 role: collab
 group: collab
 aliases:

@@ -1,6 +1,8 @@
 ---
 title: "Welcome to the InfoLab Blog"
 author: Tamer Abuhmed
+redirect_from:
+  - /2021/03/01/welcome-to-infolab-blog.html
 tags:
   - news
   - lab

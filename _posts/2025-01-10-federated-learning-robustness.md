@@ -1,6 +1,8 @@
 ---
 title: "New Paper: Federated Learning Under Data Heterogeneity"
 author: Abdenour Soubih
+redirect_from:
+  - /2025/01/10/federated-learning-robustness.html
 tags:
   - federated learning
   - security
