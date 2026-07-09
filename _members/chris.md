@@ -1,5 +1,7 @@
 ---
 name: ZHENG CHENSHENG (Chris)
+aliases:
+  - Chensheng Zheng
 image: images/chris.jpeg
 role: master
 group: alum
@@ -26,9 +28,3 @@ Sungkyunkwan University (SKKU) – M.S. in Computer Science and Engineering (Alu
 
 Northeastern University – B.S. in Computer Science and Technology
 2018.9 – 2022.8
-
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="zheng-chenshen-list: true" style="rich" %}

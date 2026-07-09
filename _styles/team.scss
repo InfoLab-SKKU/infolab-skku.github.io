@@ -1045,6 +1045,13 @@ body section.background:has(.team-hero) + section.background {
   transform: translateY(-2px);
 }
 
+/* publication count next to the Publications heading on member pages */
+.member-pubs-count {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: var(--gray);
+}
+
 .member-pubs-btn .icon {
   font-size: 0.9em;
 }

@@ -1,5 +1,7 @@
 ---
 name: Tamer ABUHMED
+aliases:
+  - Tamer Abuhamad
 image: images/tamer-min.jpeg
 role: pi
 group: active
@@ -155,9 +157,4 @@ With over **6,200+ citations**, an **h-index of 35+**, and an **i10-index of 65+
 - Data Communications 
 - Assembly Language Programming 
 - Mobile Programming 
-- Wireless Communication and Networking 
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="tamer-abuhmed-list: true" style="rich" %}
+- Wireless Communication and Networking

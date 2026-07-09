@@ -20,6 +20,3 @@ research_tags:
 ---
 
 Professor DaeHun Nyang is a faculty member in the Department of Cyber Security at Ewha Womans University. His research interests include cryptography, privacy, usable security, network security, and system security. He has an extensive publication record in these areas.
-
-{% include section.html %}
-## Publications

@@ -21,8 +21,3 @@ Fluent in English and Korean.
 Sungkyunkwan University (SKKU) – 3rd Year Undergraduate Student in Computer Science and Engineering 2022.8 ~ present <br>
 
 Memorial University of Newfoundland - 3rd Year Undergraduate Exchange Student in Computer Science and Engineering 2025.1 ~ 2025.5
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="moses-choi-list: true" style="rich" %}

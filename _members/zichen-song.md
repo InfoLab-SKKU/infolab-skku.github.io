@@ -34,4 +34,3 @@ His broader interests include trustworthy AI, federated learning, and efficient 
 7. **EM-MIAs: Enhancing Membership Inference Attacks in Large Language Models through Ensemble Modeling**  - Zichen Song, Sitan Huang, Zhongfeng Kang. *ICASSP 2025 (CCF-B)*, **Accept**.
 8. **Mutual Information Dropout: Mutual Information Can Be All You Need**  - Zichen Song, Shan Ma. *ICANN 2023 (CCF C)*, **Accept (Oral)**.
 9. **DNN-based hospital service satisfaction using GCNNs learning**  - Zichen Song, Shan Ma. *IEEE Access (IF 3.9)*, **Accept**.
-{% include list.html data="citations" component="citation" filters="zichen-song-list: true" style="rich" %}

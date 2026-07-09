@@ -22,6 +22,3 @@ research_tags:
 ---
 
 Abolghasem Sadeghi-Niaraki is a Professor with expertise in geospatial information systems and urban planning. His research focuses on smart cities and spatial data analysis.
-
-{% include section.html %}
-## Publications

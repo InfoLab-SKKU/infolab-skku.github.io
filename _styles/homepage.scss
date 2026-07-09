@@ -110,13 +110,17 @@
   border-radius: var(--rounded-lg);
 }
 
-/* white chips keep mixed-format logos legible in both themes */
+/* identical white chips so mixed-size logos render uniformly in both themes */
 .funders-band a {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  width: 220px;
+  height: 80px;
+  padding: 14px 22px;
   background: #fff;
-  padding: 12px 20px;
+  border: 1px solid var(--hairline);
   border-radius: var(--rounded);
   box-shadow: var(--shadow-sm);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -128,10 +132,19 @@
 }
 
 .funders-band img {
-  max-height: 44px;
-  max-width: 160px;
+  max-width: 100%;
+  max-height: 100%;
   width: auto;
   height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 520px) {
+  .funders-band a {
+    width: 150px;
+    height: 64px;
+    padding: 10px 14px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -20,9 +20,3 @@ Fluent in Korean, actively learning English and French to enhance the ability to
 ### Education
 Sungkyunkwan University (SKKU) – Bachelor's Student in Computer Science and Engineering <br>
 2025 – present
-
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="aJimin-Lee-list: true" style="rich" %}

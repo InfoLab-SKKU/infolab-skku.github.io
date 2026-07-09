@@ -25,9 +25,3 @@ ECE Ecole d'Ingenieurs, Paris – Master 1 in Cybersecurity <br>
 
 Hanyang University, Ansan-si, South Korea  – Exchange Semester (Courses : Network Security, UX/UI, Algorithm Theory, Statistics)<br>
 2023.9 – 2023.12
-
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="pompei-clement-list: true" style="rich" %}

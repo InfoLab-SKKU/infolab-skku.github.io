@@ -24,9 +24,3 @@ Proficient in English, Korean, and Russian.
 Sungkyunkwan University (SKKU) – Undergraduate student in Computer Science and Engineering <br>
 2022 – Present
 (Expected Graduation: June 2026)
-
-{% include section.html %}
-
-## Publications
-
-<!-- No publications listed yet -->

@@ -27,8 +27,3 @@ technologies.
 Ph.D. (Computer Engineering) - SKKU, South Korea - present<br>
 M.E. (Information Technology) - MUET, Pakistan<br>
 B.E. (Software Engineering) - MUET, Pakistan<br>
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="maria-bashir-list: true" style="rich" %}
