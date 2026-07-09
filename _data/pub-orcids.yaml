@@ -1,0 +1,7 @@
+# ORCID iDs whose citation entries count as lab publications.
+# Used by /pubs (list + stats bar) and the homepage stat bar (hero-bento).
+# When a member with their own ORCID feed joins, add them here AND in
+# _data/orcid.yaml (which drives the update-citations workflow).
+- "0000-0001-9232-4843" # Tamer Abuhmed (PI)
+- "0000-0002-0086-8155" # Firuz Juraev
+- "0009-0002-4648-9289" # Abdenour Soubih

@@ -1,7 +1,7 @@
 ---
 title: News
 nav:
-  order: 1
+  order: 5
   tooltip: Lab news and updates
 ---
 
@@ -125,8 +125,27 @@ nav:
 
 </div><!-- /.news-col-main -->
 
-<!-- BLUESKY SIDEBAR -->
+<!-- SIDEBAR: research blog + bluesky -->
 <div class="news-col-side">
+
+  <!-- Deep-dive articles from the research blog -->
+  <div class="news-social-section">
+    <div class="news-social-header">
+      <i class="fa-solid fa-pen-nib"></i>
+      <span>Research Blog</span>
+      <a href="{{ '/blog' | relative_url }}" class="news-social-handle">All posts →</a>
+    </div>
+    <p class="news-blog-tagline">Longer reads — deep dives into our papers and methods.</p>
+    <ul class="news-blog-list">
+      {% for post in site.posts limit: 3 %}
+        <li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="news-blog-date">{{ post.date | date: "%b %d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
   <div class="news-social-section news-social-sticky">
     <div class="news-social-header">
       <i class="fa-brands fa-bluesky"></i>

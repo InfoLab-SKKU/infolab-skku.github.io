@@ -5,6 +5,7 @@ role: master
 group: alum
 aliases:
 years_worked: 2022-2023
+placement: CEO & Founder, Obscura Labs · South Korea
 links:
    linkedin: bojun-wang-02b043124
    github: 

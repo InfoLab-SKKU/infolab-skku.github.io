@@ -3,6 +3,7 @@ name: ZHENG CHENSHENG (Chris)
 image: images/chris.jpeg
 role: master
 group: alum
+placement: Samsung R&D · China
 years_worked: 2023-2026
 links:
    orcid: 0009-0004-6577-4805

@@ -1,6 +1,8 @@
 ---
 title: "InfoLab Receives IITP Grant for Privacy-Adaptive AI Research"
 author: Tamer Abuhmed
+redirect_from:
+  - /2022/02/01/iitp-privacy-grant.html
 tags:
   - funding
   - privacy

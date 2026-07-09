@@ -1,0 +1,74 @@
+---
+---
+
+/* ===========================================
+   UPCOMING VENUES & DEADLINES PAGE
+   =========================================== */
+
+.venue-jump-btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.venue-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 16px 0 32px;
+}
+
+.venue-cards--wide {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.venue-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition);
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    text-decoration: none;
+  }
+}
+
+.venue-card--major {
+  border: 1px solid var(--hairline);
+  border-top: 4px solid var(--primary);
+  padding: 22px 20px;
+}
+
+.venue-card-title {
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.4;
+
+  i { margin-right: 6px; }
+}
+
+.venue-card--major .venue-card-title {
+  font-size: 1.05rem;
+}
+
+.venue-card-desc {
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .venue-card:hover { transform: none; }
+}

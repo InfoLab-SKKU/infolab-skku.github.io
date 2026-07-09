@@ -41,6 +41,10 @@ collections:
   posts:
     output: true
 
+# single URL scheme for all posts (old posts redirect from their root-level
+# URLs via redirect_from in their front matter)
+permalink: /blog/:year/:month/:day/:title:output_ext
+
 # jekyll plugins
 plugins:
   - jekyll-spaceship

@@ -4,11 +4,8 @@ image: images/abdulrahman-alsharabati.jpg
 role: phd
 group: active
 links:
-   <!-- orcid: 0009-0002-4648-9289 -->
    linkedin: abdulrahman-alsharabati
    github: alekulyn
-   <!-- home-page: https://soubihabdenour.github.io/ -->
-   <!-- google-scholar: dxgFhR8AAAAJ -->
    email: alekulyn@skku.edu
 research_tags:
   - Model Optimization

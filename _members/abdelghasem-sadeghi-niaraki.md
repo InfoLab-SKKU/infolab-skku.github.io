@@ -1,7 +1,7 @@
 ---
 name: Abolghasem Sadeghi-Niaraki
 image: images/abdelghasem-sadeghi-niharaki.jpeg
-role: pro
+role: professor
 group: collab
 aliases:
 links:

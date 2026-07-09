@@ -82,7 +82,7 @@
 
     <!-- =========================== STAT BAR =========================== -->
     {% comment %} Publications — match the /pubs render filter {% endcomment %}
-    {% assign pub_orcids = "0000-0001-9232-4843,0000-0002-0086-8155,0009-0002-4648-9289" | split: "," %}
+    {% assign pub_orcids = site.data.pub-orcids %}
     {% assign pub_count = 0 %}
     {% for citation in site.data.citations %}
       {% if pub_orcids contains citation.orcid %}
@@ -139,7 +139,15 @@
     </a>
 
     <!-- ====================== FEATURED PAPER ====================== -->
-    {% assign feat = site.data.citations | where: "featured", true | sort: "date" | reverse | first %}
+    {% comment %} newest featured publication that has an image; else newest featured; else newest PI pub {% endcomment %}
+    {% assign feat_pool = site.data.citations | where: "featured", true | sort: "date" | reverse %}
+    {% assign feat = nil %}
+    {% for f in feat_pool %}
+      {% if f.image and f.image != "" %}{% assign feat = f %}{% break %}{% endif %}
+    {% endfor %}
+    {% if feat == nil %}
+      {% assign feat = feat_pool | first %}
+    {% endif %}
     {% if feat == nil %}
       {% assign feat = site.data.citations | where_exp: "c", "c.orcid == '0000-0001-9232-4843'" | sort: "date" | reverse | first %}
     {% endif %}
@@ -160,7 +168,9 @@
           {% assign feat_authors = feat.authors | slice: 0, 3 %}
           <span class="b-featured-authors">{{ feat_authors | join: ", " }}{% if feat.authors.size > 3 %} et al.{% endif %}</span>
         {% endif %}
-        <img class="b-featured-image" src="{{ '/images/news/ndss-Featured.jpg' | relative_url }}" alt="{{ feat.title }}" loading="lazy">
+        {% comment %} per-publication image from citations data (set `image:` in sources.yaml); generic fallback {% endcomment %}
+        {% assign feat_img = feat.image | default: "images/news/ndss-Featured.jpg" %}
+        <img class="b-featured-image" src="{{ feat_img | relative_url }}" alt="{{ feat.title }}" loading="lazy">
         <span class="b-featured-link">View Paper {% include icon.html icon="fa-solid fa-arrow-right" %}</span>
       </a>
     {% endif %}

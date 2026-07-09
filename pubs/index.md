@@ -1,12 +1,12 @@
 ---
 title: Publications
 nav:
-  order: 3
+  order: 2
   tooltip: Published works
 ---
 
 <!-- Stats bar -->
-{% assign pub_orcids = "0000-0001-9232-4843,0000-0002-0086-8155,0009-0002-4648-9289" | split: "," %}
+{% assign pub_orcids = site.data.pub-orcids %}
 {% assign filtered_pubs = site.data.citations | where_exp: "c", "pub_orcids contains c.orcid" %}
 {% assign total_pubs = filtered_pubs.size %}
 {% assign current_year = 'now' | date: "%Y" %}
@@ -101,6 +101,13 @@ nav:
       icon="fa-solid fa-calendar-alt"
       text="Upcoming Venues"
       link="pubs/upcoming"
+      style="bare"
+    %}
+    {%
+      include button.html
+      icon="fa-solid fa-chart-line"
+      text="Research Impact"
+      link="impact"
       style="bare"
     %}
   </div>

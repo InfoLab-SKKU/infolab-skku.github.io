@@ -1,7 +1,7 @@
 ---
 name: DaeHun Nyang
 image: images/daehun-nyang.png
-role: pro
+role: professor
 group: collab
 aliases:
 links:

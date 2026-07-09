@@ -1,7 +1,7 @@
 ---
 title: Team
 nav:
-  order: 4
+  order: 3
   tooltip: Meet the team
 ---
 
@@ -46,7 +46,7 @@ nav:
 <!-- PI SECTION -->
 <div id="pi" class="team-section">
   <div class="team-section-header">
-    <span class="team-section-icon"><i class="fa-solid fa-user-secret"></i></span>
+    <span class="team-section-icon"><i class="fa-solid fa-user-tie"></i></span>
     <h2 class="team-section-title">Principal Investigator</h2>
   </div>
 

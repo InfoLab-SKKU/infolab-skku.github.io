@@ -5,6 +5,7 @@ role: combined
 group: alum
 aliases:
 years_worked: 2020-2023
+placement: R&D Engineer · USA
 links:
    linkedin:
    github: eldorabdukhamidov
