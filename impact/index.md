@@ -162,7 +162,7 @@ title: Research Impact
     <div class="impact-venue-note">Conference · Top Data Science</div>
   </div>
    <div class="impact-venue-card">
-    <div class="impact-venue-badge impact-venue-badge--springer">ACM</div>
+    <div class="impact-venue-badge impact-venue-badge--acm">ACM</div>
     <div class="impact-venue-name">KDD</div>
     <div class="impact-venue-note">Conference · Top Data Science</div>
   </div>
