@@ -63,12 +63,6 @@
   - type: pdf
     link: pdf/Smart Collaborative Intrusion Detection System for Securing Vehicular
       Networks Using Ensemble Machine Learning Model.pdf
-- id: doi:10.1109/TDSC.2023.3341090
-  featured: true
-  image: images/thumbnails/HardeningIDS.png
-  buttons:
-  - type: pdf
-    link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
 - id: doi:10.1109/TIFS.2024.3407652
   featured: true
   image: images/thumbnails/SingleADV.png

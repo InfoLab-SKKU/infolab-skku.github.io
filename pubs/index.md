@@ -37,7 +37,7 @@ nav:
     <p>Representative work published at top-tier venues</p>
   </div>
   <div class="pubs-featured-grid">
-    {% for pub in featured_pubs limit: 4 %}
+    {% for pub in featured_pubs %}
       {% assign pf_pub_lower = pub.publisher | downcase %}
       {% assign pf_venue = nil %}
       {% for venue in site.data.top-venues %}
