@@ -1336,6 +1336,7 @@
   plugin: google-scholar.py
   file: google-scholar.yaml
 - id: doi:10.1109/TIFS.2024.3407652
+  featured: true
   title: 'SingleADV: Single-Class Target-Specific Attack Against Interpretable Deep
     Learning Systems'
   authors:
@@ -1436,6 +1437,7 @@
   - type: pdf
     link: pdf/app13169425.pdf
 - id: doi:10.1016/j.engappai.2026.114291
+  featured: true
   title: "Trustworthy Alzheimer\u2019s diagnosis: Integrating robustness, fairness,\
     \ and explainability in neuroimaging based deep ensemble framework"
   authors:
@@ -1532,6 +1534,7 @@
   - type: pdf
     link: pdf/rs_3_rs-49216_v1.pdf
 - id: doi:10.1016/j.inffus.2026.104507
+  featured: true
   title: 'Toward Trustworthy Digital Healthcare: A System-Level Convergence of IoMT,
     Large Language Models, and Explainable AI'
   authors:
@@ -1567,10 +1570,12 @@
   plugin: sources.py
   file: sources.yaml
   featured: true
+  image: images/news/ndss-Featured.jpg
   buttons:
   - type: pdf
     link: pdf/ndss_2026_241872.pdf
 - id: doi:10.1109/JBHI.2025.3631655
+  featured: true
   title: '4DfCF: 4D fMRI CrossFormer Vision Transformer'
   authors:
   - Chensheng Zheng

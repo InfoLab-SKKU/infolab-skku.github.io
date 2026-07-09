@@ -1,7 +1,7 @@
 ---
 title: Publications
 nav:
-  order: 3
+  order: 2
   tooltip: Published works
 ---
 
@@ -101,6 +101,13 @@ nav:
       icon="fa-solid fa-calendar-alt"
       text="Upcoming Venues"
       link="pubs/upcoming"
+      style="bare"
+    %}
+    {%
+      include button.html
+      icon="fa-solid fa-chart-line"
+      text="Research Impact"
+      link="impact"
       style="bare"
     %}
   </div>

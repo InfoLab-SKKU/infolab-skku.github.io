@@ -1,7 +1,7 @@
 ---
 name: Hyunseung Choo
 image: images/hyunseung-cho.jpeg
-role: pro
+role: professor
 group: collab
 aliases:
 links:

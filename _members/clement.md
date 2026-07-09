@@ -3,6 +3,7 @@ name: POMPEI CLÉMENT
 image: images/clement.jpg
 role: intern
 group: alum
+placement: Intern at Airbus · France
 links:
    orcid: 0009-0009-0597-2486
    github: zincc92

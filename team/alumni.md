@@ -60,6 +60,9 @@ title: Lab Alumni
           {% if member.years_worked %}
             <p class="mem-card-years"><i class="fa-solid fa-calendar-alt"></i> {{ member.years_worked }}</p>
           {% endif %}
+          {% if member.placement %}
+            <p class="mem-card-now"><i class="fa-solid fa-briefcase"></i> {{ member.placement }}</p>
+          {% endif %}
           <p class="mem-card-bio">{{ member.content | strip_html | strip | truncatewords: 18 }}</p>
           <div class="mem-card-links">
             {% for link in member.links %}
@@ -122,6 +125,9 @@ title: Lab Alumni
           </h3>
           {% if member.years_worked %}
             <p class="mem-card-years"><i class="fa-solid fa-calendar-alt"></i> {{ member.years_worked }}</p>
+          {% endif %}
+          {% if member.placement %}
+            <p class="mem-card-now"><i class="fa-solid fa-briefcase"></i> {{ member.placement }}</p>
           {% endif %}
           <p class="mem-card-bio">{{ member.content | strip_html | strip | truncatewords: 18 }}</p>
           <div class="mem-card-links">

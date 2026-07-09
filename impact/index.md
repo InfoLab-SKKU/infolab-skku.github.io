@@ -1,10 +1,11 @@
 ---
 title: Research Impact
-published: false
 ---
 
 {% assign current_year = 'now' | date: "%Y" %}
-{% assign total_pubs = site.data.citations | size %}
+{% assign pub_orcids = site.data.pub-orcids %}
+{% assign filtered_pubs = site.data.citations | where_exp: "c", "pub_orcids contains c.orcid" %}
+{% assign total_pubs = filtered_pubs.size %}
 
 <!-- HERO -->
 <div class="team-hero">
@@ -29,7 +30,7 @@ published: false
       </div>
       <div class="team-hstat-sep"></div>
       <div class="team-hstat">
-        <span class="team-hstat-num">90+</span>
+        <span class="team-hstat-num">{{ total_pubs }}</span>
         <span class="team-hstat-lbl">Publications</span>
       </div>
     </div>
@@ -65,9 +66,9 @@ published: false
   </div>
   <div class="impact-metric-card">
     <div class="impact-metric-icon"><i class="fa-regular fa-newspaper"></i></div>
-    <div class="impact-metric-num">76+</div>
-    <div class="impact-metric-lbl">Journal Articles</div>
-    <div class="impact-metric-note">Peer-reviewed journal publications</div>
+    <div class="impact-metric-num">{{ total_pubs }}</div>
+    <div class="impact-metric-lbl">Lab Publications</div>
+    <div class="impact-metric-note">Listed on our <a href="{{ '/pubs' | relative_url }}">Publications page</a></div>
   </div>
   <div class="impact-metric-card">
     <div class="impact-metric-icon"><i class="fa-solid fa-person-chalkboard"></i></div>

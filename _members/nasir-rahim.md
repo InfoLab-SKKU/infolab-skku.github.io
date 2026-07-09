@@ -5,6 +5,7 @@ role: phd
 group: alum
 aliases:
 years_worked: 2020-2023
+placement: University of Michigan–Flint · USA
 links:
   website: https://directory.umflint.edu/cit/nasirr
   linkedin: nasir-rahim3843

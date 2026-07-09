@@ -1,7 +1,7 @@
 ---
 title: Blog
 nav:
-  order: 7
+  order: 6
   tooltip: News, insights, and research updates from InfoLab
 ---
 

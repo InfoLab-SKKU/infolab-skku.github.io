@@ -1,7 +1,7 @@
 ---
 name: Hyoungshick Kim
 image: images/hyoungshick-kim.webp
-role: pro
+role: professor
 group: collab
 aliases:
 links:

@@ -3,8 +3,16 @@
 # team member roles
 
 pi:
-  icon: fa-solid fa-user-secret
+  icon: fa-solid fa-user-tie
   description: Professor & Lab Director
+
+professor:
+  icon: fa-solid fa-chalkboard-user
+  description: Professor
+
+assistant-professor:
+  icon: fa-solid fa-chalkboard-user
+  description: Assistant Professor
 
 postdoc:
   icon: fa-solid fa-user-ninja

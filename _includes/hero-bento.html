@@ -139,7 +139,15 @@
     </a>
 
     <!-- ====================== FEATURED PAPER ====================== -->
-    {% assign feat = site.data.citations | where: "featured", true | sort: "date" | reverse | first %}
+    {% comment %} newest featured publication that has an image; else newest featured; else newest PI pub {% endcomment %}
+    {% assign feat_pool = site.data.citations | where: "featured", true | sort: "date" | reverse %}
+    {% assign feat = nil %}
+    {% for f in feat_pool %}
+      {% if f.image and f.image != "" %}{% assign feat = f %}{% break %}{% endif %}
+    {% endfor %}
+    {% if feat == nil %}
+      {% assign feat = feat_pool | first %}
+    {% endif %}
     {% if feat == nil %}
       {% assign feat = site.data.citations | where_exp: "c", "c.orcid == '0000-0001-9232-4843'" | sort: "date" | reverse | first %}
     {% endif %}

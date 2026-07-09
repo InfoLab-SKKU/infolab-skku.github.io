@@ -545,6 +545,21 @@ body section.background:has(.team-hero) + section.background {
   }
 }
 
+/* alumni "where they went" line */
+.mem-card-now {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  i {
+    font-size: 0.72rem;
+  }
+}
+
 .mem-card-links {
   display: flex;
   gap: 7px;

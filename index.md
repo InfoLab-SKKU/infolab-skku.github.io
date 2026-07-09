@@ -47,29 +47,30 @@ Our team includes graduate students, postdoctoral researchers, and researchers, 
 {% endcapture %}
 {%
   include feature.html
-  image="images/gallery/2025/WhatsApp Image 2025-04-24 at 7.24.29 PM.jpeg"
+  image="images/gallery/2025/itrc2025_team_03.jpeg"
   link="team"
   title="Our Team"
   text=text
 %}
 
 <p class="home-team-photo">
-<img src="../images/gallery/team-itrc.jpeg" alt="Lab team photo at ITRC event" loading="lazy"/>
+<img src="{{ 'images/gallery/team-itrc.jpeg' | relative_url }}" alt="Lab team photo at ITRC event" loading="lazy"/>
 </p>
 
 
-### Our funders
+## Supported By
 
-{% capture col1 %}
-<img src="images/skku-logo.png" alt="SKKU Logo">
-{% endcapture %}
-
-{% capture col2 %}
-<img src="images/msit-logo.png" alt="MSIT Logo">
-{% endcapture %}
-
-{% capture col3 %}
-<img src="images/nrf-logo2.png" alt="NRF Logo">
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
+<div class="funders-band">
+  <a href="https://www.skku.edu/eng/" target="_blank" rel="noopener noreferrer" data-tooltip="Sungkyunkwan University">
+    <img src="{{ 'images/skku-logo.png' | relative_url }}" alt="Sungkyunkwan University (SKKU)" loading="lazy">
+  </a>
+  <a href="https://www.msit.go.kr/eng/" target="_blank" rel="noopener noreferrer" data-tooltip="Ministry of Science and ICT">
+    <img src="{{ 'images/msit-logo.png' | relative_url }}" alt="Ministry of Science and ICT (MSIT)" loading="lazy">
+  </a>
+  <a href="https://www.nrf.re.kr/eng/main" target="_blank" rel="noopener noreferrer" data-tooltip="National Research Foundation of Korea">
+    <img src="{{ 'images/nrf-logo2.png' | relative_url }}" alt="National Research Foundation of Korea (NRF)" loading="lazy">
+  </a>
+  <a href="https://www.iitp.kr/en/main.it" target="_blank" rel="noopener noreferrer" data-tooltip="Institute for ICT Planning & Evaluation">
+    <img src="{{ 'images/iitp-logo.jpg' | relative_url }}" alt="Institute for Information & Communications Technology Planning & Evaluation (IITP)" loading="lazy">
+  </a>
+</div>

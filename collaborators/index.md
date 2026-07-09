@@ -1,7 +1,7 @@
 ---
 title: Collaborators
 nav:
-  order: 5
+  order: 4
   tooltip: Our collaborators
 ---
 
@@ -49,7 +49,7 @@ nav:
           <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="mem-card-photo" loading="lazy" {% include fallback.html %}>
         </a>
         <div class="mem-card-body">
-          <span class="mem-role-pill">{{ mtype.description | default: member.role | replace: "pro", "Professor" | capitalize }}</span>
+          <span class="mem-role-pill">{{ mtype.description | default: member.role }}</span>
           <h3 class="mem-card-name">
             <a href="{{ member.url | relative_url }}">{{ member.name }}</a>
           </h3>

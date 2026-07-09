@@ -1,7 +1,7 @@
 ---
 name: Eric Chan-Tin
 image: images/eric-chan-tin.jpeg
-role: pro
+role: professor
 group: collab
 aliases:
 links:

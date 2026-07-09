@@ -70,6 +70,7 @@
   - type: pdf
     link: pdf/Hardening_Interpretable_Deep_Learning_Systems_Investigating_Adversarial_Threats_and_Defenses.pdf
 - id: doi:10.1109/TIFS.2024.3407652
+  featured: true
   image: images/thumbnails/SingleADV.png
   buttons:
   - type: pdf
@@ -525,6 +526,7 @@
   - type: pdf
     link: pdf/ACCESS_2022_3229440.pdf
 - id: doi:10.1016/j.engappai.2026.114291
+  featured: true
   image: ''
   buttons:
   - type: pdf
@@ -540,6 +542,7 @@
   - type: pdf
     link: pdf/SVCC61185_2024_10637364.pdf
 - id: doi:10.1016/j.inffus.2026.104507
+  featured: true
   image: ''
   buttons:
   - type: pdf
@@ -550,6 +553,7 @@
   - type: pdf
     link: pdf/j_knosys_2025_115104.pdf
 - id: doi:10.1109/JBHI.2025.3631655
+  featured: true
   image: ''
   buttons:
   - type: pdf
