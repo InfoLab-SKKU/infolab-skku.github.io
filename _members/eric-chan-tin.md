@@ -21,6 +21,3 @@ research_tags:
 ---
 
 Dr. Eric Chan-Tin is a Professor of Computer Science at Loyola University Chicago, where he also serves as Graduate Program Director for Computer Science and Software Engineering. His research focuses on network security, distributed systems, privacy, and anonymity, including Tor, browser fingerprinting, and the human factors of cybersecurity. He is also involved in cybersecurity education and leadership through Loyola’s Center of Cybersecurity and NSA/DHS Center of Academic Excellence in Cyber Defense.
-
-{% include section.html %}
-## Publications

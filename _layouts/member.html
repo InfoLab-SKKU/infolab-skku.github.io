@@ -37,6 +37,46 @@ layout: default
 
 {{ content }}
 
+{% comment %}
+  Publications authored by THIS member: match citation author names against
+  the member's name and aliases (case-insensitive). Add name variants found
+  in citation data (spelling, word order) to `aliases:` in the member file.
+{% endcomment %}
+{% assign member_names_dc = "" | split: "" %}
+{% assign raw_names = "" | split: "" %}
+{% if page.aliases %}
+  {% assign raw_names = raw_names | concat: page.aliases %}
+{% endif %}
+{% assign raw_names = raw_names | push: page.name %}
+{% for n in raw_names %}
+  {% if n and n != "" %}
+    {% assign nd = n | downcase | strip %}
+    {% assign member_names_dc = member_names_dc | push: nd %}
+  {% endif %}
+{% endfor %}
+
+{% assign member_pubs = "" | split: "" %}
+{% for c in site.data.citations %}
+  {% for a in c.authors %}
+    {% assign ad = a | downcase | strip %}
+    {% if member_names_dc contains ad %}
+      {% assign member_pubs = member_pubs | push: c %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+{% assign member_pubs = member_pubs | sort: "date" | reverse %}
+
+{% if member_pubs.size > 0 %}
+  {% include section.html %}
+  <h2 id="publications">
+    {% include icon.html icon="fa-regular fa-newspaper" %}
+    Publications
+    <span class="member-pubs-count">({{ member_pubs.size }})</span>
+  </h2>
+  {% include list.html data_array=member_pubs component="citation" style="rich" %}
+{% endif %}
+
 {% assign aliases = page.aliases
   | default: page.name
   | default: page.title

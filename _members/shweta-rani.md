@@ -22,8 +22,3 @@ Sungkyunkwan University (SKKU) – Ph.D Student in Computer Science and Engineer
 2023 – Present
 
 Sungkyunkwan University (SKKU) – Master of Science in Engineering.
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="shweta-rani-list: true" style="rich" %}

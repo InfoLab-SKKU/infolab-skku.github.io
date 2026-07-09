@@ -15,17 +15,17 @@ title: Research Impact
     <p class="team-hero-sub">Bibliometric overview of InfoLab's scholarly output and influence.</p>
     <div class="team-hero-stats">
       <div class="team-hstat">
-        <span class="team-hstat-num">6,200+</span>
+        <span class="team-hstat-num">6,600+</span>
         <span class="team-hstat-lbl">Citations</span>
       </div>
       <div class="team-hstat-sep"></div>
       <div class="team-hstat">
-        <span class="team-hstat-num">35+</span>
+        <span class="team-hstat-num">36+</span>
         <span class="team-hstat-lbl">h-index</span>
       </div>
       <div class="team-hstat-sep"></div>
       <div class="team-hstat">
-        <span class="team-hstat-num">65+</span>
+        <span class="team-hstat-num">67+</span>
         <span class="team-hstat-lbl">i10-index</span>
       </div>
       <div class="team-hstat-sep"></div>
@@ -48,19 +48,19 @@ title: Research Impact
 <div class="impact-metrics-grid">
   <div class="impact-metric-card impact-metric-card--primary">
     <div class="impact-metric-icon"><i class="fa-solid fa-quote-left"></i></div>
-    <div class="impact-metric-num">6,200+</div>
+    <div class="impact-metric-num">6,600+</div>
     <div class="impact-metric-lbl">Total Citations</div>
     <div class="impact-metric-note">Google Scholar · All time</div>
   </div>
   <div class="impact-metric-card">
     <div class="impact-metric-icon"><i class="fa-solid fa-ranking-star"></i></div>
-    <div class="impact-metric-num">35+</div>
+    <div class="impact-metric-num">36+</div>
     <div class="impact-metric-lbl">h-index</div>
-    <div class="impact-metric-note">At least 35 papers with ≥35 citations each</div>
+    <div class="impact-metric-note">At least 36 papers with ≥36 citations each</div>
   </div>
   <div class="impact-metric-card">
     <div class="impact-metric-icon"><i class="fa-solid fa-layer-group"></i></div>
-    <div class="impact-metric-num">65+</div>
+    <div class="impact-metric-num">67+</div>
     <div class="impact-metric-lbl">i10-index</div>
     <div class="impact-metric-note">Papers with at least 10 citations</div>
   </div>
@@ -124,7 +124,7 @@ title: Research Impact
   <div class="impact-venue-card">
     <div class="impact-venue-badge impact-venue-badge--elsevier">Elsevier</div>
     <div class="impact-venue-name">Information Fusion</div>
-    <div class="impact-venue-note">IF &gt; 14 · Q1</div>
+    <div class="impact-venue-note">IF &gt; 17 · Q1</div>
   </div>
   <div class="impact-venue-card">
     <div class="impact-venue-badge impact-venue-badge--ieee">IEEE</div>
@@ -159,6 +159,11 @@ title: Research Impact
   <div class="impact-venue-card">
     <div class="impact-venue-badge impact-venue-badge--springer">Springer</div>
     <div class="impact-venue-name">ICPR</div>
+    <div class="impact-venue-note">Conference · Top Data Science</div>
+  </div>
+   <div class="impact-venue-card">
+    <div class="impact-venue-badge impact-venue-badge--springer">ACM</div>
+    <div class="impact-venue-name">KDD</div>
     <div class="impact-venue-note">Conference · Top Data Science</div>
   </div>
 </div>

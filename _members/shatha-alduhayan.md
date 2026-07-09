@@ -25,9 +25,3 @@ Sungkyunkwan University (SKKU) – Master's Student in Computer Science and Engi
 
 Qassim University – Bachelor's Degree in Information Technology<br>
 2019 – 2023
-
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="Shatha-Alduhayan-list: true" style="rich" %}

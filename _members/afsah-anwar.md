@@ -21,6 +21,3 @@ research_tags:
 ---
 
 Dr. Afsah Anwar is an Assistant Professor in the Department of Computer Science at the University of New Mexico (UNM), Albuquerque, NM. His research focuses on understanding malicious activity on the Internet and its impact on individuals and society. His work supports security- and privacy-focused technology adoption by developing defenses against malicious applications, enabling safer use of online privacy tools, improving trust attribution in digital ecosystems, and supporting the secure adoption of emerging communication technologies. His research draws on malware analysis, vulnerability management, and threat intelligence to identify system weaknesses, develop new threat models, and design defense mechanisms against evolving attack vectors.
-
-{% include section.html %}
-## Publications

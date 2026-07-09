@@ -16,10 +16,3 @@ research_tags:
 ---
 
 Firuz Juraev is a combined M.S./Ph.D. student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea. His research interests lie at the intersection of Machine Learning, Federated Learning, and Computer Vision, with a special focus on Multimodal Fusion techniques in the Healthcare domain.
-
-
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="firuz-juraev-list: true" style="rich" %}

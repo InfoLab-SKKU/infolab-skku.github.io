@@ -20,7 +20,4 @@ research_tags:
   - "Deepfakes"
 ---
 
-Professor Simon Sungil Woo is an Associate Professor of Computer Science and Engineering at Sungkyunkwan University (SKKU). His research focuses on AI security, privacy, anomaly detection, multimedia forensics, deepfake detection, machine learning, and human-centered data science. He leads the DASH Lab and previously worked at NASA’s Jet Propulsion Laboratory. 
-
-{% include section.html %}
-## Publications
+Professor Simon Sungil Woo is an Associate Professor of Computer Science and Engineering at Sungkyunkwan University (SKKU). His research focuses on AI security, privacy, anomaly detection, multimedia forensics, deepfake detection, machine learning, and human-centered data science. He leads the DASH Lab and previously worked at NASA’s Jet Propulsion Laboratory.

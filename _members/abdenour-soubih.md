@@ -29,8 +29,3 @@ University of Oran1 Ahmed Ben Bella – Master's Degree in Computer Science
 
 UHBC University – Bachelor's Degree in Computer Systems
 2015 – 2018
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="abdenour-soubih-list: true" style="rich" %}

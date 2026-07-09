@@ -29,9 +29,3 @@ University of Minnesota – Master’s Degree in Computer Science<br>
 
 St Cloud State – Bachelor’s Degree in Computer Science<br>
 2017 – 2020
-
-{% include section.html %}
-
-## Publications
-
-{% include list.html data="citations" component="citation" filters="abdulrahman-alsharabati-list: true" style="rich" %}

@@ -4,7 +4,7 @@
 //   - Static assets (css/js/img/font): stale-while-revalidate
 // Bump CACHE_VERSION whenever the offline shell needs to be invalidated.
 
-const CACHE_VERSION = "v1-2026-05-18";
+const CACHE_VERSION = "v2-2026-07-09";
 const RUNTIME_CACHE = "infolab-runtime-" + CACHE_VERSION;
 
 self.addEventListener("install", (event) => {

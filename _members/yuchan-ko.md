@@ -22,8 +22,3 @@ Fluent in English, Korean, and Spanish.
 ### Education
 University of Nottingham Ningbo China – Computer Science and Artificial Intelligence <br>
 2020.9 – Present
-
-{% include section.html %}
-## Publications
-
-{% include list.html data="citations" component="citation" filters="yuchan-ko-list: true" style="rich" %}
