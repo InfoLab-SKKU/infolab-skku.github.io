@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="true">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Dark-mode pre-paint: prevent FOUC by setting data-dark before stylesheets evaluate -->
+  <script>document.documentElement.dataset.dark = localStorage.getItem('dark-mode') ?? 'true';</script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZSRZR84K0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RZSRZR84K0');
+</script>
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07377b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#05243a" media="(prefers-color-scheme: dark)">
+
+<title>Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction | Information Laboratory (InfoLab) @ SKKU</title>
+
+<link rel="canonical" href="https://infolab-skku.github.io/preview/pr-50/projects/mortality.html">
+<link rel="icon" href="/preview/pr-50/images/icon.png">
+<link rel="apple-touch-icon" href="/preview/pr-50/images/icon.png">
+<link rel="manifest" href="/preview/pr-50/manifest.webmanifest">
+
+
+
+
+<meta name="title" content="Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction">
+<meta name="description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+
+<meta property="og:title" content="Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction">
+<meta property="og:site_name" content="Information Laboratory (InfoLab) @ SKKU">
+<meta property="og:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta property="og:url" content="https://infolab-skku.github.io/preview/pr-50/projects/mortality.html">
+<meta property="og:image" content="https://infolab-skku.github.io/preview/pr-50/images/share.jpg">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:title" content="Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction">
+<meta name="twitter:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://infolab-skku.github.io/preview/pr-50/images/share.jpg">
+
+<meta name="twitter:url" content="https://infolab-skku.github.io/preview/pr-50/projects/mortality.html">
+
+
+  <meta property="og:type" content="website">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "WebSite",
+    
+    "name": "Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction",
+    "description": "Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.",
+    "headline": "Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "https://infolab-skku.github.io/preview/pr-50/preview/pr-50/images/icon.png" }
+    },
+    "url": "https://infolab-skku.github.io/preview/pr-50/projects/mortality.html"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="https://infolab-skku.github.io/preview/pr-50/feed.xml">
+
+  <!-- IBM Plex Sans (body/UI), Space Grotesk (display), JetBrains Mono (mono accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+  <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"></noscript>
+
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/preview/pr-50/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/alert.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/all.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/anchor.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/bento.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/blog-post.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/body.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/bold.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/button.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/carousel.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/checkbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/citation.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/code.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/cols.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/contact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/feature.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/figure.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/float.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/font.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/footer.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/form.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/gallery.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/header.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/heading.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/homepage.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/icon.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/impact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/link.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/list.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/news.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/paragraph.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/portrait.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/post-excerpt.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/post-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/projects-page.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/pubs.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/quote.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/rule.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/scroll-progress.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/search-box.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/search-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/section.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/software.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/table.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/team.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/textbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/tooltip.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/upcoming.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/util.css" rel="stylesheet">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<!-- include all css in styles folder -->
+
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/preview/pr-50/_scripts/anchors.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/carousel.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/dark-mode.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/email-protect.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/fetch-tags.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/gallery.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/image-fallback.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/neural-hero.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/news-filter.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/projects-filter.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/pub-thumbs.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/pubs-filter.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/scroll-progress.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/search.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/site-search.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/spotlight.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/sw-filter.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/sw-register.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/table-wrap.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/tooltip.js" defer></script>
+
+
+</head>
+
+  <body>
+    
+
+
+
+<!-- Skip to main content (accessibility) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Reading progress bar -->
+<div id="read-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Page reading progress"></div>
+
+<header class="background site-header">
+  <a href="/preview/pr-50/" class="home">
+    
+      <span class="logo">
+        
+          <img src="/preview/pr-50/images/logo.png" alt="logo">
+        
+      </span>
+    
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+      
+        <a href="/preview/pr-50/projects/" data-tooltip="Projects in the lab">
+          Projects
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/pubs/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/team/" data-tooltip="Meet the team">
+          Team
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/collaborators/" data-tooltip="Our collaborators">
+          Collaborators
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/blog/" data-tooltip="News, insights, and research updates from InfoLab">
+          Blog
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/software/" data-tooltip="Open-source code and datasets from InfoLab">
+          Software &amp; Datasets
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/photos/" data-tooltip="Lab photos and activities">
+          Gallery
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/contact/" data-tooltip="Contact information">
+          Contact
+        </a>
+      
+    
+  </nav>
+
+  <input class="dark-toggle" type="checkbox" aria-label="toggle dark mode" onchange="window.onDarkToggleChange(event)">
+</header>
+
+    <main id="main-content">
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - filter out blank sections
+-->
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <h1 id="-explainable-and-dynamic-ensemble-models-for-icu-mortality-and-length-of-stay-prediction">
+<i class="icon fa-solid fa-heart-pulse"></i> Explainable and Dynamic Ensemble Models for ICU Mortality and Length-of-Stay Prediction</h1>
+
+<h2 id="project-description">Project Description</h2>
+
+<p>Predicting outcomes in <strong>Intensive Care Units (ICUs)</strong>—such as <strong>mortality risk</strong> and <strong>length of stay (LOS)</strong>—is crucial for improving care quality, reducing hospital strain, and optimizing resource use. Traditional scoring methods and classical ML approaches often struggle with the complexity, high dimensionality, and heterogeneity of ICU data.</p>
+
+<p>To address these gaps, <strong>InfoLab at Sungkyunkwan University (SKKU)</strong> launched a project focused on <strong>explainable</strong> and <strong>adaptive ensemble models</strong> using <strong>multivariate time-series data</strong> from early ICU admission. The models are tailored for both <strong>adult and neonatal ICU</strong> settings and emphasize clinical relevance and transparency.</p>
+
+<hr>
+
+<h2 id="core-contributions">Core Contributions</h2>
+
+<h3 id="1-patient-specific-stacking-ensemble-for-adult-icu-mortality-prediction">1. Patient-Specific Stacking Ensemble for Adult ICU Mortality Prediction</h3>
+
+<ul>
+  <li>Developed a <strong>stacking ensemble</strong> using base learners trained on <strong>modality-specific features</strong> curated by domain experts.</li>
+  <li>Features extracted at <strong>6, 12, and 24 hours</strong> post-admission, enabling temporal prediction.</li>
+  <li>
+<strong>MIMIC-III dataset (10,000+ patients):</strong><br>
+Achieved <strong>94.4% accuracy</strong>, surpassing traditional scores (e.g., APACHE, SOFA) and standard ML baselines.</li>
+  <li>Built a <strong>clinically interpretable pipeline</strong> integrating <strong>temporal feature slices</strong> and <strong>modality fusion</strong>.</li>
+</ul>
+
+<hr>
+
+<h3 id="2-multilayer-dynamic-ensemble-for-neonatal-icu-mortality-and-los">2. Multilayer Dynamic Ensemble for Neonatal ICU Mortality and LOS</h3>
+
+<ul>
+  <li>Introduced a <strong>two-layer ensemble system</strong>:
+    <ul>
+      <li>
+<strong>Layer 1:</strong> Predicts <strong>mortality</strong>
+</li>
+      <li>
+<strong>Layer 2:</strong> Estimates <strong>length of stay</strong> via regression</li>
+    </ul>
+  </li>
+  <li>Employed <strong>Dynamic Ensemble Selection (DES)</strong> to adapt to the <strong>local feature space</strong>, boosting reliability under high uncertainty.</li>
+  <li>Integrated <strong>XAI tools</strong>:
+    <ul>
+      <li><strong>SHAP values</strong></li>
+      <li><strong>Decision tree visualizations</strong></li>
+      <li><strong>Rule-based logic</strong></li>
+    </ul>
+  </li>
+  <li>Dataset: Refined <strong>NICU cohort of 3,133 neonates (MIMIC-III)</strong>
+</li>
+  <li>Built a <strong>web-based clinical interface</strong> for <strong>real-time ICU monitoring</strong> and <strong>practitioner feedback</strong>
+</li>
+</ul>
+
+<hr>
+
+<h2 id="project-objectives">Project Objectives</h2>
+
+<ul>
+  <li>Build <strong>robust, generalizable</strong> models for <strong>early mortality</strong> and <strong>LOS prediction</strong> in adult and neonatal ICUs.</li>
+  <li>Leverage <strong>stacking and dynamic ensemble techniques</strong> to improve accuracy and model diversity.</li>
+  <li>Incorporate <strong>transparent explainability tools</strong> to support clinician trust.</li>
+  <li>Tackle challenges such as <strong>missing data</strong>, <strong>irregular timestamps</strong>, and <strong>heterogeneous sources</strong> using domain-informed preprocessing.</li>
+</ul>
+
+<hr>
+
+<h2 id="research-impact">Research Impact</h2>
+
+<p>By fusing <strong>clinical expertise</strong> with <strong>modern AI</strong>, this project introduces <strong>trustworthy, explainable ensemble models</strong> to the ICU:</p>
+
+<ul>
+  <li>
+<strong>Enhances patient safety</strong> through early risk detection</li>
+  <li>
+<strong>Improves hospital resource allocation</strong> with LOS forecasting</li>
+  <li>
+<strong>Supports medical staff</strong> via actionable insights from <strong>interpretable models</strong>
+</li>
+</ul>
+
+<p>Together, these efforts offer a practical foundation for next-generation <strong>critical care AI</strong>, shaping a future where <strong>real-time, data-driven decisions</strong> improve ICU outcomes and efficiency.</p>
+  </section>
+
+
+    </main>
+    
+
+<footer class="background site-footer" data-dark="true" data-size="wide">
+  <div class="footer-inner">
+
+    <!-- Brand / identity -->
+    <div class="footer-brand">
+      <a href="/preview/pr-50/" class="footer-brand-link" aria-label="InfoLab home">
+        <img src="/preview/pr-50/images/logo.png" alt="InfoLab logo" class="footer-logo" height="44" loading="lazy">
+        <span class="footer-brand-text">
+          <span class="footer-brand-title">InfoLab</span>
+          <span class="footer-brand-sub">Information Research Laboratory · SKKU</span>
+        </span>
+      </a>
+      <p class="footer-about">
+        We build robust, interpretable and secure machine-learning systems —
+        advancing Trustworthy &amp; Explainable AI, Adversarial ML, and Biomedical AI
+        at Sungkyunkwan University.
+      </p>
+      <div class="footer-social">
+        
+        
+          
+          
+          
+          
+          <div class="button-wrapper">
+            <a class="button" href="https://orcid.org/0000-0001-9232-4843" target="_blank" rel="noopener noreferrer" data-style="bare" data-tooltip="ORCID" aria-label="ORCID">
+              <i class="icon fa-brands fa-orcid"></i>
+            </a>
+          </div>
+        
+          
+          
+          
+          
+          <div class="button-wrapper">
+            <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" target="_blank" rel="noopener noreferrer" data-style="bare" data-tooltip="Google Scholar" aria-label="Google Scholar">
+              <i class="icon fa-brands fa-google"></i>
+            </a>
+          </div>
+        
+          
+          
+          
+          
+          <div class="button-wrapper">
+            <a class="button" href="https://github.com/InfoLab-SKKU" target="_blank" rel="noopener noreferrer" data-style="bare" data-tooltip="GitHub" aria-label="GitHub">
+              <i class="icon fa-brands fa-github"></i>
+            </a>
+          </div>
+        
+          
+          
+          
+          
+          <div class="button-wrapper">
+            <a class="button" href="https://www.researchgate.net/lab/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" target="_blank" rel="noopener noreferrer" data-style="bare" data-tooltip="ResearchGate" aria-label="ResearchGate">
+              <i class="icon fa-brands fa-researchgate"></i>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h5 class="footer-heading">Explore</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-50/">Home</a></li>
+          <li><a href="/preview/pr-50/projects">Projects</a></li>
+          <li><a href="/preview/pr-50/pubs">Publications</a></li>
+          <li><a href="/preview/pr-50/impact">Research Impact</a></li>
+          <li><a href="/preview/pr-50/team">Team</a></li>
+          <li><a href="/preview/pr-50/news">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Research</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-50/projects/security">Adversarial ML</a></li>
+          <li><a href="/preview/pr-50/projects/medical">Biomedical AI</a></li>
+          <li><a href="/preview/pr-50/projects/explainable-ai">Explainable AI</a></li>
+          <li><a href="/preview/pr-50/team/join">Join the Lab</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Sungkyunkwan Univ.</h5>
+        <ul class="footer-links">
+          <li><a href="https://gradschool.skku.edu/grad/" target="_blank" rel="noopener noreferrer">Graduate School</a></li>
+          <li><a href="https://cse.skku.edu/" target="_blank" rel="noopener noreferrer">Computer Science</a></li>
+          <li><a href="https://ai.skku.edu/ai/index.do" target="_blank" rel="noopener noreferrer">Artificial Intelligence</a></li>
+          <li><a href="https://skb.skku.edu/skkuaai/index.do" target="_blank" rel="noopener noreferrer">Applied AI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <h5 class="footer-heading">Contact us</h5>
+        <address class="footer-contact">
+          <span class="footer-contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Engineering Building 2,<br>SKKU, Suwon, South Korea</span>
+          </span>
+          <span class="footer-contact-line">
+            <a href="#" class="footer-contact-link email-protected" data-eu="infolabskku" data-ed="gmail.com" data-show="false" aria-label="Contact InfoLab by email" title="Contact us by email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Contact us by email</span>
+            </a>
+          </span>
+        </address>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span class="footer-copy">
+        © 2026 Information Laboratory (InfoLab) @ SKKU · Sungkyunkwan University
+      </span>
+      <span class="footer-bottom-links">
+        <a href="/preview/pr-50/feed.xml"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS</a>
+        <a href="#main-content" class="footer-totop">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Organization structured data for search engines -->
+    
+  </body>
+</html>

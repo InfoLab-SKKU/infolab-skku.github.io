@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en" data-dark="true">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Dark-mode pre-paint: prevent FOUC by setting data-dark before stylesheets evaluate -->
+  <script>document.documentElement.dataset.dark = localStorage.getItem('dark-mode') ?? 'true';</script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZSRZR84K0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RZSRZR84K0');
+</script>
+  <!--
+  put your search engine verification (e.g. Google Search Console) tag here
+-->
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07377b" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#05243a" media="(prefers-color-scheme: dark)">
+
+<title>Software &amp; Datasets | Information Laboratory (InfoLab) @ SKKU</title>
+
+<link rel="canonical" href="https://infolab-skku.github.io/preview/pr-50/software/">
+<link rel="icon" href="/preview/pr-50/images/icon.png">
+<link rel="apple-touch-icon" href="/preview/pr-50/images/icon.png">
+<link rel="manifest" href="/preview/pr-50/manifest.webmanifest">
+
+
+
+
+<meta name="title" content="Software &amp; Datasets">
+<meta name="description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+
+<meta property="og:title" content="Software &amp; Datasets">
+<meta property="og:site_name" content="Information Laboratory (InfoLab) @ SKKU">
+<meta property="og:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta property="og:url" content="https://infolab-skku.github.io/preview/pr-50/software/">
+<meta property="og:image" content="https://infolab-skku.github.io/preview/pr-50/images/share.jpg">
+<meta property="og:locale" content="en_US">
+
+<meta name="twitter:title" content="Software &amp; Datasets">
+<meta name="twitter:description" content="Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://infolab-skku.github.io/preview/pr-50/images/share.jpg">
+
+<meta name="twitter:url" content="https://infolab-skku.github.io/preview/pr-50/software/">
+
+
+  <meta property="og:type" content="website">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "WebSite",
+    
+    "name": "Software & Datasets",
+    "description": "Information Research Laboratory · SKKU. InfoLab at Sungkyunkwan University conducts cutting-edge research in AI security, adversarial machine learning, biomedical AI, and trustworthy explainable AI systems.",
+    "headline": "Software & Datasets",
+    "publisher": {
+      "@type": "Organization",
+      "logo": { "@type": "ImageObject", "url": "https://infolab-skku.github.io/preview/pr-50/preview/pr-50/images/icon.png" }
+    },
+    "url": "https://infolab-skku.github.io/preview/pr-50/software/"
+  }
+</script>
+
+<link rel="alternate" type="application/rss+xml" href="https://infolab-skku.github.io/preview/pr-50/feed.xml">
+
+  <!-- IBM Plex Sans (body/UI), Space Grotesk (display), JetBrains Mono (mono accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&amp;family=Space+Grotesk:wght@500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+
+
+
+  
+  <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+  <link rel="preload" as="style" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" onload="this.onload=null;this.rel='stylesheet';">
+  <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css"></noscript>
+
+
+  <!-- third party styles -->
+<!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
+<link href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css" rel="stylesheet">
+
+<!-- include all sass in styles folder -->
+
+
+  
+    <link href="/preview/pr-50/_styles/-theme.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/alert.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/all.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/anchor.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/background.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/bento.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/blog-post.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/body.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/bold.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/button.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/carousel.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/checkbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/citation.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/code.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/cols.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/contact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/dark-toggle.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/feature.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/figure.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/float.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/font.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/footer.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/form.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/gallery.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/grid.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/header.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/heading.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/highlight.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/homepage.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/icon.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/impact.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/link.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/list.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/main.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/news.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/paragraph.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/portrait.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/post-excerpt.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/post-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/post-nav.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/projects-page.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/pubs.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/quote.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/rule.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/scroll-progress.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/search-box.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/search-info.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/section.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/software.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/table.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/tags.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/team.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/textbox.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/tooltip.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/upcoming.css" rel="stylesheet">
+  
+
+  
+    <link href="/preview/pr-50/_styles/util.css" rel="stylesheet">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+<!-- include all css in styles folder -->
+
+
+
+  <!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+
+<!-- include all js in scripts folder -->
+
+
+  <script src="/preview/pr-50/_scripts/anchors.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/carousel.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/dark-mode.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/email-protect.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/fetch-tags.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/gallery.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/image-fallback.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/neural-hero.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/news-filter.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/projects-filter.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/pub-thumbs.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/pubs-filter.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/scroll-progress.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/search.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/site-search.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/spotlight.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/sw-filter.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/sw-register.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/table-wrap.js" defer></script>
+
+  <script src="/preview/pr-50/_scripts/tooltip.js" defer></script>
+
+
+</head>
+
+  <body>
+    
+
+
+
+<!-- Skip to main content (accessibility) -->
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<!-- Reading progress bar -->
+<div id="read-progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Page reading progress"></div>
+
+<header class="background site-header">
+  <a href="/preview/pr-50/" class="home">
+    
+      <span class="logo">
+        
+          <img src="/preview/pr-50/images/logo.png" alt="logo">
+        
+      </span>
+    
+    
+  </a>
+
+  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
+
+  <nav>
+    
+    
+      
+        <a href="/preview/pr-50/projects/" data-tooltip="Projects in the lab">
+          Projects
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/pubs/" data-tooltip="Published works">
+          Publications
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/team/" data-tooltip="Meet the team">
+          Team
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/collaborators/" data-tooltip="Our collaborators">
+          Collaborators
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/news/" data-tooltip="Lab news and updates">
+          News
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/blog/" data-tooltip="News, insights, and research updates from InfoLab">
+          Blog
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/software/" data-tooltip="Open-source code and datasets from InfoLab">
+          Software &amp; Datasets
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/photos/" data-tooltip="Lab photos and activities">
+          Gallery
+        </a>
+      
+    
+      
+        <a href="/preview/pr-50/contact/" data-tooltip="Contact information">
+          Contact
+        </a>
+      
+    
+  </nav>
+
+  <input class="dark-toggle" type="checkbox" aria-label="toggle dark mode" onchange="window.onDarkToggleChange(event)">
+</header>
+
+    <main id="main-content">
+      <!--
+  modify main content of page:
+  - add section breaks
+  - attach section properties
+  - filter out blank sections
+-->
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!-- HERO -->
+<div class="team-hero sw-hero">
+  <div class="team-hero-content">
+    <div class="team-hero-badge">Open Source</div>
+    <h1 class="team-hero-title">Software &amp; Datasets</h1>
+    <p class="team-hero-sub">Open-source tools, libraries, and datasets from InfoLab research — freely available for the research community.</p>
+    <div class="team-hero-stats">
+      <div class="team-hstat">
+        <span class="team-hstat-num">23</span>
+        <span class="team-hstat-lbl">Repositories</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <span class="team-hstat-num">3</span>
+        <span class="team-hstat-lbl">pip Libraries</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <span class="team-hstat-num">5</span>
+        <span class="team-hstat-lbl">Research Areas</span>
+      </div>
+      <div class="team-hstat-sep"></div>
+      <div class="team-hstat">
+        <a href="https://github.com/InfoLab-SKKU" target="_blank" rel="noopener noreferrer" class="team-hstat-link">
+          <span class="team-hstat-num"><i class="fa-brands fa-github"></i></span>
+          <span class="team-hstat-lbl">InfoLab-SKKU</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<!-- CATEGORY FILTER -->
+<div class="sw-filter-bar">
+  <button class="sw-filter-btn active" data-cat="all">
+    <i class="fa-solid fa-layer-group"></i> All
+    <span class="sw-filter-count">23</span>
+  </button>
+  <button class="sw-filter-btn" data-cat="security">
+    <i class="fa-solid fa-shield-halved"></i> Security &amp; Adversarial ML
+    <span class="sw-filter-count">6</span>
+  </button>
+  <button class="sw-filter-btn" data-cat="federated">
+    <i class="fa-solid fa-network-wired"></i> Federated Learning
+    <span class="sw-filter-count">2</span>
+  </button>
+  <button class="sw-filter-btn" data-cat="biomedical">
+    <i class="fa-solid fa-heart-pulse"></i> Biomedical AI
+    <span class="sw-filter-count">8</span>
+  </button>
+  <button class="sw-filter-btn" data-cat="library">
+    <i class="fa-solid fa-cube"></i> XAI &amp; Libraries
+    <span class="sw-filter-count">4</span>
+  </button>
+  <button class="sw-filter-btn" data-cat="vision">
+    <i class="fa-solid fa-camera"></i> Human Activity
+    <span class="sw-filter-count">3</span>
+  </button>
+</div>
+
+<!-- REPO GRID -->
+<div class="sw-repo-grid">
+
+  <!-- SECURITY & ADVERSARIAL ML -->
+
+  <div class="sw-repo-card" data-cat="security">
+    <div class="sw-card-accent sw-accent--security"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--security"><i class="fa-solid fa-eye-slash"></i></div>
+        <div>
+          <div class="sw-card-name">AdvEdge / AdvEdge+</div>
+          <div class="sw-card-repo">InfoLab-SKKU/AdvEdge-Attack</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Introduces two white-box adversarial attacks that simultaneously fool a DNN classifier <em>and</em> its coupled interpretation model (GradCAM, LIME, SHAP). Demonstrates that interpretable deep learning systems are vulnerable to adversarial inputs designed to produce misleading yet visually plausible explanations.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Adversarial Attack</span>
+        <span class="sw-tag">XAI</span>
+        <span class="sw-tag">ImageNet</span>
+        <span class="sw-tag">PyTorch</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE TDSC 2024</span>
+        <a href="https://github.com/InfoLab-SKKU/AdvEdge-Attack" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="library">
+    <div class="sw-card-accent sw-accent--library"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--library"><i class="fa-solid fa-star"></i></div>
+        <div>
+          <div class="sw-card-name">Awesome Dynamic Ensemble Learning</div>
+          <div class="sw-card-repo">InfoLab-SKKU/awesome-dynamic-ensemble-learning</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">A curated list of resources, libraries, and papers about Dynamic Ensemble Selection (DES), Dynamic Ensemble Learning, and related explainable ensemble methods. Includes implementations, benchmarks, and reading lists to help researchers and practitioners explore the field.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Awesome List</span>
+        <span class="sw-tag">Dynamic Ensemble</span>
+        <span class="sw-tag">Survey</span>
+        <span class="sw-tag">Resources</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/awesome-dynamic-ensemble-learning" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="vision">
+    <div class="sw-card-accent sw-accent--vision"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--vision"><i class="fa-solid fa-eye"></i></div>
+        <div>
+          <div class="sw-card-name">VisionDES</div>
+          <div class="sw-card-repo">InfoLab-SKKU/VisionDES</div>
+        </div>
+      </div>
+      <div class="sw-pip-badge">
+<i class="fa-brands fa-python"></i> pip install vision-des</div>
+      <p class="sw-card-desc">VisionDES provides dynamic ensemble selection methods tailored for computer vision tasks. Includes training and evaluation scripts, pretrained models, and integration examples for image classification benchmarks using dynamic ensemble strategies.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Dynamic Ensemble</span>
+        <span class="sw-tag">Vision</span>
+        <span class="sw-tag">PyTorch</span>
+        <span class="sw-tag">ImageNet</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--acm">ACM KDD 2026</span>
+        <a href="https://github.com/InfoLab-SKKU/VisionDES" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="security">
+    <div class="sw-card-accent sw-accent--security"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--security"><i class="fa-solid fa-crosshairs"></i></div>
+        <div>
+          <div class="sw-card-name">SingleADV</div>
+          <div class="sw-card-repo">InfoLab-SKKU/SingleClassADV</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">SingleADV generates a universal perturbation targeting an entire category of objects, fooling both the DNN prediction model and its interpretation model simultaneously in white-box and black-box settings. Limits unintended cross-class fooling for targeted stealth.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Universal Perturbation</span>
+        <span class="sw-tag">Black-box</span>
+        <span class="sw-tag">ImageNet</span>
+        <span class="sw-tag">CAM</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE TIFS 2024</span>
+        <a href="https://github.com/InfoLab-SKKU/SingleClassADV" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="security">
+    <div class="sw-card-accent sw-accent--security"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--security"><i class="fa-solid fa-robot"></i></div>
+        <div>
+          <div class="sw-card-name">AdViT</div>
+          <div class="sw-card-repo">InfoLab-SKKU/AdViT</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Adversarial attack framework targeting interpretable Vision Transformers. Attacks the Transformer Interpreter explanation model, generating adversarial samples whose attribution maps closely resemble those of benign examples. Supports DeiT-B as source model and ViT-B as target.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Vision Transformer</span>
+        <span class="sw-tag">ViT Attack</span>
+        <span class="sw-tag">DeiT</span>
+        <span class="sw-tag">XAI</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/AdViT" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="security">
+    <div class="sw-card-accent sw-accent--security"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--security"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+        <div>
+          <div class="sw-card-name">QuScore</div>
+          <div class="sw-card-repo">InfoLab-SKKU/QuScore</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">A stealthy, query-efficient score-based black-box attack against interpretable deep learning systems using a microbial genetic algorithm. Achieves 95–100% attack success rate on Inception, ResNet, VGG, and DenseNet across ImageNet and CIFAR with minimal queries. Resilient against JPEG, bit-depth reduction, and median smoothing defenses.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Black-box Attack</span>
+        <span class="sw-tag">Query-Efficient</span>
+        <span class="sw-tag">Genetic Algorithm</span>
+        <span class="sw-tag">ImageNet</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE Trans. Reliability 2025</span>
+        <a href="https://github.com/InfoLab-SKKU/QuScore" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="security">
+    <div class="sw-card-accent sw-accent--security"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--security"><i class="fa-solid fa-flask"></i></div>
+        <div>
+          <div class="sw-card-name">Black-Box Attacks Analysis</div>
+          <div class="sw-card-repo">InfoLab-SKKU/black-box-attacks</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Empirical study of three black-box attacks — SimBA, HopSkipJump, BoundaryAttack — across CNN architectures (ResNet, VGG, DenseNet) on ImageNet and CIFAR-100. Investigates model complexity vs. robustness, model diversity, cross-dataset transferability, and preprocessing-based defenses (JPEG, median smoothing, bit squeezing).</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">SimBA</span>
+        <span class="sw-tag">HopSkipJump</span>
+        <span class="sw-tag">BoundaryAttack</span>
+        <span class="sw-tag">Defense</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE SVCC 2024</span>
+        <a href="https://github.com/InfoLab-SKKU/black-box-attacks" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="security">
+    <div class="sw-card-accent sw-accent--security"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--security"><i class="fa-solid fa-chart-bar"></i></div>
+        <div>
+          <div class="sw-card-name">Adversarial Attacks Analysis</div>
+          <div class="sw-card-repo">InfoLab-SKKU/Adversarial-Attacks-Analysis</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Multi-dimensional study of DNN robustness examining model complexity vs. adversarial robustness, diversity effects of heterogeneous model ensembles, cross-dataset attack transferability (ImageNet, CIFAR-100), and effectiveness of preprocessing-based defenses across diverse architectures.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Robustness</span>
+        <span class="sw-tag">Model Diversity</span>
+        <span class="sw-tag">Transferability</span>
+        <span class="sw-tag">Defense</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE SVCC 2024</span>
+        <a href="https://github.com/InfoLab-SKKU/Adversarial-Attacks-Analysis" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FEDERATED LEARNING -->
+
+  <div class="sw-repo-card" data-cat="federated">
+    <div class="sw-card-accent sw-accent--federated"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--federated"><i class="fa-solid fa-server"></i></div>
+        <div>
+          <div class="sw-card-name">HARFed</div>
+          <div class="sw-card-repo">InfoLab-SKKU/harfed</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">A Streamlit-based simulator for federated learning experiments focused on heterogeneity, attacks, and robustness. Supports Dirichlet and IID partitioning, FedAvg/FedMedian/FedProx strategies, configurable adversarial clients, local differential privacy, and real-time GPU monitoring with accuracy and attack success rate plots exportable as PNG/PDF.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Federated Learning</span>
+        <span class="sw-tag">Streamlit</span>
+        <span class="sw-tag">FedAvg</span>
+        <span class="sw-tag">Differential Privacy</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/harfed" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="federated">
+    <div class="sw-card-accent sw-accent--federated"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--federated"><i class="fa-solid fa-shield-virus"></i></div>
+        <div>
+          <div class="sw-card-name">SecurityAnalysisFL</div>
+          <div class="sw-card-repo">InfoLab-SKKU/SecurityAnalysisFL</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Investigates data-poisoning attacks against federated learning under heterogeneous client data distributions. Uses PyTorch and the Flower framework to simulate distributed MobileNetV2 training. Evaluates attack robustness with local differential privacy and studies the interplay between data heterogeneity and model vulnerability.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Poisoning Attacks</span>
+        <span class="sw-tag">Flower</span>
+        <span class="sw-tag">MobileNetV2</span>
+        <span class="sw-tag">LDP</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE IMCOM 2025</span>
+        <a href="https://github.com/InfoLab-SKKU/SecurityAnalysisFL" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BIOMEDICAL AI -->
+
+  <div class="sw-repo-card" data-cat="biomedical">
+    <div class="sw-card-accent sw-accent--biomedical"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--biomedical"><i class="fa-solid fa-brain"></i></div>
+        <div>
+          <div class="sw-card-name">4DfCF — 4D fMRI CrossFormer</div>
+          <div class="sw-card-repo">InfoLab-SKKU/4DfCF</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Novel vision transformer with cross-scale embeddings and hierarchical 4D short/long-distance attention for spatiotemporal brain disorder classification from 4D fMRI. Evaluated on ADHD-200, ADNI (Alzheimer's), and ABIDE (Autism), consistently outperforming 3D-CNN and SwiFT baselines. Integrated Gradients XAI maps highlight disorder-relevant brain regions.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">4D fMRI</span>
+        <span class="sw-tag">Vision Transformer</span>
+        <span class="sw-tag">ADHD-200 • ADNI • ABIDE</span>
+        <span class="sw-tag">XAI</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE JBHI 2025</span>
+        <a href="https://github.com/InfoLab-SKKU/4DfCF" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="biomedical">
+    <div class="sw-card-accent sw-accent--biomedical"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--biomedical"><i class="fa-solid fa-timeline"></i></div>
+        <div>
+          <div class="sw-card-name">5DfCF — 5D fMRI CrossFormer</div>
+          <div class="sw-card-repo">InfoLab-SKKU/5DfCF</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Extends spatiotemporal fMRI modeling to longitudinal (multi-session) data with a Period CrossFormer Block that fuses intra-session 4D attention with inter-session dynamics using period-aware positional embeddings. Achieves <strong>94.3% accuracy</strong> and <strong>94.1% AUC</strong> on ADNI MCI-to-dementia conversion, outperforming all baselines by 3–10 points.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Longitudinal fMRI</span>
+        <span class="sw-tag">Alzheimer's Progression</span>
+        <span class="sw-tag">MCI Conversion</span>
+        <span class="sw-tag">ADNI</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/5DfCF" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="biomedical">
+    <div class="sw-card-accent sw-accent--biomedical"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--biomedical"><i class="fa-solid fa-cubes"></i></div>
+        <div>
+          <div class="sw-card-name">MML-3DCrossFormer</div>
+          <div class="sw-card-repo">InfoLab-SKKU/MML-3DCrossFormer</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">3D MRI CrossFormer with multimodal intermediate fusion of volumetric MRI embeddings (via 3D-LDA/SDA dual-range attention) and structured clinical data (MMSE, CDR-SB, ADAS13). Achieves <strong>99.3% accuracy</strong> and <strong>99.7% AUC</strong> on ADNI Alzheimer's diagnosis. Guided Grad-CAM highlights the hippocampus, entorhinal cortex, and medial temporal lobe.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">3D MRI</span>
+        <span class="sw-tag">Multimodal Fusion</span>
+        <span class="sw-tag">Alzheimer's</span>
+        <span class="sw-tag">Grad-CAM</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/MML-3DCrossFormer" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="biomedical">
+    <div class="sw-card-accent sw-accent--biomedical"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--biomedical"><i class="fa-solid fa-child-reaching"></i></div>
+        <div>
+          <div class="sw-card-name">4DViTADHD</div>
+          <div class="sw-card-repo">InfoLab-SKKU/4DViTADHD</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Multimodal framework combining a 4D Vision Transformer for high-dimensional fMRI with an MLP for clinical and demographic tabular data (age, gender, IQ, behavioral scores) for ADHD diagnosis on ADHD-200. Compares intermediate and decision fusion strategies. SHAP and Integrated Gradients provide interpretability across both modalities.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">ADHD</span>
+        <span class="sw-tag">fMRI + Tabular</span>
+        <span class="sw-tag">Multimodal Fusion</span>
+        <span class="sw-tag">SHAP</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/4DViTADHD" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="biomedical">
+    <div class="sw-card-accent sw-accent--biomedical"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--biomedical"><i class="fa-solid fa-layer-group"></i></div>
+        <div>
+          <div class="sw-card-name">MPMS MRI Progression</div>
+          <div class="sw-card-repo">InfoLab-SKKU/mpms-mri-progression</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Multi-plane, multi-slice longitudinal MRI deep ensemble for Alzheimer's progression detection. Keras-based with pluggable CNN backbones (EfficientNet, ResNet, ConvNext, DenseNet, XceptionNet), optional CBAM attention, and Bayesian-optimized classification heads (MLP, LSTM, multi-head self-attention). Run via command-line with flexible configuration flags.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Longitudinal MRI</span>
+        <span class="sw-tag">Keras</span>
+        <span class="sw-tag">CBAM</span>
+        <span class="sw-tag">Bayesian Optimization</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/mpms-mri-progression" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="biomedical">
+    <div class="sw-card-accent sw-accent--biomedical"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--biomedical"><i class="fa-solid fa-wave-square"></i></div>
+        <div>
+          <div class="sw-card-name">AD Progression Detection (MRI)</div>
+          <div class="sw-card-repo">InfoLab-SKKU/AD-progression-detection-MRI</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">3D-CNN-BRNN framework for Alzheimer's progression from multi-timestep longitudinal MRI. A 3D-CNN extracts deep volumetric features; a Bidirectional RNN models temporal dynamics across visits. Visual XAI highlights spatiotemporal brain regions most predictive of progression. Tested at baseline, 6-month, and 12-month ADNI timepoints.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">3D-CNN</span>
+        <span class="sw-tag">Bidirectional RNN</span>
+        <span class="sw-tag">Longitudinal MRI</span>
+        <span class="sw-tag">XAI</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--elsevier">Information Fusion 2023</span>
+        <a href="https://github.com/InfoLab-SKKU/AD-progression-detection-MRI" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="biomedical">
+    <div class="sw-card-accent sw-accent--biomedical"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--biomedical"><i class="fa-solid fa-face-sad-tear"></i></div>
+        <div>
+          <div class="sw-card-name">DES4Depression</div>
+          <div class="sw-card-repo">InfoLab-SKKU/DES4Depression</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Two-stage dynamic ensemble framework for depression detection and severity prediction using NSHAP data. Stage 1 detects depression (FIRE-KNOP DES: <strong>88.33% accuracy</strong>); Stage 2 predicts severity among depressed patients (<strong>83.68%</strong>). SHAP and feature network diagrams provide clinical explainability for older-adult populations.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Depression</span>
+        <span class="sw-tag">Dynamic Ensemble</span>
+        <span class="sw-tag">NSHAP</span>
+        <span class="sw-tag">SHAP</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--mdpi">Diagnostics 2024</span>
+        <a href="https://github.com/InfoLab-SKKU/DES4Depression" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="biomedical">
+    <div class="sw-card-accent sw-accent--biomedical"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--biomedical"><i class="fa-solid fa-syringe"></i></div>
+        <div>
+          <div class="sw-card-name">Explainable Ensemble Hypoglycemia</div>
+          <div class="sw-card-repo">InfoLab-SKKU/Explainable-Ensemble-Hypoglycemia</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Predicts severe hypoglycemic episodes in Type-1 Diabetes using multimodal data (clinical, psychological, cognitive features) with early and late fusion strategies. Benchmarks classical ML, static ensembles, and Dynamic Ensemble Selection. Best results: <strong>AUC-ROC 0.877</strong> (late fusion) and <strong>accuracy 0.798</strong> (early fusion). Dataset from Jaeb Center for Health Research.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Type-1 Diabetes</span>
+        <span class="sw-tag">Hypoglycemia</span>
+        <span class="sw-tag">Multimodal Fusion</span>
+        <span class="sw-tag">DES</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/Explainable-Ensemble-Hypoglycemia" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- XAI & LIBRARIES -->
+
+  <div class="sw-repo-card" data-cat="library">
+    <div class="sw-card-accent sw-accent--library"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--library"><i class="fa-solid fa-box-open"></i></div>
+        <div>
+          <div class="sw-card-name">Infodeslib</div>
+          <div class="sw-card-repo">InfoLab-SKKU/infodeslib</div>
+        </div>
+      </div>
+      <div class="sw-pip-badge">
+<i class="fa-brands fa-python"></i> pip install infodeslib</div>
+      <p class="sw-card-desc">Open-source Python library for Dynamic Ensemble Selection with late fusion of multimodal data and integrated SHAP-based explainability. Implements 4 dynamic classifier selection and 7 DES techniques. Each model in the pool can train on different feature sets (modalities), and the <code>predict()</code> call handles competence estimation, selection, and explanation in one step.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Python Library</span>
+        <span class="sw-tag">Dynamic Ensemble</span>
+        <span class="sw-tag">Late Fusion</span>
+        <span class="sw-tag">SHAP</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--acm">KDD KiL Workshop 2024</span>
+        <a href="https://github.com/InfoLab-SKKU/infodeslib" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="library">
+    <div class="sw-card-accent sw-accent--library"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--library"><i class="fa-solid fa-chart-line"></i></div>
+        <div>
+          <div class="sw-card-name">XAI-DESReg</div>
+          <div class="sw-card-repo">InfoLab-SKKU/xaidesreg</div>
+        </div>
+      </div>
+      <div class="sw-pip-badge">
+<i class="fa-brands fa-python"></i> pip install xaidesreg</div>
+      <p class="sw-card-desc">Dynamic Ensemble Selection for regression with built-in explainability. Selects the most competent regressors per query using k-NN region-of-competence modeling. The <code>predict_xai()</code> method returns per-model predictions, competence scores, and the neighbor samples in the region of competence — making ensemble decisions fully transparent. Compatible with any scikit-learn regressor.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Python Library</span>
+        <span class="sw-tag">Regression</span>
+        <span class="sw-tag">Dynamic Ensemble</span>
+        <span class="sw-tag">XAI</span>
+      </div>
+      <div class="sw-card-footer">
+        <a href="https://github.com/InfoLab-SKKU/xaidesreg" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="library">
+    <div class="sw-card-accent sw-accent--library"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--library"><i class="fa-solid fa-diagram-project"></i></div>
+        <div>
+          <div class="sw-card-name">MM-DES</div>
+          <div class="sw-card-repo">InfoLab-SKKU/mm-des</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Multimodal clinical prediction framework combining joint contrastive embeddings across image, clinical text, and tabular modalities with Dynamic Ensemble Selection. Region-of-Competence modeling adapts ensemble composition per query. Built-in XAI explains which modality and which classifiers contributed to each decision. Robust to noisy and heterogeneous clinical datasets.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Multimodal</span>
+        <span class="sw-tag">Contrastive Learning</span>
+        <span class="sw-tag">Dynamic Ensemble</span>
+        <span class="sw-tag">Clinical AI</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--springer">ICPR 2026</span>
+        <a href="https://github.com/InfoLab-SKKU/mm-des" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HUMAN ACTIVITY -->
+
+  <div class="sw-repo-card" data-cat="vision">
+    <div class="sw-card-accent sw-accent--vision"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--vision"><i class="fa-solid fa-person-walking"></i></div>
+        <div>
+          <div class="sw-card-name">Low-Cost Human Activity Detection</div>
+          <div class="sw-card-repo">InfoLab-SKKU/Low-Cost-Human-Activity-Detection</div>
+        </div>
+      </div>
+      <p class="sw-card-desc">Real-time human detection and activity recognition using the MLX90640 low-resolution infrared sensor (32×24 pixels). Demonstrates that reliable activity detection is achievable with accessible, low-cost thermal hardware without high-resolution cameras. Includes the thermal image dataset repository for replication and benchmarking.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Thermal Imaging</span>
+        <span class="sw-tag">MLX90640</span>
+        <span class="sw-tag">Real-time</span>
+        <span class="sw-tag">Activity Recognition</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE IMCOM 2023</span>
+        <a href="https://github.com/InfoLab-SKKU/Low-Cost-Human-Activity-Detection" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw-repo-card" data-cat="vision">
+    <div class="sw-card-accent sw-accent--vision"></div>
+    <div class="sw-card-body">
+      <div class="sw-card-top">
+        <div class="sw-card-icon sw-icon--vision"><i class="fa-solid fa-database"></i></div>
+        <div>
+          <div class="sw-card-name">Thermal Human Detection Dataset</div>
+          <div class="sw-card-repo">InfoLab-SKKU/Thermal-Human-Detection</div>
+        </div>
+      </div>
+      <div class="sw-dataset-badge">
+<i class="fa-solid fa-table"></i> Dataset</div>
+      <p class="sw-card-desc">Low-resolution infrared thermal image dataset collected with the MLX90640 sensor (32×24 IR resolution). Captures human presence and activity patterns across standardized scenarios. Accompanies the low-cost human activity detection paper and provides a benchmark for embedded thermal imaging and edge-deployed detection systems.</p>
+      <div class="sw-card-tags">
+        <span class="sw-tag">Dataset</span>
+        <span class="sw-tag">Thermal IR</span>
+        <span class="sw-tag">32×24 px</span>
+        <span class="sw-tag">Human Detection</span>
+      </div>
+      <div class="sw-card-footer">
+        <span class="sw-paper-badge sw-badge--ieee">IEEE IMCOM 2023</span>
+        <a href="https://github.com/InfoLab-SKKU/Thermal-Human-Detection" target="_blank" rel="noopener" class="sw-gh-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </section>
+
+  
+  
+  
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  background: ;
+  dark: ;
+  size: ;
+-->
+
+<h2 id="-using-our-work">
+<i class="icon fa-solid fa-circle-info"></i> Using Our Work</h2>
+
+<p>If you use any InfoLab code or datasets in your research, please cite the corresponding paper. BibTeX entries are available on the <a href="/pubs/">Publications</a> page via the <strong>Cite</strong> button on each paper card.</p>
+
+<p>For questions, collaborations, or data access requests, <a href="/contact/">contact us</a>.</p>
+  </section>
+
+
+    </main>
+    
+
+<footer class="background site-footer" data-dark="true" data-size="wide">
+  <div class="footer-inner">
+
+    <!-- Brand / identity -->
+    <div class="footer-brand">
+      <a href="/preview/pr-50/" class="footer-brand-link" aria-label="InfoLab home">
+        <img src="/preview/pr-50/images/logo.png" alt="InfoLab logo" class="footer-logo" height="44" loading="lazy">
+        <span class="footer-brand-text">
+          <span class="footer-brand-title">InfoLab</span>
+          <span class="footer-brand-sub">Information Research Laboratory · SKKU</span>
+        </span>
+      </a>
+      <p class="footer-about">
+        We build robust, interpretable and secure machine-learning systems —
+        advancing Trustworthy &amp; Explainable AI, Adversarial ML, and Biomedical AI
+        at Sungkyunkwan University.
+      </p>
+      <div class="footer-social">
+        
+        
+          
+          
+          
+          
+          <div class="button-wrapper">
+            <a class="button" href="https://orcid.org/0000-0001-9232-4843" target="_blank" rel="noopener noreferrer" data-style="bare" data-tooltip="ORCID" aria-label="ORCID">
+              <i class="icon fa-brands fa-orcid"></i>
+            </a>
+          </div>
+        
+          
+          
+          
+          
+          <div class="button-wrapper">
+            <a class="button" href="https://scholar.google.com/citations?user=pLC4l6YAAAAJ" target="_blank" rel="noopener noreferrer" data-style="bare" data-tooltip="Google Scholar" aria-label="Google Scholar">
+              <i class="icon fa-brands fa-google"></i>
+            </a>
+          </div>
+        
+          
+          
+          
+          
+          <div class="button-wrapper">
+            <a class="button" href="https://github.com/InfoLab-SKKU" target="_blank" rel="noopener noreferrer" data-style="bare" data-tooltip="GitHub" aria-label="GitHub">
+              <i class="icon fa-brands fa-github"></i>
+            </a>
+          </div>
+        
+          
+          
+          
+          
+          <div class="button-wrapper">
+            <a class="button" href="https://www.researchgate.net/lab/SKKU-InfoLab-Information-laboratory-Tamer-Abuhmed" target="_blank" rel="noopener noreferrer" data-style="bare" data-tooltip="ResearchGate" aria-label="ResearchGate">
+              <i class="icon fa-brands fa-researchgate"></i>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div class="footer-col">
+        <h5 class="footer-heading">Explore</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-50/">Home</a></li>
+          <li><a href="/preview/pr-50/projects">Projects</a></li>
+          <li><a href="/preview/pr-50/pubs">Publications</a></li>
+          <li><a href="/preview/pr-50/impact">Research Impact</a></li>
+          <li><a href="/preview/pr-50/team">Team</a></li>
+          <li><a href="/preview/pr-50/news">News</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Research</h5>
+        <ul class="footer-links">
+          <li><a href="/preview/pr-50/projects/security">Adversarial ML</a></li>
+          <li><a href="/preview/pr-50/projects/medical">Biomedical AI</a></li>
+          <li><a href="/preview/pr-50/projects/explainable-ai">Explainable AI</a></li>
+          <li><a href="/preview/pr-50/team/join">Join the Lab</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5 class="footer-heading">Sungkyunkwan Univ.</h5>
+        <ul class="footer-links">
+          <li><a href="https://gradschool.skku.edu/grad/" target="_blank" rel="noopener noreferrer">Graduate School</a></li>
+          <li><a href="https://cse.skku.edu/" target="_blank" rel="noopener noreferrer">Computer Science</a></li>
+          <li><a href="https://ai.skku.edu/ai/index.do" target="_blank" rel="noopener noreferrer">Artificial Intelligence</a></li>
+          <li><a href="https://skb.skku.edu/skkuaai/index.do" target="_blank" rel="noopener noreferrer">Applied AI</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col--contact">
+        <h5 class="footer-heading">Contact us</h5>
+        <address class="footer-contact">
+          <span class="footer-contact-line">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Engineering Building 2,<br>SKKU, Suwon, South Korea</span>
+          </span>
+          <span class="footer-contact-line">
+            <a href="#" class="footer-contact-link email-protected" data-eu="infolabskku" data-ed="gmail.com" data-show="false" aria-label="Contact InfoLab by email" title="Contact us by email">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <span class="sr-only">Contact us by email</span>
+            </a>
+          </span>
+        </address>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span class="footer-copy">
+        © 2026 Information Laboratory (InfoLab) @ SKKU · Sungkyunkwan University
+      </span>
+      <span class="footer-bottom-links">
+        <a href="/preview/pr-50/feed.xml"><i class="fa-solid fa-rss" aria-hidden="true"></i> RSS</a>
+        <a href="#main-content" class="footer-totop">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Organization structured data for search engines -->
+    
+  </body>
+</html>
