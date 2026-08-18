@@ -374,7 +374,7 @@
   buttons:
   - type: pdf
     link: pdf/978-3-319-13461-1_45.pdf
-- id: doi:https://doi.org/10.1007/978-3-031-47715-7_38
+- id: doi:10.1007/978-3-031-47715-7_38
   image: ''
   buttons:
   - type: pdf

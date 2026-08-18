@@ -20,6 +20,23 @@
   buttons:
   - type: pdf
     link: pdf/Towards_Robust_FL.pdf
+- id: doi:10.1145/3770855.3818121
+  title: 'VisionDES: Robust and Explainable Dynamic Vision Ensemble'
+  authors:
+  - Firuz Juraev
+  - Mohammed Abuhamad
+  - Shaker El-Sappagh
+  - Simon S. Woo
+  - Tamer Abuhmed
+  publisher: Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery
+    and Data Mining V.2
+  date: '2026-08-08'
+  link: https://doi.org/hcd7xs
+  orcid: 0000-0001-9232-4843
+  firuz-jaraev-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+  tamer-abuhmed-list: true
 - id: doi:10.3390/diagnostics14212385
   title: Explainable Multi-Layer Dynamic Ensemble Framework Optimized for Depression
     Detection and Severity Assessment
@@ -1279,8 +1296,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1016/j.inffus.2026.104507
-  title: 'Toward Trustworthy Digital Healthcare: A System-Level Convergence of IoMT,
-    Large Language Models, and Explainable AI'
+  title: 'Toward trustworthy digital healthcare: A system-level convergence of IoMT,
+    large language models, and explainable AI'
   authors:
   - Maria Bashir
   - Shaker El-Sappagh
@@ -1288,7 +1305,7 @@
   - Dong In Kim
   - Tamer Abuhmed
   publisher: Information Fusion
-  date: '2026-05-01'
+  date: '2026-12-01'
   link: https://doi.org/hb54n2
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -1309,7 +1326,7 @@
   - Abolghasem Sadeghi-Niaraki
   - Tamer Abuhmed
   publisher: Applied Soft Computing
-  date: '2026-06-01'
+  date: '2026-10-01'
   link: https://doi.org/hb6fhj
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -1876,8 +1893,8 @@
   - type: pdf
     link: pdf/s41598-023-42796-6.pdf
 - id: doi:https://doi.org/10.1007/978-3-031-47715-7_38
-  title: "Explainable Dynamic Ensemble Framework for\_Classification Based on\_the\_\
-    Late Fusion of\_Heterogeneous Multimodal Data"
+  title: Explainable Dynamic Ensemble Framework for Classification Based on the Late
+    Fusion of Heterogeneous Multimodal Data
   authors:
   - Firuz Juraev
   - Shaker El-Sappagh
@@ -1887,8 +1904,8 @@
   link: https://doi.org/hb28vk
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
+  plugin: orcid.py
+  file: orcid.yaml
   image: ''
   buttons:
   - type: pdf
@@ -2019,27 +2036,6 @@
   buttons:
   - type: pdf
     link: pdf/TNSM_2022_3200741.pdf
-- id: doi:10.1016/j.cmpb.2023.107495
-  title: "Explainable machine learning models based on multimodal time-series data\
-    \ for the early detection of Parkinson\u2019s disease"
-  authors:
-  - Muhammad Junaid
-  - Sajid Ali
-  - Fatma Eid
-  - Shaker El-Sappagh
-  - Tamer Abuhmed
-  publisher: Computer Methods and Programs in Biomedicine
-  pmid: '37003039'
-  date: '2023-06-01'
-  link: https://doi.org/gtgxft
-  orcid: 0000-0001-9232-4843
-  tamer-abuhmed-list: true
-  plugin: sources.py
-  file: sources.yaml
-  image: ''
-  buttons:
-  - type: pdf
-    link: pdf/j_cmpb_2023_107495.pdf
 - id: doi:10.1371/journal.pone.0285455
   title: Henry gas solubility optimization double machine learning classifier for
     neurosurgical patients
@@ -2129,6 +2125,27 @@
   buttons:
   - type: pdf
     link: pdf/S41598-023-41661-W.pdf
+- id: doi:10.1016/j.cmpb.2023.107495
+  title: "Explainable machine learning models based on multimodal time-series data\
+    \ for the early detection of Parkinson\u2019s disease"
+  authors:
+  - Muhammad Junaid
+  - Sajid Ali
+  - Fatma Eid
+  - Shaker El-Sappagh
+  - Tamer Abuhmed
+  publisher: Computer Methods and Programs in Biomedicine
+  pmid: '37003039'
+  date: '2023-06-01'
+  link: https://doi.org/gtgxft
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: sources.py
+  file: sources.yaml
+  image: ''
+  buttons:
+  - type: pdf
+    link: pdf/j_cmpb_2023_107495.pdf
 - id: doi:10.1111/MICE.13015
   title: "Explainable probabilistic deep learning framework for seismic assessment\
     \ of structures using distribution\u2010free prediction intervals"
@@ -2276,7 +2293,6 @@
   - Farman Ali
   - Tamer Abuhmed
   publisher: Journal of Biomedical Informatics
-  pmid: '36208833'
   date: '2022-11-01'
   link: https://doi.org/g9b3c4
   orcid: 0000-0001-9232-4843
