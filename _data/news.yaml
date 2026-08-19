@@ -15,6 +15,12 @@
 # The 3 most recent entries are featured there; items without an image
 # fall back to a default picture.
 
+- title: "Award: Maria Bashir wins Most Distinguished Research Award"
+  date: 2026-08-12
+  description: "Congratulations to our doctoral student, Maria Bashir, for receiving the Most Distinguished Research Award (Spring 2026) from the College of Information & Communication Engineering at Sungkyunkwan University! We are incredibly proud of her outstanding research achievements."
+  image: images/news/maria-bashir-award-2026.jpg
+  url: https://ice.skku.edu/ice/news.do?mode=view&articleNo=223486
+
 - title: "Welcome to InfoLab, Mironshoh!"
   date: 2026-06-28
   description: "We are delighted to welcome a new member to InfoLab! Mironshoh joins as an incoming combined M.S./Ph.D. student, bringing expertise in large language models, agantic AI, and trustworthy AI systems. We look forward to Mironshoh's contributions to our team!"
