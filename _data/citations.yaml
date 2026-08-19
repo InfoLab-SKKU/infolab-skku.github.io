@@ -1079,6 +1079,21 @@
   buttons:
   - type: pdf
     link: pdf/j_eswa_2025_129812.pdf
+- id: doi:10.1109/niles59815.2023.10296640
+  title: "LSTM deep learning model for Alzheimer\u2019s disease prediction based on\
+    \ cost-effective time series cognitive scores"
+  authors:
+  - Hager Saleh
+  - Nora El-Rashidy
+  - Tamer Abuhmed
+  - Shaker El-Sappagh
+  publisher: 2023 5th Novel Intelligent and Leading Emerging Sciences Conference (NILES)
+  date: '2023-10-21'
+  link: https://doi.org/hb3f6t
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.57197/JDR-2024-0101
   title: 'Responsible Artificial Intelligence for Mental Health Disorders: Current
     Applications and Future Challenges'
@@ -1794,6 +1809,21 @@
   buttons:
   - type: pdf
     link: pdf/j_asoc_2026_115590.pdf
+- id: doi:10.1109/imcom69009.2026.11360942
+  title: Comprehensive Explainable Acne Severity Assessment via Ensemble Multi-Task
+    Deep Learning and Interactive LLM Justification
+  authors:
+  - Abdelrahman Hassan
+  - Tamer Abuhmed
+  - Shaker El-Sappagh
+  publisher: 2026 20th International Conference on Ubiquitous Information Management
+    and Communication (IMCOM)
+  date: '2026-01-04'
+  link: https://doi.org/hcf26z
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: google-scholar.py
+  file: google-scholar.yaml
 - id: doi:10.1109/imcom69009.2026.11360881
   title: 'ASDVIT: Advancing Autism Spectrum Disorder Classification Through Robust
     Vision Transformers'
