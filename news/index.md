@@ -153,7 +153,7 @@ nav:
       <a href="https://bsky.app/profile/infolab.bsky.social" target="_blank" rel="noopener" class="news-social-handle">@infolab.bsky.social</a>
     </div>
     <div class="bluesky-embed-wrap">
-      <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed@0.1.16/dist/bsky-embed.es.js" async></script>
+      <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
       <bsky-embed
         username="infolab.bsky.social"
         mode=""
@@ -165,12 +165,6 @@ nav:
         custom-styles=".border-slate-300 { border-color: gray; text-align: left}"
         date-format='{"type":"absolute","locale":"en","options":{"weekday":"long","year":"numeric","month":"long","day":"numeric"}}'
       ></bsky-embed>
-    </div>
-    <div class="news-rss-block">
-      <a href="/feed.xml" class="news-rss-link" title="Subscribe via RSS">
-        <i class="fa-solid fa-rss"></i> RSS Feed
-      </a>
-      <span class="news-rss-note">Subscribe to lab news in any RSS reader</span>
     </div>
   </div>
 </div><!-- /.news-col-side -->
