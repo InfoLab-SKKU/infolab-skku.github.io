@@ -5,6 +5,7 @@ role: combined
 group: active
 years_worked: 2026-Present
 links:
+   orcid: 0009-0000-1315-3442
    linkedin: mironshoh-inomjonov
    github: Inomjonov
    google-scholar: DFRA2nUAAAAJ
@@ -16,7 +17,7 @@ research_tags:
   - "Alignment"
 ---
 
-Mironshoh Inomjonov is an incoming combined M.S./Ph.D. student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea. His research interests lie in large language models, agentic AI systems, and explainable AI.
+Mironshoh Inomjonov is a combined M.S./Ph.D. student in Computer Science and Engineering at Sungkyunkwan University (SKKU), South Korea. His research interests lie in large language models, agentic AI systems, and explainable AI.
 
 He has 4 years of experience across ML engineering and research, with a focus on LLM alignment, machine translation, and real-time computer vision.
 
