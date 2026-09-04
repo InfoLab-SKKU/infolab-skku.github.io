@@ -15,6 +15,12 @@
 # The 3 most recent entries are featured there; items without an image
 # fall back to a default picture.
 
+- title: "Prof. Tamer Abuhmed selected for the 2026 SKKU Rising-Fellowship"
+  date: 2026-09-03
+  description: "We are proud to announce that Prof. Tamer Abuhmed, Director of InfoLab, has been selected as a recipient of the prestigious 2026 SKKU Rising-Fellowship — one of Sungkyunkwan University's most distinguished faculty honors, awarded this year to 12 professors in recognition of world-class research achievement and international scholarly impact. The award ceremony was held on September 3, 2026."
+  image: images/blogs/skku-rising-fellowship-2026/award-presentation.jpg
+  url: /blog/2026/09/03/skku-rising-fellowship-2026.html
+
 - title: "Our paper GI-MIA has been accepted to the Findings of EMNLP 2026!"
   date: 2026-08-22
   description: "We are pleased to announce that our paper, 'GI-MIA: Group-Invariant Membership Inference Attacks Against Large Language Models,' has been accepted to the Findings of the Conference on Empirical Methods in Natural Language Processing (EMNLP 2026). The work introduces a novel attack that leverages semantic-preserving paraphrase orbits to reveal memorization in LLMs, achieving state-of-the-art results across the Pythia model family. Congratulations to Infolab team!"
