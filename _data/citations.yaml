@@ -1044,23 +1044,6 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1109/access.2018.2868802
-  title: 'Clinical Decision Support System for Liver Fibrosis Prediction in Hepatitis
-    Patients: A Case Comparison of Two Soft Computing Techniques'
-  authors:
-  - Shaker El-Sappagh
-  - Farman Ali
-  - Amjad Ali
-  - Abdeltawab Hendawi
-  - Farid A. Badria
-  - Doug Young Suh
-  publisher: IEEE Access
-  date: '2018-01-01'
-  link: https://doi.org/gjzwvv
-  orcid: 0000-0001-9705-1477
-  shaker-el-sappagh-list: true
-  plugin: orcid.py
-  file: orcid.yaml
 - title: Feature-based Transportation Sentiment Analysis Using Fuzzy Ontology and
     SentiWordNe
   publisher: The 9th International Conference on Information and Communication Technology
@@ -1155,7 +1138,6 @@
   - Mohammed Elmogy
   - A.M. Riad
   publisher: Artificial Intelligence in Medicine
-  pmid: '26303105'
   date: '2015-11-01'
   link: https://doi.org/f73bdn
   orcid: 0000-0001-9705-1477
@@ -1584,7 +1566,6 @@
   - Houbing Song
   - Soo-Mi Choi
   publisher: Computer Methods and Programs in Biomedicine
-  pmid: '39067138'
   date: '2024-10-01'
   link: https://doi.org/g838mg
   orcid: 0000-0001-9232-4843
@@ -1862,7 +1843,7 @@
   - Farman Ali
   - "Alberto Bugar\xEDn-Diz"
   publisher: Artificial Intelligence Review
-  date: '2023-10-01'
+  date: '2023-03-12'
   link: https://doi.org/gtnpbk
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -1936,7 +1917,7 @@
   - Shaker El-Sappagh
   - Tamer Abuhmed
   - Mohammed Elmogy
-  publisher: Computer Science and Mathematics
+  publisher: MDPI AG
   date: '2023-07-10'
   link: https://doi.org/g9b3cp
   orcid: 0000-0001-9232-4843
@@ -2217,7 +2198,6 @@
   - Muhammad Imran
   - Tamer Abuhmed
   publisher: IEEE Journal of Biomedical and Health Informatics
-  pmid: '36037451'
   date: '2022-12-01'
   link: https://doi.org/g9b3cz
   orcid: 0000-0001-9232-4843
@@ -2683,7 +2663,7 @@
   - Tamer Abuhmed
   - Sherif Barakat
   - Mohammed Elmogy
-  publisher: Computers, Materials & Continua
+  publisher: Computers, Materials &amp; Continua
   date: '2021-01-01'
   link: https://doi.org/g869jj
   orcid: 0000-0001-9232-4843
@@ -2964,7 +2944,7 @@
   - Tamer AbuHmed
   - Nasrin Azarbani
   - Soo-Mi Choi
-  publisher: Rheumatology
+  publisher: openRxiv
   date: '2025-01-28'
   link: https://doi.org/hb3f62
   image: ''
