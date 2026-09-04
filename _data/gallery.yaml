@@ -10,6 +10,21 @@
 
 # ── 2026 ─────────────────────────────────────────────────────
 
+- image: "images/blogs/skku-rising-fellowship-2026/award-presentation.jpg"
+  caption: "Prof. Tamer Abuhmed Receiving the 2026 SKKU Rising-Fellowship"
+  category: milestones
+  year: 2026
+
+- image: "images/blogs/skku-rising-fellowship-2026/fellowship-recipients.jpg"
+  caption: "The 2026 SKKU Rising-Fellowship Recipients"
+  category: milestones
+  year: 2026
+
+- image: "images/blogs/skku-rising-fellowship-2026/ceremony-group-photo.jpg"
+  caption: "2026 SKKU Rising-Fellowship Award Ceremony, September 3, 2026"
+  category: milestones
+  year: 2026
+
 - image: "images/gallery/2026/2026-08-12-MariaBashirAward-certificate.jpg"
   caption: "Maria Bashir — Most Distinguished Research Award (Spring 2026)"
   category: milestones
@@ -88,6 +103,11 @@
   year: 2026
 
 # ── 2026 · Events ────────────────────────────────────────────
+
+- image: "images/gallery/2026/2026-07-23-ISS-SummerSchool-AICourse.jpg"
+  caption: "AI Course Group Photo with Students — ISS Summer School, July 2026"
+  category: events
+  year: 2026
 
 - image: "images/gallery/2026/2026-05-19-TeacherDay.png"
   caption: "Students' Messages to Professor Tamer on Teacher's Day"
