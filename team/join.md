@@ -60,6 +60,11 @@ description: Open positions for graduate students, postdocs, interns, and resear
       <p class="join-card-desc">Engineering-focused roles building the systems, datasets, and tools behind our research projects.</p>
     </div>
   </div>
+
+  <div class="join-callout">
+    <i class="fa-solid fa-circle-info"></i>
+    <p>For all long-term positions, we ask candidates to first work with us as a research intern for <strong>at least three months</strong> before the position is finalized — a trial period that lets both sides decide with confidence. See <a href="#how-to-apply">How to Apply</a>.</p>
+  </div>
 </div>
 
 {% include section.html %}
@@ -72,6 +77,7 @@ description: Open positions for graduate students, postdocs, interns, and resear
   </div>
   <ul class="join-list">
     <li><i class="fa-solid fa-check"></i><span>A solid foundation in <strong>computer science, systems, or applied mathematics</strong> — though we welcome candidates with unconventional academic or professional backgrounds.</span></li>
+    <li><i class="fa-solid fa-check"></i><span><strong>A prior publication record is strongly preferred.</strong> Applicants who have already published peer-reviewed scientific papers — in journals, conferences, or workshops — are given priority, as it demonstrates that you have carried a research idea through to completion.</span></li>
     <li><i class="fa-solid fa-check"></i><span>Programming proficiency — <strong>Python</strong> and a deep-learning framework such as <strong>PyTorch</strong> are a plus, and systems or security tooling experience is valued for security topics.</span></li>
     <li><i class="fa-solid fa-check"></i><span>Curiosity about real-world problems in <strong>AI security, adversarial ML, medical AI, or explainable AI</strong>, and the persistence to chase them through experiments.</span></li>
     <li><i class="fa-solid fa-check"></i><span>Clear written communication — research is reading, writing, and arguing with evidence as much as it is coding.</span></li>
@@ -97,7 +103,7 @@ description: Open positions for graduate students, postdocs, interns, and resear
 {% include section.html %}
 
 <!-- HOW TO APPLY -->
-<div class="team-section">
+<div class="team-section" id="how-to-apply">
   <div class="team-section-header">
     <span class="team-section-icon"><i class="fa-solid fa-paper-plane"></i></span>
     <h2 class="team-section-title">How to Apply</h2>
@@ -119,6 +125,13 @@ description: Open positions for graduate students, postdocs, interns, and resear
     </li>
     <li class="join-step">
       <span class="join-step-num">3</span>
+      <div class="join-step-body">
+        <h3 class="join-step-title">Start with a research internship</h3>
+        <p>Before any position is finalized, we ask candidates to work with us as a research intern for <strong>at least three months</strong>. This trial period lets you experience our research topics, supervision style, and day-to-day lab culture first-hand — and lets us get to know you as a researcher — so that both sides can make an informed decision before committing to a degree or a long-term position.</p>
+      </div>
+    </li>
+    <li class="join-step">
+      <span class="join-step-num">4</span>
       <div class="join-step-body">
         <h3 class="join-step-title">Graduate applicants: apply officially</h3>
         <p>Also apply through SKKU's <a href="https://admission-global.skku.edu/eng/index.html" target="_blank" rel="noopener noreferrer">Graduate School admissions</a>, and mention your interest in InfoLab and Prof. Abuhmed's research in your application.</p>
