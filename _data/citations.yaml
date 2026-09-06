@@ -1044,6 +1044,23 @@
   shaker-el-sappagh-list: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1109/access.2018.2868802
+  title: 'Clinical Decision Support System for Liver Fibrosis Prediction in Hepatitis
+    Patients: A Case Comparison of Two Soft Computing Techniques'
+  authors:
+  - Shaker El-Sappagh
+  - Farman Ali
+  - Amjad Ali
+  - Abdeltawab Hendawi
+  - Farid A. Badria
+  - Doug Young Suh
+  publisher: IEEE Access
+  date: '2018-01-01'
+  link: https://doi.org/gjzwvv
+  orcid: 0000-0001-9705-1477
+  shaker-el-sappagh-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - title: Feature-based Transportation Sentiment Analysis Using Fuzzy Ontology and
     SentiWordNe
   publisher: The 9th International Conference on Information and Communication Technology
@@ -1417,6 +1434,14 @@
     for Sustainable Agriculture and Food System Resilience
   publisher: 2026 20th International Conference on Ubiquitous Information Management
     and Communication (IMCOM)
+  date: '2026-01-01'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
+- title: 'MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive
+    Embeddings and Dynamic Ensembles'
+  publisher: International Conference on Pattern Recognition (ICPR)
   date: '2026-01-01'
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
