@@ -1155,7 +1155,6 @@
   - Mohammed Elmogy
   - A.M. Riad
   publisher: Artificial Intelligence in Medicine
-  pmid: '26303105'
   date: '2015-11-01'
   link: https://doi.org/f73bdn
   orcid: 0000-0001-9705-1477
@@ -1440,6 +1439,14 @@
   tamer-abuhmed-list: true
   plugin: orcid.py
   file: orcid.yaml
+- title: 'MM-DES: Enhancing Multimodal Clinical Prediction with Joint Contrastive
+    Embeddings and Dynamic Ensembles'
+  publisher: International Conference on Pattern Recognition (ICPR)
+  date: '2026-01-01'
+  orcid: 0000-0001-9232-4843
+  tamer-abuhmed-list: true
+  plugin: orcid.py
+  file: orcid.yaml
 - title: 'Towards Reliable and Interpretable Wheat Disease Diagnosis: Unified Framework
     Incorporating Vision Transformer and Advanced Object Detection'
   publisher: 2026 20th International Conference on Ubiquitous Information Management
@@ -1584,7 +1591,6 @@
   - Houbing Song
   - Soo-Mi Choi
   publisher: Computer Methods and Programs in Biomedicine
-  pmid: '39067138'
   date: '2024-10-01'
   link: https://doi.org/g838mg
   orcid: 0000-0001-9232-4843
@@ -1862,7 +1868,7 @@
   - Farman Ali
   - "Alberto Bugar\xEDn-Diz"
   publisher: Artificial Intelligence Review
-  date: '2023-10-01'
+  date: '2023-03-12'
   link: https://doi.org/gtnpbk
   orcid: 0000-0001-9232-4843
   tamer-abuhmed-list: true
@@ -1936,7 +1942,7 @@
   - Shaker El-Sappagh
   - Tamer Abuhmed
   - Mohammed Elmogy
-  publisher: Computer Science and Mathematics
+  publisher: MDPI AG
   date: '2023-07-10'
   link: https://doi.org/g9b3cp
   orcid: 0000-0001-9232-4843
@@ -2217,7 +2223,6 @@
   - Muhammad Imran
   - Tamer Abuhmed
   publisher: IEEE Journal of Biomedical and Health Informatics
-  pmid: '36037451'
   date: '2022-12-01'
   link: https://doi.org/g9b3cz
   orcid: 0000-0001-9232-4843
@@ -2683,7 +2688,7 @@
   - Tamer Abuhmed
   - Sherif Barakat
   - Mohammed Elmogy
-  publisher: Computers, Materials & Continua
+  publisher: Computers, Materials &amp; Continua
   date: '2021-01-01'
   link: https://doi.org/g869jj
   orcid: 0000-0001-9232-4843
@@ -2964,7 +2969,7 @@
   - Tamer AbuHmed
   - Nasrin Azarbani
   - Soo-Mi Choi
-  publisher: Rheumatology
+  publisher: openRxiv
   date: '2025-01-28'
   link: https://doi.org/hb3f62
   image: ''
