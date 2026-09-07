@@ -15,17 +15,17 @@ title: Research Impact
     <p class="team-hero-sub">Bibliometric overview of InfoLab's scholarly output and influence.</p>
     <div class="team-hero-stats">
       <div class="team-hstat">
-        <span class="team-hstat-num">6,600+</span>
+        <span class="team-hstat-num">7,000+</span>
         <span class="team-hstat-lbl">Citations</span>
       </div>
       <div class="team-hstat-sep"></div>
       <div class="team-hstat">
-        <span class="team-hstat-num">36+</span>
+        <span class="team-hstat-num">37+</span>
         <span class="team-hstat-lbl">h-index</span>
       </div>
       <div class="team-hstat-sep"></div>
       <div class="team-hstat">
-        <span class="team-hstat-num">67+</span>
+        <span class="team-hstat-num">68+</span>
         <span class="team-hstat-lbl">i10-index</span>
       </div>
       <div class="team-hstat-sep"></div>
@@ -48,19 +48,19 @@ title: Research Impact
 <div class="impact-metrics-grid">
   <div class="impact-metric-card impact-metric-card--primary">
     <div class="impact-metric-icon"><i class="fa-solid fa-quote-left"></i></div>
-    <div class="impact-metric-num">6,600+</div>
+    <div class="impact-metric-num">7,000+</div>
     <div class="impact-metric-lbl">Total Citations</div>
     <div class="impact-metric-note">Google Scholar · All time</div>
   </div>
   <div class="impact-metric-card">
     <div class="impact-metric-icon"><i class="fa-solid fa-ranking-star"></i></div>
-    <div class="impact-metric-num">36+</div>
+    <div class="impact-metric-num">37+</div>
     <div class="impact-metric-lbl">h-index</div>
-    <div class="impact-metric-note">At least 36 papers with ≥36 citations each</div>
+    <div class="impact-metric-note">At least 37 papers with ≥37 citations each</div>
   </div>
   <div class="impact-metric-card">
     <div class="impact-metric-icon"><i class="fa-solid fa-layer-group"></i></div>
-    <div class="impact-metric-num">67+</div>
+    <div class="impact-metric-num">68+</div>
     <div class="impact-metric-lbl">i10-index</div>
     <div class="impact-metric-note">Papers with at least 10 citations</div>
   </div>
