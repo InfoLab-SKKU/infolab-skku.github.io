@@ -10,6 +10,21 @@
 
 # ── 2026 ─────────────────────────────────────────────────────
 
+- image: "images/gallery/2026/team_2026.jpg"
+  caption: "The InfoLab Research Team, 2026"
+  category: lab
+  year: 2026
+
+- image: "images/gallery/2026/team_2026_02.jpg"
+  caption: "The InfoLab Research Team, 2026"
+  category: lab
+  year: 2026
+
+- image: "images/gallery/2026/team_2026_03.jpg"
+  caption: "The InfoLab Research Team, 2026"
+  category: lab
+  year: 2026
+
 - image: "images/blogs/skku-rising-fellowship-2026/award-presentation.jpg"
   caption: "Prof. Tamer Abuhmed Receiving the 2026 SKKU Rising-Fellowship"
   category: milestones
