@@ -69,9 +69,54 @@ jobs:
       - if: runner.debug == '1'
         uses: mxschmitt/action-tmate@v3
 
-      - name: Build updated citations
-        run: python _cite/cite.py
+      - name: Back up generated citation files
+        run: |
+          mkdir -p "$RUNNER_TEMP/citation-backup"
+          for path in _data/citations.yaml _data/sources.yaml; do
+            if [ -e "$path" ]; then
+              cp -p "$path" "$RUNNER_TEMP/citation-backup/$(basename "$path")"
+            fi
+          done
+          if [ -d images/thumbnails ]; then
+            cp -a images/thumbnails "$RUNNER_TEMP/citation-backup/thumbnails"
+          fi
+
+      - name: Build updated citations with retries
+        id: citation-build
+        shell: bash
+        run: |
+          set +e
+          for attempt in 1 2 3; do
+            echo "Citation update attempt ${attempt}/3"
+            python _cite/cite.py
+            status=$?
+            if [ "$status" -eq 0 ]; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 3 ]; then
+              delay=$((attempt * 30))
+              echo "Citation metadata service failed; retrying in ${delay}s"
+              sleep "$delay"
+            fi
+          done
+
+          echo "::warning::Citation metadata update failed after retries; preserving the last known-good citations"
+          exit 1
         timeout-minutes: 25
+
+      - name: Restore last known-good citations
+        if: steps.citation-build.outcome == 'failure'
+        run: |
+          for path in _data/citations.yaml _data/sources.yaml; do
+            backup="$RUNNER_TEMP/citation-backup/$(basename "$path")"
+            if [ -f "$backup" ]; then
+              cp -p "$backup" "$path"
+            fi
+          done
+          if [ -d "$RUNNER_TEMP/citation-backup/thumbnails" ]; then
+            rm -rf images/thumbnails
+            cp -a "$RUNNER_TEMP/citation-backup/thumbnails" images/thumbnails
+          fi
 
       - name: Check if citations changed
         id: changed
