@@ -47,7 +47,7 @@ Our team includes graduate students, postdoctoral researchers, and researchers, 
 {% endcapture %}
 {%
   include feature.html
-  image="images/gallery/2025/itrc2025_team_03.jpeg"
+  image="images/gallery/2026/team_2026.jpg"
   link="team"
   title="Our Team"
   text=text

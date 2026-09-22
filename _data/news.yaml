@@ -15,6 +15,12 @@
 # The 3 most recent entries are featured there; items without an image
 # fall back to a default picture.
 
+- title: "Our 4D fMRI CrossFormer research featured by SKKU's S-PRESS"
+  date: 2026-09-22
+  description: "Our recent research, '4DfCF: 4D fMRI CrossFormer Vision Transformer,' published in the IEEE Journal of Biomedical and Health Informatics, has been featured in the Research Stories section of S-PRESS, Sungkyunkwan University's official news outlet. The work introduces a lightweight, explainable vision transformer that jointly models spatial and temporal patterns in 4D fMRI data for brain disorder diagnosis, outperforming comparison models on ADHD, Alzheimer's disease, and autism spectrum disorder benchmarks (F1-score of 96.28% on ADHD) while providing visual explanations of the brain regions driving each prediction."
+  image: images/news/spress-4dfcf-2026.png
+  url: https://www.spressnews.com/news/articleView.html?idxno=139099
+
 - title: "Prof. Tamer Abuhmed selected for the 2026 SKKU Rising-Fellowship"
   date: 2026-09-03
   description: "We are proud to announce that Prof. Tamer Abuhmed, Director of InfoLab, has been selected as a recipient of the prestigious 2026 SKKU Rising-Fellowship — one of Sungkyunkwan University's most distinguished faculty honors, awarded this year to 12 professors in recognition of world-class research achievement and international scholarly impact. The award ceremony was held on September 3, 2026."
