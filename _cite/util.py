@@ -2,6 +2,7 @@
 utility functions for cite process and plugins
 """
 
+import re
 import subprocess
 import json
 import yaml
@@ -18,6 +19,54 @@ cache = Cache("./_cite/.cache")
 
 # clear expired items from cache
 cache.expire()
+
+
+def normalize_citation_id(raw):
+    """
+    Convert DOI / arXiv IDs into canonical Manubot identifiers.
+    Accepts bare IDs and common URL-wrapped variants like
+    https://doi.org/10.x, http://dx.doi.org/10.x, doi:https://doi.org/10.x.
+    """
+    if raw is None:
+        return ""
+    value = str(raw).strip()
+    if not value:
+        return ""
+
+    lowered = value.lower()
+    if lowered.startswith("doi:"):
+        value = value[4:].strip()
+        lowered = value.lower()
+    if lowered.startswith("arxiv:"):
+        value = value[6:].strip()
+        lowered = value.lower()
+
+    if lowered.startswith("http://") or lowered.startswith("https://"):
+        if "/doi.org/" in lowered:
+            value = value.split("/doi.org/", 1)[1]
+            lowered = value.lower()
+        elif "/dx.doi.org/" in lowered:
+            value = value.split("/dx.doi.org/", 1)[1]
+            lowered = value.lower()
+        elif "/arxiv.org/" in lowered:
+            value = value.split("/arxiv.org/", 1)[1].split("/")[-1]
+            lowered = value.lower()
+        else:
+            return ""
+
+    if lowered.startswith("10."):
+        return f"doi:{value.strip()}"
+    if re.fullmatch(r"\d{4}\.\d{4,5}(?:v\d+)?", value.strip()):
+        return f"arxiv:{value.strip()}"
+    if value.strip().startswith("arxiv:"):
+        return value.strip()
+    if value.strip().startswith("doi:"):
+        return value.strip()
+    if value.strip().startswith("pmid:"):
+        return value.strip()
+    if value.strip().startswith("pmcid:"):
+        return value.strip()
+    return value.strip()
 
 
 def log_cache(func):
@@ -173,6 +222,7 @@ def cite_with_manubot(_id):
     """
     generate citation data for source id with Manubot
     """
+    _id = normalize_citation_id(_id)
 
     # run Manubot
     try:
@@ -225,10 +275,10 @@ def cite_with_manubot(_id):
             return citation["issued"]["date-parts"][0][index]
         except (KeyError, IndexError, TypeError):
             return ""
-        
+
     # extract PMID and PMCID
     pmid = get_safe(manubot, "PMID", "").strip()
-    if pmid: 
+    if pmid:
         citation["pmid"] = pmid
     pmcid = get_safe(manubot, "PMCID", "").strip()
     if pmcid:
@@ -237,16 +287,13 @@ def cite_with_manubot(_id):
     # date
     year = date_part(manubot, 0)
     if year:
-        # fallbacks for month and day
         month = date_part(manubot, 1) or "1"
         day = date_part(manubot, 2) or "1"
         citation["date"] = format_date(f"{year}-{month}-{day}")
     else:
-        # if no year, consider date missing data
         citation["date"] = ""
 
     # link
     citation["link"] = get_safe(manubot, "URL", "").strip()
 
-    # return citation data
     return citation
