@@ -61,17 +61,18 @@ def main(entry):
             id_value = re.sub(r"(?i)^https?://arxiv\.org/abs/", "", id_value)
             id_value = re.sub(r"(?i)v\d+$", "", id_value).strip()
 
-        # create source; omit id entirely when ORCID has no external id,
-        # so cite.py won't try to resolve a bogus ":" via Manubot
+        # Manubot only supports a limited set of identifier types. ORCID can
+        # return identifiers such as "authenticusid" that are useful as record
+        # metadata but are not resolvable by Manubot. Do not pass those through
+        # as citation IDs; retain their ORCID metadata as a fallback instead.
         source = {}
-        if id_type and id_value:
+        if id_type in ("doi", "arxiv", "pmid", "pmcid") and id_value:
             source["id"] = f"{id_type}:{id_value}"
 
         # doi and arxiv ids resolve to full, correct metadata via Manubot, so
         # don't attach ORCID's own fields for them — in particular ORCID's
         # last-modified-date is NOT a publication date and must never override
-        # Manubot's. Only entries with no Manubot-resolvable id fall back to
-        # ORCID metadata below.
+        # Manubot's. Unsupported identifiers use this metadata fallback.
         if id_type not in ("doi", "arxiv"):
             # get summaries
             summaries = get_safe(work, "work-summary", [])
@@ -122,8 +123,11 @@ def main(entry):
             if link:
                 source["link"] = link
 
-        # copy fields from entry to source
+        # copy fields from entry to source, but never reintroduce an
+        # unsupported ORCID identifier as a Manubot ID.
         source.update(entry)
+        if "id" in source and id_type not in ("doi", "arxiv", "pmid", "pmcid"):
+            source.pop("id")
 
         # add source to list
         sources.append(source)
